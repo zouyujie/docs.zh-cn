@@ -1,39 +1,42 @@
 ---
 layout: HubPage
-
-title: .NET Core Documentation
-description:
-keywords:
-author:
-manager:
+title: ".NET Core 文档"
+description: 
+keywords: 
+author: 
+manager: 
 ms.date: 06/20/2016
 ms.topic: hubpage
-ms.prod:
-ms.service:
-ms.technology:
-ms.suite:
-ms.assetid:
+ms.prod: 
+ms.service: 
+ms.technology: 
+ms.suite: 
+ms.assetid: 
+translationtype: Human Translation
+ms.sourcegitcommit: 1c68e4bcceffb895a758a6f8abdda41cdafc3590
+ms.openlocfilehash: b9abce6984193957930ebf1ba74822b4cdfe6789
+
 ---
 
 <article id="main">
     <section id="hero-content" class="graph">
-        <h1>.NET Documentation</h1>
-        <h2>Welcome to .NET! This is the home of the technical documentation for .NET Core, C#, F# and Visual Basic, including basic concepts, getting started instructions, tutorials and samples. You can look for an answer to a challenging problem or learn .NET for the first time.</h2>
+        <h1>.NET 文档</h1>
+        <h2>欢迎使用 .NET！ 这是 .NET Core、C#、F# 和 Visual Basic 的技术文档主页，包括基本概念、入门说明、教程和示例。 可在此查看疑难问题的解答或首次了解 .NET。</h2>
     </section>
     <aside class="alert section-border">
-        <p>Download .NET Core today</p>
+        <p>立即下载 .NET Core</p>
         <ol class="action-list">
-            <li><a href="https://dot.net/core" class="button-bordered button-translucent">Get it!</a></li>
+            <li><a href="https://dot.net/core" class="button-bordered button-translucent">获取它！</a></li>
         </ol>
     </aside>
     <section id="featured" class="container">
-        <h2 class="section-heading"><span class="icon icon-lightbulb-checked"></span> Featured Content</h2>
+        <h2 class="section-heading"><span class="icon icon-lightbulb-checked"></span> 特色内容</h2>
         <div class="features row">
             <ul class="column-half">
-                <li><a href="docs/core/index.md">Get started with .NET Core</a></li>
+                <li><a href="docs/core/index.md">.NET Core 入门</a></li>
             </ul>
             <ul class="column-half">
-                <li><a href="https://docs.asp.net">Get started with ASP.NET Core</a></li>
+                <li><a href="https://docs.asp.net">ASP.NET Core 入门</a></li>
             </ul>
         </div>
     </section>
@@ -44,30 +47,30 @@ ms.assetid:
                     <header class="journey-step-header row">
                         <div class="title column-third">
                             <span class="icon icon-tip"></span>
-                            <p>Learn the Platform</p>
+                            <p>了解平台</p>
                         </div>
                         <p class="description column-two-thirds">
-                            Get started with .NET Core and learn the fundamentals of the .NET platform.
+.NET Core 入门和了解 .NET 平台的基础知识。
                         </p>
                     </header>
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
                                 <a href="docs/welcome.md">
-                                    <h3>.NET Core Documentation</h3>
-                                    <p>Learn .NET Core concepts and language syntax.</p>
+                                    <h3>.NET Core 文档</h3>
+                                    <p>了解 .NET Core 概念和语言语法。</p>
                                 </a>
                             </li>
                             <li class="column column-third">
                                 <a href="api/index.md">
-                                    <h3>API Reference</h3>
-                                    <p>Browse the .NET API, organized by namespace.</p>
+                                    <h3>API 参考</h3>
+                                    <p>浏览按命名空间整理的 .NET API。</p>
                                 </a>
                             </li>
                             <li class="column column-third">
                                 <a href="docs/core/index.md">
-                                    <h3>Getting Started with .NET Core</h3>
-                                    <p>Learn how to build .NET Core console apps at the command-line or in Visual Studio.</p>
+                                    <h3>.NET Core 入门</h3>
+                                    <p>了解如何在命令行或 Visual Studio 中生成 .NET Core 控制台应用。</p>
                                 </a>
                             </li>
                         </ul>
@@ -77,10 +80,10 @@ ms.assetid:
                     <header class="journey-step-header row">
                         <div class="title column-third">
                             <span class="icon icon-tip"></span>
-                            <p>Web &amp; Cloud</p>
+                            <p>Web &amp; 云</p>
                         </div>
                         <p class="description column-two-thirds">
-                            Learn how to create scalable web apps with ASP.NET Core, including deployment to Microsoft Azure.
+了解如何使用 ASP.NET Core 创建可缩放的 Web 应用，包括部署到 Microsoft Azure。
                         </p>
                     </header>
                     <section class="journey-step-elements content">
@@ -88,19 +91,19 @@ ms.assetid:
                             <li class="column column-third">
                                 <a href="https://docs.asp.net">
                                     <h3>ASP.NET Core</h3>
-                                    <p>Learn how to build web sites and services using ASP.NET Core.</p>
+                                    <p>了解如何使用 ASP.NET Core 构建网站和服务。</p>
                                 </a>
                             </li>
                             <li class="column column-third">
                                 <a href="https://docs.asp.net/en/latest/data">
-                                    <h3>Accessing Data</h3>
-                                    <p>Learn about Entity Framework for modeling your databases or how to access SQL Server and other databases using .NET.</p>
+                                    <h3>访问数据</h3>
+                                    <p>了解有关用于数据库建模的实体框架或如何使用 .NET 访问 SQL Server 和其他数据库的信息。</p>
                                 </a>
                             </li>
                             <li class="column column-third">
                                 <a href="https://www.visualstudio.com/features/azure-tools-vs">
                                     <h3>Microsoft Azure</h3>
-                                    <p>Get Started developing applications using Microsoft Azure.</p>
+                                    <p>使用 Microsoft Azure 开发应用程序的入门。</p>
                                 </a>
                             </li>
                         </ul>
@@ -110,24 +113,24 @@ ms.assetid:
                     <header class="journey-step-header row">
                         <div class="title column-third">
                             <span class="icon icon-tip"></span>
-                            <p>Mobile</p>
+                            <p>移动电话</p>
                         </div>
                         <p class="description column-two-thirds">
-                            Learn how .NET Core and Xamarin can enable you to develop for iOS and Android using C# or about building applications using the Universal Windows Platform (UWP) for Windows 10 devices.
+了解通过 .NET Core 和 Xamarin 可以如何使用 C# 为 iOS 和 Android 进行开发，或有关使用适用于 Windows 10 设备的通用 Windows 平台 (UWP) 生成应用程序的信息。
                         </p>
                     </header>
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
                                 <a href="https://developer.xamarin.com/guides/ios/getting_started/">
-                                    <h3>Android and iOS apps</h3>
-                                    <p>Learn how to build native iOS and Android applications with Xamarin.</p>
+                                    <h3>Android 和 iOS 应用</h3>
+                                    <p>了解如何使用 Xamarin 生成本机 iOS 和 Android 应用程序。</p>
                                 </a>
                             </li>
                             <li class="column column-third">
                                 <a href="https://developer.microsoft.com/en-us/windows/getstarted">
-                                    <h3>Universal Windows Platform</h3>
-                                    <p>Learn how to build Windows 10 UWP apps, which can run on all Windows 10 devices.</p>
+                                    <h3>通用 Windows 平台</h3>
+                                    <p>了解如何生成可在所有 Windows 10 设备上运行的 Windows 10 UWP 应用。</p>
                                 </a>
                             </li>
                         </ul>
@@ -137,24 +140,24 @@ ms.assetid:
                     <header class="journey-step-header row">
                         <div class="title column-third">
                             <span class="icon icon-tip"></span>
-                            <p>Desktop</p>
+                            <p>桌面</p>
                         </div>
                         <p class="description column-two-thirds">
-                            Learn how you can build desktop applications for Windows and macOS.
+了解如何生成用于 Windows 和 macOS 的桌面应用程序。
                         </p>
                     </header>
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
                                 <a href="https://msdn.microsoft.com/library/54xbah2z.aspx">
-                                    <h3>Windows Desktop</h3>
-                                    <p>Learn how to build Windows desktop applications with Windows Forms or Windows Presentation Framework (WPF).</p>
+                                    <h3>Windows 桌面</h3>
+                                    <p>了解如何使用 Windows 窗体或 Windows Presentation Framework (WPF) 生成 Windows 桌面应用程序。</p>
                                 </a>
                             </li>
                             <li class="column column-third">
                                 <a href="https://developer.xamarin.com/guides/cross-platform/macios/">
-                                    <h3>macOS Desktop</h3>
-                                    <p>Learn how to build macOS desktop applications with Xamarin.</p>
+                                    <h3>macOS 桌面</h3>
+                                    <p>了解如何使用 Xamarin 生成 macOS 桌面应用程序。</p>
                                 </a>
                             </li>
                         </ul>
@@ -164,30 +167,29 @@ ms.assetid:
                     <header class="journey-step-header row">
                         <div class="title column-third">
                             <span class="icon icon-tip"></span>
-                            <p>Gaming</p>
+                            <p>游戏</p>
                         </div>
                         <p class="description column-two-thirds">
-                            Learn how to build games using .NET
-                        </p>
+了解如何使用 .NET 构建游戏 </p>
                     </header>
                     <section class="journey-step-elements content">
                         <ul class="row">
                             <li class="column column-third">
                                 <a href="http://docs.cryengine.com/display/CEPROG/CE%23+Programming">
                                     <h3>CRYENGINE</h3>
-                                    <p>Build games for desktop, console and mobile in C# with CRYENGINE.</p>
+                                    <p>使用 CRYENGINE 在 C# 中构建用于桌面、控制台和手机的游戏。</p>
                                 </a>
                             </li>
                             <li class="column column-third">
                                 <a href="http://www.monogame.net/documentation/?page=main">
                                     <h3>MonoGame</h3>
-                                    <p>Build games for desktop, console and mobile in C# with MonoGame.</p>
+                                    <p>使用 MonoGame 在 C# 中构建用于桌面、控制台和手机的游戏。</p>
                                 </a>
                             </li>
                             <li class="column column-third">
                                 <a href="http://docs.unity3d.com/Manual/index.html">
                                     <h3>Unity</h3>
-                                    <p>Build games for desktop, console and mobile in C# with Unity.</p>
+                                    <p>使用 Unity 在 C# 中构建用于桌面、控制台和手机的游戏。</p>
                                 </a>
                             </li>
                         </ul>
@@ -197,3 +199,9 @@ ms.assetid:
         </section>
     </div>
 </article>
+
+
+
+<!--HONumber=Nov16_HO1-->
+
+
