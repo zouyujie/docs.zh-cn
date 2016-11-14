@@ -11,8 +11,8 @@ ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 03c28597-7e73-46d6-a9c3-f9cb55642739
 translationtype: Human Translation
-ms.sourcegitcommit: 9b3c2cf0bf2d7e93fb643caa55fd41c75ab9f657
-ms.openlocfilehash: 0702c53ddaec7ae391dfa584ae13550c8fa64e6d
+ms.sourcegitcommit: 1cb9e19ec9c9c0764244aeec5f62b812cbd91aef
+ms.openlocfilehash: be658d2c660aff736eceffe23757c13154e78582
 
 ---
  
@@ -95,6 +95,8 @@ npm install -g yo generator-aspnet generator-docker
 ## <a name="creating-the-web-api-application"></a>创建 Web API 应用程序
 
 对于引用点，在容器化应用程序之前，请先在本地运行应用程序。 
+
+完成的应用程序位于 [GitHub 上的 dotnet/core-docs 存储库](https://github.com/dotnet/docs/tree/master/samples/core/docker/building-net-docker-images)。
 
 为应用程序创建目录。
 
@@ -221,6 +223,6 @@ api                 latest               ef17184c8de6        1 hour ago        2
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
