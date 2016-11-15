@@ -11,8 +11,8 @@ ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 815ac74c-4bd9-4a94-a87c-78288b27c0e2
 translationtype: Human Translation
-ms.sourcegitcommit: 149086110d7470d97e1ab3e5969269626290b523
-ms.openlocfilehash: 94bae12916fd20f534916d97157605c6a9aa9202
+ms.sourcegitcommit: 352d4a1fe96b701ebf9e0d60d006cfb9ed77977c
+ms.openlocfilehash: e055475200c55c2e2f890ac63b8b258aeacfae75
 
 ---
 
@@ -30,7 +30,7 @@ ms.openlocfilehash: 94bae12916fd20f534916d97157605c6a9aa9202
 > [!NOTE]
 > 开发人员经常要想方设法地为测试类和方法提供合适的名称。 作为起点，ASP.NET 产品团队会遵循[这些约定](https://github.com/aspnet/Home/wiki/Engineering-guidelines#unit-tests-and-functional-tests)。
 
-编写单元测试时，注意不要在基础结构上意外引入了依赖项。 这些依赖项往往会降低测试速度，使测试更加脆弱，因此应将其保留供集成测试使用。 可以通过遵循 [Explicit Dependencies Principle](http://deviq.com/explicit-dependencies-principle/)（显示依赖项原则）和使用 [Dependency Injection](https://docs.asp.net/en/latest/fundamentals/dependency-injection.html)（依赖项注入）从框架中请求依赖项，以此避免应用程序代码中的这些隐藏依赖项。 还可以将单元测试保留在单独的项目中，与集成测试相分隔，并确保单元测试项目没有引用或依赖于基础结构包。
+编写单元测试时，注意不要在基础结构上意外引入了依赖项。 这些依赖项往往会降低测试速度，使测试更加脆弱，因此应将其保留供集成测试使用。 可以通过遵循 [Explicit Dependencies Principle](http://deviq.com/explicit-dependencies-principle/)（显示依赖项原则）和使用 [Dependency Injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection)（依赖项注入）从框架中请求依赖项，以此避免应用程序代码中的这些隐藏依赖项。 还可以将单元测试保留在单独的项目中，与集成测试相分隔，并确保单元测试项目没有引用或依赖于基础结构包。
 
 了解有关 .NET Core 项目中的单元测试的详细信息：
 
@@ -40,6 +40,6 @@ XUnit 团队编写了说明[如何将 xunit 与 .NET Core 和 Visual Studio 配�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
