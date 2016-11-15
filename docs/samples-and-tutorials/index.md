@@ -99,6 +99,6 @@ ms.openlocfilehash: 8c3a58f97c9cb70e168a055cd874ee10ebb08c54
 本教程演示如何在 Windows 容器中部署现有控制台应用程序。 要生成的代码最终版本位于 [GitHub 上的 core-docs 存储库中](https://github.com/dotnet/docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator)。
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

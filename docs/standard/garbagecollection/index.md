@@ -66,6 +66,6 @@ GC 有用于大型对象的附加堆，称为大型对象堆 (LOH)。 该堆保�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
