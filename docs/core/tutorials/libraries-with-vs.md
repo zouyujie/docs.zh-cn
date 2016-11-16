@@ -16,7 +16,7 @@ ms.openlocfilehash: dfb2fa67b59d3da7ce8afc6dd1065d65bfb0e4d6
 
 ---
 
-# <a name="-developing-net-core-libraries-using-visual-studio"></a>������ 使用 Visual Studio 开发 .NET Core 库
+# <a name="-developing-net-core-libraries-using-visual-studio"></a>使用 Visual Studio 开发 .NET Core 库
 
 > **注意**
 > 

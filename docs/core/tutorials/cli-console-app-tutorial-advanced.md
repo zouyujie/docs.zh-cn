@@ -16,7 +16,7 @@ ms.openlocfilehash: 62c70ffdd25af909f110b3173231d436060ba383
 
 ---
 
-# <a name="-writing-net-core-console-apps-using-the-cli-tools-an-advanced-stepbystep-guide"></a>������ 使用 CLI 工具编写 .NET Core 控制台应用：高级分步指南
+# <a name="-writing-net-core-console-apps-using-the-cli-tools-an-advanced-stepbystep-guide"></a>使用 CLI 工具编写 .NET Core 控制台应用：高级分步指南
 
 > **注意**
 > 

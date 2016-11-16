@@ -16,7 +16,7 @@ ms.openlocfilehash: 713bd9a7ead18d6ccf298ad781b0d95c508fb9b0
 
 ---
 
-# <a name="-net-core-servicing"></a>������ .NET Core 服务
+# <a name="-net-core-servicing"></a>.NET Core 服务
 
 > **注意**
 > 
