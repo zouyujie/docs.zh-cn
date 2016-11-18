@@ -13,7 +13,7 @@ ms.devlang: dotnet
 ms.assetid: b5482a1d-7bdc-40fe-aa45-10df930ceb5b
 translationtype: Human Translation
 ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 7d7f869b07d7cf00ffa69da117aa199d1b6e8f20
+ms.openlocfilehash: 35098ce238af88229fddf2adc7cf762848781ebc
 
 ---
 
@@ -535,6 +535,6 @@ virtual | 方法、属性和事件 | 此方法可以由派生类型实现，并�
 [.NET Framework 中的类型转换](type-conversion.md)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

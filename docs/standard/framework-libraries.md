@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 7b77b6c1-8367-4602-bff3-91e4c05ac643
 translationtype: Human Translation
 ms.sourcegitcommit: 093b852fe1ed2307ebce914381fe47388b435c95
-ms.openlocfilehash: 7283ed099cefa4b0e137869724f8e87dda0d451a
+ms.openlocfilehash: c11f89522a97d60f5ffb8588f4500b64b5d2d6db
 
 ---
 
@@ -66,6 +66,6 @@ BCL 提供最基本的类型和实用工具功能，是其他所有 .NET 类库�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
