@@ -493,8 +493,7 @@ End Module
 10 | `(((?'Open'<)` | 匹配“<mno>”中的左尖括号并将它分配给 `Open` 组。 其 `Group.Captures` 集合现在具有单个值“<”。
 11 | `[^<>]*` | 与“mno”匹配。
 12 | `)+` | “<mno”是第二个捕获组的值。 输入字符串中的下一个字符是左尖括号，因此正则表达式引擎会循环回到 `(?'Open'<)[^<>]*)` 子模式。
-13 | `(((?'Open'<)` | 匹配“<xyz>”中的左尖括号并将它分配给 `Open` 组。 
-          `Group.Captures` 组的 `Open` 集合现在包括两个捕获：“<mno>”中的左尖括号和“<xyz>”中的左尖括号。
+13 | `(((?'Open'<)` | 匹配“<xyz>”中的左尖括号并将它分配给 `Open` 组。 `Group.Captures` 组的 `Open` 集合现在包括两个捕获：“<mno>”中的左尖括号和“<xyz>”中的左尖括号。
 14 | `[^<>]*` | 与“xyz”匹配。
 15 | `)+` | “<xyz”是第二个捕获组的值。 输入字符串中的下一个字符不是左尖括号，因此正则表达式引擎不会循环回到 `(?'Open'<)[^<>]*)` 子模式。
 16 | `((?'Close-Open'>)` | 匹配“<xyz>”中的右尖括号。 “xyz”将 `Open` 组合右尖括号之间的子字符串分配给 `Close` 组，并删除 `Open` 组的当前值。 前一个捕获的值（“<mno>”中的左尖括号）成为 `Open` 组的当前值。 `Open` 组的 `Captures` 集合现在包括单个捕获，即“<xyz>”中的左尖括号。
@@ -614,7 +613,7 @@ Next
 '    'decidedly ' found at index 9. 
 ```
 
-## <a name="zerowidth-positive-lookahead-assertions"></a>零宽度正预测先行断言
+## <a name="zero-width-positive-lookahead-assertions"></a>零宽度正预测先行断言
 
 以下分组构造定义零宽度正预测先行断言：
 
@@ -693,7 +692,7 @@ End Module
 `\w+` | 匹配一个或多个单词字符。
 `(?=\sis\b)` | 确定单词字符是否后接空白字符和字符串“is”，其在单词边界处结束。 如果如此，则匹配成功。
 
-## <a name="zerowidth-negative-lookahead-assertions"></a>零宽度负预测先行断言
+## <a name="zero-width-negative-lookahead-assertions"></a>零宽度负预测先行断言
 
 以下分组构造定义零宽度负预测先行断言：
 
@@ -807,7 +806,7 @@ End Module
 `\b` | 在单词边界处结束匹配。
 `\p{P})` | 如果下个字符不是一个标点符号（如句点或逗号），则匹配成功。
  
-## <a name="zerowidth-positive-lookbehind-assertions"></a>零宽度正回顾后发断言
+## <a name="zero-width-positive-lookbehind-assertions"></a>零宽度正回顾后发断言
 
 以下分组构造定义零宽度正回顾后发断言：
 
@@ -867,7 +866,7 @@ End Module
  
 零宽度正回顾后发断言还用于在捕获组中的最后一个或多个字符不得为与该捕获组的正则表达式模式相匹配的字符的子集时限制回溯。 例如，如果组捕获所有的连续单词字符，可以使用零宽度正回顾后发断言要求最后一个字符时按字母顺序的。 
 
-## <a name="zerowidth-negative-lookbehind-assertions"></a>零宽度负回顾后发断言
+## <a name="zero-width-negative-lookbehind-assertions"></a>零宽度负回顾后发断言
 
 以下组构造定义零宽度负回顾后发断言：
 
