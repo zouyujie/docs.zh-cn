@@ -11,12 +11,12 @@ ms.technology: dotnet-bcl
 ms.devlang: dotnet
 ms.assetid: a27b2ae4-154e-4b2b-b221-0c4c05185274
 translationtype: Human Translation
-ms.sourcegitcommit: 6b9ae37f4053d292c21b02f9e7f93ccd32a78976
-ms.openlocfilehash: 9228135d6d4f60ef005375712b1c549423b72803
+ms.sourcegitcommit: 38561c2d25c6950d166bf706f4306c867e683b04
+ms.openlocfilehash: cd7442b304ff28b02826a84684b594dfdd0d9873
 
 ---
 
-# <a name="net-framework"></a>.NET Framework
+# <a name="net-framework-on-docker-guide"></a>Docker 上的 .NET Framework 指南
 
 .NET Framework 是用于生成面向 Windows、Windows Phone、Windows Server 和 Microsoft Azure 的应用程序的开发平台。 它包括公共语言运行时 (CLR) 和 .NET Framework 类库（包含支持多种技术的类、接口和值类型）。 .NET Framework 提供托管执行环境、简化的开发和部署以及多种编程语言的集成，包括 Visual Basic、Visual C# 和 F#。
 
@@ -25,6 +25,6 @@ ms.openlocfilehash: 9228135d6d4f60ef005375712b1c549423b72803
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

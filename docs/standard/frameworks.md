@@ -1,6 +1,6 @@
 ---
-title: "框架"
-description: "框架"
+title: "框架和目标"
+description: "解释编写 .NET 代码时的框架目标概念。"
 keywords: .NET, .NET Core
 author: richlander
 manager: wpickett
@@ -11,12 +11,12 @@ ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 6ef56a2e-593d-497b-925a-1e25bb6df2e6
 translationtype: Human Translation
-ms.sourcegitcommit: 246d381246e78a27b7097d6b8126f421b52014de
-ms.openlocfilehash: 5b87ddfcfc66ebc05e2e559517180f93813a0806
+ms.sourcegitcommit: 38561c2d25c6950d166bf706f4306c867e683b04
+ms.openlocfilehash: 82ba6f4abe200dc48158eac1ad3e3609feeda2c9
 
 ---
 
-# <a name="frameworks"></a>框架
+# <a name="frameworks-and-targets"></a>框架和目标
 
 .NET 生态系统使用框架的概念。 框架定义了可用于指定特定平台的目标的 API。 .NET Framework 4.6 就是这样一种平台。 在 Visual Studio、其他 IDE 和编辑器中使用框架可以提供正确的 API 集。 NuGet 也可以通过框架来生成和使用 NuGet 包，确保针对目标框架生成并使用适当的包（和基础资产）。 可将框架看作 .NET 生态系统中的关键货币之一。 推出这一概念是为了确保准确性，帮助你以及你的客户避免遇到 @System.MissingMethodException 和类似异常。
 
@@ -61,6 +61,6 @@ ms.openlocfilehash: 5b87ddfcfc66ebc05e2e559517180f93813a0806
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

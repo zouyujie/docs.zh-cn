@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 3af62252-1dfa-4336-8d2f-5cfdb57d7724
 translationtype: Human Translation
 ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: ca63b25bb5f5e98167aaa8b74a7204fcd77b3523
+ms.openlocfilehash: 7a3f972debee1e90deda57e5604214ff4756da4a
 
 ---
 
@@ -33,13 +33,13 @@ ms.openlocfilehash: ca63b25bb5f5e98167aaa8b74a7204fcd77b3523
   * 不允许在同一解决方案文件中不同的项目类型之间共享 .NET Core 库。 若要支持此操作，建议[创建可移植类库](#support-pcl)。
   * 不允许生成项目或加载 MSBuild 目标和任务所支持的修改。 若要支持此操作，建议[创建可移植类库](#support-pcl)。
 
-* [**将现有项目和新的 .NET Core 项目相分隔**][option-xproj-folder]
+* <a name="support-vs"></a>[**将现有项目和新的 .NET Core 项目分离**][option-xproj-folder]
   
   *此方案的好处：*
   * 继续支持现有项目的开发，而无需为没有安装 Visual Studio 2015 的开发人员/参与者进行升级。
   * 减少现有项目中出现新 bug 的可能性，因为这些项目中不需要进行任何代码改动。
 
-* [**保留现有项目并创建针对 .NET Core 的可移植类库 (PCL)**][option-pcl]
+* <a name="support-pcl"></a>[**保留现有项目并创建面向 .NET Core 的可移植类库 (PCL)**][option-pcl]
 
   *此方案的好处：*
   * 引用同一解决方案中针对完整 .NET Framework 的桌面和/或 Web 项目中的 .NET Core 库。
@@ -58,7 +58,7 @@ ms.openlocfilehash: ca63b25bb5f5e98167aaa8b74a7204fcd77b3523
 
 根据以下所述的现有项目的约束和复杂性，有几种不同的方法可为此存储库添加对 .NET Core 的支持。
 
-## <a name="replace-existing-projects-with-a-multitargeted-net-core-project-xproj"></a>将现有项目替换为多目标的 .NET Core 项目 (xproj)
+## <a name="replace-existing-projects-with-a-multi-targeted-net-core-project-xproj"></a>将现有项目替换为多目标的 .NET Core 项目 (xproj)
 
 可以重新组织存储库，以便删除任何现有的 `*.csproj` 文件并创建以多个框架为目标的单一 `*.xproj` 文件。  这是一项不错的选择，因为单个项目可以编译不同的框架。  它还可以处理每个目标框架的不同编译选项、 依赖项等等。
 
@@ -125,6 +125,6 @@ ms.openlocfilehash: ca63b25bb5f5e98167aaa8b74a7204fcd77b3523
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

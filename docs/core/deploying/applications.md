@@ -12,11 +12,11 @@ ms.devlang: dotnet
 ms.assetid: 1db00fb1-d947-480d-8d7d-7152e67b0585
 translationtype: Human Translation
 ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: df8a31244a4cf1e86df58132402a329320900dbd
+ms.openlocfilehash: e3825b880ef73e176fb23618d9814e2d54f692c8
 
 ---
 
-# <a name="-deploying-net-core-applications"></a> 部署 .NET Core 应用程序
+# <a name="-deploying-net-core-applications"></a>🔧 部署 .NET Core 应用程序
 
 > **注意**
 > 
@@ -28,6 +28,6 @@ ms.openlocfilehash: df8a31244a4cf1e86df58132402a329320900dbd
 >
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
