@@ -13,7 +13,7 @@ ms.devlang: dotnet
 ms.assetid: 2db2c3e6-953e-4913-8168-d707c437f2df
 translationtype: Human Translation
 ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 21672e28d0e76b98f6dac698096fccb2ce4edd03
+ms.openlocfilehash: a2a9fe356a0b2e9cf9415714bc01b77ea86229fc
 
 ---
 
@@ -215,7 +215,7 @@ End If
  
 因为 [RegexOptions.None](xref:System.Text.RegularExpressions.RegexOptions.None) 选项表示正则表达式引擎的默认行为，因此它很少显式地在方法调用中指定。 而改为调用构造函数或静态模式匹配的方法，其中不包含 options 参数。
 
-## <a name="caseinsensitive-matching"></a>不区分大小写的匹配
+## <a name="case-insensitive-matching"></a>不区分大小写的匹配
 
 [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) 选项或 **i** 内联选项提供了不区分大小写匹配。 默认情况下，使用当前区域性的大小写约定。
 
@@ -543,7 +543,7 @@ End Class
 '    Joe: 164
 ```
 
-## <a name="singleline-mode"></a>单行模式
+## <a name="single-line-mode"></a>单行模式
 
 [RegexOptions.Singleline](xref:System.Text.RegularExpressions.RegexOptions.Singleline) 选项或 s 内联选项导致正则表达式引擎将输入字符串视为由单行组成。 它通过更改句点 (**.**) 语言元素的行为，使其与每个字符匹配，而不是与除换行符 **\n** 或 \u000A 之外的每个字符匹配来执行此操作。
 
@@ -1233,7 +1233,7 @@ End Module
 '       Instead, it is a nonsensical paragraph.
 ```
 
-## <a name="righttoleft-mode"></a>从右到左模式
+## <a name="right-to-left-mode"></a>从右到左模式
 
 默认情况下，正则表达式引擎从左向右进行搜索。 可通过使用 [RegexOptions.RightToLeft](xref:System.Text.RegularExpressions.RegexOptions.RightToLeft) 选项反转搜索方向。 搜索在字符串的最后一个字符位置自动开始。 对于包括起始位置参数的模式匹配方法，例如 [Regex.Match(String, Int32)](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.Int32))，起始位置是最右边字符位置（即搜索开始位置）的索引。 
 
@@ -1667,6 +1667,6 @@ Thread.CurrentThread.CurrentCulture = defaultCulture
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
