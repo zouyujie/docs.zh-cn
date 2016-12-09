@@ -3,11 +3,11 @@ title: "如何：向集合添加限制和阻塞功能"
 description: "如何：向集合添加限制和阻塞功能"
 keywords: ".NET、.NET Core"
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 678d5df2-af63-418f-8b2a-e0be7ea2d77b
 translationtype: Human Translation

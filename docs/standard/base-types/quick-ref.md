@@ -4,11 +4,10 @@ description: "正则表达式语言 - 快速参考"
 keywords: ".NET、.NET Core"
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/28/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 8c5dee8c-7bc7-4e6e-aff1-986965c4d98e
 translationtype: Human Translation
@@ -17,7 +16,7 @@ ms.openlocfilehash: f4319de43043605da63f469b59a5dfdb28badc8e
 
 ---
 
-# <a name="regular-expression-language-quick-reference"></a>正则表达式语言 - 快速参考
+# <a name="regular-expression-language---quick-reference"></a>正则表达式语言 - 快速参考
 
 正则表达式是正则表达式引擎尝试匹配输入文本的一种模式。 模式由一个或多个字符文本、运算符或构造组成。 有关简要介绍，请参见 [.NET 中的正则表达式](regular-expressions.md)。 
 

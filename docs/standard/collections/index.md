@@ -3,11 +3,11 @@ title: "集合和数据结构"
 description: "集合和数据结构"
 keywords: ".NET、.NET Core"
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 9e70255a-c02a-4046-86b7-10c84bab2d38
 translationtype: Human Translation

@@ -3,11 +3,11 @@ title: ".NET 程序集文件格式"
 description: ".NET 程序集文件格式"
 keywords: ".NET、.NET Core"
 author: richlander
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 6520323e-ff28-4c8a-ba80-e64a413199e6
 translationtype: Human Translation

@@ -3,11 +3,11 @@ title: "如何：访问预定义 UTC 和本地时区对象"
 description: "如何访问预定义 UTC 和本地时区对象"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/11/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 13454d47-d957-421b-9ecd-940058b8835e
 translationtype: Human Translation

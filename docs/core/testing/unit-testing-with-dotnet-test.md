@@ -3,11 +3,10 @@ title: "在 .NET Core 中使用 dotnet 测试的单元测试"
 description: "在 .NET Core 中使用 dotnet 测试的单元测试"
 keywords: .NET, .NET Core
 author: ardalis
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: bdcdb812-6f13-4f20-9e90-0c0977937142
 translationtype: Human Translation

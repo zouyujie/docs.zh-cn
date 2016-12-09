@@ -3,11 +3,11 @@ title: "创建新字符串"
 description: "创建新字符串"
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 639397c7-e694-43e0-845b-1681c62bd9fd
 translationtype: Human Translation

@@ -3,11 +3,11 @@ title: ".NET 中的正则表达式"
 description: ".NET 中的正则表达式"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: d1a640cf-09ca-48f7-800c-a627a6d549c9
 translationtype: Human Translation
@@ -150,7 +150,7 @@ End Module
 
 请注意，输入字符串包括子字符串“this? This”。 但是，由于插入标点符号，该子字符串不被标识为重复。
 
-### <a name="example-3-dynamically-building-a-culturesensitive-regular-expression"></a>示例 3：动态生成区分区域性的正则表达式
+### <a name="example-3-dynamically-building-a-culture-sensitive-regular-expression"></a>示例 3：动态生成区分区域性的正则表达式
 
 下面的示例演示如何将正则表达式的功能与 .NET 的全球化功能所提供的灵活性结合在一起。 它使用 [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) 对象确定系统的当前区域性设置中货币值的格式。 然后使用该信息动态构造从文本提取货币值的正则表达式。 对于每个匹配，它提取仅包含数字字符串的子组，将其转换为 [Decimal](xref:System.Decimal) 值，然后计算累计值。 
 

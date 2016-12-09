@@ -3,12 +3,11 @@ title: ".NET 体系结构组件"
 description: "描述主要的 .NET 体系结构组件，例如 .NET 标准库、.NET 运行时和工具。"
 keywords: ".NET, .NET 标准库, .NET Standard, .NET Core, .NET Framework, Xamarin, MSBuild, C#, F#, VB, 编译器"
 author: cartermp
-manager: wpickett
-ms.author: cartermp
+ms.author: mairaw
 ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net
-ms.technology: .net-core-technologies
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
 translationtype: Human Translation

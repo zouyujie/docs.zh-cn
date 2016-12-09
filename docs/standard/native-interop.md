@@ -3,11 +3,11 @@ title: "本机互操作性"
 description: "本机互操作性"
 keywords: .NET, .NET Core
 author: blackdwarf
-manager: wpickett
+ms.author: ronpet
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 3c357112-35fb-44ba-a07b-6a1c140370ac
 translationtype: Human Translation

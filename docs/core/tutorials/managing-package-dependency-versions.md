@@ -3,11 +3,10 @@ title: "如何管理 .NET Core 1.0 的包依赖项版本"
 description: "如何管理 .NET Core 1.0 的包依赖项版本"
 keywords: .NET, .NET Core
 author: cartermp
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 4424a947-bdf9-4775-8d48-dc350a4e0aee
 translationtype: Human Translation

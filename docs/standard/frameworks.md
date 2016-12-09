@@ -3,11 +3,11 @@ title: "框架和目标"
 description: "解释编写 .NET 代码时的框架目标概念。"
 keywords: .NET, .NET Core
 author: richlander
-manager: wpickett
+ms.author: mairaw
 ms.date: 09/19/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 6ef56a2e-593d-497b-925a-1e25bb6df2e6
 translationtype: Human Translation

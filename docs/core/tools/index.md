@@ -4,11 +4,10 @@ description: "命令行接口 (CLI) 的定义及其主要功能的概述"
 keywords: "CLI, CLI 工具, .NET, .NET Core"
 author: blackdwarf
 ms.author: mairaw
-manager: wpickett
 ms.date: 10/06/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: b70e9ac0-c8be-49f7-9332-95ab93e0e7bc
 translationtype: Human Translation
@@ -17,7 +16,7 @@ ms.openlocfilehash: 96b7c02493d94b3c1d5fd112ca84ed25c35c4f90
 
 ---
 
-# <a name="net-core-commandline-interface-tools"></a>.NET Core 命令行接口工具
+# <a name="net-core-command-line-interface-tools"></a>.NET Core 命令行接口工具
 
 .NET Core 命令行接口 (CLI) 工具是用于开发 .NET Core 应用程序的新型基础性跨平台工具链。 “基础性”在于它是可以在其中生成其他更高级别工具（如集成开发环境 (IDE)、编辑器和生成 orchestrator）的主层。 
 

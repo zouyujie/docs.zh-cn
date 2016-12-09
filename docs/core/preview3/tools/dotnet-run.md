@@ -2,12 +2,12 @@
 title: "dotnet-run 命令 | .NET Core SDK"
 description: "dotnet-run 命令为从源代码运行应用程序提供了一个方便的选项。"
 keywords: "dotnet-run, CLI, CLI 命令, .NET Core"
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/07/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 495ff50b-cb30-4d30-8f20-beb3d5e7c31f
 translationtype: Human Translation

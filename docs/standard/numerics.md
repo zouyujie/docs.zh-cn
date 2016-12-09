@@ -3,11 +3,11 @@ title: ".NET Core 中的数字"
 description: ".NET Core 中的数字"
 keywords: .NET, .NET Core
 author: rpetrusha
-manager: wpickett
+ms.author: ronpet
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 6b8696be-55f5-4b66-98f3-69ff827c2c49
 translationtype: Human Translation
@@ -39,7 +39,7 @@ ms.openlocfilehash: 2930bf6879df3cd16cbd0221ae6dfcba9b41de2e
      
 请注意无符号整数类型不符合 CLS。 有关详细信息，请参阅 [.NET 通用类型系统和公共语言规范](common-type-system.md)。
 
-## <a name="floatingpoint-types"></a>浮点类型
+## <a name="floating-point-types"></a>浮点类型
 
 .NET Core 包括三个基元浮点类型，如下表所列。 
 
@@ -61,7 +61,7 @@ ms.openlocfilehash: 2930bf6879df3cd16cbd0221ae6dfcba9b41de2e
 
 [System.Numerics.Complex](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Complex) 类型表示复数，即带实数部分和虚数部分的数字。 此类型支持一套标准的算术、比较、相等、显式转换和隐式转换运算符，以及数学、代数和三角方法。 
 
-## <a name="simdenabled-vector-types"></a>启用了 SIMD 的矢量类型
+## <a name="simd-enabled-vector-types"></a>启用了 SIMD 的矢量类型
 
 `System.Numerics` 命名空间包含一组 .NET Core 的启用了 SIMD 的矢量类型。 SIMD 允许在硬件级别并行化某些操作，从而使通过向量执行计算的数学应用、科学应用和图形应用产生大幅性能提升。 
 

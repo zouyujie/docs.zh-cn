@@ -2,12 +2,12 @@
 title: "dotnet-test 命令 | .NET Core SDK"
 description: "“dotnet test”命令用于执行给定项目中的单元测试。"
 keywords: "dotnet-test, CLI, CLI 命令, .NET Core"
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/07/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 3a0fa917-eb0a-4d7e-9217-d06e65455675
 translationtype: Human Translation

@@ -3,11 +3,10 @@ title: "在 Windows 上入门 .NET Core"
 description: "使用 Visual Studio 2015 在 Windows 上入门 .NET Core"
 keywords: .NET, .NET Core
 author: bleroy
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: d743134a-08a3-4ff6-aab7-49f71f0568c3
 translationtype: Human Translation

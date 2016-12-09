@@ -3,11 +3,11 @@ title: "如何：在 ConcurrentDictionary 中添加和移除项"
 description: "如何：在 ConcurrentDictionary 中添加和移除项"
 keywords: ".NET、.NET Core"
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: b7c04a5f-a8e6-42ae-8c84-0e1ae18896eb
 translationtype: Human Translation

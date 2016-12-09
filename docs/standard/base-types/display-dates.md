@@ -3,11 +3,11 @@ title: "如何：用非公历日历显示日期"
 description: "如何用非公历日历显示日期"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 93f06e1d-544b-4ccc-a0b2-95cd674852cb
 translationtype: Human Translation
@@ -16,7 +16,7 @@ ms.openlocfilehash: 85c9d450be48c553ea3a1f1a0f16c298941fa325
 
 ---
 
-# <a name="how-to-display-dates-in-nongregorian-calendars"></a>如何：用非公历日历显示日期
+# <a name="how-to-display-dates-in-non-gregorian-calendars"></a>如何：用非公历日历显示日期
 
 [DateTime](xref:System.DateTime) 和 [DateTimeOffset](xref:System.DateTimeOffset) 类型使用公历日历作为其默认日历。 这意味着，调用日期和时间值的 `ToString` 方法会用公历日历显示该日期和时间的字符串表示形式，即使该日期和时间是使用其他日历创建的。 这在下面的示例中进行了演示，该示例通过两种不同方式来使用波斯日历创建日期和时间值，但是在调用 [ToString](xref:System.DateTime.ToString) 方法时仍用公历日历显示这些日期和时间值。 此示例对于用特定日历显示日期，反映了两种常用但不正确的方法。
 

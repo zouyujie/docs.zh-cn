@@ -4,11 +4,10 @@ description: "格式设置类型"
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: cf497639-9f91-45cb-836f-998d1cea2f43
 translationtype: Human Translation
@@ -666,7 +665,7 @@ End Module
 [枚举格式字符串](enumeration-format.md) | 描述用于创建枚举值的字符串表示形式的标准格式字符串。
 [Guid.ToString(String)](xref:System.Guid.ToString(System.String)) | 描述 [Guid](xref:System.Guid) 值的标准格式字符串。
 
-## <a name="culturesensitive-formatting-with-format-providers-and-the-iformatprovider-interface"></a>使用格式提供程序和 IFormatProvider 接口的区分区域性的格式设置
+## <a name="culture-sensitive-formatting-with-format-providers-and-the-iformatprovider-interface"></a>使用格式提供程序和 IFormatProvider 接口的区分区域性的格式设置
 
 尽管格式说明符允许你自定义对象的格式设置，但是生成有意义的对象字符串表示形式通常需要附加格式设置信息。 例如，通过使用“C”标准格式字符串或自定义格式字符串（如“$ #,#.00”）来将数字格式设置为货币值至少需要提供有关正确的货币符号、组分隔符和小数点分隔符的信息，以便包括在带有格式的字符串中。 在 .NET 中，此附加格式设置信息通过 [IFormatProvider](xref:System.IFormatProvider) 接口来提供，该接口作为数字类型以及日期和时间类型的 `ToString` 方法的一个或多个重载的参数提供。 [IFormatProvider](xref:System.IFormatProvider) 实现在 .NET Framework 中用于支持区域性特定的格式设置。 下面的示例演示在使用三个代表不同区域的 [IFormatProvider](xref:System.IFormatProvider) 对象设置某个对象的格式时，该对象的字符串表示形式将如何变化。
 
@@ -730,7 +729,7 @@ End Module
 
 你还可以实现自己的格式提供程序来替换上述任意一个类。 但是，如果你的实现的 `GetFormat` 方法必须向 `ToString` 方法提供格式设置信息，则它必须返回上表中列出的相应类型的对象。
 
-### <a name="culturesensitive-formatting-of-numeric-values"></a>数值的区分区域性的格式设置
+### <a name="culture-sensitive-formatting-of-numeric-values"></a>数值的区分区域性的格式设置
 
 默认情况下，数值的格式设置是区分区域性的。 如果在调用格式设置方法时不指定区域性，则将使用当前线程区域性的格式设置约定。 下面的示例演示了这一点，其中对当前线程区域性进行了四次更改，随后调用了 [Decimal.ToString(String)](xref:System.Decimal.ToString(System.String)) 方法。 每次更改后，结果字符串均反映当前区域性的格式设置约定。 这是因为 `ToString` 和 `ToString(String)` 方法会包装对每个数值类型的 `ToString(String, IFormatProvider)` 方法的调用。 
 
@@ -856,7 +855,7 @@ End Module
 '       fr:    1 043,630
 ```
 
-### <a name="culturesensitive-formatting-of-date-and-time-values"></a>日期和时间值的区分区域性的格式设置
+### <a name="culture-sensitive-formatting-of-date-and-time-values"></a>日期和时间值的区分区域性的格式设置
 
 默认情况下，日期和时间值的格式设置是区分区域性的。 如果在调用格式设置方法时不指定区域性，则将使用当前线程区域性的格式设置约定。 下面的示例演示了这一点，其中对当前线程区域性进行了四次更改，随后调用了 [DateTime.ToString(String)](xref:System.DateTime.ToString(System.String)) 方法。 每次更改后，结果字符串均反映当前区域性的格式设置约定。 这是因为 [DateTime.ToString()](xref:System.DateTime.ToString)、[DateTime.ToString(String)](xref:System.DateTime.ToString(System.String))、[DateTimeOffset.ToString()](xref:System.DateTimeOffset.ToString(System.String)) 和 [DateTimeOffset.ToString(String)](xref:System.DateTimeOffset.ToString(System.String)) 方法会包装对 [DateTime.ToString(String, IFormatProvider)](xref:System.DateTime.ToString(System.String,System.IFormatProvider)) 和 [DateTimeOffset.ToString(String, IFormatProvider)](xref:System.DateTimeOffset.ToString(System.String,System.IFormatProvider)) 方法的调用。
 

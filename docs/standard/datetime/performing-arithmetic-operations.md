@@ -3,11 +3,11 @@ title: "使用日期和时间执行算术运算"
 description: "使用日期和时间执行算术运算"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/16/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 589ac5ec-8365-4a0d-bc38-72183718110c
 translationtype: Human Translation

@@ -3,11 +3,11 @@ title: "在 .NET 中分析日期和时间字符串"
 description: "在 .NET 中分析日期和时间字符串"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: e61514cd-5329-4eb8-b122-482fffb54ab7
 translationtype: Human Translation

@@ -2,12 +2,12 @@
 title: "dotnet 命令 | .NET Core SDK"
 description: "了解 dotnet 命令（.NET Core CLI 工具的通用驱动程序）及其用法。"
 keywords: "dotnet, CLI, CLI 命令, .NET Core"
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/07/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 93015521-2127-4fe9-8fce-ca79bcc4ff49
 translationtype: Human Translation

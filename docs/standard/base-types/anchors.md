@@ -4,11 +4,10 @@ description: "正则表达式中的定位点"
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/28/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 96dff1be-3005-4ba5-af1b-323182a26085
 translationtype: Human Translation
@@ -835,7 +834,7 @@ End Module
 `\w*` | 匹配零个或多个单词字符。
 `\b` | 在单词边界处结束匹配。
  
-## <a name="nonword-boundary-b"></a>非字边界：\B
+## <a name="non-word-boundary-b"></a>非字边界：\B
 
 **\B** 定位符指定匹配不得出现在单词边界上。 它与 **\b** 定位点截然相反。
 

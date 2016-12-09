@@ -3,11 +3,10 @@ title: "在 Windows 上，使用 Visual Studio 2017 生成完整的 .NET Core �
 description: "在 Windows 上，使用 Visual Studio 2017 生成完整的 .NET Core 解决方案"
 keywords: .NET, .NET Core
 author: bleroy
-manager: wpickett
+ms.author: mairaw
 ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: d743134a-08a3-4ff6-aab7-49f71f0568c3
 translationtype: Human Translation
@@ -26,9 +25,9 @@ Visual Studio 2017 提供用于开发 .NET Core 应用程序的功能全面的�
 
 请按照[先决条件页](../windows-prerequisites.md)上的说明更新环境。
 
-# <a name="a-solution-using-only-net-core-projects"></a>仅使用 .NET Core 项目的解决方案
+## <a name="a-solution-using-only-net-core-projects"></a>仅使用 .NET Core 项目的解决方案
 
-## <a name="writing-the-library"></a>编写库
+### <a name="writing-the-library"></a>编写库
 
 1. 在 Visual Studio 中，依次选择“文件”、“新建”、“项目”。 在“新建项目”对话框中，展开“Visual C#”节点并选择“.NET Core”节点，然后选择“类库 (.NET Standard)”。 
 

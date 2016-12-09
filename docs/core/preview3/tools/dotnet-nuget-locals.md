@@ -4,11 +4,10 @@ description: "dotnet-nuget-locals 命令清除或列出本地 NuGet 资源，例
 keywords: "dotnet-nuget-locals, CLI, CLI 命令, .NET Core"
 author: karann-msft
 ms.author: mairaw
-manager: wpickett
 ms.date: 11/15/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 8440229e-317e-4dc1-9463-cba5fdb12c3b
 translationtype: Human Translation

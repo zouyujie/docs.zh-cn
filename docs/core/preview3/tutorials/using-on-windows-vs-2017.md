@@ -3,11 +3,10 @@ title: "使用 Visual Studio 2017 在 Windows 上实现 .NET Core 入门"
 description: "使用 Visual Studio 2017 在 Windows 上实现 .NET Core 入门"
 keywords: .NET, .NET Core
 author: bleroy
-manager: wpickett
+ms.author: mairaw
 ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: d743134a-08a3-4ff6-aab7-49f71f0568c3
 translationtype: Human Translation

@@ -3,11 +3,11 @@ title: "查找本地系统上定义的时区"
 description: "查找本地系统上定义的时区"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/15/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 3a6ee323-f3cf-486d-aa0c-103931f1eba9
 translationtype: Human Translation

@@ -3,11 +3,11 @@ title: "如何：让用户解决不明确时间"
 description: "如何让用户解决不明确时间"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/15/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: d6858a5c-02ab-4367-9e08-fa22c051c38d
 translationtype: Human Translation

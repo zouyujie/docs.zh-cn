@@ -2,12 +2,12 @@
 title: "dotnet-pack 命令 | .NET Core SDK"
 description: "dotnet-pack 命令可为 .NET Core 项目创建 NuGet 包。"
 keywords: "dotnet-pack, CLI, CLI 命令, .NET Core"
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 8b4b8cef-f56c-4a10-aa01-fde8bfaae53e
 translationtype: Human Translation

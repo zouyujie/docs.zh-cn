@@ -3,11 +3,11 @@ title: "在 .NET 中处理和引发异常"
 description: "了解如何在 .NET 中使用异常"
 keywords: ".NET、.NET Core"
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bf116df6-0042-46bf-be13-b69864816210
 translationtype: Human Translation

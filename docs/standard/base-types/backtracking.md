@@ -4,11 +4,10 @@ description: "正则表达式中的回溯"
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/28/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 8a3e6298-26b7-4c99-bd97-c9892f6c9418
 translationtype: Human Translation
@@ -236,7 +235,7 @@ End Module
 
 通过回溯可以创建强大、灵活的正则表达式。 但如上一节所示，回溯在提供这些优点的同时，可能也会使性能差的无法接受。 若要防止过度回溯，则应在实例化 [Regex](xref:System.Text.RegularExpressions.Regex) 对象或调用静态正则表达式匹配方法时定义超时间隔。 下一节中将对此进行讨论。 此外，.NET Core 支持以下三个正则表达式语言元素，这些元素限制或禁止回溯，并支持对性能没有负面影响或负面影响很小的复杂正则表达式：[非回溯子表达式](#nonbacktracking-subexpression)、[回顾断言](#lookbehind-assertions)和[预测先行断言](#lookahead-assertions)。 有关每个语言元素的详细信息，请参阅[正则表达式中的分组构造](grouping.md)。
 
-### <a name="defining-a-timeout-interval"></a>定义超时间隔
+### <a name="defining-a-time-out-interval"></a>定义超时间隔
 
 可以设置超时值，表示正则表达式引擎在放弃尝试并引发 [RegexMatchTimeoutException](xref:System.Text.RegularExpressions.RegexMatchTimeoutException) 异常之前将搜索单个匹配项的最长间隔。 可以通过向实例正则表达式的 `Regex(String, RegexOptions, TimeSpan)` 构造函数提供 [TimeSpan](xref:System.TimeSpan) 值来指定超时间隔。 此外，每个静态模式匹配方法都具有一个值为 [TimeSpan](xref:System.TimeSpan) 的 [Regex.Regex(String, RegexOptions, TimeSpan)] 参数的重载，可用于指定超时值。 默认情况下，超时间隔设置为 [Regex.InfiniteMatchTimeout](xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout) 且正则表达式引擎不会超时。 
 

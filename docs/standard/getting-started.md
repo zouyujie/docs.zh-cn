@@ -3,12 +3,11 @@ title: ".NET 入门"
 description: "从语言和平台角度，列出了多个有关 .NET 入门的文章。"
 keywords: ".NET, 入门, C#, F#, Visual Basic"
 author: cartermp
-manager: wpickett
-ms.author: phcart
+ms.author: mairaw
 ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net
-ms.technology: .net-core-technologies
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 81c07080-acdf-4aef-a66d-0ab52fab2c04
 translationtype: Human Translation

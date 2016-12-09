@@ -4,11 +4,10 @@ description: "正则表达式最佳实践"
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 096fd614-91bf-4296-be24-12f62b062294
 translationtype: Human Translation
@@ -686,7 +685,7 @@ End Module
 **(?<**=_subexpression_**)** | 零宽度正回顾。 查看当前位置的后面，确定 *subexpression* 是否与输入字符串匹配。
 **(?<!**_subexpression_**)** | 零宽度负回顾。 查看当前位置的后面，确定 *subexpression* 是否不与输入字符串匹配。
  
-## <a name="use-timeout-values"></a>使用超时值
+## <a name="use-time-out-values"></a>使用超时值
 
 如果正则表达式处理与正则表达式模式大致匹配的输入，则通常依赖于会严重影响其性能的过度回溯。 除认真考虑对回溯的使用以及针对大致匹配输入对正则表达式进行测试之外，还应始终设置一个超时值以确保最大程度地降低过度回溯的影响（如果有）。
 

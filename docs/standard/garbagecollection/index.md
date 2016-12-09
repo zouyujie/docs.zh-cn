@@ -3,11 +3,10 @@ title: "垃圾回收"
 description: "垃圾回收"
 keywords: ".NET、.NET Core"
 author: richlander
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
 ms.devlang: dotnet
 ms.assetid: db39a0f5-e363-490f-a7e6-adb9a6ff2a8c
 translationtype: Human Translation
