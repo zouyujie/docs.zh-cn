@@ -1,0 +1,8 @@
+# [Exceptions and Exception Handling](TocOutOfQuery)
+## [使用异常（C# 编程指南）](using-exceptions.md)
+## [异常处理（C# 编程指南）](exception-handling.md)
+## [Creating and Throwing Exceptions](TocOutOfQuery)
+## [Compiler-Generated Exceptions](TocOutOfQuery)
+## [How to: Handle an Exception Using try/catch](TocOutOfQuery)
+## [如何：使用 finally 执行清理代码（C# 编程指南）](how-to-execute-cleanup-code-using-finally.md)
+## [如何：捕捉非 CLS 异常](how-to-catch-a-non-cls-exception.md)
