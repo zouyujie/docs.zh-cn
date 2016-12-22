@@ -1,0 +1,7 @@
+# [如何：使用平台调用播放波形文件（C# 编程指南）](how-to-use-platform-invoke-to-play-a-wave-file.md)
+# [互操作性概述（C# 编程指南）](interoperability-overview.md)
+# [如何：在 COM 互操作编程中使用索引属性（C# 编程指南）](how-to-use-indexed-properties-in-com-interop-rogramming.md)
+# [COM 类示例（C# 编程指南）](example-com-class.md)
+# [演练：Office 编程（C# 和 Visual Basic）](walkthrough-office-programming.md)
+# [互操作性（C# 编程指南）](interoperability.md)
+# [如何：通过使用 Visual C# 功能访问 Office 互操作对象（C# 编程指南）](how-to-access-office-onterop-objects.md)

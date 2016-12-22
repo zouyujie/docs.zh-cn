@@ -1,0 +1,8 @@
+# [如何：使用 PrintForm 组件打印窗体 (Visual Basic)](how-to-print-a-form-by-using-the-printform-component.md)
+# [如何：打印窗体的工作区 (Visual Basic)](how-to-print-the-client-area-of-a-form.md)
+# [Deploying Applications That Reference the PrintForm Component (Visual Basic)](deploying-applications-that-reference-the-printform-component.md)
+# [将可打印的报表添加到 Visual Studio 应用程序](adding-printable-reports-to-visual-studio-applications.md)
+# [打印和报告 (Visual Basic)](printing-and-reporting.md)
+# [如何：打印窗体的工作区和非工作区 (Visual Basic)](how-to-print-client-and-non-client-areas-of-a-form.md)
+# [如何：打印可滚动的窗体 (Visual Basic)](how-to-print-a-scrollable-form.md)
+# [PrintForm Component (Visual Basic)](printform-component.md)

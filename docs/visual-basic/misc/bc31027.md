@@ -1,0 +1,34 @@
+---
+title: "无法打开文件“&lt;filename&gt;”: &lt;error&gt; | Microsoft Docs"
+ms.custom: ""
+ms.date: "10/29/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "bc31027"
+  - "vbc31027"
+helpviewer_keywords: 
+  - "BC31027"
+ms.assetid: cafe0aa3-dc7d-4516-8f95-a4667ea8e0f1
+caps.latest.revision: 7
+caps.handback.revision: 7
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# 无法打开文件“&lt;filename&gt;”: &lt;error&gt;
+在此项目中打开文件时出错。  
+  
+ **错误 ID：**BC31027  
+  
+### 更正此错误  
+  
+1.  验证该文件是否存在，并且未损坏或是由另一个应用程序锁定。  
+  
+## 请参阅  
+ [Visual Studio 和 Visual C\# 中的文件类型和文件扩展名](http://msdn.microsoft.com/zh-cn/f793852c-da06-4d52-a826-65f635844772)

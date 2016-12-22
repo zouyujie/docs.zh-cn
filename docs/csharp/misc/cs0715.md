@@ -1,0 +1,34 @@
+---
+title: "编译器错误 CS0715 | Microsoft Docs"
+ms.custom: ""
+ms.date: "10/29/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0715"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0715"
+ms.assetid: e3cd1e46-ccfa-4678-a2ed-69245f3558ba
+caps.latest.revision: 6
+caps.handback.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# 编译器错误 CS0715
+“静态类”: 静态类不能包含用户定义的运算符  
+  
+ 用户定义的运算符在类的实例上运行。 无法实例化静态类，因此无法创建供运算符执行操作的实例。 因此，用户定义的运算符不可用于静态类。  
+  
+ 下面的示例生成 CS0715：  
+  
+```  
+// CS0715.cs public static class C { public static C operator+(C c)  // CS0715 { } public static void Main() { } }  
+```

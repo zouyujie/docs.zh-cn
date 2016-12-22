@@ -1,0 +1,34 @@
+---
+title: "“WithEvents” 变量不会引发可访问 “&lt;containername&gt;” 的任何实例事件 | Microsoft Docs"
+ms.custom: ""
+ms.date: "10/29/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30600"
+  - "bc30600"
+helpviewer_keywords: 
+  - "BC30600"
+ms.assetid: 79a02558-1e13-41df-a9be-894aab1c1b0d
+caps.latest.revision: 8
+caps.handback.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# “WithEvents” 变量不会引发可访问 “&lt;containername&gt;” 的任何实例事件
+正在引用的对象不会引发可访问的事件。  
+  
+ **错误 ID：**BC30600  
+  
+### 更正此错误  
+  
+1.  修改事件的访问修饰符，或选择在当前上下文中可访问的事件。  
+  
+## 请参阅  
+ [不在生成中：事件和事件处理程序](http://msdn.microsoft.com/zh-cn/95074a0d-1cbc-4221-a95a-964185c7f962)

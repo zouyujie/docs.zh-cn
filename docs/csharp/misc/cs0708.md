@@ -1,0 +1,34 @@
+---
+title: "编译器错误 CS0708 | Microsoft Docs"
+ms.custom: ""
+ms.date: "10/29/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0708"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0708"
+ms.assetid: 19e1907f-b78c-4c8b-b78c-eedfd57115f2
+caps.latest.revision: 6
+caps.handback.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# 编译器错误 CS0708
+“field”：不能在静态类中声明实例成员  
+  
+ 如果在声明静态的类中声明非静态成员，将出现此错误。 不能创建静态类的实例，因此实例变量不会有意义。**静态**关键字应应用于静态类的所有成员。  
+  
+ 以下示例生成 CS0708：  
+  
+```  
+// CS0708.cs // compile with: /target:library public static class C { int i;  // CS0708 static int j;  // OK }  
+```

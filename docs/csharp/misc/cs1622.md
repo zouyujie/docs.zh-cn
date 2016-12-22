@@ -1,0 +1,34 @@
+---
+title: "编译器错误 CS1622 | Microsoft Docs"
+ms.custom: ""
+ms.date: "10/29/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1622"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1622"
+ms.assetid: 6b53a777-4cd8-423a-84ff-22ff588044d3
+caps.latest.revision: 8
+caps.handback.revision: 8
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# 编译器错误 CS1622
+无法从迭代器返回值。 请使用 yield return 语句返回值，或使用 yield break 语句结束迭代。  
+  
+ 迭代器是通过 yield 语句而不是 return 语句返回值的特殊函数。 有关详细信息，请参见**迭代器**。  
+  
+ 下面的示例生成 CS1622：  
+  
+```  
+// CS1622.cs // compile with: /target:library using System.Collections; class C : IEnumerable { public IEnumerator GetEnumerator() { return (IEnumerator) this;  // CS1622 yield return this;   // OK } }  
+```

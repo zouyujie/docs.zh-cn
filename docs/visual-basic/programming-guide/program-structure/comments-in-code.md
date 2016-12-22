@@ -1,0 +1,78 @@
+---
+title: "代码中的注释 (Visual Basic) | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/15/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "按钮, 注释"
+  - "按钮, 取消注释"
+  - "代码注释"
+  - "代码注释, Visual Basic"
+  - "Comment 按钮"
+  - "注释"
+  - "注释, 在代码中"
+  - "注释, Visual Basic 代码"
+  - "REM 语句"
+  - "Uncomment 按钮"
+  - "Visual Basic 代码, 注释"
+ms.assetid: 90136fba-22eb-49f9-ba81-63db629b4a47
+caps.latest.revision: 17
+caps.handback.revision: 17
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# 代码中的注释 (Visual Basic)
+[!INCLUDE[vs2017banner](../../../csharp/includes/vs2017banner.md)]
+
+阅读代码示例时，经常会遇到注释符号 \(`'`\)。  此符号通知 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 编译器忽略在它后面的文本（即注释）。  注释是为了方便阅读而为代码添加的简短的解释性说明。  
+  
+ 在所有过程的开头加入一段说明过程功能特征（过程的作用）的简短注释是一个很好的编程做法。  这对您自己和检查代码的任何其他人都有好处。  应该把实现的详细信息（过程实现的方式）与描述功能特征的注释分开。  若给说明加入了实现的详细信息，切记在更新函数时对这些详细信息进行更新。  
+  
+ 注释可以和语句同行并跟随其后，也可以另占一整行。  以下代码阐释了这两种情况。  
+  
+ [!code-vb[VbVbcnConventions#16](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/comments-in-code_1.vb)]  
+  
+ 如果注释需要多行，请在每行的前面使用注释符号，如以下示例所示。  
+  
+ [!code-vb[VbVbcnConventions#17](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/comments-in-code_2.vb)]  
+  
+## 注释原则  
+ 下表提供了在一段代码前可以加上哪些类型的注释的一般原则。  这些准则仅仅是一些建议；[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 并未强制实施有关添加注释的规则。  编写注释时，应编写对您和代码的任何其他读者都最为有效的注释。  
+  
+|||  
+|-|-|  
+|注释类型|注释说明|  
+|用途|描述过程的用途（而不是其实现方式）|  
+|假设|列举每个外部变量、控件、打开的文件或过程访问的其他元素|  
+|效果|列举每个受影响的外部变量、控件、文件以及它的作用（仅在作用不明显时列举）|  
+|输入|指定参数的用途|  
+|返回|说明过程返回的值|  
+  
+ 请记住以下几点：  
+  
+-   每个重要的变量声明前都应有注释，用以描述被声明变量的用途。  
+  
+-   变量、控件和过程的命名应当足够清楚，使得只在遇到复杂的实现详细情况时才使用注释。  
+  
+-   注释不能与行继续符同行。  
+  
+ 通过选择一行或多行代码，然后在**“编辑”**工具栏上选择**“注释”**\(![VisualBasicWinAppCodeEditorCommentButton](../../../visual-basic/programming-guide/program-structure/media/vacommentbutton.gif "vaCommentButton")\) 和**“取消注释”**\(![VisualStudioWinAppProjectUncommentButton](../../../visual-basic/programming-guide/program-structure/media/vauncommentbutton.png "vaUncommentButton")\)按钮，可以添加或移除代码块的注释符号。  
+  
+> [!NOTE]
+>  也可以用在文本前加关键字 `REM` 的方式给代码添加注释。  但符号 `'` 和**“注释”**\/**“取消注释”**按钮更易于使用，而且需要的空间和内存更少。  
+  
+## 请参阅  
+ [使用 XML 注释将代码文档化](http://msdn.microsoft.com/magazine/dd722812.aspx)   
+ [如何：创建 XML 文档](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)   
+ [XML 注释标记](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)   
+ [程序结构和代码约定](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)   
+ [REM 语句](../../../visual-basic/language-reference/statements/rem-statement.md)

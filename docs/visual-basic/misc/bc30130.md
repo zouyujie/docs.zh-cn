@@ -1,0 +1,36 @@
+---
+title: "模块特性“&lt;attributename&gt;”无效：&lt;error&gt; | Microsoft Docs"
+ms.custom: ""
+ms.date: "10/29/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30130"
+  - "bc30130"
+helpviewer_keywords: 
+  - "BC30130"
+ms.assetid: 199e1629-a07f-413d-bda6-7ce91f81c85b
+caps.latest.revision: 8
+caps.handback.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# 模块特性“&lt;attributename&gt;”无效：&lt;error&gt;
+公共语言运行时不接受模块中的特性。  
+  
+ **错误 ID：**BC30130  
+  
+### 更正此错误  
+  
+1.  从声明中删除该特性或将其替换为对上下文有效的特性。  
+  
+2.  检查引用的错误信息并采取相应的操作。  
+  
+## 请参阅  
+ [不在生成中：如何：定义你自己的特性](http://msdn.microsoft.com/zh-cn/039609c4-ec43-4f44-945f-aa3b5b535c6a)

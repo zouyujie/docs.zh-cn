@@ -1,0 +1,6 @@
+# [Visual Basic IntelliSense 代码段](intellisense-code-snippets.md)
+# [如何：在 Visual Basic 中编译和运行项目](how-to-compile-and-run-a-project.md)
+# [Visual Basic 代码中事件处理程序的相关帮助](help-for-event-handlers.md)
+# [Visual Basic 设置](settings.md)
+# [使用 Visual Basic 开发环境](using-the-visual-basic-development-environment.md)
+# [重构和“重命名”对话框 (Visual Basic)](refactoring-and-rename-dialog-box.md)

@@ -1,0 +1,7 @@
+# [字符串函数 (Visual Basic)](string-functions.md)
+# [CType 函数 (Visual Basic)](ctype-function.md)
+# [类型转换函数 (Visual Basic)](type-conversion-functions.md)
+# [函数 (Visual Basic)](index.md)
+# [Conversion 函数 (Visual Basic)](conversion-functions.md)
+# [数学函数 (Visual Basic)](math-functions.md)
+# [返回 CStr 函数的值 (Visual Basic)](return-values-for-the-cstr-function.md)

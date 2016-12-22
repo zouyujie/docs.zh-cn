@@ -1,0 +1,6 @@
+# [使用 My 开发 (Visual Basic)](index.md)
+# [My.Forms 和 My.WebServices 提供的默认对象实例 (Visual Basic)](default-object-instances-provided-by-my-forms-and-my-webservices.md)
+# [使用 My.Application、My.Computer 和 My.User 执行任务 (Visual Basic)](performing-tasks-with-my-application-my-computer-and-my-user.md)
+# [My 对项目类型的依赖方式 (Visual Basic)](how-my-depends-on-project-type.md)
+# [使用 My.Resources 和 My.Settings 快速开发应用程序 (Visual Basic)](rapid-application-development-with-my-resources-and-my-settings.md)
+# [Visual Basic 应用程序模型概述](overview-of-the-visual-basic-application-model.md)

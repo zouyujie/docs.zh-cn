@@ -1,0 +1,34 @@
+---
+title: "“Sub New”不能声明为“&lt;modifier&gt;” | Microsoft Docs"
+ms.custom: ""
+ms.date: "10/29/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30364"
+  - "bc30364"
+helpviewer_keywords: 
+  - "BC30364"
+ms.assetid: 679af5af-6470-4702-be2e-83dc7da7cc11
+caps.latest.revision: 8
+caps.handback.revision: 8
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+# “Sub New”不能声明为“&lt;modifier&gt;”
+已尝试使用修饰符声明 `Sub New`，例如 `Overrides`，但是无效。  
+  
+ **错误 ID：**BC30364  
+  
+### 更正此错误  
+  
+-   删除此修饰符。  
+  
+## 请参阅  
+ [不在生成中：使用构造函数和析构函数](http://msdn.microsoft.com/zh-cn/548eebe1-86c4-4377-b2f5-447cb8be3d90)

@@ -1,0 +1,28 @@
+---
+title: "编译器错误 CS0537 | Microsoft Docs"
+ms.custom: ""
+ms.date: "10/29/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0537"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0537"
+ms.assetid: 6c832a5f-47dc-4f60-aed8-69ac328af44b
+caps.latest.revision: 10
+caps.handback.revision: 10
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# 编译器错误 CS0537
+类 System.Object 不能有基类也不能实现接口  
+  
+ 重新生成 <xref:System> 类库时，以及在 <xref:System.Object> 派生自另一个类的情况下，会发生 CS0537。 遇到此错误的可能性非常小。 如果遇到此错误，请勿从类或接口派生 <xref:System.Object>：它是整个 .NET Framework 类层次结构的根，因此不会派生自其他任何对象。

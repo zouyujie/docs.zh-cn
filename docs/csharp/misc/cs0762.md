@@ -1,0 +1,38 @@
+---
+title: "编译器错误 CS0762 | Microsoft Docs"
+ms.custom: ""
+ms.date: "10/29/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0762"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0762"
+ms.assetid: 7cedd1af-ffe6-4ca7-82fb-faa9e98014a4
+caps.latest.revision: 6
+caps.handback.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# 编译器错误 CS0762
+无法通过方法“method”创建委托，因为该方法是没有实现声明的分部方法  
+  
+ 分部方法不需要具有实现声明。 但委托要求其封装方法具有实现。  
+  
+### 更正此错误  
+  
+1.  为用于初始化该委托的方法提供一个实现。  
+  
+## 示例  
+  
+```  
+public delegate void TestDel(); public partial class C { partial void Part(); public static int Main() { C c = new C(); TestDel td = new TestDel(c.Part); // CS0762 return 1; } }  
+```

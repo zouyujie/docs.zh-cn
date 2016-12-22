@@ -1,0 +1,42 @@
+---
+title: "编译器错误 CS0411 | Microsoft Docs"
+ms.custom: ""
+ms.date: "10/29/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0411"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0411"
+ms.assetid: 290947c9-10d0-427e-99f2-bff20299d533
+caps.latest.revision: 8
+caps.handback.revision: 8
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# 编译器错误 CS0411
+无法从用法推断方法“method”的类型参数。 请尝试显式指定类型参数。  
+  
+ 如果未显式提供类型参数就调用泛型方法，且编译器无法推断预期类型参数，则会发生此错误。 若要避免此错误，在尖括号中添加预期的类型参数。  
+  
+## 示例  
+ 以下示例生成 CS0411：  
+  
+```  
+// CS0411.cs class C { void G<T>() { } public static void Main() { G();  // CS0411 // Try this instead: // G<int>(); } }  
+```  
+  
+## 示例  
+ 其他可能发生的错误情况还包括当参数为 `null`（无类型信息）时发生的错误：  
+  
+```  
+// CS0411b.cs class C { public void F<T>(T t) where T : C { } public static void Main() { C c = new C(); c.F(null);  // CS0411 } }  
+```

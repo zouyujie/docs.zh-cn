@@ -1,0 +1,39 @@
+---
+title: "编译器错误 CS1958 | Microsoft Docs"
+ms.custom: ""
+ms.date: "10/29/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS1958"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1958"
+ms.assetid: bb6f3bb2-ea93-4d2e-984c-da9c99f5653f
+caps.latest.revision: 5
+caps.handback.revision: 5
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# 编译器错误 CS1958
+对象和集合初始值设定项表达式不能应用于委托创建表达式，  
+  
+ 与类或结构不同，委托不具有任何成员，因此对象初始值设定项没有要进行初始化的内容 如果遇到此错误，则可能是因为委托创建表达式后面有大括号。 只需删除大括号，此错误就会消失。  
+  
+### 更正此错误  
+  
+1.  删除大括号。  
+  
+## 示例  
+ 下面的代码生成 CS1958：  
+  
+```  
+// cs1958.cs public class MemberInitializerTest { delegate void D<T>(); public static void GenericMethod<T>() { } public static void Run() { D<int> genD = new D<int>(GenericMethod<int>) { }; // CS1958 // Try the following line instead // D<int> genD = new D<int>(GenericMethod<int>); } }  
+```

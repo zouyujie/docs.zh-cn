@@ -1,0 +1,32 @@
+---
+title: "编译器警告（等级 2）CS0444 | Microsoft Docs"
+ms.custom: ""
+ms.date: "10/29/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0444"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0444"
+ms.assetid: 5beb8c06-39d3-4b59-a7c3-5590200bd43d
+caps.latest.revision: 11
+caps.handback.revision: 11
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# 编译器警告（等级 2）CS0444
+在“System namespace 1”中找不到预定义的类型“type name 1”，但是可在“System namespace 2”中找到。  
+  
+ 未在编译器应找到预定义对象（例如 <xref:System.Int32>）的位置找到它，但在“System namespace 2”中找到了它。  
+  
+ 此错误可能指示 .NET Framework 安装不正确。 若要解决此问题，请重新安装.NET Framework。  
+  
+ 如果你正在编写自己的基类库，也可能会遇到此错误。 在这种情况下，若要解决此错误，重新生成 mscorlib。

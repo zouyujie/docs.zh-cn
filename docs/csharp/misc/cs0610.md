@@ -1,0 +1,34 @@
+---
+title: "编译器错误 CS0610 | Microsoft Docs"
+ms.custom: ""
+ms.date: "10/29/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CS0610"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0610"
+ms.assetid: 6cdce74c-5c00-4539-9df1-32be70e9912d
+caps.latest.revision: 6
+caps.handback.revision: 6
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# 编译器错误 CS0610
+字段或属性不能是“type”类型  
+  
+ 有一些不能用作字段或属性的类型。 这些类型包括 **System.ArgIterator** 和 **System.TypedReference**。  
+  
+ 由于使用 **System.TypedReference** 作为字段，下面的示例生成 CS0610：  
+  
+```  
+// CS0610.cs public class MainClass { System.TypedReference i;   // CS0610 public static void Main () { } public static void Test(System.TypedReference i)   // OK { } }  
+```

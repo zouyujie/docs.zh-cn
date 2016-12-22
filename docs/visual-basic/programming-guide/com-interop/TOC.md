@@ -1,0 +1,6 @@
+# [演练：用 COM 对象实现继承 (Visual Basic)](walkthrough-implementing-inheritance-with-com-objects.md)
+# [如何：使用 ActiveX 控件 (Visual Basic)](how-to-work-with-activex-controls.md)
+# [如何：调用采用无符号类型的 Windows 函数 (Visual Basic)](how-to-call-a-windows-function-that-takes-unsigned-types.md)
+# [互操作性疑难解答 (Visual Basic)](troubleshooting-interoperability.md)
+# [如何：从 Visual Basic 中引用 COM 对象](how-to-reference-com-objects.md)
+# [演练：使用 Visual Basic 创建 COM 对象](walkthrough-creating-com-objects.md)

@@ -1,0 +1,7 @@
+# [How to: Create a List of Items](how-to-create-a-list-of-items.md)
+# [演练：用 Visual Basic 编写查询](walkthrough-writing-queries.md)
+# [Visual Basic Features That Support LINQ](features-that-support-linq.md)
+# [Type Relationships in Query Operations (Visual Basic)](type-relationships-in-query-operations.md)
+# [Getting Started with LINQ in Visual Basic](getting-started-with-linq.md)
+# [编写第一个 LINQ 查询 (Visual Basic)](writing-your-first-linq-query.md)
+# [基本查询操作 (Visual Basic)](basic-query-operations.md)
