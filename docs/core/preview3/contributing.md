@@ -1,4 +1,4 @@
-# <a name="using-the-cli-preview3-folder-and-sub-folders"></a>使用 cli-preview3 文件夹和子文件夹
+# <a name="using-the-preview3-folder-and-sub-folders"></a>使用 preview3 文件夹和子文件夹
 
 此文件夹是匹配“工具”文件夹的顶层节点，但包含 .NET Core 工具预览版 3 发布的增量。
 
@@ -37,6 +37,6 @@
 到时，我们可将每个当前发布合并到主 [docs](../docs) 文件夹中，合并 TOC 节点，并作为单独的文档集发布。 可能需要将修改合并到 LTS 版本的文件和当前发布的文件中，但我们应该能够相对容易地找到这些更改。
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

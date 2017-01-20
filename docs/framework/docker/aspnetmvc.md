@@ -3,16 +3,16 @@ title: "将 ASP.NET MVC 应用程序迁移到 Windows 容器"
 description: "了解如何利用现有 ASP.NET MVC 应用程序并在 Windows Docker 容器中运行它"
 keywords: "Windows 容器, Docker, ASP.NET MVC"
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 09/28/2016
 ms.topic: article
-ms.prod: .net-framework-4.6
+ms.prod: .net-framework
 ms.technology: dotnet-mvc
 ms.devlang: dotnet
 ms.assetid: c9f1d52c-b4bd-4b5d-b7f9-8f9ceaf778c4
 translationtype: Human Translation
-ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: bde267042883d2f25848747047845a16b181e549
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: c81e9783499ede9a612969f16a7e85d77fa921c4
 
 ---
 
@@ -42,7 +42,7 @@ ms.openlocfilehash: bde267042883d2f25848747047845a16b181e549
 开始之前，需要安装 [Docker for Windows](https://docs.docker.com/docker-for-windows/) 1.12 Beta 26 版或更高版本。 此次，Windows 容器支持仅在 Beta 通道中可用。
 
 > [!IMPORTANT]
-> 如果正使用的是 Windows Server 2016，需先按照[容器主机部署 - Windows Server](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/deployment/deployment)中的说明操作才能运行 Docker 容器。
+> 如果正使用的是 Windows Server 2016，需先按照[容器主机部署 - Windows Server](https://msdn.microsoft.com/virtualization/windowscontainers/deployment/deployment)中的说明操作才能运行 Docker 容器。
 
 安装并启动 Docker 后，需要右键单击托盘图标并选择“切换到 Windows 容器”才能基于 Windows 运行 Docker 映像。 此命令需要几秒钟执行：
 
@@ -181,6 +181,6 @@ docker rm randomanswers
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO3-->
 
 

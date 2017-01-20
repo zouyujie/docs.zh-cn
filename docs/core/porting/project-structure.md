@@ -3,16 +3,15 @@ title: "组织项目以支持 .NET Framework 和 .NET Core"
 description: "组织项目以支持 .NET Framework 和 .NET Core"
 keywords: .NET, .NET Core
 author: conniey
-manager: wpickett
+ms.author: mairaw
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 3af62252-1dfa-4336-8d2f-5cfdb57d7724
 translationtype: Human Translation
-ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: 7a3f972debee1e90deda57e5604214ff4756da4a
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: ed2fdad2a784f4e4ce1f8a660b5bb151935fd2d4
 
 ---
 
@@ -69,7 +68,7 @@ ms.openlocfilehash: 7a3f972debee1e90deda57e5604214ff4756da4a
 需注意的更改：
 * 添加了 `global.json`
 * 将 `packages.config` 和 `*.csproj` 替换为 `project.json` 和 `*.xproj`
-* 对 [Car 的 project.json][example-xproj-projectjson]及其[测试项目][example-xproj-projectjson-test] 进行了更改以支持生成现有的 .NET Framework 以及其他框架
+* 对 [Car 的 project.json][example-xproj-projectjson]及其[测试项目][example-xproj-projectjson-test]进行了更改以支持生成现有的 .NET Framework 以及其他框架
 
 ## <a name="create-a-portable-class-library-pcl-to-target-net-core"></a>创建以 .NET Core 为目标的可移植类库 (PCL)
 
@@ -98,7 +97,7 @@ ms.openlocfilehash: 7a3f972debee1e90deda57e5604214ff4756da4a
     * 这可以避免上述因多个 project.json/package.config 文件位于同一文件夹中所引起的包还原问题。
     * 将项目保存在不同的文件夹中可以避免强制使用 Visual Studio 2015（因project.json）。  可以创建仅打开旧项目的单独解决方案。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 有关移动到 project.json 和 xproj 的详细指南，请参阅 [.NET Core 移植文档][porting-doc]。
 
@@ -114,7 +113,7 @@ ms.openlocfilehash: 7a3f972debee1e90deda57e5604214ff4756da4a
 [example-xproj-different-folder]: media/project-structure/project.xproj.different.png "不同文件夹中包含现有 PCL 的 .NET Core 项目"
 [example-xproj-different-code]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-xproj-keep-csproj/
 
-[example-pcl]: media/project-structure/project.pcl.png " .NET Core 为目标的 PCL"
+[example-pcl]: media/project-structure/project.pcl.png "以 .NET Core 为目标的 PCL"
 [example-pcl-code]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-pcl
 
 [option-xproj]: #replace-existing-projects-with-a-multi-targeted-net-core-project-xproj
@@ -125,6 +124,6 @@ ms.openlocfilehash: 7a3f972debee1e90deda57e5604214ff4756da4a
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

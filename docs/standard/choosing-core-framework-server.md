@@ -3,17 +3,16 @@ title: "为服务器应用选择 .NET Core 或 .NET Framework"
 description: "关于用户在 .NET 中生成服务器应用时应考虑使用哪种版本的 .NET 的指南。"
 keywords: .NET, .NET Core, .NET Framework
 author: cartermp
-manager: wpickett
-ms.author: phcart
+ms.author: mairaw
 ms.date: 11/16/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 155553e4-89a2-418d-be88-4e75f6c3cc69
 translationtype: Human Translation
-ms.sourcegitcommit: d6ce9e3dd3c1189f35d147d140bb45095b3d77a5
-ms.openlocfilehash: a0563f7437711ddbee309803e97ab653aa160337
+ms.sourcegitcommit: 572bec82e08d6b47a188e51964c8c2f440fa471c
+ms.openlocfilehash: e23514daacb34739b26b7a31afea2ccb30296e79
 
 ---
 
@@ -44,19 +43,19 @@ ms.openlocfilehash: a0563f7437711ddbee309803e97ab653aa160337
 
 如果你的目标是拥有能跨平台（Windows、Linux 和 macOS）运行的应用程序（Web/服务），.NET Core 无疑是最佳选择。
 
-.NET Core 作为开发工作站还支持前面提到的操作系统。 Visual Studio 提供用于 Windows 的集成开发环境 (IDE)。  你还可以在 macOS、Linux 和 Windows 上使用 Visual Studio Code，它们完全支持 .NET Core，包括 IntelliSense 和调试。 此外，你还可以使用大多数第三方编辑器（如 Sublime、Emacs 和 VI）面向 .NET Core，并使用开源 [Omnisharp](http://www.omnisharp.net/) 项目获取编辑器 IntelliSense。 也可以不使用任何代码编辑器，直接使用 forall 支持平台上提供的 .NET Core 命令行工具。
+.NET Core 作为开发工作站还支持前面提到的操作系统。 Visual Studio 提供用于 Windows 的集成开发环境 (IDE)。  你还可以在 macOS、Linux 和 Windows 上使用 Visual Studio Code，它们完全支持 .NET Core，包括 IntelliSense 和调试。 此外，你还可以使用大多数第三方编辑器（如 Sublime、Emacs 和 VI）面向 .NET Core，并使用开源 [Omnisharp](http://www.omnisharp.net/) 项目获取编辑器 IntelliSense。 也可以不使用任何代码编辑器，直接使用适用于所有支持平台的 .NET Core 命令行工具。
 
 ### <a name="microservices-architecture"></a>微服务体系结构
 
 如果你要选择使用面向微服务的系统（该系统由多个独立的、可动态伸缩的、有状态或无状态的微服务组成），.NET Core 将是最佳选择。 .NET Core 是轻型平台，其 API 图面可最小化到微服务范围。 微服务体系结构还允许混合跨服务边界的技术，从而逐渐接受新微服务的 .NET Core，这些新的微服务与使用 .NET Framework、Java、Ruby 或其他整体化技术开发的其他微服务或服务结合使用。
 
-可供使用的基础结构平台有很多。 对于大型和复杂微服务系统，可以使用 [Azure Service Fabric](https://azure.microsoft.com/en-us/services/service-fabric/)。 对于无状态的微服务，还可以使用其他产品（如 [Azure 应用服务](https://azure.microsoft.com/en-us/services/app-service/)）。 基于 Docker 的微服务备选方案也适合于任何一种微服务方法，将在下一部分中进行说明。 所有这些平台都支持 .NET Core，是托管微服务的理想选择。
+可供使用的基础结构平台有很多。 对于大型和复杂微服务系统，可以使用 [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/)。 对于无状态的微服务，还可以使用其他产品（如 [Azure 应用服务](https://azure.microsoft.com/services/app-service/)）。 基于 Docker 的微服务备选方案也适合于任何一种微服务方法，将在下一部分中进行说明。 所有这些平台都支持 .NET Core，是托管微服务的理想选择。
 
 ### <a name="containers"></a>容器
 
 虽然容器通常与微服务体系结构结合使用，但是也可用于容器化遵循任何体系结构模式的 Web 应用或服务。 虽然能够将 .NET Framework 用于 Windows 容器，但 .NET Core的模块化和轻型性质使之成为容器的最佳选择。  在创建和部署时容器时，使用 .NET Core 时容器的映像大小要远小于使用 .NET Framework 时的大小。  例如，因为它是跨平台的，所以可以将服务器应用部署到 Linux Docker 容器。
 
-然后，可以在自己的 Linux 或 Windows 基础结构中托管 Docker 容器，或使用云服务（例如 [Azure 容器服务](https://azure.microsoft.com/en-us/services/container-service/)），在云中管理、协调和缩放基于容器的应用程序。
+然后，可以在自己的 Linux 或 Windows 基础结构中托管 Docker 容器，或使用云服务（例如 [Azure 容器服务](https://azure.microsoft.com/services/container-service/)），在云中管理、协调和缩放基于容器的应用程序。
 
 ### <a name="a-need-for-high-performance-and-scalable-systems"></a>需要高性能和可扩展的系统
 
@@ -110,6 +109,7 @@ ms.openlocfilehash: a0563f7437711ddbee309803e97ab653aa160337
 * [.NET 组件概述](components.md)
 
 
-<!--HONumber=Nov16_HO3-->
+
+<!--HONumber=Jan17_HO3-->
 
 

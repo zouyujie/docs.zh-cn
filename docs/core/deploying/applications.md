@@ -1,30 +1,17 @@
 ---
-title: "部署 .NET Core 应用程序"
-description: "部署 .NET Core 应用程序"
-keywords: .NET, .NET Core
-ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: 1db00fb1-d947-480d-8d7d-7152e67b0585
+redirect_url: /dotnet/articles/core/deploying
 translationtype: Human Translation
-ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: e3825b880ef73e176fb23618d9814e2d54f692c8
+ms.sourcegitcommit: 8f7cf8796796934ed4c4cf723e58a0076460c346
+ms.openlocfilehash: 52a20f639dace8b69370dc4884147eae31fc7ed6
 
 ---
 
 # <a name="-deploying-net-core-applications"></a>🔧 部署 .NET Core 应用程序
 
-> **注意**
-> 
-> 尚未编写此主题！ 
->
-> 欢迎提供建议，以帮助我们确定范围和方法。 
-> 
-> 了解如何参与 [GitHub](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md) 的详细信息。
->
+## <a name="content-moved"></a>内容已移动！
+此文章已移至 [.NET Core 应用程序部署](index.md)主题。
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

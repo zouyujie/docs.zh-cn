@@ -11,8 +11,8 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 1bebd25a-120f-48d3-8c25-c89965afcbcd
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 2cf58161a75894a12f47cf67a5760dc26f9d261c
+ms.sourcegitcommit: 1474b2869510d650b7ee69c88ec6b5a9d04a9b75
+ms.openlocfilehash: c13349c34af944d5a55d57161246f865274cc888
 
 ---
 
@@ -208,6 +208,6 @@ echo "Cleaning complete..."
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

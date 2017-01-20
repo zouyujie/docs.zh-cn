@@ -4,15 +4,15 @@ description: "project.json 引用"
 keywords: .NET, .NET Core, project.json
 author: aL3891
 ms.author: mairaw
-ms.date: 09/30/2016
+ms.date: 12/21/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: ce3dbad938c01fd0f9d79cefb29884be986b8e1f
+ms.sourcegitcommit: 4023c5ec72055fee78863a43b60989e1eb34fb22
+ms.openlocfilehash: 68b152cda54b5356dce48f4a8330b2ecb9c9d2e0
 
 ---
 
@@ -508,7 +508,7 @@ project.json 文件用于 .NET Core 项目以定义项目元数据、编译信�
 
 要忽略的警告列表。
 
-例如：
+例如: 
 
 ```json
 {
@@ -518,7 +518,7 @@ project.json 文件用于 .NET Core 项目以定义项目元数据、编译信�
 }
 ```
 
-这会忽略警告 `The variable 'var' is assigned but its value is never used` 和 `The variable 'var' is assigned but its value is never used`
+这会忽略警告 `The variable 'var' is declared but never used` 和 `The variable 'var' is assigned but its value is never used`。
 
 ### <a name="additionalarguments"></a>additionalArguments
 类型：String[]
@@ -1655,6 +1655,6 @@ project.json 文件用于 .NET Core 项目以定义项目元数据、编译信�
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 
