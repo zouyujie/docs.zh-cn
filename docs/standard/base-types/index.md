@@ -3,16 +3,16 @@ title: "使用基类型"
 description: "使用基类型"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/22/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: e53e414f-e0b6-4076-a6ab-189ba93e23cd
 translationtype: Human Translation
 ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: a9801663b3be2d07c767bc263936212d985e370e
+ms.openlocfilehash: c04c079221cf77ec548b8dc1f7758caa03cbe2e3
 
 ---
 

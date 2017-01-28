@@ -3,16 +3,16 @@ title: "如何：使用 ForEach 移除 BlockingCollection 中的项"
 description: "如何：使用 ForEach 移除 BlockingCollection 中的项"
 keywords: ".NET、.NET Core"
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: f3db5825-b5c9-4e8b-80bc-e11760d9523e
 translationtype: Human Translation
 ms.sourcegitcommit: c15f2da15c6448cf1c36dea2d5fd53e734bb6608
-ms.openlocfilehash: 618b5c7c1b8219f4e9225277064ff3c498ff3382
+ms.openlocfilehash: 98a01aaebb209fe80b3c1270295399e5914cbd09
 
 ---
 
@@ -136,6 +136,6 @@ class Example
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

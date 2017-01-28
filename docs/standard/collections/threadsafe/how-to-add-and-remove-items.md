@@ -3,16 +3,16 @@ title: "如何：在 ConcurrentDictionary 中添加和移除项"
 description: "如何：在 ConcurrentDictionary 中添加和移除项"
 keywords: ".NET、.NET Core"
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: b7c04a5f-a8e6-42ae-8c84-0e1ae18896eb
 translationtype: Human Translation
 ms.sourcegitcommit: c15f2da15c6448cf1c36dea2d5fd53e734bb6608
-ms.openlocfilehash: 90ad4f1f0266d948937ed462be15a4d4948ce7f8
+ms.openlocfilehash: 3e99bcb1cfbcf0a4f6f372e481d41ec31d635749
 
 ---
 
@@ -304,6 +304,6 @@ namespace DictionaryHowTo
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

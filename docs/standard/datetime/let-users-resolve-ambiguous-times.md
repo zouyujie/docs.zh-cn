@@ -3,16 +3,16 @@ title: "如何：让用户解决不明确时间"
 description: "如何让用户解决不明确时间"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/15/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: d6858a5c-02ab-4367-9e08-fa22c051c38d
 translationtype: Human Translation
 ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: 889bc6dc85ca475b5adaf9ab6d15dfcabffe1370
+ms.openlocfilehash: c54a3e742ea436c31fd238d5ecb5be98cbc6c6af
 
 ---
 
@@ -168,6 +168,6 @@ End Function
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

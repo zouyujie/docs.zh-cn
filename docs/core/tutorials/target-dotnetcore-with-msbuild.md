@@ -3,16 +3,15 @@ title: "使用 MSBuild 生成 .NET Core 项目"
 description: "使用 MSBuild 生成 .NET Core 项目"
 keywords: .NET, .NET Core
 author: dsplaisted
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 13c66464-4f14-4db6-aa8b-06f25e7ba894
 translationtype: Human Translation
-ms.sourcegitcommit: a04755da6417bb28bad5f28a18ead9feeba2d957
-ms.openlocfilehash: 5d37e78be88828d6c82777f96b6334903aecbe53
+ms.sourcegitcommit: 098cb31bb79e47ebb2ad2e8c2f56d2d5d6da4079
+ms.openlocfilehash: 6a992d985948a22da58db8317bc04d2f1828fc05
 
 ---
 
@@ -21,13 +20,16 @@ ms.openlocfilehash: 5d37e78be88828d6c82777f96b6334903aecbe53
 .NET Core 工具将[从 project.json 移动到基于 MSBuild 的项目](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/)。
 我们希望使用 MSBuild 的初版 .NET Core 工具随下一版本的 Visual Studio 一起提供。  但是，现在可以将 MSBuild 用于 .NET Core 项目，此页面显示了相关方法。
 
-我们建议现在使用新项目面向 .NET Core 的大多数用户使用 project.json 的默认工具体验，原因如下：
+建议以 .NET Core 为目标的新项目将默认工具与 *project.json* 配合使用，原因如下：
 
-- MSBuild 尚不支持 project.json 的大量优点
-- 许多基于 ASP.NET 的工具当前无法与 MSBuild 项目一起使用
-- 在确实发布了使用 MSBuild 的 .NET Core 工具后，它将能够自动从 project.json 转换为 MSBuild 项目 
+- MSBuild 尚不支持 *project.json* 的许多功能。
+- 许多基于 ASP.NET 的工具当前无法与 MSBuild 项目一起使用。
+- 发布基于 MSBuild 的 .NET Core 工具后，该工具会自动将 *project.json* 转换为基于 MSBuild。
 
-对要移植到 .NET Core、已使用 MSBuild 的现有项目，或者如果在生成中对 project.json 项目不是十分支持的方案使用 MSBuild 可扩展性，你可能会想要使用 MSBuild 面向 .NET Core。
+在以下情况下，请考虑使用 MSBuild：
+
+ - 使用 MSBuild 的现有项目正在移植到 .NET Core。
+ - 使用 MSBuild 的扩展性的项目未得到完全的 *project.json* 支持。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -130,6 +132,6 @@ ms.openlocfilehash: 5d37e78be88828d6c82777f96b6334903aecbe53
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO3-->
 
 

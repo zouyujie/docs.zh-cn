@@ -3,16 +3,16 @@ title: "框架库"
 description: "框架库"
 keywords: .NET, .NET Core
 author: richlander
-manager: wpickett
+ms.author: ronpet
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 7b77b6c1-8367-4602-bff3-91e4c05ac643
 translationtype: Human Translation
-ms.sourcegitcommit: 093b852fe1ed2307ebce914381fe47388b435c95
-ms.openlocfilehash: 7283ed099cefa4b0e137869724f8e87dda0d451a
+ms.sourcegitcommit: 9df468c7225dbf1e3317ea34bd8b2285361a69f4
+ms.openlocfilehash: f14e6552b2f59694f5cf877ee8ab76ffa026f18f
 
 ---
 
@@ -30,15 +30,15 @@ BCL 提供最基本的类型和实用工具功能，是其他所有 .NET 类库�
 
 .NET 包含一组基元类型，所有程序都使用这些类型（使用程度或大或小）。 这些类型包含数据，例如数字、字符串、字节和任意对象。 C# 语言包括这些类型的关键字。 下面列出了这些类型的一组示例，以及匹配的 C# 关键字。
 
-*   [System.Object](https://msdn.microsoft.com/library/system.object.aspx) ([object](https://msdn.microsoft.com/library/9kkx3h3c.aspx)) - CLR 类型系统中的最基本基类。 它位于类型层次结构的根级别。
-*   [System.Int16](https://msdn.microsoft.com/library/system.int16.aspx) ([short](https://msdn.microsoft.com/library/ybs77ex4.aspx)) - 16 位带符号整数类型。 也存在无符号 [UInt16](https://msdn.microsoft.com/library/system.uint16.aspx)。
-*   [System.Int32](https://msdn.microsoft.com/library/system.int32.aspx) ([int](https://msdn.microsoft.com/library/5kzh1b5w.aspx)) - 32 位带符号整数类型。 也存在无符号 [UInt32](https://msdn.microsoft.com/library/x0sksh43.aspx)。
-*   [System.Single](https://msdn.microsoft.com/library/system.single.aspx) ([float](https://msdn.microsoft.com/library/b1e65aza.aspx)) - 32 位浮点类型。
-*   [System.Decimal](https://msdn.microsoft.com/library/system.decimal.aspx) ([decimal](https://msdn.microsoft.com/library/364x0z75.aspx)) -128 位十进制类型。
-*   [System.Byte](https://msdn.microsoft.com/library/system.byte.aspx) ([byte](https://msdn.microsoft.com/library/5bdb6693.aspx)) - 表示内存字节的的无符号 8 位整数。
-*   [System.Boolean](https://msdn.microsoft.com/library/system.boolean.aspx) ([bool](https://msdn.microsoft.com/library/c8f5xwh7.aspx)) - 表示“true”或“false”的布尔类型。
-*   [System.Char](https://msdn.microsoft.com/library/system.char.aspx) ([char](https://msdn.microsoft.com/library/x9h8tsay.aspx)) - 表示 Unicode 字符的 16 位数字类型。
-*   [System.String](https://msdn.microsoft.com/library/system.string.aspx) ([string](https://msdn.microsoft.com/library/362314fe.aspx)) -表示一系列字符。 与 `char[]` 不同，但会针对 `string` 中的每个 `char` 启用索引。
+* [System.Object](https://msdn.microsoft.com/library/system.object.aspx) ([object](https://msdn.microsoft.com/library/9kkx3h3c.aspx)) - CLR 类型系统中的最基本基类。 它位于类型层次结构的根级别。
+* [System.Int16](https://msdn.microsoft.com/library/system.int16.aspx) ([short](https://msdn.microsoft.com/library/ybs77ex4.aspx)) - 16 位带符号整数类型。 也存在无符号 [UInt16](https://msdn.microsoft.com/library/system.uint16.aspx)。
+* [System.Int32](https://msdn.microsoft.com/library/system.int32.aspx) ([int](https://msdn.microsoft.com/library/5kzh1b5w.aspx)) - 32 位带符号整数类型。 也存在无符号 [UInt32](https://msdn.microsoft.com/library/x0sksh43.aspx)。
+* [System.Single](https://msdn.microsoft.com/library/system.single.aspx) ([float](https://msdn.microsoft.com/library/b1e65aza.aspx)) - 32 位浮点类型。
+* [System.Decimal](https://msdn.microsoft.com/library/system.decimal.aspx) ([decimal](https://msdn.microsoft.com/library/364x0z75.aspx)) -128 位十进制类型。
+* [System.Byte](https://msdn.microsoft.com/library/system.byte.aspx) ([byte](https://msdn.microsoft.com/library/5bdb6693.aspx)) - 表示内存字节的无符号 8 位整数。
+* [System.Boolean](https://msdn.microsoft.com/library/system.boolean.aspx) ([bool](https://msdn.microsoft.com/library/c8f5xwh7.aspx)) - 表示“true”或“false”的布尔类型。
+* [System.Char](https://msdn.microsoft.com/library/system.char.aspx) ([char](https://msdn.microsoft.com/library/x9h8tsay.aspx)) - 表示 Unicode 字符的 16 位数字类型。
+* [System.String](https://msdn.microsoft.com/library/system.string.aspx) ([string](https://msdn.microsoft.com/library/362314fe.aspx)) -表示一系列字符。 与 `char[]` 不同，但会针对 `string` 中的每个 `char` 启用索引。
 
 ## <a name="data-structures"></a>数据结构
 
@@ -58,7 +58,7 @@ BCL 提供最基本的类型和实用工具功能，是其他所有 .NET 类库�
 *   [XDocument](https://msdn.microsoft.com/library/system.xml.linq.xdocument.aspx) - 用于配合 LINQ 加载和查询 XML 文档的 API。
 *   [StreamReader](https://msdn.microsoft.com/library/system.io.streamreader.aspx) - 用于读取文件的 API。[StreamWriter](https://msdn.microsoft.com/library/system.io.stringwriter.aspx) 可用于写入文件。
 
-## <a name="appmodel-apis"></a>应用模型 API
+## <a name="app-model-apis"></a>应用模型 API
 
 某些公司提供了可与 .NET 配合使用的多个应用模型。
 
@@ -66,6 +66,6 @@ BCL 提供最基本的类型和实用工具功能，是其他所有 .NET 类库�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO3-->
 
 

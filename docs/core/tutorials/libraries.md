@@ -3,16 +3,16 @@ title: "使用跨平台工具开发库"
 description: "使用跨平台工具开发库"
 keywords: .NET, .NET Core
 author: cartermp
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 9f6e8679-bd7e-4317-b3f9-7255a260d9cf
 translationtype: Human Translation
 ms.sourcegitcommit: 0882a5ca2f7814e2fd168dce40705d11b199f102
-ms.openlocfilehash: caf72bec4a5d3276d1fdeafc4fa3816e5f00c296
+ms.openlocfilehash: de44f103bef6006dd1a952c48c1e172f6277a95b
 
 ---
 
@@ -485,7 +485,7 @@ let result =
 * **AwesomeLibrary.CSharp** - 具有打算在 C 中使用的公共 API 的项目#
 * **AwesomeLibrary.FSharp** - 具有打算在 F 中使用的公共 API 的项目#
 
-### <a name="projecttoproject-referencing"></a>项目到项目的引用
+### <a name="project-to-project-referencing"></a>项目到项目的引用
 
 引用项目的最佳方法是执行以下操作：
 
@@ -579,6 +579,6 @@ $ dotnet test
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

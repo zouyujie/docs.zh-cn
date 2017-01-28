@@ -3,22 +3,22 @@ title: "自动内存管理和垃圾回收"
 description: "自动内存管理和垃圾回收"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/22/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: d095b0b6-2454-4e23-80b4-c9e8a447116c
 translationtype: Human Translation
-ms.sourcegitcommit: 213ce098bcc2b5e31c55e759d895254d5ca33caa
-ms.openlocfilehash: 68815f7e7e96483eff218138dd1612a20e2eb1e6
+ms.sourcegitcommit: b022f5b9e8ac81c00a6e5aa189feab4e7157dfd4
+ms.openlocfilehash: 0734347048742657b8e33a1fffae15448ecad4f3
 
 ---
 
 # <a name="automatic-memory-management-and-garbage-collection"></a>自动内存管理和垃圾回收
 
-自动内存管理是公共语言运行时在托管执行过程过程中提供的服务之一。 公共语言运行时的垃圾回收器为应用程序管理内存的分配和释放。 对开发人员而言，这就意味着在开发托管应用程序时不必编写执行内存管理任务的代码。 自动内存管理可解决常见问题，例如，忘记释放对象并导致内存泄漏，或尝试访问已释放对象的内存。 本节描述垃圾回收器如何分配和释放内存。
+自动内存管理是公共语言运行时在托管执行过程中提供的服务之一。 公共语言运行时的垃圾回收器为应用程序管理内存的分配和释放。 对开发人员而言，这就意味着在开发托管应用程序时不必编写执行内存管理任务的代码。 自动内存管理可解决常见问题，例如，忘记释放对象并导致内存泄漏，或尝试访问已释放对象的内存。 本节描述垃圾回收器如何分配和释放内存。
 
 ## <a name="allocating-memory"></a>分配内存
 
@@ -59,6 +59,6 @@ ms.openlocfilehash: 68815f7e7e96483eff218138dd1612a20e2eb1e6
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

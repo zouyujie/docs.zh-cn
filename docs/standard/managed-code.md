@@ -3,16 +3,16 @@ title: "什么是“托管代码”？"
 description: "什么是“托管代码”？"
 keywords: .NET, .NET Core
 author: blackdwarf
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 20bb7ea8-192e-4a96-8ef3-e10e1950fd3d
 translationtype: Human Translation
 ms.sourcegitcommit: 0013cf5604bfd1e8a16e5ca15577ac81fce49612
-ms.openlocfilehash: f05bd2e2344b4dd61d038278ad02e9c8f357b3a8
+ms.openlocfilehash: 905c3706717a03f468e3dd5717c049e83f211e67
 
 ---
 
@@ -48,6 +48,6 @@ ms.openlocfilehash: f05bd2e2344b4dd61d038278ad02e9c8f357b3a8
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

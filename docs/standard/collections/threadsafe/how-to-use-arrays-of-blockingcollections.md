@@ -3,16 +3,16 @@ title: "如何：在管道中使用阻塞集合的数组"
 description: "如何：在管道中使用阻塞集合的数组"
 keywords: ".NET、.NET Core"
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 278a6566-09ba-4022-8802-e160e75b86af
 translationtype: Human Translation
 ms.sourcegitcommit: c15f2da15c6448cf1c36dea2d5fd53e734bb6608
-ms.openlocfilehash: e68ad58fecfe489cc26af02be7e4dbb4f7a8470c
+ms.openlocfilehash: 4f637ea8985a2be9fc22b5ede88fc625864046dc
 
 ---
 
@@ -200,6 +200,6 @@ class PipeLineDemo
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

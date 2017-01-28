@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 88cba792-3640-41de-b55d-00f575e9d5e2
 translationtype: Human Translation
 ms.sourcegitcommit: 81e7604f0a646e5de9c2ed35ff3b6ef6d7fb2e71
-ms.openlocfilehash: a35385cbb08614493fdcfc74504b00178dc532ea
+ms.openlocfilehash: beab195d283fcfcdc454a29498d27bcd290b66c1
 
 ---
 
@@ -50,6 +50,6 @@ ms.openlocfilehash: a35385cbb08614493fdcfc74504b00178dc532ea
 4. 适配器完成操作后，会向 dotnet 测试发送 TestSession.Terminate，这将关闭 dotnet 测试。
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

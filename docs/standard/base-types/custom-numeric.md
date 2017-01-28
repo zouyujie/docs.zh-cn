@@ -4,16 +4,15 @@ description: "自定义数字格式字符串"
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/25/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 7b1c16ee-956f-4e9c-8502-c3dd6598c51d
 translationtype: Human Translation
 ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: e36c0117f6f011589299fa59a8abd139870c2257
+ms.openlocfilehash: 2d5a051efd074d02f2a5e9ff03c11e1d9a202d7f
 
 ---
 
@@ -598,11 +597,11 @@ Console.WriteLine(String.Format("{0:" + fmt3 + "}", zeroValue))
 
 ## <a name="notes"></a>备注
 
-### <a name="floatingpoint-infinities-and-nan"></a>浮点型无穷大和 NaN
+### <a name="floating-point-infinities-and-nan"></a>浮点型无穷大和 NaN
 
 无论格式字符串原来是什么值，只要 [Single](xref:System.Single) 或 [Double](xref:System.Double) 浮点类型的值为正无穷大、负无穷大或非数值 (NaN)，格式字符串就分别是当前适用的 [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) 对象指定的 [PositiveInfinitySymbol](xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol)、[NegativeInfinitySymbol](xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol) 或 [NaNSymbol](xref:System.Globalization.NumberFormatInfo.NaNSymbol) 属性的值。 
 
-### <a name="rounding-and-fixedpoint-format-strings"></a>舍入和定点格式字符串
+### <a name="rounding-and-fixed-point-format-strings"></a>舍入和定点格式字符串
 
 对于固定点格式字符串（即不包含科学记数法格式字符的格式字符串），数字被舍入为与小数点右边的数字占位符数目相同的小数位数。 如果格式字符串不包含小数点，数字被舍入为最接近的整数。 如果数字位数多于小数点左边数字占位符的个数，多余的数字被复制到结果字符串中紧挨着第一个数字占位符的前面。
 
@@ -651,6 +650,6 @@ Console.WriteLine(value2)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

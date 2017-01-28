@@ -4,16 +4,15 @@ description: "在 .NET 中分析数字字符串"
 keywords: ".NET、.NET Core"
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: e393430a-731a-49fa-83de-ff7ed52d5704
 translationtype: Human Translation
 ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 65475fd2b42b832de8d65b0a2aa6d4ceb81d4487
+ms.openlocfilehash: 209d24d32eb3b235ff2fde2ef11ffd0ee4e930cf
 
 ---
 
@@ -329,6 +328,6 @@ End Module
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

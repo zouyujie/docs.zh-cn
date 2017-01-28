@@ -3,16 +3,15 @@ title: ".NET Core 应用程序部署"
 description: ".NET Core 应用程序部署"
 keywords: ".NET、.NET Core、.NET Core 部署"
 author: rpetrusha
-manager: wpickett
+ms.author: ronpet
 ms.date: 09/08/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
 translationtype: Human Translation
 ms.sourcegitcommit: 663f4102b82512e64ab39d8046c7298a7cf37de7
-ms.openlocfilehash: 96eb2cc7ca948b3e372fa1363b1741624d791d27
+ms.openlocfilehash: 5509f09b3f7957049194ea7af9952bb6b5ec7539
 
 ---
 
@@ -24,11 +23,11 @@ ms.openlocfilehash: 96eb2cc7ca948b3e372fa1363b1741624d791d27
 
 - 独立部署。 与 FDD 不同，独立部署 (SCD) 不依赖目标系统上存在的任何共享组件。 所有组件，包括 .NET Core 库和 .NET Core 运行时，都包含在应用程序中，并且独立于其他 .NET Core 应用程序。 SCD 包括一个可执行文件（如 Windows 平台上名为 `app` 的应用程序的 `app.exe`），它是特定于平台的 .NET Core 主机的重命名版本，还包括一个 .dll 文件（如 `app.dll`），而它是实际的应用程序。
 
-## <a name="frameworkdependent-deployments-fdd"></a>依赖框架的部署 (FDD) ##
+## <a name="framework-dependent-deployments-fdd"></a>依赖框架的部署 (FDD) ##
 
 对于 FDD，仅部署应用和任何第三方依赖项。 不需要部署 .NET Core，因为应用将使用目标系统上存在的 .NET Core 版本。 这是 .NET Core 应用的默认部署模型。
 
-### <a name="why-create-a-frameworkdependent-deployment"></a>为什么创建依赖框架的部署？ ###
+### <a name="why-create-a-framework-dependent-deployment"></a>为什么创建依赖框架的部署？ ###
 
 部署 FDD 具有很多有点：
 
@@ -44,7 +43,7 @@ ms.openlocfilehash: 96eb2cc7ca948b3e372fa1363b1741624d791d27
 
 - .NET Core 运行时和库在没有将来版本的知识的情况下发生更改是可能的。 在极少数情况下，这可能会更改应用的行为。
 
-### <a name="deploying-a-frameworkdependent-deployment"></a>部署依赖框架的部署 ###
+### <a name="deploying-a-framework-dependent-deployment"></a>部署依赖框架的部署 ###
 
 如果不使用第三方依赖项，部属依赖框架的部署只包括生成、测试和发布应用。 一个用 C# 编写的简单示例可说明此过程。 该示例使用命令行中的 [dotnet 实用程序](../tools/dotnet.md)但是，仍可使用部署环境（如 Visual Studio Code）编译、测试和发布该示例。
 
@@ -101,7 +100,7 @@ ms.openlocfilehash: 96eb2cc7ca948b3e372fa1363b1741624d791d27
 
 除应用程序二进制文件外，安装程序还应打包共享框架安装程序，或作为应用程序安装的部分内容，将其作为必备组件进行检查。  安装共享框架需要管理员/根访问权限，因为它属于计算机范围。
 
-### <a name="deploying-a-frameworkdependent-deployment-with-thirdparty-dependencies"></a>部署包含第三方依赖项的依赖框架的部署 ###
+### <a name="deploying-a-framework-dependent-deployment-with-third-party-dependencies"></a>部署包含第三方依赖项的依赖框架的部署 ###
 
 要运行 `dotnet restore` 命令，必须先完成部署依赖框架的部署（包含一个或多个第三方依赖项）所涉及的其他三个步骤：
 
@@ -121,11 +120,11 @@ ms.openlocfilehash: 96eb2cc7ca948b3e372fa1363b1741624d791d27
 
 注意，具有第三方依赖项的依赖框架的部署只具有与第三方依赖项一样的可移植性。 例如，如果第三方库只支持 macOS，该应用将无法移植到 Windows 系统。 当第三方依赖项本身取决于本机代码时，也可能发生此情况。 Kestrel 服务器就是一个很好的示例。 当为具有此类第三方依赖项的应用程序创建 FDD 时，已发布的输出会针对每个本机依赖项支持（存在于 NuGet 包）的[运行时标识符 (RID)](../rid-catalog.md#what-are-rids) 包含一个文件夹。
 
-## <a name="selfcontained-deployments-scd"></a>独立部署 (SCD) ##
+## <a name="self-contained-deployments-scd"></a>独立部署 (SCD) ##
 
 对于独立部署，部署的不只是应用，还有生成应用所使用的 .NET Core 版本。 但是，创建 SCD 不包括各种平台上的 [.NET Core 的本机依赖项](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)本身（例如，macOS 上的 OpenSSL），因此运行应用程序前需要安装这些依赖项。 
 
-### <a name="why-deploy-a-selfcontained-deployment"></a>为什么要部署独立部署？ ###
+### <a name="why-deploy-a-self-contained-deployment"></a>为什么要部署独立部署？ ###
 
 部署独立部署主要有两个优点：
 
@@ -141,7 +140,7 @@ ms.openlocfilehash: 96eb2cc7ca948b3e372fa1363b1741624d791d27
 
 - 向系统部署大量独立的 .NET Core 应用可能会使用大量磁盘空间，因为每个应用都会复制 .NET Core 文件。
 
-### <a name="a-namesimpleselfa-deploying-a-simple-selfcontained-deployment"></a> 部署简单的独立部署 ###
+### <a name="a-namesimpleselfa-deploying-a-simple-self-contained-deployment"></a><a name="simpleSelf"></a>部署简单的独立部署 ###
 
 部署没有第三方依赖项的独立部署包括创建项目、修改 project.json 文件、生成、测试以及发布应用。  一个用 C# 编写的简单示例可说明此过程。 该示例使用命令行中的 `dotnet` 实用程序。但是，仍可使用部署环境（如 Visual Studio Code）编译、测试和发布该示例。
 
@@ -262,7 +261,7 @@ ms.openlocfilehash: 96eb2cc7ca948b3e372fa1363b1741624d791d27
 }
 ```
 
-### <a name="deploying-a-selfcontained-deployment-with-thirdparty-dependencies"></a>部署具有第三方依赖项的独立部署 ###
+### <a name="deploying-a-self-contained-deployment-with-third-party-dependencies"></a>部署具有第三方依赖项的独立部署 ###
 
 部署具有一个或多个第三方依赖项的独立部署包括添加第三方依赖项：
 
@@ -304,7 +303,7 @@ ms.openlocfilehash: 96eb2cc7ca948b3e372fa1363b1741624d791d27
 
 请注意，可以只将具有一个第三方库的独立部署部署到该库支持的平台。 这与依赖框架的部署中具有本机依赖项的第三方依赖项类似。 
 
-### <a name="deploying-a-selfcontained-deployment-with-a-smaller-footprint"></a>部署内存占用较小的独立部署 ###
+### <a name="deploying-a-self-contained-deployment-with-a-smaller-footprint"></a>部署内存占用较小的独立部署 ###
 
 目标系统上是否有足够可用的存储空间很可能是个问题，可以通过排除某些系统组件减小总体的内存占用。 若要执行此操作，显式定义应用包括在 project.json 文件中的 .NET Core 组件。
 

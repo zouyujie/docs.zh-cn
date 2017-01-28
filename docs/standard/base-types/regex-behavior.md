@@ -4,16 +4,15 @@ description: "正则表达式行为的详细信息"
 keywords: ".NET、.NET Core"
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/28/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 6f11047f-45a4-4caf-a259-18abe08cc0d2
 translationtype: Human Translation
 ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: b217b59874ceafbb0e5e410878cc434974c5a863
+ms.openlocfilehash: fa0513a5b450742995bd86fca495ba9904e7361b
 
 ---
 
@@ -480,7 +479,7 @@ End Module
 
 有关非回溯子表达式的更多信息，请参见[正则表达式中的分组构造](grouping.md)。
 
-### <a name="righttoleft-matching"></a>从右到左匹配
+### <a name="right-to-left-matching"></a>从右到左匹配
 
 从右到左匹配通过向 [Regex](xref:System.Text.RegularExpressions.Regex) 类构造函数或静态实例匹配方法提供 [RegexOptions.RightToLeft](xref:System.Text.RegularExpressions.RegexOptions.RightToLeft) 选项来指定。 当从右到左（而不是从左到右）进行搜索时，或是在从模式右侧部分（而不是左侧部分）开始匹配效率更高的情况下，此功能非常有用。 如下面的示例所示，使用从右到左匹配可以更改贪婪限定符的行为。 该示例对以数字结尾的句子执行两个搜索。 使用贪婪限定符 `+` 的从左到右搜索匹配句子中六个数字之一，而从右到左搜索匹配所有六个数字。 有关正则表达式模式的介绍，请参见此部分前面说明惰性限定符的示例。
 
@@ -641,6 +640,6 @@ End Module
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

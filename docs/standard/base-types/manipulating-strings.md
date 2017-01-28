@@ -4,16 +4,15 @@ description: "操作字符串"
 keywords: ".NET、.NET Core"
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/22/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: da3c277e-b06e-48bd-ae1f-1e7e4240b93e
 translationtype: Human Translation
 ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 40a3d6f6984898f09b5f4ef8b3f22eae71026e9b
+ms.openlocfilehash: 8a01a4406ce45faa18504c7995ddca47117cc825
 
 ---
 
@@ -40,6 +39,6 @@ ms.openlocfilehash: 40a3d6f6984898f09b5f4ef8b3f22eae71026e9b
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -3,16 +3,16 @@ title: "在 .NET 中处理和引发异常"
 description: "了解如何在 .NET 中使用异常"
 keywords: ".NET、.NET Core"
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bf116df6-0042-46bf-be13-b69864816210
 translationtype: Human Translation
 ms.sourcegitcommit: 9584699ad7e745ae3cb059b1bb8327301c9a3286
-ms.openlocfilehash: 0c73fb0a12092877ff5b54221f4a80693d1d1152
+ms.openlocfilehash: 5271b63a47aa2fcc81cd9c8b1ffd22e618829412
 
 ---
 
@@ -26,7 +26,7 @@ ms.openlocfilehash: 0c73fb0a12092877ff5b54221f4a80693d1d1152
 
 在 .NET 中，异常是从 [System.Exception](xref:System.Exception) 类继承的对象。 异常引发自发生问题的代码区域。 异常在堆栈中向上传递，直到应用程序对其进行处理或者程序终止。
 
-## <a name="exceptions-vs-traditional-errorhandling-methods"></a>异常与传统的错误处理方法
+## <a name="exceptions-vs-traditional-error-handling-methods"></a>异常与传统的错误处理方法
 
 传统上，语言的错误处理模型依赖语言检测错误和针对错误查找其处理程序的独特方式，或者依赖操作系统提供的错误处理机制。 .NET 实现异常处理的方式有以下优点：
 
@@ -57,7 +57,7 @@ Object
 | ------------- | ----------- |
 | @System.Exception.Data | @System.Collections.IDictionary 包含键/值对中的任意数据。 |
 | @System.Exception.HelpLink | 可容纳指向帮助文件的 URL（或 URN），帮助文件中提供了大量信息说明了异常的原因。 |
-| @System.Exception.InnerException | 在处理异常时此属性可用于创建和保留一系列异常。 可将其用于创建新异常，其中包含之前捕获到的异常。 可通过 @System.Exception.InnerException 属性中的第二个异常捕获原始异常，允许处理第二个异常的代码检查其他信息。 例如，假设有一个方法可接收格式不正确的参数。  该代码尝试读取参数，但会引发异常。 此方法捕获异常并引发 @System.FormatException.。若要提高调用方确定引发异常的原因的能力，有时最好用一个方法捕获帮助器例程引发的异常，然后引发一个更能说明已发生错误的异常。 可创建一个新的且更有意义的异常，其中可将内部异常引用设为原始异常。 然后可向调用方引发此更有意义的异常。 请注意，使用此功能，可创建一系列链接的异常，以最先引发的异常结尾。 |
+| @System.Exception.InnerException | 在处理异常时此属性可用于创建和保留一系列异常。 可将其用于创建新异常，其中包含之前捕获到的异常。 可通过 @System.Exception.InnerException 属性中的第二个异常捕获原始异常，允许处理第二个异常的代码检查其他信息。 例如，假设有一个方法可接收格式不正确的参数。  该代码尝试读取参数，但会引发异常。 此方法捕获异常并引发 @System.FormatException.  若要提高调用方确定引发异常的原因的能力，有时最好用一个方法捕获帮助器例程引发的异常，然后引发一个更能说明已发生错误的异常。 可创建一个新的且更有意义的异常，其中可将内部异常引用设为原始异常。 然后可向调用方引发此更有意义的异常。 请注意，使用此功能，可创建一系列链接的异常，以最先引发的异常结尾。 |
 | @System.Exception.Message | 提供有关异常原因的详细信息。
 | @System.Exception.Source | 获取或设置导致错误的应用程序或对象的名称。 |
 | @System.Exception.StackTrace | 包含可用于确定错误位置的堆栈跟踪。 如果有可用的调试信息，则堆栈跟踪包含源文件名和程序行号。 |
@@ -247,7 +247,7 @@ public class ProcessFile
 }
 ```
 
-## <a name="how-to-create-userdefined-exceptions"></a>如何创建用户定义的异常
+## <a name="how-to-create-user-defined-exceptions"></a>如何创建用户定义的异常
 
 .NET 提供最终从基类派生的异常类层次结构 @System.Exception.。但是，如果预定义的异常都不符合需求，可通过从 @System.Exception 类派生来创建自己的异常类。
 
@@ -509,6 +509,6 @@ catch (Exception ex)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -3,20 +3,19 @@ title: "移植到 .NET Core - 分析第三方依赖项"
 description: "移植到 .NET Core - 分析第三方依赖项"
 keywords: .NET, .NET Core
 author: cartermp
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: b446e9e0-72f6-48f6-92c6-70ad0ce3f86a
 translationtype: Human Translation
 ms.sourcegitcommit: 46061efa8e33c6a73befa5181eb33b8deb2fa637
-ms.openlocfilehash: 3e75ad86a42b9c8ecc23fe1303830b463a24c3bf
+ms.openlocfilehash: 7e4e96183484d102d102eeab97191f8be9b9be8a
 
 ---
 
-# <a name="porting-to-net-core-analyzing-your-thirdparty-party-dependencies"></a>移植到 .NET Core - 分析第三方依赖项
+# <a name="porting-to-net-core---analyzing-your-third-party-party-dependencies"></a>移植到 .NET Core - 分析第三方依赖项
 
 移植过程的第一步是了解第三方依赖项。  需要找出尚未在 .NET Core 上运行的依赖项（如果有），并为这些没有在 .Net Core 上运行的依赖项制定应变计划。
 
@@ -99,6 +98,6 @@ dotnet5.5
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -3,16 +3,16 @@ title: "实例化 DateTimeOffset 对象"
 description: "实例化 DateTimeOffset 对象"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/15/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 476fe67b-6be4-4435-88ab-ced37304f1d1
 translationtype: Human Translation
 ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: 330371397d0ec258597e4e4f109f3f1bb35df6b7
+ms.openlocfilehash: 3b6e2cc973b9587cc9950ecd6898b8a321a01036
 
 ---
 
@@ -486,6 +486,6 @@ End If
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

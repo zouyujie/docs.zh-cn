@@ -3,16 +3,16 @@ title: "本机互操作性"
 description: "本机互操作性"
 keywords: .NET, .NET Core
 author: blackdwarf
-manager: wpickett
+ms.author: ronpet
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 3c357112-35fb-44ba-a07b-6a1c140370ac
 translationtype: Human Translation
 ms.sourcegitcommit: 3aeaba5c8cf800c652941b5e6c2bc9f072849893
-ms.openlocfilehash: 0d7415b10d6f247c30b3da508eb8fc9e0007f824
+ms.openlocfilehash: 36041eda54290484741c375ae776b7bf1a74d7a1
 
 ---
 
@@ -353,6 +353,6 @@ public class StatClass {
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

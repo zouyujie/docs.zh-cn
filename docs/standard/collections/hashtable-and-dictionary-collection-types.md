@@ -3,16 +3,16 @@ title: "哈希表和字典集合类型"
 description: "哈希表和字典集合类型"
 keywords: ".NET、.NET Core"
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 0f18fac7-fd0d-4f25-a046-1d3d51de062e
 translationtype: Human Translation
 ms.sourcegitcommit: e07788926a995b41571be276379ad9285747951d
-ms.openlocfilehash: 721f16154e1df4b7a075639ccce6bf2650b46c9b
+ms.openlocfilehash: 373948733acc883a3fdc04d8dfc34f66435362af
 
 ---
 
@@ -51,6 +51,6 @@ ms.openlocfilehash: 721f16154e1df4b7a075639ccce6bf2650b46c9b
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

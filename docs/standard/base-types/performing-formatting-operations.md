@@ -3,16 +3,16 @@ title: "执行格式设置操作"
 description: "执行格式设置操作"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/25/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 982f0b64-7e69-4bbe-a688-0117f86a603c
 translationtype: Human Translation
 ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: cd243693a19500ac53fe6033cfe4ef5a36a9096a
+ms.openlocfilehash: 7cc5f4e68cb944a2684c58af866afe1edd66d43b
 
 ---
 
@@ -38,6 +38,6 @@ ms.openlocfilehash: cd243693a19500ac53fe6033cfe4ef5a36a9096a
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

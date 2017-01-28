@@ -3,32 +3,32 @@ title: "使用命令行在 Windows/Linux/macOS 上入门 .NET Core"
 description: "使用命令行接口 (CLI) 在 Windows、Linux 或 macOS 上入门 .NET Core"
 keywords: .NET, .NET Core
 author: cartermp
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: be988f09-7349-43b0-97fb-3a703d4587ce
 translationtype: Human Translation
-ms.sourcegitcommit: aeb199a9aeb1584570ad2a2942e2f22c75a59616
-ms.openlocfilehash: aafa0c110dc3a2820f7e050d70b9450af1db35d8
+ms.sourcegitcommit: 37e14d5cdf1593f6a8b1ecee9d9828647b023548
+ms.openlocfilehash: 5493ccb77e62d20d5101728ef8ab1744ea697fb8
 
 ---
 
 # <a name="getting-started-with-net-core-on-windowslinuxmacos-using-the-command-line"></a>使用命令行在 Windows/Linux/macOS 上入门 .NET Core
 
-本指南介绍如何使用 .NET Core CLI 工具生成跨平台控制台应用。  将从最基本的控制台应用开始介绍，最终涵盖包括测试在内的多个项目。 基于已经了解和生成的应用，逐步添加这些功能。
+本指南介绍如何使用 .NET Core CLI 工具生成基本的跨平台控制台应用。
 
 如果熟悉 .NET Core CLI 工具集，请阅读 [.NET Core SDK 概述](../sdk.md)。
 
 ## <a name="prerequisites"></a>先决条件
 
-开始前，请确保拥有[最新的 .NET Core CLI 工具](https://www.microsoft.com/net/core)。  还需要一个文本编辑器。
+开始前，请确保拥有[最新的 .NET Core CLI 工具](https://www.microsoft.com/net/core)。 还需要一个文本编辑器。
 
 ## <a name="hello-console-app"></a>Hello，控制台应用！
 
-首先，导航到一个文件夹或使用喜欢的名称新建一个文件夹。  “Hello”是为示例代码选择的名称，可在[此处](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Hello)找到它。
+导航到一个文件夹或使用喜欢的名称新建一个文件夹。 “Hello”是为示例代码选择的名称，可在[此处](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Hello)找到它。
 
 打开命令提示符，键入下列命令：
 
@@ -97,7 +97,7 @@ Hello, World!
 
 还可以执行 [`dotnet build`](../tools/dotnet-build.md) 来编译代码，无需运行已生成的控制台应用程序。
 
-### <a name="building-a-selfcontained-application"></a>生成自包含应用程序
+### <a name="building-a-self-contained-application"></a>生成自包含应用程序
 
 让我们尝试编译自包含应用程序，而不是可移植应用程序。 可阅读更多有关 [.NET Core 中可移植性的类型](../deploying/index.md)的信息，了解不同的应用程序类型及其部署方式。
 
@@ -647,6 +647,6 @@ SUMMARY: Total: 1 targets, Passed: 1, Failed: 0.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

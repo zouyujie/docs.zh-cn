@@ -3,16 +3,16 @@ title: "泛型类型（泛型）概述"
 description: "泛型类型（泛型）概述"
 keywords: .NET, .NET Core
 author: kuhlenh
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a315b111-8e48-446c-ab19-acb6405894a7
 translationtype: Human Translation
 ms.sourcegitcommit: 5b1a76c011b95db3ff5c4b4e01556f79c45fb369
-ms.openlocfilehash: 5dcb9d10aeded8c5e8956c4b99ba9675311a787a
+ms.openlocfilehash: 09f52c2b4b821b21279f602e7bbf45e91fe98dec
 
 ---
 
@@ -78,6 +78,6 @@ Non-Generic Sort: System.Collections.ArrayList Time taken: 2.4324ms
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

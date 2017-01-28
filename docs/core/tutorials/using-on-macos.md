@@ -3,16 +3,15 @@ title: "在 macOS 上入门 .NET Core"
 description: "使用 Visual Studio Code 在 macOS 上入门 .NET Core"
 keywords: .NET, .NET Core
 author: bleroy
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 8ad82148-dac8-4b31-9128-b0e9610f4d9b
 translationtype: Human Translation
-ms.sourcegitcommit: 2339be6aef7e2ff942f1f1999a12f48ee4a77ee8
-ms.openlocfilehash: 12b7bed380db53aad04f0615c6efa6152b3035b7
+ms.sourcegitcommit: 7ac95fa4b2aac81b2e8d33cedf2faf36a0bbf210
+ms.openlocfilehash: 33d87c3236e5f592cd59eab77df1059ac089b88c
 
 ---
 
@@ -248,6 +247,6 @@ using Library;
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO3-->
 
 

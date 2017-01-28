@@ -3,16 +3,15 @@ title: "组织项目以支持 .NET Framework 和 .NET Core"
 description: "组织项目以支持 .NET Framework 和 .NET Core"
 keywords: .NET, .NET Core
 author: conniey
-manager: wpickett
+ms.author: mairaw
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 3af62252-1dfa-4336-8d2f-5cfdb57d7724
 translationtype: Human Translation
-ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: ca63b25bb5f5e98167aaa8b74a7204fcd77b3523
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: ed2fdad2a784f4e4ce1f8a660b5bb151935fd2d4
 
 ---
 
@@ -33,13 +32,13 @@ ms.openlocfilehash: ca63b25bb5f5e98167aaa8b74a7204fcd77b3523
   * 不允许在同一解决方案文件中不同的项目类型之间共享 .NET Core 库。 若要支持此操作，建议[创建可移植类库](#support-pcl)。
   * 不允许生成项目或加载 MSBuild 目标和任务所支持的修改。 若要支持此操作，建议[创建可移植类库](#support-pcl)。
 
-* [**将现有项目和新的 .NET Core 项目相分隔**][option-xproj-folder]
+* <a name="support-vs"></a>[**将现有项目和新的 .NET Core 项目分离**][option-xproj-folder]
   
   *此方案的好处：*
   * 继续支持现有项目的开发，而无需为没有安装 Visual Studio 2015 的开发人员/参与者进行升级。
   * 减少现有项目中出现新 bug 的可能性，因为这些项目中不需要进行任何代码改动。
 
-* [**保留现有项目并创建针对 .NET Core 的可移植类库 (PCL)**][option-pcl]
+* <a name="support-pcl"></a>[**保留现有项目并创建面向 .NET Core 的可移植类库 (PCL)**][option-pcl]
 
   *此方案的好处：*
   * 引用同一解决方案中针对完整 .NET Framework 的桌面和/或 Web 项目中的 .NET Core 库。
@@ -58,7 +57,7 @@ ms.openlocfilehash: ca63b25bb5f5e98167aaa8b74a7204fcd77b3523
 
 根据以下所述的现有项目的约束和复杂性，有几种不同的方法可为此存储库添加对 .NET Core 的支持。
 
-## <a name="replace-existing-projects-with-a-multitargeted-net-core-project-xproj"></a>将现有项目替换为多目标的 .NET Core 项目 (xproj)
+## <a name="replace-existing-projects-with-a-multi-targeted-net-core-project-xproj"></a>将现有项目替换为多目标的 .NET Core 项目 (xproj)
 
 可以重新组织存储库，以便删除任何现有的 `*.csproj` 文件并创建以多个框架为目标的单一 `*.xproj` 文件。  这是一项不错的选择，因为单个项目可以编译不同的框架。  它还可以处理每个目标框架的不同编译选项、 依赖项等等。
 
@@ -69,7 +68,7 @@ ms.openlocfilehash: ca63b25bb5f5e98167aaa8b74a7204fcd77b3523
 需注意的更改：
 * 添加了 `global.json`
 * 将 `packages.config` 和 `*.csproj` 替换为 `project.json` 和 `*.xproj`
-* 对 [Car 的 project.json][example-xproj-projectjson]及其[测试项目][example-xproj-projectjson-test] 进行了更改以支持生成现有的 .NET Framework 以及其他框架
+* 对 [Car 的 project.json][example-xproj-projectjson]及其[测试项目][example-xproj-projectjson-test]进行了更改以支持生成现有的 .NET Framework 以及其他框架
 
 ## <a name="create-a-portable-class-library-pcl-to-target-net-core"></a>创建以 .NET Core 为目标的可移植类库 (PCL)
 
@@ -98,7 +97,7 @@ ms.openlocfilehash: ca63b25bb5f5e98167aaa8b74a7204fcd77b3523
     * 这可以避免上述因多个 project.json/package.config 文件位于同一文件夹中所引起的包还原问题。
     * 将项目保存在不同的文件夹中可以避免强制使用 Visual Studio 2015（因project.json）。  可以创建仅打开旧项目的单独解决方案。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 有关移动到 project.json 和 xproj 的详细指南，请参阅 [.NET Core 移植文档][porting-doc]。
 
@@ -114,7 +113,7 @@ ms.openlocfilehash: ca63b25bb5f5e98167aaa8b74a7204fcd77b3523
 [example-xproj-different-folder]: media/project-structure/project.xproj.different.png "不同文件夹中包含现有 PCL 的 .NET Core 项目"
 [example-xproj-different-code]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-xproj-keep-csproj/
 
-[example-pcl]: media/project-structure/project.pcl.png " .NET Core 为目标的 PCL"
+[example-pcl]: media/project-structure/project.pcl.png "以 .NET Core 为目标的 PCL"
 [example-pcl-code]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-pcl
 
 [option-xproj]: #replace-existing-projects-with-a-multi-targeted-net-core-project-xproj
@@ -125,6 +124,6 @@ ms.openlocfilehash: ca63b25bb5f5e98167aaa8b74a7204fcd77b3523
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO3-->
 
 

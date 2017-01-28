@@ -3,16 +3,15 @@ title: "使用 project.json 减少包依赖项"
 description: "使用 project.json 减少包依赖项"
 keywords: .NET, .NET Core
 author: cartermp
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 916251e3-87f9-4eee-81ec-94076215e6fa
 translationtype: Human Translation
 ms.sourcegitcommit: 62fdb3e60b206728d86220076867eb8fd68af82e
-ms.openlocfilehash: caae9f0a32c4378488329fd6d88c1dc7bf96ae9a
+ms.openlocfilehash: 77d49a1df361823c3f8f676923960d4bef2eeb08
 
 ---
 
@@ -159,6 +158,6 @@ ms.openlocfilehash: caae9f0a32c4378488329fd6d88c1dc7bf96ae9a
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

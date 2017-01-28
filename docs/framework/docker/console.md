@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 85cca1d5-c9a4-4eb2-93e6-4f878de07fd7
 translationtype: Human Translation
 ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: fd610bdba56679dd522149d8e91dc91858c7f7ed
+ms.openlocfilehash: 6d311674cc50c8a86128cf88c39e3044f70ba183
 
 ---
 
@@ -147,6 +147,6 @@ docker run --rm console-random-answer-generator "Are you a square container?"
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

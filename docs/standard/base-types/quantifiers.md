@@ -4,16 +4,15 @@ description: "正则表达式中的限定符"
 keywords: ".NET、.NET Core"
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 8e5124c4-20b5-4c57-ab68-301d1d7311c4
 translationtype: Human Translation
 ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 016ee9a4f05fdf36982c5b369780526296b53a7d
+ms.openlocfilehash: 79637972770d3ab5d954d40285dc4f07e58d233f
 
 ---
 
@@ -792,6 +791,6 @@ End Module
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

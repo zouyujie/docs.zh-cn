@@ -3,16 +3,15 @@ title: "垃圾回收"
 description: "垃圾回收"
 keywords: ".NET、.NET Core"
 author: richlander
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
 ms.devlang: dotnet
 ms.assetid: db39a0f5-e363-490f-a7e6-adb9a6ff2a8c
 translationtype: Human Translation
-ms.sourcegitcommit: 213ce098bcc2b5e31c55e759d895254d5ca33caa
-ms.openlocfilehash: 2406a03fa64eb02c70f05c1e8240e4bc5981e98d
+ms.sourcegitcommit: ffc0530b2263db0e073f351aac2d539de6701ead
+ms.openlocfilehash: 4646a7e8c75315bb1a13bc5fddecd77888f6ae69
 
 ---
 
@@ -29,7 +28,7 @@ ms.openlocfilehash: 2406a03fa64eb02c70f05c1e8240e4bc5981e98d
 
 .NET GC 分为 3 代。 每一代各有其用于存储所分配对象的堆。 基本原则是，大多数对象不是短期存在就是长期存在的。 首先在第 0 代分配对象。 对象存在的时间通常不超过第 1 代，因为下一次垃圾回收时已不再使用这些对象（超出使用范围）。 第 0 代回收垃圾速度很快，因为与其关联的堆很小。 第 1 代实际上是第二次机会空间。 短期存在而（通常由于时机巧合）被第 0 代回收保留的对象进入第 1 代\.。第 1 代回收的速度也很快，因为与其关联的堆也很小。 前两个对较小是因为它们只收集对象会或将对象提升到下一代的堆。 所有长期存在的对象都处于第 2 代。 第 2 代的堆可以变得非常庞大，因为它包含的对象可能在很长时间内存在，并且不存在第 3 代堆来进一步提升对象。
 
-GC 有用于大型对象的附加堆，称为大型对象堆 (LOH)。 该堆保留用于收集 85,000 字节或更大的对象。 含有 85,000 个元素的字节数组 (Byte[]) 是大型对象的一个示例。 大型对象不会分配到各代的堆，而是直接分配到 LOH。
+GC 具有用于大型对象的附加堆，称为大型对象堆 (LOH)。 该堆保留用于收集 85,000 字节或更大的对象。 含有 85,000 个元素的字节数组 (Byte[]) 是大型对象的一个示例。 大型对象不会分配到各代的堆，而是直接分配到 LOH。
 
 对于运行了较长时间或对大量数据进行操作的程序，第 2 代和 LOH 回收可能花费较长时间。 已知大型服务器程序拥有数十 GB 的堆。 GC 会运用各种技术，缩短其阻止程序运行的时间。 主要方法是通过后台线程，以不干扰程序执行的方式进行尽可能多的垃圾回收工作。 GC 向开发人员提供了几种可影响其行为的方法，对于提高性能十分有用。
 
@@ -66,6 +65,6 @@ GC 有用于大型对象的附加堆，称为大型对象堆 (LOH)。 该堆保�
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

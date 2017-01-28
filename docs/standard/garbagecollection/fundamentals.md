@@ -4,16 +4,15 @@ description: "垃圾回收的基本知识"
 keywords: ".NET、.NET Core"
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 08/16/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 9d5fce64-95a4-4609-8eee-b0ac70078cdb
 translationtype: Human Translation
 ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 53c3afbe0492d010f7864bb42e7b83836c10aa4a
+ms.openlocfilehash: 78a2d593329f0703c71df2462cfea30b02adff85
 
 ---
 
@@ -174,6 +173,6 @@ ms.openlocfilehash: 53c3afbe0492d010f7864bb42e7b83836c10aa4a
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
