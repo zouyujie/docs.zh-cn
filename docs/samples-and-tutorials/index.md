@@ -10,8 +10,8 @@ ms.prod: .net
 ms.devlang: dotnet
 ms.assetid: 617310e7-336b-4864-8dab-7e2021512929
 translationtype: Human Translation
-ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: 17023a076df7b99a26a20ddc7b78984dd170d001
+ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
+ms.openlocfilehash: f44193d8f7bc9f67acb8b04966e02beca18a0653
 
 ---
 
@@ -21,7 +21,7 @@ ms.openlocfilehash: 17023a076df7b99a26a20ddc7b78984dd170d001
 
 可在 [F# 基础站点](http://fsharp.org/learn.html)找到学习 F# 编程语言的丰富资源。 
 
-可在 [ASP.NET 站点](https://docs.asp.net/en/latest/tutorials/index.html)找到学习 ASP.NET Core 的丰富资源。
+可在 [ASP.NET 站点](https://docs.microsoft.com/aspnet/core/tutorials/)找到学习 ASP.NET Core 的丰富资源。
 
 此外，如果对使用在线演练探索 C# 感兴趣，可尝试这些[交互式教程](http://go.microsoft.com/fwlink/?LinkId=817234)。
 
@@ -98,6 +98,6 @@ ms.openlocfilehash: 17023a076df7b99a26a20ddc7b78984dd170d001
 本教程演示如何在 Windows 容器中部署现有控制台应用程序。 要生成的代码最终版本位于 [GitHub 上的 core-docs 存储库中](https://github.com/dotnet/docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator)。
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

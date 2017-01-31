@@ -10,8 +10,8 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: f6f654b1-1d2c-4105-8376-7c1959e23803
 translationtype: Human Translation
-ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: 48d20bb82584435904ded5d509afcbfc8a7ce76a
+ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
+ms.openlocfilehash: 1829b32f1a5f92c5ee065c3107750621681ac82c
 
 ---
 
@@ -26,9 +26,9 @@ ms.openlocfilehash: 48d20bb82584435904ded5d509afcbfc8a7ce76a
 - [如何管理 .NET Core 1.0 的包依赖项版本](managing-package-dependency-versions.md)
 - [使用 MSBuild 生成 .NET Core 项目](target-dotnetcore-with-msbuild.md)
 
-有关开发 ASP.NET Core Web 应用程序的教程，建议参阅 [ASP.NET Core documentation](https://docs.asp.net)（ASP.NET Core 文档）。
+有关开发 ASP.NET Core Web 应用程序的教程，建议参阅 [ASP.NET Core documentation](https://docs.microsoft.com/aspnet/core/)（ASP.NET Core 文档）。
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 
