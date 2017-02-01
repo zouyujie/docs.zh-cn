@@ -3,8 +3,8 @@ layout: HubPage
 hide_bc: true
 title: ".NET 文档"
 translationtype: Human Translation
-ms.sourcegitcommit: c8b9e166a49c86dcabfa89887db1dce3a8e45f4f
-ms.openlocfilehash: d8b2def6b766aa1af9318fe5b0620f4db4a2ee43
+ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
+ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
 
 ---
 <div id="main" class="v2">
@@ -86,7 +86,7 @@ ms.openlocfilehash: d8b2def6b766aa1af9318fe5b0620f4db4a2ee43
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/articles/welcome">什么是 .NET？</a></h3>
-                                                <p><a href="https://www.microsoft.com/net">开始操作</a></p>
+                                                <p><a href="/dotnet/articles/standard/getting-started">入门</a></p>
                                                 <p><a href="/dotnet/articles/standard/tour">.NET 教程</a></p>
                                                 <p><a href="/dotnet/articles/standard/components">.NET 体系结构概念</a></p>
                                             </div>
@@ -105,10 +105,10 @@ ms.openlocfilehash: d8b2def6b766aa1af9318fe5b0620f4db4a2ee43
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/articles/core">.NET Core 指南</a></h3>
-                                                <p><a href="/dotnet/articles/core/getting-started">开始操作</a></p>
+                                                <p><a href="/dotnet/articles/core/getting-started">入门</a></p>
                                                 <p><a href="/dotnet/articles/core/tutorials">教程</a></p>
-                                                <p><a href="/dotnet/articles/core/porting">从 .NET Framework 移植</a></p>
-                                                <p><a href="https://docs.asp.net/en/latest/getting-started.html">ASP.NET Core</a></p>
+                                                <p><a href="/dotnet/articles/core/porting">Porting from .NET Framework</a></p>
+                                                <p><a href="/aspnet/core/getting-started">ASP.NET Core</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -125,10 +125,10 @@ ms.openlocfilehash: d8b2def6b766aa1af9318fe5b0620f4db4a2ee43
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="https://msdn.microsoft.com/library/w0x726c2(v=vs.110).aspx">.NET Framework 指南</a></h3>
-                                                <p><a href="https://msdn.microsoft.com/library/hh425099(v=vs.110).aspx">开始操作</a></p>
+                                                <p><a href="https://msdn.microsoft.com/library/hh425099(v=vs.110).aspx">入门</a></p>
                                                 <p><a href="https://msdn.microsoft.com/library/hh156542(v=vs.110).aspx">教程</a></p>
                                                 <p><a href="https://msdn.microsoft.com/library/54xbah2z(v=vs.110).aspx">客户端开发</a></p>
-                                                <p><a href="https://msdn.microsoft.com/library/bb400852(v=vs.110).aspx">ASP.NET</a></p>
+                                                <p><a href="https://msdn.microsoft.com/library/bb400852(v=vs.110).aspx">ASP.NET&2;.0</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -145,7 +145,7 @@ ms.openlocfilehash: d8b2def6b766aa1af9318fe5b0620f4db4a2ee43
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="https://developer.xamarin.com/guides/cross-platform/getting_started">Xamarin</a></h3>
-                                                <p><a href="https://developer.xamarin.com/guides/cross-platform/getting_started">开始操作</a></p>
+                                                <p><a href="https://developer.xamarin.com/guides/cross-platform/getting_started">入门</a></p>
                                                 <p><a href="https://developer.xamarin.com/guides/ios">Xamarin.iOS 指南</a></p>
                                                 <p><a href="https://developer.xamarin.com/guides/android/getting_started">Xamarin.Android 指南</a></p>
                                                 <p><a href="https://developer.xamarin.com/guides/xamarin-forms">Xamarin.Forms 指南</a></p>
@@ -165,8 +165,8 @@ ms.openlocfilehash: d8b2def6b766aa1af9318fe5b0620f4db4a2ee43
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/articles/csharp">C# 指南</a></h3>
-                                                <p><a href="/dotnet/articles/csharp/getting-started">开始操作</a></p>
-                                                <p><a href="/dotnet/articles/csharp/tour-of-csharp">C 教程#</a></p>
+                                                <p><a href="/dotnet/articles/csharp/getting-started">入门</a></p>
+                                                <p><a href="/dotnet/articles/csharp/tour-of-csharp">C# 教程</a></p>
                                                 <p><a href="/dotnet/articles/csharp/language-reference">C# 语言参考</a></p>
                                             </div>
                                         </div>
@@ -184,8 +184,8 @@ ms.openlocfilehash: d8b2def6b766aa1af9318fe5b0620f4db4a2ee43
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/articles/fsharp">F# 指南</a></h3>
-                                                <p><a href="/dotnet/articles/fsharp/tutorials/getting-started">开始操作</a></p>
-                                                <p><a href="/dotnet/articles/fsharp/tour">F 教程#</a></p>
+                                                <p><a href="/dotnet/articles/fsharp/tutorials/getting-started">入门</a></p>
+                                                <p><a href="/dotnet/articles/fsharp/tour">F# 教程</a></p>
                                                 <p><a href="/dotnet/articles/fsharp/language-reference">F# 语言参考</a></p>
                                             </div>
                                         </div>
@@ -203,7 +203,7 @@ ms.openlocfilehash: d8b2def6b766aa1af9318fe5b0620f4db4a2ee43
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/articles/visual-basic">Visual Basic 指南</a></h3>
-                                                <p><a href="/dotnet/articles/visual-basic/getting-started">开始操作</a></p>
+                                                <p><a href="/dotnet/articles/visual-basic/getting-started">入门</a></p>
                                                 <p><a href="/dotnet/articles/visual-basic/walkthroughs">Visual Basic 教程</a></p>
                                                 <p><a href="/dotnet/articles/visual-basic/language-reference">Visual Basic 语言参考</a></p>
                                             </div>
