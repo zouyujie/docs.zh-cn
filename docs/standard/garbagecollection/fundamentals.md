@@ -141,7 +141,7 @@ ms.openlocfilehash: 78a2d593329f0703c71df2462cfea30b02adff85
 
 因为第 2 代回收可以占用多个段，所以可以将已提升到第 2 代中的对象移动到时间较早的段中。 可以将第 1 代幸存者和第 2 代幸存者都移动到不同的段，因为它们已被提升到第 2 代。 
 
-通常，由于复制大型对象会造成性能代偿，因此不会压缩大型对象堆。 但是，可使用 [GCSettings.LargeObjectHeapCompactionMode](xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode) 属性按需亚索大型对象堆。 
+通常，由于复制大型对象会造成性能代偿，因此不会压缩大型对象堆。 但是，可使用 [GCSettings.LargeObjectHeapCompactionMode](xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode) 属性按需压缩大型对象堆。 
 
 垃圾回收器使用以下信息来确定对象是否为活动对象： 
 
