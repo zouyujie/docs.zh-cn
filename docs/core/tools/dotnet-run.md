@@ -1,26 +1,29 @@
 ---
-title: "dotnet-run 命令 | .NET Core SDK"
+title: "dotnet-run 命令 | Microsoft Docs"
 description: "dotnet-run 命令为从源代码运行应用程序提供了一个方便的选项。"
 keywords: "dotnet-run, CLI, CLI 命令, .NET Core"
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/07/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 495ff50b-cb30-4d30-8f20-beb3d5e7c31f
 translationtype: Human Translation
-ms.sourcegitcommit: c6ee3f5663d0a3f62914e8de474cca4d15340c9d
-ms.openlocfilehash: 18731d9fcc190371d908779a69a81114e0685aba
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 2e14cd14bc3d5ed86c841e46dc80c2649f239a82
 
 ---
 
-#<a name="dotnetrun"></a>dotnet-run
+#<a name="dotnet-run"></a>dotnet-run
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具预览版 2。 对于 .NET Core 工具 RC4 版本，请参阅 [dotnet-run（.NET Core 工具 RC4）](../preview3/tools/dotnet-run.md)主题。
 
 ## <a name="name"></a>名称 
 
-dotnet-run - 无需任何显式编译或启动命令即可“就地”运行源代码
+`dotnet-run` - 无需任何显式编译或启动命令即可“就地”运行源代码。
 
 ## <a name="synopsis"></a>摘要
 
@@ -77,6 +80,6 @@ dotnet-run - 无需任何显式编译或启动命令即可“就地”运行源�
 `dotnet run --configuration Release -- --help`
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

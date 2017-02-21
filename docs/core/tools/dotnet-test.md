@@ -1,26 +1,29 @@
 ---
-title: "dotnet-test 命令 | .NET Core SDK"
-description: "“dotnet test”命令用于执行给定项目中的单元测试。"
+title: "dotnet-test 命令 | Microsoft Docs"
+description: "`dotnet test` 命令用于执行给定项目中的单元测试。"
 keywords: "dotnet-test, CLI, CLI 命令, .NET Core"
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/07/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 3a0fa917-eb0a-4d7e-9217-d06e65455675
 translationtype: Human Translation
-ms.sourcegitcommit: c6ee3f5663d0a3f62914e8de474cca4d15340c9d
-ms.openlocfilehash: b12861f0ce3c40bf4db51994ea5d4a92b8ef0162
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 871a6f736272309f6fae74b06f437c7271df2321
 
 ---
 
-#<a name="dotnettest"></a>dotnet-test
+#<a name="dotnet-test"></a>dotnet-test
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具预览版 2。 对于 .NET Core 工具 RC4 版本，请参阅 [dotnet-test（.NET Core 工具 RC4）](../preview3/tools/dotnet-test.md)主题。
 
 ## <a name="name"></a>名称
 
-`dotnet-test` - 使用配置的测试运行程序运行单元测试
+`dotnet-test` - 使用配置的测试运行程序运行单元测试。
 
 ## <a name="synopsis"></a>摘要
 
@@ -132,6 +135,6 @@ IDE 用于指定侦听连接的端口号。
 [运行时标识符 (RID) 目录](../rid-catalog.md)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

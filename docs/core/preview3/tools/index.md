@@ -1,23 +1,25 @@
 ---
-title: ".NET Core 命令行接口 (CLI) 工具"
+title: ".NET Core 命令行接口 (CLI) 工具 | Microsoft Docs"
 description: "命令行接口 (CLI) 的定义及其主要功能的概述"
 keywords: "CLI, CLI 工具, .NET, .NET Core"
 author: blackdwarf
 ms.author: mairaw
-manager: wpickett
 ms.date: 10/06/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: b70e9ac0-c8be-49f7-9332-95ab93e0e7bc
+ms.assetid: 7c5eee9f-d873-4224-8f5f-ed83df329a59
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: d9e689524a3100f1c5c129bdf13ed691a850ad2e
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: bcb9e39ed400ad93ae9b38890caa6c579f4a1594
 
 ---
 
-# <a name="net-core-command-line-interface-tools"></a>.NET Core 命令行接口工具
+# <a name="net-core-command-line-interface-tools-net-core-tools-rc4"></a>.NET Core 命令行接口工具（.NET Core 工具 RC4）
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具 RC4。 对于 .NET Core 工具预览版 2，请参阅 [.NET Core 命令行接口工具](../../tools/index.md)主题。
 
 .NET Core 命令行接口 (CLI) 工具是用于开发 .NET Core 应用程序的新型基础性跨平台工具链。 “基础性”在于它是可以在其中生成其他更高级别工具（如集成开发环境 (IDE)、编辑器和生成 orchestrator）的主层。 
 
@@ -36,6 +38,7 @@ ms.openlocfilehash: d9e689524a3100f1c5c129bdf13ed691a850ad2e
 默认安装以下命令：
 
 * [new](dotnet-new.md)
+* [migrate](dotnet-migrate.md)
 * [restore](dotnet-restore.md)
 * [run](dotnet-run.md)
 * [build](dotnet-build.md)
@@ -86,10 +89,11 @@ CLI 以两种主要方式实现应用程序的可移植性：
 
 可在 [.NET Core 应用程序部署](../deploying/index.md)主题中了解以上两点的详细信息。 
 
-## <a name="migration-from-preview-3projectjson"></a>从预览版 3/project.json 迁移
+## <a name="migration-from-rc4projectjson"></a>从 RC4/project.json 迁移
 如果使用预览版 2 工具和 project.json 项目，还可以参考 [dotnet migrate](dotnet-migrate.md) 命令文档，了解该命令以及如何迁移项目。 
 
-> **注意：**`dotnet migrate` 命令当前不会迁移预览版 2 project.json 文件。 
+> [!NOTE]
+> `dotnet migrate` 命令当前不会迁移预览版 2 project.json 文件。 
 
 ## <a name="extensibility"></a>扩展性
 当然，并非要在工作流中使用的每个工具都将成为核心 CLI 工具的一部分。 但是，.NET Core CLI 具备可使你为项目指定其他工具的扩展性模型。 有关详细信息，请参阅 [.NET Core CLI 扩展性模型](extensibility.md)主题。
@@ -101,6 +105,6 @@ CLI 以两种主要方式实现应用程序的可移植性：
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

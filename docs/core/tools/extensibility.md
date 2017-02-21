@@ -1,22 +1,25 @@
 ---
-title: ".NET Core CLI 扩展性模型"
+title: ".NET Core CLI 扩展性模型 | Microsoft Docs"
 description: ".NET Core CLI 扩展性模型"
 keywords: "CLI, 扩展性, 自定义命令, .NET Core"
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 1bebd25a-120f-48d3-8c25-c89965afcbcd
 translationtype: Human Translation
-ms.sourcegitcommit: aeb199a9aeb1584570ad2a2942e2f22c75a59616
-ms.openlocfilehash: ea16d4b841f5c93da222df56db36d6fb70ea35f9
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 0a136e69e103994a69084b09f481489880d5df42
 
 ---
 
 # <a name="net-core-cli-extensibility-model"></a>.NET Core CLI 扩展性模型 
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具预览版 2。 对于 .NET Core 工具 RC4 版本，请参阅 [.NET Core CLI 扩展性模型（.NET Core 工具 RC4）](../preview3/tools/extensibility.md)主题。
 
 ## <a name="overview"></a>概述
 本文将介绍如何扩展 CLI 工具的主要方式，并解释驱动每个工具的方案。 本文档将概述如何使用这些工具并简短说明如何生成两种工具。 
@@ -29,14 +32,14 @@ ms.openlocfilehash: ea16d4b841f5c93da222df56db36d6fb70ea35f9
 
 上方列出的两种扩展性机制并不相互排斥；可以同时使用或单独使用。 选择何种机制很大程度上取决于希望通过扩展实现的目标。
 
-## <a name="perproject-based-extensibility"></a>基于每个项目的扩展性
+## <a name="per-project-based-extensibility"></a>基于每个项目的扩展性
 基于项目的工具是作为 NuGet 包分布的[可移植控制台应用程序](../deploying/index.md)。 工具仅在项目的上下文中可用，这些工具被该项目引用或为该项目还原；项目上下文外（例如，包含该项目的目录外）的调用将因无法找到命令而失败。
 
 此外，这些工具非常适合生成服务器，因为 `project.json` 外不需要任何条件。 生成过程会对所生成的项目运行还原操作，并且工具可用。 语言项目（如 F#）也属于此类别；毕竟只能采用某种特定语言编写每个项目。 
 
 最后，此扩展性模型支持创建需要访问项目生成输出的工具。 例如，[ASP.NET](https://www.asp.net/) MVC 应用程序中的多种 Razor 视图工具均属于此类别。 
 
-### <a name="consuming-perproject-tools"></a>使用基于项目的工具
+### <a name="consuming-per-project-tools"></a>使用基于项目的工具
 使用这些工具需要将 `tools` 节点添加到 `project.json`。 在 `tools` 节点内，引用该工具所在的包。 运行 `dotnet restore` 后，将还原该工具及其依赖项。 
 
 对于需要加载用于执行的项目生成输出的工具，通常还有一个依赖项，它位于项目文件中的常规依赖项下。 这意味着加载项目代码的工具有两个组件： 
@@ -101,7 +104,7 @@ ms.openlocfilehash: ea16d4b841f5c93da222df56db36d6fb70ea35f9
 * [特定于框架的依赖项的实现](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages/dotnet-desktop-and-portable)
 
 
-### <a name="pathbased-extensibility"></a>基于路径的扩展
+### <a name="path-based-extensibility"></a>基于路径的扩展
 基于路径的扩展常用于开发计算机，此计算机需要在概念上涵盖多个项目的工具。 此扩展机制的主要缺点在于必须将其关联到工具所在的计算机。 如果其他计算机上需要该机制，则必须对其进行部署。
 
 此 CLI 工具集扩展的模式就非常简单。 正如 [.NET Core CLI 概述](index.md)中所述，`dotnet` 驱动程序可以运行以 `dotnet-<command>` 约定命名的任何命令。 默认的解析逻辑将首先探测多个位置，最后探测系统路径。 如果请求的命令存在于系统路径中并且属于可调用的二进制文件，则 `dotnet` 驱动程序将调用它。 
@@ -132,6 +135,6 @@ echo "Cleaning complete..."
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

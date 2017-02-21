@@ -1,5 +1,5 @@
 ---
-title: "dotnet-pack 命令 | .NET Core SDK"
+title: "dotnet-pack 命令 | Microsoft Docs"
 description: "dotnet-pack 命令可为 .NET Core 项目创建 NuGet 包。"
 keywords: "dotnet-pack, CLI, CLI 命令, .NET Core"
 author: blackdwarf
@@ -9,18 +9,21 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 8b4b8cef-f56c-4a10-aa01-fde8bfaae53e
+ms.assetid: 8dbbb3f7-b817-4161-a6c8-a3489d05e051
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 5aca8db50bf80606ff94562a6014c396b0ef770e
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 8e266f9b34923b0ab69140d78a20afeca00e0b7c
 
 ---
 
-#<a name="dotnet-pack"></a>dotnet-pack
+#<a name="dotnet-pack-net-core-tools-rc4"></a>dotnet-pack（.NET Core 工具 RC4）
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具 RC4。 对于 .NET Core 工具预览版 2，请参阅 [dotnet-pack](../../tools/dotnet-pack.md) 主题。
 
 ## <a name="name"></a>名称
 
-`dotnet-pack` - 将代码打包到 NuGet 包
+`dotnet-pack` - 将代码打包到 NuGet 包。
 
 ## <a name="synopsis"></a>摘要
 
@@ -32,9 +35,9 @@ ms.openlocfilehash: 5aca8db50bf80606ff94562a6014c396b0ef770e
 
 ## <a name="description"></a>描述
 
-`dotnet pack` 命令生成项目并创建 NuGet 包。 该命令的结果是一个 nuget 包。 如果 `--include-symbols` 选项存在，将创建包含调试符号的另一个包。 
+`dotnet pack` 命令生成项目并创建 NuGet 包。 该命令的结果是一个 NuGet 包。 如果 `--include-symbols` 选项存在，将创建包含调试符号的另一个包。 
 
-将被打包项目的 NuGet 依赖项添加到 nuspec 文件，以便在安装包时可以将其解析。 项目到项目的引用不会打包到项目内。 目前，如果具有项目到项目的依赖项，则每个项目均应含一个包。
+将被打包项目的 NuGet 依赖项添加到 `nuspec` 文件，以便在安装包时可以将其解析。 项目到项目的引用不会打包到项目内。 目前，如果具有项目到项目的依赖项，则每个项目均应含一个包。
 
 `dotnet pack` 默认首先生成项目。 如果希望避免此情况，则选择 `--no-build` 选项。 这在持续集成 (CI) 生成方案中非常有用，例如，在其中你可以知道代码是刚刚生成的。 
 
@@ -58,7 +61,7 @@ ms.openlocfilehash: 5aca8db50bf80606ff94562a6014c396b0ef770e
 
 `--include-source`
 
-将源文件包括在 nuget 包中。 源文件包括在 nupkg 内的 `src` 文件夹中。 
+将源文件包括在 NuGet 包中。 源文件包括在 `nupkg` 内的 `src` 文件夹中。 
 
 `--include-symbols`
 
@@ -95,7 +98,6 @@ ms.openlocfilehash: 5aca8db50bf80606ff94562a6014c396b0ef770e
 `dotnet pack --version-suffix "ci-1234"`
 
 
-
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

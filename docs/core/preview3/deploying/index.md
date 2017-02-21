@@ -1,22 +1,24 @@
 ---
-title: ".NET Core 应用程序部署"
+title: ".NET Core 应用程序部署 | Microsoft Docs"
 description: ".NET Core 应用程序部署"
 keywords: ".NET、.NET Core、.NET Core 部署"
 author: rpetrusha
-manager: wpickett
-ms.date: 11/13/2016
+ms.author: ronpet
+ms.date: 07/02/2017
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: d99d1a68fd6d1daf68670d6d73c07fe1009d92d9
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 8917a7639f042cb25a469ee9ba7fb7cd582c3821
 
 ---
 
-# <a name="net-core-application-deployment"></a>.NET Core 应用程序部署 #
+# <a name="net-core-application-deployment-net-core-tools-rc4"></a>.NET Core 应用程序部署（.NET Core 工具 RC4）
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具 RC4。 有关 .NET Core 工具预览版 2 的文档，请参阅 [.NET Core 应用程序部署](../../deploying/index.md)主题。
 
 可以为 .NET Core 应用程序创建两种部署： 
 
@@ -109,20 +111,11 @@ ms.openlocfilehash: d99d1a68fd6d1daf68670d6d73c07fe1009d92d9
 
     ```xml
       <ItemGroup>
-        <PackageReference Include="Microsoft.NETCore.App">
-          <Version>1.0.1</Version>
-        </PackageReference>
-        <PackageReference Include="Newtonsoft.Json">
-          <Version>9.0.1</Version>
-        </PackageReference>
-        <PackageReference Include="Microsoft.NET.Sdk">
-          <Version>1.0.0-alpha-20161102-2</Version>
-          <PrivateAssets>All</PrivateAssets>
-        </PackageReference>
+        <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
       </ItemGroup>
     ```
 
-请注意，上面的示例将保留 SDK 依赖项。 这是设计使然，因为还原全部所需的目标以允许命令行工具正常工作需要此依赖项。  
+ 请注意，上面的示例将保留 SDK 依赖项。 这是设计使然，因为还原全部所需的目标以允许命令行工具正常工作需要此依赖项。  
 
 2. 如果尚未安装，请下载包含第三方依赖项的 NuGet 包。 若要下载该包，请在添加依赖项后执行 `dotnet restore` 命令。 因为依赖项在发布时已从本地 NuGet 缓存解析出来，因此它一定适用于你的系统。
 
@@ -190,7 +183,7 @@ ms.openlocfilehash: d99d1a68fd6d1daf68670d6d73c07fe1009d92d9
     }
     ```
 
-3. 在定义应用所面向平台的 `csproj` 文件的 `<PropertyGroup>` 部分下创建 `<RuntimeIdentifiers>` 标签，然后指定每个目标平台的运行时标识符。 请查看[运行时标识符目录](../../rid-catalog.md)，获取运行时标识符列表。 例如，以下 `runtimes` 部分表明应用在 64 位 Windows 10 操作系统和 64 位 OS X 10.11 版本的操作系统上运行。
+3. 在定义应用所面向平台的 `csproj` 文件的 `<PropertyGroup>` 部分下创建 `<RuntimeIdentifiers>` 标签，然后指定每个目标平台的运行时标识符。 请查看[运行时标识符目录](../../rid-catalog.md)，获取运行时标识符列表。 例如，以下示例表明应用在 64 位 Windows 10 操作系统和 64 位 OS X 10.11 版本的操作系统上运行。
 
     ```xml
         <PropertyGroup>
@@ -201,15 +194,7 @@ ms.openlocfilehash: d99d1a68fd6d1daf68670d6d73c07fe1009d92d9
 
 4. 运行 `dotnet restore` 命令，以还原项目中指定的依赖项。
 
-5. 使用 `dotnet build` 命令为每个目标平台上的应用创建调试版本。 除非指定想要生成的运行时标识符，否则 `dotnet build` 命令将创建仅适用于当前系统运行时 ID 的版本。 可使用以下命令生成两个目标平台都适用的应用：
-
-    ```console
-    dotnet build -r win10-x64
-    dotnet build -r osx.10.11-x64
-    ```
-可在项目的 `.\bin\Debug\netcoreapp1.0\<runtime_identifier>` 子目录中找到针对每个平台应用的调试版本。
-
-6. 调试并测试该程序后，可以通过对两个目标平台使用 `dotnet publish` 命令来为每个作为目标的平台创建要与应用一起部署的文件，如下所示：
+5. 调试并测试该程序后，可以通过对两个目标平台使用 `dotnet publish` 命令来为每个作为目标的平台创建要与应用一起部署的文件，如下所示：
 
    ```console
    dotnet publish -c release -r win10-x64
@@ -217,15 +202,14 @@ ms.openlocfilehash: d99d1a68fd6d1daf68670d6d73c07fe1009d92d9
    ```
 这将为每个目标平台创建一个应用的发行版（而不是调试版）。 生成的文件位于名为 `publish` 的子目录中，该目录位于项目的 `.\bin\release\netcoreapp1.0\<runtime_identifier>` 子目录的子目录中。 请注意，每个子目录中都包含完整的启动应用所需的文件集（既有应用文件，也有所有 .NET Core 文件）。
 
-7. 与应用程序的文件一起，发布过程将发出包含应用调试信息的程序数据库 (.pdb) 文件。 该文件主要用于调试异常；可以选择不使用应用程序文件打包该文件。
+6. 与应用程序的文件一起，发布过程将发出包含应用调试信息的程序数据库 (.pdb) 文件。 该文件主要用于调试异常；可以选择不使用应用程序文件打包该文件。
 
 可以以任何喜欢的方式部署已发布的文件。 例如，可以使用简单的 `copy` 命令将其打包为 zip 文件，或者使用选择的安装包进行部署。 
 
 下面是此项目的完整 `csproj` 文件。
 
 ```xml
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.0</TargetFramework>
@@ -233,24 +217,6 @@ ms.openlocfilehash: d99d1a68fd6d1daf68670d6d73c07fe1009d92d9
     <DebugType>Portable</DebugType>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="**\*.cs" />
-    <EmbeddedResource Include="**\*.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.App">
-      <Version>1.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>9.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.NET.Sdk">
-      <Version>1.0.0-alpha-20161102-2</Version>
-      <PrivateAssets>All</PrivateAssets>
-    </PackageReference>
-  </ItemGroup>
-
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
 ```
 
@@ -263,16 +229,7 @@ ms.openlocfilehash: d99d1a68fd6d1daf68670d6d73c07fe1009d92d9
 
     ```xml
       <ItemGroup>
-        <PackageReference Include="Microsoft.NETCore.App">
-          <Version>1.0.1</Version>
-        </PackageReference>
-        <PackageReference Include="Microsoft.NET.Sdk">
-          <Version>1.0.0-alpha-20161102-2</Version>
-          <PrivateAssets>All</PrivateAssets>
-        </PackageReference>
-        <PackageReference Include="Newtonsoft.Json">
-          <Version>9.0.1</Version>
-        </PackageReference>
+        <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
       </ItemGroup>
     ```
 2. 如果尚未安装，请将包含第三方依赖项的 NuGet 包下载到系统。 若要使依赖项对应用适用，请在添加依赖项后执行 `dotnet restore` 命令。 因为依赖项在发布时已从本地 NuGet 缓存解析出来，因此它一定适用于你的系统。
@@ -280,8 +237,7 @@ ms.openlocfilehash: d99d1a68fd6d1daf68670d6d73c07fe1009d92d9
 下面是此项目的完整 csproj 文件：
 
 ```xml
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.0</TargetFramework>
@@ -290,23 +246,8 @@ ms.openlocfilehash: d99d1a68fd6d1daf68670d6d73c07fe1009d92d9
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="**\*.cs" />
-    <EmbeddedResource Include="**\*.resx" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.App">
-      <Version>1.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>9.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.NET.Sdk">
-      <Version>1.0.0-alpha-20161102-2</Version>
-      <PrivateAssets>All</PrivateAssets>
-    </PackageReference>
-  </ItemGroup>
-
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
 ```
 
@@ -320,34 +261,21 @@ ms.openlocfilehash: d99d1a68fd6d1daf68670d6d73c07fe1009d92d9
 
 若要创建内存占用较小的独立部署，请从按照创建独立部署的前两个步骤着手。 运行 `dotnet new` 命令并在向应用添加 C# 源代码后，执行以下操作：
 
-1. 打开 `csproj` 文件，然后将 `frameworks` 部分替换为以下内容：
+1. 打开 `csproj` 文件，然后将 `<TargetFramework>` 元素替换为以下内容：
 
     ```xml
-    <PropertyGroup>
       <TargetFramework>netstandard1.6</TargetFramework>
-  </PropertyGroup>
   ```
 此操作表明，我们的应用没有使用包括 .NET Core CLR、.NET Core 库和大量其他系统组件的整个 `netcoreapp1.0` 框架，而只使用了 .NET 标准库。
 
-2. 将 `dependencies` 部分替换为以下内容：
+2. 使用以下内容替换包含包引用的 `<ItemGroup>`：
 
-    ```xml
-    <ItemGroup>
-      <PackageReference Include="NETSTandard.Library">
-        <Version>1.6.0</Version>
-      </PackageReference>
-      <PackageReference Include="Microsoft.NETCore.Runtime.CoreCLR">
-        <Version>1.0.2</Version>
-      </PackageReference>
-      <PackageReference Include="Microsoft.NETCore.DotNetHostPolicy">
-        <Version>1.0.1</Version>
-      </PackageReference>
-      <PackageReference Include="Microsoft.NET.Sdk">
-        <Version>1.0.0-alpha-20161102-2</Version>
-        <PrivateAssets>All</PrivateAssets>
-      </PackageReference>
-    </ItemGroup>
-  ```
+  ```xml
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.Runtime.CoreCLR" Version="1.0.2" />
+    <PackageReference Include="Microsoft.NETCore.DotNetHostPolicy" Version="1.0.1" />
+  </ItemGroup>
+```
 
    这将定义应用使用的系统组件。 与应用一起打包的系统组件包括 .NET 标准库、.NET Core 运行时和 .NET Core 主机。 这将生成内存占用较小的独立部署。
 
@@ -360,18 +288,11 @@ ms.openlocfilehash: d99d1a68fd6d1daf68670d6d73c07fe1009d92d9
     ```
     
 
-本节后面部分将显示完整的示例 `csproj` 文件。
+ 本节后面部分将显示完整的示例 `csproj` 文件。
 
 4. 运行 `dotnet restore` 命令，以还原项目中指定的依赖项。
 
-5. 使用 `dotnet build` 命令为每个目标平台上的应用创建调试版本。 除非指定想要生成的运行时标识符，否则 `dotnet build` 命令将创建仅适用于当前系统运行时 ID 的版本。 可使用以下命令生成两个目标平台都适用的应用：
-
-    ```console
-    dotnet build -r win10-x64
-    dotnet build -r osx.10.11-x64
-    ```
-
-6. 调试并测试该程序后，可以通过对两个目标平台使用 `dotnet publish` 命令来为每个作为目标的平台创建要与应用一起部署的文件，如下所示：
+5. 调试并测试该程序后，可以通过对两个目标平台使用 `dotnet publish` 命令来为每个作为目标的平台创建要与应用一起部署的文件，如下所示：
 
    ```console
    dotnet publish -c release -r win10-x64
@@ -379,49 +300,31 @@ ms.openlocfilehash: d99d1a68fd6d1daf68670d6d73c07fe1009d92d9
    ```
 这将为每个目标平台创建一个应用的发行版（而不是调试版）。 生成的文件位于名为 `publish` 的子目录中，该目录位于项目的 `.\bin\release\netstandard1.6\<runtime_identifier>` 子目录的子目录中。 请注意，每个子目录中都包含完整的启动应用所需的文件集（既有应用文件，也有所有 .NET Core 文件）。
 
-7. 与应用程序的文件一起，发布过程将发出包含应用调试信息的程序数据库 (.pdb) 文件。 该文件主要用于调试异常；可以选择不使用应用程序文件打包该文件。
+6. 与应用程序的文件一起，发布过程将发出包含应用调试信息的程序数据库 (.pdb) 文件。 该文件主要用于调试异常；可以选择不使用应用程序文件打包该文件。
 
 可以以任何喜欢的方式部署已发布的文件。 例如，可以使用简单的 `copy` 命令将其打包为 zip 文件，或者使用选择的安装包进行部署。 
 
 下面是此项目的完整 `csproj` 文件。
 
 ```xml
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <TargetFramework>netstandard1.6</TargetFramework>
     <VersionPrefix>1.0.0</VersionPrefix>
     <DebugType>Portable</DebugType>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="**\*.cs" />
-    <EmbeddedResource Include="**\*.resx" />
+    <PackageReference Include="Microsoft.NETCore.Runtime.CoreCLR" Version="1.0.2" />
+    <PackageReference Include="Microsoft.NETCore.DotNetHostPolicy" Version="1.0.1" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="NETSTandard.Library">
-      <Version>1.6.0</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.NETCore.Runtime.CoreCLR">
-      <Version>1.0.2</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.NETCore.DotNetHostPolicy">
-      <Version>1.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.NET.Sdk">
-      <Version>1.0.0-alpha-20161102-2</Version>
-      <PrivateAssets>All</PrivateAssets>
-    </PackageReference>
-  </ItemGroup>
-
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
 ```
 
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

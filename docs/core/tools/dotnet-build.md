@@ -1,25 +1,28 @@
 ---
-title: "dotnet-build 命令 | .NET Core SDK"
+title: "dotnet-build 命令 | Microsoft Docs"
 description: "dotnet-build 命令可生成项目及其所有依赖项。"
 keywords: "dotnet-build, CLI, CLI 命令, .NET Core"
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/13/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 70285a83-4103-4617-be8b-d0e1e9a4a91d
 translationtype: Human Translation
-ms.sourcegitcommit: c6ee3f5663d0a3f62914e8de474cca4d15340c9d
-ms.openlocfilehash: 344f8154c63bbb3c5ce6840bc7c7b1659950c223
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: bb64da75a2e7bc2d379bc1685b4187493792db78
 
 ---
 
-#<a name="dotnetbuild"></a>dotnet-build
+#<a name="dotnet-build"></a>dotnet-build
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具预览版 2。 对于 .NET Core 工具 RC4 版本，请参阅 [dotnet-build（.NET Core 工具 RC4）](../preview3/tools/dotnet-build.md)主题。
 
 ## <a name="name"></a>名称 
-dotnet-build - 生成项目及其所有依赖项 
+`dotnet-build` - 生成项目及其所有依赖项。 
 
 ## <a name="synopsis"></a>摘要
 
@@ -76,11 +79,11 @@ dotnet-build - 生成项目及其所有依赖项
 
 定义一个配置，根据该配置进行生成。  如果省略，则默认为 `Debug`。
 
-`-r|--runtime [RUNTIME_IDENTIFIER]`
+`-r|--runtime <RUNTIME_IDENTIFIER>`
 
 要生成的目标运行时。 有关可以使用的运行时标识符 (RID) 列表，请参阅 [RID 目录](../rid-catalog.md)。 
 
-`--version-suffix [VERSION_SUFFIX]`
+`--version-suffix <VERSION_SUFFIX>`
 
 定义在 [project.json](project-json.md#version) 文件的版本字段中应将 `*` 替换为的对象。 格式遵循 NuGet 的版本准则。 
 
@@ -111,6 +114,6 @@ dotnet-build - 生成项目及其所有依赖项
 `dotnet build --runtime ubuntu.16.04-x64`
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 
