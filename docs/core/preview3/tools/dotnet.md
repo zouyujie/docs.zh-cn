@@ -1,5 +1,5 @@
 ---
-title: "dotnet 命令 | .NET Core SDK"
+title: "dotnet 命令 | Microsoft Docs"
 description: "了解 dotnet 命令（.NET Core CLI 工具的通用驱动程序）及其用法。"
 keywords: "dotnet, CLI, CLI 命令, .NET Core"
 author: blackdwarf
@@ -9,14 +9,17 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 93015521-2127-4fe9-8fce-ca79bcc4ff49
+ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: bbc13c8cca82e660f0f8ccf7d88c0340d9c06e68
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: c80b5e7e26366b5253816e81a8203f90690eec1e
 
 ---
 
-#<a name="dotnet-command"></a>dotnet 命令
+#<a name="dotnet-command-net-core-tools-rc4"></a>dotnet 命令 |（.NET Core 工具 RC4）
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具 RC4。 对于 .NET Core 工具预览版 2，请参阅 [dotnet 命令](../../tools/dotnet.md)主题。
 
 ## <a name="name"></a>名称
 
@@ -70,9 +73,9 @@ dotnet 具有以下命令：
 * [dotnet-pack](dotnet-pack.md)
    * 创建代码的 NuGet 包。
 * [dotnet-migrate](dotnet-migrate.md)
-   * 将有效的预览版 2 项目迁移到预览版 3 项目
+   * 将有效的预览版 2 项目迁移到 RC4 项目。
 * [dotnet-msbuild](dotnet-msbuild.md)
-   * 提供对 MSBuild 命令行的访问权限
+   * 提供对 MSBuild 命令行的访问权限。
 
 ## <a name="examples"></a>示例
 
@@ -107,6 +110,6 @@ dotnet 具有以下命令：
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

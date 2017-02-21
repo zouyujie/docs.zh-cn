@@ -1,22 +1,25 @@
 ---
-title: "dotnet-build 命令 | .NET Core SDK"
+title: "dotnet-build 命令 | Microsoft Docs"
 description: "dotnet-build 命令可生成项目及其所有依赖项。"
 keywords: "dotnet-build, CLI, CLI 命令, .NET Core"
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/13/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 70285a83-4103-4617-be8b-d0e1e9a4a91d
+ms.assetid: 5e1a2bc4-a919-4a86-8f33-a9b218b1fcb3
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 04c4d77b31bf4a1bdb425d837c490440e7312e57
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: c2c0ae3711c866268c4e8c066b4213e110e771b9
 
 ---
 
-#<a name="dotnet-build"></a>dotnet-build
+#<a name="dotnet-build-net-core-tools-rc4"></a>dotnet-build（.NET Core 工具 RC4）
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具 RC4。 对于 .NET Core 工具预览版 2，请参阅 [dotnet-build](../../tools/dotnet-build.md) 主题。
 
 ## <a name="name"></a>名称 
 dotnet-build - 生成项目及其所有依赖项 
@@ -31,7 +34,7 @@ dotnet-build - 生成项目及其所有依赖项
 ## <a name="description"></a>描述
 
 `dotnet build` 命令可将源项目及其依赖项的多个源文件生成为二进制文件。 默认情况下，生成的二进制文件为中间语言 (IL) 并具有 DLL 扩展名。 
-`dotnet build` 还删除了 `\*.deps` 文件，该文件概述了主机运行应用程序所需的条件。  
+`dotnet build` 还删除了 `*.deps` 文件，该文件概述了主机运行应用程序所需的条件。  
 
 生成需要资产文件（列出了应用程序的所有依赖项的文件），这意味着生成代码前需运行 [`dotnet restore`](dotnet-restore.md)。
 
@@ -100,6 +103,6 @@ dotnet-build - 生成项目及其所有依赖项
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

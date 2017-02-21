@@ -1,23 +1,24 @@
 ---
-title: "在 Windows 上，使用 Visual Studio 2017 生成完整的 .NET Core 解决方案"
+title: "使用 Visual Studio 2017 在 Windows 上构建完整的 .NET Core 解决方案 | Microsoft Docs"
 description: "在 Windows 上，使用 Visual Studio 2017 生成完整的 .NET Core 解决方案"
-keywords: .NET, .NET Core
+keywords: ".NET、.NET Core"
 author: bleroy
 ms.author: mairaw
 ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
-ms.assetid: d743134a-08a3-4ff6-aab7-49f71f0568c3
+ms.assetid: ba7e082c-a7c8-431e-a342-f67734b660f6
 translationtype: Human Translation
-ms.sourcegitcommit: 07b62bd7163193eff8dc8f61fda7a45a924bba2b
-ms.openlocfilehash: 9e65979d2f41e39e89109c2c5480acaebbef757f
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 04f5264eaaa16be299e0d72f587ee232a5e61ca9
 
 ---
 
-# <a name="building-a-complete-net-core-solution-on-windows-using-visual-studio-2017"></a>在 Windows 上，使用 Visual Studio 2017 生成完整的 .NET Core 解决方案
+# <a name="building-a-complete-net-core-solution-on-windows-using-visual-studio-2017-net-core-tools-rc4"></a>使用 Visual Studio 2017 在 Windows 上生成完整的 .NET Core 解决方案（.NET Core 工具 RC4）
 
-作者：[Bertrand Le Roy](https://github.com/bleroy) 和 [Phillip Carter](https://github.com/cartermp)
+> [!WARNING]
+> 本主题适用于 .NET Core 工具 RC4。 有关 .NET Core 工具预览版 2，请参阅[使用 Visual Studio 2015 在 Windows 上入门 .NET Core](../../tutorials/using-on-windows.md) 主题。
 
 Visual Studio 2017 提供用于开发 .NET Core 应用程序的功能全面的开发环境。 本文档中的过程介绍了构建典型的 .NET Core 解决方案所需的步骤，包含可重用库、测试以及使用第三方库。 
 
@@ -66,7 +67,7 @@ Visual Studio 2017 提供用于开发 .NET Core 应用程序的功能全面的�
 
 ### <a name="writing-the-console-app"></a>编写控制台应用
 
-1. 在“解决方案资源管理器”中，打开解决方案的上下文菜单，添加新的**控制台应用 (.NET Core)** 项目。 将其命名为“App”，并将位置设置为 `Golden\src`。
+1. 在“解决方案资源管理器”中，打开解决方案的上下文菜单，添加新的**控制台应用 (.NET Core)** 项目。 将其命名为“App”。
 
 2. 在 **App** 项目中，打开“依赖项”节点的上下文菜单，依次选择“添加”**和**“引用”。 
 
@@ -74,7 +75,7 @@ Visual Studio 2017 提供用于开发 .NET Core 应用程序的功能全面的�
 
 6. 打开 **App** 节点的上下文菜单，选择“设置为启动项目”。 这确保了按住 F5 或 Ctrl+F5 时可启动控制台应用。
 
-7. 打开 `Program.cs` 文件，将 `using Library;` 指令添加到文件顶部，然后将 `Console.WriteLine($"The answer is {new Thing().Get(42)}");` 添加到 `Main` 方法。
+7. 打开 `Program.cs` 文件，将 `using Library;` 指令添加到文件顶部，然后将 `Console.WriteLine($"The answer is {new Thing().Get(42)}.");` 添加到 `Main` 方法。
 
 8. 在刚添加的行后设置一个断点。
 
@@ -84,6 +85,6 @@ Visual Studio 2017 提供用于开发 .NET Core 应用程序的功能全面的�
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

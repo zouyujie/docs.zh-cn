@@ -10,14 +10,15 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: d743134a-08a3-4ff6-aab7-49f71f0568c3
 translationtype: Human Translation
-ms.sourcegitcommit: 54da8aebd64e86c064214074bc261f72c3b0aedc
-ms.openlocfilehash: bf7bf944ebbf3c53ee6206f86e1a168111b54378
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 29019587d2d847c5184d07024fa763c8af805d50
 
 ---
 
 # <a name="getting-started-with-net-core-on-windows-using-visual-studio-2015"></a>使用 Visual Studio 2015 在 Windows 上入门 .NET Core
 
-作者：[Bertrand Le Roy](https://github.com/bleroy) 和 [Phillip Carter](https://github.com/cartermp)
+> [!WARNING]
+> 本主题适用于 Visual Studio 2015 - .NET Core 工具预览版 2。 有关 .NET Core 工具 RC4 版本，请参阅[使用 Visual Studio 2017 在 Windows 上开始使用 .NET Core](../preview3/tutorials/using-on-windows-vs-2017.md) 主题。
 
 Visual Studio 2015 提供用于开发 .NET Core 应用程序的全功能开发环境。 本文档中的过程介绍使用 Visual Studio 生成大量典型 .NET Core 解决方案或包含 .NET Core 组件的解决方案所必需的步骤。 这些方案包括测试和使用尚未针对最新版本的 .NET Core 显式生成的第三方库。 
 
@@ -228,11 +229,11 @@ Visual Studio 2015 提供用于开发 .NET Core 应用程序的全功能开发�
 -------------------------------------
 可移植类库工具可以自动修改 PCL 以面向 .NET Standard。 
 
-1.  双击“属性”节点，打开“项目属性”页
+1.    双击“属性”节点，打开“项目属性”页
 
-2.  在“目标标头”下，单击超链接“面向 .NET Platform Standard”
+2.    在“目标标头”下，单击超链接“面向 .NET Platform Standard”
 
-3.  系统请求确认时，单击“是”
+3.    系统请求确认时，单击“是”
 
 工具将自动选择包含 PCL 最初面向的所有目标的 .NET Standard 版本。 可使用项目属性页中的 .NET Standard 下拉列表面向不同版本的 .NET Standard。
  
@@ -240,17 +241,17 @@ Visual Studio 2015 提供用于开发 .NET Core 应用程序的全功能开发�
 
 ### <a name="manually-edit-projectjson-to-target-net-standard-from-an-existing-portable-class-library"></a>手动编辑 project.json 以面向现有可移植类库中的 .NET Standard
 
-1.  如果“supports”元素中，project.json 包含“dnxcore50”，请将其删除。
+1.    如果“supports”元素中，project.json 包含“dnxcore50”，请将其删除。
 
-2.  删除对“Microsoft.NETCore”的依赖关系
+2.    删除对“Microsoft.NETCore”的依赖关系
 
-3.  将对“Microsoft.NETCore.Portable.Compatibility”版本“1.0.0”的依赖关系修改为对版本“1.0.1”的依赖关系
+3.    将对“Microsoft.NETCore.Portable.Compatibility”版本“1.0.0”的依赖关系修改为对版本“1.0.1”的依赖关系
 
-4.  添加对“NETStandard.Library”版本“1.6.0”的依赖关系
+4.    添加对“NETStandard.Library”版本“1.6.0”的依赖关系
 
-5.  从“frameworks”元素删除“dotnet”框架（以及其中的“imports”元素）
+5.    从“frameworks”元素删除“dotnet”框架（以及其中的“imports”元素）
 
-6.  将 ` "netstandard1.x” : { } ` 添加到框架元素，其中 x 替换为要面向的 .NET Standard 版本
+6.    将 ` "netstandard1.x” : { } ` 添加到框架元素，其中 x 替换为要面向的 .NET Standard 版本
 
 ### <a name="example-projectjson"></a>示例 project.json
 
@@ -275,6 +276,6 @@ Visual Studio 2015 提供用于开发 .NET Core 应用程序的全功能开发�
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

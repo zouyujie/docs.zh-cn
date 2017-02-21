@@ -1,5 +1,5 @@
 ---
-title: "project.json 引用"
+title: "project.json 引用 |Microsoft 文档"
 description: "project.json 引用"
 keywords: .NET, .NET Core, project.json
 author: aL3891
@@ -11,12 +11,15 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
 translationtype: Human Translation
-ms.sourcegitcommit: 4023c5ec72055fee78863a43b60989e1eb34fb22
-ms.openlocfilehash: 68b152cda54b5356dce48f4a8330b2ecb9c9d2e0
+ms.sourcegitcommit: 8fba5c76375763abf90e2e17d3bcc9d0039089f0
+ms.openlocfilehash: 2cdb43a9095217498c12c97548e4aa632b13a59c
 
 ---
 
 # <a name="projectjson-reference"></a>project.json 引用
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具预览版 2。 有关 .NET Core 工具 RC4 文档，请参阅 [.NET Core 命令行接口工具（.NET Core 工具 RC4）](../preview3/tools/index.md)部分。
 
 project.json 文件用于 .NET Core 项目以定义项目元数据、编译信息和依赖项。 在本引用主题中，你将看到可在 project.json 文件中定义的所有属性的列表。
 
@@ -322,7 +325,7 @@ project.json 文件用于 .NET Core 项目以定义项目元数据、编译信�
 类型：Object
 
 定义项目的包依赖项的一个对象，此对象的每个键是包名称，每个值包含版本信息。
-有关详细信息，请参阅 NuGet 文档站点上的 [依赖项解析](https://docs.nuget.org/ndocs/consume-packages/dependency-resolution#dependency-resolution-in-nuget-3-x)文章。
+有关详细信息，请参阅 NuGet 文档站点上的 [依赖项解析](https://docs.microsoft.com/nuget/consume-packages/dependency-resolution#dependency-resolution-in-nuget-3x)文章。
 
 例如: 
 
@@ -344,7 +347,7 @@ project.json 文件用于 .NET Core 项目以定义项目元数据、编译信�
 ### <a name="version"></a>version
 类型：String
 
-指定依赖项的版本或版本范围。 使用 \* 通配符指定[浮动依赖项版本](https://docs.nuget.org/ndocs/consume-packages/dependency-resolution#floating-versions)。
+指定依赖项的版本或版本范围。 使用 \* 通配符指定[浮动依赖项版本](https://docs.microsoft.com/nuget/consume-packages/dependency-resolution#floating-versions)。
 
 例如: 
 
@@ -1643,7 +1646,7 @@ project.json 文件用于 .NET Core 项目以定义项目元数据、编译信�
 ## <a name="usersecretsid"></a>userSecretsId
 类型：String
 
-指定在开发时使用的用户机密标识符。 有关详细信息，请参阅[在开发期间安全存储应用密钥](https://docs.asp.net/en/latest/security/app-secrets.html)。
+指定在开发时使用的用户机密标识符。 有关详细信息，请参阅[在开发期间安全存储应用密钥](https://docs.microsoft.com/aspnet/core/security/app-secrets)。
 
 例如: 
 
@@ -1655,6 +1658,6 @@ project.json 文件用于 .NET Core 项目以定义项目元数据、编译信�
 
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

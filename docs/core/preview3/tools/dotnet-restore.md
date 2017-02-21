@@ -1,26 +1,29 @@
 ---
-title: "dotnet-restore 命令 | .NET Core SDK"
-description: "了解如何使用 dotnet-restore 命令还原依赖项和特定于项目的工具"
+title: "dotnet-restore 命令 | Microsoft Docs"
+description: "了解如何使用 dotnet-restore 命令还原依赖项和特定于项目的工具。"
 keywords: "dotnet-restore, CLI, CLI 命令, .NET Core"
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/07/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 60489b25-38de-47e6-bed1-59d9f42e2d46
+ms.assetid: fd7a5769-afbe-4838-bbaf-3ae0cfcbb914
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 6fb08a8765ad720b51e796aa0991087413d02e44
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 594956488dee39903feba44e10d6bb81801412a4
 
 ---
 
-#<a name="dotnet-restore"></a>dotnet-restore
+#<a name="dotnet-restore-net-core-tools-rc4"></a>dotnet-restore（.NET Core 工具 RC4）
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具 RC4。 对于 .NET Core 工具预览版 2，请参阅 [dotnet-restore](../../tools/dotnet-restore.md) 主题。
 
 ## <a name="name"></a>名称
 
-`dotnet-restore` - 恢复项目的依赖项和工具
+`dotnet-restore` - 恢复项目的依赖项和工具。
 
 ## <a name="synopsis"></a>摘要
 
@@ -84,7 +87,7 @@ ms.openlocfilehash: 6fb08a8765ad720b51e796aa0991087413d02e44
 
 还原在给定路径中找到的 `app1` 项目的依赖项和工具：
 
-`dotnet restore ~/projects/app1/app1.csproj``
+`dotnet restore ~/projects/app1/app1.csproj`
     
 通过将提供的文件路径用作回退源，在当前目录中还原项目的依赖项和工具：
 
@@ -100,6 +103,6 @@ ms.openlocfilehash: 6fb08a8765ad720b51e796aa0991087413d02e44
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

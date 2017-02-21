@@ -1,7 +1,7 @@
 ---
-title: "在持续集成 (CI) 中使用 .NET Core SDK 和工具"
+title: "在持续集成 (CI) 中使用 .NET Core SDK 和工具| Microsoft Docs"
 description: "在持续集成 (CI) 中使用 .NET Core SDK 和工具"
-keywords: .NET, .NET Core
+keywords: ".NET、.NET Core"
 author: blackdwarf
 ms.author: mairaw
 ms.date: 06/20/2016
@@ -9,14 +9,17 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 5fb15297-a276-417f-8c4f-267281357769
+ms.assetid: 0d6e1e34-277c-4aaf-9880-3ebf81023857
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 0fda867f1d29caaca716ad27baf6e43146cb99df
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 95c7f0f9911c7cb37c12afec74d0e942db77fbf6
 
 ---
 
-# <a name="using-net-core-sdk-and-tools-in-continuous-integration-ci"></a>在持续集成 (CI) 中使用 .NET Core SDK 和工具
+# <a name="using-net-core-sdk-and-tools-in-continuous-integration-ci-net-core-tools-rc4"></a>在持续集成 (CI) 中使用 .NET Core SDK 和工具（.NET Core 工具 RC4）
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具 RC4。 对于 .NET Core 工具预览版 2，请参阅[在持续集成 (CI) 中使用 .NET Core SDK 和工具](../../tools/using-ci-with-cli.md)主题。
 
 ## <a name="overview"></a>概述
 本文档概述了 .NET Core SDK 及其在生成服务器上的工具的使用情况。 一般情况下，在 CI 生成服务器上，用户希望以某种方式自动化安装。 理想情况下，如果可能的话，自动化不需要管理特权。 
@@ -88,8 +91,6 @@ install:
 ```
 
 
-
-
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

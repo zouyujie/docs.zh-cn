@@ -11,12 +11,15 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: be988f09-7349-43b0-97fb-3a703d4587ce
 translationtype: Human Translation
-ms.sourcegitcommit: 37e14d5cdf1593f6a8b1ecee9d9828647b023548
-ms.openlocfilehash: 5493ccb77e62d20d5101728ef8ab1744ea697fb8
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 8f0ad79eafde695b956e89f48073dba2651b51cb
 
 ---
 
 # <a name="getting-started-with-net-core-on-windowslinuxmacos-using-the-command-line"></a>使用命令行在 Windows/Linux/macOS 上入门 .NET Core
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具预览版 2。 对于 .NET Core 工具 RC4 版本，请参阅 [使用命令行在 Windows/Linux/macOS 上开始使用 .NET Core（.NET Core 工具 RC4）](../preview3/tutorials/using-with-xplat-cli-msbuild.md)主题。
 
 本指南介绍如何使用 .NET Core CLI 工具生成基本的跨平台控制台应用。
 
@@ -612,7 +615,7 @@ public class PetTests
     {
         string expected = "Meow!";
         string actual = new Cat().TalkToOwner();
-        
+           
         Assert.Equal(expected, actual);
     }
 }
@@ -647,6 +650,6 @@ SUMMARY: Total: 1 targets, Passed: 1, Failed: 0.
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

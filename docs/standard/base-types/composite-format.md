@@ -11,8 +11,8 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a01efc8f-c242-4535-bd32-acd0032d9590
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 15c549f5df0b6de8164e05f50855006996a47fac
+ms.sourcegitcommit: 90ade65e167770bdbcbbf79707fe48e6fbc030c0
+ms.openlocfilehash: 5b61b4736880d57f02070150d8613d860505b268
 
 ---
 
@@ -24,7 +24,7 @@ ms.openlocfilehash: 15c549f5df0b6de8164e05f50855006996a47fac
 
 * [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object))，它返回格式化的结果字符串。 
 
-* [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider, System.String, System.Object)，它将格式化的结果字符串追加到 [StringBuilder](xref:System.Text.StringBuilder) 对象。
+* [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object))，用于将格式化后的结果字符串追加到 [StringBuilder](xref:System.Text.StringBuilder) 对象中。
 
 * [Console](xref:System.Console) `WriteLine` 方法的某些重载，它将格式化的结果字符串显示到控制台上。  
 
@@ -40,7 +40,7 @@ ms.openlocfilehash: 15c549f5df0b6de8164e05f50855006996a47fac
 
 复合格式字符串和对象列表将用作支持复合格式设置功能的方法的参数。 复合格式字符串由零个或多个固定文本段与一个或多个格式项混和组成。 固定文本是所选择的任何字符串，并且每个格式项对应于列表中的一个对象或装箱的结构。 复合格式设置功能返回新的结果字符串，其中每个格式项都被列表中相应对象的字符串表示形式取代。
 
-请考虑以下 [Format](xref:System.String.Format(System.String.Format(System.IFormatProvider,System.String,System.Object)) 代码段。
+假设 [Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) 代码片段如下。
 
 ```csharp
 string name = "Fred";
@@ -64,7 +64,7 @@ __{__*index*[,*alignment*][:*formatString*]__}__
  
 ### <a name="index-component"></a>索引组件
 
-必需的*索引*组件（也叫参数说明符）是一个从 0 开始的数字，可标识对象列表中对应的项。 也就是说，参数说明符为 0 的格式项列表中的第一个对象，参数说明符为 1 的格式项列表中的第二个对象，依次类推。 下面的示例包括四个参数说明符，编号为 0 到 3，用于表示小于 10 的质数： 
+必需的*索引*组件（也叫参数说明符）是一个从 0 开始的数字，可标识对象列表中对应的项。 也就是说，参数说明符为 0 的格式项列表中的第一个对象，参数说明符为 1 的格式项列表中的第二个对象，依次类推。 下面的示例包括四个参数说明符，编号为&0; 到&3;，用于表示小于&10; 的质数： 
 
 ```csharp
 string primes;
@@ -229,9 +229,9 @@ Console.WriteLine(output)
 
 3. 如果该值实现 [IFormattable](xref:System.IFormattable) 接口，则调用该接口的 [ToString(String, IFormatProvider)](xref:System.IFormattable.ToString(System.String,System.IFormatProvider)) 方法。 如果格式项中存在 *formatString* 值，则向方法传递该值；如果不存在该值，则传递 `null`。 按如下方式确定 [IFormatProvider](xref:System.IFormatProvider) 自变量：
 
-    *   对于数值，如果调用带非 null [IFormatProvider](xref:System.IFormatProvider) 自变量的复合格式设置方法，则运行时从其 [IFormatProvider.GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)) 方法请求 [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) 对象。 在以下情况下，使用当前线程区域性的 [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo 对象：无法提供该值、自变量值为 `null` 或复合格式设置方法没有 [IFormatProvider](xref:System.IFormatProvider) 参数。 
+    *   对于数值，如果调用带非 null [IFormatProvider](xref:System.IFormatProvider) 自变量的复合格式设置方法，则运行时从其 [IFormatProvider.GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)) 方法请求 [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) 对象。 在以下情况下，使用当前线程区域性的 [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) 对象：无法提供值、自变量值为 `null`，或复合格式设置方法没有 [IFormatProvider](xref:System.IFormatProvider) 参数。 
     
-    * 对于日期和时间值，如果调用带非 null [IFormatProvider](xref:System.IFormatProvider) 自变量的复合格式设置方法，则运行时从其 [IFormatProvider.GetFormat](xref:System.IFormatProvider._GetFormat(System.Type) 方法请求 [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) 对象。 在以下情况下，使用当前线程区域性的 [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) 对象：无法提供该值、自变量值为 `null` 或复合格式设置方法没有 [IFormatProvider](xref:System.IFormatProvider) 参数。 
+    * 对于日期和时间值，如果调用带非 NULL [IFormatProvider](xref:System.IFormatProvider) 自变量的复合格式设置方法，运行时通过其 [IFormatProvider.GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)) 方法请求获得 [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) 对象。 在以下情况下，使用当前线程区域性的 [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) 对象：无法提供该值、自变量值为 `null` 或复合格式设置方法没有 [IFormatProvider](xref:System.IFormatProvider) 参数。 
     
     * 对于其他类型的对象，如果调用带 [IFormatProvider](xref:System.IFormatProvider) 自变量的复合格式设置，则将其值（如果没有提供 [IFormatProvider](xref:System.IFormatProvider) 对象，则包括 `null`）直接传递到 [IFormattable.ToString](xref:System.IFormattable.ToString(System.String,System.IFormatProvider)) 实现。 否则，将表示当前线程区域性的 [CultureInfo](xref:System.Globalization.CultureInfo) 对象传递到 [IFormattable.ToString](xref:System.IFormattable.ToString(System.String,System.IFormatProvider)) 实现。 
     
@@ -376,6 +376,6 @@ Console.WriteLine(FormatPrice)
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 

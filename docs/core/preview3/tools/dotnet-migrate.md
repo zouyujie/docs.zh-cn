@@ -1,5 +1,5 @@
 ---
-title: "dotnet-migrate 命令 | .NET Core SDK"
+title: "dotnet-migrate 命令 | Microsoft Docs"
 description: "dotnet-migrate 命令可迁移项目及其所有依赖项。"
 keywords: "dotnet-migrate, CLI, CLI 命令, .NET Core"
 author: blackdwarf
@@ -9,17 +9,19 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 70285a83-4103-4617-be8b-d0e1e9a4a91d
+ms.assetid: 0da07253-5ae1-42e9-9455-bffee9950952
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 150d70e3f0a80f7f6e733abee3691a0fe420919f
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 57ae01419c6f7a75970816e1245094c38c5247fa
 
 ---
 
 #<a name="dotnet-migrate"></a>dotnet-migrate
 
+[!INCLUDE[preview-warning](../../../includes/warning.md)]
+
 ## <a name="name"></a>名称 
-dotnet-migrate - 将预览版 2 .NET Core 项目迁移到预览版 3 .NET Core 项目
+dotnet-migrate - 将预览版 2 .NET Core 项目迁移到 RC4 .NET Core 项目
 
 ## <a name="synopsis"></a>摘要
 
@@ -29,8 +31,8 @@ dotnet-migrate - 将预览版 2 .NET Core 项目迁移到预览版 3 .NET Core �
     [--skip-backup]
     [<arguments>]`
 
-## <a name="description"></a>描述
-`dotnet migrate` 命令将有效的基于预览版 2 `project.json` 的项目迁移到有效的预览版 3 `csproj` 项目。 默认情况下，命令将迁移根项目和根项目包含的任何项目引用。 可以在运行时使用 `--skip-project-references` 选项禁用此行为。 
+## <a name="description"></a>说明
+`dotnet migrate` 命令将有效的预览版 2 `project.json` 项目迁移到有效的 RC4 `csproj` 项目。 默认情况下，命令将迁移根项目和根项目包含的任何项目引用。 可以在运行时使用 `--skip-project-references` 选项禁用此行为。 
 
 可以对以下对象进行迁移：
 
@@ -42,7 +44,7 @@ migrate 命令将迁移的 `project.json` 文件保存在 `backup` 目录中，�
 
 默认情况下，迁移操作会将迁移过程的状态输出到标准输出 (STDOUT)。 如果使用 `--report-file` 选项，该输出也将保存到你所指定的文件。 
 
-从预览版 3 开始，`dotnet migrate` 命令仅支持有效预览版 2 `project.json` 文件。 这意味着无法用它将旧的 DNX 或预览版 1 `project.json` 文件直接迁移到 csproj；你需要首先将它们迁移到预览版 2 project.json 文件，然后再迁移到 csproj 文件。 将来，我们将添加对预览版 1 项目的支持。 
+从 RC4 开始，`dotnet migrate` 命令仅支持有效的预览版 2 `project.json` 文件。 这意味着无法用它将旧的 DNX 或预览版 1 `project.json` 文件直接迁移到 csproj；你需要首先将它们迁移到预览版 2 project.json 文件，然后再迁移到 csproj 文件。 将来，我们将添加对预览版 1 项目的支持。 
 
 ## <a name="options"></a>选项
 
@@ -90,11 +92,9 @@ migrate 命令将迁移的 `project.json` 文件保存在 `backup` 目录中，�
 
 仅迁移当前项目，不迁移项目到项目的依赖项，并使用特定的 SDK 版本：
 
-`dotnet migrate -s -v 1.0.0-preview3`
+`dotnet migrate -s -v 1.0.0-preview4`
 
 
-
-
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

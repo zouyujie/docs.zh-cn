@@ -1,7 +1,7 @@
 ---
-title: "使用命令行在 Windows/Linux/macOS 上实现 .NET Core 入门（SDK 预览版 3）"
+title: "使用命令行在 Windows/Linux/macOS 上开始使用 .NET Core（.NET Core 工具 RC4）| Microsoft 文档"
 description: "使用命令行接口 (CLI) 在 Windows、Linux 或 macOS 上入门 .NET Core"
-keywords: .NET, .NET Core
+keywords: ".NET、.NET Core"
 author: cartermp
 ms.author: mairaw
 ms.date: 06/20/2016
@@ -9,14 +9,17 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: be988f09-7349-43b0-97fb-3a703d4587ce
+ms.assetid: 41632e63-d5c6-4427-a09e-51dc1116d45f
 translationtype: Human Translation
-ms.sourcegitcommit: ab71aab99505f211fe4adc86957eda4707761f1c
-ms.openlocfilehash: 01b17021e79bcdb2dc69f97b709f4aa63dbab9aa
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 4c17da61f492e17edf4d69d79be430ead3dd0cc6
 
 ---
 
-# <a name="getting-started-with-net-core-on-windowslinuxmacos-using-the-command-line-sdk-preview-3"></a>使用命令行在 Windows/Linux/macOS 上实现 .NET Core 入门（SDK 预览版 3）
+# <a name="getting-started-with-net-core-on-windowslinuxmacos-using-the-command-line-net-core-tools-rc4"></a>使用命令行在 Windows/Linux/macOS 上开始使用 .NET Core（.NET Core 工具 RC4）
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具 RC4。 对于 .NET Core 工具预览版 2，请参阅[使用命令行在 Windows/Linux/macOS 上实现 .NET Core 入门](../../tutorials/using-with-xplat-cli.md)主题。
 
 本指南介绍如何使用 .NET Core CLI 工具生成跨平台控制台应用。  将从最基本的控制台应用开始介绍，最终涵盖包括测试在内的多个项目。 基于已经了解和生成的应用，逐步添加这些功能。
 
@@ -24,7 +27,7 @@ ms.openlocfilehash: 01b17021e79bcdb2dc69f97b709f4aa63dbab9aa
 
 ## <a name="prerequisites"></a>先决条件
 
-开始之前，请确保拥有 [.NET Core CLI 工具预览版 3 或更高版本](https://github.com/dotnet/core/blob/master/release-notes/preview3-download.md)。  还需要一个文本编辑器。
+开始之前，请确保已安装 [.NET Core CLI 工具 RC4 或更高版本](https://github.com/dotnet/core/blob/master/release-notes/preview3-download.md)。  还需要一个文本编辑器。
 
 ## <a name="hello-console-app"></a>Hello，控制台应用！
 
@@ -314,10 +317,10 @@ $ dotnet run
  
 希望本指南可帮助你了解如何创建 .NET Core 控制台应用（从基本知识一直到含单元测试的多项目系统）。  下一步就是创建属于自己的出色控制台应用！
  
-如果对控制台应用的更高级示例感兴趣，请查阅下一个教程：[使用 .NET Core 命令行（SDK 预览版 3）组织和测试项目](using-with-xplat-cli-msbuild-folders.md)。
+如果对更高级的控制台应用程序示例感兴趣，请学习下一教程：[使用 .NET Core 命令行组织和测试项目（.NET Core 工具 RC4）](using-with-xplat-cli-msbuild-folders.md)。
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

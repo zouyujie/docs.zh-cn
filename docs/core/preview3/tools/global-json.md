@@ -1,7 +1,7 @@
 ---
-title: "global.json 引用 | .NET Core"
+title: "global.json 引用 |Microsoft 文档"
 description: "global.json 引用"
-keywords: .NET, .NET Core
+keywords: ".NET、.NET Core"
 author: blackdwarf
 ms.author: mairaw
 ms.date: 11/02/2016
@@ -9,16 +9,19 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: e1ac9659-425f-4486-a376-c12ca942ead8
+ms.assetid: 96102f96-d403-4385-8ef6-5d80e406eb0c
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 281f1b717a0e220e533078e973711977617a1401
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: b814bfc79c2fcd0fd15b9494c18c6d0443a70fb1
 
 ---
 
-# <a name="globaljson-reference"></a>global.json 引用
+# <a name="globaljson-reference-net-core-tools-rc4"></a>global.json 参考 |（.NET Core 工具 RC4）
 
-Global.json 文件仍在 .NET Core 命令行预览版 3 中。 然而，不同于以前的版本，其主要用途不是用于定义解决方案元数据，而是允许通过 `sdk` 属性选择使用的 CLI 版本。 
+> [!WARNING]
+> 本主题适用于 .NET Core 工具 RC4。 对于 .NET Core 工具预览版 2，请参阅 [global.json 引用](../../tools/global-json.md)主题。
+
+.NET Core 命令行 RC4 中仍有 global.json 文件。 然而，不同于以前的版本，其主要用途不是用于定义解决方案元数据，而是允许通过 `sdk` 属性选择使用的 CLI 版本。 
 
 此引用反映了上述情况。 
 
@@ -43,7 +46,6 @@ Global.json 文件仍在 .NET Core 命令行预览版 3 中。 然而，不同�
 ```
 
 
-
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

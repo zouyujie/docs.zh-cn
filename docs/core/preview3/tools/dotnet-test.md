@@ -1,22 +1,25 @@
 ---
-title: "dotnet-test 命令 | .NET Core SDK"
-description: "“dotnet test”命令用于执行给定项目中的单元测试。"
+title: "dotnet-test 命令 | Microsoft Docs"
+description: "`dotnet test` 命令用于执行给定项目中的单元测试。"
 keywords: "dotnet-test, CLI, CLI 命令, .NET Core"
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/07/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 3a0fa917-eb0a-4d7e-9217-d06e65455675
+ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 66c9f949980612f6e21b6d441c004cc09f4eb7d3
+ms.sourcegitcommit: 02f39bc959a56ab0fc2cfa57ce13f300a8a46107
+ms.openlocfilehash: 204ebdb5a945dcd0c9277f1d95c113e829303b32
 
 ---
 
-#<a name="dotnet-test"></a>dotnet-test
+#<a name="dotnet-test-net-core-tools-rc4"></a>dotnet-test（.NET Core 工具 RC4）
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具 RC4。 对于 .NET Core 工具预览版 2，请参阅 [dotnet-test](../../tools/dotnet-test.md) 主题。
 
 ## <a name="name"></a>名称
 
@@ -25,10 +28,10 @@ ms.openlocfilehash: 66c9f949980612f6e21b6d441c004cc09f4eb7d3
 ## <a name="synopsis"></a>摘要
 
 `dotnet test [project] [--help] 
-    [--settings] [--listTests] [--testCaseFilter] 
-    [--testAdapterPath] [--logger] 
-    [--configuration] [--output] [--framework] [--diag]
-    [--noBuild]`  
+    [--settings] [--list-tests] [--filter] 
+    [--test-adapter-path] [--logger] 
+    [--configuration] [--framework] [--output] [--diag]
+    [--no-build] [--verbosity]`
 
 ## <a name="description"></a>描述
 
@@ -36,42 +39,7 @@ ms.openlocfilehash: 66c9f949980612f6e21b6d441c004cc09f4eb7d3
 
 测试项目还需要指定测试运行程序。 使用普通 `<PackageReference>` 元素指定，如下方示例项目文件所示：
 
-```xml
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.0</TargetFramework>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="**\*.cs" />
-    <EmbeddedResource Include="**\*.resx" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.App">
-      <Version>1.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.NET.Sdk">
-      <Version>1.0.0-alpha-20161104-2</Version>
-      <PrivateAssets>All</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.NET.Test.Sdk">
-      <Version>15.0.0-preview-20161024-02</Version>
-    </PackageReference>
-    <PackageReference Include="xunit">
-      <Version>2.2.0-beta3-build3402</Version>
-    </PackageReference>
-    <PackageReference Include="xunit.runner.visualstudio">
-      <Version>2.2.0-beta4-build1188</Version>
-    </PackageReference>
-  </ItemGroup>
-
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-</Project>
-```
+[!code-xml[XUnit 基本模板](../../../../samples/snippets/csharp/xunit-test/xunit-test.csproj)]
 
 ## <a name="options"></a>选项
 
@@ -83,49 +51,49 @@ ms.openlocfilehash: 66c9f949980612f6e21b6d441c004cc09f4eb7d3
 
 打印出有关命令的简短帮助。
 
-`-s | --settings <SETTINGS_FILE>`
+`-s|--settings <SETTINGS_FILE>`
 
 运行测试时要使用的设置。 
 
-`-lt | --listTests`
+`-t|--list-tests`
 
 列出当前项目中发现的所有测试。 
 
-`-tcf | --testCaseFilter <EXPRESSION>`
+`--filter <EXPRESSION>`
 
-使用给定表达式筛选当前项目中的测试。 
+使用给定表达式筛选掉当前项目中的测试。 有关筛选支持的详细信息，请参阅[使用 TestCaseFilter 在 Visual Studio 中运行选择性单元测试](https://aka.ms/vstest-filtering)。
 
-`-tap | --testAdapterPath <TEST_ADAPTER_PATH>`
+`-a|--test-adapter-path <PATH_TO_ADAPTER>`
 
-在此测试运行中使用来自指定路径的自定义测试适配器。 
+在测试运行中使用来自指定路径的自定义测试适配器。 
 
-`--logger <LOGGER>`
+`-l|--logger <LoggerUri/FriendlyName>`
 
-为测试结果指定一个记录器。 
+指定测试结果记录器。 
 
 `-c|--configuration <Debug|Release>`
 
-生成所根据的配置。 默认值为 `Release`。 
+生成所根据的配置。 默认值为 `Debug`，但项目配置可以替代此默认 SDK 设置。
 
-`-o|--output [OUTPUT_DIRECTORY]`
-
-查找要运行的二进制文件的目录。
-
-`-f|--framework [FRAMEWORK]`
+`-f|--framework <FRAMEWORK>`
 
 查找特定框架的测试二进制文件。
 
-`-r|--runtime [RUNTIME_IDENTIFIER]`
+`-o|--output <OUTPUT_DIRECTORY>`
 
-查找指定运行时的测试二进制文件。
+查找要运行的二进制文件的目录。
 
-`--noBuild` 
+`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`
 
-运行前不生成测试项目。 
+启用测试平台的诊断模式，并将诊断消息写入指定文件。 
 
-`-d | --diag <DIAGNOSTICS_FILE>`
+`--no-build` 
 
-启用测试平台的诊断模式，并将诊断消息写入指定的文件。 
+运行前不生成测试项目。
+
+`-v|--verbosity [quiet|minimal|normal|diagnostic]`
+
+设置命令的详细级别。 可以指定以下详细级别：q[uiet]、m[inimal]、n[ormal]、d[etailed] 和 diag[nostic]。 
 
 ## <a name="examples"></a>示例
 
@@ -145,6 +113,6 @@ ms.openlocfilehash: 66c9f949980612f6e21b6d441c004cc09f4eb7d3
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 
