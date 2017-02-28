@@ -10,8 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
 translationtype: Human Translation
-ms.sourcegitcommit: c81b3b4785bff3bf8963e0ba1b917a5f797099ff
+ms.sourcegitcommit: a8019c9fc25ef458aa555743e61cd83a3beb11ed
 ms.openlocfilehash: b5c088da7d1155414a08995ae0d72154af891190
+ms.lasthandoff: 02/28/2017
 
 ---
 
@@ -94,9 +95,4 @@ Visual Studio 2017 RC 有不同的版本。 可以免费下载 [Visual Studio Co
 在[发行说明](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes)中可以了解关于 Visual Studio 2017 RC 中更改的详细信息。
 
 [sdk]: https://go.microsoft.com/fwlink/?LinkID=827546
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 
