@@ -3,16 +3,17 @@ title: "使用跨平台工具创建 NuGet 包"
 description: "使用跨平台工具创建 NuGet 包"
 keywords: ".NET、.NET Core、NuGet"
 author: cartermp
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 2f0415c1-110b-433d-87c1-ae3d543a8844
 translationtype: Human Translation
 ms.sourcegitcommit: 300a0304e316cfa265634a3faf74c81c7a8a5e08
-ms.openlocfilehash: 82b82dc2387834b9a4d0351c2c12da6e7595eb6c
+ms.openlocfilehash: d863587fbfee2bf713f8566a3e5b294d49ae50e9
+ms.lasthandoff: 11/16/2016
 
 ---
 
@@ -64,9 +65,4 @@ SuperAwesomeLibrary.1.0.0.symbols.nupkg
 ## <a name="dont-confuse-dotnet-pack-with-dotnet-publish"></a>不要混淆 `dotnet pack` 和 `dotnet publish`
 
 务必注意，不是任何时候都涉及 `dotnet publish` 命令。  `dotnet publish` 命令用于在同一个包中部署具有所有依赖项的应用程序 - 而不是用于生成通过 NuGet 发布和使用的 NuGet 包。
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 
