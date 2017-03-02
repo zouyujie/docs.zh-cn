@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: e393430a-731a-49fa-83de-ff7ed52d5704
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 209d24d32eb3b235ff2fde2ef11ffd0ee4e930cf
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 85cd57d33b03f7a2105ee3f770b2f8bcc0a57ee4
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -324,10 +325,5 @@ End Module
 [在 .NET 中分析字符串](parsing-strings.md)
 
 [.NET 中的格式设置类型](formatting-types.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

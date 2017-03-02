@@ -4,16 +4,15 @@ description: "从 DNX 迁移到 .NET Core CLI"
 keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
-manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: c0d70120-78c8-4d26-bb3c-801f42fc2366
 translationtype: Human Translation
-ms.sourcegitcommit: 956a0766fe0171052983627f2cf2e8264d6b0365
-ms.openlocfilehash: e79746734c179c3f7797a10bdcd79606b818afea
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: b752e23f37f83a68ef4a7a97108479f7736d53cd
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -55,17 +54,17 @@ DNVM 现已停用，因为其功能集可能由于 .NET Core CLI 即将推出的
 下表显示了 DNX/DNU 命令及其 CLI 对应项之间的映射。
 
 
-| DNX 命令                       | CLI 命令       | 描述                                                                                                       |
-|--------------------------------   |----------------   |-----------------------------------------------------------------------------------------------------------------  |
-| dnx 运行                           | dotnet 运行        | 从源运行代码。                                                                                             |
-| dnu 生成                         | dotnet 生成      | 生成代码的 IL 二进制。                                                                                  |
-| dnu 包                          | dotnet 包       | 打包代码的 NuGet 包。                                                                          |
-| dnx \[command]（例如，“dnx web”）   | 不适用\*             | 在 DNX 领域中，按照 project.json 中的定义运行命令。                                                       |
-| dnu 安装                       | 不适用\*             | 在 DNX 领域中，将包安装为一个依赖项。                                                              |
-| dnu 还原                       | dotnet 还原    | 还原 project.json 中指定的依赖项。                                                              |
-| dnu 发布                       | dotnet 发布    | 使用三种形式（可移植、本机可移植和独立形式）之一发布应用程序以进行部署。    |
-| dnu 包装                          | 不适用\*             | 在 DNX 领域中，包装 csproj 中的 project.json。                                                                      |
-| dnu 命令                      | 不适用\*             | 在 DNX 领域中，管理全局安装的命令。                                                             |
+| DNX 命令                        | CLI 命令        | 描述                                                                                                         |
+|--------------------------------    |----------------    |-----------------------------------------------------------------------------------------------------------------    |
+| dnx 运行                            | dotnet 运行         | 从源运行代码。                                                                                               |
+| dnu 生成                          | dotnet 生成       | 生成代码的 IL 二进制。                                                                                    |
+| dnu 包                           | dotnet 包        | 打包代码的 NuGet 包。                                                                            |
+| dnx \[command]（例如，“dnx web”）     | 不适用\*              | 在 DNX 领域中，按照 project.json 中的定义运行命令。                                                         |
+| dnu 安装                        | 不适用\*              | 在 DNX 领域中，将包安装为一个依赖项。                                                                |
+| dnu 还原                        | dotnet 还原     | 还原 project.json 中指定的依赖项。                                                                |
+| dnu 发布                        | dotnet 发布     | 使用三种形式（可移植、本机可移植和独立形式）之一发布应用程序以进行部署。     |
+| dnu 包装                           | 不适用\*              | 在 DNX 领域中，包装 csproj 中的 project.json。                                                                        |
+| dnu 命令                       | 不适用\*              | 在 DNX 领域中，管理全局安装的命令。                                                               |
 
 (\*) - 按照设计，CLI 中不支持这些功能。 
 
@@ -143,10 +142,5 @@ CLI 和 DNX 都使用基于 `project.json` 文件的相同基本项目系统。 
 
 运行 `dotnet build` 会显示任何最终的生成错误，但应该不会有很多。 生成代码并正常运行后，可以使用运行程序测试它。 执行 `dotnet <path-to-your-assembly>` 并查看其运行状况。
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
 
 

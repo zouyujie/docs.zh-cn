@@ -3,16 +3,17 @@ title: "公共语言运行时 (CLR)"
 description: "公共语言运行时 (CLR)"
 keywords: ".NET、.NET Core"
 author: rpetrusha
-manager: wpickett
+ms.author: ronpet
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 7704d9c9-e5fa-4969-a423-081cce0e21e6
 translationtype: Human Translation
-ms.sourcegitcommit: bb50b160a685d494ba47b3ca583f6fc35fa3ef3e
-ms.openlocfilehash: 44b4798a9b6f132d2fc8921bfffa24fa04202d43
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: b789ed861a5df583162f901c1c5bc765c55f7b30
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -71,10 +72,5 @@ ms.openlocfilehash: 44b4798a9b6f132d2fc8921bfffa24fa04202d43
 [自动内存管理](garbagecollection/index.md)
 
  
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

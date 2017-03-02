@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 6b8696be-55f5-4b66-98f3-69ff827c2c49
 translationtype: Human Translation
-ms.sourcegitcommit: d5c7a18af16b4f3416e84b6cf86f0f78f28948da
-ms.openlocfilehash: 2930bf6879df3cd16cbd0221ae6dfcba9b41de2e
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 8e2aad830bdaccad6e8184fa462dd0d3157fd6c9
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -22,7 +23,7 @@ ms.openlocfilehash: 2930bf6879df3cd16cbd0221ae6dfcba9b41de2e
 
 ## <a name="integral-types"></a>整型
 
-.NET Core 支持长度为 1 - 8 个字节的有符号和无符号整数。 下表列出了整数类型及其大小、指示它们有无符号，并记录了相应范围。 所有整数都是值类型。 
+.NET Core 支持长度为&1; -&8; 个字节的有符号和无符号整数。 下表列出了整数类型及其大小、指示它们有无符号，并记录了相应范围。 所有整数都是值类型。 
 
 类型 | 有符号/无符号 | 大小（字节） | 最小值 | 最大值
 ---- | --------------- | ------------ | ------------- | -------------
@@ -74,9 +75,4 @@ ms.openlocfilehash: 2930bf6879df3cd16cbd0221ae6dfcba9b41de2e
 * 两个矩阵类型：[System.Numerics.Matrix3x2](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Matrix3x2)（表示 3x2 矩阵）和 [System.Numerics.Matrix4x4](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Matrix4x4)（表示 4x4 矩阵）。 
 
 * [System.Numerics.Plane](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Plane) 类型（表示三维面）、[System.Numerics.Quaternion](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Quaternion) 类型（表示用于对三维物理旋转进行编码的矢量）。
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

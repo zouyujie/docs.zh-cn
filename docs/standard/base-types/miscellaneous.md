@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 478901dc-db6c-4d90-9d3b-f5cfdca2cbf5
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 4205d2a318849a7b24ac0f1fd65f7e8a23ec7f55
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 6b8e39902dc735cac72864024033fe5cc14fb55a
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -293,10 +294,5 @@ End Module
 ## <a name="see-also"></a>另请参阅
 
 [正则表达式语言 - 快速参考](quick-ref.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

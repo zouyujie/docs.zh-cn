@@ -3,20 +3,21 @@ title: "何时使用线程安全集合"
 description: "何时使用线程安全集合"
 keywords: ".NET、.NET Core"
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a2a42d44-f6a5-4f16-9000-026221d66349
 translationtype: Human Translation
-ms.sourcegitcommit: e07788926a995b41571be276379ad9285747951d
-ms.openlocfilehash: 74f421a5badd9f2c7bf10fa1dfdf98161bba2ce8
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: b0b88a85cb4048849464381656a30e8c8ea694d8
+ms.lasthandoff: 03/02/2017
 
 ---
 
-# <a name="when-to-use-a-threadsafe-collection"></a>何时使用线程安全集合
+# <a name="when-to-use-a-thread-safe-collection"></a>何时使用线程安全集合
 
 `ConcurrentQueue`、`ConcurrentStack`、`ConcurrentDictionary`、`ConcurrentBag` 和 `BlockingCollection` 集合类型专门为支持多线程添加和删除操作而设计。 为了实现线程安全性，这些新类型使用多种高效的锁定和免锁定同步机制。 同步会增加操作的开销。 开销数取决于所用的同步类型、执行的操作类型和其他因素，例如尝试并行访问该集合的线程数。
 
@@ -71,9 +72,4 @@ ms.openlocfilehash: 74f421a5badd9f2c7bf10fa1dfdf98161bba2ce8
 [System.Collections.Concurrent](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)
 
 [线程安全集合](index.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

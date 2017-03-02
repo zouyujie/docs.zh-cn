@@ -3,16 +3,17 @@ title: "在 DateTime 与 DateTimeOffset 之间进行转换"
 description: "在 DateTime 与 DateTimeOffset 之间进行转换"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/15/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: fab3af5b-5d0f-4384-a40a-1b5d99b30dd1
 translationtype: Human Translation
-ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: 312ac8cb7e901c4ceeff2e428620c2c4c615ca3d
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 2ba70e9ea39148d040bdb46d5e00ea50dcbb8980
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -417,7 +418,7 @@ Console.WriteLine("{0} converted to {1} {2}", _
 '       11/4/2007 4:00:00 AM -05:00 converted to 11/4/2007 1:00:00 AM Local
 ```
 
-## <a name="a-generalpurpose-conversion-method"></a>通用转换方法
+## <a name="a-general-purpose-conversion-method"></a>通用转换方法
 
 以下示例定义名为 `ConvertFromDateTimeOffset` 的方法，该方法可将 [DateTimeOffset](xref:System.DateTimeOffset) 值转换为 [DateTime](xref:System.DateTime) 值。 它可根据其偏移量确定 [DateTimeOffset](xref:System.DateTimeOffset) 值是 UTC 时间，还是本地时间或其他时间，并定义返回的日期和时间值相应的 [Kind](xref:System.DateTime.Kind) 属性。 
 
@@ -528,10 +529,5 @@ Console.WriteLine("{0} converted to {1} {2}", _
 
 
 
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

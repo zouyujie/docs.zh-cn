@@ -3,16 +3,17 @@ title: "如何：从字符串中剥离无效字符"
 description: "如何从字符串中剥离无效字符"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/28/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: f1df4967-7887-41d2-b60f-0da9be67c8fa
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 062bb3ec3c5a3baac05af76b9d2d7bcc74fa2573
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 59824a372405036c2ab6fac2730b67c9c2dfa7f4
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -22,7 +23,7 @@ ms.openlocfilehash: 062bb3ec3c5a3baac05af76b9d2d7bcc74fa2573
 
 ## <a name="example"></a>示例
 
-可以使用此示例中定义的 `CleanInput` 方法来剥离在接受用户输入的文本字段中输入的可能有害的字符。 在此情况下，`CleanInput` 会剥离所有非字母数字字符（句点 (.)、at 符号 (@), 和连字符 (-) 除外），并返回剩余字符串。 但是，可以修改正则表达式模式，使其剥离不应包含在输入字符串内的所有字符。
+可以使用此示例中定义的 `CleanInput` 方法来剥离在接受用户输入的文本字段中输入的可能有害的字符。 在此情况下，`CleanInput` 会剥离所有非字母数字字符（句点 (.)、at 符号 (@) 和连字符 (-) 除外），并返回剩余字符串。 但是，可以修改正则表达式模式，使其剥离不应包含在输入字符串内的所有字符。
 
 ```csharp
 using System;
@@ -70,9 +71,4 @@ End Module
 [.NET 正则表达式](regular-expressions.md)
 
 [正则表达式示例](regex-examples.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

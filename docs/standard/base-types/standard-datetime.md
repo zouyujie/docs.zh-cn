@@ -4,16 +4,16 @@ description: "标准日期和时间格式字符串"
 keywords: ".NET、.NET Core"
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/25/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: be239871-10cc-4949-b548-200bb260630a
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 1196459d74038edb1268c619dac3da69f38e7860
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: f9247bae0d290db570b8cd8885e654524ea2f36b
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -376,7 +376,7 @@ Console.WriteLine(date1.ToString("m", _
 ' Displays 10 April
 ```
 
-## <a name="the-roundtrip-o-o-format-specifier"></a>往返（“O”、“o”）格式说明符
+## <a name="the-round-trip-o-o-format-specifier"></a>往返（“O”、“o”）格式说明符
 
 “O”或“o”标准格式说明符表示使用保留时区信息的模式的自定义日期和时间格式字符串，并发出符合 ISO8601 的结果字符串。 对于 [DateTime](xref:System.DateTime) 值，此格式说明符设计用于在文本中将日期和时间值与 [DateTime.Kind](xref:System.DateTime.Kind) 属性一起保留。 如果 styles 参数设置为 [DateTimeStyles.RoundtripKind](xref:System.Globalization.DateTimeStyles.RoundtripKind)，则可以使用 [DateTime.Parse(String, IFormatProvider, DateTimeStyles)](xref:System.DateTime.Parse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)) 或 [DateTime.ParseExact](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)) 方法重新分析为格式化字符串。 
 
@@ -748,10 +748,5 @@ Console.WriteLine(date1.ToString("y", CultureInfo.CreateSpecificCulture("af-ZA")
 [格式设置类型](formatting-types.md)
 
 [自定义日期和时间格式字符串](custom-datetime.md)
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: b7c04a5f-a8e6-42ae-8c84-0e1ae18896eb
 translationtype: Human Translation
-ms.sourcegitcommit: c15f2da15c6448cf1c36dea2d5fd53e734bb6608
-ms.openlocfilehash: 3e99bcb1cfbcf0a4f6f372e481d41ec31d635749
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: cf792c03c7ca23136736b86e8e9ed2449eca6b92
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -300,10 +301,5 @@ namespace DictionaryHowTo
 [System.Collections.Concurrent](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)
 
 [线程安全集合](index.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

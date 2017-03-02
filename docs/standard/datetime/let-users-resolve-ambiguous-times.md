@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: d6858a5c-02ab-4367-9e08-fa22c051c38d
 translationtype: Human Translation
-ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: c54a3e742ea436c31fd238d5ecb5be98cbc6c6af
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: ede8d021a4f524cf37f7ad00b6aed89d1b1729f8
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -164,10 +165,5 @@ End Function
 [日期、时间和时区](index.md)
 
 [如何：解决不明确时间](resolve-ambiguous-times.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

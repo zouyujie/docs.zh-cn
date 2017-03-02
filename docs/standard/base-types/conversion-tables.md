@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: d602f260-e7cf-49c8-a37f-731f40e4a538
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 16f38150f26b477de5685d2d3b0ef18afb94c236
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: a27f78bc3c0753a7c5bc752bb6391839bfc21e75
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -47,7 +48,7 @@ ms.openlocfilehash: 16f38150f26b477de5685d2d3b0ef18afb94c236
 
 ## <a name="narrowing-conversions"></a>收缩转换
 
-目标为 [Single](xref:System.Single) 或 [Double](xref:System.Double) 的收缩转换可能会导致丢失信息。 如果目标类型无法正确表达源类型的大小，则结果类型将设置为常数 `PositiveInfinity` 或 `NegativeInfinity`。 `PositiveInfinity` 的值是正数除以 0 的结果，并且该值在 [Single](xref:System.Single) 或 [Double](xref:System.Double) 的值超过 `MaxValue` 字段的值时返回。 `NegativeInfinity` 的值是负数除以 0 的结果，并且该值在 [Single](xref:System.Single) 或 [Double](xref:System.Double) 值小于 `MinValue` 字段的值时返回。 从 [Double](xref:System.Double) 到 [Single](xref:System.Single) 的转换可能会导致 `PositiveInfinity` 或 `NegativeInfinity`。
+目标为 [Single](xref:System.Single) 或 [Double](xref:System.Double) 的收缩转换可能会导致丢失信息。 如果目标类型无法正确表达源类型的大小，则结果类型将设置为常数 `PositiveInfinity` 或 `NegativeInfinity`。 `PositiveInfinity` 的值是正数除以&0; 的结果，并且该值在 [Single](xref:System.Single) 或 [Double](xref:System.Double) 的值超过 `MaxValue` 字段的值时返回。 `NegativeInfinity` 的值是负数除以&0; 的结果，并且该值在 [Single](xref:System.Single) 或 [Double](xref:System.Double) 值小于 `MinValue` 字段的值时返回。 从 [Double](xref:System.Double) 到 [Single](xref:System.Single) 的转换可能会导致 `PositiveInfinity` 或 `NegativeInfinity`。
 
 收缩转换还可能导致其他数据类型的信息丢失。 但是，如果转换的某类型值不在目标类型的 `MaxValue` 和 `MinValue` 字段指定的范围内，并且运行库检查该转换以确保目标类型的值不超出它的 `MaxValue` 或 `MinValue`，则会引发 [OverflowException](xref:System.OverflowException)。 使用 [System.Convert](xref:System.Convert) 类执行的转换总是以这种方式检查。
 
@@ -72,10 +73,5 @@ ms.openlocfilehash: 16f38150f26b477de5685d2d3b0ef18afb94c236
 [System.Convert](xref:System.Convert)
 
 [类型转换](type-conversion.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

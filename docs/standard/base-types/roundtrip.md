@@ -3,24 +3,25 @@ title: "如何：往返日期和时间值"
 description: "如何往返日期和时间值"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 15690f18-1bb9-4bb8-bc11-0b737e2f0859
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 00a09c8a60138a1828d4e8c62dd72b88abbf4bbe
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 79c4da0cc6b4436fcbd5b345e23b387f2ad933d1
+ms.lasthandoff: 03/02/2017
 
 ---
 
-# <a name="how-to-roundtrip-date-and-time-values"></a>如何：往返日期和时间值
+# <a name="how-to-round-trip-date-and-time-values"></a>如何：往返日期和时间值
 
 在许多应用程序中，日期和时间值旨在明确标识单个时间点。 本主题演示如何保存和还原 [DateTime](xref:System.DateTime) 值和 [DateTimeOffset](xref:System.DateTimeOffset) 值，以便还原的值标识的时间与保存的值相同。
 
-## <a name="to-roundtrip-a-datetime-value"></a>往返 DateTime 值
+## <a name="to-round-trip-a-datetime-value"></a>往返 DateTime 值
 
 1. 通过使用“o”格式说明符调用 [DateTime.ToString(String)](xref:System.DateTime.ToString(System.String)) 方法，可将 [DateTime](xref:System.DateTime) 值转换为其字符串表示形式。
 
@@ -97,7 +98,7 @@ Console.WriteLine("Read {0} ({2}) from {1}.", restoredDate.ToString(), _
 
 往返 [DateTime](xref:System.DateTime) 值时，此方法可针对所有本地和通用时间成功保留时间。 例如，如果本地 [DateTime](xref:System.DateTime) 值保存在位于美国太平洋标准时区的系统会，并在位于美国中部标准时区的系统上还原，则还原的日期和时间会比原始时间晚两个小时，这反映了两个时区之间的时差。 但是，此方法对于未指定时间不一定准确。 其 [Kind](xref:System.DateTime.Kind) 属性是 [Unspecified](xref:System.DateTimeKind.Unspecified) 的所有 [DateTime](xref:System.DateTime) 值都如同本地时间一样进行处理。 如果不是这种情况，则 [DateTime](xref:System.DateTime) 不会成功标识正确的时间点。 针对此限制的解决方法是将日期和时间值与其时区紧密耦合，以便进行保存和还原操作。
 
-## <a name="to-roundtrip-a-datetimeoffset-value"></a>往返 DateTimeOffset 值
+## <a name="to-round-trip-a-datetimeoffset-value"></a>往返 DateTimeOffset 值
 
 通过使用“o”格式说明符调用 [DateTimeOffset.ToString(String)](xref:System.DateTimeOffset.ToString(System.String)) 方法，可将 [DateTimeOffset](xref:System.DateTimeOffset) 值转换为其字符串表示形式。
 
@@ -175,10 +176,5 @@ Console.WriteLine("Read {0} from {1}.", restoredDateOff.ToString(), fileName)
 [执行格式设置操作](performing-formatting-operations.md)
 
 [标准日期和时间格式字符串](standard-datetime.md)
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a315b111-8e48-446c-ab19-acb6405894a7
 translationtype: Human Translation
-ms.sourcegitcommit: 5b1a76c011b95db3ff5c4b4e01556f79c45fb369
-ms.openlocfilehash: 09f52c2b4b821b21279f602e7bbf45e91fe98dec
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 9827f9f37ce198b23bfd4e5fbca41cd86d5885a4
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -75,9 +76,4 @@ Non-Generic Sort: System.Collections.ArrayList Time taken: 2.4324ms
 
 *   [C# 泛型简介](https://msdn.microsoft.com/library/ms379564.aspx)
 *   [C# 编程指南 - 泛型](https://msdn.microsoft.com/library/512aeb7t.aspx)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

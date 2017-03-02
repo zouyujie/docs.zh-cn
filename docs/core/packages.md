@@ -4,16 +4,15 @@ description: "包、元包和框架"
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
-manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 609b0845-49e7-4864-957b-21ffe1b93bf2
 translationtype: Human Translation
-ms.sourcegitcommit: cb2e83b35b5a4aae14c89bcbdf26b064885a477a
-ms.openlocfilehash: af6c83755068cc311b59c1a337898c177cc6d537
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 2396b2794e88673afc1973b5bdd1e82c28fe5a13
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -126,7 +125,7 @@ ms.openlocfilehash: af6c83755068cc311b59c1a337898c177cc6d537
 
 `.NETStandard,Version=1.3` 框架是一个基于包的框架。 它依赖基于框架的包，来定义和公开与框架有关的 API。
 
-## <a name="packagebased-frameworks"></a>基于包的框架
+## <a name="package-based-frameworks"></a>基于包的框架
 
 框架和包之间是一种双向关系。 首先是为一个给定的框架定义了 API，例如 `netstandard1.3`。 以 `netstandard1.3` 为目标的包（或兼容的框架，如 `netstandard1.0`）定义了适用于 `netstandard1.3` 的 API。 听起来像是循环定义，然而并不是。 从“基于包的”这个词本身的角度来讲，框架的 API 定义是来自于包的。 框架本身并不定义任何 API。
 
@@ -147,7 +146,7 @@ ms.openlocfilehash: af6c83755068cc311b59c1a337898c177cc6d537
 
 .NET 标准 (TFM: `netstandard`) 框架是指基于 [.NET 标准库](../standard/library.md)所定义和构建的 API。 如果构建的库将用于在多个运行时上运行，就应将此框架作为目标。 这样便可在任何一种兼容 .NET 标准的运行时上受支持，例如 .NET Core、.NET Framework 和 Mono/Xamarin。 每个运行时都支持一组 .NET Standard 版本，具体取决于实现的 API。 
 
-`NETStandard.Library` 元包的目标框架是 `netstandard`。 要以 `netstandard` 为目标框架，最常见的方法是引用该元包。 它描述并提供了约 40 个 .NET 库并与 .Net 标准库所定义的 API 相关联。 可以引用以 `netstandard` 为目标的其他包来使用其他 API。
+`NETStandard.Library` 元包的目标框架是 `netstandard`。 要以 `netstandard` 为目标框架，最常见的方法是引用该元包。 它描述并提供了约&40; 个 .NET 库并与 .Net 标准库所定义的 API 相关联。 可以引用以 `netstandard` 为目标的其他包来使用其他 API。
 
 一个给定的 [NETStandard.Library 版本](versions/index.md)总是与 `netstandard` 所公开的最高版本匹配。 project.json 中对于框架的引用主要是用于从基础包选择正确的资产。 例如，此示例中就需要 `netstandard1.6` 资产，而不是 `netstandard1.4` 或 `net46`。 
 
@@ -183,11 +182,6 @@ project.json 中引用的框架和元包不需要进行匹配。 例如，以下
 
 .NET Core 应用程序 (TFM: `netcoreapp`) 框架表示 .NET Core 发行版及其提供的控制台应用程序模型附带的包和相关 API。 .NET Core 必须使用此框架，因为必须要使用其中的控制台应用程序模型。同时只运行于 .Net Core 平台的库也应使用此模型。 使用此框架后，所有应用和库将只能够在 .Net Core 上运行。 
 
-`Microsoft.NETCore.App` 元包的目标框架是 `netcoreapp`。 它提供了约 60 个库的访问权限，其中约 40 个由 `NETStandard.Library` 包提供，还有另外 20 个库。 可以引用目标框架为 `netcoreapp` 或与框架（如 `netstandard`）兼容的库获得对其他 API 的访问权限。 
+`Microsoft.NETCore.App` 元包的目标框架是 `netcoreapp`。 它提供了约&60; 个库的访问权限，其中约&40; 个由 `NETStandard.Library` 包提供，还有另外&20; 个库。 可以引用目标框架为 `netcoreapp` 或与框架（如 `netstandard`）兼容的库获得对其他 API 的访问权限。 
 
 由 `Microsoft.NETCore.App` 提供的大部分其他库还可以使用 `netstandard` 作为目标，如果其他 `netstandard` 库满足这些框架的依赖项的话。 这意味着，`netstandard` 库也可以引用这些包作为依赖项。 
-
-
-<!--HONumber=Nov16_HO1-->
-
-

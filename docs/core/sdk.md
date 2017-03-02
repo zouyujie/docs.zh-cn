@@ -11,8 +11,9 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 26bc9822-e42b-48ec-b0d6-499dc604add7
 translationtype: Human Translation
-ms.sourcegitcommit: b7dbb80c16ca0d08ff6fe4c4f3a7b221f64c6608
-ms.openlocfilehash: f444cb6f8b102faba3fca702e592cf74d0ad192c
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 41093464c0dc2631217d89e2e715d05b78051284
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -36,8 +37,3 @@ ms.openlocfilehash: f444cb6f8b102faba3fca702e592cf74d0ad192c
 另一方面，安装脚本不需要管理权限。 但是，它们也不会在计算机上安装任何系统必备组件；需要手动安装所有系统必备组件。 这些脚本主要用于设置生成服务器或希望安装工具但没有管理权限的情况（请务必注意上述系统必备组件注意事项）。 可以在[安装脚本引用主题](tools/dotnet-install-script.md)中找到详细信息。 如果对如何在 CI 生成服务器上设置 SDK 感兴趣，可以看一看 [CI 服务器的 SDK](tools/using-ci-with-cli.md) 文档。 
 
 默认情况下，SDK 将以“并行”(SxS) 方式安装。 这意味着多个版本的 CLI 工具在任何给定时间内可在一台计算机上共存。 有关如何使用正确版本的详细信息，请参阅 .NET Core 命令行工具主题中的[驱动程序部分](tools/index.md#driver)。
-
-
-<!--HONumber=Nov16_HO3-->
-
-

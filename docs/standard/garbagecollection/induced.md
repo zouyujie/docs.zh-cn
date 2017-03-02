@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 3e09b9dd-a800-4e56-b468-619f910ae22e
 translationtype: Human Translation
-ms.sourcegitcommit: 213ce098bcc2b5e31c55e759d895254d5ca33caa
-ms.openlocfilehash: 0bd8998cfb508294ffbc7a9619b571c9881ba294
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: e120ba44f16b7e4c697d94d270b2ddcc9ae83c48
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -46,9 +47,4 @@ GCCollectionMode 值 | 描述
 [延迟模式](latency.md)
 
 [.NET 中的垃圾回收](index.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

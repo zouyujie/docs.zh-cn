@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 476fe67b-6be4-4435-88ab-ced37304f1d1
 translationtype: Human Translation
-ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: 3b6e2cc973b9587cc9950ecd6898b8a321a01036
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 26be324eb5d58b94a71e89aba213f107cf8dfd1e
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -482,10 +483,5 @@ End If
 ## <a name="see-also"></a>另请参阅
 
 [日期、时间和时区](index.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

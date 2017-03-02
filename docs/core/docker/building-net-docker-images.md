@@ -3,16 +3,17 @@ title: "生成 .NET Core Docker 映像"
 description: "了解 Docker 映像和 .NET Core"
 keywords: .NET, .NET Core, Docker
 author: spboyer
-manager: wpickett
+ms.author: shboyer
 ms.date: 08/29/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-docker
 ms.devlang: dotnet
 ms.assetid: 03c28597-7e73-46d6-a9c3-f9cb55642739
 translationtype: Human Translation
-ms.sourcegitcommit: 1cb9e19ec9c9c0764244aeec5f62b812cbd91aef
-ms.openlocfilehash: be658d2c660aff736eceffe23757c13154e78582
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 038a67e3e7c3c9c120d76faa82cfc046233ab5df
+ms.lasthandoff: 03/02/2017
 
 ---
  
@@ -219,10 +220,5 @@ api                 latest               ef17184c8de6        1 hour ago        2
 
 使用 Docker 生成器将必要的文件添加到 Web API 应用程序，简化了创建映像的开发和生产版本的过程。  同时通过在对容器内的应用程序提供单步调试的 Windows 和 Visual Studio Code 集成上提供 PowerShell 脚本来达到相同结果，使工具也实现了跨平台。 通过了解映像变体和目标场景，可以优化内部循环开发过程，同时实现为生产部署优化映像。  
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
 
 

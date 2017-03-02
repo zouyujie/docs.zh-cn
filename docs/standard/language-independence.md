@@ -4,20 +4,20 @@ description: "语言独立性和与语言无关的组件"
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/22/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 2dbed1bc-86f5-43cd-9a57-adbb1c5efba4
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 47a407d1c1e768a027aaca63ee7a668e992467b2
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: e36eab49717e6a5872c5812fce160d61eee50a4f
+ms.lasthandoff: 03/02/2017
 
 ---
 
-# <a name="language-independence-and-languageindependent-components"></a>语言独立性和与语言无关的组件
+# <a name="language-independence-and-language-independent-components"></a>语言独立性和与语言无关的组件
 
 .NET 平台与语言无关。 这意味着，开发人员可以使用面向 .NET 平台的多种语言之一（例如 C#、F# 和 Visual Basic）进行开发。 可以访问针对 .NET 平台开发的类库的类型和成员，而不必了解它们的初始编写语言，也不必遵循任何原始语言的约定。 如果你是组件开发人员，无论组件采用哪种语言，均可由任何 .NET 应用程序访问。
 
@@ -328,7 +328,7 @@ End Class
 [单精度](xref:System.Single) | 单精度浮点值
 [双精度](xref:System.Double) | 双精度浮点值
 [布尔值](xref:System.Boolean) | true 或 false 值类型 
-[Char](xref:System.Char) | UTF 16 编码单元
+[Char](xref:System.Char) | UTF&16; 编码单元
 [小数](xref:System.Decimal) | 非浮点十进制数字
 [IntPtr](xref:System.IntPtr) | 平台定义的大小的指针或句柄
 [字符串](xref:System.String) | 零个、一个或多个 Char 对象的集合 
@@ -618,7 +618,7 @@ public class person
 
 * 后继字符可以作为第一个字符来自任何类别，还可以包含无间隔标记、间距组合标记、十进制数字、连接器标点符号以及格式设置代码。 
 
-在比较标识符之前，应筛选格式设置代码，并将标识符转换为 Unicode 范式 C，因为单个字符可由多个 UTF 16 编码的代码单位表示。 在 Unicode 范式 C 中生成相同代码单位的字符序列不符合 CLS。 下面的示例定义一个名为 `Å` 的属性（包含字符 ANGSTROM SIGN (U+212B)）和另一个名为 `Å` 的属性（包含字符 LATIN CAPITAL LETTER A WITH RING ABOVE (U+00C5)）。 C# 编译器将源代码标记为不符合 CLS。
+在比较标识符之前，应筛选格式设置代码，并将标识符转换为 Unicode 范式 C，因为单个字符可由多个 UTF&16; 编码的代码单位表示。 在 Unicode 范式 C 中生成相同代码单位的字符序列不符合 CLS。 下面的示例定义一个名为 `Å` 的属性（包含字符 ANGSTROM SIGN (U+212B)）和另一个名为 `Å` 的属性（包含字符 LATIN CAPITAL LETTER A WITH RING ABOVE (U+00C5)）。 C# 编译器将源代码标记为不符合 CLS。
 
 ```csharp
 public class Size
@@ -782,7 +782,7 @@ Public Class [case]
 End Class
 ```
 
-下面的 C# 示例可以通过使用 `case` 符号从语言关键字中消除标识符来实例化 @ 类。 如果没有该符号，C# 编译器会显示两条错误消息：“应为类型”和“无效表达式术语‘case’”。 
+以下 C# 示例可以通过使用 @ 符号从语言关键字中消除标识符来实例化 `case` 类。 如果没有该符号，C# 编译器会显示两条错误消息：“应为类型”和“无效表达式术语‘case’”。 
 
 ```csharp
 using System;
@@ -954,7 +954,7 @@ End Structure
 
 符合 CLS 的数组符合以下规则： 
 
-* 数组的所有维度必须具有零下限。 下面的示例创建一个不符合 CLS 的数组，其下限为 1。 请注意，无论是否存在 [CLSCompliantAttribute](xref:System.CLSCompliantAttribute) 特性，编译器都不检测由 `Numbers.GetTenPrimes` 方法返回的数组是否符合 CLS。 
+* 数组的所有维度必须具有零下限。 下面的示例创建一个不符合 CLS 的数组，其下限为&1;。 请注意，无论是否存在 [CLSCompliantAttribute](xref:System.CLSCompliantAttribute) 特性，编译器都不检测由 `Numbers.GetTenPrimes` 方法返回的数组是否符合 CLS。 
 
   ```csharp
   [assembly: CLSCompliant(true)]
@@ -2816,7 +2816,7 @@ End Class
 
 如果您开发的是应用程序而不是库（即，如果不公开可由其他应用程序开发人员使用的类型或成员），则只有在您的语言不支持程序元素时，您的应用程序使用的程序元素的 CLS 遵从性才会引起关注。 在这种情况下，当您尝试使用不符合 CLS 的元素时，您的语言编译器将生成错误。 
 
-## <a name="crosslanguage-interoperability"></a>跨语言互操作性
+## <a name="cross-language-interoperability"></a>跨语言互操作性
 
 语言独立性可能有许多含义。 其中一种含义涉及到从使用一种语言编写的应用取用以另一种语言编写的类型。 本文介绍第二个含义，涉及将用多种语言编写的代码组合到一个 .NET Framework 程序集。 
 
@@ -2952,10 +2952,5 @@ vbc example.vb /r:UtilityLib.dll
 ```
 csc example.cs /r:UtilityLib.dll
 ```
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

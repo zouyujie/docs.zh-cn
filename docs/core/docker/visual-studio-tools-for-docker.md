@@ -11,8 +11,9 @@ ms.technology: dotnet-docker
 ms.devlang: dotnet
 ms.assetid: 1f3b9a68-4dea-4b60-8cb3-f46164eedbbf
 translationtype: Human Translation
-ms.sourcegitcommit: 03193513706967a46f74bccdba08a56946dd67df
-ms.openlocfilehash: 274402bbd254e97d88771675daf07995983914aa
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: d3ea05484650d64284affa70c7377df929e44bfc
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -123,9 +124,4 @@ microsoft/aspnetcore       1.0.1               189ad4312ce7        5 days ago   
 ```
 
 与**开发**映像比较，生产或发行映像的大小可能会更小，但是通过使用卷映射，调试程序和应用程序实际会从本地计算机运行，而不是在容器中。 **最新**映像已打包在主机计算机上运行应用程序所需的整个应用程序代码，因此增量为应用程序代码的大小。
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

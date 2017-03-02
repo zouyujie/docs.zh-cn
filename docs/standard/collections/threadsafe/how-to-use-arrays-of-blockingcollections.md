@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 278a6566-09ba-4022-8802-e160e75b86af
 translationtype: Human Translation
-ms.sourcegitcommit: c15f2da15c6448cf1c36dea2d5fd53e734bb6608
-ms.openlocfilehash: 4f637ea8985a2be9fc22b5ede88fc625864046dc
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 393b286de6b8c3a262451e0d4a0276047d3ea54a
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -197,9 +198,4 @@ class PipeLineDemo
 [System.Collections.Concurrent](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)
 
 [线程安全集合](index.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

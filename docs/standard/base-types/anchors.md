@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 96dff1be-3005-4ba5-af1b-323182a26085
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: ef2a63115f1efbe2418c348a3379fe7dd2face86
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 53345ba6ffda09a21cf4c626124797a3818aa504
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -187,7 +188,7 @@ End Module
 `(\w+\s\w+)` | 匹配后跟一个空格再后跟一个或多个单词字符的一个或多个单词字符。 这是第四个捕获组。
 `,` | 匹配逗号。
 `\s\d{4}` | 匹配后跟四个十进制数字的空格。
-`(-(\d{4}`&#124;`present))?` |  匹配连字符后跟四个十进制数字或字符串“present”的零或一个匹配项。 这是第六个捕获组。 还包括第七个捕获组。 
+`(-(\d{4}`&#124;`present))?` |    匹配连字符后跟四个十进制数字或字符串“present”的零或一个匹配项。 这是第六个捕获组。 还包括第七个捕获组。 
 `,?` | 匹配逗号的零个或一个匹配项。
 `(\s\d{4}(-(\d{4}`&#124;`present))?,?)+` | 匹配以下内容的一个或多个匹配项：空格、四个十进制数字、连字符后跟四个十进制数字或字符串“present”的零个或一个匹配项以及零个或一个逗号。 这是第五个捕获组。
  
@@ -894,9 +895,4 @@ End Module
 
 [正则表达式选项](options.md)
  
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

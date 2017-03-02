@@ -3,16 +3,17 @@ title: "标准 TimeSpan 格式字符串"
 description: "标准 TimeSpan 格式字符串"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 4e0f02f1-4abd-47b5-8995-5c3ff45b0ce1
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: a31f0da1f5b502d8b983f4d496c4b9a520b0309c
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 4e6b58cd8b29b4a9d46bd43a03c1e8c6c45dfcaa
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -366,10 +367,5 @@ End Module
 [复合格式设置](composite-format.md)
 
 [分析字符串](parsing-strings.md)
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

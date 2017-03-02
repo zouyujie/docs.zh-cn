@@ -3,16 +3,17 @@ title: "使用 StringBuilder 类"
 description: "使用 StringBuilder 类"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: f4f5d1c7-d84d-4867-810f-2708cd6de0da
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 1e8453b78827d8c02f29135ddfb832956ab40f3c
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 076e10e095b50cc96187f2ec13ade2365d83dad3
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -251,9 +252,4 @@ End Module
 [基本字符串操作](basic-string-operations.md)
 
 [格式设置类型](formatting-types.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

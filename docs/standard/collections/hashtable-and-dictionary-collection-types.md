@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 0f18fac7-fd0d-4f25-a046-1d3d51de062e
 translationtype: Human Translation
-ms.sourcegitcommit: e07788926a995b41571be276379ad9285747951d
-ms.openlocfilehash: 373948733acc883a3fdc04d8dfc34f66435362af
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 58c87f9e86b5b97feb654e92a56f81940c201a6a
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -47,10 +48,5 @@ ms.openlocfilehash: 373948733acc883a3fdc04d8dfc34f66435362af
 [System.Collections.Concurrent.ConcurrentDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)
 
 [常用的集合类型](commonly-used-collection-types.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

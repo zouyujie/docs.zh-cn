@@ -10,8 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 4424a947-bdf9-4775-8d48-dc350a4e0aee
 translationtype: Human Translation
-ms.sourcegitcommit: dd32f1dd4d17ab1bb01b5578237cc950b147898c
-ms.openlocfilehash: 676ffd19ac3e39b8260d626a81e9c1db8d58f19b
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: cf6c9757ab451f88c80fedb2dfebf7f5e320f365
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -71,7 +72,7 @@ ms.openlocfilehash: 676ffd19ac3e39b8260d626a81e9c1db8d58f19b
 
 如果是，需要将其他依赖项修复到 1.0。  请查看本文末尾的正确包版本和生成号。
 
-### <a name="a-note-on-using-a-splat-string-when-versioning"></a>版本控制时使用 splat 字符串 (\*) 的注释
+### <a name="a-note-on-using-a-splat-string--when-versioning"></a>版本控制时使用 splat 字符串 (\*) 的注释
 
 你可能已采用了如下所示使用 splat (\*) 字符串的版本控制模式：`"System.Collections":"4.0.11-*"`。
 
@@ -84,9 +85,4 @@ ms.openlocfilehash: 676ffd19ac3e39b8260d626a81e9c1db8d58f19b
 [所有运行时包及其针对 1.0 的版本列表](https://github.com/dotnet/versions/blob/master/build-info/dotnet/coreclr/release/1.0.0/LKG_Packages.txt)。
 
 [所有 .NET Core 应用包及其针对 1.0 的版本列表](https://github.com/dotnet/versions/blob/master/build-info/dotnet/core-setup/release/1.0.0/Latest_Packages.txt)。
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

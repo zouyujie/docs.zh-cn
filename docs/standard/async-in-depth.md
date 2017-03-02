@@ -3,16 +3,17 @@ title: "深入了解异步"
 description: "详细说明异步代码在 .NET 中的工作方式"
 keywords: ".NET、.NET Core、.NET Standard"
 author: cartermp
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
 translationtype: Human Translation
-ms.sourcegitcommit: de0dab146fc811e895dc32f98f877db5e757f82b
-ms.openlocfilehash: 6536a608a4ee1bb10f41907a28114193a300a52c
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 4c66c1dc6fb1d51eb2a7d6566fbf62b5f19b556b
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -35,7 +36,7 @@ ms.openlocfilehash: 6536a608a4ee1bb10f41907a28114193a300a52c
 
 可在[基于任务的异步模式 (TAP) 文章](https://msdn.microsoft.com/library/hh873175.aspx)中了解有关任务以及与任务交互的不同方法的详细信息。
 
-## <a name="deeper-dive-into-tasks-for-an-iobound-operation"></a>深入了解针对绑定 I/O 的操作的任务
+## <a name="deeper-dive-into-tasks-for-an-io-bound-operation"></a>深入了解针对绑定 I/O 的操作的任务
 
 以下部分介绍了使用典型异步 I/O 调用时会出现的各种情况。 我们先看两个例子。
 
@@ -44,7 +45,7 @@ ms.openlocfilehash: 6536a608a4ee1bb10f41907a28114193a300a52c
 ```csharp
 public Task<string> GetHtmlAsync()
 {
-    // Execution is synchronous here
+     // Execution is synchronous here
     var client = new HttpClient();
     
     return client.GetStringAsync("http://www.dotnetfoundation.org");
@@ -117,7 +118,7 @@ public async Task<string> GetFirstCharactersCountAsync(string url, int count)
 
 此外，使用 `async` 方法将工作调度到 UI 线程（例如，更新 UI）十分简单，且无需额外的工作（例如调用线程安全的委托）。
 
-## <a name="deeper-dive-into-task-and-taskt-for-a-cpubound-operation"></a>深入了解绑定 CPU 的操作的任务和 Task<T>
+## <a name="deeper-dive-into-task-and-taskt-for-a-cpu-bound-operation"></a>深入了解绑定 CPU 的操作的任务和 Task<T>
 
 绑定 CPU 的 `async` 代码与绑定 I/O 的 `async` 代码有些许不同。  由于工作在 CPU 上执行，无法解决线程专用于计算的问题。  `async` 和 `await` 的运用使得可以与后台线程交互并让异步方法调用方可响应。  请注意这不会为共享数据提供任何保护。  如果正在使用共享数据，仍需要采用合适的同步策略。
 
@@ -146,8 +147,3 @@ public async Task<int> CalculateResult(InputData data)
 ### <a name="why-does-async-help-here"></a>异步为什么在此处会起作用？
 
 `async` 和 `await` 是在需要可响应性时管理绑定 CPU 的工作的最佳实践。 存在多个可将异步用于绑定 CPU 的工作的模式。 请务必注意，使用异步成本有少许费用，不推荐紧凑循环使用它。  如何编写此新功能的代码完全取决于你。
-
-
-<!--HONumber=Nov16_HO1-->
-
-
