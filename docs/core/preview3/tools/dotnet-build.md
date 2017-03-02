@@ -13,6 +13,7 @@ ms.assetid: 5e1a2bc4-a919-4a86-8f33-a9b218b1fcb3
 translationtype: Human Translation
 ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
 ms.openlocfilehash: c2c0ae3711c866268c4e8c066b4213e110e771b9
+ms.lasthandoff: 02/10/2017
 
 ---
 
@@ -53,7 +54,7 @@ dotnet-build - 生成项目及其所有依赖项
 
 `-h|--help`
 
-打印出有关命令的简短帮助。  
+打印出有关命令的简短帮助。
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
@@ -69,11 +70,11 @@ dotnet-build - 生成项目及其所有依赖项
 
 `-r|--runtime [RUNTIME_IDENTIFIER]`
 
-要生成的目标运行时。 有关可以使用的运行时标识符 (RID) 列表，请参阅 [RID 目录](../../rid-catalog.md)。 
+要生成的目标运行时。 有关可以使用的运行时标识符 (RID) 列表，请参阅 [RID 目录](../../rid-catalog.md)。
 
 `--version-suffix [VERSION_SUFFIX]`
 
-定义在项目文件的版本字段中应替换的 `*` 对象。 格式遵循 NuGet 的版本准则。 
+定义在项目文件的版本字段中应替换的 `*` 对象。 格式遵循 NuGet 的版本准则。
 
 `--build-profile`
 
@@ -100,9 +101,4 @@ dotnet-build - 生成项目及其所有依赖项
 针对特定运行时（本例中为 Ubuntu 16.04）生成项目及其依赖项：
 
 `dotnet build --runtime ubuntu.16.04-x64`
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
