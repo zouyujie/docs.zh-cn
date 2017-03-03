@@ -3,16 +3,17 @@ title: ".NET 类库"
 description: ".NET 类库"
 keywords: ".NET、.NET Core"
 author: richlander
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a67484c3-fe92-44d8-8fa3-36fa2071d880
 translationtype: Human Translation
-ms.sourcegitcommit: 62fdb3e60b206728d86220076867eb8fd68af82e
-ms.openlocfilehash: 8ed35197078e43f096931adb18c454004f83cccf
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 028fd4961c97e31ea9f213b832c723b2ce2cf27c
+ms.lasthandoff: 03/03/2017
 
 ---
 
@@ -26,7 +27,7 @@ ms.openlocfilehash: 8ed35197078e43f096931adb18c454004f83cccf
 *   **可移植**类库可访问 API 的子集，并且可供面向多个平台的应用和库使用。
 *   **.NET Core** 类库将平台特定的库和可移植库概念整合到单个模型中，从而做到了两全其美。
 
-## <a name="platformspecific-class-libraries"></a>平台特定的类库
+## <a name="platform-specific-class-libraries"></a>平台特定的类库
 
 平台特定的类库绑定到单个 .NET 平台（例如，Windows 上的 .NET Framework），因此它可以在已知的执行环境上接收重要的依赖项。 此类环境会公开一组已知 API（.NET 和 OS API），维护并公开预期状态（例如，Windows 注册表）。
 
@@ -61,9 +62,4 @@ ms.openlocfilehash: 8ed35197078e43f096931adb18c454004f83cccf
 ### <a name="mono-class-libraries"></a>Mono 类库
 
 Mono 支持多种类库，包括上述三种类型的库。 Mono 常被视为（正确地）Microsoft .NET Framework 的跨平台实现。 部分原因是，平台特定的 .NET Framework 库可在 Mono 运行时上运行，而无需修改或重新编译。 创建可移植库之前，此特性就已存在，因此在 .NET Framework 和 Mono 之间启用二进制可移植性是显而易见的选择（虽然它只能单向运行）。
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 
