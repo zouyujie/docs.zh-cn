@@ -3,16 +3,17 @@ title: "选择集合类"
 description: "选择集合类"
 keywords: ".NET、.NET Core"
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 0a60fca7-e082-48d4-9dda-30b0d3e67ec7
 translationtype: Human Translation
-ms.sourcegitcommit: cfe65fcba1b3fdc09ffcac704a760d8ce29ea60b
-ms.openlocfilehash: f00fedb70bddc184e5c6ea71213b2beb78594792
+ms.sourcegitcommit: 763433b00ae7d01cfa0c7fa250f51d23a95f6f15
+ms.openlocfilehash: d174d0cb910035340fb317521f3ad930d16853c2
+ms.lasthandoff: 01/18/2017
 
 ---
 
@@ -70,7 +71,7 @@ ms.openlocfilehash: f00fedb70bddc184e5c6ea71213b2beb78594792
     
 ## <a name="linq-to-objects"></a>LINQ to Objects
 
-LINQ to Objects 让开发人员能够使用 LINQ 查询访问内存中对象，条件是该对象类型实现 [System.Collections.IEnumerable](https://docs.microsoft.com/dotnet/core/api/System.Collections.IEnumerable) 或 [System.Collections.Generic.IEnumerable&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IEnumerable-1)。 LINQ 查询提供了一种通用的数据访问模式，与标准 foreach 循环相比，它通常更加简洁，可读性更高，并且可提供筛选、排序和分组功能。 有关详细信息，请参阅[语言集成查询 (LINQ)](../../csharp/linq.md)。
+LINQ to Objects 让开发人员能够使用 LINQ 查询访问内存中对象，条件是该对象类型实现 [System.Collections.IEnumerable](https://docs.microsoft.com/dotnet/core/api/System.Collections.IEnumerable) 或 [System.Collections.Generic.IEnumerable&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IEnumerable-1)。 LINQ 查询提供了一种通用的数据访问模式，与标准 foreach 循环相比，它通常更加简洁，可读性更高，并且可提供筛选、排序和分组功能。 有关详细信息，请参阅[语言集成查询 (LINQ)](../../csharp/linq/index.md)。
 
 ## <a name="see-also"></a>另请参阅
 
@@ -81,9 +82,4 @@ LINQ to Objects 让开发人员能够使用 LINQ 查询访问内存中对象，�
 [System.Collections.Generic](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic)
 
 [线程安全集合](threadsafe/index.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

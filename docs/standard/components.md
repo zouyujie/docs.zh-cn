@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
 translationtype: Human Translation
-ms.sourcegitcommit: 254e89abefd28419bd2f36a047e4df939f7ff8da
-ms.openlocfilehash: d0cd8f44876038167db23e7fd1e5a893460f3d73
+ms.sourcegitcommit: 7741df222250f3746abb1e3c359bd9e89e6a732c
+ms.openlocfilehash: e93764ff4d3391110c79f73a34512bd073ce0499
+ms.lasthandoff: 01/18/2017
 
 ---
 
@@ -32,7 +33,7 @@ ms.openlocfilehash: d0cd8f44876038167db23e7fd1e5a893460f3d73
 
 更正式地说，它是构成协定统一集（这些协定是编写代码的依据）的特定 .NET API 组。  这些协定对每个 .NET 运行时都具有基础实现。  这可跨不同的 .NET 运行时实现可移植性，以使代码可有效地“随处运行”。
 
-.NET 标准库还是一个生成目标，这时被称作 .NET 标准。  当前可面向 NET Standard 1.0-1.6。  如果代码面向 .NET Standard 版本，则可确保其可在实现该版本的任意 .NET 运行时上运行。
+.NET 标准库还是一个生成目标，这时被称作 .NET 标准。  当前可面向 .NET Standard 1.0-1.6。  如果代码面向 .NET Standard 版本，则可确保其可在实现该版本的任意 .NET 运行时上运行。
 
 若要了解有关 .NET 标准库和面向 .NET 标准的详细信息，请参阅 [.NET 标准库](library.md)。
 
@@ -80,10 +81,6 @@ Mono 是 Xamarin 应用所使用的运行时。  它实现 .NET 标准库，这�
 * [.NET Core 指南](../core/index.md)
 * [.NET Framework 指南](../framework/index.md)
 * [C# 指南](../csharp/index.md)
-* [F# 指南](../csharp/index.md)
-* [VB.NET 指南](../csharp/index.md)
-
-
-<!--HONumber=Nov16_HO3-->
-
+* [F# 指南](../fsharp/index.md)
+* [VB.NET 指南](../visual-basic/index.md)
 
