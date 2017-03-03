@@ -1,5 +1,5 @@
 ---
-title: "dotnet-nuget-push 命令 | .NET Core SDK"
+title: "dotnet-nuget-push 命令 | Microsoft Docs"
 description: "dotnet-nuget-push 命令将包推送到服务器，并将其发布。"
 keywords: "dotnet-nuget-push, CLI, CLI 命令, .NET Core"
 author: karann-msft
@@ -11,8 +11,9 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: f54d9adf-94f8-41cc-bb52-42f7ca3be6ff
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 04369a7f478cc77b6351f2fbee05d4e4ec8b19fb
+ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
+ms.openlocfilehash: dcc89fd24e23e624c4bcf90a8200b4e655af6dd6
+ms.lasthandoff: 01/21/2017
 
 ---
 
@@ -31,7 +32,7 @@ ms.openlocfilehash: 04369a7f478cc77b6351f2fbee05d4e4ec8b19fb
 
 ## <a name="description"></a>描述
 
-`dotnet nuget push` 将包推送到服务器，并将其发布。 push 命令使用在系统的 NuGet 配置文件或配置文件链中找到的服务器和凭据详细信息。 有关配置文件的详细信息，请参阅 [Configuring NuGet Behavior](https://docs.nuget.org/ndocs/consume-packages/configuring-nuget-behavior)（配置 NuGet 行为）。 通过加载 %AppData%\NuGet\NuGet.config (Windows) 或 $HOME/.local/share (Linux/macOS) 获得 NuGet 的默认配置，然后加载任意 nuget.config 或 .nuget\nuget.config，从驱动器的根目录开始，并在当前目录中结束。
+`dotnet nuget push` 将包推送到服务器，并将其发布。 push 命令使用在系统的 NuGet 配置文件或配置文件链中找到的服务器和凭据详细信息。 有关配置文件的详细信息，请参阅 [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior)（配置 NuGet 行为）。 通过加载 %AppData%\NuGet\NuGet.config (Windows) 或 $HOME/.local/share (Linux/macOS) 获得 NuGet 的默认配置，然后加载任意 nuget.config 或 .nuget\nuget.config，从驱动器的根目录开始，并在当前目录中结束。
 
 ## <a name="options"></a>选项
 
@@ -74,7 +75,7 @@ ms.openlocfilehash: 04369a7f478cc77b6351f2fbee05d4e4ec8b19fb
 `--config-file <FILE>`
 
 NuGet 配置文件专门用于此命令，它替换了由标准配置文件发现和链接过程找到的其他配置文件。 路径可以是绝对的，也可以是相对的。
-有关配置文件的详细信息，请参阅 [Configuring NuGet Behavior](https://docs.nuget.org/ndocs/consume-packages/configuring-nuget-behavior)（配置 NuGet 行为）。 
+有关配置文件的详细信息，请参阅 [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior)（配置 NuGet 行为）。 
 
 `--verbosity <LEVEL>`
 
@@ -113,9 +114,4 @@ NuGet 配置文件专门用于此命令，它替换了由标准配置文件发�
 将当前目录中的所有 .nupkg 文件推送到默认推送源（包含最大详细级别）：
 
 `dotnet nuget push *.nupkg --verbosity detailed`
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

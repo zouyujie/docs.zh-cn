@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 20bb7ea8-192e-4a96-8ef3-e10e1950fd3d
 translationtype: Human Translation
-ms.sourcegitcommit: 0013cf5604bfd1e8a16e5ca15577ac81fce49612
-ms.openlocfilehash: 905c3706717a03f468e3dd5717c049e83f211e67
+ms.sourcegitcommit: 4bd90ac423134c67eb35836d417b09053c98f586
+ms.openlocfilehash: 7f761c4fc24b8d22d8d1f8116745ebb3f6583378
+ms.lasthandoff: 01/26/2017
 
 ---
 
@@ -26,7 +27,7 @@ ms.openlocfilehash: 905c3706717a03f468e3dd5717c049e83f211e67
 
 托管代码是使用可在 .NET 平台顶层运行的一种高级语言（例如 C#、Visual Basic、F# 等等）编写的。 使用相应的编译器编译以这些语言编写的代码时，无法获得机器代码， 而是获得**中间语言**代码，然后运行时会对其进行编译并将其执行。 C++ 是这条规则的一个例外，因为它也能够生成可在 Windows 上运行的本机非托管二进制代码。
 
-## <a name="intermediate-language-execution"></a>中间语言和执行
+## <a name="intermediate-language--execution"></a>中间语言和执行
 
 什么是“中间语言”（简称 IL）？ 中间语言是编译使用高级 .NET 语言编写的代码后获得的结果。 对使用其中一种语言编写的代码进行编译后，即可获得 IL 所生成的二进制代码。 必须注意，IL 独立于在运行时顶层运行的任何特定语言；行业甚至为它单独制定了规范，如果有需要，你可以阅读该规范。
 
@@ -45,9 +46,4 @@ ms.openlocfilehash: 905c3706717a03f468e3dd5717c049e83f211e67
 *   [.NET Framework 概念性概述](https://msdn.microsoft.com/library/zw4w595w.aspx)
 *   [不安全代码和指针](https://msdn.microsoft.com/library/t2yzs44b.aspx)
 *   [互操作性（C# 编程指南）](https://msdn.microsoft.com/library/ms173184.aspx)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "dotnet-nuget-delete 命令 | .NET Core SDK"
+title: "dotnet-nuget-delete 命令 | Microsoft Docs"
 description: "dotnet-nuget-delete 命令从服务器删除或取消列出包。"
 keywords: "dotnet-nuget-delete, CLI, CLI 命令, .NET Core"
 author: karann-msft
@@ -11,8 +11,9 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 6ddffde4-c789-4e90-990e-d35f6a6565d4
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: a338f91d33347d48eefe572ea61da5d58d5c639a
+ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
+ms.openlocfilehash: 787b1427b1064943570cbc361042ab2f20d11088
+ms.lasthandoff: 01/21/2017
 
 ---
 
@@ -62,7 +63,7 @@ ms.openlocfilehash: a338f91d33347d48eefe572ea61da5d58d5c639a
 `--config-file <FILE>`
 
 NuGet 配置文件专门用于此命令，它替换了由标准配置文件发现和链接过程找到的其他配置文件。 路径可以是绝对的，也可以是相对的。
-有关配置文件的详细信息，请参阅 [Configuring NuGet Behavior](https://docs.nuget.org/ndocs/consume-packages/configuring-nuget-behavior)（配置 NuGet 行为）。 
+有关配置文件的详细信息，请参阅 [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior)（配置 NuGet 行为）。
 
 ## <a name="examples"></a>示例
 
@@ -81,9 +82,4 @@ NuGet 配置文件专门用于此命令，它替换了由标准配置文件发�
 删除包 MyPackage 的 1.0 版（包括最大详细级别）：
 
 `dotnet nuget delete MyPackage 1.0 --verbosity detailed`
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 
