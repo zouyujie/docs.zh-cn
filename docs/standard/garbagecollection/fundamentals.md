@@ -15,6 +15,7 @@ ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
 ms.openlocfilehash: 02b0311559071147b38182076f60918b7351cc63
 ms.lasthandoff: 03/02/2017
 
+
 ---
 
 # <a name="fundamentals-of-garbage-collection"></a>垃圾回收的基本知识
@@ -171,4 +172,11 @@ ms.lasthandoff: 03/02/2017
 ## <a name="see-also"></a>另请参阅
 
 [.NET 中的垃圾回收](gc.md)
+
+
+
+
+<!--HONumber=Nov16_HO3-->
+
+
 

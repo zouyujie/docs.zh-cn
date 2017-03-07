@@ -15,6 +15,7 @@ ms.sourcegitcommit: 7741df222250f3746abb1e3c359bd9e89e6a732c
 ms.openlocfilehash: e93764ff4d3391110c79f73a34512bd073ce0499
 ms.lasthandoff: 01/18/2017
 
+
 ---
 
 # <a name="net-architectural-components"></a>.NET 体系结构组件
@@ -83,4 +84,8 @@ Mono 是 Xamarin 应用所使用的运行时。  它实现 .NET 标准库，这�
 * [C# 指南](../csharp/index.md)
 * [F# 指南](../fsharp/index.md)
 * [VB.NET 指南](../visual-basic/index.md)
+
+<!--HONumber=Nov16_HO3-->
+
+
 
