@@ -3,16 +3,17 @@ title: "LINQ（语言集成查询）"
 description: "LINQ（语言集成查询）"
 keywords: .NET, .NET Core
 author: cartermp
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c00939e1-59e3-4e61-8fe9-08ad6b3f1295
 translationtype: Human Translation
-ms.sourcegitcommit: 6992d907b152d67c51f43ec517902fb2effc6db2
-ms.openlocfilehash: 4cb0c523a31faf319c1e07ceaa8a8122d3046be8
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 6d9c163255939c3732177ecccb373479ab610447
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -275,9 +276,4 @@ public static string GetAllFacebookUserLikesMessage(IEnumerable<FacebookUser> fa
 *   [101 LINQ 示例](https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b)
 *   [Linqpad](https://www.linqpad.net/)，适用于 C#/F#/VB 的演练环境和数据库查询引擎
 *   [EduLinq](http://codeblog.jonskeet.uk/2011/02/23/reimplementing-linq-to-objects-part-45-conclusion-and-list-of-posts/)，帮助用户了解如何实现 LINQ 到对象的电子书
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

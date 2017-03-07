@@ -4,16 +4,16 @@ description: "类型转换"
 keywords: ".NET、.NET Core"
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/22/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c9a53222-89cb-47e5-983d-4f0f204e31ba
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: ba4a356921cb43b88d3ad8e6ef7487699f442385
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 0a774a170b7703b900c2044708b07faeb4e51548
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -1226,8 +1226,3 @@ Console.WriteLine("{0} equals {1}.", tempF2, tempF3)
 [IConvertible](xref:System.IConvertible)
 
 [类型转换表](conversion-tables.md)
-
-
-<!--HONumber=Nov16_HO1-->
-
-

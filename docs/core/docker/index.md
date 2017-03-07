@@ -11,8 +11,9 @@ ms.technology: dotnet-docker
 ms.devlang: dotnet
 ms.assetid: cae32148-aef4-4e64-a7f0-88072bad4400
 translationtype: Human Translation
-ms.sourcegitcommit: 8eee2127f80736f6f2adb0924a4668f81c4285ad
-ms.openlocfilehash: bcfbe57cf366c599b7f1f8165c2a5169ecc2bd7b
+ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
+ms.openlocfilehash: 7146e08095260361af1263cf79072476664eee23
+ms.lasthandoff: 01/21/2017
 
 ---
 
@@ -23,9 +24,4 @@ ms.openlocfilehash: bcfbe57cf366c599b7f1f8165c2a5169ecc2bd7b
 - [为 .NET Core 应用程序生成 Docker 映像](building-net-docker-images.md)
 - [Visual Studio Tools for Docker](visual-studio-tools-for-docker.md)
 
-有关开发 ASP.NET Core Web 应用程序的教程，建议参阅 [ASP.NET Core documentation](https://docs.asp.net)（ASP.NET Core 文档）。
-
-
-<!--HONumber=Nov16_HO3-->
-
-
+有关开发 ASP.NET Core Web 应用程序的教程，请参阅 [ASP.NET Core 文档](https://docs.microsoft.com/aspnet/core/)。

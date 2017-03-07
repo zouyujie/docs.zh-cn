@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: e53e414f-e0b6-4076-a6ab-189ba93e23cd
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: c04c079221cf77ec548b8dc1f7758caa03cbe2e3
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 2be90e0a3e6627152532ff607768dbbb333045d7
+ms.lasthandoff: 03/03/2017
 
 ---
 
@@ -31,9 +32,4 @@ ms.openlocfilehash: c04c079221cf77ec548b8dc1f7758caa03cbe2e3
 [分析字符串](parsing-strings.md) - 介绍如何将字符串转换为类型。
 
 [常规类型系统](common-type-system.md) - 介绍 .NET 中使用的类型。
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

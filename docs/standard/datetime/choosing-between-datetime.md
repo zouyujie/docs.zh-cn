@@ -3,16 +3,17 @@ title: "在 DateTime、DateTimeOffset、TimeSpan 和 TimeZoneInfo 之间进行�
 description: "在 DateTime、DateTimeOffset、TimeSpan 和 TimeZoneInfo 之间进行选择"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/11/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 2dd84ee8-9f0f-4054-9537-155857a460cd
 translationtype: Human Translation
-ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: e5b709cb82c680edf454d0a8fc9ff27e6d26c138
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: aeb1928be32584ee4b6acf7c9a4f4330daedc590
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -354,8 +355,3 @@ End Module
 ## <a name="see-also"></a>另请参阅
 
 [日期、时间和时区](index.md)
-
-
-<!--HONumber=Nov16_HO1-->
-
-

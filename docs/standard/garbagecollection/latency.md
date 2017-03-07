@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 810bd8be-5a48-42c6-b080-3afdb31fc61b
 translationtype: Human Translation
-ms.sourcegitcommit: de0dab146fc811e895dc32f98f877db5e757f82b
-ms.openlocfilehash: 6976bb49e9124a787abb1c0a2791cda86dac1007
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 1d99ac95527cae80b74c96f5a2e6be81b94176c5
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -62,9 +63,4 @@ ms.openlocfilehash: 6976bb49e9124a787abb1c0a2791cda86dac1007
 [已引发回收](induced.md)
 
 [.NET 中的垃圾回收](index.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

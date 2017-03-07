@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 232b9f8d-464b-4e40-98bb-d69c32059bc0
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: c9330b76268fb09261e8125314d99a660c4f945a
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 630a5c9ebd1ca85980d8f64cfe755642aefdbb63
+ms.lasthandoff: 03/03/2017
 
 ---
 
@@ -43,9 +44,4 @@ ms.openlocfilehash: c9330b76268fb09261e8125314d99a660c4f945a
 ## <a name="reference"></a>参考
 
 [System.Text.RegularExpressions](xref:System.Text.RegularExpressions) - 提供 .NET `System.Text.RegularExpressions` 命名空间的类库参考信息。
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

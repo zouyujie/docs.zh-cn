@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 8c5dee8c-7bc7-4e6e-aff1-986965c4d98e
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: f4319de43043605da63f469b59a5dfdb28badc8e
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: a6644fc2431beafa2128287eeac73bd598ee304a
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -108,7 +109,7 @@ __\P{__*name*__}__ | 与不在 name 指定的 Unicode 通用类别或命名块�
 
 分组构造 | 描述 | 模式 | 匹配
 ------------------ | ----------- | ------- | ------- 
-**(**_subexpression_**)** | 捕获匹配的子表达式并将其分配到一个从 1 开始的序号中。 | `(\w)\1` | “deep”中的“ee”
+**(**_subexpression_**)** | 捕获匹配的子表达式并将其分配到一个从&1; 开始的序号中。 | `(\w)\1` | “deep”中的“ee”
 **(?**<name> _subexpression_**)** | 将匹配的子表达式捕获到一个命名组中。 | `(?<double>\w)\k<double>` | “deep”中的“ee”
 **(?**<name1-name2> _subexpression_**)** | 定义平衡组定义。 有关更多信息，请参见[正则表达式中的分组构造](grouping.md)中的[平衡组定义](grouping.md#balancing-group-definitions)部分。 | `(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$` | “3+2^((1-3)*(3-1))”中的“((1-3)*(3-1))”
 **(?**: subexpression**)** | 定义非捕获组。 | `Write(?:Line)?` | “Console.WriteLine()”中的“WriteLine”，“Console.Write(value)”中的“Write”
@@ -144,7 +145,7 @@ __*?__ | 匹配上一个元素零次或多次，但次数尽可能少。 | `\d*?
 
 反向引用构造 | 描述 | 模式 | 匹配
 ----------------------- | ----------- | ------- | -------
-**\**_number_ | 后向引用。 匹配编号子表达式的值。 | `(\w)\1 ` | “seek”中的“ee”
+**\**_number_ | 后向引用。 匹配编号子表达式的值。 | `(\w)\1    ` | “seek”中的“ee”
 **\k<**_name_**>** | 命名后向引用。 匹配命名表达式的值。 | `(?<char>\w)\k<char>` | “seek”中的“ee”
 
 ## <a name="alternation-constructs"></a>替换构造
@@ -220,9 +221,4 @@ __(?(__*expression*__)__*yes*__&#124;__*no*__)__ | 如果正则表达式模式�
 [以 Word (.docx) 格式下载](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)
     
 [以 PDF (.pdf) 格式下载](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a517c066-b11e-4815-826b-9262611eac40
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 0a136d88dfbc83d40ff8a204f275537c24f9748b
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 92f8796eae0f269cacfa4cf70330c5e3c0826717
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -294,10 +295,5 @@ Next
 [自定义数字格式字符串](custom-numeric.md)
 
 [复合格式设置](composite-format.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

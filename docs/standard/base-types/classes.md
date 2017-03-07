@@ -4,16 +4,16 @@ description: "正则表达式中的字符类"
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c7a9305f-7144-4fe8-80e8-a727bf7d223f
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: f8ebb1db670669e2e8666cd5ef90f72237c105e4
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: ae677af2590636fd144d8978a3500c37f9d33615
+ms.lasthandoff: 03/03/2017
 
 ---
 
@@ -46,7 +46,7 @@ ms.openlocfilehash: f8ebb1db670669e2e8666cd5ef90f72237c105e4
 
 .NET 支持字符类减法表达式，通过该表达式可以定义一组字符作为从一个字符类中排除另一字符类的结果。 有关详细信息，请参阅[字符类减法](#character-class-subtraction)。
 
-## <a name="positive-character-group-"></a>正字符组：[ ]
+## <a name="positive-character-group--"></a>正字符组：[ ]
 
 正字符组指定一个字符列表，其中的任何一个字符可出现在输入字符串中以便进行匹配。 此字符列表可以单独指定和/或作为范围指定。 
 
@@ -261,35 +261,35 @@ End Module
 
   下面的示例演示了 . 字符类在默认情况下以及使用 [RegexOptions.Singleline](xref:System.Text.RegularExpressions.RegexOptions.Singleline) 选项的情况下的不同行为。 正则表达式 `^.+` 在字符串开头开始并匹配每个字符。 默认情况下，匹配在第一行的结尾结束；正则表达式模式匹配回车符、**\r** 或 **\u000D**，但不匹配 **\n**。 由于 [RegexOptions.Singleline](xref:System.Text.RegularExpressions.RegexOptions.Singleline) 选项将整个输入字符串解释为单行，因此它匹配输入字符串中的每个字符，包括 **\n**。
 
-  ```csharp
-  using System;
-  using System.Text.RegularExpressions;
+```csharp
+using System;
+using System.Text.RegularExpressions;
 
-  public class Example
-  {
-     public static void Main()
-     {
-        string pattern = "^.+";
-        string input = "This is one line and" + Environment.NewLine + "this is the second.";
-        foreach (Match match in Regex.Matches(input, pattern))
-           Console.WriteLine(Regex.Escape(match.Value));
+public class Example
+{
+   public static void Main()
+   {
+      string pattern = "^.+";
+      string input = "This is one line and" + Environment.NewLine + "this is the second.";
+      foreach (Match match in Regex.Matches(input, pattern))
+         Console.WriteLine(Regex.Escape(match.Value));
 
-        Console.WriteLine();
-        foreach (Match match in Regex.Matches(input, pattern, RegexOptions.Singleline))
-           Console.WriteLine(Regex.Escape(match.Value));
-     }
-  }
-  // The example displays the following output:
-  //       This\ is\ one\ line\ and\r
-  //       
-  //       This\ is\ one\ line\ and\r\nthis\ is\ the\ second\.
-  ```
+      Console.WriteLine();
+      foreach (Match match in Regex.Matches(input, pattern, RegexOptions.Singleline))
+         Console.WriteLine(Regex.Escape(match.Value));
+   }
+}
+// The example displays the following output:
+//       This\ is\ one\ line\ and\r
+//       
+//       This\ is\ one\ line\ and\r\nthis\ is\ the\ second\.
+```
 
-  ```vb
-  Imports System.Text.RegularExpressions
+```vb
+Imports System.Text.RegularExpressions
 
-  Module Example
-     Public Sub Main()
+Module Example
+    Public Sub Main()
         Dim pattern As String = "^.+"
         Dim input As String = "This is one line and" + vbCrLf + "this is the second."
         For Each match As Match In Regex.Matches(input, pattern)
@@ -305,46 +305,46 @@ End Module
   '       This\ is\ one\ line\ and\r
   '       
   '       This\ is\ one\ line\ and\r\nthis\ is\ the\ second\.
-  ```
+```
 
   > [!NOTE]
   > 由于它匹配除 **\n** 以外的任何字符，因此 . 字符类也匹配 **\r**（回车符 **\u000D**）。
  
 * 正字符组或负字符组中的句点字符将被视为原义句点字符，而非字符类。 有关详细信息，请参阅本主题前面的[正字符组](#positive-character-group--)或[负字符组](#negative-character-group-)。 下面的示例通过定义包括句点字符 (**.**) 的正则表达式作为字符类和正字符组的成员来进行这方面的演示。 正则表达式 `\b.*[.?!;:](\s|\z)` 在字边界处开始，匹配任何字符直到遇到四个标点符号标记之一（包括句点），然后匹配空白字符或字符串的末尾。
 
-  ```csharp
-  using System;
-  using System.Text.RegularExpressions;
+```csharp
+using System;
+using System.Text.RegularExpressions;
 
-  public class Example
-  {
-     public static void Main()
-     {
-        string pattern = @"\b.*[.?!;:](\s|\z)";
-        string input = "this. what: is? go, thing.";
-        foreach (Match match in Regex.Matches(input, pattern))
-           Console.WriteLine(match.Value);
-     }
-  }
-  // The example displays the following output:
-  //       this. what: is? go, thing.
-  ```
+public class Example
+{
+   public static void Main()
+   {
+      string pattern = @"\b.*[.?!;:](\s|\z)";
+      string input = "this. what: is? go, thing.";
+      foreach (Match match in Regex.Matches(input, pattern))
+         Console.WriteLine(match.Value);
+   }
+}
+// The example displays the following output:
+//       this. what: is? go, thing.
+```
 
-  ```vb
-  Imports System.Text.RegularExpressions
+```vb
+Imports System.Text.RegularExpressions
 
-  Module Example
-     Public Sub Main()
-        Dim pattern As STring = "\b.*[.?!;:](\s|\z)"
-        Dim input As String = "this. what: is? go, thing."
-        For Each match As Match In Regex.Matches(input, pattern)
-           Console.WriteLine(match.Value)
-        Next   
-     End Sub
-  End Module
-  ' The example displays the following output:
-  '       this. what: is? go, thing.
-  ```
+Module Example
+   Public Sub Main()
+      Dim pattern As STring = "\b.*[.?!;:](\s|\z)"
+      Dim input As String = "this. what: is? go, thing."
+      For Each match As Match In Regex.Matches(input, pattern)
+         Console.WriteLine(match.Value)
+      Next   
+   End Sub
+End Module
+' The example displays the following output:
+'       this. what: is? go, thing.
+```
 
   > [!NOTE]
   > 由于它匹配任何字符，因此当正则表达式模式尝试多次匹配任何字符时，. 语言元素通常会与惰性限定符一起使用。 有关更多信息，请参见[正则表达式中的限定符](quantifiers.md)。 
@@ -473,7 +473,7 @@ Lo | 字母，其他
 Lm | 字母，修饰符
 Mn | 标记，非间距
 Nd | 数字，十进制数
-Pc | 标点，连接符。 此类别包含 10 个字符，最常用的字符是 LOWLINE 字符 (_)，u+005F。
+Pc | 标点，连接符。 此类别包含&10; 个字符，最常用的字符是 LOWLINE 字符 (_)，u+005F。
  
 如果指定了符合 ECMAScript 的行为，则 **\w** 等效于 `[a-zA-Z_0-9]`。 有关 ECMAScript 正则表达式的信息，请参阅[正则表达式选项](options.md)中的 [ECMAScript 匹配行为](options.md#ecmascript-matching-behavior)部分。 
 
@@ -550,7 +550,7 @@ End Module
 '       'nn' found in 'stunned' at position 3.
 ```
 
-## <a name="nonword-character-w"></a>非单词字符：\W
+## <a name="non-word-character-w"></a>非单词字符：\W
 
 **\W** 匹配任何非单词字符。 **\W** 语言元素等效于以下字符类：
 
@@ -569,7 +569,7 @@ Lo | 字母，其他
 Lm | 字母，修饰符
 Mn | 标记，非间距
 Nd | 数字，十进制数
-Pc | 标点，连接符。 此类别包含 10 个字符，最常用的字符是 LOWLINE 字符 (_)，u+005F。
+Pc | 标点，连接符。 此类别包含&10; 个字符，最常用的字符是 LOWLINE 字符 (_)，u+005F。
  
 如果指定了符合 ECMAScript 的行为，则 **\W** 等效于 `[^a-zA-Z_0-9]`。 有关 ECMAScript 正则表达式的信息，请参阅[正则表达式选项](options.md)中的 [ECMAScript 匹配行为](options.md#ecmascript-matching-behavior)部分。 
 
@@ -679,7 +679,7 @@ End Module
 
 由于第二个捕获组的 `Group` 对象仅包含单个捕获的非单词字符，因此该示例将从 `CaptureCollection` 属性返回的 `Group.Captures` 对象中检索所有捕获的非单词字符。
 
-## <a name="whitespace-character-s"></a>空白字符：\s
+## <a name="white-space-character-s"></a>空白字符：\s
 
 **\s** 与任何空白字符匹配。 它等效于下表中列出的转义序列和 Unicode 类别。 
 
@@ -746,7 +746,7 @@ End Module
 '       leaves
 ```
 
-## <a name="nonwhitespace-character-s"></a>非空白字符：\S
+## <a name="non-white-space-character-s"></a>非空白字符：\S
 
 **\S** 匹配任何非空白字符。 它等效于 `[^\f\n\r\t\v\x85\p{Z}]` 正则表达式模式或与等效于 **\s** 的正则表达式模式（与空白字符匹配）相反。 有关详细信息，请参阅前一部分“空白字符：\s”。
 
@@ -922,7 +922,7 @@ End Module
 '       01 999-9999: match failed
 ```
 
-## <a name="nondigit-character-d"></a>非数字字符：\D
+## <a name="non-digit-character-d"></a>非数字字符：\D
 
 **\D** 匹配任何非数字字符。 它等效于 `\P{Nd}` 正则表达式模式。
 
@@ -1142,7 +1142,7 @@ FF00 - FFEF | **IsHalfwidthandFullwidthForms**
 FFF0 - FFFF | **IsSpecials**
  
 <a name="character-class-subtraction"></a>
-## <a name="character-class-subtraction-basegroup-excludedgroup"></a>字符类减法：[base_group - [excluded_group]]
+## <a name="character-class-subtraction-basegroup---excludedgroup"></a>字符类减法：[base_group - [excluded_group]]
 
 一个字符类定义一组字符。 字符类减法将产生一组字符，该组字符是从一个字符类中排除另一个字符类中的字符的结果。 
 
@@ -1214,8 +1214,3 @@ End Module
 ## <a name="see-also"></a>另请参阅
 
 [正则表达式选项](options.md)
-
-
-<!--HONumber=Nov16_HO1-->
-
-

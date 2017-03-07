@@ -4,16 +4,16 @@ description: ".NET 中的字符编码"
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bce54e41-e9dc-493a-8988-1cbadc340fe8
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 6080f5fa12a2391dd138828e0afc2219f1e3a11b
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: a8f42fa6a37f8de6f13186ea2ac17b2b2ced1601
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -592,7 +592,7 @@ End Module
 > [!IMPORTANT]
 > 当某一 Unicode 字符不能映射到特定代码页编码时，在编码操作中将发生最常见的问题。 当无效的字节序列无法转换为有效的 Unicode 字符，在解码操作中将发生最常见的问题。 出于这些原因，应该了解特定的编码对象使用哪种回退策略。 只要有可能，应指定实例化对象时编码对象使用的回退策略。
  
-### <a name="bestfit-fallback"></a>最佳回退
+### <a name="best-fit-fallback"></a>最佳回退
 
 当一个字符在目标编码中不具有准确匹配时，编码器可以尝试将其映射到类似的字符。 （最佳回退主要是编码问题而非解码问题。 很少有代码页包含无法成功映射到 Unicode 的字符。）最佳回退是代码页的默认设置，此双字节字符集编码由 [Encoding.GetEncoding(Int32)](xref:System.Text.Encoding.GetEncoding(System.Int32)) 和 [Encoding.GetEncoding(String)](xref:System.Text.Encoding.GetEncoding(System.String)) 重载检索。
 
@@ -1145,7 +1145,7 @@ End Module
 
 当为编码器或解码器创建自定义回退解决方案时，必须实现以下成员：
 
-* [EncoderFallback.MaxCharCount](xref:System.Text.EncoderFallback.MaxCharCount) 或 [DecoderFallback.MaxCharCount](xref:System.Text.DecoderFallback.MaxCharCount) 属性，返回最佳、替换或异常回退可能返回以替换单个字符的最大数量的字符数。 对于自定义异常回退，其值为 0。 
+* [EncoderFallback.MaxCharCount](xref:System.Text.EncoderFallback.MaxCharCount) 或 [DecoderFallback.MaxCharCount](xref:System.Text.DecoderFallback.MaxCharCount) 属性，返回最佳、替换或异常回退可能返回以替换单个字符的最大数量的字符数。 对于自定义异常回退，其值为&0;。 
 
 * [EncoderFallback.CreateFallbackBuffer](xref:System.Text.EncoderFallback.CreateFallbackBuffer) 或 [DecoderFallback.CreateFallbackBuffer](xref:System.Text.DecoderFallback.CreateFallbackBuffer) 方法，该方法返回自定义的 [EncoderFallbackBuffer](xref:System.Text.EncoderFallbackBuffer) 或 [DecoderFallbackBuffer](xref:System.Text.DecoderFallbackBuffer) 实现。 当遇到不能成功进行编码的第一个字节时或当遇到不能成功进行解码的第一个字节时，则解码器调用该方法。
 
@@ -1502,10 +1502,5 @@ End Module
 
 
 
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

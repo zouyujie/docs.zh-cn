@@ -1,25 +1,28 @@
 ---
-title: "dotnet-new 命令 | .NET Core"
+title: "dotnet-new 命令 | Microsoft Docs"
 description: "dotnet-new 命令可在当前目录中创建新的 .NET Core 项目。"
 keywords: "dotnet-new, CLI, CLI 命令, .NET Core"
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 263c3d05-3a47-46a6-8023-3ca16b488410
 translationtype: Human Translation
-ms.sourcegitcommit: c6ee3f5663d0a3f62914e8de474cca4d15340c9d
-ms.openlocfilehash: 29ccc12ff893d316c816d22da862f90bfc9334ff
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: a49fe94ca8f678c614fb7f58767693c73e34c737
 
 ---
 
-#<a name="dotnetnew"></a>dotnet-new
+#<a name="dotnet-new"></a>dotnet-new
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具预览版 2。 对于 .NET Core 工具 RC4 版本，请参阅 [dotnet-new（.NET Core 工具 RC4）](../preview3/tools/dotnet-new.md)主题。
 
 ## <a name="name"></a>名称
-dotnet-new -- 在当前目录中创建新的 .NET Core 项目
+`dotnet-new` - 在当前目录中创建新的 .NET Core 项目。
 
 ## <a name="synopsis"></a>摘要
 `dotnet new [--help] [--type] [--lang]`
@@ -63,6 +66,6 @@ dotnet-new -- 在当前目录中创建新的 .NET Core 项目
 `dotnet new -t web`
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

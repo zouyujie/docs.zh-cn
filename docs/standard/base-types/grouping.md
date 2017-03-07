@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: e0bf3718-e64b-460b-b73d-66678cec6093
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 6aa304f5c4ed400faddd3869006cdd011aa06466
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 05fcdadee5d932a53941386f97971c24cc912fd8
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -330,7 +331,7 @@ End Module
 
 name1 位置是当前的组（可选），name2 是一个以前定义的组，而 subexpression 是任何有效的正则表达式模式。 平衡组定义删除 name2 的定义并在 name1 中保存 name2 和 name1 之间的间隔。 如果未定义 name2 组，则匹配将回溯。 由于删除 name2 的最后一个定义会显示 name2 以前的定义，因此该构造允许将 name2 组的捕获堆栈用作计数器，用于跟踪嵌套构造（如括号或者左括号和右括号）。 
 
-平衡组定义将 name2 作为堆栈使用。 将每个嵌套构造的开头字符放在组中，并放在其 [Group.Captures](xref:System.Text.RegularExpressions.Group.Captures) 集合中。 当匹配结束字符时，从组中删除其相应的开始字符，并且 [Captures](xref:System.Text.RegularExpressions.Group.Captures) 集合减少 1。 所有嵌套构造的开始和结束字符匹配完后，name1 为空。
+平衡组定义将 name2 作为堆栈使用。 将每个嵌套构造的开头字符放在组中，并放在其 [Group.Captures](xref:System.Text.RegularExpressions.Group.Captures) 集合中。 当匹配结束字符时，从组中删除其相应的开始字符，并且 [Captures](xref:System.Text.RegularExpressions.Group.Captures) 集合减少&1;。 所有嵌套构造的开始和结束字符匹配完后，name1 为空。
 
 > [!NOTE]
 > 通过修改下面示例中的正则表达式来使用合适的嵌套构造的开始和结束字符后，你可以用它来处理多数嵌套构造，如数学表达式或包括多个嵌套方法调用的程序代码行。 
@@ -1062,7 +1063,7 @@ End Module
 
 * 下一组 [Group](xref:System.Text.RegularExpressions.Group) 对象表示未命名（编号）的捕获组。 它们以在正则表达式中定义的顺序出现，从左至右。 这些组的索引值范围从 1 到集合中未命名捕获组的数目。 （特定组索引等效于其带编号的反向引用。 有关反向引用的更多信息，请参见[正则表达式中的反向引用构造](backreference.md)
 
-* 最后的 [Group](xref:System.Text.RegularExpressions.Group) 对象组表示命名的捕获组。 它们以在正则表达式中定义的顺序出现，从左至右。 第一个名为捕获组的索引值是一个大于最后一个未命名的捕获组的索引。 如果正则表达式中没有未命名捕获组，则第一个命名的捕获组的索引值为 1。 
+* 最后的 [Group](xref:System.Text.RegularExpressions.Group) 对象组表示命名的捕获组。 它们以在正则表达式中定义的顺序出现，从左至右。 第一个名为捕获组的索引值是一个大于最后一个未命名的捕获组的索引。 如果正则表达式中没有未命名捕获组，则第一个命名的捕获组的索引值为&1;。 
 
 
 如果将限定符应用于捕获组，则对应的 [Group](xref:System.Text.RegularExpressions.Group) 对象的 [Capture.Value](xref:System.Text.RegularExpressions.Capture.Value)、[Capture.Index](xref:System.Text.RegularExpressions.Capture.Index) 和 [Capture.Length](xref:System.Text.RegularExpressions.Capture.Length) 属性反映捕获组捕获的最后一个子字符串。 可以检索一整组子字符串，其是按组捕获的并具有来自 [CaptureCollection](xref:System.Text.RegularExpressions.CaptureCollection) 对象的限定符，其由 [Group.Captures](xref:System.Text.RegularExpressions.Group.Captures) 属性返回。
@@ -1160,9 +1161,4 @@ End Module
 [正则表达式语言 - 快速参考](quick-ref.md)
 
 [正则表达式中的回溯](backtracking.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

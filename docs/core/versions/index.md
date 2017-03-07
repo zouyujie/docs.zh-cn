@@ -10,8 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: f6f684b1-1d2c-4105-8376-7c1959e23803
 translationtype: Human Translation
-ms.sourcegitcommit: bb15293c569fa92f1acf6315c5fe7f2cd9cb6f68
-ms.openlocfilehash: 1f4f580a8287f371ff5cdc37b78e73b7329dca02
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 636c86fed9952542a256c075eb9e388b70cff174
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -157,9 +158,4 @@ MAJOR.MINOR.PATCH[-PRERELEASE-BUILDNUMBER]
   }
 }
 ```
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

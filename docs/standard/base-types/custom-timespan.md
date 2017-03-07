@@ -4,16 +4,16 @@ description: "自定义 TimeSpan 格式字符串"
 keywords: ".NET、.NET Core"
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/25/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: e79745eb-6ebd-4e62-85c4-4f2830c27285
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 168bd497891ead884413fad4542943a24de7a7f4
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: bec60437d4345decaf38f2bbb9434922ac889683
+ms.lasthandoff: 03/03/2017
 
 ---
 
@@ -219,7 +219,7 @@ Console.WriteLine(ts3.ToString("d\.hh\:mm\:ss"))
 '       3.04:03:17
 ```
 
-## <a name="the-dddddddddd-custom-format-specifiers"></a>“dd”-“dddddddd”自定义格式说明符
+## <a name="the-dd-dddddddd-custom-format-specifiers"></a>“dd”-“dddddddd”自定义格式说明符
 
 “dd”、“ddd”、“dddd”、“ddddd”、“dddddd”、“ddddddd”和“dddddddd”自定义格式说明符输出 [TimeSpan.Days](xref:System.TimeSpan.Days) 属性的值，该属性表示时间间隔中的整天数。 
 
@@ -1711,43 +1711,43 @@ Next
 
 * 将它括在单引号（文本字符串分隔符）中。 
 
-* 在它前面加上一个反斜杠（"\"，会解释为转义字符）。 这意味着在 C# 中，格式字符串必须是 @-quoted,，或者文本字符的前面必须加上额外的反斜杠。
+* 在它前面加上一个反斜杠（"\"，会解释为转义字符）。 这意味着在 C# 中，格式字符串必须是 @-quoted，或者文本字符的前面必须加上额外的反斜杠。
 
   在某些情况下，可能需要使用条件逻辑才能在格式字符串中包括转义文本。 下面的示例使用条件逻辑包括表示负时间间隔的正负符号。 
   
-  ```csharp
-  using System;
+```csharp
+using System;
 
-  public class Example
-  {
-     public static void Main()
-     {
-        TimeSpan result = new DateTime(2010, 01, 01) - DateTime.Now; 
-        String fmt = (result < TimeSpan.Zero ?  "\\-" : "") + "dd\\.hh\\:mm";
+public class Example
+{
+   public static void Main()
+   {
+      TimeSpan result = new DateTime(2010, 01, 01) - DateTime.Now; 
+      String fmt = (result < TimeSpan.Zero ?  "\\-" : "") + "dd\\.hh\\:mm";
 
-        Console.WriteLine(result.ToString(fmt));
-        Console.WriteLine("Interval: {0:" + fmt + "}", result);
-     }
-  }
-  // The example displays output like the following:
-  //       -1291.10:54
-  //       Interval: -1291.10:54
-  ```
+      Console.WriteLine(result.ToString(fmt));
+      Console.WriteLine("Interval: {0:" + fmt + "}", result);
+   }
+}
+// The example displays output like the following:
+//       -1291.10:54
+//       Interval: -1291.10:54
+```
 
-  ```vb
-  Module Example
-     Public Sub Main()
-        Dim result As TimeSpan = New DateTime(2010, 01, 01) - Date.Now 
-        Dim fmt As String = If(result < TimeSpan.Zero, "\-", "") + "dd\.hh\:mm"
+```vb
+Module Example
+   Public Sub Main()
+      Dim result As TimeSpan = New DateTime(2010, 01, 01) - Date.Now 
+      Dim fmt As String = If(result < TimeSpan.Zero, "\-", "") + "dd\.hh\:mm"
 
-        Console.WriteLine(result.ToString(fmt))
-        Console.WriteLine("Interval: {0:" + fmt + "}", result)
-     End Sub
-  End Module
-  ' The example displays output like the following:
-  '       -1291.10:54
-  '       Interval: -1291.10:54
-  ```
+      Console.WriteLine(result.ToString(fmt))
+      Console.WriteLine("Interval: {0:" + fmt + "}", result)
+   End Sub
+End Module
+' The example displays output like the following:
+'       -1291.10:54
+'       Interval: -1291.10:54
+```
   
 .NET 没有为时间间隔中的分隔符定义语法。 这意味着在格式字符串中，天与小时、小时与分钟、分钟与秒以及秒与秒的小数之间的分隔符必须全都被视为字符文本。
 
@@ -1784,10 +1784,5 @@ Console.WriteLine(interval.ToString(fmt))
 [格式设置类型](formatting-types.md)
 
 [标准 TimeSpan 格式字符串](standard-timespan.md)  
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

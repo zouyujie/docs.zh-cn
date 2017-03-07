@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a1e611ec-c6a2-48c6-9c52-0ed845787621
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: becfe2624ad1ee1d03707ef48c780f518eb8eb28
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 4e8744c6c7a42c3803bf9716a3ae271b7284be3d
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -336,7 +337,7 @@ End Module
 
 ### <a name="the-match-collection"></a>Match 集合
 
-[Regex.Matches](xref:System.Text.RegularExpressions.Regex.Matches(System.String)) 方法返回一个 [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) 对象，该对象包含多个 [Match](xref:System.Text.RegularExpressions.Match) 对象，这些对象表示正则表达式引擎在输入字符串中找到的所有匹配项（其顺序为这些匹配项在输入字符串中的显示顺序）。 如果没有匹配项，则该方法返回的 [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) 对象所包含的 [Match](xref:System.Text.RegularExpressions.Match) 对象不包含任何成员。 利用 [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) `Item` 属性，你可以按照索引（从零到将 [MatchCollection.Count](xref:System.Text.RegularExpressions.MatchCollection.Count) 属性的值减 1 所得的值）访问集合中的各个成员。 'Item` 是集合的索引器（在 C# 中）和默认属性（在 Visual Basic 中）。
+[Regex.Matches](xref:System.Text.RegularExpressions.Regex.Matches(System.String)) 方法返回一个 [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) 对象，该对象包含多个 [Match](xref:System.Text.RegularExpressions.Match) 对象，这些对象表示正则表达式引擎在输入字符串中找到的所有匹配项（其顺序为这些匹配项在输入字符串中的显示顺序）。 如果没有匹配项，则该方法返回的 [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) 对象所包含的 [Match](xref:System.Text.RegularExpressions.Match) 对象不包含任何成员。 利用 [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) `Item` 属性，你可以按照索引（从零到将 [MatchCollection.Count](xref:System.Text.RegularExpressions.MatchCollection.Count) 属性的值减&1; 所得的值）访问集合中的各个成员。 'Item` 是集合的索引器（在 C# 中）和默认属性（在 Visual Basic 中）。
 
 默认情况下，调用 [Regex.Matches](xref:System.Text.RegularExpressions.Regex.Matches(System.String)) 方法会使用延迟计算来填充 [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) 对象。 访问需要完全填充的集合的属性（如 [MatchCollection.Count](xref:System.Text.RegularExpressions.MatchCollection.Count) 和 `Item` 属性）可能会降低性能。 因此，建议你使用由 [MatchCollection.GetEnumerator](xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator) 方法返回的 [IEnumerator](xref:System.Collections.IEnumerator) 对象访问该集合。 各种语言都提供了用于包装该集合的 IEnumerator](xref:System.Collections.IEnumerator) 接口的构造（如 C# 中的 `foreach` 和 Visual Basic 中的 `For Each'）。
 
@@ -415,7 +416,7 @@ End Module
 
 [Match](xref:System.Text.RegularExpressions.Match) 类表示单个正则表达式匹配项的结果。 可以通过两种方式访问 [Match](xref:System.Text.RegularExpressions.Match) 对象：
 
-* 通过从 Regex.Matches 方法返回的 [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) 对象检索这些对象。 若要检索各个 [Match](xref:System.Text.RegularExpressions.Match) 对象，请通过使用 `foreach`（在 C# 中）或 `For Each...Next`（在 Visual Basic 中）构造循环访问集合；或者使用 [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) `Item` 属性以按索引或名称检索特定的 [Match](xref:System.Text.RegularExpressions.Match) 对象。 也可以通过按索引（从零到将集合中的对象数减去 1 所得的值）循环访问集合来检索集合中的各个 [Match](xref:System.Text.RegularExpressions.Match) 对象。 但是，此方法不使用延迟计算，因为它将访问 [MatchCollection.Count](xref:System.Text.RegularExpressions.MatchCollection.Count) 属性。 
+* 通过从 Regex.Matches 方法返回的 [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) 对象检索这些对象。 若要检索各个 [Match](xref:System.Text.RegularExpressions.Match) 对象，请通过使用 `foreach`（在 C# 中）或 `For Each...Next`（在 Visual Basic 中）构造循环访问集合；或者使用 [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) `Item` 属性以按索引或名称检索特定的 [Match](xref:System.Text.RegularExpressions.Match) 对象。 也可以通过按索引（从零到将集合中的对象数减去&1; 所得的值）循环访问集合来检索集合中的各个 [Match](xref:System.Text.RegularExpressions.Match) 对象。 但是，此方法不使用延迟计算，因为它将访问 [MatchCollection.Count](xref:System.Text.RegularExpressions.MatchCollection.Count) 属性。 
 
   下面的示例通过使用 `foreach` 构造循环访问集合，来从 [MatchCollection](xref:System.Text.RegularExpressions.MatchCollection) 对象中检索各个 [Match](xref:System.Text.RegularExpressions.Match) 对象。 正则表达式只是与输入字符串中的字符串“abc”匹配。
 
@@ -1116,10 +1117,5 @@ End Module
 [.NET 正则表达式](regular-expressions.md)
 
 [正则表达式语言 - 快速参考](quick-ref.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

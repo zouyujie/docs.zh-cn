@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 3c357112-35fb-44ba-a07b-6a1c140370ac
 translationtype: Human Translation
-ms.sourcegitcommit: 3aeaba5c8cf800c652941b5e6c2bc9f072849893
-ms.openlocfilehash: 36041eda54290484741c375ae776b7bf1a74d7a1
+ms.sourcegitcommit: d18b21b67c154c4a8cf8211aa5d1473066c53656
+ms.openlocfilehash: 13a4e4e7a588d55e82c5c4cde8f825c3b4502bb4
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -273,7 +274,7 @@ namespace PInvokeSamples {
 
 ```cs
 [DllImport("somenativelibrary.dll"]
-static extern int MethodA([MarshalAs(UnmanagedType.LPStr) string parameter);
+static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
 
 ```
 
@@ -350,9 +351,4 @@ public class StatClass {
 *   [PInvoke.net wiki](http://www.pinvoke.net) 是一个极佳的 Wiki 站点，其中提供了有关常用 Win32 API 以及如何调用这些 API 的信息。
 *   [MSDN 上的 P/Invoke](https://msdn.microsoft.com/library/zbz07712.aspx)
 *   [有关 P/Invoke 的 Mono 文档](http://www.mono-project.com/docs/advanced/pinvoke/)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

@@ -11,12 +11,13 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 3b1f5725-ac94-4f17-8e5f-244442438a4d
 translationtype: Human Translation
-ms.sourcegitcommit: 9cf6022fc910bc5418c03c0fa81d9432d85be3b0
-ms.openlocfilehash: f655c141a0c86da7905091c138b7ec4324cad07a
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 58c0d68b6840a07c9e5eb1848b3531181f14e973
+ms.lasthandoff: 03/02/2017
 
 ---
 
-# <a name="common-type-system-common-language-specification"></a>常规类型系统和公共语言规范
+# <a name="common-type-system--common-language-specification"></a>常规类型系统和公共语言规范
 
 再次介绍 .NET 领域内大量使用的两个术语，对于理解 .NET 平台如何能够允许多语言开发及其工作原理，这两个术语至关重要。
 
@@ -59,9 +60,4 @@ CLS 是 CTS 的子集。 这意味着，CTS 中的所有规则也适用于 CLS�
 
 *   [常规类型系统](https://msdn.microsoft.com/library/zcx1eb1e.aspx)
 *   [公共语言规范](https://msdn.microsoft.com/library/12a7a7h3.aspx)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

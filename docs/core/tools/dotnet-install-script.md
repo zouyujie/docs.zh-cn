@@ -1,5 +1,5 @@
 ---
-title: "dotnet-install 脚本 | .NET Core SDK"
+title: "dotnet-install 脚本 | Microsoft Docs"
 description: "了解用于安装 .NET Core CLI 工具和共享运行时的 dotnet-install 脚本。"
 keywords: "dotnet-install, dotnet-install 脚本, .NET Core"
 author: blackdwarf
@@ -11,12 +11,15 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 59b9c456-2bfd-4adc-8202-a1c6a0a6c787
 translationtype: Human Translation
-ms.sourcegitcommit: ae23d83d5ca03d1a9a248e375bc092e0d9d0cde0
-ms.openlocfilehash: d6a420fa29107952020ddfa58ce0256fd8829890
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 8c5812828b5a19646d6ccbfe9f7cf2215889201f
 
 ---
 
 #<a name="dotnet-install-scripts-reference"></a>dotnet-install 脚本引用
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具预览版 2。 对于 .NET Core 工具 RC4 版本，请参阅 [dotnet-install 脚本参考（.NET Core 工具 RC4）](../preview3/tools/dotnet-install-script.md)主题。
 
 ## <a name="name"></a>名称
 `dotnet-install.ps1` | `dotnet-install.sh` - 用于安装命令行接口 (CLI) 工具和共享运行时的脚本。
@@ -126,6 +129,6 @@ macOS/Linux：
 
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

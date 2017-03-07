@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 67670b10-3df4-45ea-8908-5ba3f056887c
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: bf3fc05428ed491e7658951f002a9af17dcba5df
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: db80cc5f37e814f224ff76b14a906bb4d41064fb
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -81,10 +82,5 @@ Console.WriteLine("{0:G}", MyDays)
 [.NET 中的格式设置类型](formatting-types.md)
 
 [.NET 中的类型转换](type-conversion.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

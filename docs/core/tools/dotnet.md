@@ -1,22 +1,25 @@
 ---
-title: "dotnet 命令 | .NET Core SDK"
+title: "dotnet 命令 | Microsoft Docs"
 description: "了解 dotnet 命令（.NET Core CLI 工具的通用驱动程序）及其用法。"
 keywords: "dotnet, CLI, CLI 命令, .NET Core"
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/07/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 93015521-2127-4fe9-8fce-ca79bcc4ff49
 translationtype: Human Translation
-ms.sourcegitcommit: c6ee3f5663d0a3f62914e8de474cca4d15340c9d
-ms.openlocfilehash: 77c37ac3d4d0ba9ad1feac539debe40b0ee31161
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: a6a4bc5dad16bb1455fd8f7bc6a5c3609a06b88a
 
 ---
 
 #<a name="dotnet-command"></a>dotnet 命令
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具预览版 2。 对于 .NET Core 工具 RC4 版本，请参阅 [dotnet 命令（.NET Core 工具 RC4）](../preview3/tools/dotnet.md)主题。
 
 ## <a name="name"></a>名称
 
@@ -84,7 +87,9 @@ dotnet 具有以下命令：
 
 `dotnet build`
 
-运行名为 `myapp.dll` 的可移植应用：`dotnet myapp.dll`
+运行名为 `myapp.dll` 的可移植应用：
+
+`dotnet myapp.dll`
 
 ## <a name="environment"></a>环境 
 
@@ -101,6 +106,6 @@ dotnet 具有以下命令：
 指定是否收集并向 Microsoft 发送 .NET Core 工具使用情况的相关数据。 若要选择退出遥测功能（接受的值有：true、1 或“是”），则为 `true`；否则为 `false`（接受的值有：false、0 或“否”）。 如未设置，则默认为 `false`，即遥测功能处于开启状态。
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

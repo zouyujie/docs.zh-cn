@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 87a6ada1-ee27-423d-b587-82e7cb45361b
 translationtype: Human Translation
-ms.sourcegitcommit: 2f8dede4c6f679466e8441b29cf778dc46059196
-ms.openlocfilehash: 2633a1665e7337cf7d324016a0da6386a777e4a3
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: c2a37ff23c65cb2c4743935c6939816a0cea7e86
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -119,10 +120,5 @@ namespace ObjectPoolExample
 
 [线程安全集合](index.md)
 
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

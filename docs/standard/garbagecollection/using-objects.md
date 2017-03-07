@@ -3,16 +3,17 @@ title: "使用实现 IDisposable 的对象"
 description: "使用实现 IDisposable 的对象"
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/19/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: df780a6e-734e-44b8-9747-9f7783f79e20
 translationtype: Human Translation
-ms.sourcegitcommit: 213ce098bcc2b5e31c55e759d895254d5ca33caa
-ms.openlocfilehash: 51655742b8975c84eae3f58c4ef0f7381a0bed6b
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 63ad1233b5eab63670fd51f41f86269f643209a7
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -235,10 +236,5 @@ End Module
 
 [清理未托管资源](unmanaged.md)
 
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

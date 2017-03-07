@@ -11,8 +11,8 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 translationtype: Human Translation
-ms.sourcegitcommit: f9ffbb2e300df2080276096095a7269736260ba1
-ms.openlocfilehash: d56ddc264d861081f0b808711cccd489a374c0b8
+ms.sourcegitcommit: eb98c703946d8be0757288ae9e00aab87b32e407
+ms.openlocfilehash: 939c6dd0621e3b1121aca52915b04bf51af1d1ef
 
 ---
 
@@ -35,7 +35,7 @@ ms.openlocfilehash: d56ddc264d861081f0b808711cccd489a374c0b8
 | 平台名称 | Alias |  |  |  |  |  | | | |
 | :---------- | :--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |
 |.NET Standard | netstandard | 1.0 | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6 | 2.0 |
-|.NET 核心|netcoreapp|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|1.0|vNext|
+|.NET 核心|netcoreapp|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|1.0|2.0|
 |.NET Framework|net|&rarr;|4.5|4.5.1|4.6|4.6.1|4.6.2|vNext|4.6.1|
 |Mono/Xamarin 平台||&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|vNext|
 |通用 Windows 平台|uap|&rarr;|&rarr;|&rarr;|&rarr;|10.0|&rarr;|&rarr;|vNext|
@@ -85,7 +85,7 @@ ms.openlocfilehash: d56ddc264d861081f0b808711cccd489a374c0b8
 
 NuGet 包面向一个或多个[框架](frameworks.md)。 .NET 标准库包面向“.NET Standard”框架。 可以使用 `netstandard` [精简 TFM](frameworks.md)（例如 `netstandard1.4`）来指定 .NET Standard 框架作为目标。 如果构建的库将在多个运行时中运行，就应将此框架作为目标。 
 
-`NETStandard.Library` 元包引用定义 .NET 标准库的整套 NuGet 包。  要指定 `netstandard` 作为目标，最常见的方法是引用此元包。 它描述并提供了约 40 个 .NET 库并与 .Net 标准库所定义的 API 相关联。 可以引用以 `netstandard` 为目标的其他包来使用其他 API。 
+`NETStandard.Library` 元包引用定义 .NET 标准库的整套 NuGet 包。  要指定 `netstandard` 作为目标，最常见的方法是引用此元包。 它描述并提供了约&40; 个 .NET 库并与 .Net 标准库所定义的 API 相关联。 可以引用以 `netstandard` 为目标的其他包来使用其他 API。 
 
 ### <a name="versioning"></a>版本管理
 
@@ -134,6 +134,6 @@ NuGet 包面向一个或多个[框架](frameworks.md)。 .NET 标准库包面向
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

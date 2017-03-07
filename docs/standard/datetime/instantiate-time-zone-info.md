@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bff137e5-d550-44c3-b460-b3f2dabd4035
 translationtype: Human Translation
-ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: 1c619cf6bd150e009367b43d1d83fa1713ec2690
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: f2584d446c92d2df2f6d74533ef07fe96888d36a
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -109,8 +110,3 @@ End
 [日期、时间和时区](index.md)
 
 [查找本地系统上定义的时区](finding-the-time-zones-on-local-system.md)
-
-
-<!--HONumber=Nov16_HO3-->
-
-

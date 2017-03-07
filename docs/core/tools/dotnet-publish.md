@@ -1,26 +1,29 @@
 ---
-title: "dotnet-publish 命令 | .NET Core SDK"
+title: "dotnet-publish 命令 | Microsoft Docs"
 description: "dotnet-publish 命令可将 .NET Core 项目发布到目录。"
 keywords: "dotnet-publish, CLI, CLI 命令, .NET Core"
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/07/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 8a7e1c52-5c57-4bf5-abad-727450ebeefd
 translationtype: Human Translation
-ms.sourcegitcommit: c6ee3f5663d0a3f62914e8de474cca4d15340c9d
-ms.openlocfilehash: 2b00a2c6da73c2252997b63aca8fc475cac8999f
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 1cf1611ab83874ad44855521d21040d102206338
 
 ---
 
-#<a name="dotnetpublish"></a>dotnet-publish
+#<a name="dotnet-publish"></a>dotnet-publish
+
+> [!WARNING]
+> 本主题适用于 .NET Core 工具预览版 2。 对于 .NET Core 工具 RC4 版本，请参阅 [dotnet-publish（.NET Core 工具 RC4）](../preview3/tools/dotnet-publish.md)主题。
 
 ## <a name="name"></a>名称
 
-`dotnet-publish` - 将应用程序及其所有依赖项打包到文件夹，准备进行发布
+`dotnet-publish` - 将应用程序及其所有依赖项打包到文件夹，准备进行发布。
 
 ## <a name="synopsis"></a>摘要
 
@@ -102,6 +105,6 @@ ms.openlocfilehash: 2b00a2c6da73c2252997b63aca8fc475cac8999f
 * [运行时标识符 (RID) 目录](../rid-catalog.md)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

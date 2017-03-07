@@ -4,16 +4,16 @@ description: "正则表达式中的替换"
 keywords: ".NET、.NET Core"
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 0fded615-1021-4468-a644-b491814305c6
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 3e02d18d6566c67c7fff7003671f340f97b0dfce
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: c8e82c2399916e5c17d1b54dd78a11ecfbc90bbf
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -49,7 +49,7 @@ ms.openlocfilehash: 3e02d18d6566c67c7fff7003671f340f97b0dfce
 
 **$** 后面的所有数字解释为属于 number 组。 如果这不是你想要的结果，可改为替换命名组。 例如，可以使用替换字符串 **${1}1** 而不是 **$11** 来将替换字符串定义为带数字“1”的首个捕获组的值。 有关详细信息，请参阅[替换命名组](#substituting-a-named-group)。 
 
-没有使用 **(?<**_name-**>)** 语法显式分配名称的捕获组从左到右进行编号（从 1 开始）。 命名组还从左到右进行编号，从比最后一个未命名组的索引大 1 的值开始。 例如，在正则表达式 `(\w)(?<digit>\d)` 中，`digit` 命名组的索引为 2。
+没有使用 **(?<**_name-**>)** 语法显式分配名称的捕获组从左到右进行编号（从&1; 开始）。 命名组还从左到右进行编号，从比最后一个未命名组的索引大&1; 的值开始。 例如，在正则表达式 `(\w)(?<digit>\d)` 中，`digit` 命名组的索引为 2。
 
 如果 *number* 未指定在正则表达式模式中定义的有效捕获组，**$**_number_ 将被解释为用于替换每个匹配项的文本字符序列。
 
@@ -157,7 +157,7 @@ End Module
 `\d*` | 匹配零个或多个十进制数字。
 `(?<amount>\s?\d[.,]?\d*)` | 匹配空白，后跟一个或多个十进制数，再后跟零个或一个句点或逗号，后跟零个或多个十进制数。 这是名为 amount 的捕获组。 因为替换模式为 `${amount}`，所以调用 [Regex.Replace](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions)) 方法会将整个匹配的子字符串替换为此捕获组。 
  
-## <a name="substituting-a-character"></a>替换 $ 字符
+## <a name="substituting-a--character"></a>替换 $ 字符
 
 **$$** 替换将在替换的字符串中插入文本“$”字符。 
 
@@ -560,10 +560,5 @@ End Module
 ## <a name="see-also"></a>另请参阅
 
 [正则表达式语言 - 快速参考](quick-ref.md)
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

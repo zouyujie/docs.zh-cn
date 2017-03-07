@@ -3,16 +3,17 @@ title: "如何：确认字符串是有效的电子邮件格式"
 description: "如何确认字符串是有效的电子邮件格式"
 keywords: ".NET、.NET Core"
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/28/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 6d735520-4059-4754-b34c-d117299d36f1
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: d04c77b2d7597371651f15ca4a7e203c9cbb8ccb
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 077a09152ac23c986a751f42c893e1dcca858291
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -32,7 +33,7 @@ ms.openlocfilehash: d04c77b2d7597371651f15ca4a7e203c9cbb8ccb
 `(.+)` | 匹配任意字符的一个或多个匹配项。 这是第二个捕获组。
 `$` | 在字符串的结尾结束匹配。
  
-使用 @ 字符的域名已传递给 `DomainMapper` 方法，该方法使用 [IdnMapping](xref:System.Globalization.IdnMapping) 类将 US-ASCII 字符范围外的 Unicode 字符转换为 Punycode。 如果 [IdnMapping.GetAscii](xref:System.Globalization.IdnMapping.GetAscii(System.String)) 方法在域名中检测到任何无效字符，该方法还会将 `invalid` 标志设置为 `true`。 该方法将以 @ 符号开头的 Punycode 域名返回给 `IsValidEmail` 方法。 
+使用 @ 字符的域名已传递给 `DomainMapper` 方法，该方法使用 [IdnMapping](xref:System.Globalization.IdnMapping) 类将 US-ASCII 字符范围外的 Unicode 字符转换为 Punycode。 如果 [IdnMapping.GetAscii](xref:System.Globalization.IdnMapping.GetAscii(System.String)) 方法在域名中检测到任何无效字符，该方法还会将 `invalid` 标志设置为 `true`。 该方法将冠以 @ 符号的 Punycode 域名返回给 `IsValidEmail` 方法。 
 
 然后 `IsValidEmail` 方法调用 [Regex.IsMatch(String, String)](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String)) 方法来验证该地址是否符合正则表达式模式。 
 
@@ -141,13 +142,13 @@ Public Class RegexUtilities
 End Class
 ```
 
-在本例中，正则表达式模式 `^(?(")(".+?(?<!\\)"@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))$` 按下表中的方式解释。 注意，使用 [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) 标志编译正则表达式。
+在本例中，正则表达式模式 `^(?(")(".+?(?<!\\)"@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^` \{ \} \|~ \w])*)(?<=[0-9a-z])@))(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z] [-\w]*[0-9a-z] *\.) + [a-z0-9] [\-a-z0-9]{0,22}[a-z0-9]))$` 按下表中的方式解释。 注意，使用 [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) 标志编译正则表达式。
 
 模式 | 描述
 ------- | ----------- 
 `^` | 从字符串的开头部分开始匹配。
 `(?(")` | 确定第一个字符是否为引号。 `(?(")` 为替换构造的开头。
-`(?("")("".+?(?<!\\)""@)` | 如果第一个字符是引号，则匹配一个开始引号，后跟至少一个任意字符，再后跟一个结束引号。 不得在结束引号前面加反斜杠字符，`(\). (?<!` 是零宽度负回顾后发断言的开头。 字符串应以 at 符号 (@). 结束
+`(?("")("".+?(?<!\\)""@)` | 如果第一个字符是引号，则匹配一个开始引号，后跟至少一个任意字符，再后跟一个结束引号。 不得在结束引号前面加反斜杠字符，`(\). (?<!` 是零宽度负回顾后发断言的开头。 字符串应以 at 符号 (@) 结束。
 `&#124;(([0-9a-z] | 如果第一个字符不是引号，则匹配从 a 到 z 或 A 到 Z（比较不区分大小写）的任意字母字符或从 0 到 9 的任意数字字符。
 `(\.(?!\.))` | 如果下一个字符为句点，则匹配它。 如果下一个字符不为句点，则看下一个字符并继续进行匹配。 `(?!\.)` 是宽度为零的负预测先行断言，可防止两个连续句号出现在电子邮件地址的本地部分中。
 `&#124;[-!#\$%&'\*\+/=\?\^`\{\}\&#124;~\w] | 如果下一个字符不为句点，则匹配任意单词字符或下列字符之一：-!#$%'*+=?^`{}&#124;~。 
@@ -244,9 +245,4 @@ End Class
 [.NET 正则表达式](regular-expressions.md)
 
 [正则表达式示例](regex-examples.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

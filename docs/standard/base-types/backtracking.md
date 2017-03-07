@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 8a3e6298-26b7-4c99-bd97-c9892f6c9418
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 649dfd6752f0589eb396b00e7d0b5184bb65d488
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 58925ce755e995432f3ff205793a192f34999e12
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -244,7 +245,7 @@ End Module
  
 [RegexMatchTimeoutException](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)n 异常指示正则表达式引擎无法在指定的超时间隔内找到匹配项，但不指示引发异常的原因。 原因可能是过度回溯，但也可能是超时间隔设置得过小（在引发异常时产生系统负载）。 在处理异常时，你可以选择放弃与输入字符串的进一步匹配或增大超时间隔，然后重试匹配操作。 
 
-例如，下面的代码调用 `Regex(String, RegexOptions, TimeSpan)` 构造函数来实例化超时值为 1 秒的 Regex 对象。 正则表达式模式 `(a+)+$`（与行尾的一个或多个“a”字符的一个或多个序列匹配）受过度回溯的约束。 如果引发 [RegexMatchTimeoutException](xref:System.Text.RegularExpressions.RegexMatchTimeoutException) 异常，该示例会将超时值增大到三秒最长间隔。 之后，它放弃尝试匹配模式。
+例如，下面的代码调用 `Regex(String, RegexOptions, TimeSpan)` 构造函数来实例化超时值为&1; 秒的 Regex 对象。 正则表达式模式 `(a+)+$`（与行尾的一个或多个“a”字符的一个或多个序列匹配）受过度回溯的约束。 如果引发 [RegexMatchTimeoutException](xref:System.Text.RegularExpressions.RegexMatchTimeoutException) 异常，该示例会将超时值增大到三秒最长间隔。 之后，它放弃尝试匹配模式。
 
 ```csharp
 using System;
@@ -682,10 +683,5 @@ End Module
 [正则表达式中的备用构造](alternation.md)
 
 [正则表达式中的分组构造](grouping.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

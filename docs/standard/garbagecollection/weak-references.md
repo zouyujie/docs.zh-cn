@@ -3,16 +3,17 @@ title: "弱引用"
 description: "弱引用"
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/19/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 22319f2f-0008-4ace-815e-545892a0512a
 translationtype: Human Translation
-ms.sourcegitcommit: 213ce098bcc2b5e31c55e759d895254d5ca33caa
-ms.openlocfilehash: cc43c319f2ec8055073da4749cbfb7c56b825df9
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 1f94c7609d667a54b147b73a61653028d1808080
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -57,9 +58,4 @@ ms.openlocfilehash: cc43c319f2ec8055073da4749cbfb7c56b825df9
 ## <a name="see-also"></a>另请参阅
 
 [.NET 中的垃圾回收](index.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

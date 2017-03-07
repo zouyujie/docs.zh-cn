@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 678d5df2-af63-418f-8b2a-e0be7ea2d77b
 translationtype: Human Translation
-ms.sourcegitcommit: c15f2da15c6448cf1c36dea2d5fd53e734bb6608
-ms.openlocfilehash: 63c4fcddaac058a7e40aa1593a0551192cc84a4b
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: b7b2d679683570ff7113f9100dae7c65c79bd674
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -288,9 +289,4 @@ namespace ProdConsumerCS
 [线程安全集合](index.md)
 
 [BlockingCollection 概述](blockingcollection-overview.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

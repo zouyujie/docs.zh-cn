@@ -3,16 +3,17 @@ title: "已排序的集合类型"
 description: "已排序的集合类型"
 keywords: ".NET、.NET Core"
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bdc9c13e-e56a-433b-a293-c92364f6e9cb
 translationtype: Human Translation
-ms.sourcegitcommit: 149086110d7470d97e1ab3e5969269626290b523
-ms.openlocfilehash: a5f6e2ef7f765dccf1fee0e2de60dea8aec003b9
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 28d5024f759b3a7474aef1fa344d39f9933b6322
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -56,9 +57,4 @@ ms.openlocfilehash: a5f6e2ef7f765dccf1fee0e2de60dea8aec003b9
 [ConcurrentDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)  
  
 [常用的集合类型](commonly-used-collection-types.md) 
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 
