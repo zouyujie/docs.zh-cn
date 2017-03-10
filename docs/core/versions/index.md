@@ -10,9 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: f6f684b1-1d2c-4105-8376-7c1959e23803
 translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: 636c86fed9952542a256c075eb9e388b70cff174
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: 519253bd6dc105afb138268c62347c29a6072fbb
+ms.openlocfilehash: 7be49f3ac7a7806e631eacf5004343919654881e
+ms.lasthandoff: 03/07/2017
 
 ---
 
@@ -129,33 +129,28 @@ MAJOR.MINOR.PATCH[-PRERELEASE-BUILDNUMBER]
 
 传送 .NET Core v1.0.0 稳定版本后，将新的 API 添加到 .NET Core 库以启用新方案。 更新各种元包以引用更新的 .NET Core 库包。 将元包作为修补程序更新 (x.y) 进行版本控制，以匹配更高的框架版本。 更新各种框架以描述新的 API。 发布新的 .NET Core 分发，其具有与 `Microsoft.NETCore.App` 元包匹配的版本号。
 
-可在以下 project.json 示例中看到显示的次要更新。
+可在以下项目文件中看到显示的次要更新：
 
-```
-{
-  "dependencies": {
-    "Microsoft.NETCore.App": "1.1.0"
-  },
-  "frameworks": {
-    "netcoreapp1.1": {}
-  }
-}
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+</Project>
 ```
 
 ### <a name="shipping-a-major-release"></a>传送主要发布
 
 给定 .NET Core v1.y.z 稳定版本，将新的 API 添加到 .NET Core 库以启用主要新方案。 也许，已放弃对平台的支持。 更新各种元包以引用更新的 .NET Core 库包。 `Microsoft.NETCore.App` 元包和 `netcore` 框架作为主要更新 (x.) 进行版本控制。 `NETStandard.Library` 元包可能作为次要更新 (x.y) 进行版本控制，因为其适用于多个 .NET 实现。 将发布新的 .NET Core 分发，其具有与 `Microsoft.NETCore.App` 元包匹配的版本号。
 
-可在以下示例的 project.json 元包引用中查看显示的主要更新。
+可在以下项目文件中看到显示的主要更新。 （请注意，`netcoreapp2.0` 尚未发布。）
 
-```
-{
-  "dependencies": {
-    "Microsoft.NETCore.App": "2.0.0"
-  },
-  "frameworks": {
-    "netcoreapp2.0": {}
-  }
-}
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+</Project>
+
 ```
 
