@@ -1,0 +1,5 @@
+# [利用 Visual Basic 自定义项目并扩展 My 对象](customizing-projects-and-extending-my.md)
+## [Extending the My Namespace in Visual Basic](TocOutOfQuery)
+## [Packaging and Deploying Custom My Extensions](TocOutOfQuery)
+## [扩展 Visual Basic 应用程序模型](extending-the-visual-basic-application-model.md)
+## [Customizing Which Objects are Available in My](TocOutOfQuery)
