@@ -1,7 +1,0 @@
-# [函数 (Visual Basic)](index.md)
-## [Conversion Functions](TocOutOfQuery)
-## [数学函数 (Visual Basic)](math-functions.md)
-## [字符串函数 (Visual Basic)](string-functions.md)
-## [类型转换函数 (Visual Basic)](type-conversion-functions.md)
-### [Return Values for the CStr Function](TocOutOfQuery)
-## [CType 函数 (Visual Basic)](ctype-function.md)

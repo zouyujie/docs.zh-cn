@@ -1,5 +1,0 @@
-# [打包和部署自定义 My 扩展](packaging-and-deploying-custom-my-extensions.md)
-# [扩展 Visual Basic 应用程序模型](extending-the-visual-basic-application-model.md)
-# [扩展 Visual Basic 中的 My 命名空间](extending-the-my-namespace.md)
-# [自定义 My 中可用的对象](customizing-which-objects-are-available-in-my.md)
-# [自定义项目并扩展 My 对象](customizing-projects-and-extending-my.md)

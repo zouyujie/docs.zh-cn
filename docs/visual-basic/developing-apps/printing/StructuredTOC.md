@@ -1,8 +1,0 @@
-# [打印和报告 (Visual Basic)](printing-and-reporting.md)
-## [PrintForm Component (Visual Basic)](printform-component.md)
-## [How to: Print a Scrollable Form](TocOutOfQuery)
-## [How to: Print Client and Non-Client Areas of a Form](TocOutOfQuery)
-## [如何：打印窗体的工作区 (Visual Basic)](how-to-print-the-client-area-of-a-form.md)
-## [How to: Print a Form by Using the PrintForm Component](TocOutOfQuery)
-## [Deploying Applications That Reference the PrintForm Component (Visual Basic)](deploying-applications-that-reference-the-printform-component.md)
-## [将可打印的报表添加到 Visual Studio 应用程序](adding-printable-reports-to-visual-studio-applications.md)

@@ -1,5 +1,0 @@
-# [访问应用程序的设置 (Visual Basic)](accessing-application-settings.md)
-## [How to: Create Property Grids for User Settings in Visual Basic](TocOutOfQuery)
-## [如何：在 Visual Basic 中保存用户设置](how-to-persist-user-settings.md)
-## [How to: Change User Settings in Visual Basic](TocOutOfQuery)
-## [如何：在 Visual Basic 中读取应用程序设置](how-to-read-application-settings.md)

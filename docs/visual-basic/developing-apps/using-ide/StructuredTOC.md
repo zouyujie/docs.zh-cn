@@ -1,6 +1,0 @@
-# [使用 Visual Basic 开发环境](using-the-visual-basic-development-environment.md)
-## [Visual Basic Settings](TocOutOfQuery)
-## [Visual Basic IntelliSense Code Snippets](TocOutOfQuery)
-## [重构和“重命名”对话框 (Visual Basic)](refactoring-and-rename-dialog-box.md)
-## [Help for Event Handlers in Visual Basic Code](TocOutOfQuery)
-## [如何：在 Visual Basic 中编译和运行项目](how-to-compile-and-run-a-project.md)

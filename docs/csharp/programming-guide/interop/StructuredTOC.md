@@ -1,7 +1,0 @@
-# [互操作性（C# 编程指南）](interoperability.md)
-## [Interoperability Overview](TocOutOfQuery)
-## [How to: Access Office Interop Objects by Using Visual C# Features](TocOutOfQuery)
-## [如何：在 COM 互操作编程中使用索引属性（C# 编程指南）](how-to-use-indexed-properties-in-com-interop-rogramming.md)
-## [How to: Use Platform Invoke to Play a Wave File](TocOutOfQuery)
-## [演练：Office 编程（C# 和 Visual Basic）](walkthrough-office-programming.md)
-## [COM 类示例（C# 编程指南）](example-com-class.md)

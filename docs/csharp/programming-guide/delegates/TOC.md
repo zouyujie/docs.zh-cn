@@ -1,5 +1,0 @@
-# [使用委托](using-delegates.md)
-# [带有命名方法的委托与带有匿名方法的委托](delegates-with-named-vs-anonymous-methods.md)
-# [委托](index.md)
-# [如何：声明、实例化和使用委托](how-to-declare-instantiate-and-use-a-delegate.md)
-# [如何：合并委托（多路广播委托）](how-to-combine-delegates-multicast-delegates.md)

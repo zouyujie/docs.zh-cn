@@ -1,5 +1,0 @@
-# [如何：异步调用 Web 服务](how-to-call-a-web-service-asynchronously.md)
-# [Visual Basic 编程](index.md)
-# [访问应用程序窗体](accessing-application-forms.md)
-# [访问应用程序 Web 服务](accessing-application-web-services.md)
-# [访问用户数据](accessing-user-data.md)

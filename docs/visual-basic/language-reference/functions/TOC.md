@@ -1,7 +1,0 @@
-# [字符串函数](string-functions.md)
-# [CType 函数](ctype-function.md)
-# [类型转换函数](type-conversion-functions.md)
-# [函数](index.md)
-# [转换函数](conversion-functions.md)
-# [数学函数](math-functions.md)
-# [返回 CStr 函数的值](return-values-for-the-cstr-function.md)
