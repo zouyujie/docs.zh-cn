@@ -27,14 +27,14 @@ caps.handback.revision: 22
   
  可以将匿名类型的属性为键属性通过将在其声明前面的关键字 `Key` 在初始化列表。  在下面的示例中， `Airline` 和 `FlightNo` 为键属性，但是， `Gate` 不是。  
   
- [!code-vb[VbVbalrAnonymousTypes#26](../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/key_1.vb)]  
+ [!code-vb[VbVbalrAnonymousTypes#26](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/key_1.vb)]  
   
  当一个新的匿名类型之后，它将直接从 <xref:System.Object>继承。  编译器将重写三个继承的成员: <xref:System.Object.Equals%2A>、 <xref:System.Object.GetHashCode%2A>和 <xref:System.Object.ToString%2A>。  为 <xref:System.Object.Equals%2A> 和 <xref:System.Object.GetHashCode%2A> 生成的重写代码根据键属性。  如果类型的键属性， <xref:System.Object.GetHashCode%2A> 和 <xref:System.Object.Equals%2A> 未被重写。  
   
 ## 相等  
  两个匿名类型实例相等; 如果它们属于同一类型的实例，并且，如果它们的主要属性的值相等。  在下面的示例中， `flight2` 与上一示例中的 `flight1` 相等，因为它们是相同匿名类型的实例，并且具有其主要属性匹配的值。  但是， `flight3` 与 `flight1` ，因为它有关键属性的值不同， `FlightNo`不相等。  ，因为它们指定不同的属性作为键属性，实例 `flight4` 不是类型和 `flight1` 相同。  
   
- [!code-vb[VbVbalrAnonymousTypes#27](../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/key_2.vb)]  
+ [!code-vb[VbVbalrAnonymousTypes#27](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/key_2.vb)]  
   
  如果两个实例声明仅非键属性，按相同的名称、类型、序列和值，两个实例不相等。  没有关键属性的实例与自身仅相等。  
   
@@ -45,20 +45,20 @@ caps.handback.revision: 22
   
  具有任何项属性的相同值具有相同的哈希代码值匿名类型的实例，因此，即使非键属性没有匹配的值。  下列语句返回 `True`。  
   
- [!code-vb[VbVbalrAnonymousTypes#37](../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/key_3.vb)]  
+ [!code-vb[VbVbalrAnonymousTypes#37](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/key_3.vb)]  
   
  具有一个或多个键属性的不同值具有不同匿名类型的实例的哈希代码值。  下列语句返回 `False`。  
   
- [!code-vb[VbVbalrAnonymousTypes#38](../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/key_4.vb)]  
+ [!code-vb[VbVbalrAnonymousTypes#38](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/key_4.vb)]  
   
  指定不同的属性匿名类型的实例，因为键属性不属于同一类型的实例。  ，即使所有特性的名称和值相同，它们具有不同的哈希代码值。  下列语句返回 `False`。  
   
- [!code-vb[VbVbalrAnonymousTypes#39](../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/key_5.vb)]  
+ [!code-vb[VbVbalrAnonymousTypes#39](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/key_5.vb)]  
   
 ## 只读值  
  不能更改键属性的值。  例如，在前面的示例中的 `flight1` ， `Airline` 和 `FlightNo` 字段是只读的，但是，可以更改 `Gate` 。  
   
- [!code-vb[VbVbalrAnonymousTypes#28](../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/key_6.vb)]  
+ [!code-vb[VbVbalrAnonymousTypes#28](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/key_6.vb)]  
   
 ## 请参阅  
  [匿名类型定义](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-type-definition.md)   

@@ -36,13 +36,13 @@ caps.handback.revision: 18
   
 -   可使用 <xref:System.IO.FileInfo> 对象的 <xref:System.IO.FileInfo.DirectoryName%2A> 和 <xref:System.IO.FileInfo.Name%2A> 属性来确定文件的名称和路径。 此示例确定了名称和路径，并将其显示了出来。  
   
-     [!code-vb[VbVbcnMyFileSystem#54](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-parse-file-paths_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#54](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-parse-file-paths_1.vb)]  
   
 ### 组合文件的名称和目录以创建完整的路径  
   
 -   使用 `CombinePath` 方法，用于提供目录和名称。 此示例采用了上例中创建的字符串 `folderPath` 和 `fileName`，然后将其组合在一起并显示结果。  
   
-     [!code-vb[VbVbcnMyFileSystem#55](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-parse-file-paths_2.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#55](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-parse-file-paths_2.vb)]  
   
 ## 请参阅  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>   

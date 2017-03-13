@@ -49,11 +49,11 @@ From element [ As type ] In collection [ _ ]
   
  可以指定查询中的多个 `From` 子句，以标识要联接的多个集合。  指定多个集合时，将单独循环访问这些集合，或者如果这些集合是相关的，则可以联接它们。  您可以通过使用 `Select` 子句隐式联接集合，或者通过使用 `Join` 或 `Group Join` 子句显式联接集合。  或者，您可以在单个 `From` 子句中指定多个范围变量和集合，并用逗号将每个相关的范围变量和集合分隔开。  下面的代码示例演示 `From` 子句的两个语法选项。  
   
- [!code-vb[VbSimpleQuerySamples#21](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#21)]  
+ [!code-vb[VbSimpleQuerySamples#21](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/from-clause_1.vb)]  
   
  `From` 子句定义查询的范围，类似于 `For` 循环的范围。  因此，查询范围中的每个 `element` 范围变量必须具有唯一名称。  因为您可以为查询指定多个 `From` 子句，所以后续 `From` 子句可以引用 `From` 子句中的范围变量，或者它们可以引用以前的 `From` 子句中的范围变量。  例如，下面的示例演示一个嵌套 `From` 子句，其中第二个子句中的集合基于第一个子句中的范围变量的属性。  
   
- [!code-vb[VbSimpleQuerySamples#22](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#22)]  
+ [!code-vb[VbSimpleQuerySamples#22](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/from-clause_2.vb)]  
   
  每个 `From` 子句后面可跟其他查询子句的任意组合以优化查询。  可以通过以下方式优化查询：  
   
@@ -76,7 +76,7 @@ From element [ As type ] In collection [ _ ]
 ## 示例  
  下面的查询表达式使用 `From` 子句为 `customers` 集合中的每个 `Customer` 对象声明范围变量 `cust`。  `Where` 子句使用范围变量将输出限制为指定地区的客户。  `For Each` 循环在查询结果中显示每个客户的公司名称。  
   
- [!code-vb[VbSimpleQuerySamples#23](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#23)]  
+ [!code-vb[VbSimpleQuerySamples#23](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/from-clause_3.vb)]  
   
 ## 请参阅  
  [查询](../../../visual-basic/language-reference/queries/queries.md)   

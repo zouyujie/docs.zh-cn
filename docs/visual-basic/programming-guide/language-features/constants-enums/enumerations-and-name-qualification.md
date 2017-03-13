@@ -36,26 +36,26 @@ caps.handback.revision: 20
 
 通常，当引用枚举成员时，必须使用枚举名称限定成员名称。  例如，若要引用 `Days` 枚举的 `Sunday` 成员，应使用下面的语法：  
   
- [!code-vb[VbEnumsTask#18](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#18)]  
+ [!code-vb[VbEnumsTask#18](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_1.vb)]  
   
 ## 使用 Imports 语句  
  为避免使用完全带限定名称，可以在代码的命名空间声明部分添加一条 `Imports` 语句，如下例所示：  
   
- [!code-vb[VbEnumsTask#22](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class1.vb#22)]  
+ [!code-vb[VbEnumsTask#22](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_2.vb)]  
   
  `Imports` 语句从引用的项目和程序集以及出现该语句的模块所在同一项目中导入命名空间名称。  一旦添加该语句，无需限定就可以引用枚举成员，如下例所示：  
   
- [!code-vb[VbEnumsTask#24](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class1.vb#24)]  
+ [!code-vb[VbEnumsTask#24](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_3.vb)]  
   
  通过将几组相关的常数组织到枚举中，可以在不同的上下文中使用相同的常数名。  例如，可以在 `Days` 和 `WorkDays` 枚举中对工作日常数使用相同的名称。  如果将 `Imports` 语句与枚举一起使用，则必须小心避免不明确的引用。  请看下面的示例：  
   
- [!code-vb[VbEnumsTask#22](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class1.vb#22)]  
+ [!code-vb[VbEnumsTask#22](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_2.vb)]  
   
- [!code-vb[VbEnumsTask#25](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class1.vb#25)]  
+ [!code-vb[VbEnumsTask#25](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_4.vb)]  
   
  假定 `Monday` 同时是 `Days` 枚举和 `Workdays` 枚举的成员，该代码将生成编译器错误。  当引用单个常数时为避免不明确的引用，应使用枚举名对常数名称加以限定。  下面的代码引用了 `Days` 枚举和 `WorkDays` 枚举中的 `Saturday` 常数。  
   
- [!code-vb[VbEnumsTask#32](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#32)]  
+ [!code-vb[VbEnumsTask#32](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_5.vb)]  
   
 ## 请参阅  
  [常量和枚举](../../../../visual-basic/language-reference/constants-and-enumerations.md)   

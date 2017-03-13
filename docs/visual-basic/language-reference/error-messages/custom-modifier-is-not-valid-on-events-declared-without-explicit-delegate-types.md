@@ -35,18 +35,18 @@ caps.handback.revision: 9
   
      例如，如果 `Custom Event` 是由 `Custom Event Test(ByVal sender As Object, ByVal i As Integer)` 定义的，则对应的委托将如下所示。  
   
-     [!code-vb[VbVbalrEventError#18](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/custom-modifier-is-not-v_1.vb)]  
+     [!code-vb[VbVbalrEventError#18](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types_1.vb)]  
   
 2.  将自定义事件的参数列表替换为指定委托类型的 `As` 子句。  
   
      接上例，将按如下方式重写 `Custom Event` 声明。  
   
-     [!code-vb[VbVbalrEventError#19](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/custom-modifier-is-not-v_2.vb)]  
+     [!code-vb[VbVbalrEventError#19](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types_2.vb)]  
   
 ## 示例  
  此示例声明 `Custom Event`，并指定带有委托类型的必需 `As` 子句。  
   
- [!code-vb[VbVbalrEventError#2](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/custom-modifier-is-not-v_3.vb)]  
+ [!code-vb[VbVbalrEventError#2](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types_3.vb)]  
   
 ## 请参阅  
  [Event 语句](../../../visual-basic/language-reference/statements/event-statement.md)   

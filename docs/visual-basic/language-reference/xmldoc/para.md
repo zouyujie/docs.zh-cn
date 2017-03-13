@@ -42,7 +42,7 @@ caps.handback.revision: 9
 ## 示例  
  此示例使用 `<para>` 标记将 `UpdateRecord` 方法的备注部分拆分为两个段落。  
   
- [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/para_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/para_1.vb)]  
   
 ## 请参阅  
  [XML 注释标记](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

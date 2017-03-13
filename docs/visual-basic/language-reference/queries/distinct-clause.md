@@ -38,7 +38,7 @@ Distinct
 ## 示例  
  下面的查询表达式联接一个客户列表和一个客户订单列表。  包含 `Distinct` 子句，以返回唯一客户姓名和订单日期的列表。  
   
- [!code-vb[VbSimpleQuerySamples#20](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#20)]  
+ [!code-vb[VbSimpleQuerySamples#20](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/distinct-clause_1.vb)]  
   
 ## 请参阅  
  [Visual Basic 中的 LINQ 简介](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   

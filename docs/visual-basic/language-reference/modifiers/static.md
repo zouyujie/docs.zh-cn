@@ -45,7 +45,7 @@ caps.handback.revision: 22
 ## 示例  
  下面的示例说明 `Static` 的用法。  
   
- [!code-vb[VbVbalrKeywords#5](../../../visual-basic/language-reference/codesnippet/visualbasic/static_1.vb)]  
+ [!code-vb[VbVbalrKeywords#5](../../../visual-basic/language-reference/codesnippet/VisualBasic/static_1.vb)]  
   
  `Static` 变量 `totalSales` 只初始化为 0 一次。  每次输入 `updateSales` 时，`totalSales` 仍然包含为其计算的最新值。  
   

@@ -61,31 +61,31 @@ Aggregate element [As type] In collection _
 |||  
 |-|-|  
 |功能|说明|  
-|`All`|如果集合中的所有元素均满足指定条件，则返回 `true`；否则返回 `false`。  下面是一个示例：<br /><br /> [!code-vb[VbSimpleQuerySamples#5](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#5)]|  
-|`Any`|如果集合中的任一元素满足指定条件，则返回 `true`；否则返回 `false`。  下面是一个示例：<br /><br /> [!code-vb[VbSimpleQuerySamples#6](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#6)]|  
-|`Average`|计算集合中所有元素的平均值，或者对集合中的所有元素计算提供的表达式。  下面是一个示例：<br /><br /> [!code-vb[VbSimpleQuerySamples#7](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#7)]|  
-|`Count`|统计集合中的元素数量。  可以提供一个可选 `Boolean` 表达式，以便仅统计集合中满足条件的元素数量。  下面是一个示例：<br /><br /> [!code-vb[VbSimpleQuerySamples#8](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#8)]|  
+|`All`|如果集合中的所有元素均满足指定条件，则返回 `true`；否则返回 `false`。  下面是一个示例：<br /><br /> [!code-vb[VbSimpleQuerySamples#5](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/aggregate-clause_1.vb)]|  
+|`Any`|如果集合中的任一元素满足指定条件，则返回 `true`；否则返回 `false`。  下面是一个示例：<br /><br /> [!code-vb[VbSimpleQuerySamples#6](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/aggregate-clause_2.vb)]|  
+|`Average`|计算集合中所有元素的平均值，或者对集合中的所有元素计算提供的表达式。  下面是一个示例：<br /><br /> [!code-vb[VbSimpleQuerySamples#7](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/aggregate-clause_3.vb)]|  
+|`Count`|统计集合中的元素数量。  可以提供一个可选 `Boolean` 表达式，以便仅统计集合中满足条件的元素数量。  下面是一个示例：<br /><br /> [!code-vb[VbSimpleQuerySamples#8](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/aggregate-clause_4.vb)]|  
 |`Group`|引用由 `Group By` 或 `Group Join` 子句进行分组的查询结果。  仅当 `Group` 函数位于 `Group By` 或 `Group Join` 子句的 `Into` 子句中时，该函数才有效。  有关更多信息和示例，请参见[Group By 子句](../../../visual-basic/language-reference/queries/group-by-clause.md)和[Group Join 子句](../../../visual-basic/language-reference/queries/group-join-clause.md)。|  
 |`LongCount`|统计集合中的元素数量。  可以提供一个可选 `Boolean` 表达式，以便仅统计集合中满足条件的元素数量。  将结果作为 `Long` 类型的值返回。  有关示例，请参见 `Count` 聚合函数。|  
-|`Max`|计算集合中的最大值，或对集合中的所有元素计算提供的表达式。  下面是一个示例：<br /><br /> [!code-vb[VbSimpleQuerySamples#9](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#9)]|  
-|`Min`|计算集合中的最小值，或对集合中的所有元素计算提供的表达式。  下面是一个示例：<br /><br /> [!code-vb[VbSimpleQuerySamples#10](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#10)]|  
-|`Sum`|计算集合中所有元素之和，或对集合中的所有元素计算提供的表达式。  下面是一个示例：<br /><br /> [!code-vb[VbSimpleQuerySamples#15](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#15)]|  
+|`Max`|计算集合中的最大值，或对集合中的所有元素计算提供的表达式。  下面是一个示例：<br /><br /> [!code-vb[VbSimpleQuerySamples#9](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/aggregate-clause_5.vb)]|  
+|`Min`|计算集合中的最小值，或对集合中的所有元素计算提供的表达式。  下面是一个示例：<br /><br /> [!code-vb[VbSimpleQuerySamples#10](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/aggregate-clause_6.vb)]|  
+|`Sum`|计算集合中所有元素之和，或对集合中的所有元素计算提供的表达式。  下面是一个示例：<br /><br /> [!code-vb[VbSimpleQuerySamples#15](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/aggregate-clause_7.vb)]|  
   
 ## 示例  
  下面的代码示例演示如何使用 `Aggregate` 子句对查询结果应用聚合函数。  
   
- [!code-vb[VbSimpleQuerySamples#4](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#4)]  
+ [!code-vb[VbSimpleQuerySamples#4](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/aggregate-clause_8.vb)]  
   
 ## 创建用户定义的聚合函数  
  可以通过将扩展方法添加到 <xref:System.Collections.Generic.IEnumerable%601> 类型，在查询表达式中包含您自己的自定义聚合函数。  然后，您的自定义方法可以对引用您的聚合函数的可枚举集合执行计算或操作。  有关扩展方法的更多信息，请参见[扩展方法](../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)。  
   
  例如，下面的代码示例演示了一个自定义聚合函数，该函数计算一个数字集合的中值。  `Median` 扩展方法具有两个重载版本。  第一个重载接受 `IEnumerable(Of Double)` 类型集合作为输入。  如果对 `Double` 类型的查询字段调用 `Median` 聚合函数，则将调用此方法。  可以向 `Median` 方法的第二个重载传递任何泛型类型。  `Median` 方法的泛型重载接受另一个参数，该参数引用了 `Func(Of T, Double)` lambda 表达式，以便将集合中的类型的值投射为 `Double` 类型的相应值。  然后，它将中值的计算委托给 `Median` 方法的另一个重载。  有关 lambda 表达式的更多信息，请参见 [lambda 表达式](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)。  
   
- [!code-vb[VbSimpleQuerySamples#18](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/UserDefinedAggregates.vb#18)]  
+ [!code-vb[VbSimpleQuerySamples#18](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/aggregate-clause_9.vb)]  
   
  下面的代码示例演示了示例查询，这些查询对 `Integer` 类型集合和 `Double` 类型集合调用 `Median` 聚合函数。  对 `Double` 类型集合调用 `Median` 聚合函数的查询调用 `Median` 方法的接受 `Double` 类型集合作为输入的重载。  对 `Integer` 类型集合调用 `Median` 聚合函数的查询调用 `Median` 方法的泛型重载。  
   
- [!code-vb[VbSimpleQuerySamples#19](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/UserDefinedAggregates.vb#19)]  
+ [!code-vb[VbSimpleQuerySamples#19](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/aggregate-clause_10.vb)]  
   
 ## 请参阅  
  [Visual Basic 中的 LINQ 简介](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   

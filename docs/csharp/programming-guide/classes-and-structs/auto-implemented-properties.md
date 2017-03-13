@@ -22,7 +22,7 @@ caps.handback.revision: 23
 ## 示例  
  下列示例演示一个简单的类，它具有某些自动实现的属性：  
   
- [!code-cs[csProgGuideLINQ#28](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#28)]  
+ [!code-cs[csProgGuideLINQ#28](../../../csharp/programming-guide/arrays/codesnippet/CSharp/auto-implemented-properties_1.cs)]  
   
  在 C\# 6 和更高版本中，你可以像字段一样初始化自动实现属性：  
   

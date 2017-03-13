@@ -46,13 +46,13 @@ caps.handback.revision: 18
 ## 示例  
  下面的示例演示使用 [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md) 参数定义的过程，以及一组等效的重载过程。  
   
- [!code-vb[VbVbcnProcedures#69](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-overload-a-proced_0_1.vb)]  
+ [!code-vb[VbVbcnProcedures#69](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters_1.vb)]  
   
- [!code-vb[VbVbcnProcedures#70](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-overload-a-proced_0_2.vb)]  
+ [!code-vb[VbVbcnProcedures#70](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters_2.vb)]  
   
  您不能重载这样的一个过程，其参数列表采用一维参数数组的形式。  但是，您可以使用其他隐式重载的签名。  下面的声明阐释了这一点。  
   
- [!code-vb[VbVbcnProcedures#71](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-overload-a-proced_0_3.vb)]  
+ [!code-vb[VbVbcnProcedures#71](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters_3.vb)]  
   
  重载版本中的代码无需测试调用代码是否提供了一个或多个 `ParamArray` 参数值，以及提供的数量（如果提供了）。  [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 将控制权传递给与调用参数列表匹配的版本。  
   

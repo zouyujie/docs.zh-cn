@@ -20,44 +20,44 @@ caps.handback.revision: 19
 ## 示例  
  本主题中的所有示例都使用下列帮助器类和数据源。  
   
- [!code-cs[csProgGuideLINQ#15](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#15)]  
+ [!code-cs[csProgGuideLINQ#15](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-group-query-results_1.cs)]  
   
 ## 示例  
  下面的示例演示如何通过使用元素的单个属性作为组键对源元素进行分组。  在这种情况下，键是 `string`，即学生的姓氏。  还可以使用子字符串作为键。  分组操作将对该类型使用默认的相等比较器。  
   
  将下面的方法粘贴到 `StudentClass` 类中。  将 `Main` 方法中的调用语句更改为 `sc.GroupBySingleProperty()`。  
   
- [!code-cs[csProgGuideLINQ#17](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#17)]  
+ [!code-cs[csProgGuideLINQ#17](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-group-query-results_2.cs)]  
   
 ## 示例  
  下面的示例演示如何通过使用除对象属性以外的某个项作为组键对源元素进行分组。  在此示例中，键是学生姓氏的第一个字母。  
   
  将下面的方法粘贴到 `StudentClass` 类中。  将 `Main` 方法中的调用语句更改为 `sc.GroupBySubstring()`。  
   
- [!code-cs[csProgGuideLINQ#18](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#18)]  
+ [!code-cs[csProgGuideLINQ#18](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-group-query-results_3.cs)]  
   
 ## 示例  
  下面的示例演示如何通过使用某个数值范围作为组键对源元素进行分组。  然后，查询将结果投影到一个匿名类型中，该类型仅包含学生的名字和姓氏以及该学生所属的百分点范围。  使用匿名类型的原因是没有必要使用完整的 `Student` 对象来显示结果。  `GetPercentile` 是一个 helper 函数，它根据学生的平均分数计算百分比。  该方法返回 0 到 10 之间的整数。  
   
- [!code-cs[csProgGuideLINQ#50](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#50)]  
+ [!code-cs[csProgGuideLINQ#50](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-group-query-results_4.cs)]  
   
  将下面的方法粘贴到 `StudentClass` 类中。  将 `Main` 方法中的调用语句更改为 `sc.GroupByRange()`。  
   
- [!code-cs[csProgGuideLINQ#19](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#19)]  
+ [!code-cs[csProgGuideLINQ#19](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-group-query-results_5.cs)]  
   
 ## 示例  
  下面的示例演示如何通过使用布尔比较表达式对源元素进行分组。  在此示例中，布尔表达式会测试学生的平均考试分数是否超过 75。  与上述示例一样，结果被投影到一个匿名类型中，因为不需要完整的源元素。  请注意，在执行查询时，该匿名类型中的属性将变成 `Key` 成员上的属性，并且可以通过名称进行访问。  
   
  将下面的方法粘贴到 `StudentClass` 类中。  将 `Main` 方法中的调用语句更改为 `sc.GroupByBoolean()`。  
   
- [!code-cs[csProgGuideLINQ#20](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#20)]  
+ [!code-cs[csProgGuideLINQ#20](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-group-query-results_6.cs)]  
   
 ## 示例  
  下面的示例演示如何使用匿名类型来封装包含多个值的键。  在此示例中，第一个键值是学生姓氏的第一个字母。  第二个键值是一个布尔值，它指定该学生在第一次考试中的得分是否超过了 85。  可以按照该键中的任何属性对多组值进行排序。  
   
  将下面的方法粘贴到 `StudentClass` 类中。  将 `Main` 方法中的调用语句更改为 `sc.GroupByCompositeKey()`。  
   
- [!code-cs[csProgGuideLINQ#21](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#21)]  
+ [!code-cs[csProgGuideLINQ#21](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-group-query-results_7.cs)]  
   
 ## 编译代码  
  将您想要测试的每种方法都复制并粘贴到 `StudentClass` 类中。  将该方法的调用语句添加到 `Main` 方法中并按 F5。  

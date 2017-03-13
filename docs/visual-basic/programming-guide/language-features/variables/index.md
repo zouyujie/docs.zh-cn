@@ -33,7 +33,7 @@ caps.handback.revision: 27
 ## 赋值  
  使用赋值语句执行计算并将结果赋给变量，如下面的示例所示。  
   
- [!code-vb[VbVbalrVariables#1](../../../../visual-basic/programming-guide/language-features/variables/codesnippet/visualbasic/index_1.vb)]  
+ [!code-vb[VbVbalrVariables#1](../../../../visual-basic/programming-guide/language-features/variables/codesnippet/VisualBasic/index_1.vb)]  
   
 > [!NOTE]
 >  此示例中的等号 \(`=`\) 是赋值运算符，而不是相等运算符。  正在将值赋给变量 `applesSold`。  

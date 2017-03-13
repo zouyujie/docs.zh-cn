@@ -53,7 +53,7 @@ caps.handback.revision: 21
 ## 参数数据类型  
  通过在参数声明中使用 `As` 子句为参数定义数据类型。  例如，以下函数接受字符串和整数：  
   
- [!code-vb[VbVbcnProcedures#32](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/procedure-parameters-and_1.vb)]  
+ [!code-vb[VbVbcnProcedures#32](./codesnippet/VisualBasic/procedure-parameters-and-arguments_1.vb)]  
   
  如果类型检查开关 \([Option Strict 语句](../../../../visual-basic/language-reference/statements/option-strict-statement.md)\) 为 `Off`，则 `As` 子句是可选的，不过，只要有任何一个参数使用它，则所有参数都必须使用它。  如果类型检查为 `On`，则 `As` 子句对于所有过程参数都是必选的。  
   

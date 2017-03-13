@@ -58,23 +58,23 @@ caps.handback.revision: 34
   
 2.  将以下 `using` 指令添加到代码文件的顶部。  
   
-     [!code-cs[csProgGuideNamedAndOptional#4](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/wordprogram.cs#4)]  
+     [!code-cs[csProgGuideNamedAndOptional#4](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-use-named-and-optional-arguments-in-office-programming_1.cs)]  
   
 ### 在 Word 文档中显示文本  
   
 1.  在 Program.cs 的 `Program` 类中，添加以下方法以创建 Word 应用程序和 Word 文档。  [Add](http://go.microsoft.com/fwlink/?LinkId=145381) 方法具有四个可选参数。  此示例使用这些参数的默认值。  因此，调用语句中不必有参数。  
   
-     [!code-cs[csProgGuideNamedAndOptional#6](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/wordprogram.cs#6)]  
+     [!code-cs[csProgGuideNamedAndOptional#6](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-use-named-and-optional-arguments-in-office-programming_2.cs)]  
   
 2.  将以下代码添加到方法的末尾，以定义要在何处显示文档中的文本，以及要显示什么文本。  
   
-     [!code-cs[csProgGuideNamedAndOptional#7](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/wordprogram.cs#7)]  
+     [!code-cs[csProgGuideNamedAndOptional#7](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-use-named-and-optional-arguments-in-office-programming_3.cs)]  
   
 ### 运行应用程序  
   
 1.  将以下语句添加到 Main。  
   
-     [!code-cs[csProgGuideNamedAndOptional#8](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/wordprogram.cs#8)]  
+     [!code-cs[csProgGuideNamedAndOptional#8](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-use-named-and-optional-arguments-in-office-programming_4.cs)]  
   
 2.  按 Ctrl\+F5 运行项目。  此时将出现一个 Word 文档，其中包含指定的文本。  
   
@@ -87,11 +87,11 @@ ConvertToTable 参数
   
      通过使用命名实参和可选实参，您可以只对要更改的形参指定值。  将以下代码添加到方法 `DisplayInWord` 的末尾以创建一个简单的表。  此参数指定 `range` 中文本字符串内的逗号分隔表的各个单元格。  
   
-     [!code-cs[csProgGuideNamedAndOptional#9](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/wordprogram.cs#9)]  
+     [!code-cs[csProgGuideNamedAndOptional#9](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-use-named-and-optional-arguments-in-office-programming_5.cs)]  
   
      在 C\# 早期版本中，对 `ConvertToTable` 的调用需要对每个形参使用引用实参，如以下代码所示。  
   
-     [!code-cs[csProgGuideNamedAndOptional#14](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/wordprogram.cs#14)]  
+     [!code-cs[csProgGuideNamedAndOptional#14](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-use-named-and-optional-arguments-in-office-programming_6.cs)]  
   
 2.  按 Ctrl\+F5 运行项目。  
   
@@ -99,16 +99,16 @@ ConvertToTable 参数
   
 1.  若要更改表以使其具有一列三行，请将 `DisplayInWord` 中的最后一行替换为以下语句，然后按 Ctrl\+F5。  
   
-     [!code-cs[csProgGuideNamedAndOptional#10](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/wordprogram.cs#10)]  
+     [!code-cs[csProgGuideNamedAndOptional#10](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-use-named-and-optional-arguments-in-office-programming_7.cs)]  
   
 2.  若要为表指定预定义的格式，请将 `DisplayInWord` 中的最后一行替换为以下语句，然后按 Ctrl\+F5。  格式可以为任何 [WdTableFormat](http://go.microsoft.com/fwlink/?LinkId=145382) 常量。  
   
-     [!code-cs[csProgGuideNamedAndOptional#11](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/wordprogram.cs#11)]  
+     [!code-cs[csProgGuideNamedAndOptional#11](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-use-named-and-optional-arguments-in-office-programming_8.cs)]  
   
 ## 示例  
  下面的代码包括完整的示例。  
   
- [!code-cs[csProgGuideNamedAndOptional#12](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/wordprogram.cs#12)]  
+ [!code-cs[csProgGuideNamedAndOptional#12](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-use-named-and-optional-arguments-in-office-programming_9.cs)]  
   
 ## 请参阅  
  [命名参数和可选参数](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)

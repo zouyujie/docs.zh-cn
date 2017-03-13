@@ -23,7 +23,7 @@ caps.handback.revision: 8
 ## 示例  
  下面的示例演示一个具有自定义 [add](../../../csharp/language-reference/keywords/add.md) 和 `remove` 访问器的事件。  有关完整的示例，请参见[如何：实现接口事件](../../../csharp/programming-guide/events/how-to-implement-interface-events.md)。  
   
- [!code-cs[csrefKeywordsContextual#15](../../../csharp/language-reference/keywords/codesnippet/csharp/remove_1.cs)]  
+ [!code-cs[csrefKeywordsContextual#15](../../../csharp/language-reference/keywords/codesnippet/CSharp/remove_1.cs)]  
   
  通常不需要提供自己的自定义事件访问器。  在大多数情况下，使用在声明事件时由编译器自动生成的访问器就足够了。  
   

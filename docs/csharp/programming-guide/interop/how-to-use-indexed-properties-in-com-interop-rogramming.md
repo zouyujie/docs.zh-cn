@@ -22,29 +22,29 @@ caps.handback.revision: 20
   
  在早期版本的 C\# 中，只有在 `get` 方法不具有任何参数且 `set` 方法有且仅有一个值参数时，才能将方法作为属性进行访问。  但是，并非所有 COM 属性都符合上述限制。  例如，Excel 的 [Range](http://go.microsoft.com/fwlink/?LinkId=166053) 属性具有一个 `get` 访问器，该访问器需要一个表示范围名称的参数。  以前，由于您无法直接访问 `Range` 属性，因此您必须改用 `get_Range` 方法，如以下示例所示。  
   
- [!code-cs[csProgGuideIndexedProperties#1](../../../csharp/programming-guide/interop/codesnippet/csharp/indexedpropscom/program.cs#1)]  
+ [!code-cs[csProgGuideIndexedProperties#1](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-indexed-properties-in-com-interop-rogramming_1.cs)]  
   
  利用索引属性，您可以改为编写以下代码：  
   
- [!code-cs[csProgGuideIndexedProperties#2](../../../csharp/programming-guide/interop/codesnippet/csharp/indexedpropscom/program.cs#2)]  
+ [!code-cs[csProgGuideIndexedProperties#2](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-indexed-properties-in-com-interop-rogramming_2.cs)]  
   
 > [!NOTE]
 >  上面的示例还使用[可选参数](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)功能（在 Visual C\# 2010 中引入），此功能可使您忽略 `Type.Missing`。  
   
  与此类似，若要在 Visual C\# 2008 及更早版本中设置 [Range](http://go.microsoft.com/fwlink/?LinkId=179211) 对象的 `Value` 属性的值，需要两个参数。  一个参数为用于指定范围值的类型的可选形参提供实参。  另一个参数提供 `Value` 属性的值。  在 Visual C\# 2010 之前的版本中，C\# 仅允许一个参数。  因此，您必须使用 `set_Value` 方法，或者使用另一个属性 [Value2](http://go.microsoft.com/fwlink/?LinkId=166050)，而不能使用常规的 set 方法。  下面的示例演示了这些技术。  这两种技术都将 A1 单元格的值设置为 `Name`。  
   
- [!code-cs[csProgGuideIndexedProperties#3](../../../csharp/programming-guide/interop/codesnippet/csharp/indexedpropscom/program.cs#3)]  
+ [!code-cs[csProgGuideIndexedProperties#3](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-indexed-properties-in-com-interop-rogramming_3.cs)]  
   
  利用索引属性，您可以改为编写以下代码。  
   
- [!code-cs[csProgGuideIndexedProperties#4](../../../csharp/programming-guide/interop/codesnippet/csharp/indexedpropscom/program.cs#4)]  
+ [!code-cs[csProgGuideIndexedProperties#4](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-indexed-properties-in-com-interop-rogramming_4.cs)]  
   
  您不能创建自己的索引属性。  该功能只支持使用现有的索引属性。  
   
 ## 示例  
  下面的代码显示一个完整的示例。  有关如何设置访问 Office API 的项目的更多信息，请参见[如何：通过使用 Visual C\# 功能访问 Office 互操作对象](../../../csharp/programming-guide/interop/how-to-access-office-onterop-objects.md)。  
   
- [!code-cs[csProgGuideIndexedProperties#5](../../../csharp/programming-guide/interop/codesnippet/csharp/indexedpropscom/program.cs#5)]  
+ [!code-cs[csProgGuideIndexedProperties#5](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-indexed-properties-in-com-interop-rogramming_5.cs)]  
   
 ## 请参阅  
  [命名参数和可选参数](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)   

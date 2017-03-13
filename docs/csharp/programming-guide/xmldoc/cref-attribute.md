@@ -21,7 +21,7 @@ XML 文档标记中的 `cref` 特性表示“代码引用”。它指定标记�
 ## 示例  
  以下示例显示用在 [\<see\>](../../../csharp/programming-guide/xmldoc/see.md) 标记中的 `cref` 属性。  
   
- [!code-cs[csProgGuideDocComments#3](../../../csharp/programming-guide/xmldoc/codesnippet/csharp/cref-attribute_1.cs)]  
+ [!code-cs[csProgGuideDocComments#3](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/cref-attribute_1.cs)]  
   
  程序编译时，产生以下 XML 文件。  例如，请注意，`GetZero` 的 `cref` 特性已由编译器转换为 `"M:TestNamespace.TestClass.GetZero"`。  “M:”前缀表示“方法”，这是 Sandcastle 等文档工具可识别的约定。  有关前缀的完整列表，请参见[处理 XML 文件](../../../csharp/programming-guide/xmldoc/processing-the-xml-file.md)。  
   

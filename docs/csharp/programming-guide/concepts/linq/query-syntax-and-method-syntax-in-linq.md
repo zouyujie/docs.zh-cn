@@ -27,7 +27,7 @@ caps.handback.revision: 28
 ## 标准查询运算符扩展方法  
  下面的示例演示简单的查询表达式和编写为基于方法的查询的语义上等效的查询。  
   
- [!code-cs[csLINQGettingStarted#22](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#22)]  
+ [!code-cs[csLINQGettingStarted#22](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/query-syntax-and-method-syntax-in-linq_1.cs)]  
   
  两个示例的输出是相同的。  您可以看到两种形式的查询变量的类型是相同的：<xref:System.Collections.Generic.IEnumerable%601>。  
   

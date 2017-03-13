@@ -37,7 +37,7 @@ caps.handback.revision: 31
   
 -   使用 `GetValue` 方法，指定路径和名称\) 读取注册表项的值。  下面的示例读取 `HKEY_CURRENT_USER\Software\MyApp` 的值 `Name` 并在消息框中显示该  
   
-     [!code-vb[VbResourceTasks#4](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-read-a-value-from_1.vb)]  
+     [!code-vb[VbResourceTasks#4](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-read-a-value-from-a-registry-key_1.vb)]  
   
  此代码示例也可用作 IntelliSense 代码段。  在代码段选择器，它位于 **windows 操作系统 \> 注册表**。  有关更多信息，请参见 [代码段](/visual-studio/ide/code-snippets)。  
   
@@ -45,7 +45,7 @@ caps.handback.revision: 31
   
 -   使用 `GetValue` 方法检索值。  下面的代码检查该值是否存在并返回消息; 如果未。  
   
-     [!code-vb[VbResourceTasks#12](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-read-a-value-from_2.vb)]  
+     [!code-vb[VbResourceTasks#12](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-read-a-value-from-a-registry-key_2.vb)]  
   
 ## 可靠编程  
  注册表到顶级 \(或根，用于存储数据的键。  例如，在中，而 HKEY\_CURRENT\_USER 用于存储为单个用户的数据时，具体使用 HKEY\_LOCAL\_MACHINE 根注册表项用于存储所有用户使用的计算机级设置。  

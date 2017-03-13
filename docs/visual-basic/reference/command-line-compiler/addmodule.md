@@ -49,11 +49,11 @@ caps.handback.revision: 14
 ## 示例  
  下面的代码创建一个模块。  
   
- [!code-vb[VbVbalrCompiler#47](../../../visual-basic/reference/command-line-compiler/codesnippet/visualbasic/addmodule_1.vb)]  
+ [!code-vb[VbVbalrCompiler#47](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/addmodule_1.vb)]  
   
  下面的代码导入该模块的类型。  
   
- [!code-vb[VbVbalrCompiler#48](../../../visual-basic/reference/command-line-compiler/codesnippet/visualbasic/addmodule_2.vb)]  
+ [!code-vb[VbVbalrCompiler#48](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/addmodule_2.vb)]  
   
  运行 `t1` 时，将输出 `802`。  
   

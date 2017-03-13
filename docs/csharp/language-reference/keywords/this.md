@@ -30,7 +30,7 @@ caps.handback.revision: 19
   
 -   限定被相似的名称隐藏的成员，例如：  
   
- [!code-cs[csrefKeywordsAccess#4](../../../csharp/language-reference/keywords/codesnippet/csharp/this_1.cs)]  
+ [!code-cs[csrefKeywordsAccess#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/this_1.cs)]  
   
 -   将对象作为参数传递到其他方法，例如：  
   
@@ -40,14 +40,14 @@ caps.handback.revision: 19
   
 -   声明索引器，例如：  
   
- [!code-cs[csrefKeywordsAccess#5](../../../csharp/language-reference/keywords/codesnippet/csharp/this_2.cs)]  
+ [!code-cs[csrefKeywordsAccess#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/this_2.cs)]  
   
  由于静态成员函数存在于类一级，并且不是对象的一部分，因此没有 `this` 指针。  在静态方法中引用 `this` 是错误的。  
   
 ## 示例  
  在本例中，`this` 用于限定 `Employee` 类成员 `name` 和 `alias`，它们都被相似的名称隐藏。  该关键字还用于将对象传递到属于其他类的方法 `CalcTax`。  
   
- [!code-cs[csrefKeywordsAccess#3](../../../csharp/language-reference/keywords/codesnippet/csharp/this_3.cs)]  
+ [!code-cs[csrefKeywordsAccess#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/this_3.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

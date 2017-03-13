@@ -114,7 +114,7 @@ End Class
 ## 示例  
  下面的示例使用 `Class` 语句定义一个类和几个成员。  
   
- [!code-vb[VbVbalrStatements#62](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/class-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#62](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/class-statement_1.vb)]  
   
 ## 请参阅  
  [对象和类](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)   

@@ -47,21 +47,21 @@ proceduredeclaration Handles eventlist
  对于自定义事件，应用程序会在添加过程作为事件处理程序时，调用事件的 `AddHandler` 取值函数。  有关自定义事件的详细信息，请参阅 [Event 语句](../../../visual-basic/language-reference/statements/event-statement.md)。  
   
 ## 示例  
- [!code-vb[VbVbalrEvents#2](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#2)]  
+ [!code-vb[VbVbalrEvents#2](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/handles-clause_1.vb)]  
   
  下面的示例演示派生类可以如何使用 `Handles` 语句处理来自基类的事件。  
   
- [!code-vb[VbVbalrEvents#3](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#3)]  
+ [!code-vb[VbVbalrEvents#3](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/handles-clause_2.vb)]  
   
 ## 示例  
  下面的示例包含 **WPF 应用程序**项目的两个按钮事件处理程序。  
   
- [!code-vb[VbVbalrEvents#41](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/class3.vb#41)]  
+ [!code-vb[VbVbalrEvents#41](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/handles-clause_3.vb)]  
   
 ## 示例  
  下面的示例与前面的示例等效。  `Handles` 子句中的 `eventlist` 包含两个按钮的事件。  
   
- [!code-vb[VbVbalrEvents#42](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/class3.vb#42)]  
+ [!code-vb[VbVbalrEvents#42](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/handles-clause_4.vb)]  
   
 ## 请参阅  
  [WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md)   

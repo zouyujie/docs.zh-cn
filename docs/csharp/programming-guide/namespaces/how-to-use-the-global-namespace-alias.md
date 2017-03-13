@@ -22,28 +22,28 @@ caps.handback.revision: 23
   
  例如，在下面的代码中，`Console` 在 <xref:System> 命名空间中解析为 `TestApp.Console` 而不是 `Console` 类型。  
   
- [!code-cs[csProgGuide#1](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/csProgGuide/using.cs#1)]  
+ [!code-cs[csProgGuide#1](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/how-to-use-the-global-namespace-alias_1.cs)]  
   
- [!code-cs[csProgGuideNamespaces#1](../../../csharp/programming-guide/namespaces/codesnippet/csharp/Namespaces/Namespaces.cs#1)]  
+ [!code-cs[csProgGuideNamespaces#1](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-global-namespace-alias_2.cs)]  
   
  由于类 `TestApp.System` 隐藏了 `System` 命名空间，因此使用 `System.Console` 仍然会导致错误：  
   
- [!code-cs[csProgGuideNamespaces#2](../../../csharp/programming-guide/namespaces/codesnippet/csharp/Namespaces/Namespaces.cs#2)]  
+ [!code-cs[csProgGuideNamespaces#2](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-global-namespace-alias_3.cs)]  
   
  但是，可以通过使用 `global::System.Console` 避免这一错误，如下所示：  
   
- [!code-cs[csProgGuideNamespaces#3](../../../csharp/programming-guide/namespaces/codesnippet/csharp/Namespaces/Namespaces.cs#3)]  
+ [!code-cs[csProgGuideNamespaces#3](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-global-namespace-alias_4.cs)]  
   
  当左侧的标识符为 `global` 时，对右侧标识符的搜索将从全局命名空间开始。  例如，下面的声明将 `TestApp` 作为全局空间的一个成员进行引用。  
   
- [!code-cs[csProgGuideNamespaces#4](../../../csharp/programming-guide/namespaces/codesnippet/csharp/Namespaces/Namespaces.cs#4)]  
+ [!code-cs[csProgGuideNamespaces#4](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-global-namespace-alias_5.cs)]  
   
  显然，并不推荐创建自己的名为 `System` 的命名空间，您不可能遇到出现此情况的任何代码。  但是，在较大的项目中，很有可能在一个窗体或其他窗体中出现命名空间重复。  在这种情况下，全局命名空间限定符可保证您可以指定根命名空间。  
   
 ## 示例  
  在此示例中，命名空间 `System` 用于包括类 `TestClass`，因此必须使用 `global::System.Console` 来引用 `System.Console` 类，该类被 `System` 命名空间隐藏。  而且，别名 `colAlias` 用于引用命名空间 `System.Collections`；因此，将使用此别名而不是命名空间来创建 <xref:System.Collections.Hashtable?displayProperty=fullName> 的实例。  
   
- [!code-cs[csProgGuideNamespaces#5](../../../csharp/programming-guide/namespaces/codesnippet/csharp/Namespaces/Namespaces.cs#5)]  
+ [!code-cs[csProgGuideNamespaces#5](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-global-namespace-alias_6.cs)]  
   
   **A 1**  
 **B 2**  

@@ -60,9 +60,9 @@ variableorproperty += expression
 ## 示例  
  下面的示例使用 `+=` 运算符将一个变量的值与另一个变量的值合并。  第一部分使用带有数值变量的 `+=`，将一个值与另一个值相加。  第二部分使用带有 `String` 变量的 `+=`，将一个值与另一个值连接在一起。  两个示例中的结果都赋给了第一个变量。  
   
- [!code-vb[VbVbalrOperators#7](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addition-assignment-oper_1_1.vb)]  
+ [!code-vb[VbVbalrOperators#7](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-assignment-operator_1.vb)]  
   
- [!code-vb[VbVbalrOperators#8](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addition-assignment-oper_1_2.vb)]  
+ [!code-vb[VbVbalrOperators#8](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-assignment-operator_2.vb)]  
   
  现在 `num1` 的值为 13，而 `str1` 的值为“103”。  
   

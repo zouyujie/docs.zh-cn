@@ -39,7 +39,7 @@ caps.handback.revision: 16
   
 3.  不要在其他属性过程上指定访问级别。  它假定已在 `Property` 语句中声明了访问级别。  可以仅在一个属性过程上限制访问权限。  
   
-     [!code-vb[VbVbcnProcedures#10](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-declare-a-propert_1.vb)]  
+     [!code-vb[VbVbcnProcedures#10](./codesnippet/VisualBasic/how-to-declare-a-property-with-mixed-access-levels_1.vb)]  
   
      在前面的示例中，`Get` 过程具有与属性自身相同的 `Protected` 访问权限，而 `Set` 过程具有 `Private` 访问权限。  派生自 `employee` 的类可以读取 `salary` 值，但只有 `employee` 类可以对它进行设置。  
   

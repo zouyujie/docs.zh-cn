@@ -128,7 +128,7 @@ caps.handback.revision: 32
 ## <a name="example"></a>示例  
  下面的示例演示如何创建一个具有两个嵌套的空元素的简单 XML 元素。  
   
- [!code-vb[VbXMLSamples#20](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-element-literal_1.vb)]  
+ [!code-vb[VbXMLSamples#20](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-element-literal_1.vb)]  
   
  此示例显示以下文本。 请注意，文本将保留为空的元素的结构。  
   
@@ -142,7 +142,7 @@ caps.handback.revision: 32
 ## <a name="example"></a>示例  
  下面的示例演示如何使用嵌入式的表达式来命名某个元素和创建属性。  
   
- [!code-vb[VbXMLSamples#21](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-element-literal_2.vb)]  
+ [!code-vb[VbXMLSamples#21](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-element-literal_2.vb)]  
   
  此代码显示以下文本：  
   
@@ -153,7 +153,7 @@ caps.handback.revision: 32
 ## <a name="example"></a>示例  
  下面的示例声明 `ns` 作为 XML 命名空间前缀。 然后使用该命名空间前缀创建 XML 文本，并显示该元素的最终形式。  
   
- [!code-vb[VbXMLSamples#22](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-element-literal_3.vb)]  
+ [!code-vb[VbXMLSamples#22](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-element-literal_3.vb)]  
   
  此代码显示以下文本：  
   

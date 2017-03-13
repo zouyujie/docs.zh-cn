@@ -70,17 +70,17 @@ caps.handback.revision: 13
 ## 比较对象  
  [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 用 [Is 运算符](../../../../visual-basic/language-reference/operators/is-operator.md) 和 [IsNot 运算符](../../../../visual-basic/language-reference/operators/isnot-operator.md)比较两个对象引用变量。  使用其中任一运算符均可确定两个引用变量是否引用相同的对象实例。  下面的示例阐释了这一点。  
   
- [!code-vb[VbVbalrOperators#65](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/comparison-operators_1.vb)]  
+ [!code-vb[VbVbalrOperators#65](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/comparison-operators_1.vb)]  
   
  在上例中，由于两个变量引用同一个实例，因此 `x Is y` 计算结果为 `True`。  将此结果与下面的示例对比。  
   
- [!code-vb[VbVbalrOperators#66](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/comparison-operators_2.vb)]  
+ [!code-vb[VbVbalrOperators#66](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/comparison-operators_2.vb)]  
   
  在上例中，虽然两个变量引用同一类型对象，但它们引用该类型的不同实例，因此 `x Is y` 计算结果为 `False`。  
   
  在要测试指向不同实例的两个对象时，使用 `IsNot` 运算符可避免出现从语法角度而言不太妥当的 `Not` 和 `Is` 组合。  下面的示例阐释了这一点。  
   
- [!code-vb[VbVbalrOperators#67](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/comparison-operators_3.vb)]  
+ [!code-vb[VbVbalrOperators#67](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/comparison-operators_3.vb)]  
   
  在上例中，`If a IsNot b` 等同于 `If Not a Is b`。  
   
@@ -91,7 +91,7 @@ caps.handback.revision: 13
   
  当 `typename` 指定接口类型时，如果对象实现该接口类型，则 `TypeOf`...`Is` 表达式将返回 `True`。  当 `typename` 为类类型时，如果对象是指定类的实例或者是从指定类派生的类的实例，表达式将返回 `True`。  下面的示例阐释了这一点。  
   
- [!code-vb[VbVbalrOperators#68](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/comparison-operators_4.vb)]  
+ [!code-vb[VbVbalrOperators#68](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/comparison-operators_4.vb)]  
   
  在上例中，由于 `x` 的类型是从 `Control` 继承而来的 `Button`，因此 `TypeOf x Is Control` 表达式的计算结果为 `True`。  
   

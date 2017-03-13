@@ -55,12 +55,12 @@ caps.handback.revision: 14
 ## 示例  
  下例演示如何声明、扩展和实现一个协变泛型接口。  此外还演示了如何对实现协变接口的类使用隐式转换。  
   
- [!code-vb[vbVarianceKeywords#3](../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/out-generic-modifier_1.vb)]  
+ [!code-vb[vbVarianceKeywords#3](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/out-generic-modifier_1.vb)]  
   
 ## 示例  
  下例演示如何声明、实例化和调用一个协变泛型委托。  此外，该示例还演示如何对委托类型使用隐式转换。  
   
- [!code-vb[vbVarianceKeywords#4](../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/out-generic-modifier_2.vb)]  
+ [!code-vb[vbVarianceKeywords#4](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/out-generic-modifier_2.vb)]  
   
 ## 请参阅  
  [泛型接口中的变体](../Topic/Variance%20in%20Generic%20Interfaces%20\(C%23%20and%20Visual%20Basic\).md)   

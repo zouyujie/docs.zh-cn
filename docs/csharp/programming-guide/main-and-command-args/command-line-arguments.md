@@ -18,16 +18,16 @@ caps.handback.revision: 27
 # 命令行参数（C# 编程指南）
 通过以下方式之一定义方法，可以将参数发送至 `Main` 方法。  
   
- [!code-cs[csProgGuideMain#2](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/command-line-arguments_1.cs)]  
+ [!code-cs[csProgGuideMain#2](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/command-line-arguments_1.cs)]  
   
- [!code-cs[csProgGuideMain#3](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/command-line-arguments_2.cs)]  
+ [!code-cs[csProgGuideMain#3](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/command-line-arguments_2.cs)]  
   
 > [!NOTE]
 >  若要在 Windows 窗体应用程序中的 `Main` 方法中启用命令行参数，必须手动修改 program.cs 中 `Main` 的签名。  Windows 窗体设计器生成的代码创建没有输入参数的 `Main`。  也可以使用 <xref:System.Environment.CommandLine%2A?displayProperty=fullName> 或 <xref:System.Environment.GetCommandLineArgs%2A?displayProperty=fullName> 从控制台或 Windows 应用程序中的任何位置访问命令行参数。  
   
  `Main` 方法的参数是表示命令行参数的 <xref:System.String> 数组。  一般是通过测试 `Length` 属性来确定参数是否存在，例如：  
   
- [!code-cs[csProgGuideMain#4](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/command-line-arguments_3.cs)]  
+ [!code-cs[csProgGuideMain#4](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/command-line-arguments_3.cs)]  
   
  还可以使用 <xref:System.Convert> 类或 `Parse` 方法将字符串参数转换为数值类型。  例如，下面的语句使用 <xref:System.Int64.Parse%2A> 方法将 `string` 转换为 `long` 数字：  
   
@@ -56,7 +56,7 @@ long num = Convert.ToInt64(s);
   
 1.  将以下代码粘贴到任何文本编辑器中，并将文件保存为名为 `Factorial.cs` 的文本文件。  
   
-     [!code-cs[csProgGuideMain#16](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/command-line-arguments_4.cs)]  
+     [!code-cs[csProgGuideMain#16](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/command-line-arguments_4.cs)]  
   
 2.  从“开始”屏幕或“开始”菜单中，打开 Visual Studio“开发人员命令提示”窗口，然后导航到包含您刚创建的文件的文件夹。  
   

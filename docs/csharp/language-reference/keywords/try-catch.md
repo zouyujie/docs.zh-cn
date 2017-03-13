@@ -136,7 +136,7 @@ static void Main()
 ## <a name="example"></a>示例  
  在下面的示例中，`try` 块包含对可能引发异常的 `ProcessString` 方法的调用。 `catch` 子句包含只在屏幕上显示一条消息的异常处理程序。 当从 `MyMethod` 内部调用 `throw` 语句时，系统将查找 `catch` 语句并显示消息 `Exception caught`。  
   
- [!code-cs[csrefKeywordsExceptions#2](../../../csharp/language-reference/keywords/codesnippet/csharp/try-catch_1.cs)]  
+ [!code-cs[csrefKeywordsExceptions#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch_1.cs)]  
   
 ## <a name="example"></a>示例  
  在下面的示例中，使用了两个 catch 块，并捕获到最先出现的最具体的异常。  
@@ -145,7 +145,7 @@ static void Main()
   
  如果将最不具体的 catch 块置于示例中第一个，将显示以下错误消息：`A previous catch clause already catches all exceptions of this or a super type ('System.Exception')`。  
   
- [!code-cs[csrefKeywordsExceptions#3](../../../csharp/language-reference/keywords/codesnippet/csharp/try-catch_2.cs)]  
+ [!code-cs[csrefKeywordsExceptions#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch_2.cs)]  
   
 ## <a name="example"></a>示例  
  下面的示例阐释异步方法的异常处理。 若要捕获异步任务引发的异常，将 `await` 表达式置于 `try` 块中，并在 `catch` 块中捕获该异常。  
@@ -154,14 +154,14 @@ static void Main()
   
  取消注释 `throw new OperationCancelledException` 行以演示在取消异步进程时发生的情况。 任务的 `IsCanceled` 属性设置为 `true`，并在 `catch` 块中捕获异常。 在某些不适用于此示例的情况下，任务的 `IsFaulted` 属性设置为 `true` 且 `IsCanceled` 设置为 `false`。  
   
- [!code-cs[csAsyncExceptions#2](../../../csharp/language-reference/keywords/codesnippet/csharp/try-catch_3.cs)]  
+ [!code-cs[csAsyncExceptions#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch_3.cs)]  
   
 ## <a name="example"></a>示例  
  下面的示例阐释了在多个任务可能导致多个异常的情况中的异常处理。 `try`块等待的任务，则返回通过调用<xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName>。 应用了 WhenAll 的三个任务完成后，该任务完成。  
   
  三个任务中的每一个都会导致异常。 `catch`块循环访问异常，它位于`Exception.InnerExceptions`返回的任务的属性<xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName>。  
   
- [!code-cs[csAsyncExceptions#4](../../../csharp/language-reference/keywords/codesnippet/csharp/try-catch_4.cs)]  
+ [!code-cs[csAsyncExceptions#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch_4.cs)]  
   
 ## <a name="c-language-specification"></a>C# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

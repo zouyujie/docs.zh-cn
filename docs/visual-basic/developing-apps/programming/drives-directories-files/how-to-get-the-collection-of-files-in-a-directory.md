@@ -34,7 +34,7 @@ caps.handback.revision: 23
   
 -   使用其中一个 <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles%2A?displayProperty=fullName> 方法重载，向 `directory` 参数中的搜索提供目录的名称和路径。  下面的示例返回目录中的所有文件，并将它们添加到  `ListBox1`。  
   
-     [!code-vb[VbVbcnMyFileSystem#32](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-get-the-collectio_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#32](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-get-the-collection-of-files-in-a-directory_1.vb)]  
   
 ## 可靠编程  
  以下情况可能会导致异常：  

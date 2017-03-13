@@ -45,28 +45,28 @@ caps.handback.revision: 13
   
  例如，下面的 `Sub` 过程带三个参数：  
   
- [!code-vb[VbVbcnProcedures#41](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/passing-arguments-by-pos_1.vb)]  
+ [!code-vb[VbVbcnProcedures#41](./codesnippet/VisualBasic/passing-arguments-by-position-and-by-name_1.vb)]  
   
  调用该过程时，可以通过位置、通过名称或者两者的混合来提供参数。  
   
 ## 通过位置传递参数  
  可以通过位置传递参数（以逗号分隔）来调用  `studentInfo`  过程，如下例所示：  
   
- [!code-vb[VbVbcnProcedures#42](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/passing-arguments-by-pos_2.vb)]  
+ [!code-vb[VbVbcnProcedures#42](./codesnippet/VisualBasic/passing-arguments-by-position-and-by-name_2.vb)]  
   
  如果在一个按位置排列的参数列表中省略可选参数，必须用逗号保留它的位置。  下面的示例调用没有  `age`  参数的  `studentInfo` ：  
   
- [!code-vb[VbVbcnProcedures#43](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/passing-arguments-by-pos_3.vb)]  
+ [!code-vb[VbVbcnProcedures#43](./codesnippet/VisualBasic/passing-arguments-by-position-and-by-name_3.vb)]  
   
 ## 通过名称传递参数  
  另一种方法是，可以通过名称传递参数（同样以逗号分隔）来调用  `studentInfo`  过程，如下例所示：  
   
- [!code-vb[VbVbcnProcedures#44](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/passing-arguments-by-pos_4.vb)]  
+ [!code-vb[VbVbcnProcedures#44](./codesnippet/VisualBasic/passing-arguments-by-position-and-by-name_4.vb)]  
   
 ## 通过位置和通过名称混合参数  
  在单个过程调用中，可以同时通过位置和通过名称提供参数，如下例所示：  
   
- [!code-vb[VbVbcnProcedures#45](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/passing-arguments-by-pos_5.vb)]  
+ [!code-vb[VbVbcnProcedures#45](./codesnippet/VisualBasic/passing-arguments-by-position-and-by-name_5.vb)]  
   
  在前面的示例中，由于  `birth`  是通过名称传递的，所以没有必要用额外的逗号来保留省略的  `age`  参数的位置。  
   

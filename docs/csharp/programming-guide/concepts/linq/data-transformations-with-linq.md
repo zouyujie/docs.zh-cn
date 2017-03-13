@@ -40,11 +40,11 @@ caps.handback.revision: 15
 ## 将多个输入联接到一个输出序列  
  可以使用 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] 查询来创建包含多个输入序列的元素的输出序列。  下面的示例演示如何组合两个内存中的数据结构，但组合来自 XML 或 SQL 或数据集源的数据时可应用相同的原则。  假定下面两种类类型：  
   
- [!code-cs[CsLINQGettingStarted#7](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#7)]  
+ [!code-cs[CsLINQGettingStarted#7](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/data-transformations-with-linq_1.cs)]  
   
  下面的示例演示该查询：  
   
- [!code-cs[CSLinqGettingStarted#8](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#8)]  
+ [!code-cs[CSLinqGettingStarted#8](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/data-transformations-with-linq_2.cs)]  
   
  有关更多信息，请参见[join 子句](../../../../csharp/language-reference/keywords/join-clause.md)和[select 子句](../../../../csharp/language-reference/keywords/select-clause.md)。  
   
@@ -70,7 +70,7 @@ caps.handback.revision: 15
 ## 将内存中的对象转换为 XML  
  通过 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] 查询，可以轻松地在内存中的数据结构、SQL 数据库、[!INCLUDE[vstecado](../../../../csharp/programming-guide/concepts/linq/includes/vstecado-md.md)] 数据集和 XML 流或文档之间转换数据。  下面的示例将内存中的数据结构中的对象转换为 XML 元素。  
   
- [!code-cs[CsLINQGettingStarted#9](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#9)]  
+ [!code-cs[CsLINQGettingStarted#9](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/data-transformations-with-linq_3.cs)]  
   
  此代码生成下面的 XML 输出：  
   
@@ -102,7 +102,7 @@ caps.handback.revision: 15
 > [!NOTE]
 >  如果查询将转换为某个其他域，则不支持在查询表达式中调用方法。  例如，不能在 [!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq-md.md)] 中调用一般 C\# 方法，因为 SQL Server 没有该方法的上下文。  但是，可以将存储过程映射到方法，然后调用方法。  有关更多信息，请参见[存储过程](../Topic/Stored%20Procedures.md)。  
   
- [!code-cs[CsLINQGettingStarted#10](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#10)]  
+ [!code-cs[CsLINQGettingStarted#10](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/data-transformations-with-linq_4.cs)]  
   
 ## 请参阅  
  [LINQ \(Language\-Integrated Query\)](../Topic/LINQ%20\(Language-Integrated%20Query\).md)   

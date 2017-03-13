@@ -34,7 +34,7 @@ caps.handback.revision: 11
   
  此类中的所有事件均使用 `Events` 字段来跟踪哪些方法正处理哪个事件。  
   
- [!code-vb[VbVbalrEvents#22](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#22)]  
+ [!code-vb[VbVbalrEvents#22](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-custom-events-to-conserve-memory_1.vb)]  
   
 ## 请参阅  
  <xref:System.ComponentModel.EventHandlerList>   

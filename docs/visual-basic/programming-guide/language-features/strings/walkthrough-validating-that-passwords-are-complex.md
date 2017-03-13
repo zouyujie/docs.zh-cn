@@ -31,7 +31,7 @@ caps.handback.revision: 17
 ## 示例  
   
 ### 代码  
- [!code-vb[VbVbcnRegEx#1](../../../../visual-basic/programming-guide/language-features/strings/codesnippet/visualbasic/walkthrough-validating-t_1.vb)]  
+ [!code-vb[VbVbcnRegEx#1](../../../../visual-basic/programming-guide/language-features/strings/codesnippet/VisualBasic/walkthrough-validating-that-passwords-are-complex_1.vb)]  
   
 ## 编译代码  
  通过传递包含该密码的字符串来调用此方法。  

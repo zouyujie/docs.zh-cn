@@ -27,7 +27,7 @@ caps.handback.revision: 7
  若要定义非整型常量，一种方法是将它们分组到单个名为 `Constants` 的静态类中。  这要求对常量的所有引用都使用该类名作为前缀，如下面的示例所示。  
   
 ## 示例  
- [!code-cs[csProgGuideObjects#89](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-define-constants_1.cs)]  
+ [!code-cs[csProgGuideObjects#89](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-constants_1.cs)]  
   
  使用类名限定符有助于确保您和使用常量的其他人了解到它是常量并且不能修改。  
   

@@ -21,7 +21,7 @@ caps.handback.revision: 17
 # 枚举类型（C# 编程指南）
 枚举类型（也称为枚举）为定义一组可以赋给变量的命名整数常量提供了一种有效的方法。  例如，假设您必须定义一个变量，该变量的值表示一周中的一天。  该变量只能存储七个有意义的值。  若要定义这些值，可以使用枚举类型。枚举类型是使用 [enum](../../csharp/language-reference/keywords/enum.md)关键字声明的。  
   
- [!code-cs[csProgGuideEnums#1](../../csharp/programming-guide/codesnippet/csharp/enumeration-types_1.cs)]  
+ [!code-cs[csProgGuideEnums#1](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_1.cs)]  
   
  默认情况下，枚举中每个元素的基础类型是 [int](../../csharp/language-reference/keywords/int.md)。  可以使用冒号指定另一种整数值类型，如前面的示例所示。  有关可能的类型的完整列表，请参见 [enum（C\# 参考）](../../csharp/language-reference/keywords/enum.md)。  
   
@@ -51,14 +51,14 @@ Console.WriteLine("{0} is month number #{1}.", thisMonth, monthNumber);
   
  如果变量 `meetingDay` 的类型为 `Days`，则只能将 `Days` 定义的某个值赋给它（无需显式强制转换）。  如果会议日期更改，可以将 `Days` 中的新值赋给 `meetingDay`：  
   
- [!code-cs[csProgGuideEnums#4](../../csharp/programming-guide/codesnippet/csharp/enumeration-types_2.cs)]  
+ [!code-cs[csProgGuideEnums#4](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_2.cs)]  
   
 > [!NOTE]
 >  可以将任意整数值赋给 `meetingDay`。  例如，代码行 `meetingDay = (Days) 42` 不会产生错误。  但也不应该这样做，因为默认约定的是枚举变量只容纳枚举定义的值之一。  将任意值赋给枚举类型的变量很有可能会导致错误。  
   
  可以将任意值赋给枚举类型的枚举数列表中的元素，也可以使用计算值：  
   
- [!code-cs[csProgGuideEnums#3](../../csharp/programming-guide/codesnippet/csharp/enumeration-types_3.cs)]  
+ [!code-cs[csProgGuideEnums#3](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_3.cs)]  
   
 ## 枚举类型作为位标志  
  可以使用枚举类型定义位标志，从而使该枚举类型的实例可以存储枚举数列表中定义的值的任意组合。  （当然，某些组合在您的程序代码中可能没有意义或不允许使用。）  
@@ -67,22 +67,22 @@ Console.WriteLine("{0} is month number #{1}.", thisMonth, monthNumber);
   
  在下面的示例中，定义了 `Days` 枚举的另一个版本，命名为 `Days2`。  `Days2` 具有 `Flags` 特性，且它的每个值都是 2 的若干次幂，指数依次递增。  这样，您将能够创建值为 `Days2.Tuesday` 和 `Days2.Thursday` 的 `Days2` 变量。  
   
- [!code-cs[csProgGuideEnums#2](../../csharp/programming-guide/codesnippet/csharp/enumeration-types_4.cs)]  
+ [!code-cs[csProgGuideEnums#2](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_4.cs)]  
   
  若要在某个枚举上设置标志，请使用按位 `OR` 运算符，如下面的示例所示：  
   
- [!code-cs[csProgGuideEnums#6](../../csharp/programming-guide/codesnippet/csharp/enumeration-types_5.cs)]  
+ [!code-cs[csProgGuideEnums#6](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_5.cs)]  
   
  若要确定是否设置了特定标志，请使用按位 `AND` 运算，如下面的示例所示：  
   
- [!code-cs[csProgGuideEnums#7](../../csharp/programming-guide/codesnippet/csharp/enumeration-types_6.cs)]  
+ [!code-cs[csProgGuideEnums#7](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_6.cs)]  
   
  有关使用 <xref:System.FlagsAttribute?displayProperty=fullName> 特性定义枚举类型时需要考虑的事项的更多信息，请参见 <xref:System.Enum?displayProperty=fullName>。  
   
 ## 使用 System.Enum 方法发现和操作枚举值  
  所有枚举都是 <xref:System.Enum?displayProperty=fullName> 类型的实例。  不能从 <xref:System.Enum?displayProperty=fullName> 派生新类，但可以使用它的方法发现有关枚举实例中的值的信息以及操作这些值。  
   
- [!code-cs[csProgGuideEnums#5](../../csharp/programming-guide/codesnippet/csharp/enumeration-types_7.cs)]  
+ [!code-cs[csProgGuideEnums#5](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_7.cs)]  
   
  有关更多信息，请参见<xref:System.Enum?displayProperty=fullName>。  
   

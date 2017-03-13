@@ -31,7 +31,7 @@ select student.ID;
 ## 示例  
  下面的示例演示如何使用匿名类型只返回每个源元素的符合指定条件的属性子集。  
   
- [!code-cs[csProgGuideLINQ#31](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#31)]  
+ [!code-cs[csProgGuideLINQ#31](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-return-subsets-of-element-properties-in-a-query_1.cs)]  
   
  请注意，如果未指定名称，则匿名类型将使用源元素的名称作为其属性名称。  若要为匿名类型中的属性指定新名称，请按如下方式编写 `select` 语句：  
   

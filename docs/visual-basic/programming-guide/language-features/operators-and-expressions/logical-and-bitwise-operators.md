@@ -43,7 +43,7 @@ caps.handback.revision: 22
 ## 一元逻辑运算符  
  [Not 运算符](../../../../visual-basic/language-reference/operators/not-operator.md) 对 `Boolean` 表达式执行逻辑求反。  它生成其操作数的逻辑相反值。  如果表达式的计算结果为 `True`，则 `Not` 返回 `False`；如果表达式的计算结果为 `False`，则 `Not` 返回 `True`。  下面的示例阐释了这一点。  
   
- [!code-vb[VbVbalrOperators#77](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/logical-and-bitwise-oper_1.vb)]  
+ [!code-vb[VbVbalrOperators#77](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/logical-and-bitwise-operators_1.vb)]  
   
 ## 二元逻辑运算符  
  [And 运算符](../../../../visual-basic/language-reference/operators/and-operator.md) 对两个 `Boolean` 表达式执行逻辑合取。  如果两个表达式的计算结果均为 `True`，则 `And` 返回 `True`。  如果其中至少一个表达式的计算结果为 `False`，则 `And` 返回 `False`。  
@@ -54,7 +54,7 @@ caps.handback.revision: 22
   
  下面的示例演示了 `And`、`Or` 和 `Xor` 运算符。  
   
- [!code-vb[VbVbalrOperators#78](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/logical-and-bitwise-oper_2.vb)]  
+ [!code-vb[VbVbalrOperators#78](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/logical-and-bitwise-operators_2.vb)]  
   
 ## 短路逻辑运算  
  [AndAlso 运算符](../../../../visual-basic/language-reference/operators/andalso-operator.md) 与 `And` 运算符非常类似，因为它也对两个 `Boolean` 表达式执行逻辑合取。  两者之间的主要差异是 `AndAlso` 表现出短路行为。  如果 `AndAlso` 表达式中第一个表达式的计算结果为 `False`，则不会计算第二个表达式的值，因为它不会改变最终结果，`AndAlso` 将返回 `False`。  
@@ -66,18 +66,18 @@ caps.handback.revision: 22
   
  下面的示例演示了 `And`、`Or` 与其短路副本之间的差异。  
   
- [!code-vb[VbVbalrOperators#81](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/logical-and-bitwise-oper_3.vb)]  
+ [!code-vb[VbVbalrOperators#81](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/logical-and-bitwise-operators_3.vb)]  
   
- [!code-vb[VbVbalrOperators#80](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/logical-and-bitwise-oper_4.vb)]  
+ [!code-vb[VbVbalrOperators#80](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/logical-and-bitwise-operators_4.vb)]  
   
- [!code-vb[VbVbalrOperators#79](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/logical-and-bitwise-oper_5.vb)]  
+ [!code-vb[VbVbalrOperators#79](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/logical-and-bitwise-operators_5.vb)]  
   
  在前面的示例中，请注意，在调用短路时，`checkIfValid()` 内部的某些重要代码将不会运行。  即使 `12 > 45` 返回 `False`，第一个 `If` 语句也会调用 `checkIfValid()`，因为 `And` 不会短路。  第二个 `If` 语句不会调用 `checkIfValid()`，因为当 `12 > 45` 返回 `False` 时，`AndAlso` 将会使第二个表达式短路。  即使 `12 < 45` 返回 `True`，第三个 `If` 语句也会调用 `checkIfValid()`，因为 `Or` 不会短路。  第四个 `If` 语句不会调用 `checkIfValid()`，因为当 `12 < 45` 返回 `True` 时，`OrElse` 将会使第二个表达式短路。  
   
 ## 按位运算  
  按位运算采用二进制（以 2 为基）形式计算两个整数值。  它们比较对应位置上的位，然后基于比较的结果赋值。  下面的示例演示了 `And` 运算符。  
   
- [!code-vb[VbVbalrConcepts#2](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/codesnippet/visualbasic/logical-and-bitwise-oper_6.vb)]  
+ [!code-vb[VbVbalrConcepts#2](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/codesnippet/VisualBasic/logical-and-bitwise-operators_6.vb)]  
   
  前面的示例将 `x` 的值设置为 1。  发生这种情况的原因如下：  
   

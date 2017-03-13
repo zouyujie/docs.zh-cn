@@ -23,7 +23,7 @@ caps.handback.revision: 29
  有关更多信息和示例，请参见[接口](../../../csharp/programming-guide/interfaces/index.md)。  
   
 ## 示例  
- [!code-cs[csrefKeywordsTypes#14](../../../csharp/language-reference/keywords/codesnippet/csharp/interface_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#14](../../../csharp/language-reference/keywords/codesnippet/CSharp/interface_1.cs)]  
   
  接口可以是命名空间或类的成员，并且可以包含下列成员的签名：  
   
@@ -46,7 +46,7 @@ caps.handback.revision: 29
 ## 示例  
  下面的示例演示了接口实现。  在此示例中，接口包含属性声明，类包含实现。  实现 `IPoint` 的类的任何实例都具有整数属性 `x` 和 `y`。  
   
- [!code-cs[csrefKeywordsTypes#15](../../../csharp/language-reference/keywords/codesnippet/csharp/interface_2.cs)]  
+ [!code-cs[csrefKeywordsTypes#15](../../../csharp/language-reference/keywords/codesnippet/CSharp/interface_2.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

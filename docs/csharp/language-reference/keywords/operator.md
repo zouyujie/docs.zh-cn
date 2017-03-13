@@ -24,7 +24,7 @@ caps.handback.revision: 19
 ## 示例  
  下面是一个非常简化的表示分数的类。  该类重载了 \+ 和 \* 运算符，以执行分数加法和乘法；同时提供了将 Fraction 类型转换为 double 类型的转换运算符。  
   
- [!code-cs[csrefKeywordsConversion#6](../../../csharp/language-reference/keywords/codesnippet/csharp/operator_1.cs)]  
+ [!code-cs[csrefKeywordsConversion#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/operator_1.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

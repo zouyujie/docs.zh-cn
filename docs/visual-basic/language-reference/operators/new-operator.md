@@ -34,11 +34,11 @@ caps.handback.revision: 23
   
  可以在声明语句或赋值语句中使用 `New` 子句。  该语句在运行时将调用指定类的相应构造函数，传递您提供的所有参数。  下面的示例对此进行了演示，它创建了具有两个构造函数（一个不采用参数，另一个采用字符串参数）的 `Customer` 类的实例。  
   
- [!code-vb[VbVbalrKeywords#11](../../../visual-basic/language-reference/codesnippet/visualbasic/new-operator_1.vb)]  
+ [!code-vb[VbVbalrKeywords#11](../../../visual-basic/language-reference/codesnippet/VisualBasic/new-operator_1.vb)]  
   
  因为数组也是类，所以 `New` 可以创建新的数组实例，如下面的示例所示。  
   
- [!code-vb[VbVbalrKeywords#12](../../../visual-basic/language-reference/codesnippet/visualbasic/new-operator_2.vb)]  
+ [!code-vb[VbVbalrKeywords#12](../../../visual-basic/language-reference/codesnippet/VisualBasic/new-operator_2.vb)]  
   
  如果内存不足，无法创建新的实例，公共语言运行时 \(CLR\) 将引发 <xref:System.OutOfMemoryException> 错误。  
   

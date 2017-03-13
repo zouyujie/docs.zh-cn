@@ -34,8 +34,8 @@ caps.handback.revision: 11
   
 5.  双击 <xref:System.Windows.Forms.Button> 控件打开代码编辑器，并将下面的代码添加到 `SearchButton_Click` 事件处理程序中。  
   
-     [!code-vb[VbPowerPacksDataRepeaterSearch#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/visualbasic/VbPowerPacksDataRepeaterSearch/DataRepeaterSearch.vb#1)]
-     [!code-cs[VbPowerPacksDataRepeaterSearch#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/csharp/DataRepeaterSearchCS/DataRepeaterSearch.cs#1)]  
+     [!code-vb[VbPowerPacksDataRepeaterSearch#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-search-data-in-a-datarepeater-control-visual-studio_1.vb)]
+     [!code-cs[VbPowerPacksDataRepeaterSearch#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-search-data-in-a-datarepeater-control-visual-studio_1.cs)]  
   
      将 *ProductsBindingSource* 替换为您的 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 的 <xref:System.Windows.Forms.BindingSource> 的名称，并将 *ProductID* 替换为要搜索的字段的名称。  
   

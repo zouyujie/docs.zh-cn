@@ -37,15 +37,15 @@ C\# 语言经过专门设计，以便不同库中的[基类](../../../csharp/lan
   
  为了在实践中演示上述情况，我们暂时假定公司 A 创建了一个名为 `GraphicsClass` 的类，您的程序将使用此类。  `GraphicsClass` 如下所示：  
   
- [!code-cs[csProgGuideInheritance#27](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/versioning-with-the-over_1.cs)]  
+ [!code-cs[csProgGuideInheritance#27](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/versioning-with-the-override-and-new-keywords_1.cs)]  
   
  您的公司使用此类，并且您在添加新方法时将其用来派生自己的类：  
   
- [!code-cs[csProgGuideInheritance#28](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/versioning-with-the-over_2.cs)]  
+ [!code-cs[csProgGuideInheritance#28](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/versioning-with-the-override-and-new-keywords_2.cs)]  
   
  您的应用程序运行正常，直到公司 A 发布了 `GraphicsClass` 的新版本，类似于下面的代码：  
   
- [!code-cs[csProgGuideInheritance#29](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/versioning-with-the-over_3.cs)]  
+ [!code-cs[csProgGuideInheritance#29](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/versioning-with-the-override-and-new-keywords_3.cs)]  
   
  现在，`GraphicsClass` 的新版本中包含一个名为 `DrawRectangle` 的方法。  开始时，没有出现任何问题。  新版本仍然与旧版本保持二进制兼容。  已经部署的任何软件都将继续正常工作，即使新类已安装到这些软件所在的计算机系统上。  在您的派生类中，对方法 `DrawRectangle` 的任何现有调用将继续引用您的版本。  
   
@@ -53,32 +53,32 @@ C\# 语言经过专门设计，以便不同库中的[基类](../../../csharp/lan
   
  如果您希望自己的方法重写新的基类方法，请使用 `override` 关键字：  
   
- [!code-cs[csProgGuideInheritance#30](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/versioning-with-the-over_4.cs)]  
+ [!code-cs[csProgGuideInheritance#30](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/versioning-with-the-override-and-new-keywords_4.cs)]  
   
  `override` 关键字可确保派生自 `YourDerivedGraphicsClass` 的任何对象都将使用 `DrawRectangle` 的派生类版本。  派生自 `YourDerivedGraphicsClass` 的对象仍可以使用基关键字访问 `DrawRectangle` 的基类版本：  
   
- [!code-cs[csProgGuideInheritance#44](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/versioning-with-the-over_5.cs)]  
+ [!code-cs[csProgGuideInheritance#44](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/versioning-with-the-override-and-new-keywords_5.cs)]  
   
  如果您不希望自己的方法重写新的基类方法，则需要注意以下事项。  为了避免这两个方法之间发生混淆，可以重命名您的方法。  这可能很耗费时间且容易出错，而且在某些情况下并不可行。  但是，如果您的项目相对较小，则可以使用 Visual Studio 的重构选项来重命名方法。  有关更多信息，请参见[Refactoring Classes and Types \(Class Designer\)](/visual-studio/ide/refactoring-classes-and-types-class-designer)。  
   
  或者，也可以通过在派生类定义中使用关键字 `new` 来防止出现该警告：  
   
- [!code-cs[csProgGuideInheritance#31](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/versioning-with-the-over_6.cs)]  
+ [!code-cs[csProgGuideInheritance#31](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/versioning-with-the-override-and-new-keywords_6.cs)]  
   
  使用 `new` 关键字可告诉编译器您的定义将隐藏基类中包含的定义。  这是默认行为。  
   
 ## 重写和方法选择  
  当在类中指定方法时，如果有多个方法与调用兼容（例如，存在两种同名的方法，并且其参数与传递的参数兼容），则 C\# 编译器将选择最佳方法进行调用。  下面的方法将是兼容的：  
   
- [!code-cs[csProgGuideInheritance#32](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/versioning-with-the-over_7.cs)]  
+ [!code-cs[csProgGuideInheritance#32](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/versioning-with-the-override-and-new-keywords_7.cs)]  
   
  在 `Derived` 的一个实例中调用 `DoWork` 时，C\# 编译器将首先尝试使该调用与最初在 `Derived` 上声明的 `DoWork` 版本兼容。  重写方法不被视为是在类上进行声明的，而是在基类上声明的方法的新实现。  仅当 C\# 编译器无法将方法调用与 `Derived` 上的原始方法匹配时，它才尝试将该调用与具有相同名称和兼容参数的重写方法匹配。  例如：  
   
- [!code-cs[csProgGuideInheritance#33](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/versioning-with-the-over_8.cs)]  
+ [!code-cs[csProgGuideInheritance#33](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/versioning-with-the-override-and-new-keywords_8.cs)]  
   
  由于变量 `val` 可以隐式转换为 double 类型，因此 C\# 编译器将调用 `DoWork(double)`，而不是 `DoWork(int)`。  有两种方法可以避免此情况。  首先，避免将新方法声明为与虚方法同名。  其次，可以通过将 `Derived` 的实例强制转换为 `Base` 来使 C\# 编译器搜索基类方法列表，从而使其调用虚方法。  由于是虚方法，因此将调用 `Derived` 上的 `DoWork(int)` 的实现。  例如：  
   
- [!code-cs[csProgGuideInheritance#34](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/versioning-with-the-over_9.cs)]  
+ [!code-cs[csProgGuideInheritance#34](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/versioning-with-the-override-and-new-keywords_9.cs)]  
   
  有关 `new` 和 `override`的更多示例，请参见 [了解何时使用 Override 和 New 关键字](../../../csharp/programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md)。  
   

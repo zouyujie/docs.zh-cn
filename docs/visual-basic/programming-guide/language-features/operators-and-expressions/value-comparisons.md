@@ -43,15 +43,15 @@ caps.handback.revision: 9
   
  比较值的表达式在 `If...Then` 构造中最常用，如下面的示例所示。  
   
- [!code-vb[VbVbalrOperators#84](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/value-comparisons_1.vb)]  
+ [!code-vb[VbVbalrOperators#84](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/value-comparisons_1.vb)]  
   
  `=` 符号是比较运算符，也是赋值运算符。  当用作比较运算符时，它计算左侧的值是否等于右侧的值，如下面的示例所示。  
   
- [!code-vb[VbVbalrOperators#85](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/value-comparisons_2.vb)]  
+ [!code-vb[VbVbalrOperators#85](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/value-comparisons_2.vb)]  
   
  也可在需要 `Boolean` 值的任意位置使用比较表达式，如在 `If`、`While`、`Loop` 或 `ElseIf` 语句中，或在将值赋予或传递给 `Boolean` 变量时使用。  在下面的示例中，比较表达式返回的值被赋给了 `Boolean` 变量。  
   
- [!code-vb[VbVbalrOperators#86](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/value-comparisons_3.vb)]  
+ [!code-vb[VbVbalrOperators#86](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/value-comparisons_3.vb)]  
   
 ## 请参阅  
  [布尔表达式](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/boolean-expressions.md)   

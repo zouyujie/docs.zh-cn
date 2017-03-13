@@ -48,7 +48,7 @@ Take count
 ## 示例  
  下面的代码示例同时使用 `Take` 子句和 `Skip` 子句在页面中返回查询数据。  GetCustomers 函数使用 `Skip` 子句跳过列表中的客户，直至到达提供的起始索引值为止，并使用 `Take` 子句返回从该索引值开始的客户页。  
   
- [!code-vb[VbSimpleQuerySamples#1](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#1)]  
+ [!code-vb[VbSimpleQuerySamples#1](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/take-clause_1.vb)]  
   
 ## 请参阅  
  [Visual Basic 中的 LINQ 简介](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   

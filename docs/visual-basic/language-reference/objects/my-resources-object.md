@@ -61,29 +61,29 @@ caps.handback.revision: 22
 ## 示例  
  此示例将窗体的标题对应用程序资源文件中名为的 `Form1Title` 字符串资源。  为了使示例工作，应用程序必须在其资源文件中名为的 `Form1Title` 字符串。  有关更多信息，请参见 [How to: Add or Remove Resources](http://msdn.microsoft.com/zh-cn/7b77bc06-3952-4799-b029-def3f8f7f88d)。  
   
- [!code-vb[VbVbalrMyResources#1](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/visualbasic/VbVbalrMyResources2/Form1.vb#1)]  
+ [!code-vb[VbVbalrMyResources#1](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/my-resources-object_1.vb)]  
   
 ## 示例  
  此示例将窗体的图标设置为名为 `Form1Icon` 的图标，它存储在应用程序的资源文件中。  为了使示例工作，应用程序必须在其资源文件中名为的 `Form1Icon` 图标。  
   
- [!code-vb[VbVbalrMyResources#2](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/visualbasic/VbVbalrMyResources2/Form1.vb#2)]  
+ [!code-vb[VbVbalrMyResources#2](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/my-resources-object_2.vb)]  
   
 ## 示例  
  此示例将窗体的背景图像设置为名为 `Form1Background`的图像资源，应用程序资源文件。  若要使此示例正常工作，应用程序必须在其资源文件中名为的 `Form1Background` 图像资源。  
   
- [!code-vb[VbVbalrMyResources#3](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/visualbasic/VbVbalrMyResources2/Form1.vb#3)]  
+ [!code-vb[VbVbalrMyResources#3](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/my-resources-object_3.vb)]  
   
 ## 示例  
  此示例播放存储为应用程序的资源文件中名为的 `Form1Greeting` 音频资源中的声音。  为了使示例工作，应用程序必须在其资源文件中名为的 `Form1Greeting` 音频资源。  `My.Computer.Audio.Play` 方法仅对 Windows 窗体应用程序可用。  
   
- [!code-vb[VbVbalrMyResources#4](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/visualbasic/VbVbalrMyResources2/Form1.vb#4)]  
+ [!code-vb[VbVbalrMyResources#4](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/my-resources-object_4.vb)]  
   
 ## 示例  
  此示例检索应用程序的字符串资源的法语区域性版本。  该资源名为 `Message`。  更改 `My.Resources` 对象使用，该示例使用 <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.ChangeUICulture%2A>的区域性。  
   
  若要使此示例正常工作，应用程序必须在其资源文件中名为的 `Message` 字符串，因此，应用程序应有该资源文件， Resources.fr\-FR.resx 的法语区域性版本。  有关更多信息，请参见 [How to: Add or Remove Resources](http://msdn.microsoft.com/zh-cn/7b77bc06-3952-4799-b029-def3f8f7f88d)。  如果应用程序没有资源文件的法语区域性版本， `My.Resource` 对象将从默认区域性资源文件中检索该资源。  
   
- [!code-vb[VbVbalrMyResources#10](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/visualbasic/VbVbalrMyResources2/Form1.vb#10)]  
+ [!code-vb[VbVbalrMyResources#10](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/my-resources-object_5.vb)]  
   
 ## 请参阅  
  [How to: Add or Remove Resources](http://msdn.microsoft.com/zh-cn/7b77bc06-3952-4799-b029-def3f8f7f88d)   

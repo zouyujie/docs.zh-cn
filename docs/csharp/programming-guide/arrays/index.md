@@ -23,7 +23,7 @@ caps.handback.revision: 33
   
  下面的示例创建一维、多维和交错数组：  
   
- [!code-cs[csProgGuideArrays#1](../../../csharp/programming-guide/arrays/codesnippet/csharp/index_1.cs)]  
+ [!code-cs[csProgGuideArrays#1](../../../csharp/programming-guide/arrays/codesnippet/CSharp/index_1.cs)]  
   
 ## 数组概述  
  数组具有以下属性：  

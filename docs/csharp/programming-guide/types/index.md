@@ -42,7 +42,7 @@ caps.handback.revision: 53
   
  编译器使用类型信息确保代码中执行的所有运算都是类型安全的。  例如，如果声明了一个 [int](../../../csharp/language-reference/keywords/int.md) 类型的变量，则编译器允许您在加法和减法运算中使用此变量。  如果尝试在一个 [bool](../../../csharp/language-reference/keywords/bool.md) 类型的变量上执行相同的运算，则编译器会产生错误，如下面的示例所示：  
   
- [!code-cs[csProgGuideTypes#42](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/index_1.cs)]  
+ [!code-cs[csProgGuideTypes#42](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_1.cs)]  
   
 > [!NOTE]
 >  请 C 和 C\+\+ 开发人员注意，在 C\# 中，[bool](../../../csharp/language-reference/keywords/bool.md) 不能转换为 [int](../../../csharp/language-reference/keywords/int.md)。  
@@ -52,11 +52,11 @@ caps.handback.revision: 53
 ### 在变量声明中指定类型  
  在程序中声明变量或常量时，必须指定其类型或者使用关键字 [var](../../../csharp/language-reference/keywords/var.md) 让编译器可以推断其类型。  下面的示例演示了一些使用内置数值类型和复杂的用户定义类型的变量声明：  
   
- [!code-cs[csProgGuideTypes#36](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/index_2.cs)]  
+ [!code-cs[csProgGuideTypes#36](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_2.cs)]  
   
  在方法签名中指定方法参数和返回值的类型。  下面的签名中演示的方法需要用 [int](../../../csharp/language-reference/keywords/int.md) 作为输入参数并返回一个字符串：  
   
- [!code-cs[csProgGuideTypes#35](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/index_3.cs)]  
+ [!code-cs[csProgGuideTypes#35](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_3.cs)]  
   
  声明了一个变量后，不能使用新类型重新对它进行声明，也不能向它赋与它的声明类型不兼容的值。  例如，不能声明 [int](../../../csharp/language-reference/keywords/int.md)，然后向它赋予布尔值 [true](../../../csharp/language-reference/keywords/true-literal.md)。  但是，值可以转换为其他类型，例如将值赋给新变量或者作为方法参数传递时。  编译器会自动执行不会导致数据丢失的类型转换。  可能导致数据丢失的转换需要源代码内有强制转换。  
   
@@ -107,13 +107,13 @@ char c = 'Z';
   
  可以使用 [struct](../../../csharp/language-reference/keywords/struct.md) 关键字创建自己的自定义值类型。  通常，结构可作为一小组相关变量的容器，如下面的示例所示：  
   
- [!code-cs[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/index_4.cs)]  
+ [!code-cs[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/index_4.cs)]  
   
  有关结构的更多信息，请参见[Struct](../../../csharp/programming-guide/classes-and-structs/structs.md)。  有关 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] 中的值类型的更多信息，请参见[常规类型系统](../../../standard/base-types/common-type-system.md)。  
   
  另一类值类型是 [enum](../../../csharp/language-reference/keywords/enum.md)。  枚举定义一组已命名的整数常量。  例如，.NET Framework 类库中的 <xref:System.IO.FileMode?displayProperty=fullName> 枚举包含一组已命名的整数常量，用来指定应如何打开文件。  其定义方式如下面的示例所示：  
   
- [!code-cs[csProgGuideTypes#44](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/index_5.cs)]  
+ [!code-cs[csProgGuideTypes#44](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_5.cs)]  
   
  `System.IO.FileMode.Create` 常数的值为 2。  但是，在阅读源代码时，名称可为人们提供更多信息，因此最好使用枚举而不使用常量文本数字。  有关详细信息，请参阅 <xref:System.IO.FileMode?displayProperty=fullName>。  
   
@@ -137,7 +137,7 @@ IMyInterface iface = new MyClass();
   
  所有数组都是引用类型，即使其元素是值类型也不例外。  数组是从 <xref:System.Array?displayProperty=fullName> 类隐式派生的，但可以通过 C\# 提供的简化语法来声明和使用它们，如下面的示例所示：  
   
- [!code-cs[csProgGuideTypes#45](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/index_6.cs)]  
+ [!code-cs[csProgGuideTypes#45](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_6.cs)]  
   
  引用类型完全支持继承。  创建类时，可以从没有定义为 [sealed](../../../csharp/language-reference/keywords/sealed.md) 的任何其他接口或类继承，而其他类则可以从您创建的类继承并重写虚方法。  有关如何创建自己的类的更多信息，请参见[类和结构](../../../csharp/programming-guide/classes-and-structs/index.md)。  有关继承和虚方法的更多信息，请参见[继承](../../../csharp/programming-guide/classes-and-structs/inheritance.md)。  
   
@@ -146,7 +146,7 @@ IMyInterface iface = new MyClass();
   
  由于文本已类型化，且所有类型最终都是从 <xref:System.Object?displayProperty=fullName> 派生，因此您可以编写和编译如下所示的代码：  
   
- [!code-cs[csProgGuideTypes#37](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/index_7.cs)]  
+ [!code-cs[csProgGuideTypes#37](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_7.cs)]  
   
 ## 泛型类型  
  一个类型可以通过一个或多个类型参数声明，而这些类型参数作为客户端代码在创建该类型的实例时提供的实际类型（具体类型）的占位符。  这种类型称为“泛型类型”。  例如，.NET Framework 类型 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 有一个类型参数，按照约定该类型参数的名称为 T。  在创建该类型的实例时，会指定列表将包含的对象的类型，例如字符串：  

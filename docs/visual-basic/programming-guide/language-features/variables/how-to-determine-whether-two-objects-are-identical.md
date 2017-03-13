@@ -52,7 +52,7 @@ caps.handback.revision: 19
 ## 示例  
  下面的示例测试 `Object` 变量对是否指向同一类实例。  
   
- [!code-vb[VbVbalrKeywords#14](../../../../visual-basic/language-reference/codesnippet/visualbasic/how-to-determine-whether_1_1.vb)]  
+ [!code-vb[VbVbalrKeywords#14](../../../../visual-basic/language-reference/codesnippet/VisualBasic/how-to-determine-whether-two-objects-are-identical_1.vb)]  
   
  前面的示例显示以下输出内容。  
   

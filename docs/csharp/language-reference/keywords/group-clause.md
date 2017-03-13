@@ -24,18 +24,18 @@ caps.handback.revision: 24
   
  可以用 `group` 子句结束查询表达式，如下面的示例所示：  
   
- [!code-cs[cscsrefQueryKeywords#10](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Group.cs#10)]  
+ [!code-cs[cscsrefQueryKeywords#10](../../../csharp/language-reference/keywords/codesnippet/CSharp/group-clause_1.cs)]  
   
  如果您想要对每个组执行附加查询操作，则可以使用 [into](../../../csharp/language-reference/keywords/into.md) 上下文关键字指定一个临时标识符。  使用 `into` 时，必须继续编写该查询，并最终用一个 `select` 语句或另一个 `group` 子句结束该查询，如下面的代码摘录所示：  
   
- [!code-cs[cscsrefQueryKeywords#11](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Group.cs#11)]  
+ [!code-cs[cscsrefQueryKeywords#11](../../../csharp/language-reference/keywords/codesnippet/CSharp/group-clause_2.cs)]  
   
  本主题中的“示例”部分中提供了使用含有和不含 `into` 的 `group` 的更完整示例。  
   
 ## 枚举组查询的结果  
  由于 `group` 查询产生的 <xref:System.Linq.IGrouping%602> 对象实质上是列表的列表，因此必须使用嵌套的 [foreach](../../../csharp/language-reference/keywords/foreach-in.md) 循环来访问每一组中的各个项。  外部循环用于循环访问组键，内部循环用于循环访问组本身中的每个项。  组可能具有键，但没有元素。  以下是执行上述代码示例中的查询的 `foreach` 循环：  
   
- [!code-cs[cscsrefQueryKeywords#12](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Group.cs#12)]  
+ [!code-cs[cscsrefQueryKeywords#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/group-clause_3.cs)]  
   
 ## 键类型  
  组键可以是任何类型，如字符串、内置数值类型、用户定义的命名类型或匿名类型。  
@@ -43,17 +43,17 @@ caps.handback.revision: 24
 ### 按字符串进行分组  
  上述代码示例使用的是 `char`。  可以很容易地改为指定字符串键，如完整的姓氏：  
   
- [!code-cs[cscsrefQueryKeywords#13](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Group.cs#13)]  
+ [!code-cs[cscsrefQueryKeywords#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/group-clause_4.cs)]  
   
 ### 按布尔进行分组  
  下面的示例演示使用布尔值作为键将结果划分成两个组。  请注意，该值是由 `group` 子句中的子表达式产生的。  
   
- [!code-cs[cscsrefQueryKeywords#14](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Group.cs#14)]  
+ [!code-cs[cscsrefQueryKeywords#14](../../../csharp/language-reference/keywords/codesnippet/CSharp/group-clause_5.cs)]  
   
 ### 按数值范围进行分组  
  下一个示例使用表达式创建表示百分比范围的数值组键。  请注意，该示例使用 [let](../../../csharp/language-reference/keywords/let-clause.md) 作为方法调用结果的方便存储位置，从而无需在 `group` 子句中调用该方法两次。  另请注意，在 `group` 子句中，为了避免发生“被零除”异常，代码进行了相应检查以确保学生的平均成绩不为零。  有关如何在查询表达式中安全使用方法的更多信息，请参见[如何：在查询表达式中处理异常](../../../csharp/programming-guide/linq-query-expressions/how-to-handle-exceptions-in-query-expressions.md)。  
   
- [!code-cs[cscsrefQueryKeywords#15](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Group.cs#15)]  
+ [!code-cs[cscsrefQueryKeywords#15](../../../csharp/language-reference/keywords/codesnippet/CSharp/group-clause_6.cs)]  
   
 ### 按复合键进行分组  
  当您想要按照多个键对元素进行分组时，可使用复合键。  通过使用匿名类型或命名类型来存储键元素，可以创建复合键。  在下面的示例中，假定已经使用名为 `surname` 和 `city` 的两个成员声明了类 `Person`。  `group` 子句使得为每组具有相同姓氏和相同城市的人员创建一个单独的组。  
@@ -66,12 +66,12 @@ caps.handback.revision: 24
   
  `group` 子句的结果是序列的序列。  因此，若要访问所返回的每个组中的单个元素，请在循环访问组键的循环内使用嵌套的 `foreach` 循环，如下面的示例所示。  
   
- [!code-cs[cscsrefQueryKeywords#16](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Group.cs#16)]  
+ [!code-cs[cscsrefQueryKeywords#16](../../../csharp/language-reference/keywords/codesnippet/CSharp/group-clause_7.cs)]  
   
 ## 示例  
  此示例演示在创建组之后，如何使用通过 `into` 实现的延续对这些组执行附加逻辑。  有关更多信息，请参见 [into](../../../csharp/language-reference/keywords/into.md)。  下面的示例查询每个组以仅选择那些键值为元音的元素。  
   
- [!code-cs[cscsrefQueryKeywords#17](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Group.cs#17)]  
+ [!code-cs[cscsrefQueryKeywords#17](../../../csharp/language-reference/keywords/codesnippet/CSharp/group-clause_8.cs)]  
   
 ## 备注  
  编译时，`group` 子句被转换为对 <xref:System.Linq.Enumerable.GroupBy%2A> 方法的调用。  

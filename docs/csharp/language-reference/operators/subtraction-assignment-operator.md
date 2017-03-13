@@ -39,7 +39,7 @@ x = x / y
  不能直接重载 `/=` 运算符，但用户定义的类型可重载 [\/ 运算符](../../../csharp/language-reference/operators/division-operator.md)（请参见 [operator](../../../csharp/language-reference/keywords/operator.md)）。  对于所有复合赋值运算符，隐式重载二元运算符会重载等效的复合赋值。  
   
 ## 示例  
- [!code-cs[csRefOperators#5](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#5)]  
+ [!code-cs[csRefOperators#5](../../../csharp/language-reference/operators/codesnippet/CSharp/subtraction-assignment-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

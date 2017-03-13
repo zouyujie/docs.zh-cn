@@ -24,7 +24,7 @@ caps.handback.revision: 13
  该示例还演示 <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> 为何始终为值类型返回 `false`，以及您为何不应使用<xref:System.Object.ReferenceEquals%2A> 来确定字符串相等性。  
   
 ## 示例  
- [!code-cs[csProgGuideObjects#90](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-test-for-referenc_1.cs)]  
+ [!code-cs[csProgGuideObjects#90](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-test-for-reference-equality-identity_1.cs)]  
   
  <xref:System.Object?displayProperty=fullName> 通用基类中 `Equals` 的实现也执行引用相等性检查，但最好不要使用此实现，原因是，如果类恰好重写了方法，则可能无法得到预期结果。  上述情况同样适用于 `==` 和 `!=` 运算符。  当 \=\= 和 `!=` 对引用类型进行运算时，它们的默认行为是执行引用相等性检查。  但是，派生类可能会重载运算符以执行值相等性检查。  为了最大程度地减小出现错误的可能性，最好在必须确定两个对象是否具有引用相等性时使用 <xref:System.Object.ReferenceEquals%2A>。  
   

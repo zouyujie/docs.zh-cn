@@ -146,37 +146,37 @@ End Enum
 ## <a name="example"></a>示例  
  下面的示例演示如何使用 `Enum` 语句。 请注意，该成员被称为 `EggSizeEnum.Medium`, ，而不是作为 `Medium`。  
   
- [!code-vb[VbEnumsTask#41](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class1.vb#41)]  
+ [!code-vb[VbEnumsTask#41](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_1.vb)]  
   
 ## <a name="example"></a>示例  
  下面的示例中的方法之外，则 `Egg` 类。 因此， `EggSizeEnum` 是作为完全限定的 `Egg.EggSizeEnum`。  
   
- [!code-vb[VbEnumsTask#42](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class1.vb#42)]  
+ [!code-vb[VbEnumsTask#42](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_2.vb)]  
   
 ## <a name="example"></a>示例  
  下面的示例使用 `Enum` 语句来定义一组相关的命名的常量值。 在这种情况下，值是您可能选择用来设计数据库的数据输入窗体颜色。  
   
- [!code-vb[VbEnumsTask#30](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#30)]  
+ [!code-vb[VbEnumsTask#30](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_3.vb)]  
   
 ## <a name="example"></a>示例  
  下面的示例演示包括正和负号的值。  
   
- [!code-vb[VbEnumsTask#31](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#31)]  
+ [!code-vb[VbEnumsTask#31](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_4.vb)]  
   
 ## <a name="example"></a>示例  
  在下面的示例中， `As` 子句用于指定 `datatype` 的枚举。  
   
- [!code-vb[VbEnumsTask#6](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#6)]  
+ [!code-vb[VbEnumsTask#6](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_5.vb)]  
   
 ## <a name="example"></a>示例  
  下面的示例演示如何使用按位枚举。 多个值可以分配给一个按位枚举的一个实例。  `Enum` 声明包含 <xref:System.FlagsAttribute> 属性，指示可以将枚举视为一组标志。  
   
- [!code-vb[VbEnumsTask#61](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class1.vb#61)]  
+ [!code-vb[VbEnumsTask#61](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_6.vb)]  
   
 ## <a name="example"></a>示例  
  下面的示例循环访问枚举。 它使用 <xref:System.Enum.GetNames%2A> 方法来检索的枚举成员名称的数组和 <xref:System.Enum.GetValues%2A> 检索成员值的数组。  
   
- [!code-vb[VbEnumsTask#51](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class1.vb#51)]  
+ [!code-vb[VbEnumsTask#51](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_7.vb)]  
   
 ## <a name="see-also"></a>另请参阅  
  <xref:System.Enum>   

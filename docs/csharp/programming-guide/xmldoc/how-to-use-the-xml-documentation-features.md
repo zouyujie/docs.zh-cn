@@ -20,7 +20,7 @@ caps.handback.revision: 19
 下面的示例为提供已存档的类型的基本的概述。  
   
 ## <a name="example"></a>示例  
- [!code-cs[csProgGuideDocComments#15](../../../csharp/programming-guide/xmldoc/codesnippet/csharp/how-to-use-the-xml-docum_1.cs)]  
+ [!code-cs[csProgGuideDocComments#15](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/how-to-use-the-xml-documentation-features_1.cs)]  
   
  **使用上面的代码示例生成该.xml 文件。**  
 **\<？ xml 版本 ="1.0"？>**  

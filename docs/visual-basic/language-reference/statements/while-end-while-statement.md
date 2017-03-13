@@ -78,17 +78,17 @@ End While
 ## 示例  
  在下面的示例中，循环中的语句继续运行，直到 `index` 变量大于 10。  
   
- [!code-vb[VbVbalrStatements#171](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/while-end-while-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#171](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/while-end-while-statement_1.vb)]  
   
 ## 示例  
  下面的示例阐释了 `Continue While` and `Exit While` 语句的用法。  
   
- [!code-vb[VbVbalrStatements#172](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/while-end-while-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#172](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/while-end-while-statement_2.vb)]  
   
 ## 示例  
  下面的示例读取文本文件中的所有行。  <xref:System.IO.File.OpenText%2A> 方法打开文件，并返回读取字符的 <xref:System.IO.StreamReader>。  在 `While` 情况，`StreamReader` 的 <xref:System.IO.StreamReader.Peek%2A> 方法确定文件是否包含其他字符。  
   
- [!code-vb[VbVbalrStatements#173](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/while-end-while-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#173](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/while-end-while-statement_3.vb)]  
   
 ## 请参阅  
  [循环结构](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)   

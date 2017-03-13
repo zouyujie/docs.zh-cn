@@ -44,7 +44,7 @@ caps.handback.revision: 18
 ## 示例  
  在下面的示例中，`b` 是一个 `Byte` 变量。  各语句演示变量的范围和对其应用移位运算符。  
   
- [!code-vb[VbVbalrDataTypes#16](../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/byte-data-type_1.vb)]  
+ [!code-vb[VbVbalrDataTypes#16](../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/byte-data-type_1.vb)]  
   
 ## 请参阅  
  <xref:System.Byte?displayProperty=fullName>   

@@ -37,14 +37,14 @@ caps.handback.revision: 14
 ## 示例  
  在本例中，基类 `Person` 和派生类 `Employee` 都有一个名为 `Getinfo` 的方法。  通过使用 `base` 关键字，可以从派生类中调用基类的 `Getinfo` 方法。  
   
- [!code-cs[csrefKeywordsAccess#1](../../../csharp/language-reference/keywords/codesnippet/csharp/base_1.cs)]  
+ [!code-cs[csrefKeywordsAccess#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/base_1.cs)]  
   
  有关其他示例，请参见 [new](../../../csharp/language-reference/keywords/new.md)、[virtual](../../../csharp/language-reference/keywords/virtual.md) 和 [override](../../../csharp/language-reference/keywords/override.md)。  
   
 ## 示例  
  本示例显示如何指定在创建派生类实例时调用的基类构造函数。  
   
- [!code-cs[csrefKeywordsAccess#2](../../../csharp/language-reference/keywords/codesnippet/csharp/base_2.cs)]  
+ [!code-cs[csrefKeywordsAccess#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/base_2.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

@@ -22,15 +22,15 @@ caps.handback.revision: 31
   
  要将代码块传递为委托参数，创建匿名方法则是唯一的方法。  这里是两个示例：  
   
- [!code-cs[csProgGuideDelegates#6](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#6)]  
+ [!code-cs[csProgGuideDelegates#6](../../../csharp/programming-guide/delegates/codesnippet/CSharp/anonymous-methods_1.cs)]  
   
- [!code-cs[csProgGuideDelegates#5](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#5)]  
+ [!code-cs[csProgGuideDelegates#5](../../../csharp/programming-guide/delegates/codesnippet/CSharp/anonymous-methods_2.cs)]  
   
  通过使用匿名方法，由于您不必创建单独的方法，因此减少了实例化委托所需的编码系统开销。  
   
  例如，如果创建方法所需的系统开销是不必要的，则指定代码块（而不是委托）可能非常有用。  启动新线程即是一个很好的示例。  无需为委托创建更多方法，线程类即可创建一个线程并且包含该线程执行的代码。  
   
- [!code-cs[csProgGuideDelegates#7](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#7)]  
+ [!code-cs[csProgGuideDelegates#7](../../../csharp/programming-guide/delegates/codesnippet/CSharp/anonymous-methods_3.cs)]  
   
 ## 备注  
  匿名方法的参数的范围是“*匿名方法块*”。  
@@ -39,7 +39,7 @@ caps.handback.revision: 31
   
  如果局部变量和参数的范围包含匿名方法声明，则该局部变量和参数称为该匿名方法的“*外部*”变量。  例如，下面代码段中的 `n` 即是一个外部变量：  
   
- [!code-cs[csProgGuideDelegates#8](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#8)]  
+ [!code-cs[csProgGuideDelegates#8](../../../csharp/programming-guide/delegates/codesnippet/CSharp/anonymous-methods_4.cs)]  
   
  外部变量的引用`n`被认为是*捕获*在创建委托时。  与本地变量不同，捕获的变量的生存期内扩展，直到引用该匿名方法委托被垃圾回收。  
   
@@ -58,7 +58,7 @@ caps.handback.revision: 31
   
  两种方法都会在调用委托时显示一条消息。  
   
- [!code-cs[csProgGuideDelegates#4](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#4)]  
+ [!code-cs[csProgGuideDelegates#4](../../../csharp/programming-guide/delegates/codesnippet/CSharp/anonymous-methods_5.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

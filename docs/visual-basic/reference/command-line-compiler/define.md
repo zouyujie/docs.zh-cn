@@ -58,7 +58,7 @@ caps.handback.revision: 15
 ## 示例  
  下面的代码定义并使用两个条件编译器常数。  
   
- [!code-vb[VbVbalrCompiler#45](../../../visual-basic/reference/command-line-compiler/codesnippet/visualbasic/define_1.vb)]  
+ [!code-vb[VbVbalrCompiler#45](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/define_1.vb)]  
   
 ## 请参阅  
  [Visual Basic 命令行编译器](../../../visual-basic/reference/command-line-compiler/index.md)   

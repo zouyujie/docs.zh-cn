@@ -53,7 +53,7 @@ caps.handback.revision: 20
   
  若要将日期转换为与区域性对应的字符串，请将 <xref:System.Globalization.CultureInfo> 对象传递到日期对象的 <xref:System.DateTime.ToString%28System.IFormatProvider%29> 方法。  例如，无论应用程序的区域性设置如何，以下代码都会显示“07\/04\/2005 00:00:00”。  
   
- [!code-vb[VbVbalrConcepts#1](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/codesnippet/visualbasic/how-culture-affects-stri_1.vb)]  
+ [!code-vb[VbVbalrConcepts#1](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/codesnippet/VisualBasic/how-culture-affects-strings_1.vb)]  
   
 > [!NOTE]
 >  将总是依据英语区域性解释日期文本。  
@@ -69,11 +69,11 @@ caps.handback.revision: 20
   
  `StrComp` 函数返回一个整数，该整数指示所比较的两个字符串之间基于排序顺序的关系。  正数结果值指示第一个字符串大于第二个字符串。  负数结果指示第一个字符串较小，而零指示两个字符串相等。  
   
- [!code-vb[VbVbalrStrings#22](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-culture-affects-stri_2.vb)]  
+ [!code-vb[VbVbalrStrings#22](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_2.vb)]  
   
  也可以使用 [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort-md.md)] 中与 `StrComp` 函数对应的 <xref:System.String.Compare%2A?displayProperty=fullName> 方法。  这是基字符串类的静态重载方法。  下面的示例阐释如何使用此方法：  
   
- [!code-vb[VbVbalrStrings#48](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-culture-affects-stri_3.vb)]  
+ [!code-vb[VbVbalrStrings#48](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_3.vb)]  
   
  为了更细致地控制比较的执行方式，您可以使用 <xref:System.String.Compare%2A> 方法的附加重载。  利用 <xref:System.String.Compare%2A?displayProperty=fullName> 方法，您可以使用 `comparisonType` 参数来指定要使用哪种比较方式。  
   

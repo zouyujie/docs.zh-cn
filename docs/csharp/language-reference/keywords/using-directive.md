@@ -77,7 +77,7 @@ class Program
  下面的示例显示如何为命名空间定义和使用 `using` 别名：  
   
 ### 代码  
- [!code-cs[csrefKeywordsNamespace#8](../../../csharp/language-reference/keywords/codesnippet/csharp/using-directive_1.cs)]  
+ [!code-cs[csrefKeywordsNamespace#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-directive_1.cs)]  
   
 ### 批注  
  using 别名指令的右侧不能有开放式泛型类型。  例如，不能为 List\<T\> 创建 using 别名，但可以为 List\<int\> 创建。  
@@ -88,7 +88,7 @@ class Program
  下面的示例显示如何为类定义 `using` 指令和 `using` 别名：  
   
 ### 代码  
- [!code-cs[csrefKeywordsNamespace#9](../../../csharp/language-reference/keywords/codesnippet/csharp/using-directive_2.cs)]  
+ [!code-cs[csrefKeywordsNamespace#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-directive_2.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

@@ -44,7 +44,7 @@ caps.handback.revision: 14
 ## 示例  
  下面的示例包含两个 XML 元素，一个为外部元素，另一个为内部元素。  这两个元素的文本内容中都包含空白。  外部元素中的空白是无意义的，因为该元素仅包含空白和一个 XML 元素。  内部元素中的空白是有意义的，因为该元素包含空白和文本。  
   
- [!code-vb[VbXMLSamples#29](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/white-space-in-xml-liter_1.vb)]  
+ [!code-vb[VbXMLSamples#29](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/white-space-in-xml-literals_1.vb)]  
   
  运行时，这段代码将显示下面的文本。  
   

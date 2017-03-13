@@ -62,7 +62,7 @@ caps.handback.revision: 21
   
  您可以提供自己的访问器，以便指定这两个事件是由您的类中的同一事件表示，还是由不同事件表示。  例如，根据接口规范，如果事件应在不同时间引发，则可以将每个事件与类中的一个单独实现关联。  在下面的示例中，订户将形状引用强制转换为 `IShape` 或 `IDrawingObject`，从而确定自己将会接收哪个 `OnDraw` 事件。  
   
- [!code-cs[csProgGuideEvents#10](../../../csharp/programming-guide/events/codesnippet/csharp/how-to-implement-interfa_1.cs)]  
+ [!code-cs[csProgGuideEvents#10](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-implement-interface-events_1.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

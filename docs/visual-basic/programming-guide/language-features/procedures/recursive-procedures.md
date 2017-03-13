@@ -31,7 +31,7 @@ caps.handback.revision: 13
   
  下面的过程使用递归计算其原始参数的阶乘：  
   
- [!code-vb[VbVbcnProcedures#51](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/recursive-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#51](./codesnippet/VisualBasic/recursive-procedures_1.vb)]  
   
 ## 使用递归过程时的注意事项  
  **限制条件**。  您在设计一个递归过程时，必须至少测试一个可以终止此递归的条件，并且还必须对在合理的递归调用次数内未满足此类条件的情况进行处理。  如果没有一个在正常情况下可以满足的条件，则过程将陷入执行无限循环的高度危险之中。  

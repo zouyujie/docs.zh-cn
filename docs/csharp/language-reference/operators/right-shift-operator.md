@@ -31,7 +31,7 @@ caps.handback.revision: 15
  用户定义的类型可重载 `>>` 运算符；第一个操作数的类型必须为用户定义的类型，第二个操作数的类型必须为 [int](../../../csharp/language-reference/keywords/int.md)。  有关更多信息，请参见 [operator](../../../csharp/language-reference/keywords/operator.md)。  重载二元运算符时，也会隐式重载相应的赋值运算符（如果有）。  
   
 ## 示例  
- [!code-cs[csRefOperators#26](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#26)]  
+ [!code-cs[csRefOperators#26](../../../csharp/language-reference/operators/codesnippet/CSharp/right-shift-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

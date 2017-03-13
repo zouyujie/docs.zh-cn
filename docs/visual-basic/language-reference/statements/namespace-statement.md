@@ -86,17 +86,17 @@ End Namespace
 ## 示例  
  下面的示例声明两个命名空间，其中一个嵌套在另一个中。  
   
- [!code-vb[VbVbalrStatements#43](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/namespace-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#43](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/namespace-statement_1.vb)]  
   
 ## 示例  
  下面的示例在一行上声明多个嵌套命名空间，其效果与上一个示例等同。  
   
- [!code-vb[VbVbalrStatements#41](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/namespace-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#41](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/namespace-statement_2.vb)]  
   
 ## 示例  
  下面的示例访问在前面的示例中定义的类。  
   
- [!code-vb[VbVbalrStatements#42](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/namespace-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#42](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/namespace-statement_3.vb)]  
   
 ## 示例  
  下面的示例定义一个新的泛型列表类的主干，并将它添加到 <xref:System.Collections.Generic?displayProperty=fullName> 命名空间中。  

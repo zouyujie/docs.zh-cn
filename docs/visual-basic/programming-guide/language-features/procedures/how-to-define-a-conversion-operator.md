@@ -35,11 +35,11 @@ caps.handback.revision: 14
 ## 示例  
  下面的示例定义名称为  `digit`  的结构与 `Byte` 之间的转换运算符。  
   
- [!code-vb[VbVbcnProcedures#27](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-define-a-conversi_1.vb)]  
+ [!code-vb[VbVbcnProcedures#27](./codesnippet/VisualBasic/how-to-define-a-conversion-operator_1.vb)]  
   
  可以使用下面的代码测试结构 `digit`。  
   
- [!code-vb[VbVbcnProcedures#28](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-define-a-conversi_2.vb)]  
+ [!code-vb[VbVbcnProcedures#28](./codesnippet/VisualBasic/how-to-define-a-conversion-operator_2.vb)]  
   
 ## 请参阅  
  [运算符过程](../../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)   

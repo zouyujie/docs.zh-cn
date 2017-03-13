@@ -23,7 +23,7 @@ caps.handback.revision: 45
   
  可使用 [interface](../../../csharp/language-reference/keywords/interface.md) 关键字定义接口，如以下示例所示。  
   
- [!code-cs[csProgGuideInheritance#47](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/index_1.cs)]  
+ [!code-cs[csProgGuideInheritance#47](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/index_1.cs)]  
   
  实现 <xref:System.IEquatable%601> 接口的任何类或结构都必须包含与该接口指定的签名匹配的 <xref:System.IEquatable%601.Equals%2A> 方法的定义。  因此，可以依靠实现 `IEquatable<T>` 的类来包含 `Equals` 方法，类的实例可以通过该方法确定它是否等于相同类的另一个实例。  
   
@@ -39,7 +39,7 @@ caps.handback.revision: 45
   
  下面的示例演示 IEquatable\<T\> 接口的实现。  实现类 `Car` 必须提供 <xref:System.IEquatable%601.Equals%2A> 方法的实现。  
   
- [!code-cs[csProgGuideInheritance#48](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/index_2.cs)]  
+ [!code-cs[csProgGuideInheritance#48](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/index_2.cs)]  
   
  类的属性和索引器可以为接口中定义的属性或索引器定义额外的访问器。  例如，一个接口可能会声明一个具有 [get](../../../csharp/language-reference/keywords/get.md) 访问器的属性。  实现该接口的类可以声明同时具有 `get` 和 [set](../../../csharp/language-reference/keywords/set.md) 访问器的相同属性。  但是，如果属性或索引器使用显式实现，则访问器必须匹配。  有关显式实现的详细信息，请参阅[显式接口实现](../../../csharp/programming-guide/interfaces/explicit-interface-implementation.md)和[接口属性](../../../csharp/programming-guide/classes-and-structs/interface-properties.md)。  
   

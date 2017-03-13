@@ -54,7 +54,7 @@ Windows API 是作为 Windows 操作系统一部分的动态链接库 \(DLL\)。
   
 4.  将下面的 `Declare` 函数添加到要使用 DLL 的类或模块：  
   
-     [!code-vb[VbVbalrInterop#9](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#9)]  
+     [!code-vb[VbVbalrInterop#9](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_1.vb)]  
   
 ### Declare 语句的各个部分  
  `Declare` 语句包括以下元素。  
@@ -88,7 +88,7 @@ Windows API 是作为 Windows 操作系统一部分的动态链接库 \(DLL\)。
   
 3.  将等效的 `Const` 语句添加到类或模块，以使这些常数可用于您的应用程序。  例如：  
   
-     [!code-vb[VbVbalrInterop#11](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#11)]  
+     [!code-vb[VbVbalrInterop#11](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_2.vb)]  
   
 ###### 调用 DLL 过程  
   
@@ -96,7 +96,7 @@ Windows API 是作为 Windows 操作系统一部分的动态链接库 \(DLL\)。
   
 2.  将代码添加到已添加按钮的 `Click` 事件处理程序中来调用该过程，并提供适当的参数：  
   
-     [!code-vb[VbVbalrInterop#12](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#12)]  
+     [!code-vb[VbVbalrInterop#12](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_3.vb)]  
   
 3.  通过按 F5 键运行项目。  将显示带有**“是”**和**“否”**响应按钮的消息框。  单击任何意一个按钮。  
   
@@ -109,11 +109,11 @@ Windows API 是作为 Windows 操作系统一部分的动态链接库 \(DLL\)。
   
 2.  若要简化对 `MarshalAs` 特性的访问，请向类或模块的代码顶部添加一条 `Imports` 语句，如下例所示：  
   
-     [!code-vb[VbVbalrInterop#13](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#13)]  
+     [!code-vb[VbVbalrInterop#13](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_4.vb)]  
   
 3.  将导入函数的函数原型添加到您正在使用的类或模块，并将 `MarshalAs` 特性应用到参数或返回值。  在以下示例中，要求类型为 `void*` 的 API 调用可作为 `AsAny` 封送：  
   
-     [!code-vb[VbVbalrInterop#14](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#14)]  
+     [!code-vb[VbVbalrInterop#14](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_5.vb)]  
   
 ## 使用 DllImport 的 API 调用  
  `DllImport` 特性提供了另一种方式来调用不带类型库的 DLL 中的函数。  `DllImport` 大致相当于使用 `Declare` 语句，但可以更多地控制如何调用函数。  
@@ -132,23 +132,23 @@ Windows API 是作为 Windows 操作系统一部分的动态链接库 \(DLL\)。
   
 5.  要简化对 `DllImport` 的访问，请向启动窗口类的代码顶部添加一条 `Imports` 语句：  
   
-     [!code-vb[VbVbalrInterop#13](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#13)]  
+     [!code-vb[VbVbalrInterop#13](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_4.vb)]  
   
 6.  在 `End Class` 语句之前为窗体声明一个空函数，并将函数命名为 `MoveFile`。  
   
 7.  将 `Public` 和 `Shared` 修饰符应用到函数声明中，并基于 Windows API 函数使用的参数来设置 `MoveFile` 的参数：  
   
-     [!code-vb[VbVbalrInterop#16](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#16)]  
+     [!code-vb[VbVbalrInterop#16](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_6.vb)]  
   
      函数可以有任意一个有效的过程名；`DllImport` 特性指定 DLL 中的名称。  它还为参数和返回值处理互操作封送处理，因此可以选择与 API 使用的数据类型相似的 Visual Studio 数据类型。  
   
 8.  将 `DllImport` 特性应用到空函数中。  第一个参数是包含要调用的函数的 DLL 的名称和位置。  不必为位于 Windows 系统目录下的文件指定路径。  第二个参数是一个命名参数，指定 Windows API 中的函数名称。  在本示例中，`DllImport` 特性强制将 `MoveFile` 调用转发给 KERNEL32.DLL 中的 `MoveFileW`。  `MoveFileW` 方法将文件从路径 `src` 复制到路径 `dst`。  
   
-     [!code-vb[VbVbalrInterop#17](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#17)]  
+     [!code-vb[VbVbalrInterop#17](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_7.vb)]  
   
 9. 将代码添加到 `Button2_Click` 事件处理程序，以调用函数：  
   
-     [!code-vb[VbVbalrInterop#18](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#18)]  
+     [!code-vb[VbVbalrInterop#18](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_8.vb)]  
   
 10. 创建名为 Test.Txt 的文件并将其放在您硬盘的 C:\\Tmp 目录下。  如果有必要，可创建 Tmp 目录。  
   

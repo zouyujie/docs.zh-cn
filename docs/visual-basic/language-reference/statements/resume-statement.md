@@ -63,7 +63,7 @@ Resume [ Next | line ]
 ## 示例  
  此示例使用 `Resume` 语句来结束过程中的错误处理，然后继续执行导致错误的语句。  将生成错误号 55 以表明使用的是 `Resume` 语句。  
   
- [!code-vb[VbVbalrErrorHandling#16](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/resume-statement_1.vb)]  
+ [!code-vb[VbVbalrErrorHandling#16](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/resume-statement_1.vb)]  
   
 ## 要求  
  **命名空间：** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  

@@ -41,7 +41,7 @@ i = "Hello"; // Error: "Cannot implicitly convert type 'string' to 'int'"
 ## 隐式转换  
  对于内置数值类型，如果要存储的值无需截断或四舍五入即可适应变量，则可以进行隐式转换。  例如，[long](../../../csharp/language-reference/keywords/long.md) 类型的变量（8 字节整数）能够存储 [int](../../../csharp/language-reference/keywords/int.md)（在 32 位计算机上为 4 字节）可存储的任何值。  在下面的示例中，编译器先将右侧的值隐式转换为 `long` 类型，再将它赋给 `bigNum`。  
   
- [!code-cs[csProgGuideTypes#34](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/casting-and-type-convers_1.cs)]  
+ [!code-cs[csProgGuideTypes#34](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/casting-and-type-conversions_1.cs)]  
   
  有关所有隐式数值转换的完整列表，请参见[隐式数值转换表](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)。  
   
@@ -55,7 +55,7 @@ Base b = d; // Always OK.
 ## 显式转换  
  但是，如果进行转换可能会导致信息丢失，则编译器会要求执行显式转换，显式转换也称为“强制转换”。  强制转换是显式通知编译器您打算进行转换且您知道可能会发生数据丢失的一种方式。  若要执行强制转换，请在要转换的值或变量前面的圆括号中指定要强制转换到的类型。  下面的程序将 [double](../../../csharp/language-reference/keywords/double.md) 强制转换为 [int](../../../csharp/language-reference/keywords/int.md)。  如不强制转换则该程序不会进行编译。  
   
- [!code-cs[csProgGuideTypes#2](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/casting-and-type-convers_2.cs)]  
+ [!code-cs[csProgGuideTypes#2](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/casting-and-type-conversions_2.cs)]  
   
  有关支持的显式数值转换的列表，请参见[显式数值转换表](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)。  
   
@@ -80,7 +80,7 @@ Giraffe g2 = (Giraffe) a;
 ## 运行时的类型转换异常  
  在某些引用类型转换中，编译器无法确定强制转换是否会有效。  正确进行编译的强制转换操作有可能在运行时失败。  如下面的示例所示，类型强制转换在运行时失败将导致引发 <xref:System.InvalidCastException>。  
   
- [!code-cs[csProgGuideTypes#41](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/casting-and-type-convers_3.cs)]  
+ [!code-cs[csProgGuideTypes#41](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/casting-and-type-conversions_3.cs)]  
   
  C\# 提供 [is](../../../csharp/language-reference/keywords/is.md) 和 [as](../../../csharp/language-reference/keywords/as.md) 运算符，使您可以在实际执行强制转换之前测试兼容性。  有关更多信息，请参见 [如何：使用 as 和 is 运算符安全地进行强制转换](../../../csharp/programming-guide/types/how-to-safely-cast-by-using-as-and-is-operators.md)。  
   

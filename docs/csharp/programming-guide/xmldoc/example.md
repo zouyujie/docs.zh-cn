@@ -36,7 +36,7 @@ caps.handback.revision: 13
  使用 [\/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) 进行编译可以将文档注释处理到文件中。  
   
 ## 示例  
- [!code-cs[csProgGuideDocComments#3](../../../csharp/programming-guide/xmldoc/codesnippet/csharp/example_1.cs)]  
+ [!code-cs[csProgGuideDocComments#3](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/example_1.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

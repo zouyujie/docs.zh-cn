@@ -38,7 +38,7 @@ LINQ 查询的各部分
   
  [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 通过实现局部类型推断（又称为“隐式类型”）使强类型变得方便易用。  在上一个示例中就使用了该功能，并且您将看到在所有 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] 示例和文档中都使用了该功能。  在 Visual Basic 中，只需使用 `Dim` 语句，而无需 `As` 子句即可实现局部类型推断。  在下面的示例中，`city` 被强类型化为字符串。  
   
- [!code-vb[VbLINQTypeRels#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/type-relationships-in-qu_1.vb)]  
+ [!code-vb[VbLINQTypeRels#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/type-relationships-in-query-operations_1.vb)]  
   
 > [!NOTE]
 >  仅当 `Option Infer` 设置为 `On` 时，局部类型推断才有效。  有关更多信息，请参见 [Option Infer 语句](../../../../visual-basic/language-reference/statements/option-infer-statement.md)。  
@@ -47,16 +47,16 @@ LINQ 查询的各部分
   
  对于与从数据源返回的类型不匹配的范围变量，您可能需要指定显式类型。  可通过使用 `As` 子句来指定范围变量的类型。  但是，如果转换为[收缩转换](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)，并且 `Option Strict` 设置为 `On`，则这样做会导致错误。  因此，建议您对从数据源中检索的值执行转换。  可通过使用 <xref:System.Linq.Enumerable.Cast%2A> 方法，将数据源中的值转换为显式范围变量类型。  还可以将 `Select` 子句中选定的值强制转换为与范围变量的类型不同的显式类型。  下面的代码中阐释了这几点。  
   
- [!code-vb[VbLINQTypeRels#4](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/type-relationships-in-qu_2.vb)]  
+ [!code-vb[VbLINQTypeRels#4](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/type-relationships-in-query-operations_2.vb)]  
   
 ## 返回源数据的整个元素的查询  
  下面的示例演示返回从源数据选择的元素序列的 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] 查询操作。  源 `names` 包含一个字符串数组，而查询输出是一个包含以字母 M 开头的字符串的序列。  
   
- [!code-vb[VbLINQTypeRels#2](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/type-relationships-in-qu_3.vb)]  
+ [!code-vb[VbLINQTypeRels#2](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/type-relationships-in-query-operations_3.vb)]  
   
  它与下面的代码等效，但它更简短、更易于编写。  在查询中依赖局部类型推断是 Visual Basic 中优先采用的一种方式。  
   
- [!code-vb[VbLINQTypeRels#3](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/type-relationships-in-qu_4.vb)]  
+ [!code-vb[VbLINQTypeRels#3](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/type-relationships-in-query-operations_4.vb)]  
   
  在前面两个代码示例中都存在下面的关系，无论类型是隐式还是显式确定的。  
   

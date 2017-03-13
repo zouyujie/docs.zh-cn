@@ -91,12 +91,12 @@ Next
   
  迭代器方法的返回类型为 <xref:System.Collections.Generic.IEnumerable%601>，迭代器接口类型。  在迭代器方法被调用时，它返回一个的幂的可枚举对象。  
   
- [!code-vb[VbVbalrStatements#98](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/yield-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#98](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_1.vb)]  
   
 ## 示例  
  下面的示例演示是迭代器的 `Get` 访问器。  属性声明包含一个 `Iterator` 修饰符。  
   
- [!code-vb[VbVbalrStatements#99](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/yield-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#99](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_2.vb)]  
   
  有关其他示例，请参见[迭代器](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)。  
   

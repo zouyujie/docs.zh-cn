@@ -10,7 +10,7 @@ caps.handback.revision: 8
 ## 示例  
  下面的查询返回那些在其第一次考试中得分为 90 分或更高的学生。  
   
- [!code-cs[csProgGuideLINQ#15](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#15)]  
+ [!code-cs[csProgGuideLINQ#15](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-query-a-collection-of-objects_1.cs)]  
   
  我们特意将此查询编写得非常简单，以使您能够进行试验。  例如，您可以在 `where` 子句中尝试使用更多的谓词，也可以使用 `orderby` 子句对结果进行排序。  
   

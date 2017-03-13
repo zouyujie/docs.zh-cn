@@ -46,7 +46,7 @@ caps.handback.revision: 11
   
  例如，下面的代码定义了一个函数、一个属性和一个事件的接口。  
   
- [!code-vb[VbVbalrOOP#17](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#17)]  
+ [!code-vb[VbVbalrOOP#17](../../../../visual-basic/misc/codesnippet/VisualBasic/index_1.vb)]  
   
 ## 实现接口  
  [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 保留字 `Implements` 有两种使用方式。  `Implements` 语句表示类或结构实现接口。  `Implements` 关键字表示类成员或结构成员实现特定的接口成员。  
@@ -59,7 +59,7 @@ caps.handback.revision: 11
   
  例如，以下代码显示了如何声明一个名为 `Sub1` 的用于实现接口方法的子例程：  
   
- [!code-vb[VbVbalrOOP#69](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#69)]  
+ [!code-vb[VbVbalrOOP#69](../../../../visual-basic/misc/codesnippet/VisualBasic/index_2.vb)]  
   
  实现成员的参数类型和返回类型必须与接口属性或接口中的成员声明匹配。  实现接口元素的最常用方法是采用一个与接口同名的成员，如上述示例所示。  
   
@@ -67,7 +67,7 @@ caps.handback.revision: 11
   
  使用 `Implements`，你还可以编写单个方法来实现接口中定义的多个方法，如下面的示例所示：  
   
- [!code-vb[VbVbalrOOP#70](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#70)]  
+ [!code-vb[VbVbalrOOP#70](../../../../visual-basic/misc/codesnippet/VisualBasic/index_3.vb)]  
   
  可以使用私有成员来实现接口成员。  在私有成员实现一个接口成员时，即使在类的对象变量上不能直接使用该成员，仍然可以通过接口将其变为可用成员。  
   
@@ -76,15 +76,15 @@ caps.handback.revision: 11
   
  下面的示例定义了两个接口。  第二个接口 `Interface2` 继承 `Interface1` 并定义附加属性和方法。  
   
- [!code-vb[VbVbalrOOP#39](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#39)]  
+ [!code-vb[VbVbalrOOP#39](../../../../visual-basic/misc/codesnippet/VisualBasic/index_4.vb)]  
   
  下一个示例则实现在上一示例中定义的接口 `Interface1`：  
   
- [!code-vb[VbVbalrOOP#40](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#40)]  
+ [!code-vb[VbVbalrOOP#40](../../../../visual-basic/misc/codesnippet/VisualBasic/index_5.vb)]  
   
  最后一个示例实现 `Interface2`，包括继承自 `Interface1` 的方法：  
   
- [!code-vb[VbVbalrOOP#41](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#41)]  
+ [!code-vb[VbVbalrOOP#41](../../../../visual-basic/misc/codesnippet/VisualBasic/index_6.vb)]  
   
  可以使用 readwrite 属性实现 readonly 属性（也就是说，无需在实现类中将其声明为 readonly）。  实现接口承诺至少实现接口声明的成员，但你还可以提供更多功能，如允许对属性进行编写。  
   

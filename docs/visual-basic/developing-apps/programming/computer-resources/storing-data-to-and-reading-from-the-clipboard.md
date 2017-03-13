@@ -31,13 +31,13 @@ caps.handback.revision: 21
 ## 读取剪贴板  
  使用 <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText%2A> 方法读取剪贴板上的文本。  下面的代码读取该文本并在消息框中显示该  必须在该示例的剪贴板上存储的文本才能正确运行。  
   
- [!code-vb[VbVbcnMyClipboard#4](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/storing-data-to-and-read_1.vb)]  
+ [!code-vb[VbVbcnMyClipboard#4](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_1.vb)]  
   
  此代码示例也可用作 IntelliSense 代码段。  在代码段选择器，它位于 **windows 窗体应用程序 \> 剪贴板**。  有关更多信息，请参见 [代码段](/visual-studio/ide/code-snippets)。  
   
  使用 <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetImage%2A> 方法从剪贴板检索图像。  此示例检查是否有剪贴板上的图像。检索并赋给到`PictureBox1`。  
   
- [!code-vb[VbResourceTasks#16](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/storing-data-to-and-read_2.vb)]  
+ [!code-vb[VbResourceTasks#16](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_2.vb)]  
   
  此代码示例也可用作 IntelliSense 代码段。  在代码段选择器中，它位于 windows 窗体应用程序 \> 剪贴板。 有关更多信息，请参见。  
   
@@ -48,31 +48,31 @@ caps.handback.revision: 21
   
  使用 `ContainsImage` 函数确定剪贴板上包含的数据是否为图像。  下面的代码检查数据是否为图像并作出相应报表。  
   
- [!code-vb[VbResourceTasks#13](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/storing-data-to-and-read_3.vb)]  
+ [!code-vb[VbResourceTasks#13](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_3.vb)]  
   
 ## 清除剪贴板  
  <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.Clear%2A> 方法清除剪贴板。  由于剪贴板由其他进程共享，因此清除剪贴板可能会影响这些进程。  
   
  下面的代码演示如何使用 `Clear` 方法。  
   
- [!code-vb[VbVbcnMyClipboard#3](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/storing-data-to-and-read_4.vb)]  
+ [!code-vb[VbVbcnMyClipboard#3](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_4.vb)]  
   
 ## 写入剪贴板  
  使用 <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText%2A> 方法将文本写入剪贴板。  下面的代码编写该字符串 “this is a test string”到剪贴板。  
   
- [!code-vb[VbVbcnMyClipboard#1](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/storing-data-to-and-read_5.vb)]  
+ [!code-vb[VbVbcnMyClipboard#1](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_5.vb)]  
   
  `SetText` 方法可接受包含 <xref:System.Windows.Forms.TextDataFormat>类型的格式参数。  下面的代码编写该字符串 “this is a test string”到剪贴板以 RTF 文本格式。  
   
- [!code-vb[VbVbcnMyClipboard#2](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/storing-data-to-and-read_6.vb)]  
+ [!code-vb[VbVbcnMyClipboard#2](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_6.vb)]  
   
  使用 <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData%2A> 方法将数据写入剪贴板。  此示例写入剪贴板的 `DataObject``dataChunk` 以自定义格式 `specialFormat`。  
   
- [!code-vb[VbVbcnMyClipboard#7](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/storing-data-to-and-read_7.vb)]  
+ [!code-vb[VbVbcnMyClipboard#7](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_7.vb)]  
   
  使用 <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio%2A> 方法将音频数据写入剪贴板。  此示例创建字节数组 `musicReader`，读取文件 `cool.wav` 到该文件中，然后将其复制到剪贴板。  
   
- [!code-vb[VbResourceTasks#5](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/storing-data-to-and-read_8.vb)]  
+ [!code-vb[VbResourceTasks#5](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_8.vb)]  
   
 > [!IMPORTANT]
 >  因为其他用户可以访问剪贴板，不要将其存储敏感信息，如密码或机密数据。  

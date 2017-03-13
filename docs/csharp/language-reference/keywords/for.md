@@ -24,7 +24,7 @@ caps.handback.revision: 39
 ## 示例  
  在下面的示例中，`i` 的值被写入控制台。并按 1 递增循环的每次迭代时。  
   
- [!code-cs[csrefKeywordsIteration#2](../../../csharp/language-reference/keywords/codesnippet/csharp/for_1.cs)]  
+ [!code-cs[csrefKeywordsIteration#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_1.cs)]  
   
  前面示例中的 `for` 语句执行以下操作。  
   
@@ -101,11 +101,11 @@ for (initializer; condition; iterator)
   
  下面的示例阐释若干不太常见选择：将值赋给初始值设定项部分的外部循环变量，对初始值设定项和迭代器部分的 `Console.WriteLine` 方法和更改两个变量的值在迭代器部分。  
   
- [!code-cs[csrefKeywordsIteration#8](../../../csharp/language-reference/keywords/codesnippet/csharp/for_2.cs)]  
+ [!code-cs[csrefKeywordsIteration#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_2.cs)]  
   
  定义一个 `for` 语句的任何表达式都是可选的。  例如，下面的语句创建无限循环。  
   
- [!code-cs[csrefKeywordsIteration#3](../../../csharp/language-reference/keywords/codesnippet/csharp/for_3.cs)]  
+ [!code-cs[csrefKeywordsIteration#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_3.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

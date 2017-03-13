@@ -30,7 +30,7 @@ caps.handback.revision: 17
   
 -   使用 `CopyFile` 方法并指定源文件和目标目录，可以复制文件。  通过 `overwrite` 参数，可以指定是否覆盖现有文件。  下面的代码示例演示如何使用 `CopyFile`。  
   
-     [!code-vb[VbFileIOMisc#24](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-create-a-copy-of-_1_1.vb)]  
+     [!code-vb[VbFileIOMisc#24](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-create-a-copy-of-a-file-in-a-different-directory_1.vb)]  
   
 ## 可靠编程  
  以下情况可能会导致引发异常：  

@@ -30,7 +30,7 @@ caps.handback.revision: 22
   
  例如，可以将嵌入式表达式与文本内容组合在一起，以创建 XML 元素文本。  
   
- [!code-vb[VbXMLSamples#27](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/embedded-expressions-in-_1.vb)]  
+ [!code-vb[VbXMLSamples#27](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/embedded-expressions-in-xml_1.vb)]  
   
  如果 `isbnNumber` 包含整数 12345 而 `modifiedDate` 包含日期 3\/5\/2006，则当此代码执行时，`book` 的值为：  
   
@@ -55,27 +55,27 @@ caps.handback.revision: 22
   
 -   XML 元素名称中的嵌入式表达式的示例：  
   
-     [!code-vb[VbXMLSamples#32](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/embedded-expressions-in-_2.vb)]  
+     [!code-vb[VbXMLSamples#32](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/embedded-expressions-in-xml_2.vb)]  
   
 -   XML 元素内容中的嵌入式表达式的示例：  
   
-     [!code-vb[VbXMLSamples#33](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/embedded-expressions-in-_3.vb)]  
+     [!code-vb[VbXMLSamples#33](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/embedded-expressions-in-xml_3.vb)]  
   
 -   XML 元素特性名称中的嵌入式表达式的示例：  
   
-     [!code-vb[VbXMLSamples#34](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/embedded-expressions-in-_4.vb)]  
+     [!code-vb[VbXMLSamples#34](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/embedded-expressions-in-xml_4.vb)]  
   
 -   XML 元素特性值中的嵌入式表达式的示例：  
   
-     [!code-vb[VbXMLSamples#35](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/embedded-expressions-in-_5.vb)]  
+     [!code-vb[VbXMLSamples#35](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/embedded-expressions-in-xml_5.vb)]  
   
 -   XML 元素特性中的嵌入式表达式的示例：  
   
-     [!code-vb[VbXMLSamples#36](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/embedded-expressions-in-_6.vb)]  
+     [!code-vb[VbXMLSamples#36](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/embedded-expressions-in-xml_6.vb)]  
   
 -   XML 文档根元素中的嵌入式表达式的示例：  
   
-     [!code-vb[VbXMLSamples#37](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/embedded-expressions-in-_7.vb)]  
+     [!code-vb[VbXMLSamples#37](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/embedded-expressions-in-xml_7.vb)]  
   
  如果启用了 `Option Strict`，则编译器会检查每个嵌入式表达式的类型是否扩大为所需类型。  唯一的例外是 XML 文档的根元素，该元素在代码运行时进行验证。  如果在不启用 `Option Strict` 的情况下进行编译，则可以嵌入类型为 `Object` 的表达式，这些表达式的类型在运行时进行验证。  
   

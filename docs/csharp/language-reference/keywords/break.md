@@ -24,17 +24,17 @@ caps.handback.revision: 21
 ## 示例  
  在此示例中，条件语句包含一个应从 1 计数到 100 的计数器；但 `break` 语句在计数器计数到 4 后终止了循环。  
   
- [!code-cs[csrefKeywordsJump#1](../../../csharp/language-reference/keywords/codesnippet/csharp/break_1.cs)]  
+ [!code-cs[csrefKeywordsJump#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/break_1.cs)]  
   
 ## 示例  
  在此示例中，`break` 语句用于中断内层嵌套循环，并将控制权返回给外层循环。  
   
- [!code-cs[csrefKeywordsJump#7](../../../csharp/language-reference/keywords/codesnippet/csharp/break_2.cs)]  
+ [!code-cs[csrefKeywordsJump#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/break_2.cs)]  
   
 ## 示例  
  下面的示例演示 `break` 在 [switch](../../../csharp/language-reference/keywords/switch.md) 语句中的用法。  
   
- [!code-cs[csrefKeywordsJump#2](../../../csharp/language-reference/keywords/codesnippet/csharp/break_3.cs)]  
+ [!code-cs[csrefKeywordsJump#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/break_3.cs)]  
   
  如果输入了 `4`，则输出为：  
   

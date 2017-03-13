@@ -25,7 +25,7 @@ caps.handback.revision: 21
  有关重新引发异常的更多信息和示例，请参见 [try\-catch](../../../csharp/language-reference/keywords/try-catch.md) 和[“引发异常”](../Topic/How%20to:%20Explicitly%20Throw%20Exceptions.md)。  有关 `finally` 的更多信息，请参见 [尝试最终](../../../csharp/language-reference/keywords/try-finally.md)块。  
   
 ## 示例  
- [!code-cs[csrefKeywordsExceptions#1](../../../csharp/language-reference/keywords/codesnippet/csharp/try-catch-finally_1.cs)]  
+ [!code-cs[csrefKeywordsExceptions#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch-finally_1.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

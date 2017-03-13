@@ -28,7 +28,7 @@ caps.handback.revision: 20
 ## 示例  
  本示例将使用 `My.Application.Log.WriteEntry` 方法来写出跟踪信息。  
   
- [!code-vb[VbVbalrMyApplicationLog#11](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/visualbasic/VbVbalrMyApplicationLog/Form1.vb#11)]  
+ [!code-vb[VbVbalrMyApplicationLog#11](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/how-to-write-log-messages_1.vb)]  
   
 ## .NET Framework 安全性  
  请确保写入日志的数据不包含敏感信息，如用户密码。 有关详细信息，请参阅[使用 Application 日志](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)。  

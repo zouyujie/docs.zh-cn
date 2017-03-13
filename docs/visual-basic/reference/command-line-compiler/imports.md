@@ -50,7 +50,7 @@ caps.handback.revision: 15
 ## 示例  
  当指定 `/imports:system` 时，下面的代码将会编译。  
   
- [!code-vb[VbVbalrCompiler#21](../../../visual-basic/reference/command-line-compiler/codesnippet/visualbasic/imports_1.vb)]  
+ [!code-vb[VbVbalrCompiler#21](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/imports_1.vb)]  
   
 ## 请参阅  
  [Visual Basic 命令行编译器](../../../visual-basic/reference/command-line-compiler/index.md)   

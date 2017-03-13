@@ -26,7 +26,7 @@ caps.handback.revision: 21
 ## 编译器生成的代码  
  对于下面的 `product` 定义，编译器创建一个包含 `Name`、`Price` 和 `OnHand` 属性的新类定义。  
   
- [!code-vb[VbVbalrAnonymousTypes#25](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/anonymous-type-definition_1.vb)]  
+ [!code-vb[VbVbalrAnonymousTypes#25](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/anonymous-type-definition_1.vb)]  
   
  类定义包含的属性定义类似于下面的内容。  请注意，键属性没有 `Set` 方法。  键属性的值是只读的。  
   
@@ -75,13 +75,13 @@ End Class
   
      例如，在下面的示例中，`Equals` 仅对 `employee01` 和 `employee08` 返回 `True`。  每一行前面的注释都指出新实例不匹配 `employee01` 的原因。  
   
-     [!code-vb[VbVbalrAnonymousTypes#24](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/anonymous-type-definition_2.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#24](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/anonymous-type-definition_2.vb)]  
   
 -   `GetHashcode` 提供适当的唯一 GetHashCode 算法  该算法仅使用键属性来计算哈希代码。  
   
 -   `ToString` 返回相连接的属性值字符串，如下面的示例所示。  既包含键属性也包含非键属性。  
   
-     [!code-vb[VbVbalrAnonymousTypes#29](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/anonymous-type-definition_3.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#29](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/anonymous-type-definition_3.vb)]  
   
  匿名类型的显式命名属性不能与这些生成的方法冲突。  也就是说，不能使用 `.Equals`、`.GetHashCode` 或 `.ToString` 来命名属性。  
   

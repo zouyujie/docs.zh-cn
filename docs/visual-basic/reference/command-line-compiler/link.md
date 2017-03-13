@@ -74,18 +74,18 @@ caps.handback.revision: 27
 ### 泛型接口  
  不能使用从互操作程序集中嵌入的泛型接口。  这将在下面的示例中显示。  
   
- [!code-vb[VbLinkCompiler#1](../../../visual-basic/reference/command-line-compiler/codesnippet/visualbasic/vblinkcompiler/module1.vb#1)]  
+ [!code-vb[VbLinkCompiler#1](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/link_1.vb)]  
   
 ### 具有泛型参数的类型  
  对于具有泛型参数并且该参数类型是从互操作程序集嵌入的类型，如果该类型来自外部程序集，则不能使用该类型。  此限制不适用于接口。  例如，请考虑在 <xref:Microsoft.Office.Interop.Excel> 程序集中定义的 <xref:Microsoft.Office.Interop.Excel.Range> 接口。  如果库从 <xref:Microsoft.Office.Interop.Excel> 程序集嵌入互操作类型并公开一个返回泛型类型的方法，该泛型类型的参数类型为 <xref:Microsoft.Office.Interop.Excel.Range> 接口，则该方法必须返回一个泛型接口，如下面的代码示例中所示。  
   
- [!code-vb[VbLinkCompiler#2](../../../visual-basic/reference/command-line-compiler/codesnippet/visualbasic/vblinkcompiler/utility.vb#2)]  
-[!code-vb[VbLinkCompiler#3](../../../visual-basic/reference/command-line-compiler/codesnippet/visualbasic/vblinkcompiler/utility.vb#3)]  
-[!code-vb[VbLinkCompiler#4](../../../visual-basic/reference/command-line-compiler/codesnippet/visualbasic/vblinkcompiler/utility.vb#4)]  
+ [!code-vb[VbLinkCompiler#2](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/link_2.vb)]  
+[!code-vb[VbLinkCompiler#3](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/link_3.vb)]  
+[!code-vb[VbLinkCompiler#4](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/link_4.vb)]  
   
  在下面的示例中，客户端代码可调用在不出错的情况下返回 <xref:System.Collections.IList> 泛型接口的方法。  
   
- [!code-vb[VbLinkCompiler#5](../../../visual-basic/reference/command-line-compiler/codesnippet/visualbasic/vblinkcompiler/module1.vb#5)]  
+ [!code-vb[VbLinkCompiler#5](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/link_5.vb)]  
   
 ## 示例  
  下面的代码编译源文件 `OfficeApp.vb` 并引用 `COMData1.dll` 和 `COMData2.dll` 中的程序集来生成 `OfficeApp.exe`。  

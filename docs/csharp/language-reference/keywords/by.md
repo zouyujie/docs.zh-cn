@@ -24,7 +24,7 @@ caps.handback.revision: 6
 ## 示例  
  下面的示例演示如何在 `group` 子句中使用 `by` 上下文关键字，以指定按照每个学生姓氏的第一个字母对学生进行分组。  
   
- [!code-cs[csrefKeywordsContextual#10](../../../csharp/language-reference/keywords/codesnippet/csharp/by_1.cs)]  
+ [!code-cs[csrefKeywordsContextual#10](../../../csharp/language-reference/keywords/codesnippet/CSharp/by_1.cs)]  
   
 ## 请参阅  
  [LINQ 查询表达式](../../../csharp/programming-guide/linq-query-expressions/index.md)

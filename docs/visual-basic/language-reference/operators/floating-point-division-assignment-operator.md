@@ -55,7 +55,7 @@ variableorproperty /= expression
 ## 示例  
  下例使用 `/=` 运算符将一个 `Integer` 变量除以第二个该变量，并将所得的商赋给第一个变量。  
   
- [!code-vb[VbVbalrOperators#17](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/floating-point-division-_0_1.vb)]  
+ [!code-vb[VbVbalrOperators#17](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/floating-point-division-assignment-operator_1.vb)]  
   
 ## 请参阅  
  [\/ 运算符](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)   

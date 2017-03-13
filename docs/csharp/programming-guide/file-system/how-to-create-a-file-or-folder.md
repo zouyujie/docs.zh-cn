@@ -22,7 +22,7 @@ caps.handback.revision: 22
 您可通过编程方式在您的计算机上创建文件夹、子文件夹和子文件夹中的文件，并将数据写入文件。  
   
 ## 示例  
- [!code-cs[csFilesandFolders#10](../../../csharp/programming-guide/file-system/codesnippet/csharp/csFilesFolders/FileIteration.cs#10)]  
+ [!code-cs[csFilesandFolders#10](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-create-a-file-or-folder_1.cs)]  
   
  如果该文件夹已存在，则 <xref:System.IO.Directory.CreateDirectory%2A> 不执行任何操作，且不会引发异常。  但是，<xref:System.IO.File.Create%2A?displayProperty=fullName> 用新的文件替换现有文件。  该示例使用一个 `if`\-`else` 语句阻止现有文件被替换。  
   

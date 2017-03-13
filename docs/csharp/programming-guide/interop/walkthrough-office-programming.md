@@ -65,8 +65,8 @@ caps.handback.revision: 46
   
 2.  将以下 `Imports` 语句 \(Visual Basic\) 或 `using` 指令 \(C\#\) 添加到代码文件的顶部（如果不存在）。  
   
-     [!code-cs[csOfficeWalkthrough#1](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#1)]
-     [!code-vb[csOfficeWalkthrough#1](../../../csharp/programming-guide/interop/codesnippet/visualbasic/officewalkthroughsnippets - vb/thisaddin.vb#1)]  
+     [!code-cs[csOfficeWalkthrough#1](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_1.cs)]
+     [!code-vb[csOfficeWalkthrough#1](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_1.vb)]  
   
 ### 创建银行帐户列表  
   
@@ -74,20 +74,20 @@ caps.handback.revision: 46
   
 2.  将 `Account` 类的定义替换为以下代码。  类定义使用*“自动实现的属性”*，在 Visual Studio 2010 中，是 Visual Basic 的新功能。  有关详细信息，请参阅[自动实现的属性](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)。  
   
-     [!code-cs[csOfficeWalkthrough#2](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/account.cs#2)]
-     [!code-vb[csOfficeWalkthrough#2](../../../csharp/programming-guide/interop/codesnippet/visualbasic/officewalkthroughsnippets - vb/account.vb#2)]  
+     [!code-cs[csOfficeWalkthrough#2](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_2.cs)]
+     [!code-vb[csOfficeWalkthrough#2](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_2.vb)]  
   
 3.  若要创建包含两个帐户的 `bankAccounts` 列表，请将以下代码添加到 ThisAddIn.vb 或 ThisAddIn.cs 中的 `ThisAddIn_Startup` 方法。  列表声明使用*“集合初始值设定项”*，在 Visual Studio 2010 中，是 Visual Basic 的新功能。  有关详细信息，请参阅[集合初始值设定项](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)。  
   
-     [!code-cs[csOfficeWalkthrough#3](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#3)]
-     [!code-vb[csOfficeWalkthrough#3](../../../csharp/programming-guide/interop/codesnippet/visualbasic/officewalkthroughsnippets - vb/thisaddin.vb#3)]  
+     [!code-cs[csOfficeWalkthrough#3](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_3.cs)]
+     [!code-vb[csOfficeWalkthrough#3](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_3.vb)]  
   
 ### 将数据导出到 Excel  
   
 1.  在相同的文件中，将以下方法添加到 `ThisAddIn` 类。  该方法设置 Excel 工作薄并将数据导出到工作簿。  
   
-     [!code-cs[csOfficeWalkthrough#4](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#4)]
-     [!code-vb[csOfficeWalkthrough#4](../../../csharp/programming-guide/interop/codesnippet/visualbasic/officewalkthroughsnippets - vb/thisaddin.vb#4)]  
+     [!code-cs[csOfficeWalkthrough#4](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_4.cs)]
+     [!code-vb[csOfficeWalkthrough#4](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_4.vb)]  
   
      此方法使用 C\# 的两项新功能。  Visual Basic 中已存在这两项功能。  
   
@@ -97,11 +97,11 @@ caps.handback.revision: 46
   
     -   [Range](http://go.microsoft.com/fwlink/?LinkId=210911) 对象的 `Range` 和 `Offset` 属性使用*“索引属性”*功能。  此功能允许你通过以下典型 C\# 语法从 COM 类型使用这些属性。  索引属性还允许你使用 `Range` 对象的 `Value` 属性，因此不必使用 `Value2` 属性。  `Value` 属性已编入索引，但索引是可选的。  在以下示例中，可选参数和索引属性配合使用。  
   
-         [!code-cs[csOfficeWalkthrough#5](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#5)]  
+         [!code-cs[csOfficeWalkthrough#5](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_5.cs)]  
   
          在早期版本的语言中，需要以下特殊语法。  
   
-         [!code-cs[csOfficeWalkthrough#6](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#6)]  
+         [!code-cs[csOfficeWalkthrough#6](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_6.cs)]  
   
          你不能创建自己的索引属性。  该功能仅支持使用现有索引属性。  
   
@@ -109,14 +109,14 @@ caps.handback.revision: 46
   
 2.  在 `DisplayInExcel` 的末尾添加以下代码以将列宽调整为适合内容。  
   
-     [!code-cs[csOfficeWalkthrough#7](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#7)]
-     [!code-vb[csOfficeWalkthrough#7](../../../csharp/programming-guide/interop/codesnippet/visualbasic/officewalkthroughsnippets - vb/thisaddin.vb#7)]  
+     [!code-cs[csOfficeWalkthrough#7](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_7.cs)]
+     [!code-vb[csOfficeWalkthrough#7](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_7.vb)]  
   
      这些添加展示 C\# 2010 中的另一项新功能：处理从 COM 主机返回的 `Object` 值（如 Office），就像它们具有 [dynamic](../../../csharp/language-reference/keywords/dynamic.md) 类型一样。  当“嵌入互操作类型”设置为其默认值 `True` 时，或者由 [\/link](../../../csharp/language-reference/compiler-options/link-compiler-option.md) 编译器选项引用程序集时，自动发生这种情况。  键入 `dynamic` 允许后期绑定（Visual Basic 已提供该功能）并可避免 Visual C\# 2008 和早期版本的语言中要求的显式强制转换。  
   
      例如，`excelApp.Columns[1]` 返回 `Object`，并且 `AutoFit` 是 Excel 的 [Range](http://go.microsoft.com/fwlink/?LinkId=210911) 方法。  如果没有 `dynamic`，你必须将 `excelApp.Columns[1]` 返回的对象强制转换为 `Range` 的实例，然后才能调用 `AutoFit` 方法。  
   
-     [!code-cs[csOfficeWalkthrough#8](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#8)]  
+     [!code-cs[csOfficeWalkthrough#8](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_8.cs)]  
   
      有关嵌入互操作类型的详细信息，请参阅本主题后面部分的“查找 PIA 引用”和“还原 PIA 依赖项”程序。  有关 `dynamic` 的详细信息，请参阅 [dynamic](../../../csharp/language-reference/keywords/dynamic.md) 或 [使用类型 dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)。  
   
@@ -124,8 +124,8 @@ caps.handback.revision: 46
   
 1.  在 `ThisAddIn_StartUp` 方法的末尾添加以下代码。  对 `DisplayInExcel` 的调用包含两个参数。  第一个参数是要处理的帐户列表的名称。  第二个参数是定义如何处理数据的多行 lambda 表达式。  每个帐户的 `ID` 和 `balance` 值都显示在相邻的单元格中，如果余额小于零，则相应的行显示为红色。  多行 lambda 表达式是 Visual Basic 2010 中的新功能。  有关详细信息，请参阅[lambda 表达式](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)。  
   
-     [!code-cs[csOfficeWalkthrough#9](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#9)]
-     [!code-vb[csOfficeWalkthrough#9](../../../csharp/programming-guide/interop/codesnippet/visualbasic/officewalkthroughsnippets - vb/thisaddin.vb#9)]  
+     [!code-cs[csOfficeWalkthrough#9](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_9.cs)]
+     [!code-vb[csOfficeWalkthrough#9](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_9.vb)]  
   
 2.  若要运行程序，请按 F5。  出现包含帐户数据的 Excel 工作表。  
   
@@ -133,12 +133,12 @@ caps.handback.revision: 46
   
 1.  在 `ThisAddIn_StartUp` 方法末尾添加以下代码，以创建包含指向 Excel 工作簿的链接的 Word 文档。  
   
-     [!code-cs[csOfficeWalkthrough#10](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#10)]
-     [!code-vb[csOfficeWalkthrough#10](../../../csharp/programming-guide/interop/codesnippet/visualbasic/officewalkthroughsnippets - vb/thisaddin.vb#10)]  
+     [!code-cs[csOfficeWalkthrough#10](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_10.cs)]
+     [!code-vb[csOfficeWalkthrough#10](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_10.vb)]  
   
      此代码展示 C\# 中的几项新功能：在 COM 编程中忽略 `ref` 的功能、命名参数以及可选参数。  Visual Basic 中已存在这些功能。  [PasteSpecial](http://go.microsoft.com/fwlink/?LinkId=147099) 方法有七个参数，每个参数都是可选引用参数。  在 Visual C\# 2010 之前，你必须为这七个形参定义用作实参的对象变量，即使你没有有意义的值发送。  通过命名实参和可选实参，你可以指定希望按名称访问的形参并仅将实参发送到这些形参。  在本示例中，发送实参以指示应创建指向剪贴板上工作簿的链接（形参 `Link`）并指示该链接应在 Word 文档中显示为图标（形参 `DisplayAsIcon`）。  Visual C\# 2010 还允许你忽略这些参数的 `ref` 关键字。  将 Visual C\# 2008 的以下代码段与 Visual C\# 2010 中需要的单行进行比较：  
   
-     [!code-cs[csOfficeWalkthrough#11](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#11)]  
+     [!code-cs[csOfficeWalkthrough#11](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_11.cs)]  
   
 ### 运行应用程序  
   

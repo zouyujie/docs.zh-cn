@@ -23,7 +23,7 @@ caps.handback.revision: 23
   
  在未检查的上下文中，如果表达式产生的值在目标类型范围之外，并不会标记溢出。  例如，下例中的计算在 `unchecked` 块或表达式中执行，因此将忽略结果对于整数而言过大这一事实，并会对 `int1` 赋予值 \-2,147,483,639。  
   
- [!code-cs[csrefKeywordsChecked#5](../../../csharp/language-reference/keywords/codesnippet/csharp/unchecked_1.cs)]  
+ [!code-cs[csrefKeywordsChecked#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/unchecked_1.cs)]  
   
  如果移除 `unchecked` 环境，则发生编译错误。  因为表达式的各个项都是常数，所以可以在编译时检测到溢出。  
   
@@ -34,7 +34,7 @@ caps.handback.revision: 23
 ## 示例  
  此示例演示如何使用 `unchecked` 关键字。  
   
- [!code-cs[csrefKeywordsChecked#2](../../../csharp/language-reference/keywords/codesnippet/csharp/unchecked_2.cs)]  
+ [!code-cs[csrefKeywordsChecked#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/unchecked_2.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

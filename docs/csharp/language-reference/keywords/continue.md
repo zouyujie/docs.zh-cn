@@ -24,7 +24,7 @@ caps.handback.revision: 20
 ## 示例  
  在本示例中，计数器最初是从 1 到 10 进行计数。  通过使用该表达式 `(i < 9)`一起的 `continue` 语句，在 `continue` 和 `for` 主体结束的语句跳过。  
   
- [!code-cs[csrefKeywordsJump#3](../../../csharp/language-reference/keywords/codesnippet/csharp/continue_1.cs)]  
+ [!code-cs[csrefKeywordsJump#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/continue_1.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

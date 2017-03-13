@@ -21,15 +21,15 @@ caps.handback.revision: 28
   
  语句可以是以分号结尾的单行代码，或者是语句块中的一系列单行语句。  语句块括在括号 {} 中，并且可以包含嵌套块。  下面的代码演示两个单行语句示例和一个多行语句块：  
   
- [!code-cs[csProgGuideStatements#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/statements_1.cs)]  
+ [!code-cs[csProgGuideStatements#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/statements_1.cs)]  
   
 ## 语句的类型  
  下表列出 C\# 中的各种语句类型及其关联的关键字，并提供指向包含更多信息的主题的链接：  
   
 |类别|C\# 关键字\/说明|  
 |--------|-----------------|  
-|声明语句|声明语句引入新的变量或常量。  变量声明可以选择为变量赋值。  在常量声明中必须赋值。<br /><br /> [!code-cs[csProgGuideStatements#23](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/statements_2.cs)]|  
-|表达式语句|用于计算值的表达式语句必须在变量中存储该值。<br /><br /> [!code-cs[csProgGuideStatements#24](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/statements_3.cs)]|  
+|声明语句|声明语句引入新的变量或常量。  变量声明可以选择为变量赋值。  在常量声明中必须赋值。<br /><br /> [!code-cs[csProgGuideStatements#23](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/statements_2.cs)]|  
+|表达式语句|用于计算值的表达式语句必须在变量中存储该值。<br /><br /> [!code-cs[csProgGuideStatements#24](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/statements_3.cs)]|  
 |[选择语句](../../../csharp/language-reference/keywords/selection-statements.md)|选择语句用于根据一个或多个指定条件分支到不同的代码段。  有关更多信息，请参见下列主题：<br /><br /> [if](../../../csharp/language-reference/keywords/if-else.md), [else](../../../csharp/language-reference/keywords/if-else.md), [switch](../../../csharp/language-reference/keywords/switch.md), [case](../../../csharp/language-reference/keywords/switch.md)|  
 |[迭代语句](../../../csharp/language-reference/keywords/iteration-statements.md)|迭代语句用于遍历集合（如数组），或重复执行同一组语句直到满足指定的条件。  有关更多信息，请参见下列主题：<br /><br /> [do](../../../csharp/language-reference/keywords/do.md), [for](../../../csharp/language-reference/keywords/for.md), [foreach](../../../csharp/language-reference/keywords/foreach-in.md), [in](../../../csharp/language-reference/keywords/foreach-in.md), [while](../../../csharp/language-reference/keywords/while.md)|  
 |[跳转语句](../../../csharp/language-reference/keywords/jump-statements.md)|跳转语句将控制转移给另一代码段。  有关更多信息，请参见下列主题：<br /><br /> [break](../../../csharp/language-reference/keywords/break.md), [continue](../../../csharp/language-reference/keywords/continue.md), [default](../../../csharp/language-reference/keywords/switch.md), [goto](../../../csharp/language-reference/keywords/goto.md), [return](../../../csharp/language-reference/keywords/return.md)，[yield](../../../csharp/language-reference/keywords/yield.md)|  
@@ -40,30 +40,30 @@ caps.handback.revision: 28
 |`fixed` 语句|Fixed 语句禁止垃圾回收器重定位可移动的变量。  有关更多信息，请参见 [fixed](../../../csharp/language-reference/keywords/fixed-statement.md)。|  
 |`lock` 语句|lock 语句用于限制一次仅允许一个线程访问代码块。  有关更多信息，请参见 [lock](../../../csharp/language-reference/keywords/lock-statement.md)。|  
 |标记语句|可以为语句指定一个标记，然后使用 [goto](../../../csharp/language-reference/keywords/goto.md) 关键字跳转到该标记语句。  （参见下一行中的示例。）|  
-|空语句|空语句只含一个分号。  空语句不执行任何操作，可以在需要语句但不需要执行任何操作的地方使用。  下面的示例演示空语句的两种用法：<br /><br /> [!code-cs[csProgGuideStatements#25](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/statements_4.cs)]|  
+|空语句|空语句只含一个分号。  空语句不执行任何操作，可以在需要语句但不需要执行任何操作的地方使用。  下面的示例演示空语句的两种用法：<br /><br /> [!code-cs[csProgGuideStatements#25](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/statements_4.cs)]|  
   
 ## 嵌入语句  
  一些语句（例如 [do](../../../csharp/language-reference/keywords/do.md)、[while](../../../csharp/language-reference/keywords/while.md)、[for](../../../csharp/language-reference/keywords/for.md) 和 [foreach](../../../csharp/language-reference/keywords/foreach-in.md)）后面始终跟有一条嵌入语句。  此嵌入语句可以是单个语句，也可以是语句块中括在括号 {} 内的多个语句。  甚至可以在括号 {} 内包含单行嵌入语句，如下面的示例所示：  
   
- [!code-cs[csProgGuideStatements#26](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/statements_5.cs)]  
+ [!code-cs[csProgGuideStatements#26](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/statements_5.cs)]  
   
  未括在括号 {} 内的嵌入语句不能作为声明语句或标记语句。  下面的示例演示了这种情况：  
   
- [!code-cs[csProgGuideStatements#27](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/statements_6.cs)]  
+ [!code-cs[csProgGuideStatements#27](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/statements_6.cs)]  
   
  将该嵌入语句放在语句块中以修复错误：  
   
- [!code-cs[csProgGuideStatements#28](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/statements_7.cs)]  
+ [!code-cs[csProgGuideStatements#28](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/statements_7.cs)]  
   
 ## 嵌套语句块  
  语句块可以嵌套，如以下代码所示：  
   
- [!code-cs[csProgGuideStatements#29](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/statements_8.cs)]  
+ [!code-cs[csProgGuideStatements#29](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/statements_8.cs)]  
   
 ## 无法访问的语句  
  如果编译器认为在任何情况下控制流都无法到达特定语句，将生成警告 CS0162，如下面的示例所示：  
   
- [!code-cs[csProgGuideStatements#22](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/statements_9.cs)]  
+ [!code-cs[csProgGuideStatements#22](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/statements_9.cs)]  
   
 ## 相关章节  
   

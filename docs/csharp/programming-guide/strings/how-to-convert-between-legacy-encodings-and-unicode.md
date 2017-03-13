@@ -22,7 +22,7 @@ caps.handback.revision: 11
 ## 示例  
  下面的示例演示如何转换按 8 位 ASCII 编码的文本文件，此转换根据 Windows 代码页 737 解释源文本。  
   
- [!code-cs[csProgGuideStrings#34](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#34)]  
+ [!code-cs[csProgGuideStrings#34](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-convert-between-legacy-encodings-and-unicode_1.cs)]  
   
 ## 请参阅  
  [字符串](../../../csharp/programming-guide/strings/index.md)

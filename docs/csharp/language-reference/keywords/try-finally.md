@@ -29,11 +29,11 @@ caps.handback.revision: 25
 ## 示例  
  在下面的示例中，无效转换语句导致 `System.InvalidCastException` 异常。  异常未处理。  
   
- [!code-cs[csrefKeywordsExceptions#4](../../../csharp/language-reference/keywords/codesnippet/csharp/try-finally_1.cs)]  
+ [!code-cs[csrefKeywordsExceptions#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-finally_1.cs)]  
   
  在下面的示例中，`TryCast` 方法中的异常在延伸调用堆栈的方法中被捕获。  
   
- [!code-cs[csrefKeywordsExceptions#6](../../../csharp/language-reference/keywords/codesnippet/csharp/try-finally_2.cs)]  
+ [!code-cs[csrefKeywordsExceptions#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-finally_2.cs)]  
   
  有关 `finally` 的更多信息，请参见 [try\-catch\-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)。  
   

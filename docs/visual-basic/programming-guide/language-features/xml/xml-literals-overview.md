@@ -36,11 +36,11 @@ caps.handback.revision: 27
 ## 简单文本  
  通过键入或粘贴有效的 XML，可以在 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 代码中创建 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq-md.md)] 对象。  XML 元素文本返回一个 <xref:System.Xml.Linq.XElement> 对象。  有关更多信息，请参见 [XML 元素文本](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)和 [XML 文本和 XML 1.0 规范](../../../../visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification.md)。  下面的示例创建了一个具有多个子元素的 XML 元素。  
   
- [!code-vb[VbXMLSamples#5](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-literals-overview_1.vb)]  
+ [!code-vb[VbXMLSamples#5](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_1.vb)]  
   
  可以通过以 `<?xml version="1.0"?>` 开始 XML 文本来创建 XML 文档，如下面的示例所示。  XML 文档文本返回一个 <xref:System.Xml.Linq.XDocument> 对象。  有关更多信息，请参见 [XML 文档文本](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)。  
   
- [!code-vb[VbXMLSamples#6](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-literals-overview_2.vb)]  
+ [!code-vb[VbXMLSamples#6](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_2.vb)]  
   
 > [!NOTE]
 >  [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中的 XML 文本语法与 XML 1.0 规范中的语法不完全相同。  有关更多信息，请参见 [XML 文本和 XML 1.0 规范](../../../../visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification.md)。  
@@ -57,12 +57,12 @@ caps.handback.revision: 27
   
  例如，下面的代码借助嵌入式查询，使用 `phoneNumbers2` 数组的成员来创建 XML 元素，然后将那些元素添加为 `contact2` 的子元素。  
   
- [!code-vb[VbXMLSamples#7](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-literals-overview_3.vb)]  
+ [!code-vb[VbXMLSamples#7](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_3.vb)]  
   
 ## 编译器如何从 XML 文本创建对象  
  [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 编译器将 XML 文本转换为对等效 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq-md.md)] 构造函数的调用，以生成 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq-md.md)] 对象。  例如，[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 编译器将下面的代码示例转换为对 <xref:System.Xml.Linq.XProcessingInstruction> 构造函数的调用以生成 XML 版本指令，转换为对 <xref:System.Xml.Linq.XElement> 构造函数的调用以生成 `<contact>`、`<name>` 和 `<phone>` 元素，转换为对 <xref:System.Xml.Linq.XAttribute> 构造函数的调用以生成 `type` 特性。  具体说来，给定以下示例中的特性，[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 编译器将调用 <xref:System.Xml.Linq.XAttribute.%23ctor%28System.Xml.Linq.XName%2CSystem.Object%29> 构造函数两次。  第一次调用将为 `name` 参数传递值 `type`，并且为 `value` 参数传递值 `home`。  第二次调用也将为 `name` 参数传递值 `type`，但为 `value` 参数传递值 `work`。  
   
- [!code-vb[VbXMLSamples#6](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-literals-overview_2.vb)]  
+ [!code-vb[VbXMLSamples#6](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_2.vb)]  
   
 ## 请参阅  
  <xref:System.Xml.Linq.XElement>   

@@ -55,7 +55,7 @@ result = object1 Is object2
 ## 示例  
  下面的示例使用 `Is` 运算符比较对象引用对。  结果赋值为 `Boolean` 值，它表示两个对象是否相同。  
   
- [!code-vb[VbVbalrOperators#27](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/is-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#27](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/is-operator_1.vb)]  
   
  如前面的示例所演示的一样，可以使用 `Is` 运算符测试早期绑定对象和后期绑定对象。  
   

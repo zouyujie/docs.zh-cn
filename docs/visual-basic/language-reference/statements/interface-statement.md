@@ -104,7 +104,7 @@ End Interface
   
      如果将类实例赋予某个变量，则此实例的成员的访问级别可能取决于该变量的数据类型是基础接口还是实现类。  下面的示例阐释了这一点。  
   
-     [!code-vb[VbVbalrStatements#39](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/interface-statement_1.vb)]  
+     [!code-vb[VbVbalrStatements#39](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/interface-statement_1.vb)]  
   
      如果通过 `varAsInterface` 访问类成员，则它们全都具有公共访问级别。  但是，如果通过 `varAsClass` 访问成员，则 `Sub` 过程 `doSomething` 具有私有访问级别。  
   
@@ -117,7 +117,7 @@ End Interface
 ## 示例  
  下面的示例使用 `Interface` 语句来定义一个名为 `thisInterface` 的接口，后者必须利用 `Property` 语句和 `Function` 语句来实现。  
   
- [!code-vb[VbVbalrStatements#40](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/interface-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#40](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/interface-statement_2.vb)]  
   
  请注意，`Property` 和 `Function` 语句并不在接口内引入以 `End Property` 和 `End Function` 结束的块。  接口只定义其成员的签名。  完整的 `Property` 和 `Function` 块出现在实现 `thisInterface` 的类中。  
   

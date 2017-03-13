@@ -30,7 +30,7 @@ caps.handback.revision: 17
   
 -   使用 XML 文本语法可以按内联方式创建 XML，该语法与实际的 XML 语法相同。  
   
-     [!code-vb[VbXMLSamples#5](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-create-xml-literals_1.vb)]  
+     [!code-vb[VbXMLSamples#5](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-xml-literals_1.vb)]  
   
      运行代码。  该代码的输出为：  
   
@@ -48,7 +48,7 @@ caps.handback.revision: 17
   
 -   以内联方式创建 XML 文档。  下面的代码创建了一个 XML 文档，该文档具有文本语法、一个 XML 声明、一条处理指令、一条注释以及一个包含其他元素的元素。  
   
-     [!code-vb[VbXMLSamples#30](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-create-xml-literals_2.vb)]  
+     [!code-vb[VbXMLSamples#30](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-xml-literals_2.vb)]  
   
      运行代码。  该代码的输出为：  
   

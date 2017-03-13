@@ -35,15 +35,15 @@ caps.handback.revision: 11
   
 1.  在代码文件的开头导入 <xref:System.Diagnostics> 命名空间。  有关更多信息，请参见 [Imports 语句（.NET 命名空间和类型）](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)。  
   
-     [!code-vb[VbVbalrMyApplicationLog#13](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/visualbasic/VbVbalrMyApplicationLog/Form1.vb#13)]  
+     [!code-vb[VbVbalrMyApplicationLog#13](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/troubleshooting-log-listeners_1.vb)]  
   
 2.  创建一个函数，用于返回由每个日志侦听器的信息组成的字符串。  
   
-     [!code-vb[VbVbalrMyApplicationLog#14](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/visualbasic/VbVbalrMyApplicationLog/Form1.vb#14)]  
+     [!code-vb[VbVbalrMyApplicationLog#14](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/troubleshooting-log-listeners_2.vb)]  
   
 3.  将日志的跟踪侦听器集合传递给 `GetListeners` 函数，并显示返回值。  
   
-     [!code-vb[VbVbalrMyApplicationLog#19](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/visualbasic/VbVbalrMyApplicationLog/Form1.vb#19)]  
+     [!code-vb[VbVbalrMyApplicationLog#19](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/troubleshooting-log-listeners_3.vb)]  
   
      有关更多信息，请参见 <xref:Microsoft.VisualBasic.Logging.Log.TraceSource%2A>。  
   

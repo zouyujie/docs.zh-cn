@@ -66,14 +66,14 @@ result = expression1 AndAlso expression2
 ## 示例  
  下面的示例使用 `AndAlso` 运算符对两个表达式执行逻辑合取。  结果是一个 `Boolean` 值，它表示整个联合表达式是否为真。  如果第一个表达式为 `False`，则不计算第二个表达式。  
   
- [!code-vb[VbVbalrOperators#24](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/andalso-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#24](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/andalso-operator_1.vb)]  
   
  上述示例分别产生结果 `True`、`False` 和 `False`。  在 `secondCheck` 计算中，不计算第二个表达式，因为第一个表达式已经为 `False`。  但是，在 `thirdCheck` 计算中，要计算第二个表达式。  
   
 ## 示例  
  下面的示例演示一个 `Function` 过程，该过程在数组元素中搜索指定值。  如果此数组为空，或者搜索数目超出了数组长度，则 `While` 语句不会根据搜索值测试数组元素。  
   
- [!code-vb[VbVbalrOperators#25](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/andalso-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#25](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/andalso-operator_2.vb)]  
   
 ## 请参阅  
  [逻辑\/按位运算符](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)   

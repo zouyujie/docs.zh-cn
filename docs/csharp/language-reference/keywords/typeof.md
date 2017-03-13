@@ -43,12 +43,12 @@ string s = method.ReturnType.GetInterface
 ```  
   
 ## 示例  
- [!code-cs[csrefKeywordsOperator#12](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsOperator/csrefKeywordsOperators.cs#12)]  
+ [!code-cs[csrefKeywordsOperator#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/typeof_1.cs)]  
   
 ## 示例  
  此示例使用 <xref:System.Object.GetType%2A> 方法确定用来包含数值计算的结果的类型。  这取决于结果数字的存储要求。  
   
- [!code-cs[csrefKeywordsOperator#13](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsOperator/csrefKeywordsOperators.cs#13)]  
+ [!code-cs[csrefKeywordsOperator#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/typeof_2.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

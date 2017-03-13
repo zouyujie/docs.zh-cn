@@ -48,7 +48,7 @@ Skip count
 ## 示例  
  下面的代码示例将 `Skip` 子句与 `Take` 子句一起使用，以便从页查询中返回数据。  `GetCustomers` 函数使用 `Skip` 子句跳过列表中的客户，直至到达提供的起始索引值为止，并使用 `Take` 子句返回从该索引值开始的客户页。  
   
- [!code-vb[VbSimpleQuerySamples#1](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#1)]  
+ [!code-vb[VbSimpleQuerySamples#1](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/skip-clause_1.vb)]  
   
 ## 请参阅  
  [Visual Basic 中的 LINQ 简介](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   

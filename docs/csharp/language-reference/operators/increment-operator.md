@@ -29,7 +29,7 @@ caps.handback.revision: 18
  数值和枚举类型具有预定义的递增运算符。 用户定义的类型可以重载 `++` 运算符。 对整数类型的操作通常可用于枚举。  
   
 ## 示例  
- [!code-cs[csRefOperators#3](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#3)]  
+ [!code-cs[csRefOperators#3](../../../csharp/language-reference/operators/codesnippet/CSharp/increment-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

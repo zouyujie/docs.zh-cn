@@ -70,12 +70,12 @@ caps.handback.revision: 46
   
  迭代器方法的返回类型是 <xref:System.Collections.IEnumerable>（一种迭代器接口类型）。  当调用迭代器方法时，它将返回一个包含数字幂的可枚举对象。  
   
- [!code-cs[csrefKeywordsContextual#5](../../../csharp/language-reference/keywords/codesnippet/csharp/yield_1.cs)]  
+ [!code-cs[csrefKeywordsContextual#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/yield_1.cs)]  
   
 ## 示例  
  下面的示例演示一个作为迭代器的 `get` 访问器。  在该示例中，每个 `yield return` 语句返回一个用户定义的类的实例。  
   
- [!code-cs[csrefKeywordsContextual#21](../../../csharp/language-reference/keywords/codesnippet/csharp/yield_2.cs)]  
+ [!code-cs[csrefKeywordsContextual#21](../../../csharp/language-reference/keywords/codesnippet/CSharp/yield_2.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

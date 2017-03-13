@@ -66,7 +66,7 @@ caps.handback.revision: 47
 ##  <a name="BKMK_ArrayElements"></a> 简单数组中的数组元素  
  下例声明了一个数组变量来表示语法学校每个年级的学生数。  
   
- [!code-vb[VbVbalrArrays#2](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_1.vb)]  
+ [!code-vb[VbVbalrArrays#2](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_1.vb)]  
   
  前面的示例中的数组 `students` 包含七个元素。 这些元素的索引范围为 0 到 6。 拥有此数组比声明七个变量更简单。  
   
@@ -81,7 +81,7 @@ caps.handback.revision: 47
   
  下面的示例演示了如何引用数组 `students` 的第一、第二和最后一个元素。  
   
- [!code-vb[VbVbalrArrays#3](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_2.vb)]  
+ [!code-vb[VbVbalrArrays#3](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_2.vb)]  
   
  你可以通过使用不带索引的数组变量名称来引用作为一个整体的数组。  
   
@@ -90,55 +90,55 @@ caps.handback.revision: 47
 ##  <a name="BKMK_CreatingAnArray"></a> 创建数组  
  你可以用几种方法定义数组的大小。 当声明数组时，你可以提供其大小，如以下示例所示。  
   
- [!code-vb[VbVbalrArrays#12](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_3.vb)]  
+ [!code-vb[VbVbalrArrays#12](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_3.vb)]  
   
  你还可以使用 `New` 子句提供数组大小，如以下示例所示。  
   
- [!code-vb[VbVbalrArrays#11](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_4.vb)]  
+ [!code-vb[VbVbalrArrays#11](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_4.vb)]  
   
  如果你具有现有数组，你可以通过使用 `Redim` 语句来重新定义其大小。 你可以指定 `Redim` 语句应保留的数组中的值，也可以指定它创建一个空数组。 下面的示例演示了用 `Redim` 语句来修改现有数组的大小的不同用法。  
   
- [!code-vb[VbVbalrArrays#13](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_5.vb)]  
+ [!code-vb[VbVbalrArrays#13](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_5.vb)]  
   
  有关详细信息，请参阅 [ReDim 语句](../../../../visual-basic/language-reference/statements/redim-statement.md)。  
   
 ##  <a name="BKMK_StoringValues"></a> 存储数组中的值  
  你可以通过使用类型 `Integer` 的索引访问数组中的每个位置。 你可以使用括号内的索引来引用每个数组位置，从而存储和检索数组中的值。 多维数组的索引用逗号 \(,\) 分隔。 每个数组维度都需要一个索引。 下例介绍了用于存储数组中的值的一些语句。  
   
- [!code-vb[VbVbalrArrays#5](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_6.vb)]  
+ [!code-vb[VbVbalrArrays#5](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_6.vb)]  
   
  下例介绍了用于获取数组中的值的一些语句。  
   
- [!code-vb[VbVbalrArrays#6](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_7.vb)]  
+ [!code-vb[VbVbalrArrays#6](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_7.vb)]  
   
 ##  <a name="BKMK_Populating"></a> 使用初始值填充数组  
  通过使用数组文本，可以创建包含一组初始值的数组。 数组文本包含用逗号分隔的值列表，这些值被括在括号内 \(`{}`\)。  
   
  通过使用数组文本创建数组时，可以提供数组类型或使用类型推理功能来确定数组类型。 下面的代码演示了两种选项。  
   
- [!code-vb[VbVbalrCollectionInitializers#3](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_8.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#3](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_8.vb)]  
   
  使用类型推理时，将根据为数组文本提供的值列表中的基准类型确定数组类型。 基准类型是数组文本中所有其他类型可以扩大到的唯一类型。 如果无法确定此唯一类型，基准类型是数组中所有其他类型可以缩小到的唯一类型。 如果无法确定为这两种唯一类型之一，则基准类型是 `Object`。 例如，如果提供给数组文本的值的列表包含 `Integer`、`Long` 和 `Double` 类型的值，则生成的数组类型是 `Double`。`Integer` 和 `Long` 都仅扩大到 `Double`。 因此，`Double` 是基准类型。 有关详细信息，请参阅 [扩大转换和收缩转换](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)。 这些推理规则适用于为作为在类成员中定义的本地变量的数组所推理出来的类型。 虽然在创建类级别变量时可以使用数组文本，但你不能在类级别上使用类型推理。 因此，在类级别上指定的数组文本推理出作为类型 `Object` 数组文本提供的值。  
   
  在使用数组文本创建的数组中，可以显式指定元素的类型。 在这种情况下，数组文本中的值必须扩大到数组的元素类型。 下面的代码示例从整数列表创建了一个 `Double` 类型的数组。  
   
- [!code-vb[VbVbalrCollectionInitializers#4](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_9.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#4](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_9.vb)]  
   
 ###  <a name="BKMK_NestedArrayLiterals"></a> 嵌套的数组文本  
  可以通过使用嵌套的数组文本创建多维数组。 嵌套的数组文本必须具有维度和维度数目或排名，这与生成的数组保持一致。 下面的代码示例通过使用数组文本创建了一个二维的整数数组。  
   
- [!code-vb[VbVbalrCollectionInitializers#7](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_10.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#7](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_10.vb)]  
   
  在前面的示例中，如果嵌套的数组文本中的元素数目不匹配，则会出现错误。 如果显式声明的数组变量为非二维，也会出现错误。  
   
 > [!NOTE]
 >  你可以在提供不同维度的嵌套数组文本时，将内部数组文本括在括号内以避免出错。 圆括号会强制计算数组文字表达式，并将生成的值用于外部数组文本，如以下代码所示。  
   
- [!code-vb[VbVbalrCollectionInitializers#11](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_11.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#11](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_11.vb)]  
   
  当你通过使用嵌套的数组文本创建多维数组时，可以使用类型推理。 当使用类型推理时，推理出的类型是用于嵌套级别的所有数组文本中的所有值的基准类型。 下面的代码示例从类型为 `Integer` 和 `Double` 的值中创建了一个类型为 `Double` 的二维数组。  
   
- [!code-vb[VbVbalrCollectionInitializers#8](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_12.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#8](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_12.vb)]  
   
  有关更多示例，请参阅[如何：在 Visual Basic 中初始化数组变量](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)。  
   
@@ -147,19 +147,19 @@ caps.handback.revision: 47
   
  下面的示例通过使用 [For...Next 语句](../../../../visual-basic/language-reference/statements/for-next-statement.md) 循环访问一个一维数组。<xref:System.Array.GetUpperBound%2A> 方法可以返回索引所具有的最大值。 最小的索引值始终是 0。  
   
- [!code-vb[VbVbalrArrays#41](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_13.vb)]  
+ [!code-vb[VbVbalrArrays#41](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_13.vb)]  
   
  下面的示例使用 `For...Next` 语句循环访问一个多维数组。<xref:System.Array.GetUpperBound%2A> 方法具有用于指定维度的参数。`GetUpperBound(0)` 返回的第一个维度的高索引值，`GetUpperBound(1)` 返回第二个维度的高索引值。  
   
- [!code-vb[VbVbalrArrays#42](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_14.vb)]  
+ [!code-vb[VbVbalrArrays#42](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_14.vb)]  
   
  下面的示例使用 [For Each...Next 语句](../../../../visual-basic/language-reference/statements/for-each-next-statement.md) 循环访问一个一维数组。  
   
- [!code-vb[VbVbalrArrays#43](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_15.vb)]  
+ [!code-vb[VbVbalrArrays#43](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_15.vb)]  
   
  下面的示例使用 `For Each...Next` 语句循环访问一个多维数组。 但是，如果使用一个嵌套的 `For…Next` 语句（如上例所示）而非一个 `For Each…Next` 语句，你能更好地控制多维数组中的元素。  
   
- [!code-vb[VbVbalrArrays#44](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_16.vb)]  
+ [!code-vb[VbVbalrArrays#44](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_16.vb)]  
   
 ##  <a name="BKMK_ReturnValues"></a> 作为返回值和参数的数组  
  若要从 `Function` 过程中返回数组，可指定返回类型为 [Function 语句](../../../../visual-basic/language-reference/statements/function-statement.md) 的数组数据类型和维度数。 在函数内，声明一个具有相同数据类型和维度数的本地数组变量。 在 [Return 语句](../../../../visual-basic/language-reference/statements/return-statement.md) 中，包括不带括号的本地数组变量。  
@@ -168,23 +168,23 @@ caps.handback.revision: 47
   
  在下面的示例中，`GetNumbers` 函数将返回 `Integer()`。 此数组类型是一个类型为 `Integer` 的一维数组。`ShowNumbers` 过程接受 `Integer()` 参数。  
   
- [!code-vb[VbVbalrArrays#51](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_17.vb)]  
+ [!code-vb[VbVbalrArrays#51](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_17.vb)]  
   
  在下面的示例中，`GetNumbersMultiDim` 函数将返回 `Integer(,)`。 此数组类型是一个类型为 `Integer` 的二维数组。`ShowNumbersMultiDim` 过程接受 `Integer(,)` 参数。  
   
- [!code-vb[VbVbalrArrays#52](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_18.vb)]  
+ [!code-vb[VbVbalrArrays#52](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_18.vb)]  
   
 ##  <a name="BKMK_JaggedArrays"></a> 交错数组  
  保留其他数组作为元素的数组被称为数组的数组或交错数组。 交错数组和交错数组中的每个元素都可以具有一个或多个维度。 有时应用程序中的数据结构是二维而不是矩形。  
   
  下面的示例是月份数组，其中每个元素是天数数组。 由于不同的月份具有的天数也不同，因此元素不构成矩形二维数组。 因此，使用交错数组而不是多维数组。  
   
- [!code-vb[VbVbalrArrays#21](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_19.vb)]  
+ [!code-vb[VbVbalrArrays#21](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_19.vb)]  
   
 ##  <a name="BKMK_ZeroLength"></a> 零长度数组  
  不包含任何元素的数组也称为零长度数组。 保留零长度数组的变量不具有值 `Nothing`。 若要创建一个不包含任何元素的数组，可声明数组的维度之一为 \-1，如以下示例所示。  
   
- [!code-vb[VbVbalrArrays#14](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_20.vb)]  
+ [!code-vb[VbVbalrArrays#14](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_20.vb)]  
   
  在下列情况下，你可能需要创建一个零长度数组：  
   
@@ -233,7 +233,7 @@ Dim prices(3, 4, 5) As Long
   
  下面的示例调用 `TypeName` 函数来确定数组的类型和数组中元素的类型。 数组类型是 `Integer(,)` 而数组中的元素的类型是 `Integer`。  
   
- [!code-vb[VbVbalrArrays#15](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_21.vb)]  
+ [!code-vb[VbVbalrArrays#15](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_21.vb)]  
   
 ##  <a name="BKMK_Collections"></a> 作为数组的替代方法的集合  
  数组最适用于创建和使用固定数量的强类型化对象。 集合提供更灵活的方式来使用对象组。 与数组不同，你使用的对象组会随着应用程序更改的需要动态地放大和缩小。  
@@ -249,7 +249,7 @@ Dim prices(3, 4, 5) As Long
 ### 示例  
  下面的示例使用 [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort-md.md)] 泛型类 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 创建 `Customer` 对象的列表集合。  
   
- [!code-vb[VbVbalrArrays#1](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_22.vb)]  
+ [!code-vb[VbVbalrArrays#1](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_22.vb)]  
   
  `CustomerFile` 集合的声明指示，它仅可以包含类型为 `Customer` 的元素。 它还提供了大小为 200 个元素的初始容量。 过程 `AddNewCustomer` 检查新元素的有效性，然后将其添加到集合。 过程 `PrintCustomers` 使用 `For Each` 循环来遍历该集合并显示其元素。  
   

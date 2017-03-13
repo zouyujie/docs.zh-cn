@@ -71,14 +71,14 @@ caps.handback.revision: 23
   
  下例定义基类 `Payroll` 和派生类 `BonusPayroll`，该派生类重写继承方法 `PayEmployee`。  过程 `RunPayroll` 创建 `Payroll` 对象和 `BonusPayroll` 对象，然后将其传递给函数 `Pay`，该函数为这两个对象执行 `PayEmployee` 方法。  
   
- [!code-vb[VbVbalrOOP#28](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#28)]  
+ [!code-vb[VbVbalrOOP#28](../../../../visual-basic/misc/codesnippet/VisualBasic/inheritance-basics_1.vb)]  
   
 ## MyBase 关键字  
  `MyBase` 关键字的行为方式类似于引用当前类实例的基类的对象变量。  `MyBase` 通常用于访问派生类中被重写或被隐藏的基类成员。  具体而言，`MyBase.New` 用于从派生类构造函数中显式调用基类构造函数。  
   
  例如，假设您正在设计一个重写从基类继承的方法的派生类。  重写的方法可以调用基类中的该方法，并修改返回值，如下面的代码片段中所示：  
   
- [!code-vb[VbVbalrOOP#109](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#109)]  
+ [!code-vb[VbVbalrOOP#109](../../../../visual-basic/misc/codesnippet/VisualBasic/inheritance-basics_2.vb)]  
   
  下面的列表描述对使用 `MyBase` 的限制：  
   

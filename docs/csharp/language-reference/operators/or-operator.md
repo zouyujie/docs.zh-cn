@@ -26,7 +26,7 @@ Binary       `|`  运算符是为整型和 `bool` 预定义的。  对于整型�
  用户定义的类型可重载         `|` 运算符（请参见[运算符](../../../csharp/language-reference/keywords/operator.md)）。  
   
 ## 示例  
- [!code-cs[csRefOperators#31](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#31)]  
+ [!code-cs[csRefOperators#31](../../../csharp/language-reference/operators/codesnippet/CSharp/or-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

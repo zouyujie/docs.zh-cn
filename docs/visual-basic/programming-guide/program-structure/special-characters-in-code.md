@@ -52,14 +52,14 @@ caps.handback.revision: 21
 ## 括号  
  在定义过程（如 `Sub` 或 `Function`）时使用括号。  必须将所有过程参数列表放入括号内。  括号还可用来为变量或参数进行逻辑分组，特别是用来重写复杂表示式中运算符的默认优先顺序。  下面的示例阐释了这一点。  
   
- [!code-vb[VbVbcnConventions#11](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/special-characters-in-code_1.vb)]  
+ [!code-vb[VbVbcnConventions#11](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/special-characters-in-code_1.vb)]  
   
  执行完前面的代码后，`d` 的值为 8.225，而 `e` 的值为 3。  计算 `d` 时使用默认优先顺序，即先 `/` 后 `+`，它等同于 `d = b + (c / a)`。  计算 `e` 值时使用的括号重写了默认优先顺序。  
   
 ## 分隔符  
  顾名思义，分隔符用于分隔各部分代码。  [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中的分隔符为冒号 \(`:`\)。  当您想将多条语句放在一行而非多行上时，可以使用分隔符。  这样可以节省空间，并增强代码的可读性。  下面的示例演示了用冒号隔开的三个语句。  
   
- [!code-vb[VbVbcnConventions#12](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/special-characters-in-code_2.vb)]  
+ [!code-vb[VbVbcnConventions#12](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/special-characters-in-code_2.vb)]  
   
  有关更多信息，请参见[如何：在代码中拆分和合并语句](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)。  
   
@@ -68,7 +68,7 @@ caps.handback.revision: 21
 ## 串联  
  `&` 运算符用于将字符串“串联”或链接到一起。  不要把它和 `+` 运算符混淆，后者用于将数值相加。  如果使用 `+` 运算符串联数值，可能会得到错误的结果。  下面的示例说明了这一点。  
   
- [!code-vb[VbVbcnConventions#13](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/special-characters-in-code_3.vb)]  
+ [!code-vb[VbVbcnConventions#13](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/special-characters-in-code_3.vb)]  
   
  执行完前面的代码后，`resultA` 的值为 21.01，而 `resultB` 的值为“10.0111”。  
   
@@ -78,12 +78,12 @@ caps.handback.revision: 21
 ### 点 \(.\)运算符  
  对于类、结构、接口或枚举，`.` 运算符用作成员访问运算符。  该成员可以是字段、属性、事件或方法。  下面的示例阐释了这一点。  
   
- [!code-vb[VbVbcnConventions#14](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/special-characters-in-code_4.vb)]  
+ [!code-vb[VbVbcnConventions#14](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/special-characters-in-code_4.vb)]  
   
 ### 惊叹号 \(\!\)运算符  
  仅对类或接口，`!` 运算符用作字典访问运算符。  该类或接口必须有一个接受单个 `String` 参数的默认属性。  `!` 运算符后面紧跟着的标识符成为传递给默认属性的字符串形式的参数值。  下面的示例说明了这一点。  
   
- [!code-vb[VbVbcnConventions#15](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/special-characters-in-code_5.vb)]  
+ [!code-vb[VbVbcnConventions#15](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/special-characters-in-code_5.vb)]  
   
  `MsgBox` 的三个输出行均显示 `32856` 这个值。  第一行使用对属性 `index` 的传统访问，第二行利用 `index` 是类 `hasDefault` 的默认属性这一情况，第三行使用对类的字典访问。  
   

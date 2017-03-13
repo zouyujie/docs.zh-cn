@@ -43,7 +43,7 @@ block = stackalloc int[100];
  以下代码示例计算并演示 Fibonacci 序列中的前 20 个数字。  每个数字是先前两个数字的和。  在代码中，大小足够容纳 20 个 `int` 类型元素的内存块是在堆栈上分配的，而不是在堆上分配的。  该块的地址存储在 `fib` 指针中。  此内存不受垃圾回收的制约，因此不必将其钉住（通过使用 [fixed](../../../csharp/language-reference/keywords/fixed-statement.md)）。  内存块的生存期受限于定义它的方法的生存期。  不能在方法返回之前释放内存。  
   
 ## 示例  
- [!code-cs[csrefKeywordsOperator#15](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsOperator/csrefKeywordsOperators.cs#15)]  
+ [!code-cs[csrefKeywordsOperator#15](../../../csharp/language-reference/keywords/codesnippet/CSharp/stackalloc_1.cs)]  
   
 ## 安全性  
  不安全代码的安全性低于安全替代代码。  但是，通过使用 `stackalloc` 可以自动启用公共语言运行时 \(CLR\) 中的缓冲区溢出检测功能。  如果检测到缓冲区溢出，进程将尽快终止，以最大限度地减小执行恶意代码的机会。  

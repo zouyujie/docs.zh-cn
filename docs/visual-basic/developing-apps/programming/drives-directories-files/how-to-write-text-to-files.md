@@ -32,7 +32,7 @@ caps.handback.revision: 19
   
 -   使用 `WriteAllText` 方法向文件中写入文本，同时指定要写入的文件和文本。  此示例向名为 `test.txt` 的文件中写入 `"This is new text."` 这一行，并将这行文本追加到此文件中现有的任何文本之后。  
   
-     [!code-vb[VbFileIOWrite#3](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-write-text-to-files_1.vb)]  
+     [!code-vb[VbFileIOWrite#3](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-write-text-to-files_1.vb)]  
   
 #### 向文件中写入一系列字符串  
   
@@ -40,7 +40,7 @@ caps.handback.revision: 19
   
      此示例将 `Documents and Settings` 目录中文件的名称写入 `FileList.txt` 中，同时在每个名称之间插入一个回车符以获得更好的可读性。  
   
-     [!code-vb[VbFileIOWrite#4](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-write-text-to-files_2.vb)]  
+     [!code-vb[VbFileIOWrite#4](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-write-text-to-files_2.vb)]  
   
 ## 可靠编程  
  以下情况可能会导致异常：  

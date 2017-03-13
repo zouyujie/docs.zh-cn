@@ -54,14 +54,14 @@ Implements interfacename.interfacemember [, ...]
 ## 示例  
  下面的示例演示如何使用 `Implements` 语句来实现接口的成员。  该示例使用事件、属性和过程定义一个名为 `ICustomerInfo` 的接口。  类 `customerInfo` 实现该接口中定义的所有成员。  
   
- [!code-vb[VbVbalrStatements#33](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/implements-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#33](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/implements-statement_1.vb)]  
   
  请注意，类 `customerInfo` 在单独的源代码行上使用 `Implements` 语句，以指示该类实现 `ICustomerInfo` 接口的所有成员。  然后，该类中的每个成员使用 `Implements` 关键字作为其成员声明的一部分，以指示它实现该接口成员。  
   
 ## 示例  
  下面的两个过程演示如何使用上例中实现的接口。  若要测试该实现，请将这些过程添加到项目中并调用 `testImplements` 过程。  
   
- [!code-vb[VbVbalrStatements#34](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/implements-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#34](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/implements-statement_2.vb)]  
   
 ## 请参阅  
  [Implements](../../../visual-basic/language-reference/statements/implements-clause.md)   

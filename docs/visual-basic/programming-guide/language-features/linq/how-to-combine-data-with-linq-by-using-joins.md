@@ -38,8 +38,8 @@ Visual Basic 提供 `Join` 和 `Group Join` 查询子句，使您可以基于集
   
 2.  本主题中的示例使用 `Person` 和 `Pet` 类型以及下面的代码示例中的数据。  将这段代码复制到 Visual Basic 所创建的默认 `Module1` 模块中。  
   
-     [!code-vb[VbLINQHowTos#1](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/VbLINQHowTos/Module1.vb#1)]  
-    [!code-vb[VbLINQHowTos#2](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/VbLINQHowTos/Module1.vb#2)]  
+     [!code-vb[VbLINQHowTos#1](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_1.vb)]  
+    [!code-vb[VbLINQHowTos#2](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_2.vb)]  
   
 ## 使用 Join 子句执行内部联接  
  INNER JOIN 将两个集合的数据合并在一起。  指定的键值相匹配的项包括在内。  在另一集合中没有匹配项的所有集合项都排除在外。  
@@ -54,7 +54,7 @@ Visual Basic 提供 `Join` 和 `Group Join` 查询子句，使您可以基于集
   
 1.  将下面的代码添加到项目中的 `Module1` 模块，查看隐式和显式内部联接的示例。  
   
-     [!code-vb[VbLINQHowTos#4](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/VbLINQHowTos/Module1.vb#4)]  
+     [!code-vb[VbLINQHowTos#4](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_3.vb)]  
   
 ## 使用 Group Join 子句执行左外部联接  
  LEFT OUTER JOIN 包括联接左侧集合中的所有项，而对于联接的右侧集合，它仅包含其中的匹配值。  联接的右侧集合中的项如果在联接的左侧集合中没有匹配项，则会排除在查询结果之外。  
@@ -67,7 +67,7 @@ Visual Basic 提供 `Join` 和 `Group Join` 查询子句，使您可以基于集
   
 1.  将下面的代码添加到项目的 `Module1` 模块中，查看分组左外部联接和不分组左外部联接的示例。  
   
-     [!code-vb[VbLINQHowTos#3](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/VbLINQHowTos/Module1.vb#3)]  
+     [!code-vb[VbLINQHowTos#3](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_4.vb)]  
   
 ## 使用复合键执行联接  
  在 `Join` 或 `Group Join` 子句中，可以使用 `And` 关键字来标识在对联接的集合中的值进行匹配时要使用的多个键字段。  `And` 关键字指定所有指定的键字段都必须匹配要联接的项。  
@@ -76,7 +76,7 @@ Visual Basic 提供 `Join` 和 `Group Join` 查询子句，使您可以基于集
   
 1.  将下面的代码添加到项目的 `Module1` 模块，查看使用复合键的联接示例。  
   
-     [!code-vb[VbLINQHowTos#5](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/VbLINQHowTos/Module1.vb#5)]  
+     [!code-vb[VbLINQHowTos#5](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_5.vb)]  
   
 ## 运行代码  
   
@@ -84,7 +84,7 @@ Visual Basic 提供 `Join` 和 `Group Join` 查询子句，使您可以基于集
   
 1.  用下面的代码替换项目中的 `Module1` 模块的 `Sub Main`，运行本主题中的示例。  
   
-     [!code-vb[VbLINQHowTos#6](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/VbLINQHowTos/Module1.vb#6)]  
+     [!code-vb[VbLINQHowTos#6](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_6.vb)]  
   
 2.  按 F5 键运行示例。  
   

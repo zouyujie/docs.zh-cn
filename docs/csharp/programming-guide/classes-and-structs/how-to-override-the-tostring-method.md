@@ -19,7 +19,7 @@ caps.handback.revision: 21
 # 如何：重写 ToString 方法（C# 编程指南）
 C\# 中的每个类或结构都隐式继承 <xref:System.Object> 类。  因此，C\# 中的每个对象都会获得 <xref:System.Object.ToString%2A> 方法，此方法返回该对象的字符串表示形式。  例如，所有 `int` 类型的变量都有一个 `ToString` 方法，此方法可让这些变量将其内容作为字符串返回：  
   
- [!code-cs[csProgGuideInheritance#37](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-override-the-tost_1.cs)]  
+ [!code-cs[csProgGuideInheritance#37](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-override-the-tostring-method_1.cs)]  
   
  创建自定义类或结构时，应该重写 <xref:System.Object.ToString%2A> 方法，以便向客户端代码提供类型信息。  
   
@@ -40,11 +40,11 @@ C\# 中的每个类或结构都隐式继承 <xref:System.Object> 类。  因此�
   
      下面的示例返回类的名称以及特定于该类的某个实例的数据。  
   
-     [!code-cs[csProgGuideInheritance#36](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-override-the-tost_2.cs)]  
+     [!code-cs[csProgGuideInheritance#36](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-override-the-tostring-method_2.cs)]  
   
      您可以测试 `ToString` 方法，如下面的代码示例所示：  
   
-     [!code-cs[csProgGuideInheritance#38](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-override-the-tost_3.cs)]  
+     [!code-cs[csProgGuideInheritance#38](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-override-the-tostring-method_3.cs)]  
   
 ## 请参阅  
  <xref:System.IFormattable>   

@@ -25,7 +25,7 @@ caps.handback.revision: 14
  用户定义的类型可重载 `<` 运算符（请参见[运算符](../../../csharp/language-reference/keywords/operator.md)）。  如果重载 `<`，则还必须重载 [\>](../../../csharp/language-reference/operators/greater-than-operator.md)。  重载二元运算符时，也会隐式重载相应的赋值运算符（如果有）。  
   
 ## 示例  
- [!code-cs[csRefOperators#24](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#24)]  
+ [!code-cs[csRefOperators#24](../../../csharp/language-reference/operators/codesnippet/CSharp/less-than-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

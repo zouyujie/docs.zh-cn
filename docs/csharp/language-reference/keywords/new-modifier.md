@@ -20,7 +20,7 @@ caps.handback.revision: 28
   
  若要隐藏继承的成员，请使用相同名称在派生类中声明该成员，并使用 `new` 修饰符对其进行修饰。  例如:  
   
- [!code-cs[csrefKeywordsOperator#8](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsOperator/csrefKeywordsOperators.cs#8)]  
+ [!code-cs[csrefKeywordsOperator#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/new-modifier_1.cs)]  
   
  在此示例中，使用 `BaseC.Invoke` 隐藏了 `DerivedC.Invoke`。  字段 `x` 不受影响，因为未使用类似名称将其隐藏。  
   
@@ -39,12 +39,12 @@ caps.handback.revision: 28
 ## 示例  
  在此示例中，基类 `BaseC` 和派生类 `DerivedC` 使用相同的字段名 `x`，从而隐藏了继承字段的值。  此示例演示 `new` 修饰符的用法。  另外还演示了如何使用完全限定名访问基类的隐藏成员。  
   
- [!code-cs[csrefKeywordsOperator#9](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsOperator/csrefKeywordsOperators.cs#9)]  
+ [!code-cs[csrefKeywordsOperator#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/new-modifier_2.cs)]  
   
 ## 示例  
  在此示例中，嵌套类隐藏了基类中同名的类。  此示例演示如何使用 `new` 修饰符来消除警告消息，以及如何使用完全限定名来访问隐藏的类成员。  
   
- [!code-cs[csrefKeywordsOperator#10](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsOperator/csrefKeywordsOperators.cs#10)]  
+ [!code-cs[csrefKeywordsOperator#10](../../../csharp/language-reference/keywords/codesnippet/CSharp/new-modifier_3.cs)]  
   
  如果移除 `new` 修饰符，程序仍将编译和运行，但你会收到以下警告：  
   

@@ -56,7 +56,7 @@ variableorproperty \= expression
 ## 示例  
  下面的示例使用 `\=` 运算符将一个 `Integer` 变量除以另一个这种类型的变量，并把整数结果赋给第一个变量。  
   
- [!code-vb[VbVbalrOperators#19](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/subtraction-assignment-o_2_1.vb)]  
+ [!code-vb[VbVbalrOperators#19](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/subtraction-assignment-operator_1.vb)]  
   
 ## 请参阅  
  [\\ 运算符](../../../visual-basic/language-reference/operators/integer-division-operator.md)   

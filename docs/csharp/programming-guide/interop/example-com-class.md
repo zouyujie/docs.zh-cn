@@ -38,7 +38,7 @@ caps.handback.revision: 17
  类实现类接口；它可以实现多个接口，但第一个实现将作为默认类接口。  在此处实现向 COM 公开的方法和属性。  它们必须标记为是公共的，并且必须与类接口中的声明匹配。  同时，在此处声明由类引发的事件。  它们必须标记为是公共的，并且必须与事件接口中的声明匹配。  
   
 ## 示例  
- [!code-cs[csProgGuideInterop#8](../../../csharp/programming-guide/interop/codesnippet/csharp/example-com-class_1.cs)]  
+ [!code-cs[csProgGuideInterop#8](../../../csharp/programming-guide/interop/codesnippet/CSharp/example-com-class_1.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

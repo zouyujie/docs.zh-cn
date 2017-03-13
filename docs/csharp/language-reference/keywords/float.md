@@ -58,7 +58,7 @@ float x = 3.5F;
 ## 示例  
  在下面的示例中，包含 [int](../../../csharp/language-reference/keywords/int.md)、[short](../../../csharp/language-reference/keywords/short.md) 和 `float` 类型的数学表达式得到一个 `float` 结果。  （请记住 `float` 是 <xref:System.Single?displayProperty=fullName> 类型的别名。）请注意，表达式中没有 [double](../../../csharp/language-reference/keywords/double.md)。  
   
- [!code-cs[csrefKeywordsTypes#13](../../../csharp/language-reference/keywords/codesnippet/csharp/float_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/float_1.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

@@ -24,7 +24,7 @@ caps.handback.revision: 14
  不能重载赋值运算符。  不过，可为类型定义隐式转换运算符，这样就可以对这些类型使用赋值运算符。  有关更多信息，请参见 [使用转换运算符](../../../csharp/programming-guide/statements-expressions-operators/using-conversion-operators.md)。  
   
 ## 示例  
- [!code-cs[csRefOperators#49](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#49)]  
+ [!code-cs[csRefOperators#49](../../../csharp/language-reference/operators/codesnippet/CSharp/assignment-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

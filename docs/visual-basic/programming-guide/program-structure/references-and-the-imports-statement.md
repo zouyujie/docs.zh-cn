@@ -45,15 +45,15 @@ caps.handback.revision: 12
 ## 在 Imports 语句中使用别名  
  使用 `Imports` 语句不再需要显式键入引用的完全限定名，从而使访问类方法变得更容易。  别名允许为命名空间的一部分分配更友好的名称。  例如，使单个文本片段以多行形式显示的回车\/换行序列就是 <xref:Microsoft.VisualBasic?displayProperty=fullName> 命名空间中 <xref:Microsoft.VisualBasic.ControlChars> 模块的一部分。  若要不使用别名而直接在程序中使用该常数，则需要键入下面的代码：  
   
- [!code-vb[VbVbalrApplication#3](../../../visual-basic/programming-guide/program-structure/codesnippet/visualbasic/references-and-the-impor_1.vb)]  
+ [!code-vb[VbVbalrApplication#3](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/references-and-the-imports-statement_1.vb)]  
   
  在模块中，`Imports` 语句必须始终是紧接着 `Option` 语句后面的最先几行。  下面的代码片段演示如何导入命名空间并将其别名分配给 <xref:Microsoft.VisualBasic.ControlChars?displayProperty=fullName> 模块：  
   
- [!code-vb[VbVbalrApplication#4](../../../visual-basic/programming-guide/program-structure/codesnippet/visualbasic/references-and-the-impor_2.vb)]  
+ [!code-vb[VbVbalrApplication#4](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/references-and-the-imports-statement_2.vb)]  
   
  以后对该命名空间的引用可以简短得多：  
   
- [!code-vb[VbVbalrApplication#5](../../../visual-basic/programming-guide/program-structure/codesnippet/visualbasic/references-and-the-impor_3.vb)]  
+ [!code-vb[VbVbalrApplication#5](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/references-and-the-imports-statement_3.vb)]  
   
  如果 `Imports` 语句中没有包括别名，则在导入的命名空间内定义的元素可以不加限定地在模块内使用。  如果指定了别名，它必须用作该命名空间内所包含名称的限定符。  
   

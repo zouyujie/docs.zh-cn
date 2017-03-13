@@ -35,7 +35,7 @@ caps.handback.revision: 11
 ## 示例  
  下面的示例显示了此扩展方法及使用它的客户端代码。  
   
- [!code-cs[cscsrefContiguousGroups#1](../../../csharp/programming-guide/linq-query-expressions/codesnippet/csharp/how-to-group-results-by-_1.cs)]  
+ [!code-cs[cscsrefContiguousGroups#1](../../../csharp/programming-guide/linq-query-expressions/codesnippet/CSharp/how-to-group-results-by-contiguous-keys_1.cs)]  
   
  若要在您的项目中使用此扩展方法，请将 `MyExtensions` 静态类复制到一个新的或现有源代码文件中，并在必要时，为该类所在的命名空间添加一条 `using` 指令。  
   

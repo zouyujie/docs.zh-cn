@@ -38,7 +38,7 @@ x = x ^ y
  不能直接重载 ^\=  运算符，但用户定义的类型可重载 [^ operator](../../../csharp/language-reference/operators/xor-operator.md)（请参见 [operator](../../../csharp/language-reference/keywords/operator.md)）。  
   
 ## 示例  
- [!code-cs[csRefOperators#23](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#23)]  
+ [!code-cs[csRefOperators#23](../../../csharp/language-reference/operators/codesnippet/CSharp/xor-assignment-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

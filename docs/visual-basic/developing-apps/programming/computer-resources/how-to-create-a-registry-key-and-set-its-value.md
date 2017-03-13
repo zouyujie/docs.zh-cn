@@ -36,22 +36,22 @@ caps.handback.revision: 30
   
 -   使用 `CreateSubKey` 方法，指定在其下放置注册表配置单元以及注册表项的名称。  该参数`Subkey`不区分大小写。  此示例创建注册表项 `MyTestKey` 在 HKEY\_CURRENT\_USER 下。  
   
-     [!code-vb[VbResourceTasks#17](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-create-a-registry_1.vb)]  
+     [!code-vb[VbResourceTasks#17](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-create-a-registry-key-and-set-its-value_1.vb)]  
   
 #### 创建注册表项并在注册表项中设置值  
   
 1.  使用 `CreateSubkey` 方法，指定在其下放置注册表配置单元以及注册表项的名称。  此示例创建注册表项 `MyTestKey` 在 HKEY\_CURRENT\_USER 下。  
   
-     [!code-vb[VbResourceTasks#17](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-create-a-registry_1.vb)]  
+     [!code-vb[VbResourceTasks#17](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-create-a-registry-key-and-set-its-value_1.vb)]  
   
 2.  设置与 `SetValue` 方案的值。  此示例将字符串值。 “  ” MyTestKeyValue “设置为 " this is a test value”。  
   
-     [!code-vb[VbResourceTasks#14](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-create-a-registry_2.vb)]  
+     [!code-vb[VbResourceTasks#14](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-create-a-registry-key-and-set-its-value_2.vb)]  
   
 ## 示例  
  此示例创建注册表项 `MyTestKey` 在 HKEY\_CURRENT\_USER 下然后将字符串值 `MyTestKeyValue` 到 `This is a test value`。  
   
- [!code-vb[VbResourceTasks#15](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-create-a-registry_3.vb)]  
+ [!code-vb[VbResourceTasks#15](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-create-a-registry-key-and-set-its-value_3.vb)]  
   
 ## 可靠编程  
  检查注册表结构查找适合您的项的位置。  例如，您可能需要打开当前用户的 HKEY\_CURRENT\_USER \\ software 项，然后用您的公司名称创建一项。  然后将注册表值添加到您的公司的键。  

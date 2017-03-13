@@ -82,12 +82,12 @@ Console.WriteLine((double)dec + dub);
   
  在此示例中，同一个表达式中混合使用了 `decimal` 和 [int](../../../csharp/language-reference/keywords/int.md)。  计算结果为 `decimal` 类型。  
   
- [!code-cs[csrefKeywordsTypes#6](../../../csharp/language-reference/keywords/codesnippet/csharp/decimal_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/decimal_1.cs)]  
   
 ## 示例  
  在此示例中，通过使用货币格式字符串来设置输出的格式。  请注意，`x` 被舍入，因为其小数位数超出了 $0.99。  表示最大精确位数的变量 `y` 严格按照正确的格式显示。  
   
- [!code-cs[csrefKeywordsTypes#7](../../../csharp/language-reference/keywords/codesnippet/csharp/decimal_2.cs)]  
+ [!code-cs[csrefKeywordsTypes#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/decimal_2.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

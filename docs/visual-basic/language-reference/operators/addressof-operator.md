@@ -45,12 +45,12 @@ AddressOf procedurename
 ## 示例  
  本示例使用 `AddressOf` 运算符指定一个委托以处理按钮的 `Click` 事件。  
   
- [!code-vb[VbVbalrDelegates#8](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addressof-operator_1.vb)]  
+ [!code-vb[VbVbalrDelegates#8](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addressof-operator_1.vb)]  
   
 ## 示例  
  下面的示例使用 `AddressOf` 运算符来指定线程的启动函数。  
   
- [!code-vb[VbVbalrDelegates#9](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addressof-operator_2.vb)]  
+ [!code-vb[VbVbalrDelegates#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addressof-operator_2.vb)]  
   
 ## 请参阅  
  [Declare 语句](../../../visual-basic/language-reference/statements/declare-statement.md)   

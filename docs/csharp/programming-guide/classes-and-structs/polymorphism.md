@@ -31,7 +31,7 @@ caps.handback.revision: 31
   
  首先，创建一个名为 `Shape` 的基类，并创建一些派生类，例如 `Rectangle`、`Circle` 和 `Triangle`。  为 `Shape` 类提供一个名为 `Draw` 的虚方法，并在每个派生类中重写该方法以绘制该类表示的特定形状。  创建一个 `List<Shape>` 对象，并向该对象添加 Circle、Triangle 和 Rectangle。  若要更新绘图图面，请使用 [foreach](../../../csharp/language-reference/keywords/foreach-in.md) 循环对该列表进行循环访问，并对其中的每个 `Shape` 对象调用 `Draw` 方法。  虽然列表中的每个对象都具有声明类型 `Shape`，但调用的将是运行时类型（该方法在每个派生类中的重写版本）。  
   
- [!code-cs[csProgGuideInheritance#50](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/polymorphism_1.cs)]  
+ [!code-cs[csProgGuideInheritance#50](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/polymorphism_1.cs)]  
   
  在 C\# 中，每个类型都是多态的，因为包括用户定义类型在内的所有类型都继承自 <xref:System.Object>。  
   
@@ -48,42 +48,42 @@ caps.handback.revision: 31
   
  仅当基类成员声明为 [virtual](../../../csharp/language-reference/keywords/virtual.md) 或 [abstract](../../../csharp/language-reference/keywords/abstract.md) 时，派生类才能重写基类成员。  派生成员必须使用 [override](../../../csharp/language-reference/keywords/override.md) 关键字显式指示该方法将参与虚调用。  以下代码提供了一个示例：  
   
- [!code-cs[csProgGuideInheritance#20](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/polymorphism_2.cs)]  
+ [!code-cs[csProgGuideInheritance#20](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/polymorphism_2.cs)]  
   
  字段不能是虚拟的，只有方法、属性、事件和索引器才可以是虚拟的。  当派生类重写某个虚拟成员时，即使该派生类的实例被当作基类的实例访问，也会调用该成员。  以下代码提供了一个示例：  
   
- [!code-cs[csProgGuideInheritance#21](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/polymorphism_3.cs)]  
+ [!code-cs[csProgGuideInheritance#21](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/polymorphism_3.cs)]  
   
  虚方法和属性允许派生类扩展基类，而无需使用方法的基类实现。  有关详细信息，请参阅[使用 Override 和 New 关键字进行版本控制](../../../csharp/programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md)。  接口提供另一种方式来定义将实现留给派生类的方法或方法集。  有关详细信息，请参阅[接口](../../../csharp/programming-guide/interfaces/index.md)。  
   
 ### 使用新成员隐藏基类成员  
  如果希望派生成员具有与基类中的成员相同的名称，但又不希望派生成员参与虚调用，则可以使用 [new](../../../csharp/language-reference/keywords/new.md) 关键字。  `new` 关键字放置在要替换的类成员的返回类型之前。  以下代码提供了一个示例：  
   
- [!code-cs[csProgGuideInheritance#18](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/polymorphism_4.cs)]  
+ [!code-cs[csProgGuideInheritance#18](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/polymorphism_4.cs)]  
   
  通过将派生类的实例强制转换为基类的实例，仍然可以从客户端代码访问隐藏的基类成员。  例如：  
   
- [!code-cs[csProgGuideInheritance#19](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/polymorphism_5.cs)]  
+ [!code-cs[csProgGuideInheritance#19](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/polymorphism_5.cs)]  
   
 ### 阻止派生类重写虚拟成员  
  无论在虚拟成员和最初声明虚拟成员的类之间已声明了多少个类，虚拟成员永远都是虚拟的。  如果类 A 声明了一个虚拟成员，类 B 从 A 派生，类 C 从类 B 派生，则类 C 继承该虚拟成员，并且可以选择重写它，而不管类 B 是否为该成员声明了重写。  以下代码提供了一个示例：  
   
- [!code-cs[csProgGuideInheritance#22](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/polymorphism_6.cs)]  
+ [!code-cs[csProgGuideInheritance#22](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/polymorphism_6.cs)]  
   
  派生类可以通过将重写声明为 [sealed](../../../csharp/language-reference/keywords/sealed.md) 来停止虚拟继承。  这需要在类成员声明中的 `override` 关键字前面放置 `sealed` 关键字。  以下代码提供了一个示例：  
   
- [!code-cs[csProgGuideInheritance#24](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/polymorphism_7.cs)]  
+ [!code-cs[csProgGuideInheritance#24](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/polymorphism_7.cs)]  
   
  在上一个示例中，方法 `DoWork` 对从 C 派生的任何类都不再是虚拟方法。  即使它们转换为类型 B 或类型 A，它对于 C 的实例仍然是虚拟的。  通过使用 `new` 关键字，密封的方法可以由派生类替换，如下面的示例所示：  
   
- [!code-cs[csProgGuideInheritance#25](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/polymorphism_8.cs)]  
+ [!code-cs[csProgGuideInheritance#25](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/polymorphism_8.cs)]  
   
  在此情况下，如果在 D 中使用类型为 D 的变量调用 `DoWork`，被调用的将是新的 `DoWork`。  如果使用类型为 C、B 或 A 的变量访问 D 的实例，对 `DoWork` 的调用将遵循虚拟继承的规则，即把这些调用传送到类 C 的 `DoWork` 实现。  
   
 ### 从派生类访问基类虚拟成员  
  已替换或重写某个方法或属性的派生类仍然可以使用基关键字访问基类的该方法或属性。  以下代码提供了一个示例：  
   
- [!code-cs[csProgGuideInheritance#26](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/polymorphism_9.cs)]  
+ [!code-cs[csProgGuideInheritance#26](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/polymorphism_9.cs)]  
   
  有关详细信息，请参阅 [base](../../../csharp/language-reference/keywords/base.md)。  
   

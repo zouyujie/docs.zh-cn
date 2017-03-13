@@ -41,7 +41,7 @@ x & y
 ## 示例  
  在下面的示例中，，因为该操作数返回 `false`，在第二个 `if` 语句的条件表达式计算只有第一个操作数。  
   
- [!code-cs[csRefOperators#48](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#48)]  
+ [!code-cs[csRefOperators#48](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-and-operator_1.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

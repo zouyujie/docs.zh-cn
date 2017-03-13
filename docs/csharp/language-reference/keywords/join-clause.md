@@ -33,14 +33,14 @@ caps.handback.revision: 29
 ## 内部联接  
  下面的示例演示一个简单的内部同等联接。  此查询产生一个“产品名称\/类别”对平面序列。  同一类别字符串将出现在多个元素中。  如果 `categories` 中的某个元素不具有匹配的 `products`，则该类别不会出现在结果中。  
   
- [!code-cs[cscsrefQueryKeywords#24](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Join.cs#24)]  
+ [!code-cs[cscsrefQueryKeywords#24](../../../csharp/language-reference/keywords/codesnippet/CSharp/join-clause_1.cs)]  
   
  有关更多信息，请参见 [如何：执行内部联接](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-inner-joins.md)。  
   
 ## Group Join  
  含有 `into` 表达式的 `join` 子句称为分组联接。  
   
- [!code-cs[cscsrefQueryKeywords#25](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Join.cs#25)]  
+ [!code-cs[cscsrefQueryKeywords#25](../../../csharp/language-reference/keywords/codesnippet/CSharp/join-clause_2.cs)]  
   
  分组联接会产生一个分层的结果序列，该序列将左侧源序列中的元素与右侧源序列中的一个或多个匹配元素相关联。  分组联接没有等效的关系术语；它本质上是一个对象数组序列。  
   
@@ -50,14 +50,14 @@ caps.handback.revision: 29
   
  当然，还可以将分组联接的结果用作其他子查询的生成器：  
   
- [!code-cs[cscsrefQueryKeywords#26](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Join.cs#26)]  
+ [!code-cs[cscsrefQueryKeywords#26](../../../csharp/language-reference/keywords/codesnippet/CSharp/join-clause_3.cs)]  
   
  有关更多信息，请参见 [如何：执行分组联接](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-grouped-joins.md)。  
   
 ## 左外部联接  
  在左外部联接中，将返回左侧源序列中的所有元素，即使它们在右侧序列中没有匹配的元素也是如此。  若要在 [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq-md.md)] 中执行左外部联接，请将 `DefaultIfEmpty` 方法与分组联接结合起来，以指定要在某个左侧元素不具有匹配元素时产生的默认右侧元素。  可以使用 `null` 作为任何引用类型的默认值，也可以指定用户定义的默认类型。  下面的示例演示了用户定义的默认类型：  
   
- [!code-cs[cscsrefQueryKeywords#27](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Join.cs#27)]  
+ [!code-cs[cscsrefQueryKeywords#27](../../../csharp/language-reference/keywords/codesnippet/CSharp/join-clause_4.cs)]  
   
  有关更多信息，请参见 [如何：执行左外部联接](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-left-outer-joins.md)。  
   
@@ -78,7 +78,7 @@ caps.handback.revision: 29
 ## 示例  
  下面的示例比较了使用相同的匹配键对相同数据源执行内部联接、分组联接和左外部联接的结果。  这些示例中添加了一些额外的代码，以便在控制台显示中阐明结果。  
   
- [!code-cs[cscsrefQueryKeywords#23](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Join.cs#23)]  
+ [!code-cs[cscsrefQueryKeywords#23](../../../csharp/language-reference/keywords/codesnippet/CSharp/join-clause_5.cs)]  
   
 ## 备注  
  后面未跟 `into` 的 `join` 子句被转换为 <xref:System.Linq.Enumerable.Join%2A> 方法调用；  后面跟有 `into` 的 `join` 子句被转换为 <xref:System.Linq.Enumerable.GroupJoin%2A> 方法调用。  

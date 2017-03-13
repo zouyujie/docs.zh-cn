@@ -46,7 +46,7 @@ RaiseEvent eventname[( argumentlist )]
   
  如果事件尚未在引发它的模块中声明，则将发生错误。  下面的代码片断阐释了一个事件声明和一个引发该事件的过程。  
   
- [!code-vb[VbVbalrEvents#37](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#37)]  
+ [!code-vb[VbVbalrEvents#37](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/raiseevent-statement_1.vb)]  
   
  不能使用 `RaiseEvent` 来引发未在模块中显式声明的事件。  例如，所有窗体从 <xref:System.Windows.Forms.Form?displayProperty=fullName> 继承一个 <xref:System.Windows.Forms.Control.Click> 事件，但不能使用派生窗体中的 `RaiseEvent` 来引发该事件。  如果在窗体模块中声明 `Click` 事件，则该事件将隐藏窗体自身的 <xref:System.Windows.Forms.Control.Click> 事件。  您仍然可以通过调用 <xref:System.Windows.Forms.Control.OnClick%2A> 方法来调用窗体的 <xref:System.Windows.Forms.Control.Click> 事件。  
   
@@ -71,12 +71,12 @@ RaiseEvent eventname[( argumentlist )]
   
  将 `WithEvents` 变量添加到 `Form1` 类的声明部分。  
   
- [!code-vb[VbVbalrEvents#14](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#14)]  
+ [!code-vb[VbVbalrEvents#14](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/raiseevent-statement_2.vb)]  
   
 ## 示例  
  将下面的代码添加到 `Form1` 的代码中。  替换可能存在的任何重复过程，如 `Form_Load` 或 `Button_Click`。  
   
- [!code-vb[VbVbalrEvents#15](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#15)]  
+ [!code-vb[VbVbalrEvents#15](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/raiseevent-statement_3.vb)]  
   
  按 F5 键运行前面的示例，然后单击标有**“开始”**的按钮。  第一个文本框将开始倒计时读秒。  全部时间（10 秒）过去后，第一个文本框显示“Done”（完成）。  
   

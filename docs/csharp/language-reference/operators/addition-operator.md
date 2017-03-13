@@ -32,7 +32,7 @@ caps.handback.revision: 19
  用户定义的类型可重载一元 `+` 运算符和二元 `+` 运算符。  在枚举时通常允许整型运算。  有关更多信息，请参见 [运算符](../../../csharp/language-reference/keywords/operator.md)。  
   
 ## 示例  
- [!code-cs[csRefOperators#28](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#28)]  
+ [!code-cs[csRefOperators#28](../../../csharp/language-reference/operators/codesnippet/CSharp/addition-operator_1.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

@@ -45,7 +45,7 @@ caps.handback.revision: 9
 ## 示例  
  此示例使用 `<exception>` 标记描述 `IntDivide` 函数可引发的异常。  
   
- [!code-vb[VbVbcnXmlDocComments#3](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/exception_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#3](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/exception_1.vb)]  
   
 ## 请参阅  
  [XML 注释标记](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

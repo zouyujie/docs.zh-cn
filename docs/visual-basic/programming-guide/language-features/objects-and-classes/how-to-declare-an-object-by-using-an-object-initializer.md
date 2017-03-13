@@ -30,7 +30,7 @@ caps.handback.revision: 20
   
  下面的过程演示如何以三种不同方式创建 `Student` 类的实例。  该类具有名字、姓氏和年级等属性。  三个声明各自创建 `Student` 的一个新实例，并且将属性 `First` 设置为“Michael”，将属性 `Last` 设置为“Tucker”，将所有其他成员设置为各自的默认值。  过程中每个声明的结果等效于下面的示例，该示例未使用对象初始值设定项。  
   
- [!code-vb[VbVbalrObjectInit#20](../../../../visual-basic/programming-guide/language-features/objects-and-classes/codesnippet/visualbasic/how-to-declare-an-object_1.vb)]  
+ [!code-vb[VbVbalrObjectInit#20](../../../../visual-basic/programming-guide/language-features/objects-and-classes/codesnippet/VisualBasic/how-to-declare-an-object-by-using-an-object-initializer_1.vb)]  
   
  有关 `Student` 类的实现，请参见[How to: Create a List of Items](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md)。  您可以从该主题中复制代码来设置类以及创建要使用的 `Student` 对象列表。  
   
@@ -46,7 +46,7 @@ caps.handback.revision: 20
   
 3.  在初始化列表中包含要初始化并向其分配初始值的每个属性。  属性名称以句点开头。  
   
-     [!code-vb[VbVbalrObjectInit#21](../../../../visual-basic/programming-guide/language-features/objects-and-classes/codesnippet/visualbasic/how-to-declare-an-object_2.vb)]  
+     [!code-vb[VbVbalrObjectInit#21](../../../../visual-basic/programming-guide/language-features/objects-and-classes/codesnippet/VisualBasic/how-to-declare-an-object-by-using-an-object-initializer_2.vb)]  
   
      您可以初始化类的一个或多个成员。  
   
@@ -60,11 +60,11 @@ caps.handback.revision: 20
   
 6.  依次键入 `With` 和对象初始值设定项，以初始化新实例的一个或多个成员。  
   
-     [!code-vb[VbVbalrObjectInit#22](../../../../visual-basic/programming-guide/language-features/objects-and-classes/codesnippet/visualbasic/how-to-declare-an-object_3.vb)]  
+     [!code-vb[VbVbalrObjectInit#22](../../../../visual-basic/programming-guide/language-features/objects-and-classes/codesnippet/VisualBasic/how-to-declare-an-object-by-using-an-object-initializer_3.vb)]  
   
 7.  可以省略 `As Student` 以简化上一步中的定义。  如果这样做，编译器将使用局部类型推理来确定 `student3` 是 `Student` 的实例。  
   
-     [!code-vb[VbVbalrObjectInit#23](../../../../visual-basic/programming-guide/language-features/objects-and-classes/codesnippet/visualbasic/how-to-declare-an-object_4.vb)]  
+     [!code-vb[VbVbalrObjectInit#23](../../../../visual-basic/programming-guide/language-features/objects-and-classes/codesnippet/VisualBasic/how-to-declare-an-object-by-using-an-object-initializer_4.vb)]  
   
      有关更多信息，请参见[局部类型推理](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)。  
   

@@ -48,7 +48,7 @@ caps.handback.revision: 14
   
      下面的示例调用 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> 函数。  
   
-     [!code-vb[VbVbcnProcedures#34](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-pass-arguments-to_1.vb)]  
+     [!code-vb[VbVbcnProcedures#34](./codesnippet/VisualBasic/how-to-pass-arguments-to-a-procedure_1.vb)]  
   
      上面的示例提供必选的第一个参数，即要显示的消息字符串。  省略了可选的第二个参数的参数，该参数指定要在消息框上显示的按钮。  因为调用没有提供值，`MsgBox` 使用默认值 `MsgBoxStyle.OKOnly`，该值仅显示**“确定”**按钮。  
   

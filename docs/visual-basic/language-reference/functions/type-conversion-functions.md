@@ -178,73 +178,73 @@ CUShort(expression)
 ## CBool 示例  
  下面的示例使用 `CBool` 函数将表达式转换为 `Boolean` 值。  如果表达式的计算结果为非零值，`CBool` 将返回 `True`；否则返回 `False`。  
   
- [!code-vb[VbVbalrFunctions#1](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_1.vb)]  
+ [!code-vb[VbVbalrFunctions#1](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_1.vb)]  
   
 ## CByte 示例  
  下面的示例使用 `CByte` 函数将表达式转换为 `Byte`。  
   
- [!code-vb[VbVbalrFunctions#2](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_2.vb)]  
+ [!code-vb[VbVbalrFunctions#2](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_2.vb)]  
   
 ## CChar 示例  
  下面的示例使用 `CChar` 函数将 `String` 表达式的第一个字符转换为 `Char` 类型。  
   
- [!code-vb[VbVbalrFunctions#3](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_3.vb)]  
+ [!code-vb[VbVbalrFunctions#3](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_3.vb)]  
   
  `CChar` 的输入参数必须是 `Char` 或 `String` 数据类型。  由于 `CChar` 不能接受数值数据类型，因此无法使用 `CChar` 将数字转换为字符。  下面的示例获取一个表示码位（字符代码）的数字，然后将其转换为对应的字符。  它使用 <xref:Microsoft.VisualBasic.Interaction.InputBox%2A> 函数获取数字字符串，并使用 `CInt` 将该字符串转换为 `Integer` 类型，然后使用 `ChrW` 将该数字转换为 `Char` 类型。  
   
- [!code-vb[VbVbalrFunctions#4](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_4.vb)]  
+ [!code-vb[VbVbalrFunctions#4](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_4.vb)]  
   
 ## CDate 示例  
  下面的示例使用 `CDate` 函数将字符串转换为 `Date` 值。  通常，建议不要使用硬编码的日期和时间作为字符串（如下例所示）。  而应使用日期文本和时间文本，如 \#Feb 12、1969\# 和 \#4:45:23 PM\#。  
   
- [!code-vb[VbVbalrFunctions#5](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_5.vb)]  
+ [!code-vb[VbVbalrFunctions#5](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_5.vb)]  
   
 ## CDbl 示例  
- [!code-vb[VbVbalrFunctions#6](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_6.vb)]  
+ [!code-vb[VbVbalrFunctions#6](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_6.vb)]  
   
 ## CDec 示例  
  下面的示例使用 `CDec` 函数将一个数值转换为 `Decimal`。  
   
- [!code-vb[VbVbalrFunctions#7](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_7.vb)]  
+ [!code-vb[VbVbalrFunctions#7](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_7.vb)]  
   
 ## CInt 示例  
  下面的示例使用 `CInt` 函数将一个值转换为 `Integer`。  
   
- [!code-vb[VbVbalrFunctions#8](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_8.vb)]  
+ [!code-vb[VbVbalrFunctions#8](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_8.vb)]  
   
 ## CLng 示例  
  下面的示例使用 `CLng` 函数将多个值转换为 `Long`。  
   
- [!code-vb[VbVbalrFunctions#9](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_9.vb)]  
+ [!code-vb[VbVbalrFunctions#9](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_9.vb)]  
   
 ## CObj 示例  
  下面的示例使用 `CObj` 函数将一个数值转换为 `Object`。  `Object` 变量本身只包含一个四字节的指针，该指针指向赋给该变量的 `Double` 值。  
   
- [!code-vb[VbVbalrFunctions#10](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_10.vb)]  
+ [!code-vb[VbVbalrFunctions#10](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_10.vb)]  
   
 ## CSByte 示例  
  下面的示例使用 `CSByte` 函数将一个数值转换为 `SByte`。  
   
- [!code-vb[VbVbalrFunctions#11](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_11.vb)]  
+ [!code-vb[VbVbalrFunctions#11](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_11.vb)]  
   
 ## CShort 示例  
  下面的示例使用 `CShort` 函数将一个数值转换为 `Short`。  
   
- [!code-vb[VbVbalrFunctions#12](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_12.vb)]  
+ [!code-vb[VbVbalrFunctions#12](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_12.vb)]  
   
 ## CSng 示例  
  下面的示例使用 `CSng` 函数将多个值转换为 `Single`。  
   
- [!code-vb[VbVbalrFunctions#13](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_13.vb)]  
+ [!code-vb[VbVbalrFunctions#13](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_13.vb)]  
   
 ## CStr 示例  
  下面的示例使用 `CStr` 函数将一个数值转换为 `String`。  
   
- [!code-vb[VbVbalrFunctions#14](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_14.vb)]  
+ [!code-vb[VbVbalrFunctions#14](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_14.vb)]  
   
  下面的示例使用 `CStr` 函数将 `Date` 值转换为 `String` 值。  
   
- [!code-vb[VbVbalrFunctions#15](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_15.vb)]  
+ [!code-vb[VbVbalrFunctions#15](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_15.vb)]  
   
  `CStr` 始终以符合当前区域设置的标准短格式呈现 `Date` 值，如“6\/15\/2003 4:35:47 PM”。  但是，`CStr` 会取消日期的“中性值”1\/1\/0001 和时间的“中性值”00:00:00。  
   
@@ -253,17 +253,17 @@ CUShort(expression)
 ## CUInt 示例  
  下面的示例使用 `CUInt` 函数将一个数值转换为 `UInteger`。  
   
- [!code-vb[VbVbalrFunctions#16](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_16.vb)]  
+ [!code-vb[VbVbalrFunctions#16](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_16.vb)]  
   
 ## CULng 示例  
  下面的示例使用 `CULng` 函数将一个数值转换为 `ULong`。  
   
- [!code-vb[VbVbalrFunctions#17](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_17.vb)]  
+ [!code-vb[VbVbalrFunctions#17](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_17.vb)]  
   
 ## CUShort 示例  
  下面的示例使用 `CUShort` 函数将一个数值转换为 `UShort`。  
   
- [!code-vb[VbVbalrFunctions#18](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/type-conversion-functions_18.vb)]  
+ [!code-vb[VbVbalrFunctions#18](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_18.vb)]  
   
 ## 请参阅  
  <xref:Microsoft.VisualBasic.Strings.Asc%2A>   

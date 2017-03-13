@@ -26,9 +26,9 @@ caps.handback.revision: 30
   
  **“打开文件”**对话框将使用以下筛选器设置只显示具有 .wav 扩展名的文件：  
   
- [!code-cs[csProgGuideInterop#5](../../../csharp/programming-guide/interop/codesnippet/csharp/how-to-use-platform-invo_1.cs)]  
+ [!code-cs[csProgGuideInterop#5](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-platform-invoke-to-play-a-wave-file_1.cs)]  
   
- [!code-cs[csProgGuideInterop#3](../../../csharp/programming-guide/interop/codesnippet/csharp/how-to-use-platform-invo_2.cs)]  
+ [!code-cs[csProgGuideInterop#3](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-platform-invoke-to-play-a-wave-file_2.cs)]  
   
 ## 编译代码  
   
@@ -40,7 +40,7 @@ caps.handback.revision: 30
   
 3.  复制下面的代码，并将它粘贴到 `Form1.Designer.cs` 文件的 `InitializeComponent()` 方法中现有代码的后面。  
   
-     [!code-cs[csProgGuideInterop#4](../../../csharp/programming-guide/interop/codesnippet/csharp/how-to-use-platform-invo_3.cs)]  
+     [!code-cs[csProgGuideInterop#4](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-platform-invoke-to-play-a-wave-file_3.cs)]  
   
 4.  编译并运行代码。  
   

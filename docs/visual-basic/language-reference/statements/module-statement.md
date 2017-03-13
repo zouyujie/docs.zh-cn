@@ -102,7 +102,7 @@ End Module
 -   **限定。**可以在一个项目中具有多个模块，而且可以在两个或更多个模块中声明名称相同的成员。  但是，如果从模块外引用此类成员，则必须用适当的模块名称来限定此类成员。  有关更多信息，请参见 [对已声明元素的引用](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)。  
   
 ## 示例  
- [!code-vb[VbVbalrStatements#69](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/module-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#69](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/module-statement_1.vb)]  
   
 ## 请参阅  
  [Class 语句](../../../visual-basic/language-reference/statements/class-statement.md)   

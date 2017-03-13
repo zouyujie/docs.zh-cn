@@ -38,9 +38,9 @@ caps.handback.revision: 17
 ## 示例  
  在下面的示例中，一个指向 `int` 的指针被转换为指向 `byte` 的指针。  注意，该指针指向变量的最低地址字节。  连续递增该结果直到达到 `int` 的大小（4 字节），即可显示变量的剩余字节。  
   
- [!code-cs[csProgGuidePointers#3](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers2.cs#3)]  
+ [!code-cs[csProgGuidePointers#3](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/pointer-conversions_1.cs)]  
   
- [!code-cs[csProgGuidePointers#4](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers.cs#4)]  
+ [!code-cs[csProgGuidePointers#4](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/pointer-conversions_2.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

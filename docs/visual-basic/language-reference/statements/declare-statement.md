@@ -141,14 +141,14 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 ## 示例  
  下面的示例声明对 `Function` 过程的外部引用，该过程返回当前用户名。  它随后调用外部过程 `GetUserNameA` 作为 `getUser` 过程的一部分。  
   
- [!code-vb[VbVbalrStatements#15](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/declare-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#15](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/declare-statement_1.vb)]  
   
 ## 示例  
  <xref:System.Runtime.InteropServices.DllImportAttribute> 提供了另一种在非托管代码中使用函数的方式。  下面的示例声明导入了一个函数，但不使用 `Declare` 语句。  
   
- [!code-vb[VbVbalrStatements#16](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/declare-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#16](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/declare-statement_2.vb)]  
   
- [!code-vb[VbVbalrStatements#1](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/declare-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#1](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/declare-statement_3.vb)]  
   
 ## 请参阅  
  <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>   

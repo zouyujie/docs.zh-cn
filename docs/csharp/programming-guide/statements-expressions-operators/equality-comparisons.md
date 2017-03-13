@@ -21,7 +21,7 @@ caps.handback.revision: 14
 ## 引用相等性  
  引用相等性是指两个对象引用均引用同一基础对象。  这可以通过简单的赋值来实现，如下面的示例所示。  
   
- [!code-cs[csProgGuideStatements#18](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/equality-comparisons_1.cs)]  
+ [!code-cs[csProgGuideStatements#18](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/equality-comparisons_1.cs)]  
   
  在此代码中，创建了两个对象，但在赋值语句后，这两个引用所引用的是同一对象。  因此，它们具有引用相等性。  使用 <xref:System.Object.ReferenceEquals%2A> 方法来确定两个引用是否引用同一对象。  
   

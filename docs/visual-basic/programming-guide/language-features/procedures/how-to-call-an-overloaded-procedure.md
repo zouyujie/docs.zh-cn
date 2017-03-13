@@ -37,9 +37,9 @@ caps.handback.revision: 12
   
      下面的示例调用在 [如何：定义一个过程的多个版本](../../../../visual-basic/programming-guide/language-features/procedures/how-to-define-multiple-versions-of-a-procedure.md) 中声明的 `post` 过程。  它获取客户标识，确定它是 `String` 还是 `Integer`，然后在每一种情况下都调用相同的过程。  
   
-     [!code-vb[VbVbcnProcedures#56](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-call-an-overloade_1.vb)]  
+     [!code-vb[VbVbcnProcedures#56](./codesnippet/VisualBasic/how-to-call-an-overloaded-procedure_1.vb)]  
   
-     [!code-vb[VbVbcnProcedures#57](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-call-an-overloade_2.vb)]  
+     [!code-vb[VbVbcnProcedures#57](./codesnippet/VisualBasic/how-to-call-an-overloaded-procedure_2.vb)]  
   
 ## 请参阅  
  [过程](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   

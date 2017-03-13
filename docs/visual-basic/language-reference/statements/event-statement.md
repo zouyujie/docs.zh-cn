@@ -91,7 +91,7 @@ End Event
 ## 备注  
  一旦声明了事件，便可使用 `RaiseEvent` 语句引发事件。  可以按以下片段所示声明和引发典型事件：  
   
- [!code-vb[VbVbalrEvents#13](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#13)]  
+ [!code-vb[VbVbalrEvents#13](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/event-statement_1.vb)]  
   
 > [!NOTE]
 >  可以正如处理过程的参数一样来声明事件参数，不过有以下例外：事件不能具有命名参数、`ParamArray` 参数或 `Optional` 参数。  事件没有返回值。  
@@ -115,11 +115,11 @@ End Event
   
  向 `Form1` 类的声明部分添加一个 `WithEvents` 变量：  
   
- [!code-vb[VbVbalrEvents#14](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#14)]  
+ [!code-vb[VbVbalrEvents#14](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/event-statement_2.vb)]  
   
  将下面的代码添加到 `Form1` 的代码：  替换可能存在的任何重复过程，如 `Form_Load` 或 `Button_Click`。  
   
- [!code-vb[VbVbalrEvents#15](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#15)]  
+ [!code-vb[VbVbalrEvents#15](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/event-statement_3.vb)]  
   
  按 F5 以运行前面的示例，然后单击标记为**“Start”**的按钮。  第一个文本框中开始倒计时秒数。  经过了全部时间（10 秒）之后，第一个文本框会显示“Done”。  
   

@@ -43,7 +43,7 @@ Erase arraylist
 ## 示例  
  下面的示例使用 `Erase` 语句清除两个数组并释放其内存（分别保存有 1000 和 100 个存储元素）。  然后，`ReDim` 语句将新的数组实例赋给其中的三维数组。  
   
- [!code-vb[VbVbalrStatements#19](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/erase-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#19](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/erase-statement_1.vb)]  
   
 ## 请参阅  
  [Nothing](../../../visual-basic/language-reference/nothing.md)   

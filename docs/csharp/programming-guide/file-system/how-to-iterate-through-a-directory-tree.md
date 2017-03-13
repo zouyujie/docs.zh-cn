@@ -44,14 +44,14 @@ root.GetDirectories("*.*", System.IO.SearchOption.AllDirectories);
   
  对于所处理的特定异常以及在每个文件和文件夹上执行的特定操作，都只是作为示例提供。  您应该修改此代码来满足自己特定的需要。  有关更多信息，请参见代码中的注释。  
   
- [!code-cs[csFilesandFolders#1](../../../csharp/programming-guide/file-system/codesnippet/csharp/csFilesFolders/FileIteration.cs#1)]  
+ [!code-cs[csFilesandFolders#1](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-iterate-through-a-directory-tree_1.cs)]  
   
 ## 示例  
  下面的示例演示在不使用递归的情况下如何循环访问目录树中的文件和文件夹。  该技术使用泛型 <xref:System.Collections.Generic.Stack%601> 集合类型，该类型是一个后进先出 \(LIFO\) 堆栈。  
   
  对于所处理的特定异常以及在每个文件和文件夹上执行的特定操作，都只是作为示例提供。  您应该修改此代码来满足自己特定的需要。  有关更多信息，请参见代码中的注释。  
   
- [!code-cs[csFilesandFolders#2](../../../csharp/programming-guide/file-system/codesnippet/csharp/csFilesFolders/FileIteration.cs#2)]  
+ [!code-cs[csFilesandFolders#2](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-iterate-through-a-directory-tree_2.cs)]  
   
  通常，测试每个文件夹以确定您的应用程序是否有权限打开它是非常耗时的。  因此，代码示例只是将该部分操作放到了一个 `try/catch` 块内。  您可以修改该 `catch` 块，以便在访问某个文件夹遭受拒绝时，您可以提升自己的权限，然后再次访问它。  通常，只捕捉那些无需使应用程序停留在一个未知状态就可以处理的异常。  
   

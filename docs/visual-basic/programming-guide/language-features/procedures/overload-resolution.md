@@ -50,9 +50,9 @@ caps.handback.revision: 21
   
  下面的示例阐释了此重载决策过程。  
   
- [!code-vb[VbVbcnProcedures#62](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/overload-resolution_1.vb)]  
+ [!code-vb[VbVbcnProcedures#62](./codesnippet/VisualBasic/overload-resolution_1.vb)]  
   
- [!code-vb[VbVbcnProcedures#63](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/overload-resolution_2.vb)]  
+ [!code-vb[VbVbcnProcedures#63](./codesnippet/VisualBasic/overload-resolution_2.vb)]  
   
  在第一个调用中，编译器将消除第一个重载，因为第一个参数 \(Argument\) 的类型 \(`Short`\) 将收缩为相应参数 \(Parameter\) 的类型 \(`Byte`\)。  接着，编译器消除第三个重载，因为第二个重载中的每个参数 \(Argument\) 类型（`Short` 和 `Single`）都将扩大为第三个重载中的相应类型（`Integer` 和 `Single`）。  第二个重载需要的扩大量较少，因此编译器将用它进行调用。  
   

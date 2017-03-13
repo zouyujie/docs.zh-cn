@@ -43,7 +43,7 @@ caps.handback.revision: 15
 ## 示例  
  下面的示例演示强制继承和强制重写。  基类 `shape` 定义变量 `acrossLine`。  类 `circle` 和 `square` 从 `shape` 派生。  这两个类继承 `acrossLine` 的定义，但它们必须单独定义 `area` 函数，这是因为每种形状的面积计算方法不同。  
   
- [!code-vb[VbVbalrKeywords#2](../../../visual-basic/language-reference/codesnippet/visualbasic/mustinherit_1.vb)]  
+ [!code-vb[VbVbalrKeywords#2](../../../visual-basic/language-reference/codesnippet/VisualBasic/mustinherit_1.vb)]  
   
  您可以将 `shape1` 和 `shape2` 声明为 `shape` 类型。  但是，您不能从 `shape` 创建对象，因为它缺少 `area` 函数的功能并且被标记为 `MustInherit`。  
   

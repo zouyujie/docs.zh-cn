@@ -27,9 +27,9 @@ caps.handback.revision: 5
 ## 默认实例  
  默认实例是由运行时提供的类的实例，它不需要使用 `Dim` 和 `New` 语句进行声明和实例化。  下面的示例演示如何声明和实例化称为 `Form1` 的 <xref:System.Windows.Forms.Form> 类的实例，以及如何通过 `My.Forms` 获得此 <xref:System.Windows.Forms.Form> 类的默认实例。  
   
- [!code-vb[VbVbcnMy#5](../../../visual-basic/developing-apps/development-with-my/codesnippet/visualbasic/default-object-instances_1.vb)]  
+ [!code-vb[VbVbcnMy#5](../../../visual-basic/developing-apps/development-with-my/codesnippet/VisualBasic/default-object-instances-provided-by-my-forms-and-my-webservices_1.vb)]  
   
- [!code-vb[VbVbcnMy#6](../../../visual-basic/developing-apps/development-with-my/codesnippet/visualbasic/default-object-instances_2.vb)]  
+ [!code-vb[VbVbcnMy#6](../../../visual-basic/developing-apps/development-with-my/codesnippet/VisualBasic/default-object-instances-provided-by-my-forms-and-my-webservices_2.vb)]  
   
  `My.Forms` 对象会返回项目中每个 `Form` 类的默认实例的集合。  同样，对于您已在应用程序中创建引用的每一项 Web 服务，`My.WebServices` 都会为其代理类提供一个默认实例。  
   

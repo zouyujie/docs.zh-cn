@@ -32,7 +32,7 @@ caps.handback.revision: 17
   
  这两种运算符还可以串联 `String` 变量，如下面的示例所示。  
   
- [!code-vb[VbVbalrOperators#76](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/concatenation-operators_1.vb)]  
+ [!code-vb[VbVbalrOperators#76](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/concatenation-operators_1.vb)]  
   
 ## 两种串联运算符之间的区别  
  [\+ 运算符](../../../../visual-basic/language-reference/operators/addition-operator.md) 的主要用途是将两个数字相加。  然而，它还可以将数值操作数与字符串操作数串联起来。  `+` 操作数具有一套复杂的规则，用来确定是相加、串联、指示编译器错误还是引发运行时的 <xref:System.InvalidCastException> 异常。  

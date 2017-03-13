@@ -34,7 +34,7 @@ caps.handback.revision: 23
   
 -   使用 `GetFiles` 方法，同时提供要搜索的目录的名称和路径并指定模式。  下面的示例返回目录中具有扩展名 `.dll` 的所有文件，并将它们添加到 `ListBox1` 中。  
   
-     [!code-vb[VbFileIOMisc#4](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-find-files-with-a_1.vb)]  
+     [!code-vb[VbFileIOMisc#4](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-find-files-with-a-specific-pattern_1.vb)]  
   
 ## .NET Framework 安全性  
  以下情况可能会导致异常：  

@@ -20,7 +20,7 @@ caps.handback.revision: 26
   
  在下面的示例中，使用一个简单的构造函数定义了名为 `Taxi` 的类。  然后使用 [new](../../../csharp/language-reference/keywords/new.md) 运算符来实例化该类。  在为新对象分配内存之后，`new` 运算符立即调用 `Taxi` 构造函数。  
   
- [!code-cs[csProgGuideObjects#53](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-constructors_1.cs)]  
+ [!code-cs[csProgGuideObjects#53](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-constructors_1.cs)]  
   
  不带参数的构造函数称为“默认构造函数”。  无论何时，只要使用 `new` 运算符实例化对象，并且不为 `new` 提供任何参数，就会调用默认构造函数。  有关更多信息，请参见[实例构造函数](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md)。  
   
@@ -28,7 +28,7 @@ caps.handback.revision: 26
   
  通过将构造函数设置为私有构造函数，可以阻止类被实例化，如下所示：  
   
- [!code-cs[csProgGuideObjects#11](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-constructors_2.cs)]  
+ [!code-cs[csProgGuideObjects#11](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-constructors_2.cs)]  
   
  有关更多信息，请参见[私有构造函数](../../../csharp/programming-guide/classes-and-structs/private-constructors.md)。  
   
@@ -59,33 +59,33 @@ Console.WriteLine("{0}, {1}", a, b);
   
  类和 `structs` 都可以定义具有参数的构造函数。  带参数的构造函数必须通过 `new` 语句或 [base](../../../csharp/language-reference/keywords/base.md) 语句来调用。  类和 `structs` 还可以定义多个构造函数，并且二者均不需要定义默认构造函数。  例如：  
   
- [!code-cs[csProgGuideObjects#54](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-constructors_3.cs)]  
+ [!code-cs[csProgGuideObjects#54](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-constructors_3.cs)]  
   
  可以使用下列语句中的任一个语句来创建此类：  
   
- [!code-cs[csProgGuideObjects#55](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-constructors_4.cs)]  
+ [!code-cs[csProgGuideObjects#55](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-constructors_4.cs)]  
   
  构造函数可以使用 `base` 关键字来调用基类的构造函数。  例如：  
   
- [!code-cs[csProgGuideObjects#56](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-constructors_5.cs)]  
+ [!code-cs[csProgGuideObjects#56](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-constructors_5.cs)]  
   
  在此示例中，基类的构造函数在执行构造函数块之前被调用。  `base` 关键字可带参数使用，也可不带参数使用。  构造函数的任何参数都可用作 `base` 的参数，或用作表达式的一部分。  有关更多信息，请参见[base](../../../csharp/language-reference/keywords/base.md)。  
   
  在派生类中，如果不使用 `base` 关键字来显式调用基类构造函数，则将隐式调用默认构造函数（如果有的话）。  这意味着下面的构造函数声明在效果上是相同的：  
   
- [!code-cs[csProgGuideObjects#58](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-constructors_6.cs)]  
+ [!code-cs[csProgGuideObjects#58](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-constructors_6.cs)]  
   
- [!code-cs[csProgGuideObjects#57](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-constructors_7.cs)]  
+ [!code-cs[csProgGuideObjects#57](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-constructors_7.cs)]  
   
  如果基类没有提供默认构造函数，派生类必须使用 `base` 显式调用基构造函数。  
   
  构造函数可以使用 [this](../../../csharp/language-reference/keywords/this.md) 关键字调用同一对象中的另一构造函数。  和 `base` 一样，`this` 可带参数使用也可不带参数使用，构造函数中的任何参数都可用作 `this` 的参数，或者用作表达式的一部分。  例如，可以使用 `this` 重写前一示例中的第二个构造函数：  
   
- [!code-cs[csProgGuideObjects#59](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-constructors_8.cs)]  
+ [!code-cs[csProgGuideObjects#59](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-constructors_8.cs)]  
   
  上一示例中对 `this` 关键字的使用导致此构造函数被调用：  
   
- [!code-cs[csProgGuideObjects#60](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-constructors_9.cs)]  
+ [!code-cs[csProgGuideObjects#60](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-constructors_9.cs)]  
   
  构造函数可以标记为 [public](../../../csharp/language-reference/keywords/public.md)、[private](../../../csharp/language-reference/keywords/private.md)、[protected](../../../csharp/language-reference/keywords/protected.md)、[internal](../../../csharp/language-reference/keywords/internal.md) 或 `protected` `internal`。  这些访问修饰符定义类的用户构造该类的方式。  有关更多信息，请参见[访问修饰符](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)。  
   

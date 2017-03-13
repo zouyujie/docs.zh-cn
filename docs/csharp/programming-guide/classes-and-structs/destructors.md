@@ -34,7 +34,7 @@ caps.handback.revision: 24
   
  例如，下面是类 `Car` 的析构函数的声明：  
   
- [!code-cs[csProgGuideObjects#86](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/destructors_1.cs)]  
+ [!code-cs[csProgGuideObjects#86](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/destructors_1.cs)]  
   
  该析构函数隐式地对对象的基类调用 <xref:System.Object.Finalize%2A>。  这样，前面的析构函数代码被隐式地转换为以下代码：  
   
@@ -78,7 +78,7 @@ protected override void Finalize()
 ## 示例  
  下面的示例创建三个类，这三个类构成了一个继承链。  类 `First` 是基类，`Second` 是从 `First` 派生的，而 `Third` 是从 `Second` 派生的。  这三个类都有析构函数。  在 `Main()` 中，创建了派生程度最大的类的实例。  注意：程序运行时，这三个类的析构函数将自动被调用，并且是按照从派生程度最大的到派生程度最小的次序调用。  
   
- [!code-cs[csProgGuideObjects#85](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/destructors_2.cs)]  
+ [!code-cs[csProgGuideObjects#85](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/destructors_2.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

@@ -35,7 +35,7 @@ caps.handback.revision: 15
 ## 示例  
  此示例更改 `LastChanged` 用户设置的值，并调用 `My.Settings.Save` 方法保存所做的更改。  
   
- [!code-vb[VbVbalrMyResources#5](../../../../visual-basic/developing-apps/programming/app-settings/codesnippet/visualbasic/VbVbalrMyResources2/Form1.vb#5)]  
+ [!code-vb[VbVbalrMyResources#5](../../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/how-to-persist-user-settings_1.vb)]  
   
  若要使此示例正常工作，应用程序必须具有类型为 `Date` 的 `LastChanged` 用户设置。  有关更多信息，请参见[管理应用程序设置 \(.NET\)](/visual-studio/ide/managing-application-settings-dotnet)。  
   

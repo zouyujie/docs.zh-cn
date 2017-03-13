@@ -25,7 +25,7 @@ caps.handback.revision: 19
 
 匿名类型不提供直接指定属性的数据类型的机制。 所有属性的类型都是推断出来的。 下面的示例从用于初始化属性的值，直接推断 `Name`和 `Price` 属性的类型。  
   
- [!code-vb[VbVbalrAnonymousTypes#1](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_1.vb)]  
+ [!code-vb[VbVbalrAnonymousTypes#1](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_1.vb)]  
   
  匿名类型还可以从其他来源推断属性名和类型。 以下各部分提供了可以进行推断的情况列表，以及不能进行推断的情况的示例。  
   
@@ -35,19 +35,19 @@ caps.handback.revision: 19
   
 -   从变量名称。 匿名类型 `anonProduct` 将具有两个属性：`productName` 和 `productPrice`。 它们的数据类型将是原始变量的数据类型，分别为 `String` 和 `Double`。  
   
-     [!code-vb[VbVbalrAnonymousTypes#11](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_2.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#11](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_2.vb)]  
   
 -   从其他对象的属性或字段名称。 例如，考虑包含 `Name` 和 `ID` 属性的 `CarClass` 类型的 `car` 对象。 若要创建一个匿名类型实例 `car1`，并且其 `Name` 和 `ID` 属性使用 `car` 对象的值进行初始化，则可以编写下面的代码：  
   
-     [!code-vb[VbVbalrAnonymousTypes#34](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_3.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#34](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_3.vb)]  
   
      以上声明等效于定义匿名类型 `car2` 的一行较长的代码。  
   
-     [!code-vb[VbVbalrAnonymousTypes#35](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_4.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#35](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_4.vb)]  
   
 -   从 XML 成员名称。  
   
-     [!code-vb[VbVbalrAnonymousTypes#12](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_5.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#12](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_5.vb)]  
   
      为 `anon` 产生的类型将具有一个属性 `Book`，其类型为 <xref:System.Collections.IEnumerable>\(Of XElement\)。  
   
@@ -59,7 +59,7 @@ caps.handback.revision: 19
   
      下面代码中的变量 `anon2` 是具有一个属性（一个名为 `First` 的字符）的匿名类型。 这段代码将显示函数 <xref:System.Linq.Enumerable.First%2A> 返回的字母“E”。  
   
-     [!code-vb[VbVbalrAnonymousTypes#13](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_6.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#13](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_6.vb)]  
   
 ## 推理失败  
   
@@ -87,7 +87,7 @@ caps.handback.revision: 19
   
      将表达式的结果赋给属性名可以消除此错误。  
   
-     [!code-vb[VbVbalrAnonymousTypes#14](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_7.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#14](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_7.vb)]  
   
 -   对多个属性的推理会产生两个或更多的同名属性。 回到前面示例中的声明，在那些声明中，不能将 `product.Name` 和 `car1.Name` 同时列为同一匿名类型的属性。 这是因为这些属性的推断标识符都是 `Name`。  
   
@@ -97,7 +97,7 @@ caps.handback.revision: 19
   
      通过为不同属性名赋值可以解决此问题。  
   
-     [!code-vb[VbVbalrAnonymousTypes#36](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_8.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#36](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_8.vb)]  
   
      请注意，更改大小写（在大写和小写字母之间切换）不能区分两个名称。  
   
@@ -115,7 +115,7 @@ caps.handback.revision: 19
   
      在此示例中，可以通过逆转声明属性的顺序来解决问题。  
   
-     [!code-vb[VbVbalrAnonymousTypes#15](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_9.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#15](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_9.vb)]  
   
 -   匿名类型的属性名和 <xref:System.Object> 的成员的名称相同。 例如，因为 `Equals` 是 <xref:System.Object> 的一个方法，所以下面的声明会失败。  
   
@@ -127,7 +127,7 @@ caps.handback.revision: 19
   
      可以通过更改属性名来修复该问题：  
   
-     [!code-vb[VbVbalrAnonymousTypes#16](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_10.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#16](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_10.vb)]  
   
 ## 请参阅  
  [对象初始值设定项：命名类型和匿名类型](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)   

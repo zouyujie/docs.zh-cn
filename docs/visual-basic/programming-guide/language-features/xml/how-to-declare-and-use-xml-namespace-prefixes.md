@@ -26,7 +26,7 @@ caps.handback.revision: 11
 此示例演示如何导入 XML 命名空间前缀 `ns` 并在 XML 文本和 XML 轴属性中使用它。  
   
 ## 示例  
- [!code-vb[VbXMLSamples#8](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-declare-and-use-x_1.vb)]  
+ [!code-vb[VbXMLSamples#8](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-declare-and-use-xml-namespace-prefixes_1.vb)]  
   
 ## 编译代码  
  此示例需要：  

@@ -39,11 +39,11 @@ caps.handback.revision: 15
 ## 示例  
  下面的示例为名为  `height` 的结构定义 `+` 运算符。  该结构的高度以英尺和英寸为单位。  1 英寸等于 2.54 厘米，1 英尺等于 12 英寸。  为了确保使用标准形式的值（英寸 \< 12.0），构造函数执行模为 12 的运算。  `+` 运算符使用此构造函数生成标准形式的值。  
   
- [!code-vb[VbVbcnProcedures#25](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-define-an-operator_1.vb)]  
+ [!code-vb[VbVbcnProcedures#25](./codesnippet/VisualBasic/how-to-define-an-operator_1.vb)]  
   
  可以使用下面的代码测试结构  `height` 。  
   
- [!code-vb[VbVbcnProcedures#26](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-define-an-operator_2.vb)]  
+ [!code-vb[VbVbcnProcedures#26](./codesnippet/VisualBasic/how-to-define-an-operator_2.vb)]  
   
  有关更多信息和示例，请参见 [Operator Overloading in Visual Basic 2005](http://go.microsoft.com/fwlink/?LinkId=101703)（Visual Basic 2005 中的运算符重载）。  
   

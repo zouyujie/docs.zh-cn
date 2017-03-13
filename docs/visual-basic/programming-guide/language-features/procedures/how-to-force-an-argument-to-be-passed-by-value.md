@@ -44,9 +44,9 @@ caps.handback.revision: 16
 ## 示例  
  下面的示例重写 `ByRef` 参数声明。  在强制 `ByVal`的调用，请注意括号的两个级别。  
   
- [!code-vb[VbVbcnProcedures#39](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-force-an-argument_1.vb)]  
+ [!code-vb[VbVbcnProcedures#39](./codesnippet/VisualBasic/how-to-force-an-argument-to-be-passed-by-value_1.vb)]  
   
- [!code-vb[VbVbcnProcedures#40](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-force-an-argument_2.vb)]  
+ [!code-vb[VbVbcnProcedures#40](./codesnippet/VisualBasic/how-to-force-an-argument-to-be-passed-by-value_2.vb)]  
   
  当 `str` 的对齐中的额外括号将参数列表， `setNewString` 程序不能在调用代码中更改它的值，并且， `MsgBox` 显示 “不能替换，如果传入的 ByVal”。  当 `str` 在额外括号中时没有包含，过程可以更改此值，并且， `MsgBox` 显示 “这是 inString 参数的一个新值”。  
   

@@ -79,7 +79,7 @@ caps.handback.revision: 30
 ## 示例  
  下面的示例说明如何声明类的字段、构造函数和方法。  该例还说明了如何实例化对象及如何打印实例数据。  在此例中声明了两个类，一个是 `Child` 类，它包含两个私有字段（`name` 和 `age`）和两个公共方法。  第二个类 `StringTest` 用来包含 `Main`。  
   
- [!code-cs[csrefKeywordsTypes#5](../../../csharp/language-reference/keywords/codesnippet/csharp/class_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/class_1.cs)]  
   
 ## 注释  
  注意：在上例中，私有字段（`name` 和 `age`）只能通过 `Child` 类的公共方法访问。  例如，不能在 `Main` 方法中使用如下语句打印 Child 的名称：  

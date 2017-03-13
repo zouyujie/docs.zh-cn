@@ -75,7 +75,7 @@ caps.handback.revision: 23
  下面的示例说明何时通过值传递实参以及何时通过引用传递实参。  过程 `Calculate` 同时具有 `ByVal` 和 `ByRef` 形参。  在给定利率 `rate` 和款项 `debt` 的前提下，过程的任务是计算 `debt` 的新值，即将利率应用于 `debt` 的原始值的结果。  由于 `debt` 是一个 `ByRef` 形参，所以，新总计体现在调用代码中与 `debt` 对应的实参的值中。  形参 `rate` 是 `ByVal` 形参，因为 `Calculate` 不应更改其值。  
   
 ### 代码  
- [!code-vb[VbVbcnProcedures#74](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/passing-arguments-by-val_1.vb)]  
+ [!code-vb[VbVbcnProcedures#74](./codesnippet/VisualBasic/passing-arguments-by-value-and-by-reference_1.vb)]  
   
 ## 请参阅  
  [过程](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   

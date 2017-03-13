@@ -29,7 +29,7 @@ caps.handback.revision: 23
   
  通过使用 `From` 关键字后跟大括号 \(`{}`\)，可以标识集合初始值设定项。  这与 [数组](../../../../visual-basic/programming-guide/language-features/arrays/index.md)中介绍的数组文本语法类似。  下面的示例演示使用集合初始值设定项创建集合的各种方法。  
   
- [!code-vb[VbVbalrCollectionInitializers#1](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_1.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#1](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_1.vb)]  
   
 > [!NOTE]
 >  C\# 也提供集合初始值设定项。  C\# 集合初始值设定项提供与 Visual Basic 集合初始值设定项相同的功能。  有关 C\# 初始值设定项的更多信息，请参见[对象和集合初始值设定项](../../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)。  
@@ -37,11 +37,11 @@ caps.handback.revision: 23
 ## 语法  
  集合初始值设定项由逗号分隔值列表组成，这些值用大括号 \(`{}`\) 括起，前面带有 `From` 关键字，如下面的代码所示。  
   
- [!code-vb[VbVbalrCollectionInitializers#2](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_2.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#2](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_2.vb)]  
   
  在创建集合（如 <xref:System.Collections.Generic.List%601> 或 <xref:System.Collections.Generic.Dictionary%602>）时，必须在集合初始值设定项前面提供集合类型，如下面的代码所示。  
   
- [!code-vb[VbVbalrCollectionInitializers#13](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_3.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#13](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_3.vb)]  
   
 > [!NOTE]
 >  不能通过组合集合初始值设定项和对象初始值设定项来初始化同一集合对象。  可以使用对象初始值设定项来初始化集合初始值设定项中的对象。  
@@ -57,11 +57,11 @@ caps.handback.revision: 23
   
  例如，下面的代码示例演示如何使用集合初始值设定项创建 `List(Of Customer)` 集合。  在运行该代码时，每个 `Customer` 对象都将传递给泛型列表的 `Add(Customer)` 方法。  
   
- [!code-vb[VbVbalrCollectionInitializers#9](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_4.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#9](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_4.vb)]  
   
  下面的代码示例演示不使用集合初始值设定项的等效代码。  
   
- [!code-vb[VbVbalrCollectionInitializers#10](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_5.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#10](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_5.vb)]  
   
  如果集合具有 `Add` 方法并且该方法包含与 `Customer` 对象的构造函数相匹配的参数，则可以在集合初始值设定项中嵌套 `Add` 方法的参数值，如下一节内容所述。  如果集合没有这样的 `Add` 方法，则可以采用扩展方法形式创建一个。  有关如何以扩展方法形式为集合创建 `Add` 方法的示例，请参见[如何：创建集合初始值设定项所使用的 Add 扩展方法](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-an-add-extension-method-used-by-a-collection-initializer.md)。  有关如何创建可与集合初始值设定项一起使用的自定义集合的示例，请参见[如何：创建集合初始值设定项所使用的集合](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-a-collection-used-by-a-collection-initializer.md)。  
   
@@ -70,11 +70,11 @@ caps.handback.revision: 23
   
  在使用嵌套值创建集合时，嵌套值列表的每个元素都将作为参数传递给与这些元素类型匹配的 `Add` 方法。  例如，下面的代码示例创建一个 <xref:System.Collections.Generic.Dictionary%602>，在该集合中键类型为 `Integer`，值类型为 `String`。  每个嵌套值列表都与 `Dictionary` 的 <xref:System.Collections.Generic.Dictionary%602.Add%2A> 方法相匹配。  
   
- [!code-vb[VbVbalrCollectionInitializers#5](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_6.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#5](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_6.vb)]  
   
  上一代码示例与下面的代码是等效的。  
   
- [!code-vb[VbVbalrCollectionInitializers#6](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/index_7.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#6](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_7.vb)]  
   
  仅将第一个嵌套层中的嵌套值列表发送到集合类型的 `Add` 方法。  更深的嵌套层被视为数组文本，因而其中的嵌套值列表不与任何集合的 `Add` 方法相匹配。  
   

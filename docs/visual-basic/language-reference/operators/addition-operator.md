@@ -101,23 +101,23 @@ caps.handback.revision: 26
 ## 示例  
  下面的示例使用 `+` 运算符将数字相加。  如果操作数均为数值，Visual Basic 将计算算术结果。  算术结果为两个操作数的和。  
   
- [!code-vb[VbVbalrOperators#6](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addition-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#6](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_1.vb)]  
   
  还可以使用 `+` 运算符连接字符串。  如果操作数均为字符串，Visual Basic 将把它们连接起来。  连接结果为一个字符串，它由两个操作数的内容依次排列而成。  
   
  如果操作数的类型不同，则结果将取决于 [Option Strict 语句](../../../visual-basic/language-reference/statements/option-strict-statement.md) 的设置。  下面的示例演示当 `Option Strict` 为 `On` 时的结果。  
   
- [!code-vb[VbVbalrOperators#53](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addition-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#53](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_2.vb)]  
   
- [!code-vb[VbVbalrOperators#50](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addition-operator_3.vb)]  
-[!code-vb[VbVbalrOperators#51](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addition-operator_4.vb)]  
+ [!code-vb[VbVbalrOperators#50](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_3.vb)]  
+[!code-vb[VbVbalrOperators#51](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_4.vb)]  
   
  下面的示例演示当 `Option Strict` 为 `Off` 时的结果。  
   
- [!code-vb[VbVbalrOperators#54](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addition-operator_5.vb)]  
+ [!code-vb[VbVbalrOperators#54](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_5.vb)]  
   
- [!code-vb[VbVbalrOperators#50](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addition-operator_3.vb)]  
-[!code-vb[VbVbalrOperators#52](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addition-operator_6.vb)]  
+ [!code-vb[VbVbalrOperators#50](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_3.vb)]  
+[!code-vb[VbVbalrOperators#52](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_6.vb)]  
   
  若要消除多义性，应用 `&` 运算符代替 `+` 运算符执行连接操作。  
   

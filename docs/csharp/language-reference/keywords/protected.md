@@ -24,7 +24,7 @@ caps.handback.revision: 20
 ## 示例  
  只有在通过派生类类型发生访问时，基类的受保护成员在派生类中才是可访问的。  例如，请看以下代码段：  
   
- [!code-cs[csrefKeywordsModifiers#11](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#11)]  
+ [!code-cs[csrefKeywordsModifiers#11](../../../csharp/language-reference/keywords/codesnippet/CSharp/protected_1.cs)]  
   
  语句 `a.x = 10` 生成错误，因为它是在静态方法 Main 中生成的，而不是类 B 的实例。  
   
@@ -33,7 +33,7 @@ caps.handback.revision: 20
 ## 示例  
  此示例中，`DerivedPoint` 类派生自 `Point`。  因此，可以从派生类直接访问基类的受保护成员。  
   
- [!code-cs[csrefKeywordsModifiers#12](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#12)]  
+ [!code-cs[csrefKeywordsModifiers#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/protected_2.cs)]  
   
  如果将 `x` 和 `y` 的访问级别更改为 [private](../../../csharp/language-reference/keywords/private.md)，编译器将发出错误信息：  
   

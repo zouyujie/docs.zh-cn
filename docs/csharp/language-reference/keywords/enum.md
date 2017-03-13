@@ -74,17 +74,17 @@ int x = (int)Days.Sun;
 ## 示例  
  在下面的示例中，已声明枚举 `Days`。 已将两个枚举数显式转换为整数，并赋值为整数变量。  
   
- [!code-cs[csrefKeywordsTypes#10](../../../csharp/language-reference/keywords/codesnippet/csharp/enum_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#10](../../../csharp/language-reference/keywords/codesnippet/CSharp/enum_1.cs)]  
   
 ## 示例  
  以下示例中，使用基类型选项来声明其成员是 `long` 类型的 `enum`。 请注意，即使该枚举的基础类型是 `long`，仍然需通过使用转换将枚举成员显式转换为类型 `long`。  
   
- [!code-cs[csrefKeywordsTypes#11](../../../csharp/language-reference/keywords/codesnippet/csharp/enum_2.cs)]  
+ [!code-cs[csrefKeywordsTypes#11](../../../csharp/language-reference/keywords/codesnippet/CSharp/enum_2.cs)]  
   
 ## 示例  
  下面的代码示例说明了 `enum` 声明中 <xref:System.FlagsAttribute?displayProperty=fullName> 特性的使用和作用。  
   
- [!code-cs[csrefKeywordsTypes#12](../../../csharp/language-reference/keywords/codesnippet/csharp/enum_3.cs)]  
+ [!code-cs[csrefKeywordsTypes#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/enum_3.cs)]  
   
 ## 注释  
  如果删除 `Flags`，则示例将显示以下值：  

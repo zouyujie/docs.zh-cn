@@ -37,14 +37,14 @@ caps.handback.revision: 27
   
  例如，[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] 在 <xref:System.Windows.Forms?displayProperty=fullName> 命名空间中定义 <xref:System.Windows.Forms.ListBox> 类。 以下代码段演示如何使用此类的完全限定名称声明变量：  
   
- [!code-vb[VbVbalrApplication#6](../../../visual-basic/programming-guide/program-structure/codesnippet/visualbasic/namespaces_1.vb)]  
+ [!code-vb[VbVbalrApplication#6](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/namespaces_1.vb)]  
   
 ## 避免名称冲突  
  [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] 命名空间解决有时被称为*命名空间污染*的问题，即类库开发人员会受到另一个库中使用的相似名称的妨碍。 这些冲突及其现有组件有时被称为*名称冲突*。  
   
  例如，如果创建一个名为 `ListBox`的新类，你可以在项目中不加限定地使用它。 但是，如果想要在同一项目中使用 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)]<xref:System.Windows.Forms.ListBox> 类，则必须使用完全限定引用，以使引用唯一。 如果引用不唯一，[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 会产生一个错误，指出名称不明确。 下面的代码示例演示如何声明这些对象：  
   
- [!code-vb[VbVbalrApplication#7](../../../visual-basic/programming-guide/program-structure/codesnippet/visualbasic/namespaces_2.vb)]  
+ [!code-vb[VbVbalrApplication#7](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/namespaces_2.vb)]  
   
  下图显示两个命名空间层次结构，它们都包含一个名为 `ListBox` 的对象。  
   
@@ -57,17 +57,17 @@ caps.handback.revision: 27
 ## 完全限定名  
  完全限定名是以在其中定义对象的命名空间的名称为前缀的对象引用。 如果创建对类的引用（通过选择“项目”菜单中的“添加引用”），然后为代码中的对象使用完全限定名，则可以使用在其他项目中定义的对象。 以下代码段演示如何为来自另一个项目命名空间的对象使用完全限定名：  
   
- [!code-vb[VbVbalrApplication#8](../../../visual-basic/programming-guide/program-structure/codesnippet/visualbasic/namespaces_3.vb)]  
+ [!code-vb[VbVbalrApplication#8](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/namespaces_3.vb)]  
   
  完全限定名避免命名冲突，因为它们可以使编译器确定哪些对象正在被使用。 但是，名称本身可能会变得冗长繁杂。 为避免这一问题，可以使用 `Imports` 语句来定义*别名* \- 可用于代替完全限定名的缩略名。 例如，以下代码示例为两个完全限定名创建别名，并使用这些别名来定义两个对象。  
   
- [!code-vb[VbVbalrApplication#9](../../../visual-basic/programming-guide/program-structure/codesnippet/visualbasic/namespaces_4.vb)]  
+ [!code-vb[VbVbalrApplication#9](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/namespaces_4.vb)]  
   
- [!code-vb[VbVbalrApplication#10](../../../visual-basic/programming-guide/program-structure/codesnippet/visualbasic/namespaces_5.vb)]  
+ [!code-vb[VbVbalrApplication#10](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/namespaces_5.vb)]  
   
  如果不带别名使用 `Imports` 语句，可以使用命名空间中的所有名称而无需限定，只要这些名称唯一。 如果项目包含同名的项的命名空间使用的 `Imports` 语句，则使用时必须完全限定该名称。 例如，假设项目包含以下两个 `Imports` 语句：  
   
- [!code-vb[VbVbalrApplication#11](../../../visual-basic/programming-guide/program-structure/codesnippet/visualbasic/namespaces_6.vb)]  
+ [!code-vb[VbVbalrApplication#11](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/namespaces_6.vb)]  
   
  如果尝试使用 `Class1` 而不对其完全限定，则 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 会产生错误消息，指出名称 `Class1` 不明确。  
   
@@ -114,7 +114,7 @@ End Namespace
   
  以下示例使用 `Global` 关键字来为项目声明根命名空间之外的命名空间。  
   
- [!code-vb[VbVbalrApplication#22](../../../visual-basic/programming-guide/program-structure/codesnippet/visualbasic/namespaces_7.vb)]  
+ [!code-vb[VbVbalrApplication#22](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/namespaces_7.vb)]  
   
  在命名空间声明中，`Global` 不能嵌套于另一个命名空间中。  
   
@@ -126,7 +126,7 @@ End Namespace
   
  如果命名空间声明中不存在 `Global` 关键字，若不指定 `Global.System.Text.StringBuilder`将无法访问<xref:System.Text.StringBuilder>。 对于名为 `ConsoleApplication1` 的项目，如果未使用 `Global` 关键字，对 `System.Text` 的引用会访问 `ConsoleApplication1.System.Text`。  
   
- [!code-vb[VbVbalrApplication#21](../../../visual-basic/programming-guide/program-structure/codesnippet/visualbasic/namespaces_8.vb)]  
+ [!code-vb[VbVbalrApplication#21](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/namespaces_8.vb)]  
   
 ## 请参阅  
  <xref:System.Windows.Forms.ListBox>   

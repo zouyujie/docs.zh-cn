@@ -27,7 +27,7 @@ caps.handback.revision: 8
 ## 示例  
  有时，了解字符串中的字符以及这些字符在字符串中的位置会很有用。  可将字符串视为字符（`Char` 实例）的数组；并可通过 <xref:System.String.Chars%2A> 属性引用字符的索引来检索特定字符。  
   
- [!code-vb[VbVbalrStrings#49](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-to-access-characters_1.vb)]  
+ [!code-vb[VbVbalrStrings#49](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-access-characters-in-strings_1.vb)]  
   
  <xref:System.String.Chars%2A> 属性的 `index` 参数是从零开始的。  
   

@@ -32,7 +32,7 @@ caps.handback.revision: 13
   
 -   用枚举限定成员名称。  例如，下面的示例将 `FirstDayOfWeek` 枚举的 `Saturday` 成员分配给变量 `DayValue`。  
   
-     [!code-vb[VbEnumsTask#19](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#19)]  
+     [!code-vb[VbEnumsTask#19](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-refer-to-an-enumeration-member_1.vb)]  
   
 ## 请参阅  
  [如何：声明枚举](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)   

@@ -33,7 +33,7 @@ caps.handback.revision: 15
 ## 示例  
  下面的代码将 `sourcePath` 指定的目录复制到 `destinationPath` 指定的目录中。  此代码还提供一个标准对话框，该对话框显示预计完成操作还需要的时间量。  
   
- [!code-cs[csFilesandFolders#11](../../../csharp/programming-guide/file-system/codesnippet/csharp/csFilesFolders/FileIteration.cs#11)]  
+ [!code-cs[csFilesandFolders#11](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-provide-a-progress-dialog-box-for-file-operations_1.cs)]  
   
 ## 请参阅  
  [文件系统和注册表](../../../csharp/programming-guide/file-system/file-system-and-the-registry.md)

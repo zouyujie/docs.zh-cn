@@ -21,14 +21,14 @@ caps.handback.revision: 16
 ## 示例  
  下面的示例演示如何通过使用 <xref:System.Linq.Enumerable.Where%2A?displayProperty=fullName> 标准查询运算符在基于方法的查询中使用 Lambda 表达式。  请注意，此示例中的 <xref:System.Linq.Enumerable.Where%2A> 方法具有一个委托类型为 <xref:System.Func%601> 的输入参数，并且委托采用整数作为输入并返回布尔值。  可以将 Lambda 表达式转换为该委托。  假若这是使用 <xref:System.Linq.Queryable.Where%2A?displayProperty=fullName> 方法的 [!INCLUDE[vbtecdlinq](../../../csharp/includes/vbtecdlinq-md.md)] 查询，则参数类型将为 `Expression<Func\<int,bool>>`，但 Lambda 表达式看起来将完全相同。  有关表达式类型的更多信息，请参见 <xref:System.Linq.Expressions.Expression?displayProperty=fullName>。  
   
- [!code-cs[csProgGuideLINQ#1](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#1)]  
+ [!code-cs[csProgGuideLINQ#1](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-use-lambda-expressions-in-a-query_1.cs)]  
   
 ## 示例  
  下面的示例演示如何在查询表达式的方法调用中使用 Lambda 表达式。  Lambda 是必需的，因为无法使用查询语法来调用 <xref:System.Linq.Enumerable.Sum%2A> 标准查询运算符。  
   
  查询首先按 `GradeLevel` 枚举中定义的方式，依据学生的成绩等级对学生进行分组。  然后，对于每个组，查询将添加每名学生的总分。  这需要两个 `Sum` 运算。  内部的 `Sum` 计算每名学生的总分，外部的 `Sum` 保留该组中所有学生的运行合并总计。  
   
- [!code-cs[csProgGuideLINQ#2](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#2)]  
+ [!code-cs[csProgGuideLINQ#2](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-use-lambda-expressions-in-a-query_2.cs)]  
   
 ## 编译代码  
  若要运行此代码，请将方法复制并粘贴到[如何：查询对象集合](../../../csharp/programming-guide/linq-query-expressions/how-to-query-a-collection-of-objects.md)中提供的 `StudentClass` 中，并从 `Main` 方法中调用它。  

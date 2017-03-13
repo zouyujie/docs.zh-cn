@@ -8,7 +8,7 @@ caps.handback.revision: 6
 ## 示例  
  此查询将创建一个分组联接，然后基于类别元素（仍然在范围中）对组进行排序。  在匿名类型初始值设定项中，子查询将对产品序列中的所有匹配元素进行排序。  
   
- [!code-cs[csProgGuideLINQ#81](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#81)]  
+ [!code-cs[csProgGuideLINQ#81](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-order-the-results-of-a-join-clause_1.cs)]  
   
 ## 编译代码  
   

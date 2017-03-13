@@ -24,7 +24,7 @@ caps.handback.revision: 18
 ## 示例  
  下面的示例演示使用 `into` 关键字来启用临时标识符 `fruitGroup`，该标识符具有推断类型 `IGrouping`。  通过使用该标识符，可以对每个组调用 <xref:System.Linq.Enumerable.Count%2A> 方法，并且仅选择那些包含两个或更多个单词的组。  
   
- [!code-cs[cscsrefQueryKeywords#18](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Into.cs#18)]  
+ [!code-cs[cscsrefQueryKeywords#18](../../../csharp/language-reference/keywords/codesnippet/CSharp/into_1.cs)]  
   
  仅当希望对每个组执行附加查询操作时，才需要在 `group` 子句中使用 `into`。  有关更多信息，请参见 [group 子句](../../../csharp/language-reference/keywords/group-clause.md)。  
   

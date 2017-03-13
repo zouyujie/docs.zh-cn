@@ -82,11 +82,11 @@ caps.handback.revision: 17
 ### 声明与调用阐释  
  下面的结构将有符号的 128 位整数值存储为高序部分和低序部分。  它将 `+` 运算符定义为将两个 `veryLong` 值相加并生成结果 `veryLong` 值。  
   
- [!code-vb[VbVbcnProcedures#23](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/operator-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#23](./codesnippet/VisualBasic/operator-procedures_1.vb)]  
   
  下面的示例演示对 `veryLong` 上定义的 `+` 运算符的典型调用。  
   
- [!code-vb[VbVbcnProcedures#24](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/operator-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#24](./codesnippet/VisualBasic/operator-procedures_2.vb)]  
   
  有关更多信息和示例，请参见 [Operator Overloading in Visual Basic 2005](http://go.microsoft.com/fwlink/?LinkId=101703)（Visual Basic 2005 中的运算符重载）。  
   

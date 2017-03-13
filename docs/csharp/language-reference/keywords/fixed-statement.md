@@ -23,11 +23,11 @@ caps.handback.revision: 24
   
  `fixed` 语句设置指向托管变量的指针，并在执行该语句期间“固定”此变量。  如果没有 `fixed` 语句，则指向可移动托管变量的指针的作用很小，因为垃圾回收可能不可预知地重定位变量。  C\# 编译器只允许在 `fixed` 语句中分配指向托管变量的指针。  
   
- [!code-cs[csrefKeywordsFixedLock#1](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefFixedLock/csrefKeywordsFixedLock.cs#1)]  
+ [!code-cs[csrefKeywordsFixedLock#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/fixed-statement_1.cs)]  
   
  可通过使用数组、字符串、大小固定的缓冲区或变量地址初始化指针。  以下示例演示可变地址、数组和字符串的用法。  关于固定大小缓冲器的更多信息，请参见 [固定大小的缓冲区](../../../csharp/programming-guide/unsafe-code-pointers/fixed-size-buffers.md)。  
   
- [!code-cs[csrefKeywordsFixedLock#2](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefFixedLock/csrefKeywordsFixedLock.cs#2)]  
+ [!code-cs[csrefKeywordsFixedLock#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/fixed-statement_2.cs)]  
   
  只要指针的类型相同，就可以初始化多个指针。  
   
@@ -37,7 +37,7 @@ fixed (byte* ps = srcarray, pd = dstarray) {...}
   
  要初始化不同类型的指针，只需嵌套 `fixed` 语句，如下面的示例所示。  
   
- [!code-cs[csrefKeywordsFixedLock#3](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefFixedLock/csrefKeywordsFixedLock.cs#3)]  
+ [!code-cs[csrefKeywordsFixedLock#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/fixed-statement_3.cs)]  
   
  执行完语句中的代码后，任何固定变量都被解除固定并受垃圾回收的制约。  因此，不要指向 `fixed` 语句之外的那些变量。  
   
@@ -47,7 +47,7 @@ fixed (byte* ps = srcarray, pd = dstarray) {...}
  在不安全模式中，可以在堆栈上分配内存。堆栈不受垃圾回收的制约，因此不需要被锁定。  有关更多信息，请参见 [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)。  
   
 ## 示例  
- [!code-cs[csrefKeywordsFixedLock#4](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefFixedLock/csrefKeywordsFixedLock.cs#4)]  
+ [!code-cs[csrefKeywordsFixedLock#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/fixed-statement_4.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

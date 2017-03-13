@@ -24,17 +24,17 @@ caps.handback.revision: 16
 ## 示例  
  在下面的示例中，`where` 子句筛选出除小于五的数字外的所有数字。  如果移除 `where` 子句，则会返回数据源中的所有数字。  表达式 `num < 5` 是应用于每个元素的谓词。  
   
- [!code-cs[cscsrefQueryKeywords#5](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Where.cs#5)]  
+ [!code-cs[cscsrefQueryKeywords#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-clause_1.cs)]  
   
 ## 示例  
  在单一 `where` 子句内，可以使用 [&&](../../../csharp/language-reference/operators/conditional-and-operator.md) 和 [&#124;&#124;](../../../csharp/language-reference/operators/conditional-or-operator.md) 运算符根据需要指定任意多个谓词。  在下面的示例中，查询将指定两个谓词，以便只选择小于五的偶数。  
   
- [!code-cs[cscsrefQueryKeywords#6](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Where.cs#6)]  
+ [!code-cs[cscsrefQueryKeywords#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-clause_2.cs)]  
   
 ## 示例  
  `where` 子句可以包含一个或多个返回布尔值的方法。  在下面的示例中，`where` 子句使用一个方法来确定范围变量的当前值是偶数还是奇数。  
   
- [!code-cs[cscsrefQueryKeywords#7](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Where.cs#7)]  
+ [!code-cs[cscsrefQueryKeywords#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-clause_3.cs)]  
   
 ## 备注  
  `where` 子句是一种筛选机制。  除了不能是第一个或最后一个子句外，它几乎可以放在查询表达式中的任何位置。  `where` 子句可以出现在 [group](../../../csharp/language-reference/keywords/group-clause.md) 子句的前面或后面，具体情况取决于是必须在对源元素进行分组之前还是之后来筛选源元素。  

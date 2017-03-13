@@ -22,12 +22,12 @@ caps.handback.revision: 19
 ## 示例  
  以下代码是一个控制台应用程序，用于对数组中的字符串执行简单的不区分大小写的搜索。  给定要搜索的字符串和包含搜索模式的字符串后，静态方法 <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> 将执行搜索。  在本例中，使用第三个参数指示忽略大小写。  有关更多信息，请参见<xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>。  
   
- [!code-cs[csProgGuideStrings#17](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#17)]  
+ [!code-cs[csProgGuideStrings#17](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-search-strings-using-regular-expressions_1.cs)]  
   
 ## 示例  
  以下代码是一个控制台应用程序，此程序使用正则表达式验证数组中每个字符串的格式。  验证要求每个字符串具有电话号码的形式，即用短划线将数字分成三组，前两组各包含三个数字，第三组包含四个数字。  这是使用正则表达式 `^\\d{3}-\\d{3}-\\d{4}$` 完成的。  有关更多信息，请参见[正则表达式语言 \- 快速参考](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md)。  
   
- [!code-cs[csProgGuideStrings#18](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#18)]  
+ [!code-cs[csProgGuideStrings#18](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-search-strings-using-regular-expressions_2.cs)]  
   
 ## 请参阅  
  <xref:System.Text.RegularExpressions.Regex?displayProperty=fullName>   

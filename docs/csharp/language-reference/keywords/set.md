@@ -23,11 +23,11 @@ caps.handback.revision: 14
   
  此例是名为 `Seconds` 的属性的 `set` 访问器：  
   
- [!code-cs[csrefKeywordsContextual#1](../../../csharp/language-reference/keywords/codesnippet/csharp/set_1.cs)]  
+ [!code-cs[csrefKeywordsContextual#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/set_1.cs)]  
   
  下面的示例是自动实现的属性中的 `set` 访问器：  
   
- [!code-cs[csrefKeywordsContextual#2](../../../csharp/language-reference/keywords/codesnippet/csharp/set_2.cs)]  
+ [!code-cs[csrefKeywordsContextual#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/set_2.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

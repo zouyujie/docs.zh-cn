@@ -24,7 +24,7 @@ caps.handback.revision: 16
 ## 示例  
  在此示例中，字段 `year` 的值无法在 `ChangeYear` 方法中更改，即使在类构造函数中给它赋了值。  
   
- [!code-cs[csrefKeywordsModifiers#14](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#14)]  
+ [!code-cs[csrefKeywordsModifiers#14](../../../csharp/language-reference/keywords/codesnippet/CSharp/readonly_1.cs)]  
   
  只能在下列上下文中对 `readonly` 字段进行赋值：  
   
@@ -44,7 +44,7 @@ public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
 ```  
   
 ## 示例  
- [!code-cs[csrefKeywordsModifiers#15](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#15)]  
+ [!code-cs[csrefKeywordsModifiers#15](../../../csharp/language-reference/keywords/codesnippet/CSharp/readonly_2.cs)]  
   
  在前面的示例中，如果使用这样的语句：  
   

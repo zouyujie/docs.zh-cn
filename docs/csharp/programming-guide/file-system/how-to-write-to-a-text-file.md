@@ -25,7 +25,7 @@ caps.handback.revision: 23
  这些示例均会将字符串文本写入文件，但是你更有可能需要使用 <xref:System.String.Format%2A> 方法，此方法具有很多用于写入不同类型值的控件，包括在字段中左右对齐、有无边距等。  还可以使用 C\# [字符串内插](../../../csharp/language-reference/keywords/interpolated-strings.md)功能。  
   
 ## 示例  
- [!code-cs[csFilesandFolders#3](../../../csharp/programming-guide/file-system/codesnippet/csharp/csFilesFolders/FileIteration.cs#3)]  
+ [!code-cs[csFilesandFolders#3](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-write-to-a-text-file_1.cs)]  
   
  这些示例均会将字符串文本写入文件，但是你更有可能需要使用 <xref:System.String.Format%2A> 方法，此方法具有很多用于写入不同类型值的控件，包括在字段中左右对齐、有无边距等。  还可以使用 C\# [字符串内插](../../../csharp/language-reference/keywords/interpolated-strings.md)功能。  
   

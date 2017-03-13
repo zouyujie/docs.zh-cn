@@ -31,7 +31,7 @@ caps.handback.revision: 11
   
  在下面的示例中，使用 `Alias` 关键字提供 advapi32.dll 中函数 `GetUserNameA`（在本例中改用 `getUserName`）的名称。  在 sub `getUser` 中，调用了函数 `getUserName`，该函数显示当前用户的名称。  
   
- [!code-vb[VbVbalrStatements#15](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/alias-clause_1.vb)]  
+ [!code-vb[VbVbalrStatements#15](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/alias-clause_1.vb)]  
   
 ## 请参阅  
  [关键字](../../../visual-basic/language-reference/keywords/index.md)

@@ -70,9 +70,9 @@ Option Explicit { On | Off }
 ## 示例  
  下面的示例使用 `Option Explicit` 语句强制显式声明所有变量。  尝试使用未声明的变量将导致编译时错误。  
   
- [!code-vb[VbVbalrStatements#47](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/option-explicit-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#47](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-explicit-statement_1.vb)]  
   
- [!code-vb[VbVbalrStatements#48](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/option-explicit-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#48](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-explicit-statement_2.vb)]  
   
 ## 请参阅  
  [Dim 语句](../../../visual-basic/language-reference/statements/dim-statement.md)   

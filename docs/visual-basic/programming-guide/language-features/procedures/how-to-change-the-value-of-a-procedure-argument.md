@@ -66,11 +66,11 @@ caps.handback.revision: 16
 ## 示例  
  下面的示例演示获取数组变量并对其元素的两个过程。  `increase` 程序每个元素加。  `replace` 过程将新数组赋给参数 `a()` 然后每个元素加。  
   
- [!code-vb[VbVbcnProcedures#35](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-change-the-value-_1.vb)]  
+ [!code-vb[VbVbcnProcedures#35](./codesnippet/VisualBasic/how-to-change-the-value-of-a-procedure-argument_1.vb)]  
   
- [!code-vb[VbVbcnProcedures#36](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-change-the-value-_2.vb)]  
+ [!code-vb[VbVbcnProcedures#36](./codesnippet/VisualBasic/how-to-change-the-value-of-a-procedure-argument_2.vb)]  
   
- [!code-vb[VbVbcnProcedures#37](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-change-the-value-_3.vb)]  
+ [!code-vb[VbVbcnProcedures#37](./codesnippet/VisualBasic/how-to-change-the-value-of-a-procedure-argument_3.vb)]  
   
  第一 `MsgBox` 调用显示 “after increase\(n\):11， 21， 31， 41 "。  由于数组`n`是引用类型，`replace`可以更改其成员，因此，即使传递机制为 `ByVal`。  
   

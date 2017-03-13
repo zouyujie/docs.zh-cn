@@ -35,29 +35,29 @@ caps.handback.revision: 20
 ## 算术运算  
  可以使用 [\+ 运算符](../../../../visual-basic/language-reference/operators/addition-operator.md) 将表达式中的两个值加在一起，或者使用 [\- 运算符](../../../../visual-basic/language-reference/operators/subtraction-operator.md) 从一个值中减去另一个值，如下面的示例所示。  
   
- [!code-vb[VbVbalrOperators#57](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/arithmetic-operators_1.vb)]  
+ [!code-vb[VbVbalrOperators#57](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_1.vb)]  
   
  求反也使用 [\- 运算符](../../../../visual-basic/language-reference/operators/subtraction-operator.md)，但只带一个操作数，如下面的示例所示。  
   
- [!code-vb[VbVbalrOperators#58](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/arithmetic-operators_2.vb)]  
+ [!code-vb[VbVbalrOperators#58](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_2.vb)]  
   
  乘法和除法分别使用 [\* 运算符](../../../../visual-basic/language-reference/operators/multiplication-operator.md) 和 [\/ 运算符](../../../../visual-basic/language-reference/operators/floating-point-division-operator.md)，如下面的示例所示。  
   
- [!code-vb[VbVbalrOperators#59](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/arithmetic-operators_3.vb)]  
+ [!code-vb[VbVbalrOperators#59](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_3.vb)]  
   
  求幂使用 [^ 运算符](../../../../visual-basic/language-reference/operators/exponentiation-operator.md)，如下面的示例所示。  
   
- [!code-vb[VbVbalrOperators#60](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/arithmetic-operators_4.vb)]  
+ [!code-vb[VbVbalrOperators#60](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_4.vb)]  
   
  使用 [\\ 运算符](../../../../visual-basic/language-reference/operators/integer-division-operator.md) 执行整除。  整除会返回商数，它是一个整数，表示在不考虑有余数的情况下，除数可以除被除数的次数。  对此运算符来说，除数和被除数必须为整型（`SByte`、`Byte`、`Short`、`UShort`、`Integer`、`UInteger`、`Long` 和 `ULong`）。  所有其他类型都必须首先转换为整型。  下面的示例演示如何进行整除。  
   
- [!code-vb[VbVbalrOperators#61](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/arithmetic-operators_5.vb)]  
+ [!code-vb[VbVbalrOperators#61](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_5.vb)]  
   
  使用 [Mod 运算符](../../../../visual-basic/language-reference/operators/mod-operator.md) 执行求模算法。  此运算符返回除数除被除数整数次后的余数。  如果除数和被除数都是整型，则返回值是整数。  如果除数和被除数都是浮点型，则返回值也是浮点型。  下面的示例演示这一行为。  
   
- [!code-vb[VbVbalrOperators#62](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/arithmetic-operators_6.vb)]  
+ [!code-vb[VbVbalrOperators#62](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_6.vb)]  
   
- [!code-vb[VbVbalrOperators#63](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/arithmetic-operators_7.vb)]  
+ [!code-vb[VbVbalrOperators#63](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_7.vb)]  
   
 ### 尝试用零作除数  
  根据所涉及的数据类型，被零除会得到不同的结果。  在整除中（`SByte`、`Byte`、`Short`、`UShort`、`Integer`、`UInteger`、`Long`、`ULong`），[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort-md.md)] 将引发 <xref:System.DivideByZeroException> 异常。  在对 `Decimal` 或 `Single` 数据类型执行的除法运算中，[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort-md.md)] 也将引发 <xref:System.DivideByZeroException> 异常。  
@@ -90,7 +90,7 @@ caps.handback.revision: 20
   
  下面的示例对 `Integer` 值进行左移和右移。  
   
- [!code-vb[VbVbalrOperators#64](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/arithmetic-operators_8.vb)]  
+ [!code-vb[VbVbalrOperators#64](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_8.vb)]  
   
  数学移位绝不会产生溢出异常。  
   

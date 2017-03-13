@@ -6,7 +6,7 @@ caps.handback.revision: 12
 下面的示例演示如何在 [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq-md.md)] 查询表达式中创建嵌套组。  对根据学生年级创建的每个组，将根据每个人的姓名进一步划分为小组。  
   
 ## 示例  
- [!code-cs[csProgGuideLINQ#24](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#24)]  
+ [!code-cs[csProgGuideLINQ#24](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-create-a-nested-group_1.cs)]  
   
  请注意，需要使用三个嵌套的 `foreach` 循环来循环访问嵌套组的内部元素。  
   

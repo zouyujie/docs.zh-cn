@@ -93,7 +93,7 @@ End Set
 ## 示例  
  下面的示例使用 `Set` 语句设置属性值。  
   
- [!code-vb[VbVbalrStatements#55](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/set-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#55](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/set-statement_1.vb)]  
   
 ## 请参阅  
  [Get 语句](../../../visual-basic/language-reference/statements/get-statement.md)   

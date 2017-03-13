@@ -59,7 +59,7 @@ result = expression1 & expression2
 ## 示例  
  本示例使用 `&` 运算符来强制字符串连接。  结果是表示两个字符串操作数连接的字符串值。  
   
- [!code-vb[VbVbalrOperators#2](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/concatenation-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#2](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/concatenation-operator_1.vb)]  
   
 ## 请参阅  
  [&\= 运算符](../../../visual-basic/language-reference/operators/and-assignment-operator.md)   

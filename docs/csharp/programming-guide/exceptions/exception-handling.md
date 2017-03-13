@@ -21,11 +21,11 @@ C\# 程序员可使用 [try](../../../csharp/language-reference/keywords/try-cat
   
  以下示例给出了一个 `try-catch` 语句，一个 `try-finally` 语句，和一个  `try-catch-finally` 语句。  
   
- [!code-cs[csProgGuideExceptions#6](../../../csharp/programming-guide/exceptions/codesnippet/csharp/exception-handling_1.cs)]  
+ [!code-cs[csProgGuideExceptions#6](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/exception-handling_1.cs)]  
   
- [!code-cs[csProgGuideExceptions#7](../../../csharp/programming-guide/exceptions/codesnippet/csharp/exception-handling_2.cs)]  
+ [!code-cs[csProgGuideExceptions#7](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/exception-handling_2.cs)]  
   
- [!code-cs[csProgGuideExceptions#8](../../../csharp/programming-guide/exceptions/codesnippet/csharp/exception-handling_3.cs)]  
+ [!code-cs[csProgGuideExceptions#8](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/exception-handling_3.cs)]  
   
  不带有 `catch` 或 `finally` 块的 `try` 块将导致编译器错误。  
   
@@ -40,11 +40,11 @@ C\# 程序员可使用 [try](../../../csharp/language-reference/keywords/try-cat
   
 -   可以新建一个更具体的异常并引发该异常。  
   
-     [!code-cs[csProgGuideExceptions#9](../../../csharp/programming-guide/exceptions/codesnippet/csharp/exception-handling_4.cs)]  
+     [!code-cs[csProgGuideExceptions#9](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/exception-handling_4.cs)]  
   
 -   希望在将异常传递出去进行额外处理前部分地处理异常。  在下面的示例中，`catch` 块用于在再次引发异常之前，向错误日志添加条目。  
   
-     [!code-cs[csProgGuideExceptions#10](../../../csharp/programming-guide/exceptions/codesnippet/csharp/exception-handling_5.cs)]  
+     [!code-cs[csProgGuideExceptions#10](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/exception-handling_5.cs)]  
   
 ## Finally 块  
  可以使用 `finally` 块清理在 `try` 块中执行的操作。  如果存在，`finally` 块将在最后执行，在 `try` 块和任何匹配 `catch` 的块之后执行。  不管是否引发异常或者是否找到与异常类型匹配的 `catch` 块，`finally` 始终运行。  
@@ -53,7 +53,7 @@ C\# 程序员可使用 [try](../../../csharp/language-reference/keywords/try-cat
   
  在下面的示例中，使用 `finally` 块关闭在 `try` 块中打开的文件。  注意，在关闭文件之前要检查该文件句柄的状态。  如果 `try` 块无法打开文件，则文件句柄仍具有值 `null`，并且 `finally` 块不会尝试关闭它。  或者，如果在 `try` 块中成功打开该文件，则 `finally` 块将关闭打开的文件。  
   
- [!code-cs[csProgGuideExceptions#11](../../../csharp/programming-guide/exceptions/codesnippet/csharp/exception-handling_6.cs)]  
+ [!code-cs[csProgGuideExceptions#11](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/exception-handling_6.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

@@ -29,19 +29,19 @@ caps.handback.revision: 7
 ## My.Application、My.Computer 和 My.User  
  下面的示例演示如何使用 `My` 检索信息。  
   
- [!code-vb[VbVbcnMy#1](../../../visual-basic/developing-apps/development-with-my/codesnippet/visualbasic/performing-tasks-with-my_1.vb)]  
+ [!code-vb[VbVbcnMy#1](../../../visual-basic/developing-apps/development-with-my/codesnippet/VisualBasic/performing-tasks-with-my-application-my-computer-and-my-user_1.vb)]  
   
- [!code-vb[VbVbcnMy#2](../../../visual-basic/developing-apps/development-with-my/codesnippet/visualbasic/performing-tasks-with-my_2.vb)]  
+ [!code-vb[VbVbcnMy#2](../../../visual-basic/developing-apps/development-with-my/codesnippet/VisualBasic/performing-tasks-with-my-application-my-computer-and-my-user_2.vb)]  
   
  除检索信息外，通过这三个对象公开的成员还允许您执行与该对象相关的方法。  例如，您可以访问多种方法来操作文件，或者通过 `My.Computer` 更新注册表。  
   
  由于 `My` 中包含大量用于操作文件、目录和驱动器的方法和属性，因此借助此对象，文件 I\/O 将变得非常简单快捷。  通过 <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> 对象，可以从具有分隔字段或固定宽度字段的大结构化文件中读取数据。  此示例打开 `TextFieldParser` `reader`，然后使用它读取 `C:\TestFolder1\test1.txt` 中的数据。  
   
- [!code-vb[VbVbalrTextFieldParser#23](../../../visual-basic/developing-apps/development-with-my/codesnippet/visualbasic/performing-tasks-with-my_3.vb)]  
+ [!code-vb[VbVbalrTextFieldParser#23](../../../visual-basic/developing-apps/development-with-my/codesnippet/VisualBasic/performing-tasks-with-my-application-my-computer-and-my-user_3.vb)]  
   
  通过 `My.Application` 可以更改应用程序的区域性。  下面的示例演示如何能调用此方法。  
   
- [!code-vb[VbVbcnMy#3](../../../visual-basic/developing-apps/development-with-my/codesnippet/visualbasic/performing-tasks-with-my_4.vb)]  
+ [!code-vb[VbVbcnMy#3](../../../visual-basic/developing-apps/development-with-my/codesnippet/VisualBasic/performing-tasks-with-my-application-my-computer-and-my-user_4.vb)]  
   
 ## 请参阅  
  <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>   

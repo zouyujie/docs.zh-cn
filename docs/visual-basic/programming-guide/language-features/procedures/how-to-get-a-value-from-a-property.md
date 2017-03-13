@@ -39,7 +39,7 @@ caps.handback.revision: 11
   
      下面的示例读取 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] `Now` 属性值，隐式调用它的 `Get` 过程。  
   
-     [!code-vb[VbVbalrDateProperties#4](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/VbVbalrDateProperties/Module1.vb#4)]  
+     [!code-vb[VbVbalrDateProperties#4](./codesnippet/VisualBasic/how-to-get-a-value-from-a-property_1.vb)]  
   
 2.  如果该属性接受参数，请在属性名后用括号将参数列表括起来。  如果无任何参数，也可以选择省略括号。  
   

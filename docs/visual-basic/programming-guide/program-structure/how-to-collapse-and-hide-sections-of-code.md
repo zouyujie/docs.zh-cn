@@ -31,7 +31,7 @@ caps.handback.revision: 11
   
 -   将代码节放在 `#Region` 和 `#End Region` 语句之间，如下例所示：  
   
-     [!code-vb[VbVbalrConditionalComp#6](../../../visual-basic/language-reference/directives/codesnippet/visualbasic/how-to-collapse-and-hide_1.vb)]  
+     [!code-vb[VbVbalrConditionalComp#6](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/how-to-collapse-and-hide-sections-of-code_1.vb)]  
   
      在代码文件中可多次使用 `#Region` 块；因此，用户可定义自己的过程块和类块，这些块可依次折叠。  `#Region` 块也可嵌套在其他 `#Region` 块内。  
   

@@ -34,7 +34,7 @@ caps.handback.revision: 18
   
 1.  在 `Form1` 中插入下列代码：  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#4](../../../../visual-basic/programming-guide/language-features/events/codesnippet/visualbasic/VbEventWalkthrough/Form1.vb#4)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#4](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_1.vb)]  
   
      `WithEvents` 关键字指定 `mWidget` 变量用于处理对象的事件。  通过提供将从其中创建对象的类的名称来指定对象的类型。  
   
@@ -56,13 +56,13 @@ caps.handback.revision: 18
   
 3.  将以下代码添加到 `mWidget_PercentDone` 事件处理程序中：  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#5](../../../../visual-basic/programming-guide/language-features/events/codesnippet/visualbasic/VbEventWalkthrough/Form1.vb#5)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#5](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_2.vb)]  
   
      每当引发 `PercentDone` 事件时，事件过程就会在一个 `Label` 控件中显示完成百分比。  `DoEvents` 方法允许重新绘制标签，并且还为用户提供机会单击**“取消”**按钮。  
   
 4.  为 `Button2_Click` 事件处理程序添加下面的代码：  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#6](../../../../visual-basic/programming-guide/language-features/events/codesnippet/visualbasic/VbEventWalkthrough/Form1.vb#6)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#6](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_3.vb)]  
   
  如果用户在 `LongTask` 运行时单击**“取消”**按钮，则 `Button2_Click` 事件将在 `DoEvents` 语句允许进行事件处理时立即执行。  类级变量 `mblnCancel` 设置为 `True`，然后 `mWidget_PercentDone` 事件测试它并将 `ByRef Cancel` 参数设置为 `True`。  
   
@@ -79,7 +79,7 @@ caps.handback.revision: 18
   
 3.  为 `Form1_Load` 事件过程添加下面的代码以创建 `Widget`：  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#7](../../../../visual-basic/programming-guide/language-features/events/codesnippet/visualbasic/VbEventWalkthrough/Form1.vb#7)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#7](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_4.vb)]  
   
  当执行这段代码时，[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 将创建一个 `Widget` 对象，并将其事件连接到与 `mWidget` 相关联的事件过程。  自此以后，每当 `Widget` 引发其 `PercentDone` 事件时，就会执行 `mWidget_PercentDone` 事件过程。  
   
@@ -87,7 +87,7 @@ caps.handback.revision: 18
   
 -   将以下代码添加到 `Button1_Click` 事件处理程序中：  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#8](../../../../visual-basic/programming-guide/language-features/events/codesnippet/visualbasic/VbEventWalkthrough/Form1.vb#8)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#8](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_5.vb)]  
   
  在调用 `LongTask` 方法之前，必须初始化将显示完成百分比的标签，而且用于取消该方法的类级 `Boolean` 标志必须设置为 `False`。  
   
@@ -116,7 +116,7 @@ caps.handback.revision: 18
   
 -   将下面一行代码添加到 `Button1_Click` 过程，并放置在 `mWidget.LongTask(12.2, 0.33)` 的紧前面：  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#9](../../../../visual-basic/programming-guide/language-features/events/codesnippet/visualbasic/VbEventWalkthrough/Form1.vb#9)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#9](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_6.vb)]  
   
  上面的代码在每次单击该按钮时均创建一个新的 `Widget`。  在 `LongTask` 方法完成后，立即释放对该 `Widget` 的引用并销毁 `Widget`。  
   

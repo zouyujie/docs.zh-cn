@@ -21,7 +21,7 @@ caps.handback.revision: 31
 ## 示例  
  下面的示例演示如何使用 using 语句。  
   
- [!code-cs[csrefKeywordsNamespace#4](../../../csharp/language-reference/keywords/codesnippet/csharp/using-statement_1.cs)]  
+ [!code-cs[csrefKeywordsNamespace#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-statement_1.cs)]  
   
 ## 备注  
  <xref:System.IO.File> 和 <xref:System.Drawing.Font> 是访问非托管资源（本例中为文件句柄和设备上下文）的托管类型的示例。  有许多其他类别的非托管资源和封装这些资源的类库类型。  所有这些类型都必须实现 <xref:System.IDisposable> 接口。  
@@ -30,15 +30,15 @@ caps.handback.revision: 31
   
  `using` 语句确保调用 <xref:System.IDisposable.Dispose%2A>，即使在调用对象上的方法时发生异常也是如此。  通过将对象放入 try 块中，并在调用 finally 块中的 <xref:System.IDisposable.Dispose%2A>，可以获得相同的结果；实际上，这就是编译器转换 `using` 语句的方式。  前面的代码示例在编译时将扩展到以下代码（请注意，使用额外的大括号为对象创建有限范围）：  
   
- [!code-cs[csrefKeywordsNamespace#5](../../../csharp/language-reference/keywords/codesnippet/csharp/using-statement_2.cs)]  
+ [!code-cs[csrefKeywordsNamespace#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-statement_2.cs)]  
   
  如下面的示例所示，可以在 `using` 语句中声明一个类型的多个实例。  
   
- [!code-cs[csrefKeywordsNamespace#6](../../../csharp/language-reference/keywords/codesnippet/csharp/using-statement_3.cs)]  
+ [!code-cs[csrefKeywordsNamespace#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-statement_3.cs)]  
   
  可以实例化资源对象，然后将变量传递给 `using` 语句，但这不是最佳做法。  在这种情况下，该对象将在控制权离开 `using` 块之后保持在范围内，即使它可能将不再具有对其非托管资源的访问权也是如此。  换句话说，再也不能完全初始化该对象。  如果尝试在 `using` 块外部使用该对象，则可能导致引发异常。  由于这个原因，通常最好是在 `using` 语句中实例化该对象并将其范围限制在 `using` 块中。  
   
- [!code-cs[csrefKeywordsNamespace#7](../../../csharp/language-reference/keywords/codesnippet/csharp/using-statement_4.cs)]  
+ [!code-cs[csrefKeywordsNamespace#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-statement_4.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

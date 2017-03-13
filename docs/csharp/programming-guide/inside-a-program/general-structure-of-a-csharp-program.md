@@ -18,7 +18,7 @@ caps.handback.revision: 21
 # C# 程序的通用结构（C# 编程指南）
 C\# 程序可由一个或多个文件组成。  每个文件都可以包含零个或零个以上的命名空间。  一个命名空间除了可包含其他命名空间外，还可包含类、结构、接口、枚举、委托等类型。  以下是 C\# 程序的主干，它包含所有这些元素。  
   
- [!code-cs[csProgGuide#34](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/csProgGuide/class2.cs#34)]  
+ [!code-cs[csProgGuide#34](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/general-structure-of-a-csharp-program_1.cs)]  
   
 ## 相关章节  
  有关更多信息：  

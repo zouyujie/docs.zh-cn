@@ -26,11 +26,11 @@ caps.handback.revision: 20
 ## 备注  
  数组类型是一种后跟 `[]` 的类型：  
   
- [!code-cs[csRefOperators#43](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#43)]  
+ [!code-cs[csRefOperators#43](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_1.cs)]  
   
  若要访问数组的一个元素，则用方括号括起所需元素的索引：  
   
- [!code-cs[csRefOperators#44](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#44)]  
+ [!code-cs[csRefOperators#44](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_2.cs)]  
   
  如果数组索引超出范围，则会引发异常。  
   
@@ -38,15 +38,15 @@ caps.handback.revision: 20
   
  例如，.NET Framework 定义 `Hashtable` 类型，该类型将键和任意类型的值关联在一起。  
   
- [!code-cs[csRefOperators#45](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#45)]  
+ [!code-cs[csRefOperators#45](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_3.cs)]  
   
  方括号还用于指定 [特性](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)：  
   
- [!code-cs[csRefOperators#46](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#46)]  
+ [!code-cs[csRefOperators#46](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_4.cs)]  
   
  可以使用方括号来指定指针索引：  
   
- [!code-cs[csRefOperators#47](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#47)]  
+ [!code-cs[csRefOperators#47](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_5.cs)]  
   
  不执行边界检查。  
   

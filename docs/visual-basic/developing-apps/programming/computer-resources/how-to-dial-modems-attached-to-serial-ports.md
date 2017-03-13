@@ -35,18 +35,18 @@ caps.handback.revision: 19
   
      `Using` 块允许应用程序关闭串行端口，即使在生成异常。  操作串行端口应出现在块内出现的所有代码，或者在 `Try...Catch...Finally` 块中。  
   
-     [!code-vb[VbVbalrMyComputer#28](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/VbVbalrMyComputer/Class2.vb#28)]  
+     [!code-vb[VbVbalrMyComputer#28](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-dial-modems-attached-to-serial-ports_1.vb)]  
   
 3.  设置 `DtrEnable` 属性指示计算机已准备好接受从调制解调器传入的传输。  
   
-     [!code-vb[VbVbalrMyComputer#29](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/VbVbalrMyComputer/Class2.vb#29)]  
+     [!code-vb[VbVbalrMyComputer#29](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-dial-modems-attached-to-serial-ports_2.vb)]  
   
 4.  发送拨号命令和电话号码到调制解调器通过串行端口通过 <xref:System.IO.Ports.SerialPort.Write%2A> 方法。  
   
-     [!code-vb[VbVbalrMyComputer#30](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/VbVbalrMyComputer/Class2.vb#30)]  
+     [!code-vb[VbVbalrMyComputer#30](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-dial-modems-attached-to-serial-ports_3.vb)]  
   
 ## 示例  
- [!code-vb[VbVbalrMyComputer#27](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/VbVbalrMyComputer/Class2.vb#27)]  
+ [!code-vb[VbVbalrMyComputer#27](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-dial-modems-attached-to-serial-ports_4.vb)]  
   
  此代码示例也可用作 IntelliSense 代码段。  在代码段选择器，它位于 **连接和网络**。  有关更多信息，请参见 [代码段](/visual-studio/ide/code-snippets)。  
   

@@ -26,7 +26,7 @@ caps.handback.revision: 16
 此示例调用 <xref:System.String> 对象的 <xref:System.String.IndexOf%2A> 方法报告子字符串的第一个匹配项的索引。  
   
 ## 示例  
- [!code-vb[VbVbalrStrings#71](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-to-search-within-a-s_1.vb)]  
+ [!code-vb[VbVbalrStrings#71](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-search-within-a-string_1.vb)]  
   
 ## 编译代码  
  此示例需要:  

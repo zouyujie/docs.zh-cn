@@ -24,7 +24,7 @@ caps.handback.revision: 6
 ## 示例  
  下面的示例演示 `equals` 关键字在 `join` 子句中的用法。  
   
- [!code-cs[csrefKeywordsContextual#12](../../../csharp/language-reference/keywords/codesnippet/csharp/equals_1.cs)]  
+ [!code-cs[csrefKeywordsContextual#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/equals_1.cs)]  
   
 ## 请参阅  
  [LINQ 查询表达式](../../../csharp/programming-guide/linq-query-expressions/index.md)

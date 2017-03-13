@@ -27,7 +27,7 @@ caps.handback.revision: 15
 此示例使用 `Shell` 函数启动计算器应用程序然后使用两个数字以发送键击使用 `My.Computer.Keyboard.SendKeys` 方法。  
   
 ## 示例  
- [!code-vb[VbVbalrMyComputer#25](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/VbVbalrMyComputer/Class2.vb#25)]  
+ [!code-vb[VbVbalrMyComputer#25](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-start-an-application-and-send-it-keystrokes_1.vb)]  
   
 ## 可靠编程  
  ，当与请求的应用程序进程标识符无法找到， <xref:System.ArgumentException> 将引发异常。  

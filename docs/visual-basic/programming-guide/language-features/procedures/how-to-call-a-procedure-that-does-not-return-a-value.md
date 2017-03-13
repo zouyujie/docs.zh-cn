@@ -35,7 +35,7 @@ caps.handback.revision: 17
   
      下面的示例调用 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] <xref:Microsoft.VisualBasic.Interaction.AppActivate%2A> 函数激活应用程序窗口。  <xref:Microsoft.VisualBasic.Interaction.AppActivate%2A> 将窗口标题作为它的唯一参数。  它并不向调用代码返回值。  如果当前没有运行记事本进程，本示例将引发 <xref:System.ArgumentException>。  `Shell` 过程假定应用程序位于指定的路径中。  
   
-     [!code-vb[VbVbalrCatRef#11](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-call-a-procedure-_1_1.vb)]  
+     [!code-vb[VbVbalrCatRef#11](./codesnippet/VisualBasic/how-to-call-a-procedure-that-does-not-return-a-value_1.vb)]  
   
 ## 请参阅  
  <xref:Microsoft.VisualBasic.Interaction.Shell%2A>   

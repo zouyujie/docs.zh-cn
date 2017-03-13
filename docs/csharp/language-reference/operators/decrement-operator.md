@@ -27,7 +27,7 @@ caps.handback.revision: 17
  用户定义的类型可重载 `--` 运算符（请参见[运算符](../../../csharp/language-reference/keywords/operator.md)）。  在枚举时通常允许整型运算。  
   
 ## 示例  
- [!code-cs[csRefOperators#8](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#8)]  
+ [!code-cs[csRefOperators#8](../../../csharp/language-reference/operators/codesnippet/CSharp/decrement-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

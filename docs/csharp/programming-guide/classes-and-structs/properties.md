@@ -24,7 +24,7 @@ caps.handback.revision: 38
  在此示例中，`TimePeriod` 类存储时间段。  该类在内部以秒为单位存储时间，但是名为 `Hours` 的属性允许客户端以小时为单位指定时间。  `Hours` 属性的访问器执行小时与秒之间的转换。  
   
 ## 示例  
- [!code-cs[csProgGuideProperties#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/properties_1.cs)]  
+ [!code-cs[csProgGuideProperties#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/properties_1.cs)]  
   
 ## 表达式主体定义  
  直接只返回表达式结果的属性很常见。  下面的语法快捷方式使用 `=>` 来定义这些属性：  

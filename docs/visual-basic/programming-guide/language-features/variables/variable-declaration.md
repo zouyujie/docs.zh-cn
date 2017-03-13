@@ -76,7 +76,7 @@ Dim l, m As Long, x, y As Single
 ## 局部类型推理  
  类型推理用于确定未使用 `As` 子句声明的局部变量的数据类型。  编译器将通过初始化表达式的类型推断出变量的类型。  这使您在声明变量时无需显式声明类型。  在下面的示例中，`num1` 和 `num2` 都被强类型化为整数类型。  
   
- [!code-vb[VbVbalrTypeInference#1](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/variable-declaration_1.vb)]  
+ [!code-vb[VbVbalrTypeInference#1](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/variable-declaration_1.vb)]  
   
  如果要使用局部类型推断，则必须将 `Option Infer` 设置为 `On`。  有关更多信息，请参见[局部类型推理](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)和[Option Infer 语句](../../../../visual-basic/language-reference/statements/option-infer-statement.md)。  
   

@@ -35,9 +35,9 @@ caps.handback.revision: 21
 ## 示例  
  下面的示例访问 SQL 结构 <xref:System.Data.SqlTypes.SqlString>，它定义了 SQL 字符串和 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 字符串之间的双向转换运算符 \([CType 函数](../../../../visual-basic/language-reference/functions/ctype-function.md)\)。  使用 `CType(`*SQL 字符串表达式*, `String)` 将 SQL 字符串转换为 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 字符串，而使用 `CType(`*Visual Basic 字符串表达式*, <xref:System.Data.SqlTypes.SqlString>`)` 执行反向转换。  
   
- [!code-vb[VbVbcnProcedures#30](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-use-a-class-that-_1.vb)]  
+ [!code-vb[VbVbcnProcedures#30](./codesnippet/VisualBasic/how-to-use-a-class-that-defines-operators_1.vb)]  
   
- [!code-vb[VbVbcnProcedures#31](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-use-a-class-that-_2.vb)]  
+ [!code-vb[VbVbcnProcedures#31](./codesnippet/VisualBasic/how-to-use-a-class-that-defines-operators_2.vb)]  
   
  <xref:System.Data.SqlTypes.SqlString> 结构定义从 `String` 到 <xref:System.Data.SqlTypes.SqlString> 的转换运算符 \([CType 函数](../../../../visual-basic/language-reference/functions/ctype-function.md)\)，以及从 <xref:System.Data.SqlTypes.SqlString> 到 `String` 的另一个转换运算符。  将 `title` 赋给 `jobTitle` 的语句使用第一个运算符，而 <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> 函数调用使用第二个运算符。  
   

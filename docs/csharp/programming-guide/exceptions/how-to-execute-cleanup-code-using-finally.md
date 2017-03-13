@@ -20,12 +20,12 @@ caps.handback.revision: 21
 # 如何：使用 finally 执行清理代码（C# 编程指南）
 `finally` 语句的目的是确保即使在引发异常的情况下也能立即进行必要的对象（通常是保存外部资源的对象）清理。  此类清理功能的一个示例是在使用后立即对 <xref:System.IO.FileStream> 调用 <xref:System.IO.Stream.Close%2A>，而不是等待公共语言运行时对该对象进行垃圾回收，如下所示：  
   
- [!code-cs[csProgGuideExceptions#16](../../../csharp/programming-guide/exceptions/codesnippet/csharp/how-to-execute-cleanup-c_1.cs)]  
+ [!code-cs[csProgGuideExceptions#16](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/how-to-execute-cleanup-code-using-finally_1.cs)]  
   
 ## 示例  
  为了将上面的代码转换为 `try-catch-finally` 语句，需要将清理代码与工作代码分开，如下所示。  
   
- [!code-cs[csProgGuideExceptions#17](../../../csharp/programming-guide/exceptions/codesnippet/csharp/how-to-execute-cleanup-c_2.cs)]  
+ [!code-cs[csProgGuideExceptions#17](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/how-to-execute-cleanup-code-using-finally_2.cs)]  
   
  因为在 `OpenWrite()` 调用前，`try` 块内随时都有可能发生异常，`OpenWrite()` 调用本身也有可能失败，所以我们无法保证该文件在我们尝试关闭它时处于打开状态。  `finally` 块添加了一项检查，以确保在调用 <xref:System.IO.Stream.Close%2A> 方法前，<xref:System.IO.FileStream> 对象不为 `null`。  如果没有 `null` 检查，`finally` 块可能引发自身的 <xref:System.NullReferenceException>，但是应当尽可能避免在 `finally` 块中引发异常。  
   

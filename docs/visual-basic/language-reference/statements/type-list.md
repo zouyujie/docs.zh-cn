@@ -90,17 +90,17 @@ caps.handback.revision: 33
 ## 示例  
  下面的示例演示泛型字典类的主干定义，其中包括将新条目添加到字典中的主干函数。  
   
- [!code-vb[VbVbalrStatements#3](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/type-list_1.vb)]  
+ [!code-vb[VbVbalrStatements#3](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/type-list_1.vb)]  
   
 ## 示例  
  由于 `dictionary` 为泛型，因此使用它的代码可以根据它创建多种对象，创建的每种对象都具有相同的功能，但却作用于不同的数据类型。  下面的示例显示一行代码，该代码将创建一个 `dictionary` 对象，该对象具有 `String` 项和 `Integer` 键。  
   
- [!code-vb[VbVbalrStatements#4](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/type-list_2.vb)]  
+ [!code-vb[VbVbalrStatements#4](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/type-list_2.vb)]  
   
 ## 示例  
  下面的示例显示由上述示例生成的等效主干定义。  
   
- [!code-vb[VbVbalrStatements#5](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/type-list_3.vb)]  
+ [!code-vb[VbVbalrStatements#5](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/type-list_3.vb)]  
   
 ## 请参阅  
  [Of](../../../visual-basic/language-reference/statements/of-clause.md)   

@@ -42,7 +42,7 @@ caps.handback.revision: 10
 ## 示例  
  本示例使用 `DoesRecordExist` 备注一节中的 `<seealso>` 标记来引用 `UpdateRecord` 方法。  
   
- [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/seealso_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/seealso_1.vb)]  
   
 ## 请参阅  
  [XML 注释标记](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

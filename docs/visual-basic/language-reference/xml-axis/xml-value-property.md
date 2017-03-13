@@ -60,7 +60,7 @@ object.Value
 ## 示例  
  下面的示例演示如何使用 <xref:System.Xml.Linq.XElement.Value%2A> 属性访问 <xref:System.Xml.Linq.XElement> 对象集合中的第一个节点。  该示例使用子轴属性来获取 `contact` 对象中的名为 `phone` 的所有子节点的集合。  
   
- [!code-vb[VbXMLSamples#15](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-value-property_1.vb)]  
+ [!code-vb[VbXMLSamples#15](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-value-property_1.vb)]  
   
  这段代码将显示以下文本：  
   
@@ -69,7 +69,7 @@ object.Value
 ## 示例  
  下面的示例演示如何从 <xref:System.Xml.Linq.XAttribute> 对象集合中获取 XML 特性的值。  该示例使用特性轴属性显示所有 `phone` 元素的 `type` 特性的值。  
   
- [!code-vb[VbXMLSamples#16](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-value-property_2.vb)]  
+ [!code-vb[VbXMLSamples#16](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-value-property_2.vb)]  
   
  这段代码将显示以下文本：  
   

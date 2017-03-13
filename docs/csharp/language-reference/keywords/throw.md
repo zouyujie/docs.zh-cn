@@ -36,7 +36,7 @@ throw new MyException();
 ## 示例  
  此示例演示如何使用 `throw` 语句引发异常。  
   
- [!code-cs[csrefKeywordsExceptions#5](../../../csharp/language-reference/keywords/codesnippet/csharp/throw_1.cs)]  
+ [!code-cs[csrefKeywordsExceptions#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/throw_1.cs)]  
   
 ## 代码示例  
  请参见 [try\-catch](../../../csharp/language-reference/keywords/try-catch.md)和[如何：显式引发异常](../Topic/How%20to:%20Explicitly%20Throw%20Exceptions.md)中的示例。  

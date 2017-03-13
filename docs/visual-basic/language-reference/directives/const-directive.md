@@ -53,7 +53,7 @@ caps.handback.revision: 17
 ## 示例  
  本示例使用 `#Const` 指令。  
   
- [!code-vb[VbVbalrConditionalComp#3](../../../visual-basic/language-reference/directives/codesnippet/visualbasic/const-directive_1.vb)]  
+ [!code-vb[VbVbalrConditionalComp#3](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/const-directive_1.vb)]  
   
 ## 请参阅  
  [\/define](../../../visual-basic/reference/command-line-compiler/define.md)   

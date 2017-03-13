@@ -37,7 +37,7 @@ caps.handback.revision: 38
   
  下面的示例演示如何以 C\# 表示上图所示的类关系。  该示例还演示 `WorkItem` 如何重写虚方法 <xref:System.Object.ToString%2A?displayProperty=fullName>，以及 `ChangeRequest` 类如何继承该方法的 `WorkItem` 实现。  
   
- [!code-cs[csProgGuideInheritance#49](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/inheritance_1.cs)]  
+ [!code-cs[csProgGuideInheritance#49](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/inheritance_1.cs)]  
   
 ## 抽象方法和虚方法  
  当基类将方法声明为 [virtual](../../../csharp/language-reference/keywords/virtual.md) 时，派生类可以用自己的实现[重写](../../../csharp/language-reference/keywords/override.md)该方法。  如果基类将成员声明为 [abstract](../../../csharp/language-reference/keywords/abstract.md)，则在直接继承自该类的任何非抽象类中都必须重写该方法。  如果派生类自身是抽象的，则它继承抽象成员而不实现它们。  抽象成员和虚成员是多态性的基础，多态性是面向对象的编程的第二个主要特性。  有关更多信息，请参见 [多态性](../../../csharp/programming-guide/classes-and-structs/polymorphism.md)。  

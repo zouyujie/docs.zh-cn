@@ -71,7 +71,7 @@ caps.handback.revision: 27
 ## 示例  
  下面的示例使用 `Delegate` 语句声明一个委托，对两个数字进行运算并返回一个数字。  `DelegateTest` 方法将获取此类型委托的实例，并使用该实例对两个数字进行运算。  
   
- [!code-vb[VbVbalrDelegates#14](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/delegate-statement_1.vb)]  
+ [!code-vb[VbVbalrDelegates#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/delegate-statement_1.vb)]  
   
 ## 请参阅  
  [AddressOf 运算符](../../../visual-basic/language-reference/operators/addressof-operator.md)   

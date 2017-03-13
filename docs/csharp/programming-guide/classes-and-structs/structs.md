@@ -19,7 +19,7 @@ caps.handback.revision: 31
 # 结构（C# 编程指南）
 结构是使用 [struct](../../../csharp/language-reference/keywords/struct.md) 关键字定义的，例如：  
   
- [!code-cs[csProgGuideObjects#39](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/structs_1.cs)]  
+ [!code-cs[csProgGuideObjects#39](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/structs_1.cs)]  
   
  结构与类共享大多数相同的语法，但结构比类受到的限制更多：  
   

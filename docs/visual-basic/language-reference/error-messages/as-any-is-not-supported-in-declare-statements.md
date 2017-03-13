@@ -30,11 +30,11 @@ caps.handback.revision: 11
   
 1.  声明要使用的特定类型的参数；例如：  
   
-     [!code-vb[VbVbalrStatements#95](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/as-any-is-not-supported-_1.vb)]  
+     [!code-vb[VbVbalrStatements#95](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/as-any-is-not-supported-in-declare-statements_1.vb)]  
   
 2.  如果调用的过程需要 `Void*`，请使用 <xref:System.Runtime.InteropServices.MarshalAsAttribute> 特性指定 `As Any`。  
   
-     [!code-vb[VbVbalrStatements#96](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/as-any-is-not-supported-_2.vb)]  
+     [!code-vb[VbVbalrStatements#96](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/as-any-is-not-supported-in-declare-statements_2.vb)]  
   
 ## 请参阅  
  <xref:System.Runtime.InteropServices.MarshalAsAttribute>   

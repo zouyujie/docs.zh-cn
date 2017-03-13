@@ -42,7 +42,7 @@ caps.handback.revision: 14
 ## 示例  
  下面的示例定义一个 `Sub` 过程，针对客户的帐户余额发送一个事务。  它使用 `Overloads` 关键字定义此过程的两个版本，其中一个按客户姓名确定客户，另一个按帐号确定客户。  
   
- [!code-vb[VbVbcnProcedures#72](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-define-multiple-v_1.vb)]  
+ [!code-vb[VbVbcnProcedures#72](./codesnippet/VisualBasic/how-to-define-multiple-versions-of-a-procedure_1.vb)]  
   
  调用代码可以获取作为 `String` 或 `Integer` 的客户标识，然后在两种情况下使用相同的调用语句。  
   

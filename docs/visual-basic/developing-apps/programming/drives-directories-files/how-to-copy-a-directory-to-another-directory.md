@@ -32,7 +32,7 @@ caps.handback.revision: 19
   
 -   使用 `CopyDirectory` 方法，并指定源和目标目录的名称。  下面的示例将名为的目录复制 `TestDirectory1` 到 `TestDirectory2`，复盖现有文件。  
   
-     [!code-vb[VbVbcnMyFileSystem#16](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-copy-a-directory-_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#16](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-copy-a-directory-to-another-directory_1.vb)]  
   
      此代码示例也可用作 IntelliSense 代码段。  在代码段选择器，它位于 **文件系统 \(处理驱动器、文件夹和文件**。  有关更多信息，请参见 [代码段](/visual-studio/ide/code-snippets)。  
   

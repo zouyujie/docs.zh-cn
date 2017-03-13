@@ -21,7 +21,7 @@ caps.handback.revision: 22
 # 转换运算符（C# 编程指南）
 C\# 允许程序员在类或结构上声明转换，以便类或结构与其他类或结构或者基本类型进行相互转换。  转换的定义方法类似于运算符，并根据它们所转换到的类型命名。  要转换的参数类型或转换结果的类型必须是（不能两者同时都是）包含类型。  
   
- [!code-cs[csProgGuideStatements#10](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/conversion-operators_1.cs)]  
+ [!code-cs[csProgGuideStatements#10](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/conversion-operators_1.cs)]  
   
 ## 转换运算符概述  
  转换运算符具有以下特点：  

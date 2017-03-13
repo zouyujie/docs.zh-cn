@@ -24,7 +24,7 @@ caps.handback.revision: 17
  此示例使用空格、逗号、句点、冒号和制表符，所有内容均在包含这些分隔字符的数组中传递到 <xref:System.String.Split%2A>。  目标字符串句子中每个单词均单独从所得字符串数组中显示。  
   
 ## 示例  
- [!code-cs[csProgGuideStrings#16](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#16)]  
+ [!code-cs[csProgGuideStrings#16](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-parse-strings-using-string-split_1.cs)]  
   
 ## 示例  
  默认情况下，当两个分隔字符连续出现在目标字符串时 String.Split 返回空字符串。  你可以传递可选 StringSplitOptions.RemoveEmptyEntries 参数来排除输出中的任何空字符串。  

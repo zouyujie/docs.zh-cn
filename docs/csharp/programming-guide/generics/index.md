@@ -19,7 +19,7 @@ caps.handback.revision: 23
 # 泛型（C# 编程指南）
 2.0 版 C\# 语言和公共语言运行时 \(CLR\) 中增加了泛型。  泛型将类型参数的概念引入 .NET Framework，类型参数使得设计如下类和方法成为可能：这些类和方法将一个或多个类型的指定推迟到客户端代码声明并实例化该类或方法的时候。  例如，通过使用泛型类型参数 T，您可以编写其他客户端代码能够使用的单个类，而不致引入运行时强制转换或装箱操作的成本或风险，如下所示：  
   
- [!code-cs[csProgGuideGenerics#1](../../../csharp/programming-guide/generics/codesnippet/csharp/index_1.cs)]  
+ [!code-cs[csProgGuideGenerics#1](../../../csharp/programming-guide/generics/codesnippet/CSharp/index_1.cs)]  
   
 ## 泛型概述  
   

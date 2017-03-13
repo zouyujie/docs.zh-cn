@@ -24,7 +24,7 @@ caps.handback.revision: 6
 ## 示例  
  下面的示例演示 `ascending` 在 [orderby 子句](../../../csharp/language-reference/keywords/orderby-clause.md)中的用法。  
   
- [!code-cs[csrefKeywordsContextual#14](../../../csharp/language-reference/keywords/codesnippet/csharp/ascending_1.cs)]  
+ [!code-cs[csrefKeywordsContextual#14](../../../csharp/language-reference/keywords/codesnippet/CSharp/ascending_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

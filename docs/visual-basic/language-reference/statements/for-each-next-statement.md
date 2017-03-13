@@ -73,7 +73,7 @@ Next [ element ]
   
  在下面的示例中，`For Each`…`Next` 语句通过列表集合的所有元素。  
   
- [!code-vb[VbVbalrStatements#121](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-each-next-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#121](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_1.vb)]  
   
  有关更多示例，请参见[集合](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md)和[数组](../../../visual-basic/programming-guide/language-features/arrays/index.md)。  
   
@@ -82,7 +82,7 @@ Next [ element ]
   
  下面的示例演示嵌套 `For Each`…`Next` 结构。  
   
- [!code-vb[VbVbalrStatements#122](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-each-next-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#122](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_2.vb)]  
   
  在嵌套循环时，每个循环必须具有唯一 `element` 变量。  
   
@@ -95,7 +95,7 @@ Next [ element ]
   
  下面的示例显示如何使用 `Continue For` 和 `Exit For` 语句。  
   
- [!code-vb[VbVbalrStatements#123](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-each-next-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#123](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_3.vb)]  
   
  可以在 `For Each` 循环中放置任意数量的 `Exit For` 语句。  当在嵌套的 `For Each` 循环内使用时，`Exit For` 会致使执行退出最内层的循环，并将控制权交给下一层较高级别的嵌套。  
   
@@ -114,7 +114,7 @@ Next [ element ]
   
  下面的示例使用一个迭代器函数。  迭代器函数具有是在 [for…next](../../../visual-basic/language-reference/statements/for-next-statement.md) 循环内的一个 `Yield` 语句。  在 `ListEvenNumbers` 方法，`For Each` 语句体的每个迭代创建对迭代器函数，执行下一 `Yield` 语句。  
   
- [!code-vb[VbVbalrStatements#127](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-each-next-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#127](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_4.vb)]  
   
  有关更多信息，请参见[迭代器](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)、[Yield 语句](../../../visual-basic/language-reference/statements/yield-statement.md)和[迭代器](../../../visual-basic/language-reference/modifiers/iterator.md)。  
   
@@ -142,7 +142,7 @@ Next [ element ]
   
  在下面的示例中，`m` 的指定作为 `n` 的初始值不生成 `Option Strict` 打开时，因为 `Long` 转换为 `Integer` 与收缩转换。  但是，在 `For Each` 语句中，没有报告编译器错误，即使对 `number` 的赋值同样需要由 `Long` 转换为  `Integer`。  在包含一个大数字的 `For Each` 语句中，在将 <xref:Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger%2A> 应用于该大数字时，出现运行时错误。  
   
- [!code-vb[VbVbalrStatements#89](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-each-next-statement_5.vb)]  
+ [!code-vb[VbVbalrStatements#89](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_5.vb)]  
   
 ### IEnumerator 调用  
  开始执行 `For Each`...`Next` 循环时，Visual Basic 将检查 `group` 是否引用有效的集合对象。  如果不是，它将引发异常。  否则，它调用枚举数对象的 <xref:System.Collections.IEnumerator.MoveNext%2A> 方法和 <xref:System.Collections.IEnumerator.Current%2A> 属性以返回第一个元素。  如果 `MoveNext` 指示没有下一个元素，即集合为空，则 `For Each` 循环停止，并将控制权传递到 `Next` 语句后面的语句。  否则，Visual Basic 将 `element` 设置为第一个元素，并运行语句块。  
@@ -163,7 +163,7 @@ Next [ element ]
 ## 示例  
  下面的示例使用 <xref:System.IO.DirectoryInfo> 类列出 C:\\ 目录下的所有文件夹。  
   
- [!code-vb[VbVbalrStatements#124](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-each-next-statement_6.vb)]  
+ [!code-vb[VbVbalrStatements#124](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_6.vb)]  
   
 ## 示例  
  下面的示例演示排序的集合的方法。  该示例对 <xref:System.Collections.Generic.List%601>存储 `Car` 选件类的实例。  `Car` 选件类实现 <xref:System.IComparable%601> 接口，需要 <xref:System.IComparable%601.CompareTo%2A> 方法执行。  
@@ -172,7 +172,7 @@ Next [ element ]
   
  在 `ListCars` 方法，`cars.Sort()` 语句对列表进行排序。  这对 <xref:System.Collections.Generic.List%601> 原因的 <xref:System.Collections.Generic.List%601.Sort%2A> 方法为 `List`的 `Car` 对象将自动调用的 `CompareTo` 方法。  
   
- [!code-vb[VbVbalrStatements#125](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-each-next-statement_7.vb)]  
+ [!code-vb[VbVbalrStatements#125](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_7.vb)]  
   
 ## 请参阅  
  [集合](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md)   

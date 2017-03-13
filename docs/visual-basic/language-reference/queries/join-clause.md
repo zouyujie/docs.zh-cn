@@ -67,12 +67,12 @@ On key1 Equals key2 [ And key3 Equals key4 [... ]
 ## 示例  
  下面的代码示例执行隐式联接将客户列表与其订单组合在一起。  
   
- [!code-vb[VbSimpleQuerySamples#13](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#13)]  
+ [!code-vb[VbSimpleQuerySamples#13](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/join-clause_1.vb)]  
   
 ## 示例  
  下面的代码示例使用 `Join` 子句联接两个集合。  
   
- [!code-vb[VbSimpleQuerySamples#12](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples2.vb#12)]  
+ [!code-vb[VbSimpleQuerySamples#12](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/join-clause_2.vb)]  
   
  此示例将生成类似下面的输出：  
   
@@ -85,7 +85,7 @@ On key1 Equals key2 [ And key3 Equals key4 [... ]
 ## 示例  
  下面的代码示例通过使用包含两个键列的 `Join` 子句来联接两个集合。  
   
- [!code-vb[VbSimpleQuerySamples#17](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples3.vb#17)]  
+ [!code-vb[VbSimpleQuerySamples#17](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/join-clause_3.vb)]  
   
  此示例将生成类似下面的输出：  
   

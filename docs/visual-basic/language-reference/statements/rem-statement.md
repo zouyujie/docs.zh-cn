@@ -53,7 +53,7 @@ REM comment
 ## 示例  
  下面的示例阐释 `REM` 语句，该语句用于包含程序中的解释性备注。  它还演示了另一种方案，即使用单引号字符 \(`'`\) 替代 `REM`。  
   
- [!code-vb[VbVbalrStatements#6](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/rem-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#6](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/rem-statement_1.vb)]  
   
 ## 请参阅  
  [代码中的注释](../../../visual-basic/programming-guide/program-structure/comments-in-code.md)   

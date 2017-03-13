@@ -21,29 +21,29 @@ caps.handback.revision: 28
   
  将接口指定为类型参数的约束时，只能使用实现此接口的类型。  下面的代码示例显示从 `SortedList<T>` 类派生的 `GenericList<T>` 类。  有关更多信息，请参见 [泛型介绍](../../../csharp/programming-guide/generics/introduction-to-generics.md)。  `SortedList<T>` 添加约束 `where T : IComparable<T>`。  这将使 `SortedList<T>` 中的 `BubbleSort` 方法能够对列表元素使用泛型 <xref:System.IComparable%601.CompareTo%2A> 方法。  在此示例中，列表元素为简单类，即实现 `Person` 的 `IComparable<Person>`。  
   
- [!code-cs[csProgGuideGenerics#29](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-interfaces_1.cs)]  
+ [!code-cs[csProgGuideGenerics#29](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_1.cs)]  
   
  可将多重接口指定为单个类型上的约束，如下所示：  
   
- [!code-cs[csProgGuideGenerics#30](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-interfaces_2.cs)]  
+ [!code-cs[csProgGuideGenerics#30](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_2.cs)]  
   
  一个接口可定义多个类型参数，如下所示：  
   
- [!code-cs[csProgGuideGenerics#31](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-interfaces_3.cs)]  
+ [!code-cs[csProgGuideGenerics#31](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_3.cs)]  
   
  适用于类的继承规则同样适用于接口：  
   
- [!code-cs[csProgGuideGenerics#32](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-interfaces_4.cs)]  
+ [!code-cs[csProgGuideGenerics#32](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_4.cs)]  
   
  如果泛型接口为逆变的，即仅使用其类型参数作为返回值，则此泛型接口可以从非泛型接口继承。  在 .NET Framework 类库中，<xref:System.Collections.Generic.IEnumerable%601> 从 <xref:System.Collections.IEnumerable> 继承，因为 <xref:System.Collections.Generic.IEnumerable%601> 只在 <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> 的返回值和 <xref:System.Collections.Generic.IEnumerator%601.Current%2A> 属性 getter 中使用 `T`。  
   
  具体类可以实现已关闭的构造接口，如下所示：  
   
- [!code-cs[csProgGuideGenerics#33](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-interfaces_5.cs)]  
+ [!code-cs[csProgGuideGenerics#33](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_5.cs)]  
   
  只要类参数列表提供了接口必需的所有参数，泛型类便可以实现泛型接口或已关闭的构造接口，如下所示：  
   
- [!code-cs[csProgGuideGenerics#34](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-interfaces_6.cs)]  
+ [!code-cs[csProgGuideGenerics#34](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_6.cs)]  
   
  对于泛型类、泛型结构或泛型接口中的方法，控制方法重载的规则相同。  有关更多信息，请参见 [泛型方法](../../../csharp/programming-guide/generics/generic-methods.md)。  
   

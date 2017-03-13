@@ -52,7 +52,7 @@ Return expression
 ## 示例  
  下面的示例多次使用 `Return` 语句，以在过程无需执行任何其他操作时返回到调用代码。  
   
- [!code-vb[VbVbalrStatements#53](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/return-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#53](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/return-statement_1.vb)]  
   
 ## 请参阅  
  [Function 语句](../../../visual-basic/language-reference/statements/function-statement.md)   

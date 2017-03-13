@@ -147,19 +147,19 @@ Option Strict { On | Off }
 ## 示例  
  以下示例演示收缩转换的隐型转换引起的编译时错误。  这类错误对应于“编译页”上的“隐式转换”条件。  
   
- [!code-vb[VbVbalrStatements#161](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/option-strict-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#161](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-strict-statement_1.vb)]  
   
 ## 示例  
  以下示例演示了一个后期绑定引起的编译时错误。  这类错误对应于“编译页”上的“后期绑定；运行时调用可能失败”条件。  
   
- [!code-vb[VbVbalrStatements#162](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/option-strict-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#162](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-strict-statement_2.vb)]  
   
 ## 示例  
  以下示例演示声明为 `Object` 类型的变量引起的错误。  这类错误对应于“编译页”上的“隐式类型；对象假设”条件。  
   
- [!code-vb[VbVbalrStatements#163](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/option-strict-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#163](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-strict-statement_3.vb)]  
   
- [!code-vb[VbVbalrStatements#164](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/option-strict-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#164](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-strict-statement_4.vb)]  
   
 ## 请参阅  
  [扩大转换和收缩转换](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)   

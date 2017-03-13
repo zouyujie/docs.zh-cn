@@ -30,12 +30,12 @@ caps.handback.revision: 19
   
  `&` 运算符计算两个运算符，与第一个操作数的值无关。  例如：  
   
- [!code-cs[csRefOperators#37](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#37)]  
+ [!code-cs[csRefOperators#37](../../../csharp/language-reference/operators/codesnippet/CSharp/and-operator_1.cs)]  
   
  用户定义的类型可重载二元 `&` 运算符（请参见 [operator](../../../csharp/language-reference/keywords/operator.md)）。  在枚举时通常允许整型运算。  重载二元运算符时，也会隐式重载相应的赋值运算符（如果有）。  
   
 ## 示例  
- [!code-cs[csRefOperators#38](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#38)]  
+ [!code-cs[csRefOperators#38](../../../csharp/language-reference/operators/codesnippet/CSharp/and-operator_2.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

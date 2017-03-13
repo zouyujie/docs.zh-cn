@@ -50,7 +50,7 @@ caps.handback.revision: 17
   
  **纠正措施：**若要能够修改即将返回的数组的元素，请将内部数组定义为局部变量。  下面的示例在编译时没有错误。  
   
- [!code-vb[VbVbcnProcedures#66](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/troubleshooting-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#66](./codesnippet/VisualBasic/troubleshooting-procedures_1.vb)]  
   
 ## 参数不能被过程调用修改  
  如果打算在调用代码中允许过程更改某个参数下的编程元素，您必须通过引用来传递该元素。  但是即使您通过值传递该元素，过程仍可访问引用类型参数的元素。  
@@ -61,13 +61,13 @@ caps.handback.revision: 17
   
  下面的示例定义两个过程，它们按值获得数组变量并对其元素进行操作。  过程 `increase` 只是给每个元素加上 1。  过程 `replace` 向参数 `a()` 分配一个新数组，然后给每个元素加上 1。  但是，重新分配并不会影响调用代码中的基础数组变量，因为 `a()` 被声明为 `ByVal`。  
   
- [!code-vb[VbVbcnProcedures#35](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/troubleshooting-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#35](./codesnippet/VisualBasic/troubleshooting-procedures_2.vb)]  
   
- [!code-vb[VbVbcnProcedures#38](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/troubleshooting-procedures_3.vb)]  
+ [!code-vb[VbVbcnProcedures#38](./codesnippet/VisualBasic/troubleshooting-procedures_3.vb)]  
   
  下面的示例调用 `increase` 和 `replace`。  
   
- [!code-vb[VbVbcnProcedures#37](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/troubleshooting-procedures_4.vb)]  
+ [!code-vb[VbVbcnProcedures#37](./codesnippet/VisualBasic/troubleshooting-procedures_4.vb)]  
   
  第一个 `MsgBox` 调用显示“After increase\(n\): 11, 21, 31, 41”。  由于 `n` 是引用类型，因此 `increase` 可以更改它的成员（即使它的传递机制为 `ByVal`）。  
   
@@ -75,7 +75,7 @@ caps.handback.revision: 17
   
  **纠正措施：**若想能够修改基础变量元素本身，请通过引用传递它。  下面的示例演示 `replace` 声明中的更改，此更改允许它在调用代码中将一个数组替换为另一个数组。  
   
- [!code-vb[VbVbcnProcedures#64](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/troubleshooting-procedures_5.vb)]  
+ [!code-vb[VbVbcnProcedures#64](./codesnippet/VisualBasic/troubleshooting-procedures_5.vb)]  
   
 ## 无法定义重载  
  如果要定义过程的重载版本，必须使用相同的名称和不同的签名。  如果编译器无法将声明与具有相同签名的重载区分开来，它就会生成一条错误。  
@@ -117,9 +117,9 @@ caps.handback.revision: 17
   
  下面的示例阐释了此重载决策过程。  
   
- [!code-vb[VbVbcnProcedures#62](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/troubleshooting-procedures_6.vb)]  
+ [!code-vb[VbVbcnProcedures#62](./codesnippet/VisualBasic/troubleshooting-procedures_6.vb)]  
   
- [!code-vb[VbVbcnProcedures#63](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/troubleshooting-procedures_7.vb)]  
+ [!code-vb[VbVbcnProcedures#63](./codesnippet/VisualBasic/troubleshooting-procedures_7.vb)]  
   
  在第一个调用中，编译器将消除第一个重载，因为第一个参数 \(Argument\) 的类型 \(`Short`\) 将收缩为相应参数 \(Parameter\) 的类型 \(`Byte`\)。  接着，编译器消除第三个重载，因为第二个重载中的每个参数 \(Argument\) 类型（`Short` 和 `Single`）都将扩大为第三个重载中的相应类型（`Integer` 和 `Single`）。  第二个重载需要的扩大量较少，因此编译器将用它进行调用。  
   
@@ -127,7 +127,7 @@ caps.handback.revision: 17
   
  **纠正措施：**若想在调用重载过程时不出现多义性，请使用 [CType 函数](../../../../visual-basic/language-reference/functions/ctype-function.md) 将参数 \(Argument\) 数据类型与参数 \(parameter\) 类型匹配。  下面的示例演示对强制解析第二个重载的 `z` 的调用。  
   
- [!code-vb[VbVbcnProcedures#65](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/troubleshooting-procedures_8.vb)]  
+ [!code-vb[VbVbcnProcedures#65](./codesnippet/VisualBasic/troubleshooting-procedures_8.vb)]  
   
 ### 使用 Optional 和 ParamArray 参数重载决策  
  如果过程的两个重载具有相同的签名，但在其中一个重载中将最后一个参数声明为 [Optional](../../../../visual-basic/language-reference/modifiers/optional.md)，而在另一个重载中将最后一个参数声明为 [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md)，则编译器将根据最匹配原则解析最匹配的那个过程的调用。  有关更多信息，请参见 [重载决策](../../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)。  

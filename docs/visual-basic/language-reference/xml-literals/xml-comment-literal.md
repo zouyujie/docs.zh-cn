@@ -62,7 +62,7 @@ caps.handback.revision: 19
 ## 示例  
  下面的示例创建 XML 注释，其中包含文本“This is a comment”。  
   
- [!code-vb[VbXMLSamples#9](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-comment-literal_1.vb)]  
+ [!code-vb[VbXMLSamples#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-comment-literal_1.vb)]  
   
 ## 请参阅  
  <xref:System.Xml.Linq.XComment>   

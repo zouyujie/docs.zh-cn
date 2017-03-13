@@ -53,7 +53,7 @@ caps.handback.revision: 16
 ## 示例  
  下面的示例创建两个 <xref:System.TimeSpan> 结构，并将它们加起来，然后将结果存储在第三个 <xref:System.TimeSpan> 结构中。  <xref:System.TimeSpan> 结构定义运算符过程，以重载多个标准运算符。  
   
- [!code-vb[VbVbcnProcedures#29](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-call-an-operator-_1.vb)]  
+ [!code-vb[VbVbcnProcedures#29](./codesnippet/VisualBasic/how-to-call-an-operator-procedure_1.vb)]  
   
  由于 <xref:System.TimeSpan> 重载标准 `+` 运算符，当它计算 `combinedSpan` 的值时，上面的示例将调用一个运算符过程。  
   

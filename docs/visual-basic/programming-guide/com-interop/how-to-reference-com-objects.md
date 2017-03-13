@@ -39,7 +39,7 @@ caps.handback.revision: 13
   
 3.  为简化对 Interop 程序集的访问，请在要使用 COM 对象的类或模块的上面添加一条 `Imports` 语句。  例如，下面的代码示例将导入 `Microsoft InkEdit Control 1.0` 库中所引用对象的命名空间 `INKEDLib`。  
   
-     [!code-vb[VbVbalrInterop#40](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#40)]  
+     [!code-vb[VbVbalrInterop#40](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/how-to-reference-com-objects_1.vb)]  
   
 ### 使用 Tlbimp 创建 Interop 程序集  
   

@@ -26,7 +26,7 @@ caps.handback.revision: 8
 ## Visual Basic 运行时与 .NET Framework  
  请看下面的示例：  
   
- [!code-vb[VbVbalrStrings#47](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/nothing-and-strings_1.vb)]  
+ [!code-vb[VbVbalrStrings#47](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/nothing-and-strings_1.vb)]  
   
  [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 运行时通常将 `Nothing` 作为空字符串 \(""\) 计算。  但是 [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort-md.md)] 则不同，每当尝试对 `Nothing` 执行字符串操作时都将引发异常。  
   

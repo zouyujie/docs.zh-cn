@@ -30,7 +30,7 @@ caps.handback.revision: 19
 ## 示例  
  本示例显示了传递给命令行应用程序的命令行参数。  显示的输出对应于上表中的第一项。  
   
- [!code-cs[csProgGuideMain#9](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/how-to-display-command-l_1.cs)]  
+ [!code-cs[csProgGuideMain#9](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/how-to-display-command-line-arguments_1.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

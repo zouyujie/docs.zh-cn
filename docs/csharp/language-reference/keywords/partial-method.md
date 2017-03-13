@@ -28,7 +28,7 @@ caps.handback.revision: 26
   
  下面的示例演示在分部类的两个部分中定义的分部方法：  
   
- [!code-cs[csrefKeywordsContextual#9](../../../csharp/language-reference/keywords/codesnippet/csharp/partial-method_1.cs)]  
+ [!code-cs[csrefKeywordsContextual#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/partial-method_1.cs)]  
   
  有关详细信息，请参阅[分部类和方法](../../../csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md)。  
   

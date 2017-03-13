@@ -25,7 +25,7 @@ caps.handback.revision: 10
 此示例从单独的字符创建字符串“abcd”。  
   
 ## 示例  
- [!code-vb[VbVbalrStrings#61](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-to-create-a-string-f_1.vb)]  
+ [!code-vb[VbVbalrStrings#61](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-create-a-string-from-an-array-of-char-values_1.vb)]  
   
 ## 编译代码  
  此方法没有特殊要求。  

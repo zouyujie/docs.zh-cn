@@ -52,7 +52,7 @@ caps.handback.revision: 13
   
 -   可以使用赋值语句将数值表达式代表的值赋给变量，如下面的示例所示。  
   
-     [!code-vb[VbVbalrOperators#82](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-calculate-numeric_1.vb)]  
+     [!code-vb[VbVbalrOperators#82](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-calculate-numeric-values_1.vb)]  
   
      在前面的示例中，等于运算符 \(`=`\) 右侧的表达式的值被赋给运算符左侧的变量 `j`，因此 `j` 的计算结果为 276。  
   
@@ -65,7 +65,7 @@ caps.handback.revision: 13
   
 -   使用括号括住您想要先执行的运算。  下面的示例显示了使用相同操作数和运算符计算得出的两个不同结果。  
   
-     [!code-vb[VbVbalrOperators#83](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-calculate-numeric_2.vb)]  
+     [!code-vb[VbVbalrOperators#83](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-calculate-numeric-values_2.vb)]  
   
      在前面的示例中，`j` 的计算将先执行加法运算符 \(`+`\)，原因是 `(67 + i)` 两边的括号重写了常规优先级，因此赋给 `j` 的值为 276（4 乘以 69）。  `k` 的计算将按常规优先级执行这些运算符（先执行 `*`，然后再执行 `+`），因此赋给 `k` 的值为 270（268 加 2）。  
   

@@ -21,17 +21,17 @@ caps.handback.revision: 16
 ## 示例  
  下面的示例演示替换或移除指定字符串中的子字符串的各种方法。  
   
- [!code-cs[csProgGuideStrings#28](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#28)]  
+ [!code-cs[csProgGuideStrings#28](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-modify-string-contents_1.cs)]  
   
 ## 示例  
  若要使用数组表示法访问字符串中的各个字符，可以使用 <xref:System.Text.StringBuilder> 对象，该对象重载 `[]` 运算符以提供对其内部字符缓冲区的访问。  也可以使用 <xref:System.String.ToCharArray%2A> 方法将该字符串转换为一个字符数组。  下面的示例使用 `ToCharArray` 创建该数组。  然后修改该数组中的某些元素。  之后再调用采用一个字符数组作为输入参数的字符串构造函数来创建一个新字符串。  
   
- [!code-cs[csProgGuideStrings#24](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#24)]  
+ [!code-cs[csProgGuideStrings#24](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-modify-string-contents_2.cs)]  
   
 ## 示例  
  下面的示例针对的是一种非常罕见的情况，即您可能希望使用不安全代码以类似于 C 样式字符数组的方式就地修改字符串。  此示例演示如何使用 fixed 关键字“就地”访问各个字符。  此外还演示对字符串进行不安全操作可能产生的一个副作用，此副作用是由于 C\# 编译器在内部存储（暂存）字符串的方式而导致的。  通常，除非绝对必要，否则不应该使用这种方法。  
   
- [!code-cs[csProgGuideStrings#29](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#29)]  
+ [!code-cs[csProgGuideStrings#29](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-modify-string-contents_3.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

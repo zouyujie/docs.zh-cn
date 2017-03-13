@@ -31,21 +31,21 @@ caps.handback.revision: 17
   
  下面的示例演示某个模块和该模块的两个成员的主干定义。  
   
- [!code-vb[VbVbalrDeclaredElements#1](../../../../visual-basic/programming-guide/language-features/declared-elements/codesnippet/visualbasic/type-promotion_1.vb)]  
+ [!code-vb[VbVbalrDeclaredElements#1](../../../../visual-basic/programming-guide/language-features/declared-elements/codesnippet/VisualBasic/type-promotion_1.vb)]  
   
  在 `projModule` 中的模块级别上声明的编程元素将被提升到 `projNamespace`。  在前面的示例中，提升了 `basicEnum` 和 `innerClass`，但是没有提升 `numberSub`，因为它不是在模块级别上声明的。  
   
 ## 类型提升的结果  
  类型提升的结果是一个限定字符串不需要包括模块名称。  下面的示例对前面示例中的过程发出两个调用。  
   
- [!code-vb[VbVbalrDeclaredElements#2](../../../../visual-basic/programming-guide/language-features/declared-elements/codesnippet/visualbasic/type-promotion_2.vb)]  
+ [!code-vb[VbVbalrDeclaredElements#2](../../../../visual-basic/programming-guide/language-features/declared-elements/codesnippet/VisualBasic/type-promotion_2.vb)]  
   
  在前面的示例中，第一个调用使用完全限定字符串。  但由于进行了类型提升，因此这不是必需的。  第二个调用也访问模块的成员，但在限定字符串中不包括 `projModule`。  
   
 ## 类型提升的失效  
  如果命名空间中的成员与某个模块成员同名，则对该模块成员的类型提升将会失效。  下面的示例演示同一命名空间中枚举和模块的主干定义。  
   
- [!code-vb[VbVbalrDeclaredElements#3](../../../../visual-basic/programming-guide/language-features/declared-elements/codesnippet/visualbasic/type-promotion_3.vb)]  
+ [!code-vb[VbVbalrDeclaredElements#3](../../../../visual-basic/programming-guide/language-features/declared-elements/codesnippet/VisualBasic/type-promotion_3.vb)]  
   
  在前面的示例中，[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 无法将类 `abc` 提升到 `thisNameSpace`，因为在命名空间级已存在同名的枚举。  若要访问 `abcSub`，必须使用完全限定字符串 `thisNamespace.thisModule.abc.abcSub`。  但是，仍会提升 `xyz` 类，您可以使用较短的限定字符串 `thisNamespace.xyz.xyzSub` 来访问 `xyzSub`。  
   
@@ -54,7 +54,7 @@ caps.handback.revision: 17
   
  **结果。**分部定义的类型提升失效可能导致意外的结果，甚至导致编译器错误。  下面的示例演示类的主干分部定义，其中一个定义位于模块内。  
   
- [!code-vb[VbVbalrDeclaredElements#4](../../../../visual-basic/programming-guide/language-features/declared-elements/codesnippet/visualbasic/type-promotion_4.vb)]  
+ [!code-vb[VbVbalrDeclaredElements#4](../../../../visual-basic/programming-guide/language-features/declared-elements/codesnippet/VisualBasic/type-promotion_4.vb)]  
   
  在前面的示例中，开发人员可能期望编译器合并 `sampleClass` 的两个分部定义。  但是，编译器不考虑 `sampleModule` 内分部定义的提升。  因此，它尝试编译两个名称均为 `sampleClass` 但具有不同限定路径的不同类。  
   

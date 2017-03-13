@@ -24,14 +24,14 @@ caps.handback.revision: 13
   
  下面的示例演示如何创建隐式类型的数组：  
   
- [!code-cs[csProgGuideLINQ#37](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#37)]  
+ [!code-cs[csProgGuideLINQ#37](../../../csharp/programming-guide/arrays/codesnippet/CSharp/implicitly-typed-arrays_1.cs)]  
   
  请注意，在上一个示例中，没有在初始化语句的左侧对隐式类型的数组使用方括号。  另请注意，交错数组就像一维数组那样使用 `new []` 进行初始化。  
   
 ## 对象初始值设定项中的隐式类型的数组  
  创建包含数组的匿名类型时，必须在该类型的对象初始值设定项中对数组进行隐式类型化。  在下面的示例中，`contacts` 是一个隐式类型的匿名类型数组，其中每个匿名类型都包含一个名为 `PhoneNumbers` 的数组。  请注意，对象初始值设定项内部未使用 `var` 关键字。  
   
- [!code-cs[csProgGuideLINQ#38](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#38)]  
+ [!code-cs[csProgGuideLINQ#38](../../../csharp/programming-guide/arrays/codesnippet/CSharp/implicitly-typed-arrays_2.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

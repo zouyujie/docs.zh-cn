@@ -24,13 +24,13 @@ caps.handback.revision: 26
 ## 示例  
  下面的类声明为 `static`，并且只包含 `static` 方法：  
   
- [!code-cs[csrefKeywordsModifiers#18](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#18)]  
+ [!code-cs[csrefKeywordsModifiers#18](../../../csharp/language-reference/keywords/codesnippet/CSharp/static_1.cs)]  
   
  常数或者类型声明隐式地是静态成员。  
   
  不能通过实例引用静态成员。  然而，可以通过类型名称引用它。  例如，请考虑以下类：  
   
- [!code-cs[csrefKeywordsModifiers#19](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#19)]  
+ [!code-cs[csrefKeywordsModifiers#19](../../../csharp/language-reference/keywords/codesnippet/CSharp/static_2.cs)]  
   
  若要引用静态成员 `x`，请使用完全限定名 `MyBaseC.MyStruct.x`，除非可从相同范围访问成员：  
   
@@ -54,12 +54,12 @@ Console.WriteLine(MyBaseC.MyStruct.x);
 ## 示例  
  此示例读取新雇员的姓名和 ID，将雇员计数器加一，并显示新雇员的信息和新的雇员数。  为简单起见，该程序从键盘读取当前的雇员数。  在实际的应用中，应从文件读取此信息。  
   
- [!code-cs[csrefKeywordsModifiers#20](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#20)]  
+ [!code-cs[csrefKeywordsModifiers#20](../../../csharp/language-reference/keywords/codesnippet/CSharp/static_3.cs)]  
   
 ## 示例  
  此示例说明：虽然可以用另一个尚未声明的静态字段实例化一个静态字段，但直到向后者显式赋值后，才能确定结果。  
   
- [!code-cs[csrefKeywordsModifiers#21](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#21)]  
+ [!code-cs[csrefKeywordsModifiers#21](../../../csharp/language-reference/keywords/codesnippet/CSharp/static_4.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

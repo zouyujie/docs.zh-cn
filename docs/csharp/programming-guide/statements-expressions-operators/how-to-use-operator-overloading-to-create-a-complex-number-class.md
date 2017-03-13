@@ -23,7 +23,7 @@ caps.handback.revision: 15
 本示例展示如何使用运算符重载创建定义复数加法的复数类 `Complex`。  本程序使用 `ToString` 方法的重载显示数字的虚部和实部以及加法结果。  
   
 ## 示例  
- [!code-cs[csProgGuideStatements#16](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-use-operator-over_1.cs)]  
+ [!code-cs[csProgGuideStatements#16](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-use-operator-overloading-to-create-a-complex-number-class_1.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

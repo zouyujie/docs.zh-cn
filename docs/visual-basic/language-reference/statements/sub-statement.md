@@ -225,14 +225,14 @@ End Sub
 ## <a name="example"></a>示例  
  下面的示例使用 `Sub` 语句来定义名称、 参数和窗体的主体的代码 `Sub` 过程。  
   
- [!code-vb[VbVbalrStatements#58](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/sub-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#58](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/sub-statement_1.vb)]  
   
 ## <a name="example"></a>示例  
  在下面的示例中， `DelayAsync` 是 `Async``Function` 具有返回类型的 <xref:System.Threading.Tasks.Task%601>。 `DelayAsync` 具有返回整数的 `Return` 语句。 因此，函数声明的 `DelayAsync` 必须具有返回类型的 `Task(Of Integer)`。 因为返回类型为 `Task(Of Integer)`, ，计算 `Await` 中的表达式 `DoSomethingAsync` 产生一个整数，如以下语句所示︰ `Dim result As Integer = Await delayTask`。  
   
   `startButton_Click` 过程是一种 `Async Sub` 过程。 因为 `DoSomethingAsync` 是 `Async` 函数，以调用任务 `DoSomethingAsync` 必须等待，如以下语句所示︰ `Await DoSomethingAsync()`。  `startButton_Click``Sub` 过程必须定义与 `Async` 修饰符，因此 `Await` 表达式。  
   
- [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/visualbasic/asyncfunctionvb/mainwindow.xaml.vb#1)]  
+ [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/sub-statement_2.vb)]  
   
 ## <a name="see-also"></a>另请参阅  
  [Implements 语句](../../../visual-basic/language-reference/statements/implements-statement.md)   

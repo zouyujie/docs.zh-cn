@@ -41,7 +41,7 @@ System.IO.DriveInfo di = new System.IO.DriveInfo(@"C:\");
 ## 示例  
  下面的示例演示访问有关文件和文件夹的信息的各种方法。  
   
- [!code-cs[csFilesandFolders#6](../../../csharp/programming-guide/file-system/codesnippet/csharp/csFilesFolders/FileIteration.cs#6)]  
+ [!code-cs[csFilesandFolders#6](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-get-information-about-files-folders-and-drives_1.cs)]  
   
 ## 可靠编程  
  处理用户指定的路径字符串时，还应处理在以下情况下引发的异常：  

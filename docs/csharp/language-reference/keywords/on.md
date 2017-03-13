@@ -24,7 +24,7 @@ caps.handback.revision: 6
 ## 示例  
  下面的示例演示 `on` 在 `join` 子句中的用法。  
   
- [!code-cs[csrefKeywordsContextual#12](../../../csharp/language-reference/keywords/codesnippet/csharp/on_1.cs)]  
+ [!code-cs[csrefKeywordsContextual#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/on_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

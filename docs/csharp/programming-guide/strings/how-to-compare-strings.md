@@ -29,17 +29,17 @@ caps.handback.revision: 23
 ## 示例  
  下面的示例演示如何正确地比较其值将不随用户计算机的区域设置的改变而变化的字符串。  此外，它还演示 C\# 中的字符串限定功能。  如果程序声明了两个或更多个相同的字符串变量，编译器会将它们存储在同一位置。  通过调用 <xref:System.Object.ReferenceEquals%2A> 方法，可以看到这两个字符串实际引用内存中的同一对象。  使用 <xref:System.String.Copy%2A?displayProperty=fullName> 方法可避免此限定，如下面的示例所示。  
   
- [!code-cs[csProgGuideStrings#11](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#11)]  
+ [!code-cs[csProgGuideStrings#11](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-compare-strings_1.cs)]  
   
 ## 示例  
  下面的示例演示如何通过首选方式比较字符串，该首选方式使用具有 <xref:System.StringComparison> 枚举的 <xref:System.String?displayProperty=fullName> 方法。  请注意，这里没有使用 <xref:System.String.CompareTo%2A?displayProperty=fullName> 实例方法，因为这些重载没有 <xref:System.StringComparison>。  
   
- [!code-cs[csProgGuideStrings#31](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#31)]  
+ [!code-cs[csProgGuideStrings#31](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-compare-strings_2.cs)]  
   
 ## 示例  
  下面的示例演示如何使用具有 <xref:System.StringComparer?displayProperty=fullName> 参数的静态 <xref:System.Array> 方法以区分区域性的方式对数组中的字符串进行排序和搜索。  
   
- [!code-cs[csProgGuideStrings#32](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#32)]  
+ [!code-cs[csProgGuideStrings#32](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-compare-strings_3.cs)]  
   
  当元素或键的类型为 `string` 时，<xref:System.Collections.Hashtable?displayProperty=fullName>、<xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName> 和 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 等集合类的构造函数具有 <xref:System.StringComparer?displayProperty=fullName> 参数。  通常，应尽可能使用这些构造函数，并指定 `Ordinal` 或 `OrdinalIgnoreCase`。  
   

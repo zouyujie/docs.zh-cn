@@ -66,7 +66,7 @@ caps.handback.revision: 19
 ## 示例  
  下面的示例创建一个处理指令，该指令确定 XML 文档的样式表。  
   
- [!code-vb[VbXMLSamples#28](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-processing-instructi_1.vb)]  
+ [!code-vb[VbXMLSamples#28](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-processing-instruction-literal_1.vb)]  
   
 ## 请参阅  
  <xref:System.Xml.Linq.XProcessingInstruction>   

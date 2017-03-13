@@ -29,7 +29,7 @@ caps.handback.revision: 35
   
 -   若要拆分类定义，请使用 [partial](../../../csharp/language-reference/keywords/partial-type.md) 关键字修饰符，如下所示：  
   
- [!code-cs[csProgGuideObjects#26](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_1.cs)]  
+ [!code-cs[csProgGuideObjects#26](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_1.cs)]  
   
  `partial` 关键字指示可在命名空间中定义该类、结构或接口的其他部分。  所有部分都必须使用 `partial` 关键字。  在编译时，各个部分都必须可用来形成最终的类型。  各个部分必须具有相同的可访问性，如 `public`、`private` 等。  
   
@@ -42,15 +42,15 @@ caps.handback.revision: 35
   
  下面的示例演示嵌套类型可以是分部的，即使它们所嵌套于的类型本身并不是分部的也如此。  
   
- [!code-cs[csProgGuideObjects#25](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_2.cs)]  
+ [!code-cs[csProgGuideObjects#25](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_2.cs)]  
   
  编译时将对分部类型定义的特性进行合并。  例如，请考虑下列声明：  
   
- [!code-cs[csProgGuideObjects#23](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_3.cs)]  
+ [!code-cs[csProgGuideObjects#23](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_3.cs)]  
   
  它们等效于以下声明：  
   
- [!code-cs[csProgGuideObjects#24](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_4.cs)]  
+ [!code-cs[csProgGuideObjects#24](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_4.cs)]  
   
  将从所有分部类型定义中对以下内容进行合并：  
   
@@ -66,24 +66,24 @@ caps.handback.revision: 35
   
  例如，请考虑下列声明：  
   
- [!code-cs[csProgGuideObjects#21](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_5.cs)]  
+ [!code-cs[csProgGuideObjects#21](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_5.cs)]  
   
  它们等效于以下声明：  
   
- [!code-cs[csProgGuideObjects#22](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_6.cs)]  
+ [!code-cs[csProgGuideObjects#22](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_6.cs)]  
   
 ### 限制  
  处理分部类定义时需遵循下面的几个规则：  
   
 -   要作为同一类型的各个部分的所有分部类型定义都必须使用 `partial` 进行修饰。  例如，下面的类声明将生成错误：  
   
-     [!code-cs[csProgGuideObjects#20](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_7.cs)]  
+     [!code-cs[csProgGuideObjects#20](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_7.cs)]  
   
 -   `partial` 修饰符只能出现在紧靠关键字 `class`、`struct` 或 `interface` 前面的位置。  
   
 -   分部类型定义中允许使用嵌套的分部类型，如下面的示例中所示：  
   
-     [!code-cs[csProgGuideObjects#19](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_8.cs)]  
+     [!code-cs[csProgGuideObjects#19](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_8.cs)]  
   
 -   要成为同一类型的各个部分的所有分部类型定义都必须在同一程序集和同一模块（.exe 或 .dll 文件）中进行定义。  分部定义不能跨越多个模块。  
   
@@ -117,7 +117,7 @@ caps.handback.revision: 35
  下面的示例在一个分部类定义中声明 `CoOrds` 类的字段和构造函数，在另一个分部类定义中声明成员 `PrintCoOrds`。  
   
 ### 代码  
- [!code-cs[csProgGuideObjects#17](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_9.cs)]  
+ [!code-cs[csProgGuideObjects#17](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_9.cs)]  
   
 ## 示例 2  
   
@@ -125,7 +125,7 @@ caps.handback.revision: 35
  从下面的示例可以看出，您也可以开发分部结构和接口。  
   
 ### 代码  
- [!code-cs[csProgGuideObjects#18](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_10.cs)]  
+ [!code-cs[csProgGuideObjects#18](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_10.cs)]  
   
 ## 分部方法  
  分部类或结构可以包含分部方法。  类的一个部分包含方法的签名。  可以在同一部分或另一个部分中定义可选实现。  如果未提供该实现，则会在编译时移除方法以及对方法的所有调用。  

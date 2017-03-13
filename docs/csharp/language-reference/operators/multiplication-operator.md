@@ -29,10 +29,10 @@ caps.handback.revision: 14
  用户定义的类型可重载二元 `*` 运算符（请参见 [operator](../../../csharp/language-reference/keywords/operator.md)）。  重载二元运算符时，也会隐式重载相应的赋值运算符（如果有）。  
   
 ## 示例  
- [!code-cs[csRefOperators#50](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#50)]  
+ [!code-cs[csRefOperators#50](../../../csharp/language-reference/operators/codesnippet/CSharp/multiplication-operator_1.cs)]  
   
 ## 示例  
- [!code-cs[csRefOperators#51](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#51)]  
+ [!code-cs[csRefOperators#51](../../../csharp/language-reference/operators/codesnippet/CSharp/multiplication-operator_2.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

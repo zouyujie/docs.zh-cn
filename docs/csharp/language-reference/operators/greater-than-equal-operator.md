@@ -25,7 +25,7 @@ caps.handback.revision: 16
  用户定义的类型可重载 `>=`运算符。  有关更多信息，请参见 [operator](../../../csharp/language-reference/keywords/operator.md)。  如果重载 `>=`，则还必须重载 [\<\=](../../../csharp/language-reference/operators/less-than-equal-operator.md)。  在枚举时通常允许整型运算。  
   
 ## 示例  
- [!code-cs[csRefOperators#39](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#39)]  
+ [!code-cs[csRefOperators#39](../../../csharp/language-reference/operators/codesnippet/CSharp/greater-than-equal-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

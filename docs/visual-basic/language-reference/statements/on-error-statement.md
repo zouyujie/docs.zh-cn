@@ -85,7 +85,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
 ## Throw 语句  
  用 `Err.Raise` 方法引发的错误将 `Exception` 属性设置为 <xref:System.Exception> 类的新建实例。  为支持引发派生的异常类型的异常，本语言支持 `Throw` 语句。  该语句只带单个参数，代表将被引发的异常实例。  下面的示例显示了如何在现有的异常处理支持中使用这些特性：  
   
- [!code-vb[VbVbalrErrorHandling#17](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/on-error-statement_1.vb)]  
+ [!code-vb[VbVbalrErrorHandling#17](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/on-error-statement_1.vb)]  
   
  请注意，`On Error GoTo` 语句捕获所有错误，与异常类无关。  
   
@@ -103,7 +103,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
   
  若要防止错误处理代码在没有错误的情况下运行，请将 `Exit Sub`、`Exit Function` 或 `Exit Property` 语句放在紧靠错误处理例程之前，如以下片段所示：  
   
- [!code-vb[VbVbalrErrorHandling#18](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/on-error-statement_2.vb)]  
+ [!code-vb[VbVbalrErrorHandling#18](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/on-error-statement_2.vb)]  
   
  此处，错误处理代码紧跟在 `Exit Sub` 语句之后，位于 `End Sub` 语句之前，这样就使其与过程流分离开。  当然，错误处理代码可以放在过程的任何位置。  
   
@@ -112,7 +112,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
   
  如果创建了访问其他对象的对象，则应对任何它们可能传回的未处理错误进行处理。  如果无法处理，请将 `Err.Number` 中的错误代码映射到您自己的某个错误，并将其传回给对象的调用方。  应通过将错误代码添加到 `VbObjectError` 常数中来指定您的错误。  例如，如果您的错误代码是 1052，按照以下方式进行赋值：  
   
- [!code-vb[VbVbalrErrorHandling#19](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/on-error-statement_3.vb)]  
+ [!code-vb[VbVbalrErrorHandling#19](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/on-error-statement_3.vb)]  
   
 > [!CAUTION]
 >  调用 Windows 动态链接库 \(DLL\) 时产生的系统错误并不引发异常，因而无法使用 Visual Basic 错误捕获机制进行捕获。  在调用 DLL 函数时，应该检查返回值以判断是否调用成功（根据 API 规范）；如果发生错误，则检查 `Err` 对象的 `LastDLLError` 属性值。  
@@ -120,7 +120,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
 ## 示例  
  此示例首先使用 `On Error GoTo` 语句指定错误处理例程在过程中的位置。  在该示例中，被 0 除的尝试将生成错误号 6。  该错误将在错误处理例程中得到处理，然后控制权将返回到导致错误的语句。  `On Error GoTo 0` 语句关闭错误捕获。  然后 `On Error Resume Next` 语句将被用于推迟错误捕获，以确保能够肯定知道下一条语句所生成的错误所处的环境。  请注意，错误被处理后，将使用 `Err.Clear` 清除 `Err` 对象的属性。  
   
- [!code-vb[VbVbalrErrorHandling#20](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/on-error-statement_4.vb)]  
+ [!code-vb[VbVbalrErrorHandling#20](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/on-error-statement_4.vb)]  
   
 ## 要求  
  **命名空间：** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  

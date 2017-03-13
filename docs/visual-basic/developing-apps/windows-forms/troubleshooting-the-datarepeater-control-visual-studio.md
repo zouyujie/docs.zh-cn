@@ -46,8 +46,8 @@ dataRepeater1.Top = productsBindingNavigator.Height;
   
  您可以通过在 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemCloned> 事件（该事件在默认克隆过程完成之后发生）中还原缺少的属性来解决此类问题。  下面的示例演示如何在 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemCloned> 事件处理程序中修复 <xref:System.Windows.Forms.ListBox> 的 <xref:System.Windows.Forms.ListBox.Items%2A> 集合。  
   
- [!code-cs[VbPowerPacksDataRepeaterItemCloned#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/csharp/DataRepeaterItemClonedCS/ItemCloned.cs#1)]
- [!code-vb[VbPowerPacksDataRepeaterItemCloned#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/visualbasic/DataRepeaterItemCloned/ItemCloned.vb#1)]  
+ [!code-cs[VbPowerPacksDataRepeaterItemCloned#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/troubleshooting-the-datarepeater-control-visual-studio_1.cs)]
+ [!code-vb[VbPowerPacksDataRepeaterItemCloned#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/troubleshooting-the-datarepeater-control-visual-studio_1.vb)]  
   
 ## 项标头上缺少选择符号  
  当您在 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 控件中更改项标头的 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.SelectionColor%2A> 属性时，所选的某些颜色可能会导致选择符号消失。  更改 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemHeaderSize%2A> 属性也可能会导致选择符号消失。  

@@ -28,7 +28,7 @@ caps.handback.revision: 18
 此示例演示如何使用特性轴属性按名称访问 XML 元素中的 XML 特性。  具体而言，它使用 `type` 特性轴属性来访问 `phone` 对象中名为 `type` 的特性。  
   
 ## 示例  
- [!code-vb[VbXMLSamples#11](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-access-xml-attrib_1.vb)]  
+ [!code-vb[VbXMLSamples#11](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-access-xml-attributes_1.vb)]  
   
 ## 请参阅  
  <xref:System.Xml.Linq.XElement.Attributes%2A?displayProperty=fullName>   

@@ -30,7 +30,7 @@ caps.handback.revision: 27
 ## 文本  
  `char` 类型的常数可以写成字符、十六进制换码序列或 Unicode 表示形式。  您也可以显式转换整数字符代码。  在下面的示例中，四个 `char` 变量使用同一字符 `X` 初始化：  
   
- [!code-cs[csrefKeywordsTypes#19](../../../csharp/language-reference/keywords/codesnippet/csharp/char_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#19](../../../csharp/language-reference/keywords/codesnippet/CSharp/char_1.cs)]  
   
 ## 转换  
  `char` 可以隐式转换为 [ushort](../../../csharp/language-reference/keywords/ushort.md)、[int](../../../csharp/language-reference/keywords/int.md)、[uint](../../../csharp/language-reference/keywords/uint.md)、[long](../../../csharp/language-reference/keywords/long.md)、[ulong](../../../csharp/language-reference/keywords/ulong.md)、[float](../../../csharp/language-reference/keywords/float.md)、[double](../../../csharp/language-reference/keywords/double.md) 或 [decimal](../../../csharp/language-reference/keywords/decimal.md)。  但是，不存在从其他类型到 `char` 类型的隐式转换。  

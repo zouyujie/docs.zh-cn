@@ -26,7 +26,7 @@ caps.handback.revision: 11
 
 任何程序元素（如变量、类或成员）都可以将相同的名称当作限制性关键字。  例如，可以创建一个名为 `Loop` 的变量。  但是，若要引用这个变量（其名称与限制性关键字 `Loop` 相同）的版本，必须在该变量的前面添加完全限定字符串或将该变量括在方括号 \(`[ ]`\) 中，如下面的示例所示。  
   
- [!code-vb[VbVbcnConventions#8](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/keywords-as-element-name_1.vb)]  
+ [!code-vb[VbVbcnConventions#8](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/keywords-as-element-names-in-code_1.vb)]  
   
  如果不执行上述任何一种操作，则 Visual Basic 假设使用的是内部 `Loop` 关键字而产生错误，如下面的示例所示：  
   

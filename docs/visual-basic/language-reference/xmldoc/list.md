@@ -68,7 +68,7 @@ caps.handback.revision: 12
 ## 示例  
  本示例使用 `<list>` 标记定义备注部分中的项目符号列表。  
   
- [!code-vb[VbVbcnXmlDocComments#5](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/list_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#5](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/list_1.vb)]  
   
 ## 请参阅  
  [XML 注释标记](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

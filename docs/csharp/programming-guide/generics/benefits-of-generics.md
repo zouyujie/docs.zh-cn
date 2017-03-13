@@ -20,13 +20,13 @@ caps.handback.revision: 23
   
  使用非泛型集合类的限制可以通过编写一小段程序来演示，该程序使用 .NET Framework 类库中的 <xref:System.Collections.ArrayList> 集合类。  <xref:System.Collections.ArrayList> 是一个使用起来非常方便的集合类，无需进行修改即可用来存储任何引用或值类型。  
   
- [!code-cs[csProgGuideGenerics#4](../../../csharp/programming-guide/generics/codesnippet/csharp/benefits-of-generics_1.cs)]  
+ [!code-cs[csProgGuideGenerics#4](../../../csharp/programming-guide/generics/codesnippet/CSharp/benefits-of-generics_1.cs)]  
   
  但这种方便是需要付出代价的。  添加到 <xref:System.Collections.ArrayList> 中的任何引用或值类型都将隐式地向上强制转换为 <xref:System.Object>。  如果项是值类型，则必须在将其添加到列表中时进行装箱操作，在检索时进行取消装箱操作。  强制转换以及装箱和取消装箱操作都会降低性能；在必须对大型集合进行循环访问的情况下，装箱和取消装箱的影响非常明显。  
   
  另一个限制是缺少编译时类型检查；因为 <xref:System.Collections.ArrayList> 会将所有项都强制转换为 <xref:System.Object>，所以在编译时无法防止客户端代码执行类似如下的操作：  
   
- [!code-cs[csProgGuideGenerics#5](../../../csharp/programming-guide/generics/codesnippet/csharp/benefits-of-generics_2.cs)]  
+ [!code-cs[csProgGuideGenerics#5](../../../csharp/programming-guide/generics/codesnippet/CSharp/benefits-of-generics_2.cs)]  
   
  尽管将字符串和 `ints` 组合在一个 <xref:System.Collections.ArrayList> 中的做法在创建异类集合时是完全可接受的，并且有时需要有意为之，但这种做法很可能产生编程错误，并且直到运行时才能检测到此错误。  
   
@@ -34,7 +34,7 @@ caps.handback.revision: 23
   
  <xref:System.Collections.ArrayList> 和其他相似类真正需要的是：客户端代码基于每个实例指定这些类要使用的具体数据类型的方式。  这样将不再需要向上强制转换为 `T:System.Object`，同时，也使得编译器可以进行类型检查。  换句话说，<xref:System.Collections.ArrayList> 需要一个类型参数。  这正是泛型所能提供的。  在 `N:System.Collections.Generic` 命名空间的泛型 <xref:System.Collections.Generic.List%601> 集合中，向集合添加项的操作类似于以下形式：  
   
- [!code-cs[csProgGuideGenerics#6](../../../csharp/programming-guide/generics/codesnippet/csharp/benefits-of-generics_3.cs)]  
+ [!code-cs[csProgGuideGenerics#6](../../../csharp/programming-guide/generics/codesnippet/CSharp/benefits-of-generics_3.cs)]  
   
  对于客户端代码，与 <xref:System.Collections.ArrayList> 相比，使用 <xref:System.Collections.Generic.List%601> 时添加的唯一语法是声明和实例化中的类型参数。  虽然这种方式稍微增加了编码的复杂性，但好处是您可以创建一个比 <xref:System.Collections.ArrayList> 更安全并且速度更快的列表，对于列表项是值类型的情况尤为如此。  
   

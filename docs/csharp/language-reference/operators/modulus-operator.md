@@ -25,7 +25,7 @@ caps.handback.revision: 15
  用户定义的类型能重载 `%` 运算符 \(请参见 [运算符](../../../csharp/language-reference/keywords/operator.md)\)。  当重载时二元运算符时，，如果有，还将隐式重载对应的赋值运算符。  
   
 ## 示例  
- [!code-cs[csRefOperators#9](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#9)]  
+ [!code-cs[csRefOperators#9](../../../csharp/language-reference/operators/codesnippet/CSharp/modulus-operator_1.cs)]  
   
 ## 注释  
  请注意舍入误差与双精度类型。  

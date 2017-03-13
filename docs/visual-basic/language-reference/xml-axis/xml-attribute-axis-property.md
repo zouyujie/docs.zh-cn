@@ -74,7 +74,7 @@ object.@<attribute>
 ## 示例  
  下面的示例演示如何从名为 `phone` 的 XML 元素集合中获取名为 `type` 的 XML 特性的值。  
   
- [!code-vb[VbXMLSamples#12](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-attribute-axis-prope_1.vb)]  
+ [!code-vb[VbXMLSamples#12](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-attribute-axis-property_1.vb)]  
   
  这段代码将显示以下文本：  
   
@@ -89,7 +89,7 @@ object.@<attribute>
 ## 示例  
  下面的示例演示为 XML 元素创建特性的两种方式，一种是以声明方式创建为 XML 的组成部分，另一种通过将特性添加到 <xref:System.Xml.Linq.XElement> 对象的实例进行动态创建。  `type` 特性是以声明方式创建的，`owner` 特性是动态创建的。  
   
- [!code-vb[VbXMLSamples#44](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-attribute-axis-prope_2.vb)]  
+ [!code-vb[VbXMLSamples#44](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-attribute-axis-property_2.vb)]  
   
  这段代码将显示以下文本：  
   
@@ -100,7 +100,7 @@ object.@<attribute>
 ## 示例  
  下面的示例使用尖括号语法来获取名为 `number-type` 的 XML 特性的值，它不是 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中的有效标识符。  
   
- [!code-vb[VbXMLSamples#13](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-attribute-axis-prope_3.vb)]  
+ [!code-vb[VbXMLSamples#13](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-attribute-axis-property_3.vb)]  
   
  这段代码将显示以下文本：  
   
@@ -109,7 +109,7 @@ object.@<attribute>
 ## 示例  
  下面的示例将 `ns` 声明为 XML 命名空间前缀。  然后，该示例使用该命名空间前缀创建 XML 文本并访问第一个具有限定名“`ns:name`”的子节点。  
   
- [!code-vb[VbXMLSamples#14](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-attribute-axis-prope_4.vb)]  
+ [!code-vb[VbXMLSamples#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-attribute-axis-property_4.vb)]  
   
  这段代码将显示以下文本：  
   

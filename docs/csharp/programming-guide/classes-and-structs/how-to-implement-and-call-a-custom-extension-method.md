@@ -37,7 +37,7 @@ caps.handback.revision: 15
 ## 示例  
  下面的示例在 `CustomExtensions.StringExtension` 类中实现了一个名为 `WordCount` 的扩展方法。  该方法对 <xref:System.String> 类进行操作，而该类被指定为第一个方法参数。  `CustomExtensions` 命名空间被导入到应用程序命名空间中，并且该方法是在 `Main` 方法内调用的。  
   
- [!code-cs[csProgGuideExtensionMethods#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-implement-and-cal_1.cs)]  
+ [!code-cs[csProgGuideExtensionMethods#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-implement-and-call-a-custom-extension-method_1.cs)]  
   
 ## 编译代码  
  若要运行这段代码，请将其复制并粘贴到已经在 [!INCLUDE[vs_current_short](../../../csharp/programming-guide/classes-and-structs/includes/vs-current-short-md.md)] 中创建的 Visual C\# 控制台应用程序项目中。  默认情况下，此项目针对的是 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] 3.5 版，并且具有一个对 System.Core.dll 的引用和一条针对 System.Linq 的 `using` 指令。  如果项目不满足上面的一个或多个要求，则您可以手动添加它们。  有关更多信息，请参见 [How to: Create a LINQ Project](../Topic/How%20to:%20Create%20a%20LINQ%20Project.md)。  

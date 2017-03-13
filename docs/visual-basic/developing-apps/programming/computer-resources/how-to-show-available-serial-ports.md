@@ -33,7 +33,7 @@ caps.handback.revision: 20
   
  通常，串行端口应用程序应从可用端口列表中使用的用户选择。  在本示例中，串行端口的名称在 <xref:System.Windows.Forms.ListBox> 控件存储。  有关更多信息，请参见 [ListBox 控件](../Topic/ListBox%20Control%20\(Windows%20Forms\).md)。  
   
- [!code-vb[VbVbalrMyComputer#45](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/VbVbalrMyComputer/Class2.vb#45)]  
+ [!code-vb[VbVbalrMyComputer#45](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-show-available-serial-ports_1.vb)]  
   
  此代码示例也可用作 IntelliSense 代码段。  在代码段选择器，它位于 **连接和网络**。  有关更多信息，请参见 [代码段](/visual-studio/ide/code-snippets)。  
   

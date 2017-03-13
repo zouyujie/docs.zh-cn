@@ -44,7 +44,7 @@ caps.handback.revision: 11
 ## 示例  
  本示例使用摘要一节中的 `<c>` 标记指示 `Counter` 是代码。  
   
- [!code-vb[VbVbcnXmlDocComments#1](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/c_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#1](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/c_1.vb)]  
   
 ## 请参阅  
  [XML 注释标记](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

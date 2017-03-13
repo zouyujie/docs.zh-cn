@@ -32,12 +32,12 @@ caps.handback.revision: 17
 ## 示例  
  下例演示如何声明、扩展和实现一个逆变泛型接口。  此外还演示了如何对实现此接口的类使用隐式转换。  
   
- [!code-cs[csVarianceKeywords#1](../../../csharp/language-reference/keywords/codesnippet/csharp/in-generic-modifier_1.cs)]  
+ [!code-cs[csVarianceKeywords#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/in-generic-modifier_1.cs)]  
   
 ## 示例  
  下例演示如何声明、实例化和调用一个逆变泛型委托。  此外还演示了如何隐式转换委托类型。  
   
- [!code-cs[csVarianceKeywords#2](../../../csharp/language-reference/keywords/codesnippet/csharp/in-generic-modifier_2.cs)]  
+ [!code-cs[csVarianceKeywords#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/in-generic-modifier_2.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

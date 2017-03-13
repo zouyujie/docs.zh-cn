@@ -30,7 +30,7 @@ caps.handback.revision: 15
   
      [!INCLUDE[csprcs](../../../csharp/includes/csprcs-md.md)] 会创建一个空事件处理程序方法，并将其添加到您的代码中。  或者，您也可以在**“代码”**视图中手动添加代码。  例如，下面的代码行声明了一个在 `Form` 类引发 `Load` 事件时调用的事件处理程序方法。  
   
-     [!code-cs[csProgGuideEvents#11](../../../csharp/programming-guide/events/codesnippet/csharp/how-to-subscribe-to-and-_1.cs)]  
+     [!code-cs[csProgGuideEvents#11](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-subscribe-to-and-unsubscribe-from-events_1.cs)]  
   
      还会在项目的 Form1.Designer.cs 文件的 `InitializeComponent` 方法中自动生成订阅该事件所需的代码行。  该代码行类似于：  
   

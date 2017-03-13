@@ -49,7 +49,7 @@ caps.handback.revision: 16
 ## 示例  
  下面的代码演示如何生成类及其成员的 ID 字符串。  
   
- [!code-vb[VbVbcnXmlDocComments#10](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/processing-the-xml-file_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#10](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/processing-the-xml-file_1.vb)]  
   
 ## 请参阅  
  [\/doc](../../../visual-basic/reference/command-line-compiler/doc.md)   

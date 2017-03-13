@@ -84,28 +84,28 @@ Imports [ aliasname = ] namespace.element
   
  代码没有 `Imports` 语句在文件的顶部。  因此， `DirectoryInfo`、 <xref:System.Text.StringBuilder>和 <xref:Microsoft.VisualBasic.ControlChars.CrLf> 引用都完全限定的命名空间。  
   
- [!code-vb[VbVbalrStatements#152](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/imports-statement-net-na_1.vb)]  
+ [!code-vb[VbVbalrStatements#152](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/imports-statement-net-namespace-and-type_1.vb)]  
   
 ## 示例  
  下面的示例包含引用的命名空间的 `Imports` 语句。  因此，类型无需完全限定的命名空间。  
   
- [!code-vb[VbVbalrStatements#153](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/imports-statement-net-na_2.vb)]  
+ [!code-vb[VbVbalrStatements#153](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/imports-statement-net-namespace-and-type_2.vb)]  
   
- [!code-vb[VbVbalrStatements#154](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/imports-statement-net-na_3.vb)]  
+ [!code-vb[VbVbalrStatements#154](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/imports-statement-net-namespace-and-type_3.vb)]  
   
 ## 示例  
  下面的示例创建包含引用的命名空间的别名的 `Imports` 语句。  类型未用别名。  
   
- [!code-vb[VbVbalrStatements#155](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/imports-statement-net-na_4.vb)]  
+ [!code-vb[VbVbalrStatements#155](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/imports-statement-net-namespace-and-type_4.vb)]  
   
- [!code-vb[VbVbalrStatements#156](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/imports-statement-net-na_5.vb)]  
+ [!code-vb[VbVbalrStatements#156](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/imports-statement-net-namespace-and-type_5.vb)]  
   
 ## 示例  
  下面的示例包括创建引用类型的别名的 `Imports` 语句。  别名用于指定类型。  
   
- [!code-vb[VbVbalrStatements#157](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/imports-statement-net-na_6.vb)]  
+ [!code-vb[VbVbalrStatements#157](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/imports-statement-net-namespace-and-type_6.vb)]  
   
- [!code-vb[VbVbalrStatements#158](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/imports-statement-net-na_7.vb)]  
+ [!code-vb[VbVbalrStatements#158](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/imports-statement-net-namespace-and-type_7.vb)]  
   
 ## 请参阅  
  [Namespace 语句](../../../visual-basic/language-reference/statements/namespace-statement.md)   

@@ -96,12 +96,12 @@ Option Infer 处于关闭状态时的 IntelliSense
 ## 示例  
  下例演示了 `Option Infer` 语句启用局部类型推理的方式。  
   
- [!code-vb[VbVbalrTypeInference#6](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/option-infer-statement_1.vb)]  
+ [!code-vb[VbVbalrTypeInference#6](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/option-infer-statement_1.vb)]  
   
 ## 示例  
  下例演示了变量被标识为 `Object` 时运行时类型可以改变的情况。  
   
- [!code-vb[VbVbalrTypeInference#11](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/option-infer-statement_2.vb)]  
+ [!code-vb[VbVbalrTypeInference#11](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/option-infer-statement_2.vb)]  
   
 ## 请参阅  
  [Dim 语句](../../../visual-basic/language-reference/statements/dim-statement.md)   

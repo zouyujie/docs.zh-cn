@@ -76,12 +76,12 @@ caps.handback.revision: 24
 ## 过程的多个版本  
  假设要编写一个 `Sub` 过程来根据客户的余额公布交易，同时希望能够通过名称或者通过帐号引用客户。  为此，可以定义两个不同的 `Sub` 过程，如下例所示：  
   
- [!code-vb[VbVbcnProcedures#73](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/procedure-overloading_1.vb)]  
+ [!code-vb[VbVbcnProcedures#73](./codesnippet/VisualBasic/procedure-overloading_1.vb)]  
   
 ### 重载版本  
  另一种方法是重载一个单独的过程名。  可以使用 [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md) 关键字为每一个参数列表定义该过程的一个版本，如下所示：  
   
- [!code-vb[VbVbcnProcedures#72](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/procedure-overloading_2.vb)]  
+ [!code-vb[VbVbcnProcedures#72](./codesnippet/VisualBasic/procedure-overloading_2.vb)]  
   
 #### 其他重载  
  如果还需要接受以 `Decimal` 或 `Single` 表示的交易金额，可进一步重载 `post` 以允许这种变化形式。  如果在上例中对每个重载都进行了这样的操作，就会有四个 `Sub` 过程，它们具有相同的名称但是具有四个不同的签名。  
@@ -89,9 +89,9 @@ caps.handback.revision: 24
 ## 重载的优点  
  重载过程的优点在于使调用更灵活。  若要使用前面示例中声明的 `post` 过程，调用代码可以获得 `String` 或 `Integer` 类型的客户标识，然后在两种情况下都调用同一过程。  下面的示例阐释了这一点：  
   
- [!code-vb[VbVbcnProcedures#56](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/procedure-overloading_3.vb)]  
+ [!code-vb[VbVbcnProcedures#56](./codesnippet/VisualBasic/procedure-overloading_3.vb)]  
   
- [!code-vb[VbVbcnProcedures#57](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/procedure-overloading_4.vb)]  
+ [!code-vb[VbVbcnProcedures#57](./codesnippet/VisualBasic/procedure-overloading_4.vb)]  
   
 ## 请参阅  
  [过程](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   

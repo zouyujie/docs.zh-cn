@@ -32,7 +32,7 @@ caps.handback.revision: 11
   
      下面的代码示例更新了 XML 文档中所有 \<Price\> 元素的值。  
   
-     [!code-vb[VbXmlSamples2#4](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/visualbasic/VbXmlSamples2/Module2.vb#4)]  
+     [!code-vb[VbXmlSamples2#4](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/VisualBasic/how-to-modify-xml-literals_1.vb)]  
   
      下面显示了此代码示例中的示例源 XML 和修改后的 XML。  
   
@@ -75,7 +75,7 @@ caps.handback.revision: 11
   
 1.  若要向 XML 文本添加特性，需要首先获取对 XML 文本的引用。  然后可以通过添加新的 XML 特性轴属性来添加特性。  还可以使用 <xref:System.Xml.Linq.XContainer.Add%2A> 方法向 XML 文本添加新的 <xref:System.Xml.Linq.XAttribute> 对象。  下面的示例演示了这两种方法。  
   
-     [!code-vb[VbXmlSamples2#5](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/visualbasic/VbXmlSamples2/Module2.vb#5)]  
+     [!code-vb[VbXmlSamples2#5](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/VisualBasic/how-to-modify-xml-literals_2.vb)]  
   
      下面显示了此代码示例中的示例源 XML 和修改后的 XML。  
   
@@ -121,7 +121,7 @@ caps.handback.revision: 11
   
      下面的示例演示了上述每种技术的示例。  
   
-     [!code-vb[VbXmlSamples2#6](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/visualbasic/VbXmlSamples2/Module2.vb#6)]  
+     [!code-vb[VbXmlSamples2#6](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/VisualBasic/how-to-modify-xml-literals_3.vb)]  
   
      下面显示了此代码示例中的示例源 XML 和修改后的 XML。  
   
@@ -165,7 +165,7 @@ caps.handback.revision: 11
   
 1.  若要从 XML 文本中移除元素或特性，需要获取对该元素或特性的引用，然后调用 `Remove` 方法，如下面的示例所示。  
   
-     [!code-vb[VbXmlSamples2#7](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/visualbasic/VbXmlSamples2/Module2.vb#7)]  
+     [!code-vb[VbXmlSamples2#7](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/VisualBasic/how-to-modify-xml-literals_4.vb)]  
   
      下面显示了此代码示例中的示例源 XML 和修改后的 XML。  
   
@@ -213,7 +213,7 @@ caps.handback.revision: 11
   
      下面的代码示例将所有 \<Description\> 元素替换为 \<Abstract\> 元素。  通过使用 \<Description\> <xref:System.Xml.Linq.XElement> 对象的 <xref:System.Xml.Linq.XContainer.Nodes%2A> 属性，将 \<Description\> 元素的内容保留在新的 \<Abstract\> 元素中。  
   
-     [!code-vb[VbXmlSamples2#8](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/visualbasic/VbXmlSamples2/Module2.vb#8)]  
+     [!code-vb[VbXmlSamples2#8](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/VisualBasic/how-to-modify-xml-literals_5.vb)]  
   
      下面显示了此代码示例中的示例源 XML 和修改后的 XML。  
   

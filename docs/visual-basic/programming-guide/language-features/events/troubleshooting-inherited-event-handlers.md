@@ -33,7 +33,7 @@ caps.handback.revision: 11
   
 -   继承的事件处理程序不得包含 [Handles](../../../../visual-basic/language-reference/statements/handles-clause.md) 子句。  基类中的方法已经与事件关联并将相应地激发事件。  从继承的方法中移除 `Handles` 子句。  
   
-     [!code-vb[VbVbalrEvents#32](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#32)]  
+     [!code-vb[VbVbalrEvents#32](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/troubleshooting-inherited-event-handlers_1.vb)]  
   
 -   如果继承的方法没有 `Handles` 关键字，请确保您的代码不包含额外的 [AddHandler 语句](../../../../visual-basic/language-reference/statements/addhandler-statement.md) 或处理同一事件的任何其他方法。  
   

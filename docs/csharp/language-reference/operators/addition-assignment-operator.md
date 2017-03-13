@@ -41,7 +41,7 @@ x = x + y
  `+=` 运算符还用于指定响应事件时要调用的方法；这类方法称为事件处理程序。  在此上下文中使用 `+=` 运算符称为“订阅事件”。  有关更多信息，请参见[如何：订阅和取消订阅事件](../../../csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md)。  和[委托](../../../csharp/programming-guide/delegates/index.md)。  
   
 ## 示例  
- [!code-cs[csRefOperators#35](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#35)]  
+ [!code-cs[csRefOperators#35](../../../csharp/language-reference/operators/codesnippet/CSharp/addition-assignment-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

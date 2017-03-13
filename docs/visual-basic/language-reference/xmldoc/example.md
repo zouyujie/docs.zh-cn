@@ -42,7 +42,7 @@ caps.handback.revision: 9
 ## 示例  
  本示例使用 `<example>` 标记以包括使用 `ID` 字段的示例。  
   
- [!code-vb[VbVbcnXmlDocComments#2](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/example_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#2](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/example_1.vb)]  
   
 ## 请参阅  
  [XML 注释标记](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

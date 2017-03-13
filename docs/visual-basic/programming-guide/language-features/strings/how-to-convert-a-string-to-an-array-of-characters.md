@@ -30,12 +30,12 @@ caps.handback.revision: 7
 ## 示例  
  此示例演示如何将字符串拆分为 `Char` 数组，以及如何将字符串拆分为其 Unicode 文本字符的 `String` 数组。  进行这种区分的原因是：Unicode 文本字符可以由两个或更多个 `Char` 字符组成（例如，代理项对或组合字符序列）。  有关更多信息，请参见 <xref:System.Globalization.TextElementEnumerator> 以及位于 http:\/\/www.unicode.org 的“Unicode Standard”（Unicode 标准）。  
   
- [!code-vb[VbVbalrStrings#75](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-to-convert-a-string-_2_1.vb)]  
+ [!code-vb[VbVbalrStrings#75](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-convert-a-string-to-an-array-of-characters_1.vb)]  
   
 ## 示例  
  将字符串拆分为它的 Unicode 文本字符会比较困难，但如果您需要与字符串的可视化表示形式有关的信息，这是必需的。  此示例使用 <xref:System.Globalization.StringInfo.SubstringByTextElements%2A> 方法获取组成字符串的 Unicode 文本字符的有关信息。  
   
- [!code-vb[VbVbalrStrings#76](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-to-convert-a-string-_2_2.vb)]  
+ [!code-vb[VbVbalrStrings#76](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-convert-a-string-to-an-array-of-characters_2.vb)]  
   
 ## 请参阅  
  <xref:System.String.Chars%2A>   

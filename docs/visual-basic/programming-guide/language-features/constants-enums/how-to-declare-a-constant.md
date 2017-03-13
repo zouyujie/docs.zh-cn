@@ -52,7 +52,7 @@ caps.handback.revision: 20
   
 -   编写包括一个访问说明符、一个 `Const` 关键字和一个表达式的声明，如下例所示：  
   
-     [!code-vb[VbEnumsTask#8](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#8)]  
+     [!code-vb[VbEnumsTask#8](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-a-constant_1.vb)]  
   
      当 [Option Infer](../../../../visual-basic/language-reference/statements/option-infer-statement.md) 是 `Off` 且 [Option Strict](../../../../visual-basic/language-reference/statements/option-strict-statement.md) 是 `On` 时，必须通过指定数据类型（`Boolean`、`Byte`、`Char`、`DateTime`、`Decimal`、`Double`、`Integer`、`Long`、`Short`、`Single` 或 `String`）来显式声明常量。  
   
@@ -62,7 +62,7 @@ caps.handback.revision: 20
   
 -   编写一个包括 `As` 关键字和显式数据类型的声明，如下面的示例所示：  
   
-     [!code-vb[VbEnumsTask#9](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#9)]  
+     [!code-vb[VbEnumsTask#9](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-a-constant_2.vb)]  
   
      可以在一行中声明多个常数，不过，如果每一行只声明一个常数，代码会更具可读性。  如果在一行中声明多个常数，则这些常数必须具有相同的访问级别（`Public`、`Private`、`Friend`、`Protected` 或 `Protected Friend`）。  
   

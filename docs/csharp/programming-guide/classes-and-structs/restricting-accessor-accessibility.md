@@ -23,7 +23,7 @@ caps.handback.revision: 26
 # 限制访问器可访问性（C# 编程指南）
 属性或索引器的 [get](../../../csharp/language-reference/keywords/get.md) 和 [set](../../../csharp/language-reference/keywords/set.md) 部分称为“访问器”。  默认情况下，这些访问器具有相同的可见性或访问级别：其所属属性或索引器的可见性或访问级别。  有关更多信息，请参见[可访问性级别](../../../csharp/language-reference/keywords/accessibility-levels.md)。  不过，有时限制对其中某个访问器的访问会很有用。  通常是在保持 `get` 访问器可公开访问的情况下，限制 `set` 访问器的可访问性。  例如：  
   
- [!code-cs[csProgGuideIndexers#6](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/restricting-accessor-acc_1.cs)]  
+ [!code-cs[csProgGuideIndexers#6](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/restricting-accessor-accessibility_1.cs)]  
   
  在此示例中，名为 `Name` 的属性定义了一个 `get` 访问器和一个 `set` 访问器。  `get` 访问器接受该属性本身的可访问性级别（在此示例中为 `public`），而对于 `set` 访问器，则通过对该访问器本身应用 [protected](../../../csharp/language-reference/keywords/protected.md) 访问修饰符来进行显式限制。  
   
@@ -41,12 +41,12 @@ caps.handback.revision: 26
 ## 重写访问器的访问修饰符  
  在重写属性或索引器时，被重写的访问器对重写代码而言，必须是可访问的。  此外，属性\/索引器和访问器的可访问性级别都必须与相应的被重写属性\/索引器和访问器匹配。  例如：  
   
- [!code-cs[csProgGuideIndexers#7](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/restricting-accessor-acc_2.cs)]  
+ [!code-cs[csProgGuideIndexers#7](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/restricting-accessor-accessibility_2.cs)]  
   
 ## 实现接口  
  使用访问器实现接口时，访问器不能具有访问修饰符。  但是，如果使用一个访问器（如 `get`）实现接口，则另一个访问器可以具有访问修饰符，如下面的示例所示：  
   
- [!code-cs[csProgGuideIndexers#8](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/restricting-accessor-acc_3.cs)]  
+ [!code-cs[csProgGuideIndexers#8](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/restricting-accessor-accessibility_3.cs)]  
   
 ## 访问器可访问性域  
  如果对访问器使用访问某个修饰符，则访问器的[可访问性域](../../../csharp/language-reference/keywords/accessibility-domain.md)由该修饰符确定。  
@@ -58,7 +58,7 @@ caps.handback.revision: 26
   
  该示例还演示 `DerivedClass` 的 `Name` 属性的 `set` 访问器上的限制性访问修饰符（如 `private` 或 `protected`）如何防止对该访问器的访问，并在向它赋值时生成错误。  
   
- [!code-cs[csProgGuideIndexers#5](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/restricting-accessor-acc_4.cs)]  
+ [!code-cs[csProgGuideIndexers#5](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/restricting-accessor-accessibility_4.cs)]  
   
 ## 注释  
  注意，如果将 `new private string Id` 替换为 `new public string Id`，则得到如下输出：  

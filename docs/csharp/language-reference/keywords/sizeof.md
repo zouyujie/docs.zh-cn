@@ -58,7 +58,7 @@ int intSize = sizeof(int);
  对于所有其他类型（包括结构），`sizeof` 运算符只能在不安全代码块中使用。  尽管可以使用 <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=fullName> 方法，但此方法返回的值并不总是与 `sizeof` 返回的值相同。  <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=fullName> 在封送类型后返回大小，而 `sizeof` 返回公共语言运行时分配的大小（包括所有填充）。  
   
 ## 示例  
- [!code-cs[csrefKeywordsOperator#11](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsOperator/csrefKeywordsOperators.cs#11)]  
+ [!code-cs[csrefKeywordsOperator#11](../../../csharp/language-reference/keywords/codesnippet/CSharp/sizeof_1.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

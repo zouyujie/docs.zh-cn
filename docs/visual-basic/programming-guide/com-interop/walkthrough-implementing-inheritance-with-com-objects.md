@@ -103,15 +103,15 @@ caps.handback.revision: 16
   
 6.  将以下代码添加到 `MathClass` 的顶部，以继承 COM 类。  
   
-     [!code-vb[VbVbalrInterop#31](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#31)]  
+     [!code-vb[VbVbalrInterop#31](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-implementing-inheritance-with-com-objects_1.vb)]  
   
 7.  通过将以下代码添加到 `MathClass` 来重载基类的公共方法：  
   
-     [!code-vb[VbVbalrInterop#32](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#32)]  
+     [!code-vb[VbVbalrInterop#32](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-implementing-inheritance-with-com-objects_2.vb)]  
   
 8.  通过将以下代码添加到 `MathClass` 来扩展继承类：  
   
-     [!code-vb[VbVbalrInterop#33](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#33)]  
+     [!code-vb[VbVbalrInterop#33](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-implementing-inheritance-with-com-objects_3.vb)]  
   
  新类继承 COM 对象中基类的属性，重载一个方法并定义一个新方法来扩展该类。  
   
@@ -121,7 +121,7 @@ caps.handback.revision: 16
   
 2.  在该按钮的 `Click` 事件处理程序过程中添加以下代码，创建 `MathClass` 的一个实例，并调用被重载的方法：  
   
-     [!code-vb[VbVbalrInterop#34](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#34)]  
+     [!code-vb[VbVbalrInterop#34](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-implementing-inheritance-with-com-objects_4.vb)]  
   
 3.  通过按 F5 键运行项目。  
   

@@ -21,7 +21,7 @@ caps.handback.revision: 17
   
  下面的代码示例演示带有 <xref:System.Collections.Generic.IList%601> 输入参数的单个泛型方法如何同时循环访问列表和数组，本例中为整数数组。  
   
- [!code-cs[csProgGuideGenerics#35](../../../csharp/programming-guide/generics/codesnippet/csharp/generics-and-arrays_1.cs)]  
+ [!code-cs[csProgGuideGenerics#35](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-and-arrays_1.cs)]  
   
 ## 请参阅  
  <xref:System.Collections.Generic>   

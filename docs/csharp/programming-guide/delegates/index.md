@@ -21,7 +21,7 @@ caps.handback.revision: 30
   
  委托用于将方法作为参数传递给其他方法。  事件处理程序就是通过委托调用的方法。  你可以创建一个自定义方法，当发生特定事件时，某个类（如 Windows 控件）就可以调用你的方法。  下面的示例演示了一个委托声明：  
   
- [!code-cs[csProgGuideDelegates#20](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#20)]  
+ [!code-cs[csProgGuideDelegates#20](../../../csharp/programming-guide/delegates/codesnippet/CSharp/index_1.cs)]  
   
  可将任何可访问类或结构中与委托类型匹配的任何方法分配给委托。  该方法可以是静态方法，也可以是实例方法。  这样便能通过编程方式来更改方法调用，还可以向现有类中插入新代码。  
   

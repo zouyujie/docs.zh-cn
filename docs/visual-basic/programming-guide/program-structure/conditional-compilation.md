@@ -28,7 +28,7 @@ caps.handback.revision: 15
   
  那些要满足一定条件才编译的代码块使用 `#If...Then...#Else` 指令来表示。  例如，若要从相同的源代码创建同一应用程序的法语和德语版本，使用预定义常数 `FrenchVersion` 和 `GermanVersion` 将特定于平台的代码段嵌入 `#If...Then` 语句。  下面的示例说明嵌入的方法：  
   
- [!code-vb[VbVbalrConditionalComp#5](../../../visual-basic/language-reference/directives/codesnippet/visualbasic/conditional-compilation_1.vb)]  
+ [!code-vb[VbVbalrConditionalComp#5](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/conditional-compilation_1.vb)]  
   
  如果在编译时将 `FrenchVersion` 条件编译常量的值设置为 `True`，则将编译法语版本的条件代码。  如果将 `GermanVersion` 常数的值设置为 `True`，则编译器将使用德语版本。  如果二者均未设置为 `True`，则运行最后的 `Else` 块中的代码。  
   

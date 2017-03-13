@@ -201,11 +201,11 @@ End Function
   
   `Return` 语句同时分配返回值，并退出函数，如以下示例所示。  
   
- [!code-vb[VbVbalrStatements#24](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/function-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#24](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/function-statement_1.vb)]  
   
  下面的示例将返回值分配给函数名 `myFunction` ，然后使用 `Exit Function` 语句返回。  
   
- [!code-vb[VbVbalrStatements#23](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/function-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#23](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/function-statement_2.vb)]  
   
   `Exit Function` 和 `Return` 语句会导致立即退出 `Function` 过程。 任意数量的 `Exit Function` 和 `Return` 语句可以在过程中，任何位置出现，并可混合 `Exit Function` 和 `Return` 语句。  
   
@@ -248,19 +248,19 @@ End Function
 ## <a name="example"></a>示例  
  下面的示例使用 `Function` 语句来声明名称、 参数和窗体的主体的代码 `Function` 过程。  `ParamArray` 修饰符将启用用于接受可变数量的参数的函数。  
   
- [!code-vb[VbVbalrStatements#25](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/function-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#25](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/function-statement_3.vb)]  
   
 ## <a name="example"></a>示例  
  下面的示例调用在前面的示例声明的函数。  
   
- [!code-vb[VbVbalrStatements#26](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/function-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#26](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/function-statement_4.vb)]  
   
 ## <a name="example"></a>示例  
  在下面的示例中， `DelayAsync` 是 `Async``Function` 具有返回类型的 <xref:System.Threading.Tasks.Task%601>。 `DelayAsync` 具有返回整数的 `Return` 语句。 因此的函数声明 `DelayAsync` 需要具有返回类型的 `Task(Of Integer)`。 因为返回类型为 `Task(Of Integer)`, ，计算 `Await` 中的表达式 `DoSomethingAsync` 产生一个整数。 在此语句中对此进行了演示︰ `Dim result As Integer = Await delayTask`。  
   
   `startButton_Click` 过程是一种 `Async Sub` 过程。 因为 `DoSomethingAsync` 是 `Async` 函数，以调用任务 `DoSomethingAsync` 必须等待，如下面的语句所示︰ `Await DoSomethingAsync()`。  `startButton_Click``Sub` 过程必须定义与 `Async` 修饰符，因此 `Await` 表达式。  
   
- [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/visualbasic/asyncfunctionvb/mainwindow.xaml.vb#1)]  
+ [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/function-statement_5.vb)]  
   
 ## <a name="see-also"></a>另请参阅  
  [Sub 语句](../../../visual-basic/language-reference/statements/sub-statement.md)   

@@ -20,7 +20,7 @@ caps.handback.revision: 44
 # 可以为 null 的类型（C# 编程指南）
 可以为 null 的类型是 <xref:System.Nullable%601?displayProperty=fullName> 结构的实例。  可以为 null 的类型可以表示其基础值类型正常范围内的值，再加上一个 `null` 值。  例如，`Nullable<Int32>` 读作“可以为 null 的 Int32”，可以将其赋值为 \-2147483648 到 2147483647 之间的任意值，也可以将其赋值为 `null` 值。  可以赋给 `Nullable<bool>` 的值包括 [true](../../../csharp/language-reference/keywords/true.md)、[false](../../../csharp/language-reference/keywords/false.md) 或 [null](../../../csharp/language-reference/keywords/null.md)。  在处理数据库和其他包含不可赋值的元素的数据类型时，将 `null` 赋值给数值类型或布尔型的功能特别有用。  例如，数据库中的布尔型字段可以存储值 `true` 或 `false`，或者，该字段也可以未定义。  
   
- [!code-cs[csProgGuideTypes#3](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/index_1.cs)]  
+ [!code-cs[csProgGuideTypes#3](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_1.cs)]  
   
  此示例将显示输出：  
   

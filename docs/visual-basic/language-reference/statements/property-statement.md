@@ -198,22 +198,22 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
   
 -   **返回值。** 返回一个介于 `Get` 过程中，您可以将该值赋给属性名称或将其包含在 `Return` 语句。 下面的示例将返回值分配给属性名称 `quoteForTheDay` ，然后使用 `Exit Property` 语句返回。  
   
-     [!code-vb[VbVbalrStatements#27](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/property-statement_1.vb)]  
+     [!code-vb[VbVbalrStatements#27](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_1.vb)]  
   
-     [!code-vb[VbVbalrStatements#28](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/property-statement_2.vb)]  
+     [!code-vb[VbVbalrStatements#28](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_2.vb)]  
   
      如果您使用 `Exit Property` 而无需将值分配给 `name`, 、 `Get` 过程将返回属性的数据类型的默认值。  
   
       `Return` 语句同时分配 `Get` 过程返回值并退出该过程。 下面的示例演示了此过程。  
   
-     [!code-vb[VbVbalrStatements#27](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/property-statement_1.vb)]  
+     [!code-vb[VbVbalrStatements#27](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_1.vb)]  
   
-     [!code-vb[VbVbalrStatements#29](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/property-statement_3.vb)]  
+     [!code-vb[VbVbalrStatements#29](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_3.vb)]  
   
 ## <a name="example"></a>示例  
  下面的示例声明一个类中的属性。  
   
- [!code-vb[VbVbalrStatements#51](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/property-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#51](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_4.vb)]  
   
 ## <a name="see-also"></a>另请参阅  
  [自动实现的属性](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)   

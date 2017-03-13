@@ -30,7 +30,7 @@ caps.handback.revision: 19
   
  当 [Option Infer](../../../../visual-basic/language-reference/statements/option-infer-statement.md) 是 `Off` 并且 [Option Strict](../../../../visual-basic/language-reference/statements/option-strict-statement.md) 是 `On` 时，必须为所有变量显式声明数据类型。  在下面的示例中，`MyByte` 的数据类型显式声明为数据类型 `Byte`：  
   
- [!code-vb[VbVbalrConstants#1](../../../../visual-basic/programming-guide/language-features/constants-enums/codesnippet/visualbasic/constant-and-literal-dat_1.vb)]  
+ [!code-vb[VbVbalrConstants#1](../../../../visual-basic/programming-guide/language-features/constants-enums/codesnippet/VisualBasic/constant-and-literal-data-types_1.vb)]  
   
  当 `Option Infer` 是 `On` 或 `Option Strict` 是 `Off` 时，可以在不使用 `As` 子句指定数据类型的情况下声明常量。  编译器通过表达式的类型确定常量的类型。  默认情况下，数值整数文本转换为 `Integer` 数据类型。  浮点数的默认数据类型是 `Double`，关键字 `True` 和 `False` 指定 `Boolean` 常数。  
   
@@ -48,11 +48,11 @@ myDecimal = 100000000000000000000   ' This causes a compiler error.
   
  若要使上例正确运行，可以在文本后追加类型字符 `D`，它使文本表示为 `Decimal`：  
   
- [!code-vb[VbVbalrConstants#2](../../../../visual-basic/programming-guide/language-features/constants-enums/codesnippet/visualbasic/constant-and-literal-dat_2.vb)]  
+ [!code-vb[VbVbalrConstants#2](../../../../visual-basic/programming-guide/language-features/constants-enums/codesnippet/VisualBasic/constant-and-literal-data-types_2.vb)]  
   
  下面的示例说明类型字符和封闭字符的正确用法：  
   
- [!code-vb[VbVbalrConstants#3](../../../../visual-basic/programming-guide/language-features/constants-enums/codesnippet/visualbasic/constant-and-literal-dat_3.vb)]  
+ [!code-vb[VbVbalrConstants#3](../../../../visual-basic/programming-guide/language-features/constants-enums/codesnippet/VisualBasic/constant-and-literal-data-types_3.vb)]  
   
  下表显示 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中可用的封闭字符和类型字符。  
   

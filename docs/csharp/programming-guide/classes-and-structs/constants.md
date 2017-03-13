@@ -25,7 +25,7 @@ caps.handback.revision: 24
   
  常量必须在声明时初始化。  例如：  
   
- [!code-cs[csProgGuideObjects#64](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/constants_1.cs)]  
+ [!code-cs[csProgGuideObjects#64](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/constants_1.cs)]  
   
  在此示例中，常量 `months` 始终为 12，不可更改，即使是该类自身也不能更改它。  实际上，当编译器遇到 C\# 源代码（例如 `months`）中的常量修饰符时，将直接把文本值替换到它生成的中间语言 \(IL\) 代码中。  因为在运行时没有与常量关联的变量地址，所以 `const` 字段不能通过引用传递，并且不能在表达式中作为左值出现。  
   
@@ -34,17 +34,17 @@ caps.handback.revision: 24
   
  可以同时声明多个相同类型的常量，例如：  
   
- [!code-cs[csProgGuideObjects#65](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/constants_2.cs)]  
+ [!code-cs[csProgGuideObjects#65](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/constants_2.cs)]  
   
  如果不会造成循环引用，用于初始化一个常量的表达式可以引用另一个常量。  例如：  
   
- [!code-cs[csProgGuideObjects#66](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/constants_3.cs)]  
+ [!code-cs[csProgGuideObjects#66](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/constants_3.cs)]  
   
  常量可标记为 [public](../../../csharp/language-reference/keywords/public.md)、[private](../../../csharp/language-reference/keywords/private.md)、[protected](../../../csharp/language-reference/keywords/protected.md)、[internal](../../../csharp/language-reference/keywords/internal.md) 或 `protected` `internal`。  这些访问修饰符定义类的用户访问该常量的方式。  有关更多信息，请参见 [访问修饰符](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)。  
   
  因为常量值对该类型的所有实例是相同的，所以常量被当作 [static](../../../csharp/language-reference/keywords/static.md) 字段一样访问。  不使用 `static` 关键字声明常量。  未包含在定义常量的类中的表达式必须使用类名、一个句点和常量名来访问该常量。  例如：  
   
- [!code-cs[csProgGuideObjects#67](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/constants_4.cs)]  
+ [!code-cs[csProgGuideObjects#67](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/constants_4.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

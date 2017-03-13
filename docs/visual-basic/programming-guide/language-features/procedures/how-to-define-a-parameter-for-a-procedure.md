@@ -45,7 +45,7 @@ caps.handback.revision: 15
   
      下面的示例定义一个带有三个参数的 `Sub` 过程的大纲。  前两个参数为必选，第三个参数为可选。  参数声明在参数列表中以逗号分隔。  
   
-     [!code-vb[VbVbcnProcedures#33](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-define-a-paramete_1.vb)]  
+     [!code-vb[VbVbcnProcedures#33](./codesnippet/VisualBasic/how-to-define-a-parameter-for-a-procedure_1.vb)]  
   
      第一个参数接受一个 `customer` 对象，`updateCustomer` 可以直接更新传递到 `c` 的变量，因为此参数的传递方式为 [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md)。  过程无法更改最后两个参数的值，因为它们的传递方式为 [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md)。  
   

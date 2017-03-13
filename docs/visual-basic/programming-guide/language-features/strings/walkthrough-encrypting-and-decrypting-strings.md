@@ -38,33 +38,33 @@ caps.handback.revision: 18
   
 1.  创建 `Simple3Des` 选件类封装加密和解密方法。  
   
-     [!code-vb[VbVbalrStrings#38](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_1.vb)]  
+     [!code-vb[VbVbalrStrings#38](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_1.vb)]  
   
 2.  将加密命名空间的导入包含 `Simple3Des` 选件类文件的开头。  
   
-     [!code-vb[VbVbalrStrings#77](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_2.vb)]  
+     [!code-vb[VbVbalrStrings#77](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_2.vb)]  
   
 3.  在 `Simple3Des` 选件类中，添加一个私有字段以存储 3DES 加密服务提供程序。  
   
-     [!code-vb[VbVbalrStrings#39](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_3.vb)]  
+     [!code-vb[VbVbalrStrings#39](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_3.vb)]  
   
 4.  添加私有方法，该方法将从指定密钥的哈希创建指定长度的字节数组。  
   
-     [!code-vb[VbVbalrStrings#41](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_4.vb)]  
+     [!code-vb[VbVbalrStrings#41](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_4.vb)]  
   
 5.  添加用来初始化 3DES 加密服务提供程序的构造函数。  
   
      `key` 参数控制 `EncryptData` 和 `DecryptData` 方法。  
   
-     [!code-vb[VbVbalrStrings#40](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_5.vb)]  
+     [!code-vb[VbVbalrStrings#40](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_5.vb)]  
   
 6.  添加加密字符串的公共方法。  
   
-     [!code-vb[VbVbalrStrings#42](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_6.vb)]  
+     [!code-vb[VbVbalrStrings#42](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_6.vb)]  
   
 7.  添加解密字符串的公共方法。  
   
-     [!code-vb[VbVbalrStrings#43](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_7.vb)]  
+     [!code-vb[VbVbalrStrings#43](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_7.vb)]  
   
      包装类现在可用来保护用户资产了。  在本示例中，它用于在可公开访问的文本文件中安全地存储私有用户数据。  
   
@@ -72,11 +72,11 @@ caps.handback.revision: 18
   
 1.  在其他类中添加一个方法，该方法将使用包装器的 `EncryptData` 方法为字符串加密，并将它写入用户的“我的文档”文件夹。  
   
-     [!code-vb[VbVbalrStrings#78](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_8.vb)]  
+     [!code-vb[VbVbalrStrings#78](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_8.vb)]  
   
 2.  添加一个方法，该方法将从用户的“我的文档”文件夹读取加密字符串，并使用包装器的 `DecryptData` 方法为字符串解密。  
   
-     [!code-vb[VbVbalrStrings#79](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_9.vb)]  
+     [!code-vb[VbVbalrStrings#79](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_9.vb)]  
   
 3.  添加用于调用 `TestEncoding` 和 `TestDecoding` 方法的用户界面代码。  
   

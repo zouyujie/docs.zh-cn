@@ -29,7 +29,7 @@ caps.handback.revision: 20
   
 -   声明一个数组并用 <xref:System.Enum.GetValues%2A> 方法将枚举转换为该数组，然后像处理任何其他变量那样传递该数组。  下面的示例在循环访问枚举 <xref:Microsoft.VisualBasic.FirstDayOfWeek> 时显示枚举的每个成员。  
   
-     [!code-vb[VbEnumsTask#7](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#7)]  
+     [!code-vb[VbEnumsTask#7](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-iterate-through-an-enumeration_1.vb)]  
   
 ## 请参阅  
  [枚举概述](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)   

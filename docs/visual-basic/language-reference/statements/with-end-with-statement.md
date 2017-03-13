@@ -81,12 +81,12 @@ End With
 ## 示例  
  在下面的示例中，每个 `With` 块将对单个对象执行一系列语句。  
   
- [!code-vb[VbVbalrWithStatement#2](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/vbwpfapp/mainwindow.xaml.vb#2)]  
+ [!code-vb[VbVbalrWithStatement#2](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/with-end-with-statement_1.vb)]  
   
 ## 示例  
  下面的示例嵌套 `With…End With` 语句。  在嵌套的 `With` 语句中，语法引用内部对象。  
   
- [!code-vb[VbVbalrWithStatement#1](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/vbwpfapp/mainwindow.xaml.vb#1)]  
+ [!code-vb[VbVbalrWithStatement#1](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/with-end-with-statement_2.vb)]  
   
 ## 请参阅  
  <xref:System.Collections.Generic.List%601>   

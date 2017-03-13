@@ -24,7 +24,7 @@ caps.handback.revision: 24
 >  不要在基类中声明虚拟事件，也不要在派生类中重写这些事件。  C\# 编译器无法正确处理这些事件，并且无法预知的该派生的事件的用户是否真正订阅了基类事件。  
   
 ## 示例  
- [!code-cs[csProgGuideEvents#1](../../../csharp/programming-guide/events/codesnippet/csharp/how-to-raise-base-class-_1.cs)]  
+ [!code-cs[csProgGuideEvents#1](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-raise-base-class-events-in-derived-classes_1.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

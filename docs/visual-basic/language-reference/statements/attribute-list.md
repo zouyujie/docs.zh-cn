@@ -62,7 +62,7 @@ caps.handback.revision: 18
 ## 示例  
  下面的示例将 <xref:System.Runtime.InteropServices.DllImportAttribute> 特性应用于 `Function` 过程的主干定义中。  
   
- [!code-vb[VbVbalrStatements#1](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/attribute-list_1.vb)]  
+ [!code-vb[VbVbalrStatements#1](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/attribute-list_1.vb)]  
   
  <xref:System.Runtime.InteropServices.DllImportAttribute> 指示该特性过程表示非托管动态链接库 \(DLL\) 中的一个入口点。  该特性提供 DLL 名称作为一个定位参数，并提供其他信息作为变量初始值设定项。  
   

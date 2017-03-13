@@ -22,7 +22,7 @@ caps.handback.revision: 19
 `implicit` 关键字用于声明隐式的用户定义类型转换运算符。  如果可以确保转换过程不会造成数据丢失，则可使用该关键字在用户定义类型和其他类型之间进行隐式转换。  
   
 ## 示例  
- [!code-cs[csrefKeywordsConversion#5](../../../csharp/language-reference/keywords/codesnippet/csharp/implicit_1.cs)]  
+ [!code-cs[csrefKeywordsConversion#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/implicit_1.cs)]  
   
  隐式转换可以通过消除不必要的类型转换来提高源代码的可读性。  但是，因为隐式转换不需要程序员将一种类型显式强制转换为另一种类型，所以使用隐式转换时必须格外小心，以免出现意外结果。  一般情况下，隐式转换运算符应当从不引发异常并且从不丢失信息，以便可以在程序员不知晓的情况下安全使用它们。  如果转换运算符不能满足那些条件，则应将其标记为 `explicit`。  有关更多信息，请参见[使用转换运算符](../../../csharp/programming-guide/statements-expressions-operators/using-conversion-operators.md)。  
   

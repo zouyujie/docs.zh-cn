@@ -28,7 +28,7 @@ caps.handback.revision: 18
 本示例演示如何使用子轴属性来访问某个 XML 元素中具有指定名称的所有 XML 子元素。  具体而言，它使用 <xref:System.Xml.Linq.XElement.Value%2A> 属性来获取 `name` 子轴属性返回的集合中的第一个元素的值。  `name` 子轴属性获取 `contact` 对象中所有名为 `phone` 的子元素。  本示例还使用 `phone` 子轴属性来访问 `contact` 对象中包含的所有名为 `phone` 的子元素。  
   
 ## 示例  
- [!code-vb[VbXMLSamples#10](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-access-xml-child-_1.vb)]  
+ [!code-vb[VbXMLSamples#10](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-access-xml-child-elements_1.vb)]  
   
 ## 编译代码  
  此示例需要：  

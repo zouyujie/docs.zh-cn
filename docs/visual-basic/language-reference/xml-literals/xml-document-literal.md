@@ -62,7 +62,7 @@ rootElement
 ## 示例  
  下面的示例创建一个 XML 文档，该文档具有一个 XML 声明、一条处理指令、一条注释以及一个包含其他元素的元素。  
   
- [!code-vb[VbXMLSamples#30](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-document-literal_1.vb)]  
+ [!code-vb[VbXMLSamples#30](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-document-literal_1.vb)]  
   
 ## 请参阅  
  <xref:System.Xml.Linq.XElement>   

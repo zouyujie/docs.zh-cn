@@ -96,7 +96,7 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
 ## 示例  
  下面的示例将增加某个动态数组最后一个维度的大小（不会丢失数组中的任何现有数据），然后减小该大小（会有部分数据丢失）。  最后，它会将大小重新减小到其原始值，并重新初始化所有数组元素。  
   
- [!code-vb[VbVbalrStatements#52](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/redim-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#52](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/redim-statement_1.vb)]  
   
  `Dim` 语句创建具有三个维度的新数组。  为每个维度声明的边界为 10，因此每个维度的数组索引的范围介于 0 到 10 之间。  在下面的讨论中，三个维度分别被称为层、行和列。  
   

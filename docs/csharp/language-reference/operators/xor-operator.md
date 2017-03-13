@@ -25,7 +25,7 @@ caps.handback.revision: 19
  用户定义的类型可重载 `^` 运算符（请参见[运算符](../../../csharp/language-reference/keywords/operator.md)）。  在枚举时通常允许整型运算。  
   
 ## 示例  
- [!code-cs[csRefOperators#30](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#30)]  
+ [!code-cs[csRefOperators#30](../../../csharp/language-reference/operators/codesnippet/CSharp/xor-operator_1.cs)]  
   
  在前面的示例中，`0xf8 ^ 0x3f` 的计算对以下两个二进制值（分别对应于十六进制值 F8 和 3F）执行按位“异或”运算：  
   

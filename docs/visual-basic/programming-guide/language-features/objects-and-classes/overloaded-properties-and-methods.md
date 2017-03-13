@@ -34,15 +34,15 @@ caps.handback.revision: 12
 ## 重载用法  
  当对象模型指示对于在不同数据类型上进行操作的过程使用同样名称时，重载非常有用。  例如，可显示几种不同数据类型的类可以具有类似如下所示 `Display` 过程：  
   
- [!code-vb[VbVbalrOOP#64](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#64)]  
+ [!code-vb[VbVbalrOOP#64](../../../../visual-basic/misc/codesnippet/VisualBasic/overloaded-properties-and-methods_1.vb)]  
   
  如果不使用重载，那么即使每个过程执行相同的操作，也需要为它们创建不同的名称，如下所示：  
   
- [!code-vb[VbVbalrOOP#65](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#65)]  
+ [!code-vb[VbVbalrOOP#65](../../../../visual-basic/misc/codesnippet/VisualBasic/overloaded-properties-and-methods_2.vb)]  
   
  因为重载提供了对可用数据类型的选择，所以它使得属性或方法的使用更为容易。  例如，可以用下列任一代码行调用前面讨论过的重载 `Display` 方法：  
   
- [!code-vb[VbVbalrOOP#66](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#66)]  
+ [!code-vb[VbVbalrOOP#66](../../../../visual-basic/misc/codesnippet/VisualBasic/overloaded-properties-and-methods_3.vb)]  
   
  在运行时，[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 根据指定参数的数据类型来调用正确的过程。  
   
@@ -72,11 +72,11 @@ caps.handback.revision: 12
   
 2.  向 `TaxClass` 类中添加下面的代码。  
   
-     [!code-vb[VbVbalrOOP#67](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#67)]  
+     [!code-vb[VbVbalrOOP#67](../../../../visual-basic/misc/codesnippet/VisualBasic/overloaded-properties-and-methods_4.vb)]  
   
 3.  向窗体中添加下面的过程。  
   
-     [!code-vb[VbVbalrOOP#68](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#68)]  
+     [!code-vb[VbVbalrOOP#68](../../../../visual-basic/misc/codesnippet/VisualBasic/overloaded-properties-and-methods_5.vb)]  
   
 4.  向窗体中添加按钮，并从该按钮的 `Button1_Click` 事件调用 `ShowTax` 过程。  
   

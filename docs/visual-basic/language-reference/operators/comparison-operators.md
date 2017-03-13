@@ -155,7 +155,7 @@ result = string Like pattern
 ## 示例  
  下面的示例演示用来比较表达式的关系比较运算符的各种用法。  关系比较运算符返回 `Boolean` 结果，此结果表示所声明的表达式的计算结果是否为 `True`。  当您将 `>` 和 `<` 运算符应用于字符串时，将按照字符串的正常字母排序顺序进行比较。  此顺序取决于区域设置。  排序是否区分大小写取决于 [Option Compare](../../../visual-basic/language-reference/statements/option-compare-statement.md) 设置。  
   
- [!code-vb[VbVbalrOperators#1](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/comparison-operators_1.vb)]  
+ [!code-vb[VbVbalrOperators#1](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/comparison-operators_1.vb)]  
   
  在上面的示例中，第一次比较返回 `False`，其余的比较返回 `True`。  
   

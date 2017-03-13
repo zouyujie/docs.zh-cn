@@ -52,7 +52,7 @@ caps.handback.revision: 24
   
      下面的示例使用相同类 (<xref:System.Collections.Generic.Queue%601?displayProperty=fullName>) 创建保存不同数据类型的项的两个队列对象。 它将项添加到每个队列末尾，然后从每个队列的前面删除并显示项。  
   
-     [!code-vb[VbVbalrDataTypes#9](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/how-to-use-a-generic-class_1.vb)]  
+     [!code-vb[VbVbalrDataTypes#9](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/how-to-use-a-generic-class_1.vb)]  
   
 ## <a name="see-also"></a>另请参阅  
  [数据类型](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   

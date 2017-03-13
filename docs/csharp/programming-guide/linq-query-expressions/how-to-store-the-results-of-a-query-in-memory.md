@@ -16,7 +16,7 @@ caps.handback.revision: 13
  建议在存储查询结果时，将返回的集合对象分配给一个新变量，如下面的示例所示：  
   
 ## 示例  
- [!code-cs[csProgGuideLINQ#25](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#25)]  
+ [!code-cs[csProgGuideLINQ#25](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-store-the-results-of-a-query-in-memory_1.cs)]  
   
 ## 编译代码  
   

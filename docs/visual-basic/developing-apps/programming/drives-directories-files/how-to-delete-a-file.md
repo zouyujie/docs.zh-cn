@@ -30,19 +30,19 @@ caps.handback.revision: 24
   
 -   使用 `DeleteFile` 方法删除文件。  下面的代码演示了如何删除名为 `test.txt` 的文件。  
   
-     [!code-vb[VbVbcnMyFileSystem#22](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-delete-a-file_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#22](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-delete-a-file_1.vb)]  
   
 ### 删除文本文件并请求用户确认是否应删除该文件  
   
 -   使用 `DeleteFile` 方法删除该文件，并将 `showUI` 设置为 `AllDialogs`。  下面的代码演示如何删除名为 `test.txt` 的文件，以及如何允许用户确认是否应删除该文件。  
   
-     [!code-vb[VbFileIOMisc#9](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-delete-a-file_2.vb)]  
+     [!code-vb[VbFileIOMisc#9](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-delete-a-file_2.vb)]  
   
 ### 删除文本文件并将其发送到“回收站”  
   
 -   使用 `DeleteFile` 方法删除文件，并为 `recycle` 参数指定 `SendToRecycleBin`。  下面的代码演示如何删除名为 `test.txt` 的文件并发送到**“回收站”**。  
   
-     [!code-vb[VbFileIOMisc#10](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-delete-a-file_3.vb)]  
+     [!code-vb[VbFileIOMisc#10](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-delete-a-file_3.vb)]  
   
 ## 可靠编程  
  以下情况可能会导致异常：  

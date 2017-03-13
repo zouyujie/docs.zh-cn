@@ -31,7 +31,7 @@ caps.handback.revision: 19
  用户定义的类型可重载一元 `-` 运算符和二元 `-` 运算符。  有关更多信息，请参见 [运算符](../../../csharp/language-reference/keywords/operator.md)。  
   
 ## 示例  
- [!code-cs[csRefOperators#40](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#40)]  
+ [!code-cs[csRefOperators#40](../../../csharp/language-reference/operators/codesnippet/CSharp/subtraction-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

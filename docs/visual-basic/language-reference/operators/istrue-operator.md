@@ -50,7 +50,7 @@ caps.handback.revision: 17
 ## 示例  
  下面的代码示例定义一个结构的大致形式，此结构包含 `IsFalse` 和 `IsTrue` 运算符的定义。  
   
- [!code-vb[VbVbalrOperators#28](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/istrue-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#28](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/istrue-operator_1.vb)]  
   
 ## 请参阅  
  [IsFalse 运算符](../../../visual-basic/language-reference/operators/isfalse-operator.md)   

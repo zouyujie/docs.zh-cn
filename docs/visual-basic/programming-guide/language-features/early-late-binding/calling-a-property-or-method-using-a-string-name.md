@@ -44,11 +44,11 @@ caps.handback.revision: 17
   
  假定您将一个引用添加到一个包含名为 `MathClass` 的类的程序集中，其中这个类有几个名为 `SquareRoot` 的函数，如以下代码所示：  
   
- [!code-vb[VbVbalrOOP#53](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#53)]  
+ [!code-vb[VbVbalrOOP#53](../../../../visual-basic/misc/codesnippet/VisualBasic/calling-a-property-or-method-using-a-string-name_1.vb)]  
   
  您的应用程序可以使用文本框控件来控制将要调用的方法及其参数。  例如，如果 `TextBox1` 包含要计算的表达式，并且 `TextBox2` 用于输入函数名时，可以使用以下代码来调用 `TextBox1` 中表达式的 `SquareRoot` 函数：  
   
- [!code-vb[VbVbalrOOP#54](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#54)]  
+ [!code-vb[VbVbalrOOP#54](../../../../visual-basic/misc/codesnippet/VisualBasic/calling-a-property-or-method-using-a-string-name_2.vb)]  
   
  如果在 `TextBox1` 中输入“64”，在 `TextBox2` 中输入“SquareRoot”，然后调用 `CallMath` 过程，则将计算 `TextBox1` 中数字的平方根。  示例中的代码调用 `SquareRoot` 函数（它必须有一个字符串参数，该字符串包含要计算的表达式）并将“8”（64 的平方根）返回到 `TextBox1` 中。  当然，如果用户在 `TextBox2` 中输入无效字符串，字符串包含的是属性名而非方法名，或者方法中含附加的必选参数，则会发生运行时错误。  使用 `CallByName` 时必须添加可靠的错误处理代码，以便对这样的错误或其他错误预做防范。  
   

@@ -26,7 +26,7 @@ caps.handback.revision: 13
  用户定义的类型可重载 `!` 运算符（请参见[运算符](../../../csharp/language-reference/keywords/operator.md)）。  
   
 ## 示例  
- [!code-cs[csRefOperators#7](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#7)]  
+ [!code-cs[csRefOperators#7](../../../csharp/language-reference/operators/codesnippet/CSharp/logical-negation-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

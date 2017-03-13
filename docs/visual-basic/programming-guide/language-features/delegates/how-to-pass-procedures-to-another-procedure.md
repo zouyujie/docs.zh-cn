@@ -32,25 +32,25 @@ caps.handback.revision: 9
   
 1.  创建一个名为 `MathOperator` 的委托。  
   
-     [!code-vb[VbVbalrDelegates#1](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-pass-procedures-t_1.vb)]  
+     [!code-vb[VbVbalrDelegates#1](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-pass-procedures-to-another-procedure_1.vb)]  
   
 2.  创建一个名为 `AddNumbers` 的过程，其参数和返回值与 `MathOperator` 的参数和返回值匹配，以使签名匹配。  
   
-     [!code-vb[VbVbalrDelegates#2](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-pass-procedures-t_2.vb)]  
+     [!code-vb[VbVbalrDelegates#2](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-pass-procedures-to-another-procedure_2.vb)]  
   
 3.  创建名为 `SubtractNumbers` 的过程，其签名与 `MathOperator` 匹配。  
   
-     [!code-vb[VbVbalrDelegates#3](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-pass-procedures-t_3.vb)]  
+     [!code-vb[VbVbalrDelegates#3](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-pass-procedures-to-another-procedure_3.vb)]  
   
 4.  创建一个名为 `DelegateTest` 的过程，它接受一个委托作为参数。  
   
      此过程可接受对 `AddNumbers` 或 `SubtractNumbers` 的引用，这是因为它们的签名与 `MathOperator` 签名匹配。  
   
-     [!code-vb[VbVbalrDelegates#4](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-pass-procedures-t_4.vb)]  
+     [!code-vb[VbVbalrDelegates#4](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-pass-procedures-to-another-procedure_4.vb)]  
   
 5.  创建一个名为 `Test` 的过程，它使用 `AddNumbers` 的委托作为参数调用 `DelegateTest` 一次，然后使用 `SubtractNumbers` 的委托作为参数再次调用。  
   
-     [!code-vb[VbVbalrDelegates#5](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-pass-procedures-t_5.vb)]  
+     [!code-vb[VbVbalrDelegates#5](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-pass-procedures-to-another-procedure_5.vb)]  
   
      调用 `Test` 时，它首先显示 `AddNumbers` 对 `5` 和 `3` 的操作结果，也就是 8。  然后显示 `SubtractNumbers` 对 `9` 和 `3` 的操作结果，也就是 6。  
   

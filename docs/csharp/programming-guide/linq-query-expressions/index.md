@@ -9,7 +9,7 @@ caps.handback.revision: 21
   
  下面的示例演示了完整的查询操作。  完整操作包括创建数据源、定义查询表达式，以及在 `foreach` 语句中执行查询。  
   
- [!code-cs[csProgGuideLINQ#11](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#11)]  
+ [!code-cs[csProgGuideLINQ#11](../../../csharp/programming-guide/arrays/codesnippet/CSharp/index_1.cs)]  
   
  有关 C\# 中的 [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq-md.md)] 基础知识的更多信息，请参见 [Getting Started with LINQ in C\#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)。  
   

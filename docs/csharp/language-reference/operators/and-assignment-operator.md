@@ -39,7 +39,7 @@ x = x & y
  不能直接重载 `&=` 运算符，但用户定义的类型可重载二元 [& 运算符](../../../csharp/language-reference/operators/and-operator.md)（请参见 [operator](../../../csharp/language-reference/keywords/operator.md)）。  
   
 ## 示例  
- [!code-cs[csRefOperators#34](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#34)]  
+ [!code-cs[csRefOperators#34](../../../csharp/language-reference/operators/codesnippet/CSharp/and-assignment-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

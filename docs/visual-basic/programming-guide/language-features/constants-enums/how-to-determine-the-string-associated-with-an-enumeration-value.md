@@ -29,7 +29,7 @@ caps.handback.revision: 12
   
 -   使用 <xref:System.Enum.GetNames%2A> 方法检索与枚举成员关联的字符串。  此示例声明了枚举 `flavorEnum`，然后使用 <xref:System.Enum.GetNames%2A> 方法显示和每个成员关联的字符串。  
   
-     [!code-vb[VbEnumsTask#2](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#2)]  
+     [!code-vb[VbEnumsTask#2](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-determine-the-string-associated-with-an-enumeration-value_1.vb)]  
   
 ## 请参阅  
  <xref:System.Enum.GetValues%2A>   

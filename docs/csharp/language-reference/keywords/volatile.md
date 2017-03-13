@@ -42,12 +42,12 @@ caps.handback.revision: 29
 ## 示例  
  下面的示例说明如何将公共字段变量声明为 `volatile`。  
   
- [!code-cs[csrefKeywordsModifiers#24](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#24)]  
+ [!code-cs[csrefKeywordsModifiers#24](../../../csharp/language-reference/keywords/codesnippet/CSharp/volatile_1.cs)]  
   
 ## 示例  
  下面的示例演示如何创建辅助线程，并用它与主线程并行执行处理。  有关多线程处理的背景信息，请参见[Threading](../Topic/Managed%20Threading.md)和[线程](../Topic/Threading%20\(C%23%20and%20Visual%20Basic\).md)。  
   
- [!code-cs[csProgGuideThreading#1](../../../csharp/language-reference/keywords/codesnippet/csharp/volatile_2.cs)]  
+ [!code-cs[csProgGuideThreading#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/volatile_2.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

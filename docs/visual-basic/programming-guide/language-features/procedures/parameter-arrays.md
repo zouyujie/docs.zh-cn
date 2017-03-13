@@ -57,13 +57,13 @@ caps.handback.revision: 26
 ## 示例  
  下面的示例定义并调用函数 `calcSum`。  参数的 `args``ParamArray` 修饰符使该函数接受参数数目可变。  
   
- [!code-vb[VbVbalrStatements#26](../../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/parameter-arrays_1.vb)]  
+ [!code-vb[VbVbalrStatements#26](../../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/parameter-arrays_1.vb)]  
   
  下面的示例定义带有参数数组的一个过程所有数组元素的值传递给参数数组。  
   
- [!code-vb[VbVbcnProcedures#48](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/parameter-arrays_2.vb)]  
+ [!code-vb[VbVbcnProcedures#48](./codesnippet/VisualBasic/parameter-arrays_2.vb)]  
   
- [!code-vb[VbVbcnProcedures#49](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/parameter-arrays_3.vb)]  
+ [!code-vb[VbVbcnProcedures#49](./codesnippet/VisualBasic/parameter-arrays_3.vb)]  
   
 ## 请参阅  
  <xref:Microsoft.VisualBasic.Information.UBound%2A>   

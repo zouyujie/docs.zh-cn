@@ -59,7 +59,7 @@ object(index)
 ## 示例  
  下面的示例演示如何使用扩展索引器访问 <xref:System.Xml.Linq.XElement> 对象集合中的第二个子节点。  该集合是用子轴属性访问的，该属性获取 `contact` 对象中所有名为 `phone` 的子元素。  
   
- [!code-vb[VbXMLSamples#24](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/extension-indexer-property_1.vb)]  
+ [!code-vb[VbXMLSamples#24](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/extension-indexer-property_1.vb)]  
   
  这段代码将显示以下文本：  
   

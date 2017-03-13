@@ -30,7 +30,7 @@ caps.handback.revision: 17
  即使 ?? 运算符的两个参数都是常量，也不能将其结果视为常量。  
   
 ## 示例  
- [!code-cs[csRefOperators#53](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#53)]  
+ [!code-cs[csRefOperators#53](../../../csharp/language-reference/operators/codesnippet/CSharp/null-conditional-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

@@ -56,7 +56,7 @@ variableorproperty ^= expression
 ## 示例  
  下面的示例使用 `^=` 运算符进行以第一个 `Integer` 变量的值为底、以第二个变量的值为幂的运算，并将结果赋给第一个变量。  
   
- [!code-vb[VbVbalrOperators#21](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/exponentiation-assignmen_1.vb)]  
+ [!code-vb[VbVbalrOperators#21](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/exponentiation-assignment-operator_1.vb)]  
   
 ## 请参阅  
  [^ 运算符](../../../visual-basic/language-reference/operators/exponentiation-operator.md)   

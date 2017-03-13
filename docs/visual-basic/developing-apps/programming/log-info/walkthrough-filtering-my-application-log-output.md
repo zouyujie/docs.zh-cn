@@ -36,7 +36,7 @@ caps.handback.revision: 22
   
 3.  在 <xref:System.Windows.Forms.Control.Click> 为 Button1，事件处理程序添加以下代码︰  
   
-     [!code-vb[VbVbcnMyApplicationLogFiltering#1](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/visualbasic/VbVbcnMyApplicationLogFiltering/Form1.vb#1)]  
+     [!code-vb[VbVbcnMyApplicationLogFiltering#1](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/walkthrough-filtering-my-application-log-output_1.vb)]  
   
 4.  在调试器中运行该应用程序。  
   

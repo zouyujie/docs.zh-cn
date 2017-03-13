@@ -27,13 +27,13 @@ caps.handback.revision: 20
   
 -   使用 `MoveFile` 方法来移动文件，并指定源文件和目标文件的文件名和位置。 本示例将名为 `test.txt` 的文件从 `TestDir1` 移动到 `TestDir2`。 请注意，即使目标文件名与源文件名相同，也要指定目标文件名。  
   
-     [!code-vb[VbVbcnMyFileSystem#24](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-move-a-file_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#24](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-move-a-file_1.vb)]  
   
 ### 移动文件并对其重命名  
   
 -   使用 `MoveFile` 方法来移动文件，指定源文件名和位置、目标位置以及在目标位置中的新名称。 本示例将名为 `test.txt` 的文件从 `TestDir1` 移动到 `TestDir2` 并将其重命名为 `nexttest.txt`。  
   
-     [!code-vb[VbVbcnMyFileSystem#25](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-move-a-file_2.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#25](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-move-a-file_2.vb)]  
   
 ## 可靠编程  
  以下情况可能会导致异常：  

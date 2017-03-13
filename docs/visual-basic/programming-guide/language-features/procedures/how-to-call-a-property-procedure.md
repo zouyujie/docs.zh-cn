@@ -39,7 +39,7 @@ caps.handback.revision: 16
   
      下面的示例读取 <xref:Microsoft.VisualBasic.DateAndTime.Now%2A> 属性值，隐式调用它的 `Get` 过程。  
   
-     [!code-vb[VbVbalrDateProperties#4](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/VbVbalrDateProperties/Module1.vb#4)]  
+     [!code-vb[VbVbalrDateProperties#4](./codesnippet/VisualBasic/how-to-call-a-property-procedure_1.vb)]  
   
 2.  如果该属性接受参数，请在属性名后用括号将参数列表括起来。  如果无任何参数，也可以选择省略括号。  
   
@@ -53,7 +53,7 @@ caps.handback.revision: 16
   
      下面的示例通过隐式调用 `Set` 过程，设置 <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay%2A> 属性的值。  
   
-     [!code-vb[VbVbcnProcedures#11](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-call-a-property-p_2.vb)]  
+     [!code-vb[VbVbcnProcedures#11](./codesnippet/VisualBasic/how-to-call-a-property-procedure_2.vb)]  
   
 2.  如果该属性接受参数，请在属性名后用括号将参数列表括起来。  如果无任何参数，也可以选择省略括号。  
   

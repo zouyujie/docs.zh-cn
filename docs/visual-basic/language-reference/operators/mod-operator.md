@@ -80,12 +80,12 @@ number1 Mod number2
 ## 示例  
  下面的示例使用 `Mod` 运算符将两个数相除，并只返回余数。  如果有一个数是浮点数，则结果是表示余数的浮点数。  
   
- [!code-vb[VbVbalrOperators#31](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/mod-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#31](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/mod-operator_1.vb)]  
   
 ## 示例  
  下面的示例演示了浮点操作数潜在的不精确性。  在第一个语句中，操作数的类型为 `Double`，0.2 是一个存储的值为 0.20000000000000001 的无限重复的二进制小数。  在第二个语句中，文本类型字符 `D` 将两个操作数强制为 `Decimal` 类型，0.2 具有精确的表示形式。  
   
- [!code-vb[VbVbalrOperators#32](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/mod-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#32](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/mod-operator_2.vb)]  
   
 ## 请参阅  
  <xref:Microsoft.VisualBasic.Conversion.Int%2A>   

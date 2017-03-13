@@ -50,7 +50,7 @@ caps.handback.revision: 16
 ## 示例  
  下面的代码在使用 `/optionexplicit-` 时进行编译。  
   
- [!code-vb[VbVbalrCompiler#5](../../../visual-basic/reference/command-line-compiler/codesnippet/visualbasic/optionexplicit_1.vb)]  
+ [!code-vb[VbVbalrCompiler#5](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/optionexplicit_1.vb)]  
   
 ## 请参阅  
  [Visual Basic 命令行编译器](../../../visual-basic/reference/command-line-compiler/index.md)   

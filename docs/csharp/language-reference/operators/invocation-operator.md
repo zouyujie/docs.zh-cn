@@ -24,11 +24,11 @@ caps.handback.revision: 22
   
 1.  指定强制转换或类型转换。  
   
-     [!code-cs[csRefOperators#1](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#1)]  
+     [!code-cs[csRefOperators#1](../../../csharp/language-reference/operators/codesnippet/CSharp/invocation-operator_1.cs)]  
   
 2.  调用方法或委托。  
   
-     [!code-cs[csRefOperators#2](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#2)]  
+     [!code-cs[csRefOperators#2](../../../csharp/language-reference/operators/codesnippet/CSharp/invocation-operator_2.cs)]  
   
 ## 备注  
  强制转换显式调用从一种类型到另一种类型的转换运算符；如果未定义这样的转换运算符，则强制转换将失败。  若要定义转换运算符，请参见 [explicit](../../../csharp/language-reference/keywords/explicit.md) 和 [implicit](../../../csharp/language-reference/keywords/implicit.md)。  

@@ -26,7 +26,7 @@ caps.handback.revision: 28
 ## 示例  
  下面的示例演示如何声明和引发将 <xref:System.EventHandler> 用作基础委托类型的事件。  有关演示如何使用泛型 <xref:System.EventHandler%601> 委托类型、如何订阅事件以及如何创建事件处理程序方法的完整代码示例，请参见[如何：发布符合 .NET Framework 准则的事件](../../../csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md)。  
   
- [!code-cs[csrefKeywordsModifiers#7](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#7)]  
+ [!code-cs[csrefKeywordsModifiers#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/event_1.cs)]  
   
  事件是特殊类型的多路广播委托，仅可从声明它们的类或结构（发行者类）中调用。  如果其他类或结构订阅了该事件，则当发行者类引发该事件时，会调用其事件处理程序方法。  有关更多信息和代码示例，请参见[事件](../../../csharp/programming-guide/events/index.md) 和[委托](../../../csharp/programming-guide/delegates/index.md)。  
   

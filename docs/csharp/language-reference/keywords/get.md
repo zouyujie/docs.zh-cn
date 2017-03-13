@@ -23,11 +23,11 @@ caps.handback.revision: 11
   
  下面的示例是名为 `Seconds` 的属性中的 `get` 访问器：  
   
- [!code-cs[csrefKeywordsContextual#1](../../../csharp/language-reference/keywords/codesnippet/csharp/get_1.cs)]  
+ [!code-cs[csrefKeywordsContextual#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/get_1.cs)]  
   
  下面的示例是自动实现的属性中的 `get` 访问器：  
   
- [!code-cs[csrefKeywordsContextual#2](../../../csharp/language-reference/keywords/codesnippet/csharp/get_2.cs)]  
+ [!code-cs[csrefKeywordsContextual#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/get_2.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

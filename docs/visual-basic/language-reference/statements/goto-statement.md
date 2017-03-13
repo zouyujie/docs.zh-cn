@@ -68,7 +68,7 @@ Try 构造中的有效和无效分支
 ## 示例  
  下面的示例使用 `GoTo` 语句跳转到过程内的行标签。  
   
- [!code-vb[VbVbalrStatements#31](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/goto-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#31](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/goto-statement_1.vb)]  
   
 ## 请参阅  
  [Do...Loop 语句](../../../visual-basic/language-reference/statements/do-loop-statement.md)   

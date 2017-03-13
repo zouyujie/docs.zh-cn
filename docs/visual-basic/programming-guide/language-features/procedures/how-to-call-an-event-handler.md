@@ -45,7 +45,7 @@ caps.handback.revision: 19
   
      下面的示例定义一个事件和一个指向引用引发事件的类的 `WithEvents` 变量。  处理事件的 `Sub` 过程使用 `Handles` 子句指定它处理的类和事件。  
   
-     [!code-vb[VbVbcnProcedures#4](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-call-an-event-han_1.vb)]  
+     [!code-vb[VbVbcnProcedures#4](./codesnippet/VisualBasic/how-to-call-an-event-handler_1.vb)]  
   
 ### 使用 AddHandler 调用事件处理程序  
   
@@ -57,7 +57,7 @@ caps.handback.revision: 19
   
      下面的示例定义 `Sub` 过程以处理窗体的 <xref:System.Windows.Forms.Form.Closing> 事件。  它接着使用 [AddHandler 语句](../../../../visual-basic/language-reference/statements/addhandler-statement.md) 与作为 <xref:System.Windows.Forms.Form.Closing> 的事件处理程序的 `catchClose` 过程关联。  
   
-     [!code-vb[VbVbcnProcedures#5](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-call-an-event-han_2.vb)]  
+     [!code-vb[VbVbcnProcedures#5](./codesnippet/VisualBasic/how-to-call-an-event-handler_2.vb)]  
   
      可以通过执行 [RemoveHandler 语句](../../../../visual-basic/language-reference/statements/removehandler-statement.md) 取消事件处理程序与事件的关联。  
   

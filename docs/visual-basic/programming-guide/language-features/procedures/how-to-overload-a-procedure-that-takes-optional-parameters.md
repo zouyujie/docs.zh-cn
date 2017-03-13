@@ -47,11 +47,11 @@ caps.handback.revision: 17
   
      下面的示例演示定义了可选参数的过程、与此等效的两个重载过程，以及无效和有效重载版本的最终示例。  
   
-     [!code-vb[VbVbcnProcedures#59](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-overload-a-proced_1_1.vb)]  
+     [!code-vb[VbVbcnProcedures#59](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-optional-parameters_1.vb)]  
   
-     [!code-vb[VbVbcnProcedures#60](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-overload-a-proced_1_2.vb)]  
+     [!code-vb[VbVbcnProcedures#60](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-optional-parameters_2.vb)]  
   
-     [!code-vb[VbVbcnProcedures#61](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-overload-a-proced_1_3.vb)]  
+     [!code-vb[VbVbcnProcedures#61](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-optional-parameters_3.vb)]  
   
 ## 多个可选参数  
  带有多个可选参数的过程通常需要两个以上的重载版本。  例如，如果有两个可选参数，而且调用代码可以独立提供或省略每一个参数，那么需要有四个重载版本，所提供参数的每个可能的组合都需要使用一个版本。  

@@ -30,7 +30,7 @@ caps.handback.revision: 16
   
 -   使用 `GetDirectories` 方法，并提供要搜索的目录的名称和路径。  下面的示例返回目录结构中在名称中包含单词“Logs”的所有目录，并将这些目录添加到 `ListBox1` 中。  
   
-     [!code-vb[VbVbcnFileAccess#1](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-find-subdirectori_1.vb)]  
+     [!code-vb[VbVbcnFileAccess#1](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-find-subdirectories-with-a-specific-pattern_1.vb)]  
   
 ## 可靠编程  
  以下情况可能会导致异常：  

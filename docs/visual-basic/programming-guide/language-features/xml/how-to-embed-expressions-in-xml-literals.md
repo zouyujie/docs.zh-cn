@@ -35,7 +35,7 @@ caps.handback.revision: 16
   
 -   下面的示例演示如何在开始和结束名称元素之间插入 `contactName` 变量中包含的文本。  
   
-     [!code-vb[VbXMLSamples#39](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-embed-expressions_1.vb)]  
+     [!code-vb[VbXMLSamples#39](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-embed-expressions-in-xml-literals_1.vb)]  
   
      该示例产生下面的输出：  
   
@@ -49,7 +49,7 @@ caps.handback.revision: 16
   
 -   下面的示例演示如何插入 `phoneType` 变量中包含的文本作为 `type` 特性的值。  
   
-     [!code-vb[VbXMLSamples#40](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-embed-expressions_2.vb)]  
+     [!code-vb[VbXMLSamples#40](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-embed-expressions-in-xml-literals_2.vb)]  
   
      该示例产生下面的输出：  
   
@@ -65,7 +65,7 @@ caps.handback.revision: 16
   
      使用这一方法创建元素时，必须将它们放置在 \<\/\> 标记之中。  
   
-     [!code-vb[VbXMLSamples#41](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-embed-expressions_3.vb)]  
+     [!code-vb[VbXMLSamples#41](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-embed-expressions-in-xml-literals_3.vb)]  
   
      该示例产生下面的输出：  
   

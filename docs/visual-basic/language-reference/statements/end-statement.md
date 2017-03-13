@@ -58,7 +58,7 @@ End
 ## 示例  
  下面的示例使用 `End` 语句终止代码执行（如果用户请求这样做）。  
   
- [!code-vb[VbVersHelp60Controls#64](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVersHelp60Controls/Form1.vb#64)]  
+ [!code-vb[VbVersHelp60Controls#64](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/end-statement_1.vb)]  
   
 ## 智能设备开发人员说明  
  不支持此语句。  

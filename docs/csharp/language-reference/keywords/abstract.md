@@ -24,7 +24,7 @@ caps.handback.revision: 24
 ## 示例  
  在此例中，类 `Square` 必须提供 `Area` 的实现，因为它派生自 `ShapesClass`：  
   
- [!code-cs[csrefKeywordsModifiers#1](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#1)]  
+ [!code-cs[csrefKeywordsModifiers#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/abstract_1.cs)]  
   
  抽象类具有以下特性：  
   
@@ -66,12 +66,12 @@ caps.handback.revision: 24
   
  实现接口的抽象类可以将接口方法映射到抽象方法上。  例如：  
   
- [!code-cs[csrefKeywordsModifiers#2](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#2)]  
+ [!code-cs[csrefKeywordsModifiers#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/abstract_2.cs)]  
   
 ## 示例  
  在本例中，`DerivedClass` 类是从抽象类 `BaseClass` 派生的。  抽象类包含一个抽象方法 `AbstractMethod` 和两个抽象属性 `X` 和 `Y`。  
   
- [!code-cs[csrefKeywordsModifiers#3](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#3)]  
+ [!code-cs[csrefKeywordsModifiers#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/abstract_3.cs)]  
   
  在上面的示例中，如果尝试通过使用下面的语句将抽象类实例化：  
   

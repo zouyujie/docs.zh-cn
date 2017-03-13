@@ -66,11 +66,11 @@ caps.handback.revision: 21
 ##  <a name="vbconinteroperabilitymarshalinganchor6"></a> 创建 .NET framework 类的实例  
  通常，您创建 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] 类的实例使用 `New` 语句用类名。  让 COM 类由 interop 程序集是可用于接口的 `New` 语句的这一情况。  除非您使用 `Inherits` 语句的 COM 类，您可以使用接口就象类。  下面的代码在具有对 Microsoft ActiveX Data Objects 2.8 Library COM 对象的项目演示如何创建 `Command` 对象:  
   
- [!code-vb[VbVbalrInterop#20](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#20)]  
+ [!code-vb[VbVbalrInterop#20](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_1.vb)]  
   
  但是，因此，如果使用 COM 类为基础为一个派生类，如下面的代码必须使用表示 COM 类的 interop 类，例如:  
   
- [!code-vb[VbVbalrInterop#21](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#21)]  
+ [!code-vb[VbVbalrInterop#21](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_2.vb)]  
   
 > [!NOTE]
 >  互操作程序集隐式实现表示 COM 类的接口。  不应尝试使用 `Implements` 语句实现这些接口或将导致错误。  
@@ -90,19 +90,19 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
   
  [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong-md.md)] 要求必须始终创建 COM 对象的实例，然后才能使用其方法。  若要使用这些方法在 [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong-md.md)]，声明所需类的变量并使用 new 关键字分配给对象变量。  可以使用 `Shared` 关键字，如果要确保时，只有一个类实例创建。  
   
- [!code-vb[VbVbalrInterop#23](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#23)]  
+ [!code-vb[VbVbalrInterop#23](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_3.vb)]  
   
 ##  <a name="vbconinteroperabilitymarshalinganchor9"></a> 在事件处理程序的未处理错误  
  一个常见互操作问题在处理 COM 对象所引发的事件处理程序涉及错误。  使用 `On Error` 或 `Try...Catch...Finally` 语句，，因此，除非您明确检查错误此类错误被忽略。  例如，下面的示例摘自具有对 Microsoft ActiveX Data Objects 2.8 Library COM 对象的 [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong-md.md)] 项目。  
   
- [!code-vb[VbVbalrInterop#24](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#24)]  
+ [!code-vb[VbVbalrInterop#24](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_4.vb)]  
   
  此示例引发错误按预期方式工作。  但是，在中，如果尝试相同的示例，而无需 `Try...Catch...Finally` 块，该错误将被忽略，就象使用了 `OnError Resume Next` 语句。  如果没有错误处理，被零除将导致失败。  由于这种错误从不引发未经处理的异常错误，务必要在事件处理程序使用某种形式的异常处理机制从 COM 对象所引发的事件。  
   
 ### 理解 COM 互操作错误  
  如果没有错误处理机制，互操作调用通常生成提供的信息的错误。  只要有可能，那么，当事件发生时，使用结构化错误处理提供更多信息。  ，在调试应用程序时，此控件尤其建立的。  例如:  
   
- [!code-vb[VbVbalrInterop#25](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#25)]  
+ [!code-vb[VbVbalrInterop#25](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_5.vb)]  
   
  您可以通过检查异常对象的内容找到很多信息描述、 HRESULT 和 COM 错误源。  
   
@@ -122,11 +122,11 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
   
  如果可以访问调用的过程，可以防止此错误使用 `ByVal` 关键字声明接受 `ReadOnly` 特性的参数。  例如:  
   
- [!code-vb[VbVbalrInterop#26](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#26)]  
+ [!code-vb[VbVbalrInterop#26](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_6.vb)]  
   
  如果您无权访问其源代码的调用的过程，可以强制按值传递属性。添加额外的括号在调用程序附近。  例如，在具有对 Microsoft ActiveX Data Objects 2.8 Library COM 对象的项目中，可以使用:  
   
- [!code-vb[VbVbalrInterop#27](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#27)]  
+ [!code-vb[VbVbalrInterop#27](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_7.vb)]  
   
 ##  <a name="vbconinteroperabilitymarshalinganchor12"></a> 部署公开 Interop 的程序集  
  部署公开 COM 接口的程序集带来了一些特殊的难题。  例如，在中，当不同的应用程序引用同一个 COM 程序集，一个潜在问题。  这种情况很常见的，在安装新版本程序集，而另一应用程序仍在使用程序集的早期版本。  如果卸载共享 DLL 的程序集，则可能会无意中使其对于其他程序集不可用。  

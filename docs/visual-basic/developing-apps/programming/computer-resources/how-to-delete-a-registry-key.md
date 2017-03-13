@@ -36,7 +36,7 @@ caps.handback.revision: 28
   
 -   使用 `DeleteSubKey` 方法删除注册表项。  此示例删除 CurrentUser 配置单元中的 software\/testapp 项。  可以更改此在代码为相应的字符串或者根据用户提供的信息。  
   
-     [!code-vb[VbResourceTasks#19](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-delete-a-registry_1.vb)]  
+     [!code-vb[VbResourceTasks#19](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-delete-a-registry-key_1.vb)]  
   
 ## 可靠编程  
  ，如果该键\/值对不存在， `DeleteSubKey` 方法返回空字符串。  

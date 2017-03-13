@@ -30,15 +30,15 @@ caps.handback.revision: 20
   
  使用自动实现的属性，可以在单行中声明一个属性（包括默认值）。  下面的示例演示三个属性声明。  
   
- [!code-vb[VbVbalrAutoImplementedProperties#1](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/auto-implemented-propert_1_1.vb)]  
+ [!code-vb[VbVbalrAutoImplementedProperties#1](./codesnippet/VisualBasic/auto-implemented-properties_1.vb)]  
   
  自动实现的属性等效于其属性值存储在私有字段中的属性。  下面的代码示例演示一个自动实现的属性。  
   
- [!code-vb[VbVbalrAutoImplementedProperties#5](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/auto-implemented-propert_1_2.vb)]  
+ [!code-vb[VbVbalrAutoImplementedProperties#5](./codesnippet/VisualBasic/auto-implemented-properties_2.vb)]  
   
  下面的代码示例演示上面自动实现的属性示例的等效代码。  
   
- [!code-vb[VbVbalrAutoImplementedProperties#2](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/auto-implemented-propert_1_3.vb)]  
+ [!code-vb[VbVbalrAutoImplementedProperties#2](./codesnippet/VisualBasic/auto-implemented-properties_3.vb)]  
   
  以下代码演示如何实现只读属性：  
   
@@ -73,7 +73,7 @@ End Class
 ## 初始化自动实现的属性  
  任何可以用于实例化字段的表达式对于初始化自动实现的属性都是有效的。  初始化自动实现的属性时，表达式会进行计算并传递给属性的 `Set` 过程。  下面的代码示例演示一些包含初始值的自动实现的属性。  
   
- [!code-vb[VbVbalrAutoImplementedProperties#3](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/auto-implemented-propert_1_4.vb)]  
+ [!code-vb[VbVbalrAutoImplementedProperties#3](./codesnippet/VisualBasic/auto-implemented-properties_4.vb)]  
   
  无法初始化作为 `Interface` 的成员或标记为 `MustOverride` 的自动实现的属性。  
   
@@ -81,7 +81,7 @@ End Class
   
  将自动实现的属性声明为数组时，不能指定显式数组边界。  但是，可以使用数组初始值设定项提供值，如下面的示例所示。  
   
- [!code-vb[VbVbalrAutoImplementedProperties#4](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/auto-implemented-propert_1_5.vb)]  
+ [!code-vb[VbVbalrAutoImplementedProperties#4](./codesnippet/VisualBasic/auto-implemented-properties_5.vb)]  
   
 ## 需要标准语法的属性定义  
  自动实现的属性十分方便，支持很多编程方案。  但是，在有些情况下无法使用自动实现的属性，必须改用标准或*扩展*属性语法。  

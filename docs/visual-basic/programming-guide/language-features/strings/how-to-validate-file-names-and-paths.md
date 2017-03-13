@@ -27,7 +27,7 @@ caps.handback.revision: 7
 此示例返回一个 `Boolean` 值，该值指示字符串表示文件名还是路径。  验证操作检查名称是否包含文件系统不允许的字符。  
   
 ## 示例  
- [!code-vb[VbVbcnRegEx#4](../../../../visual-basic/programming-guide/language-features/strings/codesnippet/visualbasic/how-to-validate-file-nam_1.vb)]  
+ [!code-vb[VbVbcnRegEx#4](../../../../visual-basic/programming-guide/language-features/strings/codesnippet/VisualBasic/how-to-validate-file-names-and-paths_1.vb)]  
   
  此示例不会检查下列内容：名称中冒号的位置是否不正确、目录是否没有名称，或者名称的长度是否超过了系统定义的最大长度。  也不会检查应用程序是否有访问具有指定名称的文件系统资源的权限。  
   

@@ -87,14 +87,14 @@ result = expression1 Xor expression2
 ## 示例  
  下面的示例使用 `Xor` 运算符对两个表达式执行逻辑异或运算（互斥逻辑析取）。  结果是一个 `Boolean` 值，它表示两个表达式中是否只有一个的结果为 `True`。  
   
- [!code-vb[VbVbalrOperators#40](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xor-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#40](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xor-operator_1.vb)]  
   
  上面的示例分别产生结果 `False`、`True` 和 `False`。  
   
 ## 示例  
  下面的示例使用 `Xor` 运算符对两个数值表达式的各个位执行逻辑异或运算（互斥逻辑析取）。  如果操作数中的相应位仅有一个被设置为 1，则结果模式中的位被设置。  
   
- [!code-vb[VbVbalrOperators#41](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xor-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#41](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xor-operator_2.vb)]  
   
  上面的示例分别产生结果 2、12 和 14。  
   

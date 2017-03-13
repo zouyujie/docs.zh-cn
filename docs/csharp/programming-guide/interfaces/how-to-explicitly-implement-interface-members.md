@@ -19,17 +19,17 @@ caps.handback.revision: 16
 本示例声明一个 [接口](../../../csharp/language-reference/keywords/interface.md) `IDimensions` 和一个类 `Box`，该类显式实现接口成员 `getLength` 和 `getWidth`。  通过接口实例 `dimensions` 访问这些成员。  
   
 ## 示例  
- [!code-cs[csProgGuideInheritance#8](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-explicitly-implem_1_1.cs)]  
+ [!code-cs[csProgGuideInheritance#8](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-explicitly-implement-interface-members_1.cs)]  
   
 ## 可靠编程  
   
 -   请注意 `Main` 方法中下列代码行被注释掉，因为它们将产生编译错误。  显式实现的接口成员不能从[类](../../../csharp/language-reference/keywords/class.md)实例访问：  
   
-     [!code-cs[csProgGuideInheritance#45](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-explicitly-implem_1_2.cs)]  
+     [!code-cs[csProgGuideInheritance#45](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-explicitly-implement-interface-members_2.cs)]  
   
 -   还请注意，`Main` 方法中的下列代码行成功输出框的尺寸，因为这些方法是从接口实例调用的：  
   
-     [!code-cs[csProgGuideInheritance#46](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-explicitly-implem_1_3.cs)]  
+     [!code-cs[csProgGuideInheritance#46](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-explicitly-implement-interface-members_3.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

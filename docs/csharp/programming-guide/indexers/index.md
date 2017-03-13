@@ -23,7 +23,7 @@ caps.handback.revision: 29
   
  在下面的示例中，定义了一个泛型类，并为其提供了简单的 [get](../../../csharp/language-reference/keywords/get.md) 和 [set](../../../csharp/language-reference/keywords/set.md) 取值函数方法（作为分配和检索值的方法）。  `Program` 类创建了此类的一个实例，用于存储字符串。  
   
- [!code-cs[csProgGuideIndexers#9](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/index_1.cs)]  
+ [!code-cs[csProgGuideIndexers#9](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/index_1.cs)]  
   
 > [!NOTE]
 >  有关更多示例，请参阅[相关章节](../../../csharp/programming-guide/indexers/index.md#BKMK_RelatedSections)。  

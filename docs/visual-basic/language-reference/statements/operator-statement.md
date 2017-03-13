@@ -176,7 +176,7 @@ End Operator
 ## 示例  
  下面的代码示例使用 `Operator` 语句定义一个结构大纲，其中包括 `And`、`Or`、`IsFalse` 和 `IsTrue` 运算符的运算符过程。  `And` 和 `Or` 每个都采用两个类型为 `abc` 的操作数，并返回类型 `abc`。  `IsFalse` 和 `IsTrue` 每个都采用类型为 `abc` 的单一操作数，并返回 `Boolean`。  这些定义允许调用代码通过 `abc` 类型的操作数来使用 `And`、`AndAlso`、`Or` 和 `OrElse`。  
   
- [!code-vb[VbVbalrStatements#44](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/operator-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#44](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/operator-statement_1.vb)]  
   
 ## 请参阅  
  [IsFalse 运算符](../../../visual-basic/language-reference/operators/isfalse-operator.md)   

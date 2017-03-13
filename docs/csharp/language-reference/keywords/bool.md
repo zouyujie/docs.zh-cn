@@ -27,23 +27,23 @@ caps.handback.revision: 30
 ## 文本  
  可将布尔值赋给 `bool` 变量。  也可以将计算结果为 `bool` 类型的表达式赋给 `bool` 变量。  
   
- [!code-cs[csrefKeywordsTypes#1](../../../csharp/language-reference/keywords/codesnippet/csharp/bool_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/bool_1.cs)]  
   
  `bool` 变量的默认值为 `false`。  `bool?` 变量的默认值为 `null`。  
   
 ## 转换  
  在 C\+\+ 中，`bool` 类型的值可转换为 `int` 类型的值；也就是说，`false` 等效于零值，而 `true` 等效于非零值。  在 C\# 中，不存在 `bool` 类型与其他类型之间的相互转换。  例如，下面的 `if` 语句在 C\# 中无效：  
   
- [!code-cs[csrefKeywordsTypes#2](../../../csharp/language-reference/keywords/codesnippet/csharp/bool_2.cs)]  
+ [!code-cs[csrefKeywordsTypes#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/bool_2.cs)]  
   
  若要测试 `int` 类型的变量，必须将该变量与一个值（例如零）进行显式比较，如下所示：  
   
- [!code-cs[csrefKeywordsTypes#3](../../../csharp/language-reference/keywords/codesnippet/csharp/bool_3.cs)]  
+ [!code-cs[csrefKeywordsTypes#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/bool_3.cs)]  
   
 ## 示例  
  在此例中，您从键盘输入一个字符，然后程序检查输入的字符是否是一个字母。  如果字符是一个字母，则程序检查它是大写还是小写。  这些检查是使用 <xref:System.Char.IsLetter%2A> 和 <xref:System.Char.IsLower%2A>（两者均返回 `bool` 类型）来执行的：  
   
- [!code-cs[csrefKeywordsTypes#4](../../../csharp/language-reference/keywords/codesnippet/csharp/bool_4.cs)]  
+ [!code-cs[csrefKeywordsTypes#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/bool_4.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

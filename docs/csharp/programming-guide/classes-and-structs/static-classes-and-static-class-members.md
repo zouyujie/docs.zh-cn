@@ -63,7 +63,7 @@ Console.WriteLine(Math.Round(Math.Abs(dub)));
 ## 示例  
  下面是一个静态类的示例，它包含两个在摄氏温度和华氏温度之间执行来回转换的方法：  
   
- [!code-cs[csProgGuideObjects#31](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/static-classes-and-stati_1.cs)]  
+ [!code-cs[csProgGuideObjects#31](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/static-classes-and-static-class-members_1.cs)]  
   
 ## 静态成员  
  非静态类可以包含静态的方法、字段、属性或事件。  即使没有创建类的实例，也可以调用该类中的静态成员。  始终通过类名而不是实例名称访问静态成员。  无论对一个类创建多少个实例，它的静态成员都只有一个副本。  静态方法和属性不能访问其包含类型中的非静态字段和事件，并且不能访问任何对象的实例变量（除非在方法参数中显式传递）。  
@@ -78,11 +78,11 @@ Console.WriteLine(Math.Round(Math.Abs(dub)));
   
  通过在成员的返回类型之前使用 `static` 关键字可以声明静态类成员，如下面的示例所示：  
   
- [!code-cs[csProgGuideObjects#29](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/static-classes-and-stati_2.cs)]  
+ [!code-cs[csProgGuideObjects#29](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/static-classes-and-static-class-members_2.cs)]  
   
  静态成员在第一次被访问之前并且在调用静态构造函数（如有存在）之前进行初始化。  若要访问静态类成员，应使用类名而不是变量名来指定该成员的位置，如下面的示例所示：  
   
- [!code-cs[csProgGuideObjects#30](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/static-classes-and-stati_3.cs)]  
+ [!code-cs[csProgGuideObjects#30](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/static-classes-and-static-class-members_3.cs)]  
   
  如果类包含静态字段，请提供在加载类时初始化这些字段的静态构造函数。  
   

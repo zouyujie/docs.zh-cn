@@ -43,7 +43,7 @@ caps.handback.revision: 16
  有关异常处理的更多信息，请参见[异常和异常处理](../../../csharp/programming-guide/exceptions/exceptions-and-exception-handling.md)。  
   
 ## 示例  
- [!code-cs[csProgGuideDocComments#4](../../../csharp/programming-guide/xmldoc/codesnippet/csharp/exception_1.cs)]  
+ [!code-cs[csProgGuideDocComments#4](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/exception_1.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

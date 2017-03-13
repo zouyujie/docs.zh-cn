@@ -41,7 +41,7 @@ Console.WriteLine(v.Amount + v.Message);
   
  如果你没有在匿名类型中指定成员名称，编译器会为匿名类型成员指定与用于初始化这些成员的属性相同的名称。  必须为使用表达式初始化的属性提供名称，如下面的示例所示。  在下面示例中，匿名类型的属性名称都为 `Color` 和 `Price`。  
   
- [!code-cs[csRef30Features#81](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/anonymous-types_1.cs)]  
+ [!code-cs[csRef30Features#81](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/anonymous-types_1.cs)]  
   
  通常，当你使用匿名类型来初始化变量时，可以通过使用 [var](../../../csharp/language-reference/keywords/var.md) 将变量作为隐式键入的本地变来变量进行声明。  类型名称无法在变量声明中给出，因为只有编译器能访问匿名类型的基础名称。  有关 `var`的详细信息，请参阅[隐式类型的局部变量](../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md)。  
   

@@ -35,7 +35,7 @@ caps.handback.revision: 28
   
  例如，下面的代码示例显示一个 LINQ 查询，它从集合返回一个客户列表并根据位置对其进行分组。  
   
- [!code-vb[VbVbalrIntroToLINQ#1](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_1.vb)]  
+ [!code-vb[VbVbalrIntroToLINQ#1](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_1.vb)]  
   
  在本主题中，你将了解有关以下方面的信息：  
   
@@ -62,7 +62,7 @@ caps.handback.revision: 28
 ##  <a name="RunningtheExamples"></a> 运行示例  
  若要运行简介中和“LINQ 查询的结构”部分中的示例，请包含以下代码，它将返回客户和订单的列表。  
   
- [!code-vb[VbVbalrIntroToLINQ#31](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_2.vb)]  
+ [!code-vb[VbVbalrIntroToLINQ#31](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_2.vb)]  
   
 ##  <a name="LINQProviders"></a> LINQ 提供程序  
  *“LINQ 提供程序”* 将 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] LINQ 查询映射到被查询的数据源。  编写 LINQ 查询时，该提供程序将接受该查询，并将其转换为数据源能够执行的命令。  该提供程序还将来自源的数据转换为构成查询结果的对象。  最后，当你将更新发送至数据源时，它又将这些对象转换为数据。  
@@ -82,23 +82,23 @@ caps.handback.revision: 28
   
  查询表达式以 `From` 子句开头。  此子句标识查询的源数据和用于分别表示源数据中每个元素的变量。  这些变量叫做*“范围变量”*或*“迭代变量”*。  `From` 子句是查询所必需的，但 `Aggregate` 查询除外，在该查询中 `From` 子句是可选的。  在 `From` 或 `Aggregate` 子句中标识查询的范围和源后，即可包括查询子句的任意组合来优化查询。  有关查询子句的详细信息，请参阅本主题中稍后介绍的 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] LINQ 查询运算符。  例如，下面的查询将客户数据源集合标识为 `customers` 变量和一个名为 `cust` 的迭代变量。  
   
- [!code-vb[VbVbalrIntroToLINQ#2](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_3.vb)]  
+ [!code-vb[VbVbalrIntroToLINQ#2](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_3.vb)]  
   
  此示例本身是一个有效查询；但是，如果添加更多查询子句以优化结果，查询将变得更加强大。  例如，可以添加 `Where` 子句，以便按一个或多个值筛选结果。  查询表达式都是单行代码；只能将其他查询子句附加到查询的末尾。  可以使用下划线 \(\_\) 续行符将查询拆散为多行文本，以提高可读性。  下面的代码示例演示了包含 `Where` 子句的查询示例。  
   
- [!code-vb[VbVbalrIntroToLINQ#3](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_4.vb)]  
+ [!code-vb[VbVbalrIntroToLINQ#3](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_4.vb)]  
   
  另一个功能强大的查询子句是 `Select` 子句，它能够从数据源仅返回所选字段。  LINQ 查询返回强类型化对象的可枚举集合。  查询可以返回匿名类型或具名类型的集合。  可以使用 `Select` 子句从数据源仅返回单个字段。  执行此操作时，返回的集合类型为该单个字段的类型。  也可以使用 `Select` 子句从数据源返回多个字段。  执行此操作时，返回的集合类型为新的匿名类型。  还可以将由查询返回的字段和指定的具名类型字段进行匹配。  下面的代码示例演示了一个查询表达式，它返回一个匿名类型的集合，该集合具有使用来自数据源中所选字段的数据填充的成员。  
   
- [!code-vb[VbVbalrIntroToLINQ#4](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_5.vb)]  
+ [!code-vb[VbVbalrIntroToLINQ#4](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_5.vb)]  
   
  还可使用 LINQ 查询合并多个数据源组并返回单个结果。  可以使用一个或多个 `From` 子句，或者使用 `Join` 或 `Group Join` 查询子句来完成此操作。  下面的代码示例演示了一个查询表达式，它合并客户和订单数据，并返回包含客户和订单数据的匿名类型的集合。  
   
- [!code-vb[VbVbalrIntroToLINQ#5](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_6.vb)]  
+ [!code-vb[VbVbalrIntroToLINQ#5](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_6.vb)]  
   
  可以使用 `Group Join` 子句创建包含客户对象集合的分层查询结果。  每个客户对象都具有一个包含该客户所有订单的集合的属性。  下面的代码示例演示了一个查询表达式，它将客户和订单数据合并为分层结果，并返回一个匿名类型的集合。  查询返回一个包括 `CustomerOrders` 属性的类型，该属性包含客户订单数据的集合。  它还包括 `OrderTotal` 属性，该属性包含客户所有订单的总计值之和。  （此查询等效于 LEFT OUTER JOIN。）  
   
- [!code-vb[VbVbalrIntroToLINQ#6](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_7.vb)]  
+ [!code-vb[VbVbalrIntroToLINQ#6](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_7.vb)]  
   
  还有几个其他 LINQ 查询运算符，可用它们创建功能强大的查询表达式。  本主题的下一部分将讨论查询表达式中可以包括的各种查询子句。  有关 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 查询子句的详细信息，请参阅[查询](../../../../visual-basic/language-reference/queries/queries.md)。  
   
@@ -108,26 +108,26 @@ caps.handback.revision: 28
 |||  
 |-|-|  
 |术语|定义|  
-|[From 子句](../../../../visual-basic/language-reference/queries/from-clause.md)|需要 `From` 子句或 `Aggregate` 子句才能开始查询。  `From` 子句可指定查询的源集合和迭代变量。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#7](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_8.vb)]|  
-|[Select 子句](../../../../visual-basic/language-reference/queries/select-clause.md)|可选。  声明查询的一组迭代变量。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#8](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_9.vb)]<br /><br /> 如果未指定 `Select` 子句，则该查询的迭代变量将由 `From` 或 `Aggregate` 子句指定的迭代变量组成。|  
-|[Where 子句](../../../../visual-basic/language-reference/queries/where-clause.md)|可选。  指定查询的筛选条件。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#9](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_10.vb)]|  
-|[Order By 子句](../../../../visual-basic/language-reference/queries/order-by-clause.md)|可选。  指定查询中列的排列顺序。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#10](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_11.vb)]|  
-|[Join 子句](../../../../visual-basic/language-reference/queries/join-clause.md)|可选。  将两个集合合并为单个集合。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#11](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_12.vb)]|  
-|[Group By 子句](../../../../visual-basic/language-reference/queries/group-by-clause.md)|可选。  对查询结果的元素进行分组。  可用于将聚合函数应用到每个组。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#12](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_13.vb)]|  
-|[Group Join 子句](../../../../visual-basic/language-reference/queries/group-join-clause.md)|可选。  将两个集合合并为单个分层集合。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#13](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_14.vb)]|  
-|[Aggregate 子句](../../../../visual-basic/language-reference/queries/aggregate-clause.md)|需要 `From` 子句或 `Aggregate` 子句才能开始查询。  `Aggregate` 子句向集合应用一个或多个聚合函数。  例如，可以使用 `Aggregate` 子句计算查询所返回的所有元素之和。<br /><br /> [!code-vb[VbVbalrIntroToLINQ#14](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_15.vb)]<br /><br /> 还可以使用 `Aggregate` 子句来修改查询。  例如，可以使用 `Aggregate` 子句，对相关查询集合执行计算。<br /><br /> [!code-vb[VbVbalrIntroToLINQ#15](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_16.vb)]|  
-|[Let 子句](../../../../visual-basic/language-reference/queries/let-clause.md)|可选。  计算一个值，并将其分配到查询中的新变量。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#16](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_17.vb)]|  
-|[Distinct 子句](../../../../visual-basic/language-reference/queries/distinct-clause.md)|可选。  限制当前迭代变量的值，以在查询结果中消除重复值。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#17](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_18.vb)]|  
-|[Skip 子句](../../../../visual-basic/language-reference/queries/skip-clause.md)|可选。  绕过集合中指定数量的元素，然后返回剩余的元素。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#18](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_19.vb)]|  
-|[Skip While 子句](../../../../visual-basic/language-reference/queries/skip-while-clause.md)|可选。  跳过集合中指定条件为 `true` 的任何元素，然后返回剩余元素。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#19](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_20.vb)]|  
-|[Take 子句](../../../../visual-basic/language-reference/queries/take-clause.md)|可选。  从集合的开头返回指定数量的连续元素。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#20](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_21.vb)]|  
-|[Take While 子句](../../../../visual-basic/language-reference/queries/take-while-clause.md)|可选。  包括集合中指定条件为 `true` 的任何元素，并绕过剩余元素。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#21](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_22.vb)]|  
+|[From 子句](../../../../visual-basic/language-reference/queries/from-clause.md)|需要 `From` 子句或 `Aggregate` 子句才能开始查询。  `From` 子句可指定查询的源集合和迭代变量。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#7](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_8.vb)]|  
+|[Select 子句](../../../../visual-basic/language-reference/queries/select-clause.md)|可选。  声明查询的一组迭代变量。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#8](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_9.vb)]<br /><br /> 如果未指定 `Select` 子句，则该查询的迭代变量将由 `From` 或 `Aggregate` 子句指定的迭代变量组成。|  
+|[Where 子句](../../../../visual-basic/language-reference/queries/where-clause.md)|可选。  指定查询的筛选条件。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#9](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_10.vb)]|  
+|[Order By 子句](../../../../visual-basic/language-reference/queries/order-by-clause.md)|可选。  指定查询中列的排列顺序。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#10](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_11.vb)]|  
+|[Join 子句](../../../../visual-basic/language-reference/queries/join-clause.md)|可选。  将两个集合合并为单个集合。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#11](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_12.vb)]|  
+|[Group By 子句](../../../../visual-basic/language-reference/queries/group-by-clause.md)|可选。  对查询结果的元素进行分组。  可用于将聚合函数应用到每个组。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#12](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_13.vb)]|  
+|[Group Join 子句](../../../../visual-basic/language-reference/queries/group-join-clause.md)|可选。  将两个集合合并为单个分层集合。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#13](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_14.vb)]|  
+|[Aggregate 子句](../../../../visual-basic/language-reference/queries/aggregate-clause.md)|需要 `From` 子句或 `Aggregate` 子句才能开始查询。  `Aggregate` 子句向集合应用一个或多个聚合函数。  例如，可以使用 `Aggregate` 子句计算查询所返回的所有元素之和。<br /><br /> [!code-vb[VbVbalrIntroToLINQ#14](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_15.vb)]<br /><br /> 还可以使用 `Aggregate` 子句来修改查询。  例如，可以使用 `Aggregate` 子句，对相关查询集合执行计算。<br /><br /> [!code-vb[VbVbalrIntroToLINQ#15](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_16.vb)]|  
+|[Let 子句](../../../../visual-basic/language-reference/queries/let-clause.md)|可选。  计算一个值，并将其分配到查询中的新变量。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#16](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_17.vb)]|  
+|[Distinct 子句](../../../../visual-basic/language-reference/queries/distinct-clause.md)|可选。  限制当前迭代变量的值，以在查询结果中消除重复值。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#17](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_18.vb)]|  
+|[Skip 子句](../../../../visual-basic/language-reference/queries/skip-clause.md)|可选。  绕过集合中指定数量的元素，然后返回剩余的元素。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#18](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_19.vb)]|  
+|[Skip While 子句](../../../../visual-basic/language-reference/queries/skip-while-clause.md)|可选。  跳过集合中指定条件为 `true` 的任何元素，然后返回剩余元素。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#19](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_20.vb)]|  
+|[Take 子句](../../../../visual-basic/language-reference/queries/take-clause.md)|可选。  从集合的开头返回指定数量的连续元素。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#20](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_21.vb)]|  
+|[Take While 子句](../../../../visual-basic/language-reference/queries/take-while-clause.md)|可选。  包括集合中指定条件为 `true` 的任何元素，并绕过剩余元素。  例如:<br /><br /> [!code-vb[VbVbalrIntroToLINQ#21](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_22.vb)]|  
   
  有关 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 查询子句的详细信息，请参阅[查询](../../../../visual-basic/language-reference/queries/queries.md)。  
   
  可以通过调用 LINQ 提供的可枚举类型和可查询类型的成员来使用其他 LINQ 查询功能。  可以通过对查询表达式的结果调用特定查询运算符来使用这些附加功能。  例如，下面的代码示例使用 <xref:System.Linq.Enumerable.Union%2A> 方法，将两个查询的结果合并为一个查询结果。  它使用 <xref:System.Linq.Enumerable.ToList%2A> 方法，将查询结果返回为一个泛型列表。  
   
- [!code-vb[VbVbalrIntroToLINQ#22](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/introduction-to-linq_23.vb)]  
+ [!code-vb[VbVbalrIntroToLINQ#22](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_23.vb)]  
   
  有关其他 LINQ 功能的详细信息，请参阅[Standard Query Operators Overview](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)。  
   
@@ -165,7 +165,7 @@ caps.handback.revision: 28
   
  下面的代码示例演示了如何创建 XML 元素、访问其子元素和属性，以及使用 LINQ 查询该元素的内容。  
   
- [!code-vb[VbXmlSamples#8](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/introduction-to-linq_24.vb)]  
+ [!code-vb[VbXmlSamples#8](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/introduction-to-linq_24.vb)]  
   
  有关详细信息，请参阅 [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)。  
   

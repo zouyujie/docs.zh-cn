@@ -47,7 +47,7 @@ Stop
 ## 示例  
  本示例使用 `Stop` 语句中止执行 `For...Next` 循环里的每一次迭代。  
   
- [!code-vb[VbVbalrStatements#56](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/stop-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#56](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/stop-statement_1.vb)]  
   
 ## 请参阅  
  [End 语句](../../../visual-basic/language-reference/statements/end-statement.md)

@@ -22,7 +22,7 @@ caps.handback.revision: 17
  `-` 运算符可用于从多播委托中移除组件委托。  
   
 ## 示例  
- [!code-cs[csProgGuideDelegates#11](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#11)]  
+ [!code-cs[csProgGuideDelegates#11](../../../csharp/programming-guide/delegates/codesnippet/CSharp/how-to-combine-delegates-multicast-delegates_1.cs)]  
   
 ## 请参阅  
  <xref:System.MulticastDelegate>   

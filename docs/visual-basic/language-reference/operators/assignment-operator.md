@@ -52,7 +52,7 @@ variableorproperty = value
 ## 示例  
  下面的示例演示赋值运算符。  右边的值赋给左边的变量。  
   
- [!code-vb[VbVbalrOperators#9](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/assignment-operator_1.vb)]  
   
 ## 请参阅  
  [&\= 运算符](../../../visual-basic/language-reference/operators/and-assignment-operator.md)   

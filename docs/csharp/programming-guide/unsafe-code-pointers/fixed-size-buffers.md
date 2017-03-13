@@ -31,11 +31,11 @@ private fixed char name[30];
   
  例如，在 C\# 2.0 之前，下面的 `struct` 的大小为 8 字节。  `pathName` 数组是对堆分配数组的引用：  
   
- [!code-cs[csProgGuidePointers#19](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers.cs#19)]  
+ [!code-cs[csProgGuidePointers#19](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/fixed-size-buffers_1.cs)]  
   
  从 C\# 2.0 开始，`struct` 可以包含嵌入的数组。  在下面的示例中，`fixedBuffer` 数组有固定的大小。  若要访问数组的元素，应使用 `fixed` 语句建立指向第一个元素的指针。  `fixed` 语句将 `fixedBuffer` 实例固定到内存中的特定位置。  
   
- [!code-cs[csProgGuidePointers#20](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers.cs#20)]  
+ [!code-cs[csProgGuidePointers#20](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/fixed-size-buffers_2.cs)]  
   
  128 个元素的 `char` 数组的大小为 256 字节。  在固定大小的 [char](../../../csharp/language-reference/keywords/char.md) 缓冲区中，每个字符始终占用两个字节，而与编码无关。  即使将 char 缓冲区封送到具有 `CharSet = CharSet.Auto` 或 `CharSet = CharSet.Ansi` 的 API 方法或结构，也是如此。  有关更多信息，请参见 <xref:System.Runtime.InteropServices.CharSet>。  
   

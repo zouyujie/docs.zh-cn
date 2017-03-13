@@ -51,7 +51,7 @@ caps.handback.revision: 15
 ## 示例  
  下面的示例调用 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] <xref:Microsoft.VisualBasic.Interaction.Environ%2A> 来检索操作系统环境变量的值。  第一行在表达式内调用 `Environ`，第二行在赋值语句中调用它。  `Environ` 使用变量名称作为其唯一的参数，  并将变量的值返回到调用代码。  
   
- [!code-vb[VbVbcnProcedures#7](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-call-a-procedure-_0_1.vb)]  
+ [!code-vb[VbVbcnProcedures#7](./codesnippet/VisualBasic/how-to-call-a-procedure-that-returns-a-value_1.vb)]  
   
 ## 请参阅  
  [Function 过程](../../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)   

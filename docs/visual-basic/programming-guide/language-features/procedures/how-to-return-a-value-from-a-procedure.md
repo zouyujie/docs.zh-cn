@@ -35,11 +35,11 @@ caps.handback.revision: 12
   
      下面的 `Function` 过程计算一个直角三角形的最长边（或者说斜边），并将值返回给调用代码。  
   
-     [!code-vb[VbVbcnProcedures#1](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-return-a-value-fr_1.vb)]  
+     [!code-vb[VbVbcnProcedures#1](./codesnippet/VisualBasic/how-to-return-a-value-from-a-procedure_1.vb)]  
   
      下面的示例演示了对用来存储返回值的 `hypotenuse` 的典型调用。  
   
-     [!code-vb[VbVbcnProcedures#6](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-return-a-value-fr_2.vb)]  
+     [!code-vb[VbVbcnProcedures#6](./codesnippet/VisualBasic/how-to-return-a-value-from-a-procedure_2.vb)]  
   
 ### 使用 Exit 函数或 End 函数返回值  
   

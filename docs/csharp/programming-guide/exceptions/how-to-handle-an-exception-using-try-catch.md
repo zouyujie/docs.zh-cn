@@ -23,7 +23,7 @@ caps.handback.revision: 14
 ## 示例  
  在此示例中，<xref:System.IndexOutOfRangeException> 不是最适当的异常：对本方法而言 <xref:System.ArgumentOutOfRangeException> 更恰当些，因为错误是由调用方传入的 `index` 参数导致的。  
   
- [!code-cs[csProgGuideExceptions#5](../../../csharp/programming-guide/exceptions/codesnippet/csharp/how-to-handle-an-excepti_1.cs)]  
+ [!code-cs[csProgGuideExceptions#5](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/how-to-handle-an-exception-using-try-catch_1.cs)]  
   
 ## 注释  
  导致异常的代码被括在 `try` 块中。  在其后面紧接着添加一个 `catch` 语句，以便在 `IndexOutOfRangeException` 发生时对其进行处理。  `catch` 块处理 `IndexOutOfRangeException`，并引发更适当的 `ArgumentOutOfRangeException` 异常。  为给调用方提供尽可能多的信息，应考虑将原始异常指定为新异常的 <xref:System.Exception.InnerException%2A>。  因为 <xref:System.Exception.InnerException%2A> 属性是[只读](../../../csharp/language-reference/keywords/readonly.md)，所以必须在新异常的构造函数中为其赋值。  

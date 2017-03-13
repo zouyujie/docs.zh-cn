@@ -27,11 +27,11 @@ caps.handback.revision: 26
   
  类的实例是使用 [new 运算符](../../../csharp/language-reference/keywords/new-operator.md)创建的。  在下面的示例中，`Person` 为类型，`person1` 和 `person 2` 为该类型的实例（即对象）。  
   
- [!code-cs[csProgGuideStatements#30](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/objects_1.cs)]  
+ [!code-cs[csProgGuideStatements#30](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_1.cs)]  
   
  由于结构是值类型，因此结构对象的变量具有整个对象的副本。  结构的实例也可以使用 `new` 运算符来创建，但这不是必需的，如下面的示例所示：  
   
- [!code-cs[csProgGuideStatements#31](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/objects_2.cs)]  
+ [!code-cs[csProgGuideStatements#31](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_2.cs)]  
   
  `p1` 和 `p2` 的内存在线程堆栈上进行分配。  该内存随声明它的类型或方法一起回收。  这就是在赋值时复制结构的一个原因。  相比之下，当对类实例对象的所有引用都超出范围时，为该类实例分配的内存将由公共语言运行时自动回收（垃圾回收）。  无法像在 C\+\+ 中那样明确地销毁类对象。  有关 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] 中的垃圾回收的更多信息，请参见[Garbage Collection](../Topic/Garbage%20Collection.md)。  
   
@@ -45,7 +45,7 @@ caps.handback.revision: 26
   
 -   若要确定两个结构实例中的实例字段是否具有相同的值，可使用 <xref:System.ValueType.Equals%2A?displayProperty=fullName> 方法。  由于所有结构都隐式继承自 <xref:System.ValueType?displayProperty=fullName>，因此可以直接在对象上调用该方法，如下面的示例所示：  
   
- [!code-cs[csProgGuideStatements#32](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/objects_3.cs)]  
+ [!code-cs[csProgGuideStatements#32](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_3.cs)]  
   
  `Equals` 的 <xref:System.ValueType?displayProperty=fullName> 实现使用反射，因为它必须能够确定任何结构中有哪些字段。  在创建您自己的结构时，重写 `Equals` 方法可以提供针对您的类型的高效求等算法。  
   

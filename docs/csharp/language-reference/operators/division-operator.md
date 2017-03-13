@@ -27,7 +27,7 @@ caps.handback.revision: 21
  两个整数相除的结果始终为一个整数。  例如，7 的结果 \/ 3 是 2。  要确定 7 的其余部分 \/ 3，使用余数运算符 \([%](../../../csharp/language-reference/operators/modulus-operator.md)）。  若要获取作为有理数或分数的商，应将被除数或除数设置为 `float` 类型或 `double` 类型。  如果您通过将数字放到小数点的右侧，如以下示例所示表示被除数或除数为小数，您可以隐式指定类型。  
   
 ## 示例  
- [!code-cs[csRefOperators#42](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#42)]  
+ [!code-cs[csRefOperators#42](../../../csharp/language-reference/operators/codesnippet/CSharp/division-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

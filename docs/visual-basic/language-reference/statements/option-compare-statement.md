@@ -89,12 +89,12 @@ Option Compare { Binary | Text }
 ## 示例  
  下例使用 `Option Compare` 语句将二进制比较设置为默认字符串比较方法。  若要使用此代码，请取消 `Option Compare Binary` 语句的注释，并将其置于源文件顶部。  
   
- [!code-vb[VbVbalrStatements#45](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/option-compare-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#45](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-compare-statement_1.vb)]  
   
 ## 示例  
  下例使用 `Option Compare` 语句将不区分大小写的文本排序顺序设置为默认字符串比较方法。  若要使用此代码，请取消 `Option Compare Text` 语句的注释，并将其置于源文件顶部。  
   
- [!code-vb[VbVbalrStatements#46](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/option-compare-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#46](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-compare-statement_2.vb)]  
   
 ## 请参阅  
  <xref:Microsoft.VisualBasic.Strings.InStr%2A>   

@@ -17,14 +17,14 @@ caps.handback.revision: 23
 ### 分组联接示例  
  下面的示例根据与 `Pet.Owner` 属性匹配的 `Person` 来对 `Person` 和 `Pet` 类型的对象执行分组联接。  与为每个匹配产生一对元素的非分组联接不同，分组联接只为第一个集合的每个元素产生一个结果对象（在此示例中为一个 `Person` 对象）。  第二个集合中的相应元素（在此示例中为 `Pet` 对象）被分组到一个集合中。  最后，结果选择器函数为每个包含 `Person.FirstName` 和一个 `Pet` 对象集合的匹配创建一个匿名类型。  
   
- [!code-cs[CsLINQProgJoining#5](../../../csharp/programming-guide/linq-query-expressions/codesnippet/csharp/Joins/joins.cs#5)]  
+ [!code-cs[CsLINQProgJoining#5](../../../csharp/programming-guide/linq-query-expressions/codesnippet/CSharp/how-to-perform-grouped-joins_1.cs)]  
   
 ## 示例  
   
 ### 执行分组联接以创建 XML 的示例  
  分组联接非常适合于使用 [!INCLUDE[sqltecxlinq](../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq-md.md)] 来创建 XML。  下面的示例与上一个示例类似，不同之处在于：结果选择器函数创建表示已联接对象的 XML 元素，而不是创建匿名类型。  有关 [!INCLUDE[sqltecxlinq](../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq-md.md)]的更多信息，请参见[LINQ to XML](../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md)。  
   
- [!code-cs[CsLINQProgJoining#6](../../../csharp/programming-guide/linq-query-expressions/codesnippet/csharp/Joins/joins.cs#6)]  
+ [!code-cs[CsLINQProgJoining#6](../../../csharp/programming-guide/linq-query-expressions/codesnippet/CSharp/how-to-perform-grouped-joins_2.cs)]  
   
 ## 编译代码  
   

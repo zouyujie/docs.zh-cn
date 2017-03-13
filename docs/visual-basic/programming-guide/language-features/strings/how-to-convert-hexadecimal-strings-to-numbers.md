@@ -33,7 +33,7 @@ caps.handback.revision: 9
   
      <xref:System.Convert.ToInt32%2A> 方法的第一个参数是要转换的字符串。  第二个参数描述了表示数字的基数，十六进制的基数为 16。  
   
-     [!code-vb[VbVbalrStrings#62](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-to-convert-hexadecim_1.vb)]  
+     [!code-vb[VbVbalrStrings#62](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-convert-hexadecimal-strings-to-numbers_1.vb)]  
   
 ## 请参阅  
  <xref:Microsoft.VisualBasic.Conversion.Hex%2A>   

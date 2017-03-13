@@ -55,7 +55,7 @@ caps.handback.revision: 43
 ## 示例  
  下面的代码实现本节中的示例。  
   
- [!code-cs[csProgGuideNamedAndOptional#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/program.cs#1)]  
+ [!code-cs[csProgGuideNamedAndOptional#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_1.cs)]  
   
 ## 可选参数  
  方法、构造函数、索引器或委托的定义可以指定其形参为必需还是可选。  任何调用都必须为所有必需的形参提供实参，但可以为可选的形参省略实参。  
@@ -70,7 +70,7 @@ caps.handback.revision: 43
   
  可选形参在形参列表的末尾定义，位于任何必需的形参之后。  如果调用方为一系列可选形参中的任意一个形参提供了实参，则它必须为前面的所有可选形参提供实参。  实参列表中不支持使用逗号分隔的间隔。  例如，在以下代码中，使用一个必选形参和两个可选形参定义实例方法 `ExampleMethod`。  
   
- [!code-cs[csProgGuideNamedAndOptional#15](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/optional.cs#15)]  
+ [!code-cs[csProgGuideNamedAndOptional#15](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_2.cs)]  
   
  下面对 `ExampleMethod` 的调用导致编译器错误，原因是为第三个形参而不是为第二个形参提供了实参。  
   
@@ -91,7 +91,7 @@ ExampleMethod 中的可选形参
 ## 示例  
  在下面的示例中，`ExampleClass` 的构造函数具有一个形参，该形参是可选的。  实例方法 `ExampleMethod` 具有一个必需的形参：`required`，以及两个可选形参：`optionalstr` 和 `optionalint`。  `Main` 中的代码演示了可用于调用构造函数和方法的不同方式。  
   
- [!code-cs[csProgGuideNamedAndOptional#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/optional.cs#2)]  
+ [!code-cs[csProgGuideNamedAndOptional#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_3.cs)]  
   
 ## COM 接口  
  命名实参和可选实参，以及对动态对象的支持和其他增强功能大大提高了与 COM API（例如 Office 自动化 API）的互操作性。  
@@ -103,11 +103,11 @@ AutoFormat 形参
   
  在 C\# 3.0 和早期版本中，每个形参都需要一个实参，如以下示例所示。  
   
- [!code-cs[csProgGuideNamedAndOptional#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/namedandoptcom.cs#3)]  
+ [!code-cs[csProgGuideNamedAndOptional#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_4.cs)]  
   
  但是，可以通过使用 C\# 4.0 中引入的命名实参和可选实参来大大简化对 `AutoFormat` 的调用。  如果不希望更改形参的默认值，则可以通过使用命名实参和可选实参来为可选形参省略实参。  在下面的调用中，仅为七个形参中的其中一个指定了值。  
   
- [!code-cs[csProgGuideNamedAndOptional#13](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/namedandoptcom.cs#13)]  
+ [!code-cs[csProgGuideNamedAndOptional#13](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_5.cs)]  
   
  有关更多信息和示例，请参见[如何：在 Office 编程中使用命名参数和可选参数](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)和[如何：通过使用 Visual C\# 功能访问 Office 互操作对象](../../../csharp/programming-guide/interop/how-to-access-office-onterop-objects.md)。  
   

@@ -65,18 +65,18 @@ caps.handback.revision: 13
 ### 泛型接口  
  不能使用从互操作程序集中嵌入的泛型接口。  这将在下面的示例中显示。  
   
- [!code-cs[VbLinkCompilerCS#1](../../../csharp/language-reference/compiler-options/codesnippet/csharp/vblinkcompilercs/program.cs#1)]  
+ [!code-cs[VbLinkCompilerCS#1](../../../csharp/language-reference/compiler-options/codesnippet/CSharp/link-compiler-option_1.cs)]  
   
 ### 具有泛型参数的类型  
  对于具有泛型参数并且该参数类型是从互操作程序集嵌入的类型，如果该类型来自外部程序集，则不能使用该类型。  此限制不适用于接口。  例如，请考虑在 <xref:Microsoft.Office.Interop.Excel> 程序集中定义的 <xref:Microsoft.Office.Interop.Excel.Range> 接口。  如果库从 <xref:Microsoft.Office.Interop.Excel> 程序集嵌入互操作类型并公开一个返回泛型类型的方法，该泛型类型的参数类型为 <xref:Microsoft.Office.Interop.Excel.Range> 接口，则该方法必须返回一个泛型接口，如下面的代码示例中所示。  
   
- [!code-cs[VbLinkCompilerCS#2](../../../csharp/language-reference/compiler-options/codesnippet/csharp/vblinkcompilercs/utility.cs#2)]  
-[!code-cs[VbLinkCompilerCS#3](../../../csharp/language-reference/compiler-options/codesnippet/csharp/vblinkcompilercs/utility.cs#3)]  
-[!code-cs[VbLinkCompilerCS#4](../../../csharp/language-reference/compiler-options/codesnippet/csharp/vblinkcompilercs/utility.cs#4)]  
+ [!code-cs[VbLinkCompilerCS#2](../../../csharp/language-reference/compiler-options/codesnippet/CSharp/link-compiler-option_2.cs)]  
+[!code-cs[VbLinkCompilerCS#3](../../../csharp/language-reference/compiler-options/codesnippet/CSharp/link-compiler-option_3.cs)]  
+[!code-cs[VbLinkCompilerCS#4](../../../csharp/language-reference/compiler-options/codesnippet/CSharp/link-compiler-option_4.cs)]  
   
  在下面的示例中，客户端代码可调用在不出错的情况下返回 <xref:System.Collections.IList> 泛型接口的方法。  
   
- [!code-cs[VbLinkCompilerCS#5](../../../csharp/language-reference/compiler-options/codesnippet/csharp/vblinkcompilercs/program.cs#5)]  
+ [!code-cs[VbLinkCompilerCS#5](../../../csharp/language-reference/compiler-options/codesnippet/CSharp/link-compiler-option_5.cs)]  
   
 ## 示例  
  下面的代码编译源文件 `OfficeApp.cs` 并引用 `COMData1.dll` 和 `COMData2.dll` 中的程序集来生成 `OfficeApp.exe`。  

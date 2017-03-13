@@ -21,7 +21,7 @@ caps.handback.revision: 23
   
  下面的示例演示了使用 `var` 声明局部变量的各种方式：  
   
- [!code-cs[csProgGuideLINQ#43](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#43)]  
+ [!code-cs[csProgGuideLINQ#43](../../../csharp/programming-guide/arrays/codesnippet/CSharp/implicitly-typed-local-variables_1.cs)]  
   
  需要了解的一点是，`var` 关键字并不意味着“变体”，也不表示该变量是松散类型化变量或后期绑定变量。  它只是表示由编译器确定和分配最适当的类型。  
   
@@ -54,7 +54,7 @@ caps.handback.revision: 23
   
  从源代码的角度来说，匿名类型没有名称。  因此，如果已使用 `var` 初始化查询变量，则只有一种方法可以访问返回的对象序列中的属性，那就是使用 `var` 作为 `foreach` 语句中的迭代变量的类型。  
   
- [!code-cs[csProgGuideLINQ#44](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#44)]  
+ [!code-cs[csProgGuideLINQ#44](../../../csharp/programming-guide/arrays/codesnippet/CSharp/implicitly-typed-local-variables_2.cs)]  
   
 ## 备注  
  下列限制适用于隐式类型的变量声明：  
@@ -73,7 +73,7 @@ caps.handback.revision: 23
   
  当在键盘上键入变量的具体类型单调乏味时，或者当该类型显而易见或对提高代码可读性没有作用时，`var` 关键字也可能有用。  `var` 以这种方式发挥作用的一个示例是嵌套的泛型类型，例如在分组操作中使用的那些类型。  在下面的查询中，查询变量的类型是 `IEnumerable<IGrouping<string, Student>>`。  只要您和其他必须维护您代码的人员了解到这一点，就可以毫无问题地使用隐式类型化，以达到方便和简洁的效果。  
   
- [!code-cs[cscsrefQueryKeywords#13](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Group.cs#13)]  
+ [!code-cs[cscsrefQueryKeywords#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/implicitly-typed-local-variables_3.cs)]  
   
  不过，使用 `var` 确实可能使其他开发人员更加难以理解您的代码。  因此，C\# 文档通常仅在需要时才使用 `var`。  
   

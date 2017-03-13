@@ -31,7 +31,7 @@ caps.handback.revision: 19
   
 -   在您的应用程序中，创建一个从 <xref:System.Diagnostics.TraceListener> 继承的名为 `SimpleListener` 的类。  
   
-     [!code-vb[VbVbalrMyApplicationLog#16](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/visualbasic/VbVbalrMyApplicationLog/Form1.vb#16)]  
+     [!code-vb[VbVbalrMyApplicationLog#16](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/walkthrough-creating-custom-log-listeners_1.vb)]  
   
      基类所需的 <xref:System.Diagnostics.TraceListener.Write%2A> 和 <xref:System.Diagnostics.TraceListener.WriteLine%2A> 方法调用 `MsgBox` 以显示其输出。  
   
@@ -75,7 +75,7 @@ caps.handback.revision: 19
   
 -   下面的代码演示了如何确定 `SimpleListener` 的强名称类型的名称。  
   
-     [!code-vb[VbVbalrMyApplicationLog#17](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/visualbasic/VbVbalrMyApplicationLog/Form1.vb#17)]  
+     [!code-vb[VbVbalrMyApplicationLog#17](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/walkthrough-creating-custom-log-listeners_2.vb)]  
   
      类型的强名称取决于您的项目。  
   

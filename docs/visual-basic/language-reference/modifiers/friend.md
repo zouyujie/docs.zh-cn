@@ -46,7 +46,7 @@ caps.handback.revision: 25
 ## 示例  
  下面的类使用 `Friend` 修饰符来允许同一程序集内的其他编程元素访问某些成员。  
   
- [!code-vb[VbVbalrAccessModifiers#1](../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/friend_1.vb)]  
+ [!code-vb[VbVbalrAccessModifiers#1](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/friend_1.vb)]  
   
 ## 用法  
  可以在下列上下文使用 `Friend` 修饰符：  

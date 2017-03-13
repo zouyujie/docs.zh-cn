@@ -19,7 +19,7 @@ caps.handback.revision: 16
 `accessor-declarations` 的一种用法是公开很多事件但不为每个事件分配字段，而是使用字典来存储这些事件实例。  这只在具有很多事件但您预计大多数事件都不会实现时才有用。  
   
 ## 示例  
- [!code-cs[csProgGuideEvents#9](../../../csharp/programming-guide/events/codesnippet/csharp/how-to-use-a-dictionary-_1.cs)]  
+ [!code-cs[csProgGuideEvents#9](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-use-a-dictionary-to-store-event-instances_1.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

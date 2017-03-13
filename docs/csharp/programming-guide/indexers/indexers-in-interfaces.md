@@ -27,14 +27,14 @@ caps.handback.revision: 18
   
  以下是接口索引器访问器的示例：  
   
- [!code-cs[csProgGuideIndexers#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/indexers-in-interfaces_1.cs)]  
+ [!code-cs[csProgGuideIndexers#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/indexers-in-interfaces_1.cs)]  
   
  一个索引器的签名必须区别于在同一接口中声明的其他所有索引器的签名。  
   
 ## 示例  
  下面的示例显示如何实现接口索引器。  
   
- [!code-cs[csProgGuideIndexers#4](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/indexers-in-interfaces_2.cs)]  
+ [!code-cs[csProgGuideIndexers#4](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/indexers-in-interfaces_2.cs)]  
   
  在上例中，可以通过使用接口成员的完全限定名来使用显式接口成员实现。  例如：  
   

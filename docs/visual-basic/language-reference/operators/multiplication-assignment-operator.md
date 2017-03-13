@@ -53,7 +53,7 @@ variableorproperty *= expression
 ## 示例  
  下面的示例使用 `*=` 运算符，将一个 `Integer` 变量与第二个该变量相乘，并将结果赋给第一个变量。  
   
- [!code-vb[VbVbalrOperators#5](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/multiplication-assignmen_1_1.vb)]  
+ [!code-vb[VbVbalrOperators#5](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/multiplication-assignment-operator_1.vb)]  
   
 ## 请参阅  
  [\* 运算符](../../../visual-basic/language-reference/operators/multiplication-operator.md)   

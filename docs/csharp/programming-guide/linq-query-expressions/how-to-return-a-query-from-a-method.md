@@ -10,7 +10,7 @@ caps.handback.revision: 11
 ## 示例  
  在下面的示例中，第一个方法以返回值的形式返回查询，第二个方法以 `out` 参数的形式返回查询。  请注意，在这两种情况下，返回的都是查询，而不是查询结果。  
   
- [!code-cs[csProgGuideLINQ#80](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#80)]  
+ [!code-cs[csProgGuideLINQ#80](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-return-a-query-from-a-method_1.cs)]  
   
 ## 编译代码  
   

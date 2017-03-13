@@ -62,7 +62,7 @@ caps.handback.revision: 30
   
 -   将 `Student` 类和经过初始化的学生列表添加到您的项目的 `Program` 类中。  
   
-     [!code-cs[CsLinqGettingStarted#11](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#11)]  
+     [!code-cs[CsLinqGettingStarted#11](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_1.cs)]  
   
 #### 在学生列表中添加新学生  
   
@@ -76,7 +76,7 @@ caps.handback.revision: 30
   
      另请注意，该查询的范围变量 `student` 用作对源中每个 `Student` 的引用，以提供对每个对象的成员访问。  
   
- [!code-cs[CsLINQGettingStarted#12](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#12)]  
+ [!code-cs[CsLINQGettingStarted#12](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_2.cs)]  
   
 ## 执行查询  
   
@@ -90,7 +90,7 @@ caps.handback.revision: 30
   
 2.  添加此代码后，按 Ctrl \+ F5 生成并运行该应用程序，然后在**“控制台”**窗口中查看结果。  
   
- [!code-cs[CsLINQGettingStarted#13](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#13)]  
+ [!code-cs[CsLINQGettingStarted#13](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_3.cs)]  
   
 #### 添加另一个筛选条件  
   
@@ -130,11 +130,11 @@ caps.handback.revision: 30
   
 1.  分组是查询表达式中的强大功能。  包含 group 子句的查询将生成一系列组，每个组本身包含一个 `Key` 和一个序列，该序列由该组的所有成员组成。  下面的新查询使用学生的姓的第一个字母作为关键字对学生进行分组。  
   
-     [!code-cs[CsLINQGettingStarted#14](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#14)]  
+     [!code-cs[CsLINQGettingStarted#14](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_4.cs)]  
   
 2.  请注意，查询的类型现在已更改。  该查询现在生成一系列将 `char` 类型作为关键字的组，以及一系列 `Student` 对象。  由于查询的类型已更改，因此下面的代码也会更改 `foreach` 执行循环：  
   
-     [!code-cs[CsLINQGettingStarted#15](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#15)]  
+     [!code-cs[CsLINQGettingStarted#15](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_5.cs)]  
   
 3.  按 Ctrl \+ F5 运行该应用程序并在**“控制台”**窗口中查看结果。  
   
@@ -144,7 +144,7 @@ caps.handback.revision: 30
   
 1.  显式编写 `IGroupings` 的 `IEnumerables` 代码很快就会变得乏味。  通过使用 `var`，您可以更方便地编写相同的查询和 `foreach` 循环。  `var` 关键字不会更改对象的类型，它仅指示编译器推断类型。  更改 `studentQuery` 的类型和迭代变量的 `group`到 `var` 并重新运行查询。  请注意，在内部 `foreach` 循环中，迭代变量仍然类型化为 `Student`，而查询仍可像以前一样工作。  将 `s` 迭代变量更改为 `var` 并再次运行查询。  您将看到完全相同的结果。  
   
-     [!code-cs[CsLINQGettingStarted#16](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#16)]  
+     [!code-cs[CsLINQGettingStarted#16](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_6.cs)]  
   
      有关 [var](../../../../csharp/language-reference/keywords/var.md) 的更多信息，请参见[隐式类型的局部变量](../../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md)。  
   
@@ -152,7 +152,7 @@ caps.handback.revision: 30
   
 1.  当您运行前面的查询时，会注意到组没有按字母顺序排列。  若要改变这种情况，您必须在 `group` 子句后提供 `orderby` 子句。  但要使用 `orderby` 子句，您首先需要一个标识符，用作对 `group` 子句创建的组的引用。  可以使用 `into` 关键字来提供此标识符，如下所示：  
   
-     [!code-cs[csLINQGettingStarted#17](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#17)]  
+     [!code-cs[csLINQGettingStarted#17](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_7.cs)]  
   
      当您运行此查询时，就会看到组现在已按字母顺序排序。  
   
@@ -160,7 +160,7 @@ caps.handback.revision: 30
   
 1.  您可以使用 `let` 关键字为查询表达式中的任何表达式结果引入标识符。  此标识符可以提供方便（如下面的示例所示），也可以通过存储表达式的结果来避免多次计算，从而提高性能。  
   
-     [!code-cs[csLINQGettingStarted#18](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#18)]  
+     [!code-cs[csLINQGettingStarted#18](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_8.cs)]  
   
      有关更多信息，请参见[let 子句](../../../../csharp/language-reference/keywords/let-clause.md)。  
   
@@ -168,17 +168,17 @@ caps.handback.revision: 30
   
 1.  如[Query Syntax and Method Syntax in LINQ](../../../../csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md) 中所述，一些查询操作只能使用方法语法表示。  下面的代码计算源序列中每个 `Student` 的总分，然后对该查询的结果调用 `Average()` 方法来计算班级的平均分。  请注意，查询表达式的两边使用了括号。  
   
-     [!code-cs[csLINQGettingStarted#19](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#19)]  
+     [!code-cs[csLINQGettingStarted#19](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_9.cs)]  
   
 #### 在 select 子句中转换或投影  
   
 1.  查询生成的序列的元素与源序列中的元素不同，这种情况很常见。  删除或注释掉您之前的查询和执行循环，并用下面的代码替换它。  请注意，该查询返回一个字符串（而非 `Students`）序列，这种情况将反映在 `foreach` 循环中。  
   
-     [!code-cs[csLINQGettingStarted#20](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#20)]  
+     [!code-cs[csLINQGettingStarted#20](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_10.cs)]  
   
 2.  本演练前面的代码指出班级的平均分约为 334 分。  若要生成总分高于班级平均分的 `Students` 及其 `Student ID` 的序列，可以在 `select` 语句中使用匿名类型：  
   
-     [!code-cs[csLINQGettingStarted#21](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#21)]  
+     [!code-cs[csLINQGettingStarted#21](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_11.cs)]  
   
 ## 后续步骤  
  熟悉了在 C\# 中使用查询的基本情况后，便可以开始阅读您感兴趣的具体类型的 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] 提供程序的文档和示例：  

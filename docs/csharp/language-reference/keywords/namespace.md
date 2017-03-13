@@ -22,7 +22,7 @@ caps.handback.revision: 28
 # 命名空间（C# 参考）
 `namespace` 关键字用于声明一组相关对象的大小。  可以使用命名空间组织代码元素和创建全局唯一类型。  
   
- [!code-cs[csrefKeywordsNamespace#1](../../../csharp/language-reference/keywords/codesnippet/csharp/namespace_1.cs)]  
+ [!code-cs[csrefKeywordsNamespace#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/namespace_1.cs)]  
   
 ## 备注  
  在一个命名空间中，可以声明一个或多个下列类型：  
@@ -45,12 +45,12 @@ caps.handback.revision: 28
   
  在两个或更多的声明中定义一个命名空间是可以的。  例如，下面的示例将两个类定义为 `MyCompany` 命名空间的一部分：  
   
- [!code-cs[csrefKeywordsNamespace#2](../../../csharp/language-reference/keywords/codesnippet/csharp/namespace_2.cs)]  
+ [!code-cs[csrefKeywordsNamespace#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/namespace_2.cs)]  
   
 ## 示例  
  下面的示例显示了如何在嵌套的命名空间中调用静态方法。  
   
- [!code-cs[csrefKeywordsNamespace#3](../../../csharp/language-reference/keywords/codesnippet/csharp/namespace_3.cs)]  
+ [!code-cs[csrefKeywordsNamespace#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/namespace_3.cs)]  
   
 ## 更多信息  
  有关使用命名空间的更多信息，请参见下列主题：  

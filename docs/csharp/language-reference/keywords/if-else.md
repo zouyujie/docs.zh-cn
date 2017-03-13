@@ -24,7 +24,7 @@ caps.handback.revision: 32
 # if-else（C# 参考）
 `if` 语句基于 `Boolean` 表达式的值来识别运行哪个语句。 在下面的示例中，`Boolean` 变量 `result` 已被设置为 `true`，然后被签入到了 `if` 语句。 输出为 `The condition is true`。  
   
- [!code-cs[csrefKeywordsSelection#1](../../../csharp/language-reference/keywords/codesnippet/csharp/if-else_1.cs)]  
+ [!code-cs[csrefKeywordsSelection#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/if-else_1.cs)]  
   
  你可以通过将本主题中的示例放入控制台应用的 `Main` 方法中来运行它们。  
   
@@ -43,28 +43,28 @@ caps.handback.revision: 32
   
  `then-statement` 和 `else-statement` 中的语句可为任何类型，包括嵌套在原始 `if` 语句中的另一个 `if` 语句。 在嵌套的 `if` 语句中，每个 `else` 子句都属于上一个无相应 `else` 的 `if`。 在下面的示例中，如果 `m > 10` 和 `n > 20` 计算结果都为 true，则将显示 `Result1`。 如果 `m > 10` 为 true 但 `n > 20` 为 false，则将显示 `Result2`。  
   
- [!code-cs[csrefKeywordsSelection#2](../../../csharp/language-reference/keywords/codesnippet/csharp/if-else_2.cs)]  
+ [!code-cs[csrefKeywordsSelection#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/if-else_2.cs)]  
   
  相反，如果你希望在 `(m > 10)` 为 false 的时候显示 `Result2`，则可以通过使用括号来指定此关联，以建立嵌套的 `if` 语句的开头和结尾，如以下示例所示。  
   
- [!code-cs[csrefKeywordsSelection#3](../../../csharp/language-reference/keywords/codesnippet/csharp/if-else_3.cs)]  
+ [!code-cs[csrefKeywordsSelection#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/if-else_3.cs)]  
   
  如果条件 `(m > 10)` 计算结果为 false，则将显示 `Result2`。  
   
 ## 示例  
  在下例中，当通过键盘输入字符时，该程序将使用嵌套的 `if` 语句来确定输入的字符是否为字母字符。 如果输入的字符是字母字符，则程序将检查输入的字符是大写还是小写。 每种情况都会显示一条消息。  
   
- [!code-cs[csrefKeywordsSelection#4](../../../csharp/language-reference/keywords/codesnippet/csharp/if-else_4.cs)]  
+ [!code-cs[csrefKeywordsSelection#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/if-else_4.cs)]  
   
 ## 示例  
  你也可以将 `if` 语句嵌套到 else 块中，如以下部分代码所示。 示例将 `if` 语句嵌套在两个 else 块和一个 then 块中。 注释指定每个块中哪些条件为 true 哪些条件为 false。  
   
- [!code-cs[csrefKeywordsSelection#5](../../../csharp/language-reference/keywords/codesnippet/csharp/if-else_5.cs)]  
+ [!code-cs[csrefKeywordsSelection#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/if-else_5.cs)]  
   
 ## 示例  
  下面的示例确定了输入的字符是一个小写字母，还是大写字母，还是一个数字。 如果所有三个条件都为 false，该字符不是字母数字字符。 此示例显示了每种情况的消息内容。  
   
- [!code-cs[csrefKeywordsSelection#6](../../../csharp/language-reference/keywords/codesnippet/csharp/if-else_6.cs)]  
+ [!code-cs[csrefKeywordsSelection#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/if-else_6.cs)]  
   
  正如 else 块或 then 块中的语句可以是任何有效的语句一样，你可以将任何有效的布尔表达式用于此条件。 你可以使用类似 [&&](../../../csharp/language-reference/operators/conditional-and-operator.md)、[&](../../../csharp/language-reference/operators/and-operator.md)、[&#124;&#124;](../../../csharp/language-reference/operators/conditional-or-operator.md)、[&#124;](../../../csharp/language-reference/operators/or-operator.md) 和 [\!](../../../csharp/language-reference/operators/logical-negation-operator.md) 的逻辑运算符来创建符合条件。 下面的代码演示了示例。  
   

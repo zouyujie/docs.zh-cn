@@ -21,15 +21,15 @@ caps.handback.revision: 21
 ## 将一维数组作为参数传递  
  可以将初始化的一维数组传递给方法。  例如，下面的语句将数组发送到 print 方法。  
   
- [!code-cs[csProgGuideArrays#34](../../../csharp/programming-guide/arrays/codesnippet/csharp/passing-arrays-as-argume_1.cs)]  
+ [!code-cs[csProgGuideArrays#34](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-as-arguments_1.cs)]  
   
  下面的代码显示 print 方法的部分实现。  
   
- [!code-cs[csProgGuideArrays#33](../../../csharp/programming-guide/arrays/codesnippet/csharp/passing-arrays-as-argume_2.cs)]  
+ [!code-cs[csProgGuideArrays#33](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-as-arguments_2.cs)]  
   
  您可以在一个步骤中初始化和传递新数组，如下面的示例所示。  
   
- [!code-cs[CsProgGuideArrays#35](../../../csharp/programming-guide/arrays/codesnippet/csharp/passing-arrays-as-argume_3.cs)]  
+ [!code-cs[CsProgGuideArrays#35](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-as-arguments_3.cs)]  
   
 ## 示例  
   
@@ -37,20 +37,20 @@ caps.handback.revision: 21
  在下面的示例中，将初始化一个字符串数组并将其作为参数传递到字符串的 `PrintArray` 方法。  该方法显示数组的元素。  接下来，调用 `ChangeArray` 和 `ChangeArrayElement` 方法以演示通过值发送数组参数时不会阻止更改这些数组元素。  
   
 ### 代码  
- [!code-cs[csProgGuideArrays#30](../../../csharp/programming-guide/arrays/codesnippet/csharp/passing-arrays-as-argume_4.cs)]  
+ [!code-cs[csProgGuideArrays#30](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-as-arguments_4.cs)]  
   
 ## 将多维数组作为参数传递  
  可采用与传递一维数组相同的方式将初始化的多维数组传递给方法。  
   
- [!code-cs[csProgGuideArrays#41](../../../csharp/programming-guide/arrays/codesnippet/csharp/passing-arrays-as-argume_5.cs)]  
+ [!code-cs[csProgGuideArrays#41](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-as-arguments_5.cs)]  
   
  下面的代码显示 print 方法的部分声明，该方法接受一个二维数组作为其参数。  
   
- [!code-cs[csProgGuideArrays#36](../../../csharp/programming-guide/arrays/codesnippet/csharp/passing-arrays-as-argume_6.cs)]  
+ [!code-cs[csProgGuideArrays#36](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-as-arguments_6.cs)]  
   
  您可以在一个步骤中初始化和传递新数组，如下面的示例所示。  
   
- [!code-cs[csProgGuideArrays#32](../../../csharp/programming-guide/arrays/codesnippet/csharp/passing-arrays-as-argume_7.cs)]  
+ [!code-cs[csProgGuideArrays#32](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-as-arguments_7.cs)]  
   
 ## 示例  
   
@@ -58,7 +58,7 @@ caps.handback.revision: 21
  在下面的示例中，将初始化一个二维整数数组并将其传递到 `Print2DArray` 方法。  该方法显示数组的元素。  
   
 ### 代码  
- [!code-cs[csProgGuideArrays#31](../../../csharp/programming-guide/arrays/codesnippet/csharp/passing-arrays-as-argume_8.cs)]  
+ [!code-cs[csProgGuideArrays#31](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-as-arguments_8.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

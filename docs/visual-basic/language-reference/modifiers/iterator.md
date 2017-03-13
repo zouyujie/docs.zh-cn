@@ -48,12 +48,12 @@ caps.handback.revision: 11
 ## 示例  
  下面的示例演示一个迭代器函数。  迭代器函数具有是在 [for…next](../../../visual-basic/language-reference/statements/for-next-statement.md) 循环内的一个 `Yield` 语句。  [对于每个](../../../visual-basic/language-reference/statements/for-each-next-statement.md) 语句体的每个迭代在 `Main` 的创建调用 `Power` 迭代器函数。  每个调用迭代器函数提升到 `Yield` 语句的下执行，在 `For…Next` 循环的下一次迭代时发生。  
   
- [!code-vb[VbVbalrStatements#98](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/iterator_1.vb)]  
+ [!code-vb[VbVbalrStatements#98](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/iterator_1.vb)]  
   
 ## 示例  
  下面的示例演示是迭代器的 `Get` 访问器。  `Iterator` 修饰符在属性声明。  
   
- [!code-vb[VbVbalrStatements#99](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/iterator_2.vb)]  
+ [!code-vb[VbVbalrStatements#99](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/iterator_2.vb)]  
   
  有关其他示例，请参见[迭代器](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)。  
   

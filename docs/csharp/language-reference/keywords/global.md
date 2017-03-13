@@ -24,7 +24,7 @@ caps.handback.revision: 7
 ## 示例  
  下面的示例演示如何使用 `global` 上下文关键字指定在全局命名空间中定义 `TestApp` 类：  
   
- [!code-cs[csrefKeywordsContextual#13](../../../csharp/language-reference/keywords/codesnippet/csharp/global_1.cs)]  
+ [!code-cs[csrefKeywordsContextual#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/global_1.cs)]  
   
 ## 请参阅  
  [命名空间](../../../csharp/programming-guide/namespaces/index.md)

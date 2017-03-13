@@ -117,7 +117,7 @@ End Try
   
  由于 <xref:System.IO.TextWriter> 和 <xref:System.IO.TextReader> 选件类实现 <xref:System.IDisposable> 接口，代码可以使用 `Using` 语句来确保文件在读写操作之后正常关闭。  
   
- [!code-vb[VbVbalrStatements#50](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/using-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#50](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/using-statement_1.vb)]  
   
 ## 请参阅  
  <xref:System.IDisposable>   

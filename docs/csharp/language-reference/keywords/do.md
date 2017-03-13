@@ -24,7 +24,7 @@ caps.handback.revision: 22
 ## 示例  
  在下面的示例中，只要变量 `x` 小于 5，`do-while` 循环语句就开始执行。  
   
- [!code-cs[csrefKeywordsIteration#1](../../../csharp/language-reference/keywords/codesnippet/csharp/do_1.cs)]  
+ [!code-cs[csrefKeywordsIteration#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/do_1.cs)]  
   
  与 [while](../../../csharp/language-reference/keywords/while.md) 语句不同的是，`do-while` 循环会在计算条件表达式之前执行一次。  
   

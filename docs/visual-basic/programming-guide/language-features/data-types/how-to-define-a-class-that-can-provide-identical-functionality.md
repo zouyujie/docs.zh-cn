@@ -73,7 +73,7 @@ caps.handback.revision: 29
   
      下面的示例定义了一个类，用于管理一个非常简单的列表。 它将列表保存在内部数组 `items` 中，并且使用代码可声明列表元素的数据类型。 参数化构造函数允许使用代码设置 `items` 的上限，默认构造函数将此上限设置为 9（总共 10 项）。  
   
-     [!code-vb[VbVbalrDataTypes#7](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/how-to-define-a-class-th_1.vb)]  
+     [!code-vb[VbVbalrDataTypes#7](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/how-to-define-a-class-that-can-provide-identical-functionality_1.vb)]  
   
      你可以声明来自 `simpleList` 的一个类来保存 `Integer` 值的列表，声明另一个类来保存 `String` 值的列表，再声明一个类来保存 `Date` 值。 除了列表成员的数据类型外，依据所有这些类创建的对象的行为方式都相同。  
   
@@ -81,7 +81,7 @@ caps.handback.revision: 29
   
      可以使用以下代码测试类 `simpleList`。  
   
-     [!code-vb[VbVbalrDataTypes#8](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/how-to-define-a-class-th_2.vb)]  
+     [!code-vb[VbVbalrDataTypes#8](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/how-to-define-a-class-that-can-provide-identical-functionality_2.vb)]  
   
 ## 请参阅  
  [数据类型](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   

@@ -21,7 +21,7 @@ caps.handback.revision: 10
 ## 示例  
  在下面的代码示例中，使用 `StudentName` 类型的实例初始化一个 <xref:System.Collections.Generic.Dictionary%602>。  
   
- [!code-cs[csProgGuideLINQ#34](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#34)]  
+ [!code-cs[csProgGuideLINQ#34](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-initialize-a-dictionary-with-a-collection-initializer_1.cs)]  
   
  请注意集合的每个元素中的两对大括号。  最内层的大括号括起了 `StudentName` 的对象初始值，而最外层的大括号括起了将要添加到 `students` <xref:System.Collections.Generic.Dictionary%602> 中的键\/值对的初始值。  最后，字典的整个集合初始值括在一对大括号内。  
   

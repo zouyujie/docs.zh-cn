@@ -75,11 +75,11 @@ Next [ counter ]
   
  在下面的示例中，`index` 变量从值为 1 开始并提高与循环的每次迭代，关闭，在 `index` 达到 5. 后的值。  
   
- [!code-vb[VbVbalrStatements#111](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-next-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#111](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_1.vb)]  
   
  在下面的示例中，`number` 变量从 2 开始和减小 0.25 在每次循环迭代，关闭，在 `number` 达到 0 后的值。  `-.25` 的 `Step` 参数减少该值按 0.25 在每次循环迭代。  
   
- [!code-vb[VbVbalrStatements#112](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-next-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#112](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_2.vb)]  
   
 > [!TIP]
 >  [While...End While 语句](../../../visual-basic/language-reference/statements/while-end-while-statement.md) 或 [Do...Loop 语句](../../../visual-basic/language-reference/statements/do-loop-statement.md) 适用，当您事先不知道多少次运行在循环中的语句。  但是，如果您希望让循环运行特定次数，则 `For`...`Next` 是较好的选择。  您需要在第一次输入循环时确定迭代次数。  
@@ -87,7 +87,7 @@ Next [ counter ]
 ## 嵌套循环  
  可以将一个循环放在另一个循环内以嵌套 `For` 循环。  下面的示例演示了具有不同步长值的 `For`...`Next` 嵌套结构。  外部循环为每次循环迭代创建一个字符串。  内部循环减小每次循环迭代的循环计数器变量。  
   
- [!code-vb[VbVbalrStatements#113](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-next-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#113](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_3.vb)]  
   
  如果嵌套循环时，每个循环必须具有唯一 `counter` 变量。  
   
@@ -100,7 +100,7 @@ Next [ counter ]
   
  下面的示例阐释了 `Continue For` and `Exit For` 语句的用法。  
   
- [!code-vb[VbVbalrStatements#115](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-next-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#115](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_4.vb)]  
   
  可以在 `For`…`Next` 循环中放置任意数量的 `Exit For` 语句。  当在嵌套的 `For`…`Next` 循环内使用时，`Exit For` 将退出最内层的循环，并将控制权交给下一层较高级别的嵌套。  
   
@@ -168,17 +168,17 @@ Next [ counter ]
 ## 示例  
  下面的示例从泛型列表中删除所有元素。  而不是 [For Each...Next 语句](../../../visual-basic/language-reference/statements/for-each-next-statement.md)，该示例显示按降序重复一个 `For`…`Next` 语句。  因为 `removeAt` 方法将移除的元素后面使元素具有较小索引值，该示例使用此方法。  
   
- [!code-vb[VbVbalrStatements#114](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-next-statement_5.vb)]  
+ [!code-vb[VbVbalrStatements#114](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_5.vb)]  
   
 ## 示例  
  下面的示例通过使用 [Enum 语句](../../../visual-basic/language-reference/statements/enum-statement.md)，声明的循环访问枚举。  
   
- [!code-vb[VbVbalrStatements#116](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-next-statement_6.vb)]  
+ [!code-vb[VbVbalrStatements#116](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_6.vb)]  
   
 ## 示例  
  在下面的示例中，语句参数使用了具有 `+`、 `-`、`>=` 和 `<=` 运算符的运算符重载的类。  
   
- [!code-vb[VbVbalrStatements#117](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-next-statement_7.vb)]  
+ [!code-vb[VbVbalrStatements#117](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_7.vb)]  
   
 ## 请参阅  
  <xref:System.Collections.Generic.List%601>   

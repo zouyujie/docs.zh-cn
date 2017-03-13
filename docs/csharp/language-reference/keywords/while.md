@@ -22,17 +22,17 @@ caps.handback.revision: 22
 `while` 语句执行一个语句或语句块，直到指定的表达式计算为 `false`。  
   
 ## 示例  
- [!code-cs[csrefKeywordsIteration#5](../../../csharp/language-reference/keywords/codesnippet/csharp/while_1.cs)]  
+ [!code-cs[csrefKeywordsIteration#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/while_1.cs)]  
   
 ## 示例  
- [!code-cs[csrefKeywordsIteration#6](../../../csharp/language-reference/keywords/codesnippet/csharp/while_2.cs)]  
+ [!code-cs[csrefKeywordsIteration#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/while_2.cs)]  
   
 ## 示例  
  由于 `while` 表达式的测试在每次执行循环前发生，因此 `while` 循环执行零次或更多次。  这与执行一次或多次的 [do](../../../csharp/language-reference/keywords/do.md) 循环不同。  
   
  当 [break](../../../csharp/language-reference/keywords/break.md)、[goto](../../../csharp/language-reference/keywords/goto.md)、[return](../../../csharp/language-reference/keywords/return.md) 或 [throw](../../../csharp/language-reference/keywords/throw.md) 语句将控制权转移到 `while` 循环之外时，可以终止该循环。  若要将控制权传递给下一次迭代但不退出循环，请使用 [continue](../../../csharp/language-reference/keywords/continue.md) 语句。  请注意，在上面三个示例中，根据 `int n` 递增的位置的不同，输出也不同。  在下面的示例中不生成输出。  
   
- [!code-cs[csrefKeywordsIteration#7](../../../csharp/language-reference/keywords/codesnippet/csharp/while_3.cs)]  
+ [!code-cs[csrefKeywordsIteration#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/while_3.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

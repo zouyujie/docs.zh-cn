@@ -45,15 +45,15 @@ caps.handback.revision: 18
   
 -   禁用可终止程序执行的 [End \<关键字\> 语句](../../../visual-basic/language-reference/statements/end-keyword-statement.md) 关键字。  下面的程序在没有使用 `/netcf` 时可以正常编译和运行，但在使用 `/netcf` 的情况下将会在编译时失败。  
   
-     [!code-vb[VbVbalrCompiler#34](../../../visual-basic/reference/command-line-compiler/codesnippet/visualbasic/netcf_1.vb)]  
+     [!code-vb[VbVbalrCompiler#34](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/netcf_1.vb)]  
   
 -   所有形式的后期绑定都会被禁用。  当遇到可识别的后期绑定情况时，将生成编译时错误。  下面的程序在没有使用 `/netcf` 时可以正常编译和运行，但在使用 `/netcf` 的情况下将会在编译时失败。  
   
-     [!code-vb[VbVbalrCompiler#35](../../../visual-basic/reference/command-line-compiler/codesnippet/visualbasic/netcf_2.vb)]  
+     [!code-vb[VbVbalrCompiler#35](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/netcf_2.vb)]  
   
 -   禁用 [Auto](../../../visual-basic/language-reference/modifiers/auto.md)、[Ansi](../../../visual-basic/language-reference/modifiers/ansi.md) 和 [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md) 修饰符。  [Declare 语句](../../../visual-basic/language-reference/statements/declare-statement.md) 语句的语法也被修改为 `Declare Sub|Function name Lib "library" [Alias "alias"] [([arglist])]`。  下面的代码显示 `/netcf` 对编译的影响。  
   
-     [!code-vb[VbVbalrCompiler#36](../../../visual-basic/reference/command-line-compiler/codesnippet/visualbasic/netcf_3.vb)]  
+     [!code-vb[VbVbalrCompiler#36](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/netcf_3.vb)]  
   
 -   在使用 `/netcf` 时，如果使用已从 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中移除的 Visual Basic 6.0 关键字，将会生成一个不同的错误。  这将影响用于以下关键字的错误信息：  
   

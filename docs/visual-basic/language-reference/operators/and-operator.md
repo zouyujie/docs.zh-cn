@@ -84,14 +84,14 @@ result = expression1 And expression2
 ## 示例  
  下面的示例使用 `And` 运算符对两个表达式执行逻辑合取。  结果是一个 `Boolean` 值，它表示两个表达式是否都为 `True`。  
   
- [!code-vb[VbVbalrOperators#22](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/and-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#22](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/and-operator_1.vb)]  
   
  上面的示例分别产生结果 `True` 和 `False`。  
   
 ## 示例  
  下面的示例使用 `And` 运算符对两个数值表达式的各位执行逻辑合取。  如果两个操作数中的对应位都被设置为 1，则结果模式中的位也被置位。  
   
- [!code-vb[VbVbalrOperators#23](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/and-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#23](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/and-operator_2.vb)]  
   
  上面的示例分别产生结果 8、2 和 0。  
   

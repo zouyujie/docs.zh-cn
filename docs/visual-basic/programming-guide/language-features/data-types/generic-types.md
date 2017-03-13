@@ -64,7 +64,7 @@ caps.handback.revision: 45
   
  例如，你可能想创建并使用一个处理特定数据类型（例如 `String`）的队列类。 可以通过 <xref:System.Collections.Generic.Queue%601?displayProperty=fullName> 声明这样的类，如下例所示。  
   
- [!code-vb[VbVbalrDataTypes#1](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/generic-types_1.vb)]  
+ [!code-vb[VbVbalrDataTypes#1](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/generic-types_1.vb)]  
   
  现在，可以使用 `stringQ` 来专门处理 `String` 值。 由于 `stringQ` 专用于 `String` 而未针对 `Object` 值进行泛型化，因此，不会有晚期绑定或类型转换。 从而节省了执行时间并减少了运行时错误。  
   
@@ -73,15 +73,15 @@ caps.handback.revision: 45
 ## 泛型类的示例。  
  下面的示例演示了泛型类的主干定义。  
   
- [!code-vb[VbVbalrDataTypes#2](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/generic-types_2.vb)]  
+ [!code-vb[VbVbalrDataTypes#2](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/generic-types_2.vb)]  
   
  在上面的主干中，`t` 是一个*类型形参*，即你在声明此类时提供的数据类型的占位符。 在代码中的其他地方，可以通过为 `t` 提供不同的数据类型来声明不同版本的 `classHolder` 下面的示例演示了两个此类声明。  
   
- [!code-vb[VbVbalrDataTypes#3](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/generic-types_3.vb)]  
+ [!code-vb[VbVbalrDataTypes#3](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/generic-types_3.vb)]  
   
  上面的语句声明了*构造类*，在这些类中，特定的类型替换了类型形参。 此类替换会在构造类中的代码内进行传播。 下面的示例显示了 `processNewItem` 过程在 `integerClass` 中的外观。  
   
- [!code-vb[VbVbalrDataTypes#4](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/generic-types_4.vb)]  
+ [!code-vb[VbVbalrDataTypes#4](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/generic-types_4.vb)]  
   
  有关更完整的示例，请参见 [如何：定义可对不同数据类型提供相同功能的类](../../../../visual-basic/programming-guide/language-features/data-types/how-to-define-a-class-that-can-provide-identical-functionality.md)。  
   
@@ -119,7 +119,7 @@ caps.handback.revision: 45
 ### 约束的示例  
  下面的示例演示了带有约束（要求类型实参实现 <xref:System.IComparable>）的类的主干定义。  
   
- [!code-vb[VbVbalrDataTypes#5](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/generic-types_5.vb)]  
+ [!code-vb[VbVbalrDataTypes#5](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/generic-types_5.vb)]  
   
  如果后续代码尝试从提供未实现 <xref:System.IComparable> 的类型的 `itemManager` 中构造一个类，则编译器会提示错误。  
   
@@ -141,7 +141,7 @@ caps.handback.revision: 45
 ### 多个约束的示例  
  下面的示例演示了带有类型形参约束列表的泛型类的主干定义。 在创建此类的实例的代码中，类型实参必须实现 <xref:System.IComparable> 和 <xref:System.IDisposable> 接口，必须是引用类型，并且必须公开一个可访问的无参数构造函数。  
   
- [!code-vb[VbVbalrDataTypes#6](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/generic-types_6.vb)]  
+ [!code-vb[VbVbalrDataTypes#6](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/generic-types_6.vb)]  
   
 ## 重要术语  
  泛型类型引入并使用了以下术语：  

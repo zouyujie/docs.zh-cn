@@ -24,7 +24,7 @@ caps.handback.revision: 40
 ## 声明类  
  类使用 [class](../../../csharp/language-reference/keywords/class.md) 关键字进行声明，如下面的示例所示：  
   
- [!code-cs[csProgGuideObjects#79](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/classes_1.cs)]  
+ [!code-cs[csProgGuideObjects#79](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/classes_1.cs)]  
   
  `class` 关键字前面是访问级别。  由于在该例中使用 [public](../../../csharp/language-reference/keywords/public.md)，因此任何人都可以基于该类创建对象。  类的名称位于 `class` 关键字的后面。  定义的其余部分是类的主体，用于定义行为和数据。  类的字段、属性、方法和事件统称为“类成员”。  
   
@@ -33,22 +33,22 @@ caps.handback.revision: 40
   
  通过使用 [new](../../../csharp/language-reference/keywords/new.md) 关键字（后跟对象将基于的类的名称）可以创建对象，如下所示：  
   
- [!code-cs[csProgGuideObjects#80](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/classes_2.cs)]  
+ [!code-cs[csProgGuideObjects#80](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/classes_2.cs)]  
   
  创建类的实例后，将向程序员传递回对该对象的引用。  在前面的示例中，`object1` 是对基于 `Customer` 的对象的引用。  此引用引用新对象，但不包含对象数据本身。  实际上，可以在根本不创建对象的情况下创建对象引用：  
   
- [!code-cs[csProgGuideObjects#81](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/classes_3.cs)]  
+ [!code-cs[csProgGuideObjects#81](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/classes_3.cs)]  
   
  建议不要创建像这样的不引用对象的对象引用，因为在运行时通过这样的引用来访问对象的尝试将会失败。  但是，可以创建这样的引用来引用对象，方法是创建新对象，或者将它分配给现有的对象，如下所示：  
   
- [!code-cs[csProgGuideObjects#82](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/classes_4.cs)]  
+ [!code-cs[csProgGuideObjects#82](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/classes_4.cs)]  
   
  此代码创建了两个对象引用，它们引用同一个对象。  因此，通过 `object3` 对对象所做的任何更改都将反映在随后使用的 `object4` 中。  由于基于类的对象是按引用来引用的，因此类称为引用类型。  
   
 ## 类继承  
  继承是通过使用“派生”来实现的，而派生意味着类是使用“基类”声明的，它的数据和行为从基类继承。  通过在派生的类名后面追加冒号和基类名称，可以指定基类，如下所示：  
   
- [!code-cs[csProgGuideObjects#83](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/classes_5.cs)]  
+ [!code-cs[csProgGuideObjects#83](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/classes_5.cs)]  
   
  当类声明基类时，它继承基类除构造函数以外的所有成员。  
   
@@ -62,7 +62,7 @@ caps.handback.revision: 40
  下面的示例中定义了一个公共类，其中包含一个字段、一个方法和一个称为构造函数的特殊方法。  有关更多信息，请参见[构造函数](../../../csharp/programming-guide/classes-and-structs/constructors.md)。  然后使用 `new` 关键字将该类实例化。  
   
 ## 示例  
- [!code-cs[csProgGuideObjects#84](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/classes_6.cs)]  
+ [!code-cs[csProgGuideObjects#84](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/classes_6.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

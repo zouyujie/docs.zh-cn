@@ -30,7 +30,7 @@ caps.handback.revision: 18
  用户定义的类型可重载 `~` 运算符。  有关更多信息，请参见 [operator](../../../csharp/language-reference/keywords/operator.md)。  在枚举时通常允许整型运算。  
   
 ## 示例  
- [!code-cs[csRefOperators#25](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#25)]  
+ [!code-cs[csRefOperators#25](../../../csharp/language-reference/operators/codesnippet/CSharp/bitwise-complement-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

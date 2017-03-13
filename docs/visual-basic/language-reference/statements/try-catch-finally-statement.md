@@ -123,7 +123,7 @@ End Try
   
  你并不总是需要 `Try…Catch` 语句，以检查有可能出现的条件。  下面的示例在尝试打开文件之前，检查该文件是否存在。  这会减少捕获 <xref:System.IO.File.OpenText%2A> 方法所引发异常的需要。  
   
- [!code-vb[VbVbalrStatements#94](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/try-catch-finally-statem_1.vb)]  
+ [!code-vb[VbVbalrStatements#94](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_1.vb)]  
   
  确保 `Catch` 块中的代码可以将异常正确报告给用户，无论通过线程安全日志记录还是相应的消息。  否则，异常可能仍是未知的。  
   
@@ -148,31 +148,31 @@ End Try
 ## 部分信任的情形  
  在部分信任的情况下（如网络共享上承载的应用程序），`Try...Catch...Finally` 将不会捕获在调用包含该调用的方法之前发生的安全异常。  当将下面的示例放置在服务器共享上并从此处运行时，将生成错误“System.Security.SecurityException: 请求失败”。有关安全异常的更多信息，请参见 <xref:System.Security.SecurityException> 类。  
   
- [!code-vb[VbVbalrStatements#85](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/try-catch-finally-statem_2.vb)]  
+ [!code-vb[VbVbalrStatements#85](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_2.vb)]  
   
  在这种部分信任的情况下，您必须将 `Process.Start` 语句放在单独的 `Sub` 中。  对 `Sub` 的初次调用将失败。  这使得 `Try...Catch` 能够在包含 `Process.Start` 的 `Sub` 启动并产生安全异常之前捕获它。  
   
 ## 示例  
  下面的示例阐释了 `Try...Catch...Finally` 语句的结构。  
   
- [!code-vb[VbVbalrStatements#86](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/try-catch-finally-statem_3.vb)]  
+ [!code-vb[VbVbalrStatements#86](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_3.vb)]  
   
 ## 示例  
  下面的示例演示中，`CreateException` 方法引发 `NullReferenceException`。  代码生成的异常不在 `Try` 数据块中.  因此，`CreateException` 方法不对异常进行处理。  `RunSample` 方法未处理该异常，因为对 `CreateException` 方法的调用是在 `Try` 中。  
   
  对于若干类型的异常，该示例包含 `Catch` 语句，排列顺序是从最特定到最一般。  
   
- [!code-vb[VbVbalrStatements#91](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/try-catch-finally-statem_4.vb)]  
+ [!code-vb[VbVbalrStatements#91](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_4.vb)]  
   
 ## 示例  
  下面示例显示如何使用 `Catch When` 语句筛选条件表达式。  如果条件表达式计算为 `True`，则 `Catch` 块中的代码将运行。  
   
- [!code-vb[VbVbalrStatements#92](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/try-catch-finally-statem_5.vb)]  
+ [!code-vb[VbVbalrStatements#92](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_5.vb)]  
   
 ## 示例  
  下面的示例有 `Try…Catch` 语句，该语句包含在 `Try` 块中。  内部 `Catch` 块引发异常，该异常的 `InnerException` 属性设置为原始异常。  外部 `Catch` 块报告自己的异常和内部异常。  
   
- [!code-vb[VbVbalrStatements#93](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/try-catch-finally-statem_6.vb)]  
+ [!code-vb[VbVbalrStatements#93](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_6.vb)]  
   
 ## 示例  
  下面的示例演示异常处理异步方法的。  若要捕获适用于异步任务中的异常，`Await` 表达式。`Try` 块调用方，因此，异常。`Catch` 捕获块。  
@@ -181,14 +181,14 @@ End Try
   
  取消注释演示时所发生的 `Throw New OperationCancelledException` 行，则取消异步处理。  异常在 `Catch` 捕获块，并且，任务的 `IsCanceled` 属性设置为 `True`。  在某些条件下但是，这不适用于此示例，`IsFaulted` 设置为 `True`，并 `IsCanceled` 设置为 `False`。  
   
- [!code-vb[csAsyncExceptions#1](../../../csharp/language-reference/keywords/codesnippet/visualbasic/try-catch-finally-statem_7.vb)]  
+ [!code-vb[csAsyncExceptions#1](../../../csharp/language-reference/keywords/codesnippet/VisualBasic/try-catch-finally-statement_7.vb)]  
   
 ## 示例  
  下面的示例演示异常处理多个任务可能导致多个异常的位置。  `Try` 块有 <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName> 返回的任务的 `Await` 表达式。  任务已完成，当 <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName> 当应用时的三个任务完成。  
   
  三个任务原因中的每一个异常。  `Catch` 块通过异常重复，任务中的 `Exception.InnerExceptions` 属性中找到 `Task.WhenAll` 返回。  
   
- [!code-vb[csAsyncExceptions#3](../../../csharp/language-reference/keywords/codesnippet/visualbasic/try-catch-finally-statem_8.vb)]  
+ [!code-vb[csAsyncExceptions#3](../../../csharp/language-reference/keywords/codesnippet/VisualBasic/try-catch-finally-statement_8.vb)]  
   
 ## 请参阅  
  <xref:Microsoft.VisualBasic.Information.Err%2A>   

@@ -23,7 +23,7 @@ caps.handback.revision: 17
 ## 示例  
  该示例包含一个顶级类型 `T1` 和两个嵌套类 `M1` 和 `M2`。  这两个类包含具有不同声明的可访问性的字段。  在 `Main` 方法中，每个语句后都有注释，指示每个成员的可访问域。  注意，尝试引用不可访问的成员的语句被注释掉了。  如果希望查看由引用不可访问的成员所导致的编译器错误，请逐个移除注释。  
   
- [!code-cs[csrefKeywordsModifiers#4](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#4)]  
+ [!code-cs[csrefKeywordsModifiers#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/accessibility-domain_1.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

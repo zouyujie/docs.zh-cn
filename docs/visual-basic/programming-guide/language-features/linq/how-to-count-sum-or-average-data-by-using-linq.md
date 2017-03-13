@@ -82,7 +82,7 @@ caps.handback.revision: 9
   
      将下面的代码添加到 `Load` 事件以查询作为 <xref:System.Data.Linq.DataContext> 的属性公开的表，并对结果进行计数、求和与求平均值计算。  该示例使用 `Aggregate` 子句查询单个结果，使用 `Group By` 子句显示分组结果的平均值。  
   
-     [!code-vb[VbLINQToSQLHowTos#13](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/StoredProcedureHowTo/Form6.vb#13)]  
+     [!code-vb[VbLINQToSQLHowTos#13](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-count-sum-or-average-data-by-using-linq_1.vb)]  
   
 4.  按 F5 运行项目并查看结果。  
   

@@ -9,7 +9,7 @@ C\# 语言的异常处理功能可帮助您处理程序运行时出现的任何�
   
  此示例中使用一个方法检测是否有被零除的情况；如果有，则捕获该错误。  如果没有异常处理，此程序将终止并产生**“DivideByZeroException 未处理”**错误。  
   
- [!code-cs[csProgGuideExceptions#18](../../../csharp/programming-guide/exceptions/codesnippet/csharp/exceptions-and-exception_1.cs)]  
+ [!code-cs[csProgGuideExceptions#18](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/exceptions-and-exception-handling_1.cs)]  
   
 ## 异常概述  
  异常具有以下特点：  

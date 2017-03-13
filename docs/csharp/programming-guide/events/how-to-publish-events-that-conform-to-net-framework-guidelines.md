@@ -62,7 +62,7 @@ public delegate void EventHandler(object sender, EventArgs e);
 ## 示例  
  下面的示例通过将自定义 EventArgs 类和 <xref:System.EventHandler%601> 用作事件类型来演示上述步骤。  
   
- [!code-cs[csProgGuideEvents#2](../../../csharp/programming-guide/events/codesnippet/csharp/how-to-publish-events-th_1.cs)]  
+ [!code-cs[csProgGuideEvents#2](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-publish-events-that-conform-to-net-framework-guidelines_1.cs)]  
   
 ## 请参阅  
  <xref:System.Delegate>   

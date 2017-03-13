@@ -31,15 +31,15 @@ caps.handback.revision: 13
 ## TypeName 和 TypeOf...Is  
  `TypeName` 函数返回一个字符串，当您需要存储或显示对象的类名时，它是最佳选择，如以下代码片段中所示：  
   
- [!code-vb[VbVbalrOOP#92](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#92)]  
+ [!code-vb[VbVbalrOOP#92](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_1.vb)]  
   
  `TypeOf...Is` 运算符是测试对象类型的最佳选择，因为它比使用 `TypeName` 的等效字符串比较快得多。  以下代码片段在 `If...Then...Else` 语句中使用 `TypeOf...Is`：  
   
- [!code-vb[VbVbalrOOP#93](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#93)]  
+ [!code-vb[VbVbalrOOP#93](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_2.vb)]  
   
  这里应该提醒您几句。  如果对象属于某一特定类型或是从特定类型派生的，则 `TypeOf...Is` 运算符会返回 `True`。  您用 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 所做的几乎每项操作都涉及对象（包括通常不被视为对象的某些元素，例如字符串和整数）。  这些对象均从 <xref:System.Object> 派生并从其中继承方法。  当向 `TypeOf...Is` 运算符传递一个 `Integer` 并用 `Object` 计算它时，它返回 `True`。  下面的示例报告参数 `InParam` 既是 `Object` 也是 `Integer`：  
   
- [!code-vb[VbVbalrOOP#94](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#94)]  
+ [!code-vb[VbVbalrOOP#94](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_3.vb)]  
   
  下面的示例同时使用 `TypeOf...Is` 和 `TypeName` 来确定在 `Ctrl` 参数中传递给它的对象类型。  `TestObject` 过程使用三种不同的控件来调用 `ShowType`。  
   
@@ -51,7 +51,7 @@ caps.handback.revision: 13
   
 3.  向窗体中添加以下代码：  
   
-     [!code-vb[VbVbalrOOP#95](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#95)]  
+     [!code-vb[VbVbalrOOP#95](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_4.vb)]  
   
 ## 请参阅  
  <xref:Microsoft.VisualBasic.Information.TypeName%2A>   

@@ -53,7 +53,7 @@ caps.handback.revision: 22
 ## 示例  
  此示例更改默认 `SidebarMenu` 窗体的标题。  
   
- [!code-vb[VbVbalrMyForms#2](../../../visual-basic/language-reference/objects/codesnippet/visualbasic/my-forms-object_1.vb)]  
+ [!code-vb[VbVbalrMyForms#2](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-forms-object_1.vb)]  
   
  若要使此示例正常工作，项目必须具有名为 `SidebarMenu` 的窗体。  有关更多信息，请参见 [How to: Add Windows Forms to a Project](http://msdn.microsoft.com/zh-cn/3d7bb25f-fd90-47cf-9378-fa0d764686c1)。  
   

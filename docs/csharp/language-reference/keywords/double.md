@@ -55,7 +55,7 @@ double x = 3D;
 ## 示例  
  在下面的示例中，一个 [int](../../../csharp/language-reference/keywords/int.md)、一个 [short](../../../csharp/language-reference/keywords/short.md)、一个 [float](../../../csharp/language-reference/keywords/float.md) 和一个 `double` 相加，计算结果为 `double` 类型。  
   
- [!code-cs[csrefKeywordsTypes#9](../../../csharp/language-reference/keywords/codesnippet/csharp/double_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/double_1.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

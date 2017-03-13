@@ -35,7 +35,7 @@ caps.handback.revision: 13
   
      下面的示例将 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] `TimeOfDay` 属性的值设置为中午，隐式调用其 `Set` 过程。  
   
-     [!code-vb[VbVbcnProcedures#11](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-put-a-value-in-a-_1.vb)]  
+     [!code-vb[VbVbcnProcedures#11](./codesnippet/VisualBasic/how-to-put-a-value-in-a-property_1.vb)]  
   
 2.  如果该属性接受参数，请在属性名后用括号将参数列表括起来。  如果无任何参数，也可以选择省略括号。  
   

@@ -94,11 +94,11 @@ caps.handback.revision: 26
 ## 可选参数的隐式重载  
  带有一个 [Optional](../../../../visual-basic/language-reference/modifiers/optional.md) 参数的过程等效于两个重载过程，其中一个过程带有这个可选参数，另一个过程不带有这个可选参数。  您不能重载这样的一个过程，其参数列表对应于这两个过程中的任何一个。  下面的声明阐释了这一点。  
   
- [!code-vb[VbVbcnProcedures#58](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/considerations-in-overlo_1.vb)]  
+ [!code-vb[VbVbcnProcedures#58](./codesnippet/VisualBasic/considerations-in-overloading-procedures_1.vb)]  
   
- [!code-vb[VbVbcnProcedures#60](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/considerations-in-overlo_2.vb)]  
+ [!code-vb[VbVbcnProcedures#60](./codesnippet/VisualBasic/considerations-in-overloading-procedures_2.vb)]  
   
- [!code-vb[VbVbcnProcedures#61](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/considerations-in-overlo_3.vb)]  
+ [!code-vb[VbVbcnProcedures#61](./codesnippet/VisualBasic/considerations-in-overloading-procedures_3.vb)]  
   
  对于带多个可选参数的过程，存在一组隐式重载，产生它们的逻辑类似于前面示例中的逻辑。  
   
@@ -113,13 +113,13 @@ caps.handback.revision: 26
   
  下面的声明阐释了这些隐式重载。  
   
- [!code-vb[VbVbcnProcedures#68](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/considerations-in-overlo_4.vb)]  
+ [!code-vb[VbVbcnProcedures#68](./codesnippet/VisualBasic/considerations-in-overloading-procedures_4.vb)]  
   
- [!code-vb[VbVbcnProcedures#70](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/considerations-in-overlo_5.vb)]  
+ [!code-vb[VbVbcnProcedures#70](./codesnippet/VisualBasic/considerations-in-overloading-procedures_5.vb)]  
   
  您不能重载这样的一个过程，其参数列表采用一维参数数组的形式。  但是，您可以使用其他隐式重载的签名。  下面的声明阐释了这一点。  
   
- [!code-vb[VbVbcnProcedures#71](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/considerations-in-overlo_6.vb)]  
+ [!code-vb[VbVbcnProcedures#71](./codesnippet/VisualBasic/considerations-in-overloading-procedures_6.vb)]  
   
 ## 作为替换重载的方法 — 无类型编程  
  如果要使调用代码传递不同的数据类型与参数，一种替代方法是无类型编程。  可以使用编译器选项 [Option Strict 语句](../../../../visual-basic/language-reference/statements/option-strict-statement.md) 或 [\/optionstrict](../../../../visual-basic/reference/command-line-compiler/optionstrict.md) 将类型检查开关设置为 `Off`。  这样，就不一定要声明参数的数据类型。  然而同重载相比，该方法有以下缺点：  

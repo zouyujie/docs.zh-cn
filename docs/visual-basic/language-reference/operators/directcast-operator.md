@@ -46,7 +46,7 @@ caps.handback.revision: 23
 ## 示例  
  下面的示例演示 `DirectCast` 的两种用法，一种在运行时发生失败，另一种取得成功。  
   
- [!code-vb[VbVbalrKeywords#1](../../../visual-basic/language-reference/codesnippet/visualbasic/directcast-operator_1.vb)]  
+ [!code-vb[VbVbalrKeywords#1](../../../visual-basic/language-reference/codesnippet/VisualBasic/directcast-operator_1.vb)]  
   
  在前面的示例中，`q` 的运行时类型为 `Double`。  `CType` 能够成功是因为 `Double` 可转换为 `Integer`。  但是，第一个 `DirectCast` 在运行时失败是因为 `Double` 的运行时类型与 `Integer` 没有继承关系，即使是可以进行转换。  第二个 `DirectCast` 成功是因为它从 <xref:System.Windows.Forms.Form> 类型转换为 <xref:System.Windows.Forms.Control> 类型，而 <xref:System.Windows.Forms.Form> 继承自该类型。  
   

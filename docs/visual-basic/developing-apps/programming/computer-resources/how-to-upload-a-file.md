@@ -31,19 +31,19 @@ caps.handback.revision: 22
   
 -   使用 `UploadFile` 方法上载文件，同时将源文件的位置和目标目录的位置指定为字符串或 URI（统一资源标识符）。此示例将 `Order.txt` 文件上载到 `http://www.cohowinery.com/uploads.aspx`。  
   
-     [!code-vb[VbResourceTasks#6](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-upload-a-file_1.vb)]  
+     [!code-vb[VbResourceTasks#6](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-upload-a-file_1.vb)]  
   
 ### 上载文件并显示该操作的进度  
   
 -   使用 `UploadFile` 方法上载文件，同时将源文件的位置和目标目录的位置指定为字符串或 URI。  此示例在不提供用户名或密码的情况下将 `Order.txt` 文件上载到 `http://www.cohowinery.com/uploads.aspx`，显示上载操作的进度，并将超时间隔设置为 500 毫秒。  
   
-     [!code-vb[VbResourceTasks#7](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-upload-a-file_2.vb)]  
+     [!code-vb[VbResourceTasks#7](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-upload-a-file_2.vb)]  
   
 ### 在提供用户名和密码的情况下上载文件  
   
 -   使用 `UploadFile` 方法上载文件，同时将源文件的位置和目标目录的位置指定为字符串或 URI，并指定用户名和密码。  此示例将 `Order.txt` 文件上载到 `http://www.cohowinery.com/uploads.aspx`，同时提供用户名 `anonymous` 和一个空密码。  
   
-     [!code-vb[VbResourceTasks#8](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-upload-a-file_3.vb)]  
+     [!code-vb[VbResourceTasks#8](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-upload-a-file_3.vb)]  
   
 ## 可靠编程  
  以下情况可能会引发异常：  

@@ -23,12 +23,12 @@ caps.handback.revision: 13
   
  第二个方法产生其类别 ID 列在左侧类别列表中的所有产品的序列。  请注意，这种方法使用 `let` 子句和 `Contains` 方法创建了一个临时数组。  还可以在查询前创建该数组并去掉第一个 `from` 子句。  
   
- [!code-cs[csProgGuideLINQ#64](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#64)]  
+ [!code-cs[csProgGuideLINQ#64](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-perform-custom-join-operations_1.cs)]  
   
 ## 示例  
  在下面的示例中，查询必须基于匹配键联接两个序列，而对于内部（右侧）序列而言，无法在 join 子句本身之前获取这些键。  如果此联接是使用 `join` 子句执行的，则必须为每个元素调用 `Split` 方法。  使用多个 `from` 子句可使查询避免反复进行方法调用的系统开销。  然而，由于 `join` 进行了优化，因此在此特定情况下，它仍然可能比使用多个 `from` 子句快。  结果会有所不同，主要取决于方法调用的系统开销有多大。  
   
- [!code-cs[csProgGuideLINQ#13](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#13)]  
+ [!code-cs[csProgGuideLINQ#13](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-perform-custom-join-operations_2.cs)]  
   
 ## 编译代码  
   

@@ -30,7 +30,7 @@ caps.handback.revision: 12
 ## 示例  
  此示例显示 `Nickname` 设置的值。  
   
- [!code-vb[VbVbalrMyResources#14](../../../../visual-basic/developing-apps/programming/app-settings/codesnippet/visualbasic/VbVbalrMyResources2/Form1.vb#14)]  
+ [!code-vb[VbVbalrMyResources#14](../../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/how-to-read-application-settings_1.vb)]  
   
  若要使此示例正常工作，应用程序必须具有类型为 `String` 的 `Nickname` 设置。  有关更多信息，请参见[管理应用程序设置 \(.NET\)](/visual-studio/ide/managing-application-settings-dotnet)。  
   

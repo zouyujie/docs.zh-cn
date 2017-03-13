@@ -19,17 +19,17 @@ caps.handback.revision: 9
 # out 参数修饰符（C# 参考）
 `out` 关键字会导致参数通过引用来传递。  这与 [ref](../../../csharp/language-reference/keywords/ref.md) 关键字类似，不同之处在于 `ref` 要求变量必须在传递之前进行初始化。  若要使用 `out` 参数，方法定义和调用方法都必须显式使用 `out` 关键字。  例如：  
   
- [!code-cs[csrefKeywordsMethodParams#1](../../../csharp/language-reference/keywords/codesnippet/csharp/out-parameter-modifier_1.cs)]  
+ [!code-cs[csrefKeywordsMethodParams#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/out-parameter-modifier_1.cs)]  
   
  尽管作为 `out` 参数传递的变量不必在传递之前进行初始化，但被调用的方法需要在返回之前赋一个值。  
   
  尽管 `ref` 和 `out` 关键字会导致不同的运行时行为，但在编译时并不会将它们视为方法签名的一部分。  因此，如果两个方法唯一的区别是：一个接受 `ref` 参数，另一个接受 `out` 参数，则无法重载这两个方法。  例如，不会编译下面的代码：  
   
- [!code-cs[csrefKeywordsMethodParams#2](../../../csharp/language-reference/keywords/codesnippet/csharp/out-parameter-modifier_2.cs)]  
+ [!code-cs[csrefKeywordsMethodParams#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/out-parameter-modifier_2.cs)]  
   
  但是，如果一个方法采用 `ref` 或 `out` 参数，而另一个方法不采用这两类参数，则可以进行重载，如下所示：  
   
- [!code-cs[csrefKeywordsMethodParams#3](../../../csharp/language-reference/keywords/codesnippet/csharp/out-parameter-modifier_3.cs)]  
+ [!code-cs[csrefKeywordsMethodParams#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/out-parameter-modifier_3.cs)]  
   
  属性不是变量，因此不能作为 `out` 参数传递。  
   
@@ -44,7 +44,7 @@ caps.handback.revision: 9
 ## 示例  
  当希望方法返回多个值时，声明 `out` 方法很有用。  下面的示例使用 `out` 在一次方法调用中返回三个变量。  请注意，第三个参数所赋的值为 Null。  这样使方法可以有选择地返回值。  
   
- [!code-cs[csrefKeywordsMethodParams#4](../../../csharp/language-reference/keywords/codesnippet/csharp/out-parameter-modifier_4.cs)]  
+ [!code-cs[csrefKeywordsMethodParams#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/out-parameter-modifier_4.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

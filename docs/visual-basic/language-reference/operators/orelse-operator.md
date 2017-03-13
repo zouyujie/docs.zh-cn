@@ -66,14 +66,14 @@ result = expression1 OrElse expression2
 ## 示例  
  下面的示例使用 `OrElse` 运算符对两个表达式执行逻辑析取。  结果是一个 `Boolean` 值，它表示两个表达式中是否有一个为真。  如果第一个表达式为 `True`，则不计算第二个表达式。  
   
- [!code-vb[VbVbalrOperators#37](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/orelse-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#37](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/orelse-operator_1.vb)]  
   
  上面的示例分别产生结果 `True`、`True` 和 `False`。  在计算 `firstCheck` 的过程中，因为第一个表达式已经为 `True`，所以不计算第二个表达式。  但是，在计算 `secondCheck` 时将计算第二个表达式。  
   
 ## 示例  
  下面的示例演示一个包含两个过程调用的 `If`...`Then` 语句。  如果第一个调用返回 `True`，则不调用第二个过程。  如果第二个过程执行运行此节代码时应始终执行的重要任务，这将产生意外结果。  
   
- [!code-vb[VbVbalrOperators#38](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/orelse-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#38](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/orelse-operator_2.vb)]  
   
 ## 请参阅  
  [逻辑\/按位运算符](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)   

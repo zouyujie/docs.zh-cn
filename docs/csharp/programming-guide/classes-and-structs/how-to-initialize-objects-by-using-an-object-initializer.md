@@ -26,12 +26,12 @@ caps.handback.revision: 20
 ## 示例  
  下面的示例演示如何使用对象初始值设定项初始化新的 `StudentName` 类型。  
   
- [!code-cs[csProgGuideLINQ#35](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#35)]  
+ [!code-cs[csProgGuideLINQ#35](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-initialize-objects-by-using-an-object-initializer_1.cs)]  
   
 ## 示例  
  下面的示例演示如何使用集合初始值设定项初始化一个 `StudentName` 类型集合。  请注意，集合初始值设定项是一系列由逗号分隔的对象初始值设定项。  
   
- [!code-cs[csProgGuideLINQ#36](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#36)]  
+ [!code-cs[csProgGuideLINQ#36](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-initialize-objects-by-using-an-object-initializer_2.cs)]  
   
 ## 编译代码  
  若要运行这段代码，请将该类复制并粘贴到已经在 [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs-md.md)] 中创建的 Visual C\# 控制台应用程序项目中。  有关更多信息，请参见[How to: Create a LINQ Project](../Topic/How%20to:%20Create%20a%20LINQ%20Project.md)。  

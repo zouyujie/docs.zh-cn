@@ -32,13 +32,13 @@ caps.handback.revision: 21
   
 -   使用 `CopyFile` 方法可以提供目标文件和位置。  下面的示例创建 `test.txt` 的名为 `test2.txt` 的副本。  
   
-     [!code-vb[VbVbcnMyFileSystem#51](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-create-a-copy-of-_0_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#51](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-create-a-copy-of-a-file-in-the-same-directory_1.vb)]  
   
 ### 通过覆盖现有文件在同一文件夹中创建文件副本  
   
 -   使用 `CopyFile` 方法可以提供目标文件和位置，还可以将 `overwrite` 设置为 `True`。  下面的示例创建 `test.txt` 的名为 `test2.txt` 的副本，并用该名称覆盖任何现有文件。  
   
-     [!code-vb[VbVbcnMyFileSystem#52](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-create-a-copy-of-_0_2.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#52](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-create-a-copy-of-a-file-in-the-same-directory_2.vb)]  
   
 ## 可靠编程  
  以下情况可能会导致引发异常：  

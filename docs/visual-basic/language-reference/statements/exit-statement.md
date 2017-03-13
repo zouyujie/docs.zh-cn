@@ -75,17 +75,17 @@ Exit { Do | For | Function | Property | Select | Sub | Try | Whil
 ## 示例  
  在下面的示例中，当 `index` 变量大于 100 时，循环条件将停止循环。  但是，循环中的 `If` 语句在索引变量大于 10 时将导致 `Exit Do` 语句停止循环。  
   
- [!code-vb[VbVbalrStatements#133](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/exit-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#133](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/exit-statement_1.vb)]  
   
 ## 示例  
  下面的示例将返回值赋给函数名 `myFunction`，然后使用 `Exit Function` 从该函数返回。  
   
- [!code-vb[VbVbalrStatements#23](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/exit-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#23](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/exit-statement_2.vb)]  
   
 ## 示例  
  以下示例用 [Return 语句](../../../visual-basic/language-reference/statements/return-statement.md) 分配返回值，并退出函数。  
   
- [!code-vb[VbVbalrStatements#24](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/exit-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#24](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/exit-statement_3.vb)]  
   
 ## 请参阅  
  [Continue 语句](../../../visual-basic/language-reference/statements/continue-statement.md)   

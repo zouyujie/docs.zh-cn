@@ -66,13 +66,13 @@ caps.handback.revision: 49
   
 2.  将下面的代码添加到 `Click` 事件处理程序中。  
   
-     [!code-vb[VbVbcnMyFileSystem#103](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_0_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#103](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_1.vb)]  
   
      `FolderBrowserDialog1.ShowDialog` 调用打开**“浏览文件夹”**对话框。  用户单击**“确定”**后，<xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> 属性将作为参数发送到 `ListFiles` 方法，将在下一步添加该方法。  
   
 3.  添加下面的 `ListFiles` 方法。  
   
-     [!code-vb[VbVbcnMyFileSystem#104](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_0_2.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#104](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_2.vb)]  
   
      此代码首先清除**“ListBox”**。  
   
@@ -92,7 +92,7 @@ caps.handback.revision: 49
   
 2.  将下面的代码添加到 `Click` 事件处理程序中。  
   
-     [!code-vb[VbVbcnMyFileSystem#105](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_0_3.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#105](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_3.vb)]  
   
      该代码确认在 `ListBox` 中选择了一个项目。  然后，它从 `ListBox` 获取文件路径条目。  <xref:Microsoft.VisualBasic.FileIO.FileSystem.FileExists%2A> 方法用来检查文件是否仍存在。  
   
@@ -100,7 +100,7 @@ caps.handback.revision: 49
   
 3.  添加下面的 `GetTextForOutput` 方法。  
   
-     [!code-vb[VbVbcnMyFileSystem#107](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_0_4.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#107](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_4.vb)]  
   
      该代码使用 <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo%2A> 方法获取文件参数。  文件参数将添加到 <xref:System.Text.StringBuilder>。  
   
@@ -116,7 +116,7 @@ caps.handback.revision: 49
   
 1.  将以下代码添加到 `examineButton_Click` 事件处理程序的末尾。  
   
-     [!code-vb[VbVbcnMyFileSystem#106](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_0_5.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#106](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_5.vb)]  
   
      该代码设置日志文件路径，以便将日志文件放在与所选文件相同的目录中。  将日志项目的文本设置为当前日期和时间，后跟文件信息。  
   
@@ -132,7 +132,7 @@ caps.handback.revision: 49
   
 2.  将以下代码添加到事件处理程序中。  
   
-     [!code-vb[VbVbcnMyFileSystem#102](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_0_6.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#102](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_6.vb)]  
   
      此代码将文件夹浏览器的默认目录设置为当前目录。  
   
@@ -144,7 +144,7 @@ caps.handback.revision: 49
   
 1.  添加下面的 `SetEnabled` 方法。  
   
-     [!code-vb[VbVbcnMyFileSystem#108](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_0_7.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#108](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_7.vb)]  
   
      `SetEnabled` 方法根据 `ListBox` 中是否选择了项目来启用或禁用控件。  
   
@@ -161,12 +161,12 @@ caps.handback.revision: 49
 ## 使用 My.Computer.FileSystem 的完整示例  
  下面是完整示例。  
   
- [!code-vb[VbVbcnMyFileSystem#101](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_0_8.vb)]  
+ [!code-vb[VbVbcnMyFileSystem#101](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_8.vb)]  
   
 ## 使用 System.IO 的完整示例  
  以下等效示例使用来自 <xref:System.IO> 命名空间的类，而不是使用 `My.Computer.FileSystem` 对象。  
   
- [!code-vb[VbVbcnMyFileSystem#111](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_0_9.vb)]  
+ [!code-vb[VbVbcnMyFileSystem#111](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_9.vb)]  
   
 ## 请参阅  
  <xref:System.IO>   

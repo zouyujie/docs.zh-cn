@@ -23,7 +23,7 @@ caps.handback.revision: 10
 ## 示例  
  下面的示例演示如何使用 `is` 和 `as` 运算符从一个引用类型强制转换为另一个引用类型，而没有引发异常的风险。  此示例还演示如何对 `as` 运算符使用可以为 null 值的类型。  
   
- [!code-cs[csProgGuideTypes#40](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/how-to-safely-cast-by-us_1.cs)]  
+ [!code-cs[csProgGuideTypes#40](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-safely-cast-by-using-as-and-is-operators_1.cs)]  
   
 ## 请参阅  
  [类型](../../../csharp/programming-guide/types/index.md)   

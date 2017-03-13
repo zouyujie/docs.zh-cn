@@ -67,7 +67,7 @@ object...<descendant>
 ## 示例  
  下面的示例演示如何访问 `contacts` 对象的第一个名为 `name` 的子代节点的值，以及所有名为 `phone` 的子代节点的值。  
   
- [!code-vb[VbXMLSamples#25](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-descendant-axis-prop_1.vb)]  
+ [!code-vb[VbXMLSamples#25](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-descendant-axis-property_1.vb)]  
   
  这段代码将显示以下文本：  
   
@@ -78,7 +78,7 @@ object...<descendant>
 ## 示例  
  下面的示例将 `ns` 声明为 XML 命名空间前缀。  然后，使用该命名空间前缀创建 XML 文本并访问第一个具有限定名 `ns:name` 的子节点的值。  
   
- [!code-vb[VbXMLSamples#26](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-descendant-axis-prop_2.vb)]  
+ [!code-vb[VbXMLSamples#26](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-descendant-axis-property_2.vb)]  
   
  这段代码将显示以下文本：  
   

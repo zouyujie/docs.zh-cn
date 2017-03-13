@@ -21,12 +21,12 @@ caps.handback.revision: 20
 ## 示例  
  当泛型类创建类型的新实例，请将 `new` 约束应用于类型参数，如下面的示例所示：  
   
- [!code-cs[csrefKeywordsOperator#5](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsOperator/csrefKeywordsOperators.cs#5)]  
+ [!code-cs[csrefKeywordsOperator#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/new-constraint_1.cs)]  
   
 ## 示例  
  当与其他约束一起使用时，`new()` 约束必须最后指定：  
   
- [!code-cs[csrefKeywordsOperator#6](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsOperator/csrefKeywordsOperators.cs#6)]  
+ [!code-cs[csrefKeywordsOperator#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/new-constraint_2.cs)]  
   
  有关更多信息，请参见 [类型参数的约束](../../../csharp/programming-guide/generics/constraints-on-type-parameters.md)。  
   

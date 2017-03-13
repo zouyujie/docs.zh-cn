@@ -78,7 +78,7 @@ caps.handback.revision: 5
   
      将下面的代码添加到 `Load` 事件以查询作为数据上下文的属性公开的表，并对结果进行排序。  查询将按照客户订单数量以降序对结果进行排序。  具有相同订单数量的客户按照公司名称以升序（默认设置）进行排序。  
   
-     [!code-vb[VbLINQToSQLHowTos#10](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/StoredProcedureHowTo/Form4.vb#10)]  
+     [!code-vb[VbLINQToSQLHowTos#10](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-sort-query-results-by-using-linq_1.vb)]  
   
 4.  按 F5 运行项目并查看结果。  
   

@@ -49,7 +49,7 @@ caps.handback.revision: 17
 ## 示例  
  此示例调用 `TemperatureConverter` XML Web services 的 `FahrenheitToCelsius` 方法，然后返回结果。  
   
- [!code-vb[VbVbalrMyWebService#1](../../../visual-basic/language-reference/objects/codesnippet/visualbasic/VbVbalrMyWebService/Form1.vb#1)]  
+ [!code-vb[VbVbalrMyWebService#1](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-webservices-object_1.vb)]  
   
  为使此示例运行，项目必须引用一个名为 `Converter` 的 Web 服务，而且该 Web 服务必须公开 `ConvertTemperature` 方法。  有关更多信息，请参见[访问应用程序 Web 服务](../../../visual-basic/developing-apps/programming/accessing-application-web-services.md)。  
   

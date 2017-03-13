@@ -27,7 +27,7 @@ caps.handback.revision: 22
   
  以下来自 `GenericList<T>` 类的示例显示了如何使用 `default` 关键字。  有关更多信息，请参见[泛型概述](../../../csharp/programming-guide/generics/introduction-to-generics.md)。  
   
- [!code-cs[csProgGuideGenerics#41](../../../csharp/programming-guide/generics/codesnippet/csharp/default-keyword-in-gener_1.cs)]  
+ [!code-cs[csProgGuideGenerics#41](../../../csharp/programming-guide/generics/codesnippet/CSharp/default-keyword-in-generic-code_1.cs)]  
   
 ## 请参阅  
  <xref:System.Collections.Generic>   

@@ -68,7 +68,7 @@ number1 * number2
 ## 示例  
  本示例使用 `*` 运算符将两个数相乘。  结果是两个操作数的乘积。  
   
- [!code-vb[VbVbalrOperators#4](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/multiplication-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#4](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/multiplication-operator_1.vb)]  
   
 ## 请参阅  
  [\*\= 运算符](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)   

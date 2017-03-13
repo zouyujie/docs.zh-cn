@@ -63,12 +63,12 @@ Inherits basetypenames
 ## 示例  
  下面的示例使用 `Inherits` 语句来演示名为 `thisClass` 的类如何继承名为 `anotherClass` 的基类的所有成员。  
   
- [!code-vb[VbVbalrStatements#37](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/inherits-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#37](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/inherits-statement_1.vb)]  
   
 ## 示例  
  下面的示例演示多个接口的继承。  
   
- [!code-vb[VbVbalrStatements#38](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/inherits-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#38](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/inherits-statement_2.vb)]  
   
  现在，名为 `thisInterface` 的接口包含 <xref:System.IComparable>、<xref:System.IDisposable> 和 <xref:System.IFormattable> 接口中的所有定义。继承的成员分别提供这些功能：对两个对象进行特定于类型的比较、释放分配的资源，以及将对象的值表示为 `String`。  实现 `thisInterface` 的类必须实现每个基接口的每个成员。  
   

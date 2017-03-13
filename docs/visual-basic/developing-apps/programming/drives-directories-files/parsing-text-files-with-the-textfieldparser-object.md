@@ -28,11 +28,11 @@ caps.handback.revision: 20
 ## 分析不同类型的文本文件  
  文本文件包含的字段可能有多种宽度，也可能使用字符（如逗号或制表符）分隔。  如下例所示，定义 `TextFieldType` 和分隔符，该示例使用 `SetDelimiters` 方法定义制表符分隔的文本文件：  
   
- [!code-vb[VbVbalrTextFieldParser#21](../../../../visual-basic/developing-apps/development-with-my/codesnippet/visualbasic/parsing-text-files-with-_1.vb)]  
+ [!code-vb[VbVbalrTextFieldParser#21](../../../../visual-basic/developing-apps/development-with-my/codesnippet/VisualBasic/parsing-text-files-with-the-textfieldparser-object_1.vb)]  
   
  其他文本文件可能包含固定宽度的字段。  在这种情况下，您需要将 `TextFieldType` 定义为 `FixedWidth`，并定义各字段的宽度，如下例所示。  此示例使用 `SetFieldWidths` 方法定义文本列：第一列的宽度为 5 个字符，第二列的宽度为 10 个字符，第三列的宽度为 11 个字符，第四列的宽度是可变的。  
   
- [!code-vb[VbVbalrTextFieldParser#22](../../../../visual-basic/developing-apps/development-with-my/codesnippet/visualbasic/parsing-text-files-with-_2.vb)]  
+ [!code-vb[VbVbalrTextFieldParser#22](../../../../visual-basic/developing-apps/development-with-my/codesnippet/VisualBasic/parsing-text-files-with-the-textfieldparser-object_2.vb)]  
   
  定义了格式之后，您即可使用 `ReadFields` 方法依次处理各行来循环访问文件。  
   

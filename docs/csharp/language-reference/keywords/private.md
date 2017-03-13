@@ -38,7 +38,7 @@ class Employee
 ## 示例  
  在此示例中，`Employee` 类包含两个私有数据成员 `name` 和 `salary`。  作为私有成员，它们只能通过成员方法来访问。  添加名为 `GetName` 和 `Salary` 的公共方法，以便可以对私有成员进行受控的访问。  通过公共方法访问 `name` 成员，而通过公共只读属性访问`salary` 成员。  （有关更多信息，请参见 [属性](../../../csharp/programming-guide/classes-and-structs/properties.md)。）  
   
- [!code-cs[csrefKeywordsModifiers#10](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#10)]  
+ [!code-cs[csrefKeywordsModifiers#10](../../../csharp/language-reference/keywords/codesnippet/CSharp/private_1.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

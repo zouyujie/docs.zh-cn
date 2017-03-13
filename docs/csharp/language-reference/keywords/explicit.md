@@ -21,11 +21,11 @@ caps.handback.revision: 21
 # explicit（C# 参考）
 `explicit` 关键字用于声明必须使用强制转换来调用的用户定义的类型转换运算符。  例如，在下面的示例中，此运算符将名为 Fahrenheit 的类转换为名为 Celsius 的类：  
   
- [!code-cs[csrefKeywordsConversion#2](../../../csharp/language-reference/keywords/codesnippet/csharp/explicit_1.cs)]  
+ [!code-cs[csrefKeywordsConversion#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/explicit_1.cs)]  
   
  可以如下所示调用此转换运算符：  
   
- [!code-cs[csrefKeywordsConversion#3](../../../csharp/language-reference/keywords/codesnippet/csharp/explicit_2.cs)]  
+ [!code-cs[csrefKeywordsConversion#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/explicit_2.cs)]  
   
  转换运算符将源类型转换为目标类型。  源类型提供转换运算符。  与隐式转换不同，必须通过强制转换的方式来调用显式转换运算符。  如果转换操作可能导致异常或丢失信息，则应将其标记为 `explicit`。  这可以防止编译器无提示地调用可能产生无法预见后果的转换操作。  
   
@@ -36,12 +36,12 @@ caps.handback.revision: 21
 ## 示例  
  下面的示例提供 `Fahrenheit` 和 `Celsius` 类，它们中的每一个都为另一个提供显式转换运算符。  
   
- [!code-cs[csrefKeywordsConversion#1](../../../csharp/language-reference/keywords/codesnippet/csharp/explicit_3.cs)]  
+ [!code-cs[csrefKeywordsConversion#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/explicit_3.cs)]  
   
 ## 示例  
  下面的示例定义一个结构 `Digit`，该结构表示单个十进制数字。  定义了一个运算符，用于将 `byte` 转换为 `Digit`，但因为并非所有字节都可以转换为 `Digit`，所以该转换是显式的。  
   
- [!code-cs[csrefKeywordsConversion#4](../../../csharp/language-reference/keywords/codesnippet/csharp/explicit_4.cs)]  
+ [!code-cs[csrefKeywordsConversion#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/explicit_4.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

@@ -111,7 +111,7 @@ End Structure
 ## 示例  
  下面的示例使用 `Structure` 语句定义雇员的一系列相关数据。  它演示了 `Public`、`Friend` 和 `Private` 成员的用法，从而反映数据项的敏感性。  它还将显示过程、属性和事件成员。  
   
- [!code-vb[VbVbalrStatements#57](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/structure-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#57](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/structure-statement_1.vb)]  
   
 ## 请参阅  
  [Class 语句](../../../visual-basic/language-reference/statements/class-statement.md)   

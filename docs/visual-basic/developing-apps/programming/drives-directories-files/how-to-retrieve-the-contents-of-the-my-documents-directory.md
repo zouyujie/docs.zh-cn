@@ -27,7 +27,7 @@ caps.handback.revision: 13
   
 -   使用 `ReadAllText` 方法读取特定目录中每个文件的文本。  下面的代码指定一个目录和一个文件，然后使用 `ReadAllText` 将它们读入名为 `patients` 的字符串中。  
   
-     [!code-vb[VbVbcnMyFileSystem#15](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-retrieve-the-cont_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#15](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-retrieve-the-contents-of-the-my-documents-directory_1.vb)]  
   
 ## 请参阅  
  <xref:Microsoft.VisualBasic.FileIO.SpecialDirectories>   

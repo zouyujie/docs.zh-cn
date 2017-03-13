@@ -35,21 +35,21 @@ caps.handback.revision: 24
   
 1.  编写一个包括代码访问级别、 `Enum` 关键字和一个有效的名称的声明，如下面的示例中，每个声明不同的 `Enum`。  
   
-     [!code-vb[VbEnumsTask#3](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#3)]  
+     [!code-vb[VbEnumsTask#3](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-enumerations_1.vb)]  
   
 2.  在枚举中定义常量。  默认情况下，枚举中的第一个常数初始化为 `0`，并且，后续常数比前面的常数初始化为值为一个。  例如，下面的枚举， `Days`，包含一个常数命名为值 `0`，常量的 `Sunday` 命名为值 `1`，常量的 `Monday` 名为与 `2`的值 `Tuesday` ，依此类推。  
   
-     [!code-vb[VbEnumsTask#4](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#4)]  
+     [!code-vb[VbEnumsTask#4](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-enumerations_2.vb)]  
   
 3.  使用赋值语句，可以将值显式赋予枚举中的常数。  可赋予任何整数值，包括负数。  例如，您可能希望值小于零的常数表示错误状态。  下面的枚举，常量 `Invalid` 将值显式赋予了 `–1`，因此，该常数 `Sunday` 被赋予值 `0`。  因为是枚举中的第一个常数， `Saturday` 还初始化为值 `0`。  `Monday` 的值是 `1` \(一个比 `Sunday`的值\); `Tuesday` 的值是 `2`，依此类推。  
   
-     [!code-vb[VbEnumsTask#5](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#5)]  
+     [!code-vb[VbEnumsTask#5](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-enumerations_3.vb)]  
   
 ### 将枚举声明为显式类型  
   
 -   使用 `As` 子句，如下面的示例所示，指定枚举的类型，。  
   
-     [!code-vb[VbEnumsTask#6](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#6)]  
+     [!code-vb[VbEnumsTask#6](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-enumerations_4.vb)]  
   
 ## 请参阅  
  [枚举和名称限定](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)   

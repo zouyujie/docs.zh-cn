@@ -23,12 +23,12 @@ caps.handback.revision: 21
 ## 示例  
  下面的示例演示如何将一个长字符串拆分为几个较短的字符串，从而提高源代码的可读性。  这些较短的字符串将在编译时串联成一个字符串。  无论涉及到多少个字符串，都不会有运行时性能开销。  
   
- [!code-cs[csProgGuideStrings#30](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#30)]  
+ [!code-cs[csProgGuideStrings#30](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-concatenate-multiple-strings_1.cs)]  
   
 ## 示例  
  若要串联字符串变量，可以使用 `+` 或 `+=` 运算符，也可以使用 <xref:System.String.Concat%2A?displayProperty=fullName>、<xref:System.String.Format%2A?displayProperty=fullName> 或 <xref:System.Text.StringBuilder.Append%2A?displayProperty=fullName> 方法。  `+` 运算符容易使用，且有利于提高代码的直观性。  即使在一条语句中使用多个 \+ 运算符，字符串内容也将只复制一次。  但是，如果重复此操作多次（如使用循环），则可能会导致出现效率问题。  例如，考虑下面的代码：  
   
- [!code-cs[csProgGuideStrings#23](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#23)]  
+ [!code-cs[csProgGuideStrings#23](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-concatenate-multiple-strings_2.cs)]  
   
 > [!NOTE]
 >  在字符串串联操作中，C\# 编译器对 null 字符串和空字符串进行相同的处理，但它不转换原始 null 字符串的值。  
@@ -37,7 +37,7 @@ caps.handback.revision: 21
   
  但如果性能的优劣很重要，则应该总是使用 <xref:System.Text.StringBuilder> 类来串联字符串。  下面的代码使用 <xref:System.Text.StringBuilder> 类的 <xref:System.Text.StringBuilder.Append%2A> 方法来串联字符串，因此不会有 `+` 运算符的链接作用产生。  
   
- [!code-cs[csProgGuideStrings#22](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#22)]  
+ [!code-cs[csProgGuideStrings#22](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-concatenate-multiple-strings_3.cs)]  
   
 ## 请参阅  
  <xref:System.String>   

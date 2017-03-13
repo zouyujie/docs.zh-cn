@@ -25,7 +25,7 @@ caps.handback.revision: 14
  用户定义的值类型可重载 `==` 运算符（请参见 [operator](../../../csharp/language-reference/keywords/operator.md)）。  用户定义的引用类型也可重载 \=\= 运算符，尽管在默认情况下，无论对于预定义的引用类型还是用户定义的引用类型，`==` 的行为都与上面描述的相同。  如果重载 `==`，则还必须重载 [\!\=](../../../csharp/language-reference/operators/not-equal-operator.md)。  在枚举时通常允许整型运算。  
   
 ## 示例  
- [!code-cs[csRefOperators#36](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#36)]  
+ [!code-cs[csRefOperators#36](../../../csharp/language-reference/operators/codesnippet/CSharp/equality-comparison-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

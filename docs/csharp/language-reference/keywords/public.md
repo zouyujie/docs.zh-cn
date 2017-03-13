@@ -33,7 +33,7 @@ class SampleClass
 ## 示例  
  在下面的示例中，声明了两个类：`PointTest` 和 `MainClass`。  直接从 `MainClass` 访问 `PointTest` 的公共成员 `x` 和 `y`。  
   
- [!code-cs[csrefKeywordsModifiers#13](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#13)]  
+ [!code-cs[csrefKeywordsModifiers#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/public_1.cs)]  
   
  如果将 `public` 访问级别更改为 [private](../../../csharp/language-reference/keywords/private.md) 或 [protected](../../../csharp/language-reference/keywords/protected.md)，您将收到错误信息：  
   

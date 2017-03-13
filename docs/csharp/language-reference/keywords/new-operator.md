@@ -54,7 +54,7 @@ int i = 0;
 ## 示例  
  在下面的示例中，通过使用 `new` 运算符创建并初始化一个 `struct` 对象和一个类对象，然后为它们赋值。  显示了默认值和所赋的值。  
   
- [!code-cs[csrefKeywordsOperator#7](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsOperator/csrefKeywordsOperators.cs#7)]  
+ [!code-cs[csrefKeywordsOperator#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/new-operator_1.cs)]  
   
  注意，在示例中字符串的默认值为 `null`，  因此未显示它。  
   

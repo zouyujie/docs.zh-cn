@@ -64,7 +64,7 @@ GetType(typename)
 ## 示例  
  下面的示例显示正在使用的 `GetType` 操作符。  
   
- [!code-vb[VbVbalrOperators#26](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/gettype-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#26](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/gettype-operator_1.vb)]  
   
 ## 请参阅  
  [Visual Basic 中的运算符优先级](../../../visual-basic/language-reference/operators/operator-precedence.md)   

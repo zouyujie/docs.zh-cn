@@ -30,7 +30,7 @@ caps.handback.revision: 8
 ## 示例  
  本示例使用 <xref:System.Text.Encoding.Unicode%2A?displayProperty=fullName> 编码类的 <xref:System.Text.Encoding.GetBytes%2A> 方法将字符串转换为字节数组。  
   
- [!code-vb[VbVbalrStrings#74](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-to-convert-strings-i_1.vb)]  
+ [!code-vb[VbVbalrStrings#74](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-convert-strings-into-an-array-of-bytes_1.vb)]  
   
  可以从几种编码选项中选择一种将字符串转换为字节数组：  
   

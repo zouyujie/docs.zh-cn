@@ -108,11 +108,11 @@ End Property
 ### 声明与调用阐释  
  下面的属性将一个全名存储为两个组成全名的名称（名字和姓氏）。  当调用代码读取 `fullName` 时，`Get` 过程将姓名的两个组成部分组合在一起，并返回全名。  当调用代码赋予一个新的全名时，`Set` 过程尝试将其分割为姓名的两个组成部分。  如果它没有找到空格，它将整个名称存储为名。  
   
- [!code-vb[VbVbcnProcedures#8](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/property-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#8](./codesnippet/VisualBasic/property-procedures_1.vb)]  
   
  下面的示例演示对 `fullName` 属性过程的典型调用。  
   
- [!code-vb[VbVbcnProcedures#9](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/property-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#9](./codesnippet/VisualBasic/property-procedures_2.vb)]  
   
 ## 请参阅  
  [过程](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   

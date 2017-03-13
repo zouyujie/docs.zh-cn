@@ -37,7 +37,7 @@ caps.handback.revision: 48
 ## 示例  
  下面的示例在 `ProgrammingGuide` 命名空间的顶级使用三个成员定义了 `MyCustomClass`。  在 `Program` 类的 `Main` 方法中创建了 `MyCustomClass` 的一个实例（对象），并使用点表示法访问该对象的方法和属性。  
   
- [!code-cs[csProgGuideObjects#88](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/index_1.cs)]  
+ [!code-cs[csProgGuideObjects#88](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/index_1.cs)]  
   
 ## 封装  
  “封装”有时被称为面向对象的编程的第一个支柱或原则。  根据封装的原则，类或结构可以指定其每个成员对于该类或结构外部的代码的可访问性。  可将无意在类或程序集外部使用的方法和变量隐藏起来，以减小编码错误或遭恶意利用的可能性。  

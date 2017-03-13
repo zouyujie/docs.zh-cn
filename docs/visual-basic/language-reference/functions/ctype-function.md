@@ -64,7 +64,7 @@ CType(expression, typename)
 ## 示例  
  下面的示例使用 `CType` 函数将表达式转换为指定的 `Single` 数据类型。  
   
- [!code-vb[VbVbalrFunctions#24](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/ctype-function_1.vb)]  
+ [!code-vb[VbVbalrFunctions#24](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/ctype-function_1.vb)]  
   
  有关其他示例，请参见[隐式转换和显式转换](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)。  
   

@@ -72,7 +72,7 @@ caps.handback.revision: 8
   
 3.  在 Form1 类的 `End Class` 语句后，添加下面的代码以创建 `CustomerInfo` 类型来保存此示例的查询结果。  
   
-     [!code-vb[VbLINQToSQLHowTos#16](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/StoredProcedureHowTo/Form8.vb#16)]  
+     [!code-vb[VbLINQToSQLHowTos#16](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-return-a-linq-query-result-as-a-specific-type_1.vb)]  
   
 4.  将表添加到 O\/R 设计器后，设计器会向项目中添加一个 <xref:System.Data.Linq.DataContext> 对象。  此对象包含访问这些表以及访问每个表的单个对象和集合所必需的代码。  项目的 <xref:System.Data.Linq.DataContext> 对象是根据 .dbml 文件的名称命名的。  对于此项目，<xref:System.Data.Linq.DataContext> 对象被命名为 `northwindDataContext`。  
   
@@ -80,7 +80,7 @@ caps.handback.revision: 8
   
      在 Form1 类的 `Load` 事件中，添加下面的代码来查询公开为数据上下文属性的表。  查询的 `Select` 子句将创建新的 `CustomerInfo` 类型，而不是为查询结果的每一项使用匿名类型。  
   
-     [!code-vb[VbLINQToSQLHowTos#15](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/StoredProcedureHowTo/Form8.vb#15)]  
+     [!code-vb[VbLINQToSQLHowTos#15](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-return-a-linq-query-result-as-a-specific-type_2.vb)]  
   
 5.  按 F5 运行项目并查看结果。  
   

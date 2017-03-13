@@ -65,7 +65,7 @@ number ^ exponent
 ## 示例  
  下面的示例使用 `^` 运算符对一个数和一个指数进行求幂运算。  结果是以第一个操作数为底、以第二个操作数为指数的求幂运算的值。  
   
- [!code-vb[VbVbalrOperators#20](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/exponentiation-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#20](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/exponentiation-operator_1.vb)]  
   
  上面的示例产生下列结果：  
   

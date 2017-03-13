@@ -30,11 +30,11 @@ caps.handback.revision: 16
   
 -   使用 `ReadAllBytes` 方法，以字节数组的形式返回文件的内容。  此示例读取文件 `C:/Documents and Settings/selfportrait.jpg`。  
   
-     [!code-vb[VbVbcnMyFileSystem#78](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-read-from-binary-_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#78](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-read-from-binary-files_1.vb)]  
   
 -   对于大型二进制文件，可以使用 <xref:System.IO.FileStream> 对象的 <xref:System.IO.FileStream.Read%2A> 方法，一次仅从文件读取指定的量。  然后，可以限制每个读取操作将文件中的多少数据加载到内存中。  下面的代码示例复制文件，并允许调用方指定每个读取操作将文件中的多少数据读取到内存中。  
   
-     [!code-vb[VbVbcnMyFileSystem#91](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-read-from-binary-_2.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#91](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-read-from-binary-files_2.vb)]  
   
 ## 可靠编程  
  以下情况可能会导致引发异常：  

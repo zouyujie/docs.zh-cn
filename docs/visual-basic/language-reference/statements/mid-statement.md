@@ -68,7 +68,7 @@ Mid( _
 ## 示例  
  本例使用 `Mid` 语句用一个字符串中的字符替换字符串变量中指定数量的字符。  
   
- [!code-vb[VbVbalrStrings#5](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/mid-statement_1.vb)]  
+ [!code-vb[VbVbalrStrings#5](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/mid-statement_1.vb)]  
   
 ## 要求  
  **命名空间：** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  

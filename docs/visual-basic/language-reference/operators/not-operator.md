@@ -73,14 +73,14 @@ result = Not expression
 ## 示例  
  下面的示例使用 `Not` 运算符对 `Boolean` 表达式执行逻辑求反。  结果是表示与表达式的值相反的 `Boolean` 值。  
   
- [!code-vb[VbVbalrOperators#33](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/not-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#33](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/not-operator_1.vb)]  
   
  上面的示例分别产生结果 `False` 和 `True`。  
   
 ## 示例  
  下面的示例使用 `Not` 运算符对数值表达式的各个位执行逻辑求反。  结果模式中的位被设置为操作数模式中的相应位的相反值，包括符号位。  
   
- [!code-vb[VbVbalrOperators#34](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/not-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#34](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/not-operator_2.vb)]  
   
  上面的示例分别产生结果 \-11、\-9 和 \-7。  
   

@@ -32,7 +32,7 @@ caps.handback.revision: 23
 ## Char 类型  
  `Char` 数据类型是单个双字节（16 位）Unicode 字符。  如果一个变量总是仅存储一个字符，则将其声明为 `Char`。  例如：  
   
- [!code-vb[VbVbalrCharTypes#1](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/visualbasic/character-data-types_1.vb)]  
+ [!code-vb[VbVbalrCharTypes#1](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/character-data-types_1.vb)]  
   
  `Char` 或 `String` 变量中的每个可能值都是 Unicode 字符集中的一个“码位”（或字符代码）。  Unicode 字符包括基本 ASCII 字符集、各种其他字母、重音符、货币符号、小数、音调符号以及数学和技术符号。  
   
@@ -44,7 +44,7 @@ caps.handback.revision: 23
 ## 字符串类型  
  `String` 数据类型是零个或更多个双字节（16 位）Unicode 字符的序列。  如果一个变量可以包含任意个数的字符，则将其声明为 `String`。  例如：  
   
- [!code-vb[VbVbalrCharTypes#2](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/visualbasic/character-data-types_2.vb)]  
+ [!code-vb[VbVbalrCharTypes#2](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/character-data-types_2.vb)]  
   
  有关更多信息，请参见 [String 数据类型](../../../../visual-basic/language-reference/data-types/string-data-type.md)。  
   

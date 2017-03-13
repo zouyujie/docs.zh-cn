@@ -22,7 +22,7 @@ caps.handback.revision: 8
 ## 示例  
  下面的示例使用 <xref:System.String.IndexOf%2A>、<xref:System.String.LastIndexOf%2A>、<xref:System.String.StartsWith%2A> 和 <xref:System.String.EndsWith%2A> 方法搜素字符串。  
   
- [!code-cs[csProgGuideStrings#21](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#21)]  
+ [!code-cs[csProgGuideStrings#21](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-search-strings-using-string-methods_1.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

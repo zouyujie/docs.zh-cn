@@ -51,7 +51,7 @@ variableorproperty &= expression
 ## 示例  
  下面的示例使用 `&=` 运算符将两个 `String` 变量连接，并将结果赋给第一个变量。  
   
- [!code-vb[VbVbalrOperators#3](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/and-assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#3](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/and-assignment-operator_1.vb)]  
   
 ## 请参阅  
  [& 运算符](../../../visual-basic/language-reference/operators/concatenation-operator.md)   

@@ -45,7 +45,7 @@ caps.handback.revision: 22
   
 5.  通过在 `Interface` 和 `End Interface` 语句之间放置以下代码，定义该接口的属性、方法和事件：  
   
-     [!code-vb[VbVbalrOOP#98](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#98)]  
+     [!code-vb[VbVbalrOOP#98](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-creating-and-implementing-interfaces_1.vb)]  
   
 ## 实现  
  您可能注意到，用于声明接口成员的语法与用于声明类成员的语法是不同的。  这一差别反映了这样一个事实，即接口不能包含实现代码。  
@@ -54,13 +54,13 @@ caps.handback.revision: 22
   
 1.  将以下语句添加到 `Module1` 中的 `End Interface` 语句之后，但在 `End Module` 语句之前，然后按下 Enter，从而添加一个名为 `ImplementationClass` 的类：  
   
-     [!code-vb[VbVbalrOOP#99](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#99)]  
+     [!code-vb[VbVbalrOOP#99](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-creating-and-implementing-interfaces_2.vb)]  
   
      如果您使用的是集成开发环境，按下 Enter 时**“代码编辑器”**将提供一条匹配的 `End Class` 语句。  
   
 2.  将以下 `Implements` 语句添加到 `ImplementationClass` 中，这一操作将命名该类实现的接口：  
   
-     [!code-vb[VbVbalrOOP#100](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#100)]  
+     [!code-vb[VbVbalrOOP#100](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-creating-and-implementing-interfaces_3.vb)]  
   
      当在类或结构顶部分别列出了其他项的 `Implements` 语句时，该语句表示类或结构将实现某个接口。  
   
@@ -68,25 +68,25 @@ caps.handback.revision: 22
   
 3.  如果您使用的不是集成开发环境，则必须实现 `MyInterface` 接口的所有成员。  将以下代码添加到 `ImplementationClass` 中以实现 `Event1`、`Method1` 和 `Prop1`：  
   
-     [!code-vb[VbVbalrOOP#101](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#101)]  
+     [!code-vb[VbVbalrOOP#101](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-creating-and-implementing-interfaces_4.vb)]  
   
      `Implements` 语句指定要实现的接口和接口成员。  
   
 4.  通过向存储属性值的类中添加一个私有字段，完成 `Prop1` 的定义：  
   
-     [!code-vb[VbVbalrOOP#102](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#102)]  
+     [!code-vb[VbVbalrOOP#102](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-creating-and-implementing-interfaces_5.vb)]  
   
      从属性 get 访问器返回 `pval` 的值。  
   
-     [!code-vb[VbVbalrOOP#103](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#103)]  
+     [!code-vb[VbVbalrOOP#103](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-creating-and-implementing-interfaces_6.vb)]  
   
      在属性 set 访问器中设置 `pval` 的值。  
   
-     [!code-vb[VbVbalrOOP#104](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#104)]  
+     [!code-vb[VbVbalrOOP#104](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-creating-and-implementing-interfaces_7.vb)]  
   
 5.  通过添加以下代码完成 `Method1` 的定义。  
   
-     [!code-vb[VbVbalrOOP#105](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#105)]  
+     [!code-vb[VbVbalrOOP#105](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-creating-and-implementing-interfaces_8.vb)]  
   
 #### 测试接口的实现  
   
@@ -94,23 +94,23 @@ caps.handback.revision: 22
   
 2.  将以下 `testInstance` 字段添加到 `Form1` 类中：  
   
-     [!code-vb[VbVbalrOOP#120](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#120)]  
+     [!code-vb[VbVbalrOOP#120](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-creating-and-implementing-interfaces_9.vb)]  
   
      通过将 `testInstance` 声明为 `WithEvents`，`Form1` 类可以处理其事件。  
   
 3.  将以下事件处理程序添加到 `Form1` 类中，以处理由 `testInstance` 引发的事件：  
   
-     [!code-vb[VbVbalrOOP#106](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#106)]  
+     [!code-vb[VbVbalrOOP#106](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-creating-and-implementing-interfaces_10.vb)]  
   
 4.  将一个命名为 `Test` 的子例程添加到 `Form1` 类中以测试实现类：  
   
-     [!code-vb[VbVbalrOOP#107](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#107)]  
+     [!code-vb[VbVbalrOOP#107](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-creating-and-implementing-interfaces_11.vb)]  
   
      `Test` 过程创建实现 `MyInterface` 的类的一个实例，并将该实例赋给 `testInstance` 字段，设置一个属性，然后通过该接口运行一个方法。  
   
 5.  添加代码以从启动窗体的 `Form1 Load` 过程中调用 `Test` 过程：  
   
-     [!code-vb[VbVbalrOOP#108](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#108)]  
+     [!code-vb[VbVbalrOOP#108](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-creating-and-implementing-interfaces_12.vb)]  
   
 6.  按 F5 运行 `Test` 过程。  显示消息“Prop1 was set to 9”。  单击“确定”之后，将显示消息“The X parameter for Method1 is 5”。  单击“确定”，将显示消息“The event handler caught the event”。  
   

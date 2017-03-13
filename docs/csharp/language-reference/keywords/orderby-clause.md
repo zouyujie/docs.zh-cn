@@ -25,12 +25,12 @@ caps.handback.revision: 17
 ## 示例  
  在下面的示例中，第一个查询按从 A 开始的字母顺序对单词进行排序，第二个查询按降序对相同的单词进行排序。  （`ascending` 关键字是默认排序值，可以省略。）  
   
- [!code-cs[cscsrefQueryKeywords#20](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Orderby.cs#20)]  
+ [!code-cs[cscsrefQueryKeywords#20](../../../csharp/language-reference/keywords/codesnippet/CSharp/orderby-clause_1.cs)]  
   
 ## 示例  
  下面的示例对学生的姓氏执行主要排序，然后对他们的名字执行次要排序。  
   
- [!code-cs[cscsrefQueryKeywords#22](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Orderby.cs#22)]  
+ [!code-cs[cscsrefQueryKeywords#22](../../../csharp/language-reference/keywords/codesnippet/CSharp/orderby-clause_2.cs)]  
   
 ## 备注  
  编译时，`orderby` 子句被转换为对 <xref:System.Linq.Enumerable.OrderBy%2A> 方法的调用。  `orderby` 子句中的多个键转换为 <xref:System.Linq.Enumerable.ThenBy%2A> 方法调用。  

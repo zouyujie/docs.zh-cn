@@ -47,7 +47,7 @@ GetXmlNamespace(xmlNamespacePrefix)
 ## 示例  
  下面的示例导入 `ns` 作为 XML 命名空间前缀。  然后，使用该命名空间前缀创建 XML 文本并访问第一个具有限定名 `ns:phone` 的子节点。  接下来，将该子节点传递给 `ShowName` 子例程，该子例程使用 `GetXmlNamespace` 运算符构造一个限定名。  然后，`ShowName` 子例程将该限定名传递给 <xref:System.Xml.Linq.XNode.Ancestors%2A> 方法以获取 `ns:contact` 父节点。  
   
- [!code-vb[VbXMLSamples#38](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/getxmlnamespace-operator_1.vb)]  
+ [!code-vb[VbXMLSamples#38](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/getxmlnamespace-operator_1.vb)]  
   
  在调用 `TestGetXmlNamespace.RunSample()` 时，会显示一个包含以下文本的消息框：  
   

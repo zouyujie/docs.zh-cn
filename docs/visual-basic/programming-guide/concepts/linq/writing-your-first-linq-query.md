@@ -46,7 +46,7 @@ caps.handback.revision: 54
 > [!NOTE]
 >  在 [“编译”页, 项目设计器 \(Visual Basic\)](/visual-studio/ide/reference/compile-page-project-designer-visual-basic)，请确保 **option infer** 设置为。  
   
- [!code-vb[VbLINQFirstQuery#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/writing-your-first-linq-_1.vb)]  
+ [!code-vb[VbLINQFirstQuery#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_1.vb)]  
   
  输出：  
   
@@ -59,7 +59,7 @@ caps.handback.revision: 54
   
  如果源数据未实现 <xref:System.Collections.Generic.IEnumerable%601>，[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] 提供程序需要的实现 *标准查询运算符的* 功能该数据源的。  例如，[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq-md.md)] 处理将 XML 文档加载到可查询的 <xref:System.Xml.Linq.XElement> 类型中的工作，如下面的示例所示。  有关标准查询运算符的更多信息，请参见[Standard Query Operators Overview](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)。  
   
- [!code-vb[VbLINQFirstQuery#2](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/writing-your-first-linq-_2.vb)]  
+ [!code-vb[VbLINQFirstQuery#2](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_2.vb)]  
   
  在 [!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq-md.md)] 中，首先手动或使用 [对象关系设计器（O\/R 设计器）](/visual-studio/data-tools/linq-to-sql-tools-in-visual-studio2) 在设计时创建对象关系映射。  针对这些对象编写查询，然后由 [!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq-md.md)] 在运行时处理与数据库的通信。  在下面的示例中，`customers` 表示数据库中的特定表，并且 <xref:System.Data.Linq.Table%601> 支持泛型 <xref:System.Linq.IQueryable%601> 接口。  
   
@@ -74,7 +74,7 @@ caps.handback.revision: 54
   
  下面示例中的查询在执行时从整数数组 `numbers` 返回所有偶数。  
   
- [!code-vb[VbLINQFirstQuery#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/writing-your-first-linq-_1.vb)]  
+ [!code-vb[VbLINQFirstQuery#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_1.vb)]  
   
  该查询表达式包含三个子句：`From`、`Where` 和 `Select`。  其中每个查询表达式子句的具体功能和用途都在[基本查询操作 \(Visual Basic\)](../../../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md) 中进行了讨论。  有关更多信息，请参见[查询](../../../../visual-basic/language-reference/queries/queries.md)。  请注意，在 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] 中，查询定义通常存储在变量中，并在以后执行。  查询变量，如前面示例中的 `evensQuery`，必须为可查询类型。`evensQuery` 的类型是 `IEnumerable(Of Integer)`，分配由使用局部类型推理的编译器。  
   
@@ -86,13 +86,13 @@ caps.handback.revision: 54
 ### 延迟执行  
  典型的 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] 查询与上一个示例（其中定义了 `evensQuery`）中的查询类似。  该示例创建了查询，但并未立即执行它。  相反，查询定义被存储在查询变量 `evensQuery` 中。  可以在以后执行该查询，这通常需要使用 `For Each` 循环（它返回值序列）或应用标准查询运算符（如 `Count` 或 `Max`）。  此过程称为“延迟执行”。  
   
- [!code-vb[VbLINQFirstQuery#7](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/writing-your-first-linq-_3.vb)]  
+ [!code-vb[VbLINQFirstQuery#7](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_3.vb)]  
   
  对于值序列，可使用 `For Each` 循环中的迭代变量（在上一个示例中为 `number`）访问所检索的数据。  由于查询变量 `evensQuery` 保存了查询定义而不是查询结果，因此可多次使用该查询变量随意执行查询。  例如，您的应用程序中可能有一个由单独的应用程序持续更新的数据库。  在创建从该数据库检索数据的查询后，可使用 `For Each` 循环反复执行该查询，每次都检索到最新数据。  
   
  下面的示例演示延迟执行的工作方式。  如上一个示例所述，在定义 `evensQuery2` 并用 `For Each` 循环执行该查询之后，数据源 `numbers` 中的某些元素会发生更改。  然后，另一个 `For Each` 循环再次运行`evensQuery2`。  因为 `For Each` 循环使用 `numbers` 中的新值再次执行了该查询，因此第二次执行的结果会有所不同。  
   
- [!code-vb[VbLINQFirstQuery#3](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/writing-your-first-linq-_4.vb)]  
+ [!code-vb[VbLINQFirstQuery#3](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_4.vb)]  
   
  输出：  
   
@@ -109,15 +109,15 @@ caps.handback.revision: 54
   
  下面的查询返回一个整数数组中偶数的计数。  查询定义未保存，并且 `numEvens` 是简单的 `Integer`。  
   
- [!code-vb[VbLINQFirstQuery#4](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/writing-your-first-linq-_5.vb)]  
+ [!code-vb[VbLINQFirstQuery#4](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_5.vb)]  
   
  可以使用 `Aggregate` 方法获得相同结果。  
   
- [!code-vb[VbLINQFirstQuery#5](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/writing-your-first-linq-_6.vb)]  
+ [!code-vb[VbLINQFirstQuery#5](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_6.vb)]  
   
  还可通过对查询（立即执行）或查询变量（延迟执行）调用 `ToList` 或 `ToArray` 方法来强制执行查询，如下面的代码所示。  
   
- [!code-vb[VbLINQFirstQuery#6](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/writing-your-first-linq-_7.vb)]  
+ [!code-vb[VbLINQFirstQuery#6](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/writing-your-first-linq-query_7.vb)]  
   
  在上述示例中，`evensQuery3` 是查询变量，而 `evensList`和 `evensArray` 分别是列表和数组。  
   

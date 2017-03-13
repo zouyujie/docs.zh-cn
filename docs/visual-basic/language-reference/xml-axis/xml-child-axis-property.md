@@ -59,7 +59,7 @@ object.<child>
 ## 示例  
  下面的示例演示如何从 `contact` 对象访问名为 `phone` 的子节点。  
   
- [!code-vb[VbXMLSamples#17](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-child-axis-property_1.vb)]  
+ [!code-vb[VbXMLSamples#17](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-child-axis-property_1.vb)]  
   
  此代码显示以下文本：  
   
@@ -68,7 +68,7 @@ object.<child>
 ## 示例  
  下面的示例演示如何从由 `contacts` 对象的 `contact` 子轴属性返回的集合访问名为 `phone` 的子节点。  
   
- [!code-vb[VbXMLSamples#18](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-child-axis-property_2.vb)]  
+ [!code-vb[VbXMLSamples#18](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-child-axis-property_2.vb)]  
   
  此代码显示以下文本：  
   
@@ -77,7 +77,7 @@ object.<child>
 ## 示例  
  下面的示例声明 `ns` 作为 XML 命名空间前缀。  然后它使用该命名空间前缀来创建 XML 文本并访问具有限定名称 `ns:name` 的第一个子节点。  
   
- [!code-vb[VbXMLSamples#19](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-child-axis-property_3.vb)]  
+ [!code-vb[VbXMLSamples#19](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-child-axis-property_3.vb)]  
   
  此代码显示以下文本：  
   

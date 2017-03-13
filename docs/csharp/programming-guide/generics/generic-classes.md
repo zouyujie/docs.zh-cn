@@ -43,27 +43,27 @@ caps.handback.revision: 30
   
  类型参数和约束的规则对于泛型类行为有几方面的含义，特别是关于继承和成员可访问性。  您应当先理解一些术语，然后再继续进行。  对于泛型类 `Node<T>`，客户端代码可通过指定类型参数来引用该类，以便创建封闭式构造类型 \(`Node<int>`\)。  或者可以让类型参数处于未指定状态（例如在指定泛型基类时）以创建开放式构造类型 \(`Node<T>`\)。  泛型类可以从具体的、封闭式构造或开放式构造基类继承：  
   
- [!code-cs[csProgGuideGenerics#16](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-classes_1.cs)]  
+ [!code-cs[csProgGuideGenerics#16](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-classes_1.cs)]  
   
  非泛型类（换句话说，即具体类）可以从封闭式构造基类继承，但无法从开放式构造类或类型参数继承，因为在运行时客户端代码无法提供实例化基类所需的类型参数。  
   
- [!code-cs[csProgGuideGenerics#17](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-classes_2.cs)]  
+ [!code-cs[csProgGuideGenerics#17](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-classes_2.cs)]  
   
  从开放式构造类型继承的泛型类必须为任何未被继承类共享的基类类型参数提供类型变量，如以下代码所示：  
   
- [!code-cs[csProgGuideGenerics#18](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-classes_3.cs)]  
+ [!code-cs[csProgGuideGenerics#18](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-classes_3.cs)]  
   
  从开放式构造类型继承的泛型类必须指定约束，这些约束是基类型约束的超集或暗示基类型约束：  
   
- [!code-cs[csProgGuideGenerics#19](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-classes_4.cs)]  
+ [!code-cs[csProgGuideGenerics#19](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-classes_4.cs)]  
   
  泛型类型可以使用多个类型参数和约束，如下所示：  
   
- [!code-cs[csProgGuideGenerics#20](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-classes_5.cs)]  
+ [!code-cs[csProgGuideGenerics#20](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-classes_5.cs)]  
   
  开放式构造类型和封闭式构造类型可以用作方法参数：  
   
- [!code-cs[csProgGuideGenerics#21](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-classes_6.cs)]  
+ [!code-cs[csProgGuideGenerics#21](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-classes_6.cs)]  
   
  如果某个泛型类实现了接口，则可以将该类的所有实例强制转换为该接口。  
   

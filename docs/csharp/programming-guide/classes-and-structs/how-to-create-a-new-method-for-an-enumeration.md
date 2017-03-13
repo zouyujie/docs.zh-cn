@@ -23,7 +23,7 @@ caps.handback.revision: 7
 ## 示例  
  在下面的示例中，`Grades` 枚举表示学生可能在班里收到的字母等级分。  该示例将一个名为 `Passing` 的扩展方法添加到 `Grades` 类型中，以便该类型的每个实例现在都“知道”它是否表示合格的等级分。  
   
- [!code-cs[csProgGuideExtensionMethods#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-create-a-new-meth_1.cs)]  
+ [!code-cs[csProgGuideExtensionMethods#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-create-a-new-method-for-an-enumeration_1.cs)]  
   
  请注意，`Extensions` 类还包含一个动态更新的静态变量，并且扩展方法的返回值反映了该变量的当前值。  这表明在幕后，将在定义扩展方法的静态类上直接调用这些方法。  
   

@@ -31,7 +31,7 @@ caps.handback.revision: 13
   
      此示例将字符串 `"This is a test string."` 写入名为 `Testfile.txt` 的文件中。  
   
-     [!code-vb[VbFileIOWrite#6](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-append-to-text-fi_1.vb)]  
+     [!code-vb[VbFileIOWrite#6](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-append-to-text-files_1.vb)]  
   
 ## 可靠编程  
  以下情况可能会导致异常：  

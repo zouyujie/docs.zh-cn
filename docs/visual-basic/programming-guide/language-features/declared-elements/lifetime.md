@@ -67,7 +67,7 @@ caps.handback.revision: 14
  下面的示例使用 [Static](../../../../visual-basic/language-reference/modifiers/static.md) 关键字声明变量。  （请注意，当 [Dim 语句](../../../../visual-basic/language-reference/statements/dim-statement.md) 使用 `Static` 这样的修饰符时，您不需要 `Dim` 关键字。）  
   
 ### 代码  
- [!code-vb[VbVbalrKeywords#13](../../../../visual-basic/language-reference/codesnippet/visualbasic/lifetime_1.vb)]  
+ [!code-vb[VbVbalrKeywords#13](../../../../visual-basic/language-reference/codesnippet/VisualBasic/lifetime_1.vb)]  
   
 ### 注释  
  在前面的示例中，过程 `runningTotal` 返回到调用代码后，变量 `applesSold` 继续存在。  下次调用 `runningTotal` 时，`applesSold` 保留其以前计算的值。  

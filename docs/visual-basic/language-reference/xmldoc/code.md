@@ -41,7 +41,7 @@ caps.handback.revision: 10
 ## 示例  
  本示例使用 \<code\> 标记包括使用 `ID` 字段的代码示例。  
   
- [!code-vb[VbVbcnXmlDocComments#2](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/code_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#2](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/code_1.vb)]  
   
 ## 请参阅  
  [XML 注释标记](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

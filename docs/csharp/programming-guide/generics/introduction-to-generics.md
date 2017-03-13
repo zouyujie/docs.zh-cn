@@ -28,11 +28,11 @@ caps.handback.revision: 32
   
  注意，T 可用于 `Node` 嵌套类。  如果使用具体类型实例化 `GenericList<T>`（例如，作为 `GenericList<int>`），则所有的 `T` 都将被替换为 `int`。  
   
- [!code-cs[csProgGuideGenerics#2](../../../csharp/programming-guide/generics/codesnippet/csharp/introduction-to-generics_1.cs)]  
+ [!code-cs[csProgGuideGenerics#2](../../../csharp/programming-guide/generics/codesnippet/CSharp/introduction-to-generics_1.cs)]  
   
  下面的代码示例演示客户端代码如何使用泛型 `GenericList<T>` 类来创建整数列表。  只需更改类型参数，即可方便地修改下面的代码示例，创建字符串或任何其他自定义类型的列表：  
   
- [!code-cs[csProgGuideGenerics#3](../../../csharp/programming-guide/generics/codesnippet/csharp/introduction-to-generics_2.cs)]  
+ [!code-cs[csProgGuideGenerics#3](../../../csharp/programming-guide/generics/codesnippet/CSharp/introduction-to-generics_2.cs)]  
   
 ## 请参阅  
  <xref:System.Collections.Generic>   

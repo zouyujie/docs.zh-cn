@@ -46,11 +46,11 @@ caps.handback.revision: 13
   
 3.  将 `My.Settings` 对象设置为属性网格的选定对象。  
   
-     [!code-vb[VbVbalrMyResources#11](../../../../visual-basic/developing-apps/programming/app-settings/codesnippet/visualbasic/VbVbalrMyResources2/Form1.vb#11)]  
+     [!code-vb[VbVbalrMyResources#11](../../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/how-to-create-property-grids-for-user-settings_1.vb)]  
   
 4.  将属性网格配置为只显示用户设置。  
   
-     [!code-vb[VbVbalrMyResources#12](../../../../visual-basic/developing-apps/programming/app-settings/codesnippet/visualbasic/VbVbalrMyResources2/Form1.vb#12)]  
+     [!code-vb[VbVbalrMyResources#12](../../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/how-to-create-property-grids-for-user-settings_2.vb)]  
   
     > [!NOTE]
     >  若要只显示应用程序范围的设置，请使用 <xref:System.Configuration.ApplicationScopedSettingAttribute> 属性而不是 <xref:System.Configuration.UserScopedSettingAttribute>。  

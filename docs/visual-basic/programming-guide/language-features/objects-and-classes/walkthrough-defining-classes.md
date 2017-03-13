@@ -48,28 +48,28 @@ caps.handback.revision: 21
   
 5.  给新类 `UserNameInfo.vb` 命名，然后单击**“添加”**以显示新类的代码。  
   
-     [!code-vb[VbVbalrOOP#5](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#5)]  
+     [!code-vb[VbVbalrOOP#5](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-defining-classes_1.vb)]  
   
     > [!NOTE]
     >  可以使用 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)]**“代码编辑器”**，在新类的名称之前键入 `Class` 关键字，将类添加到启动窗体中。  **“代码编辑器”**会提供相应的 `End Class` 语句。  
   
 6.  在 `Class` 和 `End Class` 语句之间添加以下代码，为类定义一个私有字段：  
   
-     [!code-vb[VbVbalrOOP#7](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#7)]  
+     [!code-vb[VbVbalrOOP#7](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-defining-classes_2.vb)]  
   
      将字段声明为 `Private` 意味着该字段只能在该类内使用。  使用能够提供更多访问权限的访问修饰符（如 `Public`），便可以从类的外部访问这些字段。  有关更多信息，请参见 [Visual Basic 中的访问级别](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)。  
   
 7.  通过添加以下代码为类定义属性：  
   
-     [!code-vb[VbVbalrOOP#8](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#8)]  
+     [!code-vb[VbVbalrOOP#8](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-defining-classes_3.vb)]  
   
 8.  通过添加以下代码为类定义方法：  
   
-     [!code-vb[VbVbalrOOP#9](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#9)]  
+     [!code-vb[VbVbalrOOP#9](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-defining-classes_4.vb)]  
   
 9. 通过添加名为 `Sub New` 的过程为新类定义参数化的构造函数：  
   
-     [!code-vb[VbVbalrOOP#10](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#10)]  
+     [!code-vb[VbVbalrOOP#10](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-defining-classes_5.vb)]  
   
      当创建基于此类的对象时，会自动调用 `Sub New` 构造函数。  此构造函数设置保存用户名的字段值。  
   
@@ -79,7 +79,7 @@ caps.handback.revision: 21
   
 2.  在主窗体中添加一个按钮，然后双击该按钮显示 `Button1_Click` 事件处理程序的代码。  添加下列代码以调用测试过程：  
   
-     [!code-vb[VbVbalrOOP#12](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#12)]  
+     [!code-vb[VbVbalrOOP#12](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-defining-classes_6.vb)]  
   
 ### 运行应用程序  
   

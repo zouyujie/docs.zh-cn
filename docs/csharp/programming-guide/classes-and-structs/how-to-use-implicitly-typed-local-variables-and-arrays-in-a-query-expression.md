@@ -23,12 +23,12 @@ caps.handback.revision: 15
 ## 示例  
  下面的示例显示了需要 `var` 关键字的常见方案：即产生匿名类型序列的查询表达式。  在此方案中，因为您无权访问匿名类型的类型名称，所以必须使用 `var` 隐式类型化 `foreach` 语句中的查询变量和迭代变量。  有关匿名类型的更多信息，请参见[匿名类型](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)。  
   
- [!code-cs[csProgGuideLINQ#32](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#32)]  
+ [!code-cs[csProgGuideLINQ#32](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression_1.cs)]  
   
 ## 示例  
  虽然下面的示例在类似的情况中使用了关键字 `var`，但其中对 `var` 的使用是可选的。  因为 `student.LastName` 是一个字符串，所以执行查询会返回一个字符串序列。  因此，可将 `queryID` 的类型声明为 `System.Collections.Generic.IEnumerable<string>`，而不是 `var`。  为方便起见，可使用关键字 `var`。  在该示例中，`foreach` 语句中的迭代变量被显式类型化为一个字符串，但它也可改用 `var` 声明。  由于迭代变量的类型不是匿名类型，因此，可选择（而不强制要求）使用 `var`。  请记住，`var` 本身不是类型，而是一条指示编译器推断和分配类型的指令。  
   
- [!code-cs[csProgGuideLINQ#33](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#33)]  
+ [!code-cs[csProgGuideLINQ#33](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression_2.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

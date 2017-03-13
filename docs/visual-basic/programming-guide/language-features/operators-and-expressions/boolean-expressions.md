@@ -33,12 +33,12 @@ caps.handback.revision: 19
 
 “Boolean 表达式”是一种表达式，它计算 [Boolean 数据类型](../../../../visual-basic/language-reference/data-types/boolean-data-type.md)的值：`True` 或 `False`。  `Boolean` 表达式可以有多种形式。  最简单的形式是将 `Boolean` 变量的值与 `Boolean` 文本直接比较，如下面的示例所示：  
   
- [!code-vb[VbVbalrOperators#87](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/boolean-expressions_1.vb)]  
+ [!code-vb[VbVbalrOperators#87](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/boolean-expressions_1.vb)]  
   
 ## \= 运算符的两种含义  
  请注意，赋值语句 `newCustomer = True` 看起来与前面示例中的表达式一样，但它执行不同的功能，而且用法也不同。  在前面的示例中，表达式 `newCustomer = True` 表示 Boolean 值，因此 `=` 符号被解释为比较运算符。  在独立语句中，`=` 被解释为赋值运算符，并将右侧的值赋给左侧的变量。  下面的示例阐释了这一点。  
   
- [!code-vb[VbVbalrOperators#88](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/boolean-expressions_2.vb)]  
+ [!code-vb[VbVbalrOperators#88](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/boolean-expressions_2.vb)]  
   
  有关进一步信息，请参见 [值的比较](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md) 和 [语句](../../../../visual-basic/language-reference/statements/index.md)。  
   
@@ -59,7 +59,7 @@ caps.handback.revision: 19
 ## 短路运算符  
  逻辑运算符 `AndAlso` 和 `OrElse` 表现称为“短路”的行为。  短路运算符首先计算左侧操作数。  如果左侧操作数确定整个表达式的值，则程序执行过程将在不计算右侧表达式的情况下继续。  下面的示例阐释了这一点。  
   
- [!code-vb[VbVbalrOperators#89](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/boolean-expressions_3.vb)]  
+ [!code-vb[VbVbalrOperators#89](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/boolean-expressions_3.vb)]  
   
  在前面的示例中，运算符将计算左侧的表达式 `45 < 12`。  由于左侧表达式的计算结果为 `False`，因此，整个逻辑表达式的计算结果必须为 `False`。  程序执行过程因此跳过执行 `If` 块内的代码，而不计算右侧表达式 `testFunction(3)`。  此示例不调用 `testFunction()`，因为左侧表达式证明整个表达式为假。  
   
@@ -68,7 +68,7 @@ caps.handback.revision: 19
 ### 使用非短路运算符进行比较  
  相反，当使用逻辑运算符 `And` 和 `Or` 时，逻辑运算符的两侧都要计算。  下面的示例阐释了这一点。  
   
- [!code-vb[VbVbalrOperators#90](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/boolean-expressions_4.vb)]  
+ [!code-vb[VbVbalrOperators#90](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/boolean-expressions_4.vb)]  
   
  前面的示例将调用 `testFunction()`，即使左侧表达式的计算结果为 `False`。  
   

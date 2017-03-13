@@ -55,7 +55,7 @@ variableorproperty >>= amount
 ## 示例  
  下面的示例使用 `>>=` 运算符将 `Integer` 变量的位组合模式向右移动指定的位数，并将结果赋给该变量。  
   
- [!code-vb[VbVbalrOperators#15](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/right-shift-assignment-o_1_1.vb)]  
+ [!code-vb[VbVbalrOperators#15](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/right-shift-assignment-operator_1.vb)]  
   
 ## 请参阅  
  [\>\> 运算符](../../../visual-basic/language-reference/operators/right-shift-operator.md)   

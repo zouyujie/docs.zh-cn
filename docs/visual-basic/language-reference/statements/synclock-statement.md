@@ -89,13 +89,13 @@ End SyncLock
  如果 `simpleMessageList` 类在其所有实例中共享一个消息列表，则变量 `messagesList` 和 `messagesLast` 将被声明为 `Shared`。  此时，变量 `messagesLock` 也应为 `Shared`，从而每个实例都将使用单个锁定对象。  
   
 ### 代码  
- [!code-vb[VbVbalrThreading#1](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/synclock-statement_1.vb)]  
+ [!code-vb[VbVbalrThreading#1](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/synclock-statement_1.vb)]  
   
 ### 说明  
  下面的示例使用线程和 `SyncLock`。  只要 `SyncLock` 语句存在，语句块就是临界区并且 `balance` 永远不会是负数。  可以注释掉 `SyncLock` 和 `End SyncLock` 语句，以查看省去 `SyncLock` 关键字的效果。  
   
 ### 代码  
- [!code-vb[VbVbalrThreading#21](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/synclock-statement_2.vb)]  
+ [!code-vb[VbVbalrThreading#21](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/synclock-statement_2.vb)]  
   
 ### 注释  
   

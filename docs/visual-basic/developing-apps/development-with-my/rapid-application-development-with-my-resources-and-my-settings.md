@@ -27,7 +27,7 @@ caps.handback.revision: 6
 ## 检索资源  
  通过 `My.Resources` 对象可检索多种资源（例如音频文件、图标、图像和字符串）。  例如，您可以访问应用程序中特定于区域性的资源文件。  下面的示例将窗体的图标设置为名为 `Form1Icon` 的图标，此图标存储于应用程序的资源文件中。  
   
- [!code-vb[VbVbcnMy#7](../../../visual-basic/developing-apps/development-with-my/codesnippet/visualbasic/rapid-application-develo_1.vb)]  
+ [!code-vb[VbVbcnMy#7](../../../visual-basic/developing-apps/development-with-my/codesnippet/VisualBasic/rapid-application-development-with-my-resources-and-my-settings_1.vb)]  
   
  `My.Resources` 对象仅公开全局资源。  它不提供对与窗体相关联的资源文件的访问。  必须从窗体中访问窗体资源。  有关更多信息，请参见 [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/zh-cn/9a96220d-a19b-4de0-9f48-01e5d82679e5)。  
   

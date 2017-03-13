@@ -36,7 +36,7 @@ caps.handback.revision: 32
   
  下面的示例演示如何为类型和成员指定访问修饰符：  
   
- [!code-cs[csProgGuideObjects#72](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/access-modifiers_1.cs)]  
+ [!code-cs[csProgGuideObjects#72](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/access-modifiers_1.cs)]  
   
  不是所有访问修饰符都可以在所有上下文中由所有类型或成员使用，在某些情况下类型成员的可访问性受到其包含类型的可访问性的限制。  以下各节提供了有关可访问性的更多详细信息。  
   
@@ -62,7 +62,7 @@ caps.handback.revision: 32
   
  要设置类成员或结构成员的访问级别，请向该成员声明添加适当的关键字，如下面的示例所示。  
   
- [!code-cs[csProgGuideObjects#73](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/access-modifiers_2.cs)]  
+ [!code-cs[csProgGuideObjects#73](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/access-modifiers_2.cs)]  
   
 > [!NOTE]
 >  受保护内部可访问性级别的意思是受保护“或”内部，而不是受保护“和”内部。  换句话说，可以从同一程序集内的任何类（包括派生类）中访问受保护的内部成员。  若要限制为只有同一程序集内的派生类可以访问，请将类本身声明为内部，并将其成员声明为受保护。  

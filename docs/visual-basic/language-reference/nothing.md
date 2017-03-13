@@ -36,11 +36,11 @@ caps.handback.revision: 31
   
  如果变量不可为 null 的是值类型，分配 `Nothing` 为其设置为其声明类型的默认值。  如果该类型包含变量成员，则这些成员都会设置为其默认值。  下面的示例就标量类型对此进行了说明。  
   
- [!code-vb[VbVbalrKeywords#7](../../visual-basic/language-reference/codesnippet/visualbasic/nothing_1.vb)]  
+ [!code-vb[VbVbalrKeywords#7](../../visual-basic/language-reference/codesnippet/VisualBasic/nothing_1.vb)]  
   
  如果变量是引用类型， `Nothing` 分配给变量设置为 `null` 引用变量的类型。  设置为 `null` 的变量引用不与任何对象。  下面的示例说明了这一点。  
   
- [!code-vb[VbVbalrKeywords#8](../../visual-basic/language-reference/codesnippet/visualbasic/nothing_2.vb)]  
+ [!code-vb[VbVbalrKeywords#8](../../visual-basic/language-reference/codesnippet/VisualBasic/nothing_2.vb)]  
   
  当检查引用 \(或可以为 null 的值类型\) 时变量是否 `null`，不要使用 `= Nothing` 或 `<> Nothing`。  始终使用 `Is Nothing` 或 `IsNot Nothing`。  
   
@@ -48,7 +48,7 @@ caps.handback.revision: 31
   
  下面的示例演示使用 `Is` 和 `IsNot` 运算符的比较。  
   
- [!code-vb[VbVbalrKeywords#9](../../visual-basic/language-reference/codesnippet/visualbasic/nothing_3.vb)]  
+ [!code-vb[VbVbalrKeywords#9](../../visual-basic/language-reference/codesnippet/VisualBasic/nothing_3.vb)]  
   
  如果您在不使用 `As` 子句的情况下声明一个变量，并将其设置为 `Nothing`，则变量将具有 `Object` 类型。  其示例为 `Dim something = Nothing`。  编译时错误发生在这种情况下，当 `Option Strict` 打开，而 `Option Infer` 关闭。  
   

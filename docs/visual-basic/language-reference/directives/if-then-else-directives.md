@@ -73,7 +73,7 @@ caps.handback.revision: 14
 ## 示例  
  本示例使用 `#If...Then...#Else` 构造来判断是否编译某些语句。  
   
- [!code-vb[VbVbalrConditionalComp#1](../../../visual-basic/language-reference/directives/codesnippet/visualbasic/if-then-else-directives_1.vb)]  
+ [!code-vb[VbVbalrConditionalComp#1](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/if-then-else-directives_1.vb)]  
   
 ## 请参阅  
  [\#Const 指令](../../../visual-basic/language-reference/directives/const-directive.md)   

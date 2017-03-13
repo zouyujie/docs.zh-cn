@@ -15,7 +15,7 @@ caps.handback.revision: 22
   
 4.  将 `Program` 类替换为以下代码。  
   
-     [!code-cs[csProgGuideLINQ#26](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#26)]  
+     [!code-cs[csProgGuideLINQ#26](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-dynamically-specify-predicate-filters-at-runtime_1.cs)]  
   
 5.  在 `DynamicPredicates` 类的 `Main` 方法中的 `ids` 声明下添加以下行。  
   
@@ -56,7 +56,7 @@ caps.handback.revision: 22
   
 2.  复制以下方法并将其粘贴到类 `DynamicPredicates` 中。  
   
-     [!code-cs[csProgGuideLINQ#27](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#27)]  
+     [!code-cs[csProgGuideLINQ#27](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-dynamically-specify-predicate-filters-at-runtime_2.cs)]  
   
 3.  在**“命令行参数”**窗口中，将上一过程中的 ID 号替换为一个介于 1 到 4 之间的整数值。  
   

@@ -22,7 +22,7 @@ caps.handback.revision: 21
 # :: 运算符（C# 参考）
 命名空间别名限定符 \(`::`\) 用于查找标识符。  它通常放置在两个标识符之间，例如：  
   
- [!code-cs[csRefOperators#27](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#27)]  
+ [!code-cs[csRefOperators#27](../../../csharp/language-reference/operators/codesnippet/CSharp/namespace-alias-qualifer_1.cs)]  
   
 ## 备注  
  命名空间别名限定符可以是 `global`。  这将调用全局命名空间中的查找，而不是在别名命名空间中。  

@@ -10,7 +10,7 @@ caps.handback.revision: 15
  有关延续的更多信息，请参见 [into](../../../csharp/language-reference/keywords/into.md)。  下面的示例使用内存中数据结构作为数据源，但相同的原理适用于任何种类的 [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq-md.md)] 数据源。  
   
 ## 示例  
- [!code-cs[csProgGuideLINQ#23](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#23)]  
+ [!code-cs[csProgGuideLINQ#23](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-perform-a-subquery-on-a-grouping-operation_1.cs)]  
   
 ## 编译代码  
  此示例包含对[如何：查询对象集合](../../../csharp/programming-guide/linq-query-expressions/how-to-query-a-collection-of-objects.md)内示例应用程序中定义的对象的引用。  若要编译和运行此方法，请将它粘贴到该应用程序的 `StudentClass` 类中，并且在 `Main` 方法中添加对它的调用。  

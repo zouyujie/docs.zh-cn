@@ -42,7 +42,7 @@ caps.handback.revision: 8
   
      下面的示例测试 `myString` 是否只包含 `H` 这一字符。  
   
-     [!code-vb[VbVbalrOperators#70](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-match-a-string-ag_1.vb)]  
+     [!code-vb[VbVbalrOperators#70](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_1.vb)]  
   
 ### 将字符串表达式中的字符与通配符进行匹配  
   
@@ -50,7 +50,7 @@ caps.handback.revision: 8
   
      下面的示例测试 `myString` 是否由单一字符 `W` 及其后面的两个为任意值的字符组成。  
   
-     [!code-vb[VbVbalrOperators#71](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-match-a-string-ag_2.vb)]  
+     [!code-vb[VbVbalrOperators#71](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_2.vb)]  
   
 ### 将字符串表达式中的字符与字符列表进行匹配  
   
@@ -58,7 +58,7 @@ caps.handback.revision: 8
   
      下面的示例测试 `myString` 是否包含任何有效字符，并且该有效字符后面正好是字符 `A`、`C` 或 `E` 之一。  
   
-     [!code-vb[VbVbalrOperators#72](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-match-a-string-ag_3.vb)]  
+     [!code-vb[VbVbalrOperators#72](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_3.vb)]  
   
      请注意，该匹配区分大小写。  
   
@@ -68,7 +68,7 @@ caps.handback.revision: 8
   
      下面的示例测试 `myString` 是否包含字符 `num`，并且其后正好是字符 `i`、`j`、`k`、`l`、`m` 或 `n` 之一。  
   
-     [!code-vb[VbVbalrOperators#73](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-match-a-string-ag_4.vb)]  
+     [!code-vb[VbVbalrOperators#73](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_4.vb)]  
   
      请注意，该匹配区分大小写。  
   
@@ -85,7 +85,7 @@ caps.handback.revision: 8
   
      下面的示例测试 7 位电话号码 `phoneNum` 中是否首先是 3 个数字，接着是一个空格、一个连字符 \(`–`\)、一个句点 \(`.`\) 或无任何字符，再接着是 4 个数字。  
   
-     [!code-vb[VbVbalrOperators#74](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-match-a-string-ag_5.vb)]  
+     [!code-vb[VbVbalrOperators#74](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_5.vb)]  
   
 ## 请参阅  
  [比较运算符](../../../../visual-basic/language-reference/operators/comparison-operators.md)   

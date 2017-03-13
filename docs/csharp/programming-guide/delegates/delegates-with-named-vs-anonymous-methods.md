@@ -19,7 +19,7 @@ caps.handback.revision: 18
 # 带有命名方法的委托与带有匿名方法的委托（C# 编程指南）
 [委托](../../../csharp/language-reference/keywords/delegate.md)可以与命名方法关联。  使用命名方法对委托进行实例化时，该方法将作为参数传递，例如：  
   
- [!code-cs[csProgGuideDelegates#1](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#1)]  
+ [!code-cs[csProgGuideDelegates#1](../../../csharp/programming-guide/delegates/codesnippet/CSharp/delegates-with-named-vs-anonymous-methods_1.cs)]  
   
  这被称为使用命名的方法。  使用命名方法构造的委托可以封装[静态](../../../csharp/language-reference/keywords/static.md)方法或实例方法。  在早期版本的 C\# 中，命名方法是对委托进行实例化的唯一方式。  但是，在不希望付出创建新方法的系统开销时，C\# 使您可以对委托进行实例化，并立即指定委托在被调用时将处理的代码块。  代码块可以包含 lambda 表达式或匿名方法。  有关更多信息，请参见 [匿名函数](../../../csharp/programming-guide/statements-expressions-operators/anonymous-functions.md)。  
   
@@ -33,12 +33,12 @@ caps.handback.revision: 18
 ## 示例 1  
  以下是声明及使用委托的一个简单示例。  注意，委托 `Del` 和关联的方法 `MultiplyNumbers` 具有相同的签名  
   
- [!code-cs[csProgGuideDelegates#2](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#2)]  
+ [!code-cs[csProgGuideDelegates#2](../../../csharp/programming-guide/delegates/codesnippet/CSharp/delegates-with-named-vs-anonymous-methods_2.cs)]  
   
 ## 示例 2  
  在下面的示例中，一个委托被同时映射到静态方法和实例方法，并分别返回特定的信息。  
   
- [!code-cs[csProgGuideDelegates#3](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#3)]  
+ [!code-cs[csProgGuideDelegates#3](../../../csharp/programming-guide/delegates/codesnippet/CSharp/delegates-with-named-vs-anonymous-methods_3.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

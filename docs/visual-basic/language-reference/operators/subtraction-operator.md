@@ -72,7 +72,7 @@ caps.handback.revision: 14
 ## 示例  
  下面的示例使用 `–` 运算符计算并返回两个数字之差，然后对一个数字进行求反运算。  
   
- [!code-vb[VbVbalrOperators#10](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/subtraction-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#10](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/subtraction-operator_1.vb)]  
   
  执行这些语句之后，`binaryResult` 为 124.45，`unaryResult` 为 –334.90。  
   

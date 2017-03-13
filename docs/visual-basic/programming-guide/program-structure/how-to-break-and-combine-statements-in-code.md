@@ -49,7 +49,7 @@ caps.handback.revision: 21
   
      在下面的示例中，语句被拆分为四行。除最后一行外，前三行都以行继续符结尾。  
   
-     [!code-vb[VbVbcnConventions#20](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/how-to-break-and-combine_1.vb)]  
+     [!code-vb[VbVbcnConventions#20](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/how-to-break-and-combine-statements-in-code_1.vb)]  
   
      这样可以使代码更易于阅读，不管是在联机状态下还是在打印后。  
   
@@ -65,7 +65,7 @@ caps.handback.revision: 21
   
 -   用冒号 \(`:`\) 将各语句分开，如下面的示例所示。  
   
-     [!code-vb[VbVbcnConventions#10](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/how-to-break-and-combine_2.vb)]  
+     [!code-vb[VbVbcnConventions#10](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/how-to-break-and-combine-statements-in-code_2.vb)]  
   
 ## 请参阅  
  [程序结构和代码约定](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)   

@@ -33,7 +33,7 @@ caps.handback.revision: 13
   
      下面的代码示例演示如何利用 <xref:System.Xml.Linq.XDocument.Load%28System.String%29> 方法用来自文本文件的 XML 填充 <xref:System.Xml.Linq.XDocument> 对象。  
   
-     [!code-vb[VbXMLSamples#43](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-load-xml-from-a-f_1.vb)]  
+     [!code-vb[VbXMLSamples#43](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-load-xml-from-a-file-string-or-stream_1.vb)]  
   
 ### 从字符串加载 XML  
   
@@ -41,7 +41,7 @@ caps.handback.revision: 13
   
      下面的代码示例演示如何利用 <xref:System.Xml.Linq.XDocument.Parse%28System.String%29?displayProperty=fullName> 方法用来自字符串的 XML 填充 <xref:System.Xml.Linq.XDocument> 对象。  
   
-     [!code-vb[VbXMLSamples#47](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-load-xml-from-a-f_2.vb)]  
+     [!code-vb[VbXMLSamples#47](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-load-xml-from-a-file-string-or-stream_2.vb)]  
   
 ### 从流加载 XML  
   
@@ -49,7 +49,7 @@ caps.handback.revision: 13
   
  下面的代码示例演示如何利用 <xref:System.Xml.Linq.XNode.ReadFrom%2A> 方法用来自 XML 流的 XML 填充 <xref:System.Xml.Linq.XDocument> 对象。  
   
- [!code-vb[VbXMLSamples#46](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-load-xml-from-a-f_3.vb)]  
+ [!code-vb[VbXMLSamples#46](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-load-xml-from-a-file-string-or-stream_3.vb)]  
   
 ## 请参阅  
  <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=fullName>   

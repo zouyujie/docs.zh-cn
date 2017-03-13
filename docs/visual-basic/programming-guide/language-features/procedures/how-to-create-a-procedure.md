@@ -60,7 +60,7 @@ caps.handback.revision: 27
 ## 示例  
  下面的 `Function` 过程通过给定的直角三角形的两条直角边计算该三角形的最长边（即斜边）。  
   
- [!code-vb[VbVbcnProcedures#1](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-create-a-procedure_1.vb)]  
+ [!code-vb[VbVbcnProcedures#1](./codesnippet/VisualBasic/how-to-create-a-procedure_1.vb)]  
   
 ## 请参阅  
  [过程](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   

@@ -38,7 +38,7 @@ caps.handback.revision: 18
 > [!NOTE]
 >  输出可能会根据计算机结构的 endian 设置而不同。  
   
- [!code-cs[csProgGuideTypes#22](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/how-to-convert-a-byte-ar_1.cs)]  
+ [!code-cs[csProgGuideTypes#22](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-convert-a-byte-array-to-an-int_1.cs)]  
   
 ## 示例  
  在此示例中，调用 <xref:System.BitConverter> 类的 <xref:System.BitConverter.GetBytes%28System.Int32%29> 方法以将 `int` 转换为字节数组。  
@@ -46,7 +46,7 @@ caps.handback.revision: 18
 > [!NOTE]
 >  输出可能会根据计算机结构的 endian 设置而不同。  
   
- [!code-cs[csProgGuideTypes#23](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/how-to-convert-a-byte-ar_2.cs)]  
+ [!code-cs[csProgGuideTypes#23](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-convert-a-byte-array-to-an-int_2.cs)]  
   
 ## 请参阅  
  <xref:System.BitConverter>   

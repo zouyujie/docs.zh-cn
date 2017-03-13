@@ -31,7 +31,7 @@ caps.handback.revision: 18
  用户定义的类型可重载 `<<` 运算符（请参见[操作数](../../../csharp/language-reference/keywords/operator.md)）；第一个操作数的类型必须为用户定义的类型，第二个操作数的类型必须为 `int`。  重载二元运算符时，也会隐式重载相应的赋值运算符（如果有）。  
   
 ## 示例  
- [!code-cs[csRefOperators#14](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#14)]  
+ [!code-cs[csRefOperators#14](../../../csharp/language-reference/operators/codesnippet/CSharp/left-shift-operator_1.cs)]  
   
 ## 注释  
  请注意，`i<<1` 和 `i<<33`  给出的结果相同，因为 1 和 33 的低序 5 位相同。  

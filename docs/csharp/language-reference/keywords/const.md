@@ -52,12 +52,12 @@ public const int c2 = c1 + 100;
 >  [readonly](../../../csharp/language-reference/keywords/readonly.md) 关键字与 `const` 关键字不同。  `const` 字段只能在该字段的声明中初始化。  `readonly` 字段可以在声明或构造函数中初始化。  因此，根据所使用的构造函数，`readonly` 字段可能具有不同的值。  另外，虽然 `const` 字段是编译时常量，但 `readonly` 字段可用于运行时常量，如此行所示：`public static readonly uint l1 = (uint)DateTime.Now.Ticks;`  
   
 ## 示例  
- [!code-cs[csrefKeywordsModifiers#5](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#5)]  
+ [!code-cs[csrefKeywordsModifiers#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/const_1.cs)]  
   
 ## 示例  
  此示例说明如何将常数用作局部变量。  
   
- [!code-cs[csrefKeywordsModifiers#6](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#6)]  
+ [!code-cs[csrefKeywordsModifiers#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/const_2.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

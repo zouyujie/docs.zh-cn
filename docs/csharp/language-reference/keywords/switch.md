@@ -28,7 +28,7 @@ caps.handback.revision: 47
   
  `switch` 语句包含一个或多个开关部分。  每个开关部分包含一个或多个 case 标签，后接一个或多个语句。  下面的示例展示了一个包含三个开关部分的简单 `switch` 语句。  每个开关部分各有一个 case 标签（例如 `case 1`）和两个语句。  
   
- [!code-cs[csrefKeywordsSelection#7](../../../csharp/language-reference/keywords/codesnippet/csharp/switch_1.cs)]  
+ [!code-cs[csrefKeywordsSelection#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/switch_1.cs)]  
   
 ## 备注  
  每个 case 标签指定一个常数值。  switch 语句会将控制传输到 case 标签与 switch 表达式的值（示例中为 `caseSwitch`）相符的开关部分。  如果任何 case 标签都不包含匹配值，则将控制传输到 `default` 部分（如果有）。  如果没有 `default` 部分，则不会执行任何操作，并在 `switch` 语句之外传输控制。  在上一个示例中，因为 `case 1` 与 `caseSwitch` 的值匹配，因此执行第一个开关部分中的语句。  
@@ -63,12 +63,12 @@ case 4:
 ## 示例  
  下面的示例演示 `switch` 语句的要求和功能。  
   
- [!code-cs[csrefKeywordsSelection#9](../../../csharp/language-reference/keywords/codesnippet/csharp/switch_2.cs)]  
+ [!code-cs[csrefKeywordsSelection#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/switch_2.cs)]  
   
 ## 示例  
  在最后一个示例中，字符串变量、`str` 和字符串 case 标签控制执行流。  
   
- [!code-cs[csrefKeywordsSelection#8](../../../csharp/language-reference/keywords/codesnippet/csharp/switch_3.cs)]  
+ [!code-cs[csrefKeywordsSelection#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/switch_3.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

@@ -68,7 +68,7 @@ result = TypeOf objectexpression IsNot typename
 ## 示例  
  下面的示例使用 `TypeOf`...`Is` 表达式测试具有不同数据类型的两个对象引用变量的类型兼容性。  
   
- [!code-vb[VbVbalrOperators#39](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/typeof-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#39](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/typeof-operator_1.vb)]  
   
  变量 `refInteger` 具有运行时类型 `Integer`。  它与 `Integer` 兼容，但不与 `Double` 兼容。  变量 `refForm` 具有运行时类型 <xref:System.Windows.Forms.Form>。  它与 <xref:System.Windows.Forms.Form> 兼容因为这是其类型，与 <xref:System.Windows.Forms.Control> 兼容因为 <xref:System.Windows.Forms.Form> 继承自 <xref:System.Windows.Forms.Control>，与 <xref:System.ComponentModel.IComponent> 兼容因为 <xref:System.Windows.Forms.Form> 继承自 <xref:System.ComponentModel.Component>（它实现 <xref:System.ComponentModel.IComponent>）。  但是，`refForm` 与 <xref:System.Windows.Forms.Label> 不兼容。  
   

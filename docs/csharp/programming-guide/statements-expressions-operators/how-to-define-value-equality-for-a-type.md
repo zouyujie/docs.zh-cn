@@ -51,7 +51,7 @@ caps.handback.revision: 15
 ## 示例  
  下面的示例演示如何在类（引用类型）中实现值相等性。  
   
- [!code-cs[csProgGuideStatements#19](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-define-value-equa_1.cs)]  
+ [!code-cs[csProgGuideStatements#19](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-value-equality-for-a-type_1.cs)]  
   
  在类（引用类型）上，两种 <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> 方法的默认实现均执行引用相等性比较，而不是值相等性检查。  当实施者重写虚方法时，目的是为了为其指定值相等性语义。  
   
@@ -60,7 +60,7 @@ caps.handback.revision: 15
 ## 示例  
  下面的示例演示如何在结构（值类型）中实现值相等性：  
   
- [!code-cs[csProgGuideStatements#20](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-define-value-equa_2.cs)]  
+ [!code-cs[csProgGuideStatements#20](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-value-equality-for-a-type_2.cs)]  
   
  对于结构，<xref:System.Object.Equals%28System.Object%29?displayProperty=fullName>（<xref:System.ValueType?displayProperty=fullName> 中的重写版本）的默认实现通过使用反射来比较类型中每个字段的值，从而执行值相等性检查。  当实施者重写结构中的 `Equals` 虚方法时，目的是为了提供更高效的方法来执行值相等性检查，并选择根据结构的字段或属性的某个子集来进行比较。  
   

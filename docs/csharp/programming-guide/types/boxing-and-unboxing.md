@@ -25,15 +25,15 @@ caps.handback.revision: 34
   
  在下面的示例中，将整型变量 `i` 进行了装箱并分配给对象 `o`。  
   
- [!code-cs[csProgGuideTypes#14](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/boxing-and-unboxing_1.cs)]  
+ [!code-cs[csProgGuideTypes#14](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/boxing-and-unboxing_1.cs)]  
   
  然后，可以将对象 `o`  取消装箱并分配给整型变量 `i`：  
   
- [!code-cs[csProgGuideTypes#15](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/boxing-and-unboxing_2.cs)]  
+ [!code-cs[csProgGuideTypes#15](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/boxing-and-unboxing_2.cs)]  
   
  以下示例演示如何在 C\# 中使用装箱。  
   
- [!code-cs[csProgGuideTypes#47](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/boxing-and-unboxing_3.cs)]  
+ [!code-cs[csProgGuideTypes#47](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/boxing-and-unboxing_3.cs)]  
   
 ## 性能  
  相对于简单的赋值而言，装箱和取消装箱过程需要进行大量的计算。  对值类型进行装箱时，必须分配并构造一个新对象。  取消装箱所需的强制转换也需要进行大量的计算，只是程度较轻。  有关更多信息，请参见[性能](../Topic/.NET%20Performance%20Tips.md)。  
@@ -43,11 +43,11 @@ caps.handback.revision: 34
   
  请看以下值类型变量的声明：  
   
- [!code-cs[csProgGuideTypes#17](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/boxing-and-unboxing_4.cs)]  
+ [!code-cs[csProgGuideTypes#17](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/boxing-and-unboxing_4.cs)]  
   
  以下语句对变量 `i` 隐式应用了装箱操作：  
   
- [!code-cs[csProgGuideTypes#18](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/boxing-and-unboxing_5.cs)]  
+ [!code-cs[csProgGuideTypes#18](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/boxing-and-unboxing_5.cs)]  
   
  此语句的结果是在堆栈上创建对象引用 `o`，而在堆上则引用 `int` 类型的值。  该值是赋给变量 `i` 的值类型值的一个副本。  下图说明了两个变量 `i` 和 `o` 之间的差异。  
   
@@ -56,13 +56,13 @@ caps.handback.revision: 34
   
  还可以像下面的示例一样执行显式装箱，但显式装箱从来不是必需的：  
   
- [!code-cs[csProgGuideTypes#19](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/boxing-and-unboxing_6.cs)]  
+ [!code-cs[csProgGuideTypes#19](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/boxing-and-unboxing_6.cs)]  
   
 ## 说明  
  此示例使用装箱将整型变量 `i` 转换为对象 `o`。  这样一来，存储在变量 `i` 中的值就从 `123` 更改为 `456`。  该示例表明原始值类型和装箱的对象使用不同的内存位置，因此能够存储不同的值。  
   
 ## 示例  
- [!code-cs[csProgGuideTypes#16](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/boxing-and-unboxing_7.cs)]  
+ [!code-cs[csProgGuideTypes#16](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/boxing-and-unboxing_7.cs)]  
   
 ## 取消装箱  
  取消装箱是从 `object` 类型到[值类型](../../../csharp/language-reference/keywords/value-types.md)或从接口类型到实现该接口的值类型的显式转换。  取消装箱操作包括：  
@@ -73,7 +73,7 @@ caps.handback.revision: 34
   
  下面的语句演示装箱和取消装箱两种操作：  
   
- [!code-cs[csProgGuideTypes#21](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/boxing-and-unboxing_8.cs)]  
+ [!code-cs[csProgGuideTypes#21](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/boxing-and-unboxing_8.cs)]  
   
  下图演示上述语句的结果。  
   
@@ -85,7 +85,7 @@ caps.handback.revision: 34
 ## 示例  
  下面的示例演示无效的取消装箱及引发的 `InvalidCastException`。  使用 `try` 和 `catch`，在发生错误时显示错误信息。  
   
- [!code-cs[csProgGuideTypes#20](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/boxing-and-unboxing_9.cs)]  
+ [!code-cs[csProgGuideTypes#20](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/boxing-and-unboxing_9.cs)]  
   
  此程序输出：  
   

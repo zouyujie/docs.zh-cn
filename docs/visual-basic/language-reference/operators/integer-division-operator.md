@@ -73,7 +73,7 @@ expression1 \ expression2
 ## 示例  
  下面的示例使用 `\` 运算符执行整数除法。  结果是一个整数，表示两个操作数的整数商，余数被丢弃。  
   
- [!code-vb[VbVbalrOperators#18](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/integer-division-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#18](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/integer-division-operator_1.vb)]  
   
  上例中的表达式分别返回值 2、3、33 和 \-22。  
   

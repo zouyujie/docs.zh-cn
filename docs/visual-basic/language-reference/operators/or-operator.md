@@ -86,14 +86,14 @@ result = expression1 Or expression2
 ## <a name="example"></a>示例  
  下面的示例使用 `Or` 运算符对两个表达式执行包含的逻辑析取。 结果是 `Boolean` 值，该值表示两个表达式之一是否 `True`。  
   
- [!code-vb[VbVbalrOperators#35](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/or-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#35](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/or-operator_1.vb)]  
   
  前面的示例将生成的结果 `True`, ，`True`, ，和 `False`, 分别。  
   
 ## <a name="example"></a>示例  
  下面的示例使用 `Or` 运算符对两个数值表达式的各个位执行包含逻辑析取。 如果任一操作数中的对应位将设置为 1，则结果模式中的位将设置。  
   
- [!code-vb[VbVbalrOperators#36](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/or-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#36](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/or-operator_2.vb)]  
   
  前面的示例分别产生 10、 14 和 14 的结果。  
   

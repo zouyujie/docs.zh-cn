@@ -57,12 +57,12 @@ sub name(argument 1, , , argument 4)
   
  对 `MsgBox` 的第一个调用将按照 `MsgBox` 定义参数的顺序提供所有三个参数。  第二个调用仅提供必选参数。  第三个和第四个调用分别提供第一个和第三个参数。  第三个调用按位置提供参数，第四个调用按名称提供参数。  
   
- [!code-vb[VbVbcnProcedures#47](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/optional-parameters_1.vb)]  
+ [!code-vb[VbVbcnProcedures#47](./codesnippet/VisualBasic/optional-parameters_1.vb)]  
   
 ## 确定可选参数是否存在  
  过程在运行时无法检测到给定的参数是否已被省略，或者调用代码是否已显式提供默认值。  如果需要弄清楚这一点，可以设置一个不可能的值作为默认值。  下面的过程定义了可选参数  `office`，并测试其默认值  `QJZ` 以查看它在调用中是否已被省略：  
   
- [!code-vb[VbVbcnProcedures#46](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/optional-parameters_2.vb)]  
+ [!code-vb[VbVbcnProcedures#46](./codesnippet/VisualBasic/optional-parameters_2.vb)]  
   
  如果可选参数是像 `String` 这样的引用类型，只要它不是该变量所预期的值，就可以使用 `Nothing` 作为默认值。  
   

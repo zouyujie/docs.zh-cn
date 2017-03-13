@@ -28,7 +28,7 @@ caps.handback.revision: 19
 本示例演示如何使用子代轴属性来访问具有指定名称并且包含在 XML 元素之下的所有 XML 元素。  具体而言，该示例使用 `Value` 属性获取 `name` 子代轴属性所返回的集合中的第一个元素的值。  `name` 子代轴属性获取 `contacts` 对象所含的所有名为 `name` 的元素。  本示例还使用 `phone` 子代轴属性来访问 `contacts` 对象所含的所有名为 `phone` 的子代。  
   
 ## 示例  
- [!code-vb[VbXMLSamples#31](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-access-xml-descen_1.vb)]  
+ [!code-vb[VbXMLSamples#31](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-access-xml-descendant-elements_1.vb)]  
   
 ## 编译代码  
  此示例需要：  

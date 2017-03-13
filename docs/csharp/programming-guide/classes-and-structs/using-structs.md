@@ -18,7 +18,7 @@ caps.handback.revision: 28
 # 使用结构（C# 编程指南）
 `struct` 类型适用于表示轻量级对象，如 `Point`、`Rectangle` 和 `Color`。 尽管用它来表示一个点就如同具有 [Auto\-Implemented Properties（自动实现的属性）](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)的[类](../../../csharp/language-reference/keywords/class.md)那样方便，但在某些情况下，使用[结构](../../../csharp/language-reference/keywords/struct.md)可能更高效。 例如，如果你声明具有 1000 个 `Point` 对象的数组，那么你将分配额外的内存用于引用每个对象；在这种情况下，使用结构将更为便宜。 因为 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] 包含一个称为 <xref:System.Drawing.Point> 的对象，因此在此示例中的结构改名为“CoOrds”。  
   
- [!code-cs[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-structs_1.cs)]  
+ [!code-cs[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-structs_1.cs)]  
   
  定义结构的默认（无参数）构造函数是错误的。 在结构体中初始化实例字段也是错误的。 在声明结构后，只能通过使用参数化构造函数或通过逐个访问成员才可以初始化结构成员。 任何私有或其他不可访问的成员只能在构造函数中进行初始化。  
   
@@ -38,9 +38,9 @@ caps.handback.revision: 28
  此示例同时使用了默认构造函数和参数化构造函数来演示 `struct` 初始化。  
   
 ### 代码  
- [!code-cs[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-structs_1.cs)]  
+ [!code-cs[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-structs_1.cs)]  
   
- [!code-cs[csProgGuideObjects#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-structs_2.cs)]  
+ [!code-cs[csProgGuideObjects#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-structs_2.cs)]  
   
 ## 示例 2  
   
@@ -48,9 +48,9 @@ caps.handback.revision: 28
  此示例演示了一个特定于结构的功能。 此功能可以创建 CoOrds 对象，而无需使用 `new` 运算符。 如果将 `struct` 替换为 `class`，程序将不会进行编译。  
   
 ### 代码  
- [!code-cs[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-structs_1.cs)]  
+ [!code-cs[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-structs_1.cs)]  
   
- [!code-cs[csProgGuideObjects#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-structs_3.cs)]  
+ [!code-cs[csProgGuideObjects#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-structs_3.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

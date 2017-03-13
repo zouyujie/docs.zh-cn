@@ -10,14 +10,14 @@ caps.handback.revision: 15
 ## 示例  
  下面的示例演示如何将异常处理代码移至查询表达式外部。  仅当该方法不依赖于查询的任何本地变量时，才能这样做。  
   
- [!code-cs[csProgGuideLINQ#10](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#10)]  
+ [!code-cs[csProgGuideLINQ#10](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-handle-exceptions-in-query-expressions_1.cs)]  
   
 ## 示例  
  在某些情况下，对在查询内引发的异常的最佳响应可能是立即停止执行查询。  下面的示例演示如何处理可能从查询正文内部引发的异常。  假定 `SomeMethodThatMightThrow` 可能导致要求停止执行查询的异常。  
   
  请注意，`try` 块将 `foreach` 循环而不是查询本身封闭起来。  这是因为 `foreach` 循环是实际执行查询的场所。  有关更多信息，请参见 [Introduction to LINQ Queries \(C\#\)](../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)。  
   
- [!code-cs[csProgGuideLINQ#12](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#12)]  
+ [!code-cs[csProgGuideLINQ#12](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-handle-exceptions-in-query-expressions_2.cs)]  
   
 ## 编译代码  
   

@@ -56,7 +56,7 @@ public int this [int index]   // Indexer declaration
  请注意，当计算索引器的访问时（例如，在 `Console.Write` 语句中），将调用 [get](../../../csharp/language-reference/keywords/get.md) 访问器。  因此，如果 `get` 访问器不存在，将发生编译时错误。  
   
 ### 代码  
- [!code-cs[csProgGuideIndexers#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-indexers_1.cs)]  
+ [!code-cs[csProgGuideIndexers#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-indexers_1.cs)]  
   
 ## 使用其他值进行索引  
  C\# 并不将索引类型限制为整数。  例如，对索引器使用字符串可能是有用的。  通过搜索集合内的字符串并返回相应的值，可以实现此类索引器。  由于访问器可被重载，字符串和整数版本可以共存。  
@@ -67,7 +67,7 @@ public int this [int index]   // Indexer declaration
  在此例中，声明了存储星期几的类。  声明了一个 `get` 访问器，它接受字符串（天名称），并返回相应的整数。  例如，星期日将返回 0，星期一将返回 1，等等。  
   
 ### 代码  
- [!code-cs[csProgGuideIndexers#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-indexers_2.cs)]  
+ [!code-cs[csProgGuideIndexers#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-indexers_2.cs)]  
   
 ## 可靠编程  
  提高索引器的安全性和可靠性有两种主要的方法：  

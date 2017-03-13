@@ -24,7 +24,7 @@ caps.handback.revision: 26
 ## 示例  
  在此示例中，`Square` 类必须提供 `Area` 的重写实现，因为 `Area` 继承自抽象的 `ShapesClass`：  
   
- [!code-cs[csrefKeywordsModifiers#1](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#1)]  
+ [!code-cs[csrefKeywordsModifiers#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/override_1.cs)]  
   
  `override` 方法提供从基类继承的成员的新实现。  由 `override` 声明重写的方法称为重写基方法。  重写的基方法必须与 `override` 方法具有相同的签名。  有关继承的信息，请参见[继承](../../../csharp/programming-guide/classes-and-structs/inheritance.md)。  
   
@@ -41,7 +41,7 @@ caps.handback.revision: 26
 ## 示例  
  此示例定义了一个名为 `Employee` 的基类和一个名为 `SalesEmployee` 的派生类。  `SalesEmployee` 类包括一个额外的属性 `salesbonus`，并重写方法 `CalculatePay` 以便将该属性考虑在内。  
   
- [!code-cs[csrefKeywordsModifiers#9](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#9)]  
+ [!code-cs[csrefKeywordsModifiers#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/override_2.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

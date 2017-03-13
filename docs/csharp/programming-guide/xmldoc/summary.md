@@ -38,7 +38,7 @@ caps.handback.revision: 15
  使用 [\/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) 进行编译可以将文档注释处理到文件中。  若要基于编译器生成的文件创建最终文档，可以创建一个自定义工具，也可以使用 [Sandcastle](http://go.microsoft.com/fwlink/?LinkId=124061) 等工具。  
   
 ## 示例  
- [!code-cs[csProgGuideDocComments#12](../../../csharp/programming-guide/xmldoc/codesnippet/csharp/summary_1.cs)]  
+ [!code-cs[csProgGuideDocComments#12](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/summary_1.cs)]  
   
  前面的示例生成下面的 XML 文件。  
   
@@ -68,7 +68,7 @@ caps.handback.revision: 15
 ## 示例  
  下面的示例演示如何对泛型类型进行 `cref` 引用。  
   
- [!code-cs[csProgGuideDocComments#11](../../../csharp/programming-guide/xmldoc/codesnippet/csharp/summary_2.cs)]  
+ [!code-cs[csProgGuideDocComments#11](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/summary_2.cs)]  
   
  前面的示例生成下面的 XML 文件。  
   

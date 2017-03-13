@@ -41,43 +41,43 @@ caps.handback.revision: 23
   
 3.  为属性指定至少一个参数。  您不能定义一个不带任何参数的默认属性。  
   
-     [!code-vb[VbVbcnProcedures#17](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-declare-and-call-_1.vb)]  
+     [!code-vb[VbVbcnProcedures#17](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_1.vb)]  
   
 ### 调用默认属性  
   
 1.  声明包含的类或结构类型的变量。  
   
-     [!code-vb[VbVbcnProcedures#16](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-declare-and-call-_2.vb)]  
+     [!code-vb[VbVbcnProcedures#16](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_2.vb)]  
   
 2.  使用单独的变量名。通常包括属性名的表达式。  
   
-     [!code-vb[VbVbcnProcedures#21](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-declare-and-call-_3.vb)]  
+     [!code-vb[VbVbcnProcedures#21](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_3.vb)]  
   
 3.  变量名后面加上括号将参数列表。  默认属性必须具有至少一个参数。  
   
-     [!code-vb[VbVbcnProcedures#20](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-declare-and-call-_4.vb)]  
+     [!code-vb[VbVbcnProcedures#20](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_4.vb)]  
   
 4.  若要检索默认属性值，请使用带有参数列表的变量名，，在表达式中或等于后 \(`=`\) 赋值语句中加上等号  
   
-     [!code-vb[VbVbcnProcedures#15](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-declare-and-call-_5.vb)]  
+     [!code-vb[VbVbcnProcedures#15](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_5.vb)]  
   
 5.  若要设置默认属性值，请使用变量名称，并且在赋值语句的左侧，参数列表。  
   
-     [!code-vb[VbVbcnProcedures#14](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-declare-and-call-_6.vb)]  
+     [!code-vb[VbVbcnProcedures#14](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_6.vb)]  
   
 6.  就象您访问其他属性，您可以使用变量名一起始终指定默认属性名称。  
   
-     [!code-vb[VbVbcnProcedures#19](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-declare-and-call-_7.vb)]  
+     [!code-vb[VbVbcnProcedures#19](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_7.vb)]  
   
 ## 示例  
  下面的示例声明类中的默认属性。  
   
- [!code-vb[VbVbcnProcedures#12](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-declare-and-call-_8.vb)]  
+ [!code-vb[VbVbcnProcedures#12](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_8.vb)]  
   
 ## 示例  
  下面的示例演示如何调用类中 `class1`的默认属性 `myProperty` 。  三个赋值语句在 `myProperty`存储值，并且， <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> 调用读取值。  
   
- [!code-vb[VbVbcnProcedures#13](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-declare-and-call-_9.vb)]  
+ [!code-vb[VbVbcnProcedures#13](./codesnippet/VisualBasic/how-to-declare-and-call-a-default-property_9.vb)]  
   
  最常见的默认属性是在各种集合类的 <xref:Microsoft.VisualBasic.Collection.Item%2A> 属性。  
   

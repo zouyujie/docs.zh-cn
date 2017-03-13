@@ -26,15 +26,15 @@ caps.handback.revision: 29
   
  在类块中通过指定字段的访问级别，然后指定字段的类型，再指定字段的名称来声明这些字段。  例如：  
   
- [!code-cs[csProgGuideObjects#61](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/fields_1.cs)]  
+ [!code-cs[csProgGuideObjects#61](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/fields_1.cs)]  
   
  若要访问对象中的字段，请在对象名称后面添加一个句点，然后添加该字段的名称，比如 `objectname.fieldname`。  例如：  
   
- [!code-cs[csProgGuideObjects#62](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/fields_2.cs)]  
+ [!code-cs[csProgGuideObjects#62](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/fields_2.cs)]  
   
  声明字段时可以使用赋值运算符为字段指定一个初始值。  例如，若要自动将 `"Monday"` 赋给 `day` 字段，需要声明 `day`，如下例所示：  
   
- [!code-cs[csProgGuideObjects#63](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/fields_3.cs)]  
+ [!code-cs[csProgGuideObjects#63](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/fields_3.cs)]  
   
  字段的初始化紧靠调用对象实例的构造函数之前。  如果构造函数为字段赋值，则该值将覆盖字段声明期间给出的任何值。  有关更多信息，请参见 [使用构造函数](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)。  
   

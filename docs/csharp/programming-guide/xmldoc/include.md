@@ -47,7 +47,7 @@ caps.handback.revision: 19
 ## 示例  
  以下是一个多文件示例。  第一个文件使用 \<include\>，如下所列：  
   
- [!code-cs[csProgGuideDocComments#5](../../../csharp/programming-guide/xmldoc/codesnippet/csharp/include_1.cs)]  
+ [!code-cs[csProgGuideDocComments#5](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/include_1.cs)]  
   
  第二个文件 xml\_include\_tag.doc 包含下列文档注释：  
   

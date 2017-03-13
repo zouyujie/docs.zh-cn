@@ -34,7 +34,7 @@ caps.handback.revision: 32
   
 -   在不包括 [using 指令](../../../csharp/language-reference/keywords/using-directive.md)的短示例中，使用命名空间限定。  如果你知道命名空间默认导入项目中，则不必完全限定来自该命名空间的名称。  如果对于单行来说过长，则可以在点 \(.\) 后中断限定名称，如下面的示例所示。  
   
-     [!code-cs[csProgGuideCodingConventions#1](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#1)]  
+     [!code-cs[csProgGuideCodingConventions#1](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_1.cs)]  
   
 -   你不必更改通过使用 Visual Studio 设计器工具创建的对象的名称以使它们适合其他准则。  
   
@@ -53,7 +53,7 @@ caps.handback.revision: 32
   
 -   使用括号突出表达式中的子句，如下面的代码所示。  
   
-     [!code-cs[csProgGuideCodingConventions#2](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#2)]  
+     [!code-cs[csProgGuideCodingConventions#2](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_2.cs)]  
   
 ## 注释约定  
   
@@ -65,7 +65,7 @@ caps.handback.revision: 32
   
 -   在注释分隔符 \(\/\/\) 与注释文本之间插入一个空格，如下面的示例所示。  
   
-     [!code-cs[csProgGuideCodingConventions#3](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#3)]  
+     [!code-cs[csProgGuideCodingConventions#3](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_3.cs)]  
   
 -   不要在注释周围创建格式化的星号块。  
   
@@ -76,25 +76,25 @@ caps.handback.revision: 32
   
 -   使用 `+` 运算符来连接短字符串，如下面的代码所示。  
   
-     [!code-cs[csProgGuideCodingConventions#6](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#6)]  
+     [!code-cs[csProgGuideCodingConventions#6](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_4.cs)]  
   
 -   若要在循环中追加字符串，尤其是在使用大量文本时，请使用 <xref:System.Text.StringBuilder> 对象。  
   
-     [!code-cs[csProgGuideCodingConventions#7](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#7)]  
+     [!code-cs[csProgGuideCodingConventions#7](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_5.cs)]  
   
 ### 隐式类型的局部变量  
   
 -   当变量类型明显来自赋值的右侧时，或者当精度类型不重要时，请对本地变量进行[隐式类型化](../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md)。  
   
-     [!code-cs[csProgGuideCodingConventions#8](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#8)]  
+     [!code-cs[csProgGuideCodingConventions#8](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_6.cs)]  
   
 -   当类型并非明显来自赋值的右侧时，请勿使用 [var](../../../csharp/language-reference/keywords/var.md)。  
   
-     [!code-cs[csProgGuideCodingConventions#9](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#9)]  
+     [!code-cs[csProgGuideCodingConventions#9](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_7.cs)]  
   
 -   请勿依靠变量名称来指定变量的类型。  它可能不正确。  
   
-     [!code-cs[csProgGuideCodingConventions#10](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#10)]  
+     [!code-cs[csProgGuideCodingConventions#10](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_8.cs)]  
   
 -   避免使用 `var` 来代替 [dynamic](../../../csharp/language-reference/keywords/dynamic.md)。  
   
@@ -102,11 +102,11 @@ caps.handback.revision: 32
   
      下面的示例在 `for` 语句中使用隐式类型化。  
   
-     [!code-cs[csProgGuideCodingConventions#11](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#11)]  
+     [!code-cs[csProgGuideCodingConventions#11](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_9.cs)]  
   
      下面的示例在 `foreach` 语句中使用隐式类型化。  
   
-     [!code-cs[csProgGuideCodingConventions#12](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#12)]  
+     [!code-cs[csProgGuideCodingConventions#12](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_10.cs)]  
   
 ### 无符号数据类型  
   
@@ -116,53 +116,53 @@ caps.handback.revision: 32
   
 -   当在声明行上初始化数组时，请使用简洁的语法。  
   
-     [!code-cs[csProgGuideCodingConventions#13](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#13)]  
+     [!code-cs[csProgGuideCodingConventions#13](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_11.cs)]  
   
 ### 委托  
   
 -   使用简洁的语法来创建委托类型的实例。  
   
-     [!code-cs[csProgGuideCodingConventions#14](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#14)]  
+     [!code-cs[csProgGuideCodingConventions#14](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_12.cs)]  
   
-     [!code-cs[csProgGuideCodingConventions#15](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#15)]  
+     [!code-cs[csProgGuideCodingConventions#15](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_13.cs)]  
   
 ### 异常处理中的 try\-catch 和 using 语句  
   
 -   对大多数异常处理使用 [try\-catch](../../../csharp/language-reference/keywords/try-catch.md) 语句。  
   
-     [!code-cs[csProgGuideCodingConventions#16](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#16)]  
+     [!code-cs[csProgGuideCodingConventions#16](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_14.cs)]  
   
 -   通过使用 C\# [using 语句](../../../csharp/language-reference/keywords/using-statement.md)简化你的代码。  如果你具有 [try\-finally](../../../csharp/language-reference/keywords/try-finally.md) 语句（该语句中 `finally` 块的唯一代码是对 <xref:System.IDisposable.Dispose%2A> 方法的调用），请使用 `using` 语句代替。  
   
-     [!code-cs[csProgGuideCodingConventions#17](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#17)]  
+     [!code-cs[csProgGuideCodingConventions#17](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_15.cs)]  
   
 ### && 和 &#124;&#124; 运算符  
   
 -   若要通过跳过必要的比较来避免异常和提高性能，请在执行比较时使用 [&&](../../../csharp/language-reference/operators/conditional-and-operator.md) 来代替 [&](../../../csharp/language-reference/operators/and-operator.md)，使用 [&#124;&#124;](../../../csharp/language-reference/operators/conditional-or-operator.md) 来代替                                        [&#124;](../../../csharp/language-reference/operators/or-operator.md) ，如下面的示例所示。  
   
-     [!code-cs[csProgGuideCodingConventions#18](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#18)]  
+     [!code-cs[csProgGuideCodingConventions#18](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_16.cs)]  
   
 ### New 运算符  
   
 -   隐式类型化时，请使用对象实例化的简洁形式，如下面的声明所示。  
   
-     [!code-cs[csProgGuideCodingConventions#19](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#19)]  
+     [!code-cs[csProgGuideCodingConventions#19](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_17.cs)]  
   
      上一行等同于下面的声明。  
   
-     [!code-cs[csProgGuideCodingConventions#20](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#20)]  
+     [!code-cs[csProgGuideCodingConventions#20](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_18.cs)]  
   
 -   使用对象初始值设定项来简化对象创建。  
   
-     [!code-cs[csProgGuideCodingConventions#21](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#21)]  
+     [!code-cs[csProgGuideCodingConventions#21](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_19.cs)]  
   
 ### 事件处理  
   
 -   如果你正定义一个稍后不需要删除的事件处理程序，请使用 lambda 表达式。  
   
-     [!code-cs[csProgGuideCodingConventions#22](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#22)]  
+     [!code-cs[csProgGuideCodingConventions#22](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_20.cs)]  
   
-     [!code-cs[csProgGuideCodingConventions#23](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#23)]  
+     [!code-cs[csProgGuideCodingConventions#23](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_21.cs)]  
   
 ### 静态成员  
   
@@ -172,29 +172,29 @@ caps.handback.revision: 32
   
 -   对查询变量使用有意义的名称。  下面的示例为位于西雅图的客户使用 `seattleCustomers`。  
   
-     [!code-cs[csProgGuideCodingConventions#25](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#25)]  
+     [!code-cs[csProgGuideCodingConventions#25](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_22.cs)]  
   
 -   使用别名确保匿名类型的属性名称都使用 Pascal 大小写格式正确大写。  
   
-     [!code-cs[csProgGuideCodingConventions#26](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#26)]  
+     [!code-cs[csProgGuideCodingConventions#26](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_23.cs)]  
   
 -   如果结果中的属性名称模棱两可，请对属性重命名。  例如，如果你的查询返回客户名称和分销商 ID，而不是在结果中将它们保留为 `Name` 和 `ID`，请对它们进行重命名以明确 `Name` 是客户的名称，`ID` 是分销商的 ID。  
   
-     [!code-cs[csProgGuideCodingConventions#27](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#27)]  
+     [!code-cs[csProgGuideCodingConventions#27](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_24.cs)]  
   
 -   在查询变量和范围变量的声明中使用隐式类型化。  
   
-     [!code-cs[csProgGuideCodingConventions#25](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#25)]  
+     [!code-cs[csProgGuideCodingConventions#25](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_22.cs)]  
   
 -   对齐 [from](../../../csharp/language-reference/keywords/from-clause.md) 子句下的查询子句，如上面的示例所示。  
   
 -   在其他查询子句之前使用 [where](../../../csharp/language-reference/keywords/where-clause.md) 子句，以确保后面的查询子句作用于经过减少和筛选的数据集。  
   
-     [!code-cs[csProgGuideCodingConventions#29](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#29)]  
+     [!code-cs[csProgGuideCodingConventions#29](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_25.cs)]  
   
 -   使用多行 `from` 子句代替 [join](../../../csharp/language-reference/keywords/join-clause.md) 子句以访问内部集合。  例如，`Student` 对象的集合可能包含测验分数的集合。  当执行以下查询时，它返回高于 90 的分数，并返回得到该分数的学生的姓氏。  
   
-     [!code-cs[csProgGuideCodingConventions#30](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/coding conventions examples/program.cs#30)]  
+     [!code-cs[csProgGuideCodingConventions#30](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_26.cs)]  
   
 ## 安全性  
  请遵循[代码安全维护指南](../Topic/Secure%20Coding%20Guidelines.md)中的准则。  

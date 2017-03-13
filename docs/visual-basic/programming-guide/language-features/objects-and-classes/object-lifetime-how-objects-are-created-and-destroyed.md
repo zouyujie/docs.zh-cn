@@ -51,11 +51,11 @@ caps.handback.revision: 22
   
  若要创建类的构造函数，请在类定义中的任何位置创建一个名为 `Sub New` 的过程。  若要创建参数化构造函数，请按指定任何其他过程的参数的方式，将参数名称和数据类型指定为 `Sub New`，如下面代码所示：  
   
- [!code-vb[VbVbalrOOP#42](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/WhidbeyStuff.vb#42)]  
+ [!code-vb[VbVbalrOOP#42](../../../../visual-basic/misc/codesnippet/VisualBasic/object-lifetime-how-objects-are-created-and-destroyed_1.vb)]  
   
  构造函数常常重载，如下面代码所示：  
   
- [!code-vb[VbVbalrOOP#116](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/WhidbeyStuff.vb#116)]  
+ [!code-vb[VbVbalrOOP#116](../../../../visual-basic/misc/codesnippet/VisualBasic/object-lifetime-how-objects-are-created-and-destroyed_2.vb)]  
   
  定义派生自另一个类的类时，构造函数的首行必须是对基类的构造函数的调用，除非此基类具有一个无参数且可访问的构造函数。  例如，对包含以上构造函数的基类的调用将为 `MyBase.New(s)`。  否则，`MyBase.New` 是可选的，并且 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 运行时对其进行隐式调用。  
   

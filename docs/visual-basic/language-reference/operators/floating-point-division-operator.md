@@ -85,7 +85,7 @@ expression1 / expression2
 ## 示例  
  本示例使用 `/` 运算符执行浮点除法。  结果是两个操作数的商。  
   
- [!code-vb[VbVbalrOperators#16](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/floating-point-division-_1_1.vb)]  
+ [!code-vb[VbVbalrOperators#16](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/floating-point-division-operator_1.vb)]  
   
  前面的示例中的表达式返回值 2.5 和 3.333333。  请注意，即使两个操作数都是整数常数，结果也始终为浮点类型 \(`Double`\)。  
   

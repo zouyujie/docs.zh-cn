@@ -46,7 +46,7 @@ caps.handback.revision: 17
 ## 示例  
  下面的示例显示如何使用 `TryCast`。  
   
- [!code-vb[VbVbalrKeywords#6](../../../visual-basic/language-reference/codesnippet/visualbasic/trycast-operator_1.vb)]  
+ [!code-vb[VbVbalrKeywords#6](../../../visual-basic/language-reference/codesnippet/VisualBasic/trycast-operator_1.vb)]  
   
 ## 请参阅  
  [扩大转换和收缩转换](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)   

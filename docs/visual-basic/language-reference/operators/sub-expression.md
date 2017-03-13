@@ -63,7 +63,7 @@ End Sub
 ## 示例  
  下面是将值写入控制台的 Lambda 表达式的示例。  该示例同时显示了一个子例程的单行和多行 Lambda 表达式语法。  有关更多示例，请参见[lambda 表达式](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)。  
   
- [!code-vb[VbVbalrLambdas#15](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#15)]  
+ [!code-vb[VbVbalrLambdas#15](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/sub-expression_1.vb)]  
   
 ## 请参阅  
  [Sub 语句](../../../visual-basic/language-reference/statements/sub-statement.md)   

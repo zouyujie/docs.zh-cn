@@ -28,7 +28,7 @@ caps.handback.revision: 27
 ## 示例  
  如果你在使用演练，则可以将此代码用于在其中创建的项目的 Module1.vb 文件。  只需将 `Main` 方法中使用 \*\*\*\* 进行标记的行替换为在演练中提供的查询和查询执行。  
   
- [!code-vb[VbLINQHowToCreateList#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/how-to-create-a-list-of-_1.vb)]  
+ [!code-vb[VbLINQHowToCreateList#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/how-to-create-a-list-of-items_1.vb)]  
   
 ## 请参阅  
  [视频帮助：用 Visual Basic 编写查询](http://msdn.microsoft.com/library/bb820884.aspx)   

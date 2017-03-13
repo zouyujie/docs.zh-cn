@@ -31,7 +31,7 @@ int i = 10; //explicitly typed
 ## 示例  
  下面的示例演示了两个查询表达式。  在第一个表达式中，允许但不需要使用 `var`，因为可以将查询结果的类型显式声明为 `IEnumerable<string>`。  但是，在第二个表达式中必须使用 `var`，因为结果是一个匿名类型集合，而该类型的名称只有编译器本身可以访问。  请注意，在第二个示例中，`foreach` 迭代变量 `item` 也必须转换为隐式类型。  
   
- [!code-cs[csrefKeywordsTypes#18](../../../csharp/language-reference/keywords/codesnippet/csharp/var_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#18](../../../csharp/language-reference/keywords/codesnippet/CSharp/var_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

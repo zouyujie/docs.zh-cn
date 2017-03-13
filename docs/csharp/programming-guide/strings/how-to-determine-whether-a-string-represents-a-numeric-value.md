@@ -34,7 +34,7 @@ bool result = int.TryParse(s, out i); //i now = 108
 ## 示例  
  下面的示例演示如何对 `long`、`byte` 和 `decimal` 值的字符串表示形式使用 `TryParse`。  
   
- [!code-cs[csProgGuideStrings#14](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#14)]  
+ [!code-cs[csProgGuideStrings#14](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-determine-whether-a-string-represents-a-numeric-value_1.cs)]  
   
 ## 可靠编程  
  基元数值类型还实现了 `Parse` 静态方法，此方法会在字符串不是有效数字时引发异常。  `TryParse` 通常更加有效，因为它在数字无效时只是返回 false。  

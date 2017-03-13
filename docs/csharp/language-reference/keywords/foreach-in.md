@@ -44,7 +44,7 @@ caps.handback.revision: 29
   
 -   维护数组中的元素数计数的 `foreach` 循环  
   
- [!code-cs[csrefKeywordsIteration#4](../../../csharp/language-reference/keywords/codesnippet/csharp/foreach-in_1.cs)]  
+ [!code-cs[csrefKeywordsIteration#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/foreach-in_1.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

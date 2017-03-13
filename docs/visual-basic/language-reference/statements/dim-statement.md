@@ -309,19 +309,19 @@ Dim twoDimensions(,) As Integer = {{0, 1, 2}, {10, 11, 12}}
 ## <a name="example"></a>示例  
  下面的示例通过声明变量 `Dim` 带有不同选项的语句。  
   
- [!code-vb[VbVbalrStatements#141](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/dim-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#141](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/dim-statement_1.vb)]  
   
 ## <a name="example"></a>示例  
  以下示例列出 1 到 30 之间的素数。 本地变量的作用域是在代码注释中所述。  
   
- [!code-vb[VbVbalrStatements#142](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/dim-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#142](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/dim-statement_2.vb)]  
   
 ## <a name="example"></a>示例  
  在下面的示例中， `speedValue` 在类级别声明变量。  `Private` 关键字用于声明变量。 中的任何过程可以访问此变量 `Car` 类。  
   
- [!code-vb[VbVbalrStatements#144](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/dim-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#144](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/dim-statement_3.vb)]  
   
- [!code-vb[VbVbalrStatements#145](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/dim-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#145](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/dim-statement_4.vb)]  
   
 ## <a name="see-also"></a>另请参阅  
  [Const 语句](../../../visual-basic/language-reference/statements/const-statement.md)   

@@ -31,16 +31,16 @@ caps.handback.revision: 12
   
      您可能还需要在程序开头的 `using` 节中包括以下行。  
   
-     [!code-cs[csProgGuideNamespaces#18](../../../csharp/programming-guide/namespaces/codesnippet/csharp/Namespaces/Namespaces3.cs#18)]  
+     [!code-cs[csProgGuideNamespaces#18](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-my-namespace_1.cs)]  
   
 ## 示例  
  此示例调用 `MyServices` 命名空间中包含的各种静态方法。  要编译此代码，必须在项目中添加一个对 Microsoft.VisualBasic.DLL 的引用。  
   
- [!code-cs[csProgGuideNamespaces#19](../../../csharp/programming-guide/namespaces/codesnippet/csharp/Namespaces/Namespaces3.cs#19)]  
+ [!code-cs[csProgGuideNamespaces#19](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-my-namespace_2.cs)]  
   
  并不是 `MyServices` 命名空间中的所有的类都可以从 C\# 应用程序调用：例如 <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy> 类就不兼容。  在这种特定情况下，可以改用作为 <xref:Microsoft.VisualBasic.FileIO.FileSystem>（它也包含在 VisualBasic.dll 中）的一部分的静态方法。  例如，下面介绍了如何使用这样的方法来复制目录：  
   
- [!code-cs[csProgGuideNamespaces#20](../../../csharp/programming-guide/namespaces/codesnippet/csharp/Namespaces/Namespaces3.cs#20)]  
+ [!code-cs[csProgGuideNamespaces#20](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-my-namespace_3.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

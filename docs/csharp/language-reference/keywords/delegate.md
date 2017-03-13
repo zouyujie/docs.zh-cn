@@ -38,7 +38,7 @@ public delegate int TestDelegate(MyType m, long num);
  必须使用具有兼容返回类型和输入参数的方法或 lambda 表达式实例化委托。  有关方法签名中允许的差异程度的更多信息，请参见[委托中的变体](../Topic/Variance%20in%20Delegates%20\(C%23%20and%20Visual%20Basic\).md)。  为了与匿名方法一起使用，委托和与之关联的代码必须一起声明。  本节讨论这两种实例化委托的方法。  
   
 ## 示例  
- [!code-cs[csrefKeywordsTypes#8](../../../csharp/language-reference/keywords/codesnippet/csharp/delegate_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/delegate_1.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

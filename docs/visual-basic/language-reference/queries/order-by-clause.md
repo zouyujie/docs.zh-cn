@@ -46,17 +46,17 @@ Order By orderExp1 [ Ascending | Descending ] [, orderExp2 [...] ]
 ## 示例  
  下面的查询表达式使用 `From` 子句为 `books` 集合声明了范围变量 `book`。  `Order By` 子句按照价格以升序（默认值）对查询结果进行排序。  价格相同的书籍按书名进行升序排序。  `Select` 子句选择 `Title` 和 `Price` 属性作为查询返的回值。  
   
- [!code-vb[VbSimpleQuerySamples#24](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#24)]  
+ [!code-vb[VbSimpleQuerySamples#24](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/order-by-clause_1.vb)]  
   
 ## 示例  
  下面的查询表达式使用 `Order By` 子句按照价格以降序对查询结果进行排序。  价格相同的书籍按书名进行升序排序。  
   
- [!code-vb[VbSimpleQuerySamples#25](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#25)]  
+ [!code-vb[VbSimpleQuerySamples#25](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/order-by-clause_2.vb)]  
   
 ## 示例  
  下面的查询表达式使用 `Select` 子句选择书名、价格、出版日期和作者。  然后，该表达式填充新范围的范围变量的 `Title`、`Price`、`PublishDate` 和 `Author` 字段。  `Order By` 子句依次按照作者姓名、书名和价格对新的范围变量进行排序。  每个列以默认顺序（升序）进行排序。  
   
- [!code-vb[VbSimpleQuerySamples#26](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#26)]  
+ [!code-vb[VbSimpleQuerySamples#26](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/order-by-clause_3.vb)]  
   
 ## 请参阅  
  [Visual Basic 中的 LINQ 简介](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   

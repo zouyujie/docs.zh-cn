@@ -33,9 +33,9 @@ for (int i = 65; i < 123; i++)
   
  请注意，表达式 `charPointer[i]` 与表达式 `*(charPointer + i)` 等效，使用这两个表达式可获得相同的结果。  
   
- [!code-cs[csProgGuidePointers#11](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers2.cs#11)]  
+ [!code-cs[csProgGuidePointers#11](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-access-an-array-element-with-a-pointer_1.cs)]  
   
- [!code-cs[csProgGuidePointers#12](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers.cs#12)]  
+ [!code-cs[csProgGuidePointers#12](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-access-an-array-element-with-a-pointer_2.cs)]  
   
   **大写字母：**  
 **ABCDEFGHIJKLMNOPQRSTUVWXYZ**  

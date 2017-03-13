@@ -78,13 +78,13 @@ caps.handback.revision: 6
   
      将下面的代码添加到 `Load` 事件，以查询作为数据上下文的属性公开的表。  查询会筛选结果，并且仅返回位于 `London` 的客户。  
   
-     [!code-vb[VbLINQToSQLHowTos#11](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/StoredProcedureHowTo/Form5.vb#11)]  
+     [!code-vb[VbLINQToSQLHowTos#11](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-filter-query-results-by-using-linq_1.vb)]  
   
 4.  按 F5 运行项目并查看结果。  
   
 5.  下面是您可以进行尝试的其他一些筛选器。  
   
-     [!code-vb[VbLINQToSQLHowTos#12](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/StoredProcedureHowTo/Form5.vb#12)]  
+     [!code-vb[VbLINQToSQLHowTos#12](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-filter-query-results-by-using-linq_2.vb)]  
   
 ## 请参阅  
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   

@@ -41,7 +41,7 @@ caps.handback.revision: 14
 ## 示例  
  下面的示例演示如何将 `ByVal` 形参传入机制与引用类型实参一起使用。  在该示例中，实参是 `c1`，它是类 `Class1` 的一个实例。  `ByVal` 防止过程中的代码更改引用实参 `c1` 的基础值，但是不保护 `c1` 的可访问字段和属性。  
   
- [!code-vb[VbVbalrKeywords#10](../../../visual-basic/language-reference/codesnippet/visualbasic/byval_1.vb)]  
+ [!code-vb[VbVbalrKeywords#10](../../../visual-basic/language-reference/codesnippet/VisualBasic/byval_1.vb)]  
   
 ## 请参阅  
  [关键字](../../../visual-basic/language-reference/keywords/index.md)   

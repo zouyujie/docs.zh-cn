@@ -27,17 +27,17 @@ caps.handback.revision: 10
   
  除了接口约束，`where` 子句还可以包括基类约束，以指出某个类型必须将指定的类作为基类（或者就是该类本身），才能用作该泛型类型的类型参数。  这样的约束一经使用，就必须出现在该类型参数的所有其他约束之前。  
   
- [!code-cs[csrefKeywordsContextual#6](../../../csharp/language-reference/keywords/codesnippet/csharp/where-generic-type-const_1.cs)]  
+ [!code-cs[csrefKeywordsContextual#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-generic-type-constraint_1.cs)]  
   
  `where` 子句还可以包括构造函数约束。  可以使用 new 运算符创建类型参数的实例；但类型参数为此必须受构造函数约束 `new()` 的约束。  [new\(\) 约束](../../../csharp/language-reference/keywords/new-constraint.md)可以让编译器知道：提供的任何类型参数都必须具有可访问的无参数（或默认）构造函数。  例如：  
   
- [!code-cs[csrefKeywordsContextual#7](../../../csharp/language-reference/keywords/codesnippet/csharp/where-generic-type-const_2.cs)]  
+ [!code-cs[csrefKeywordsContextual#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-generic-type-constraint_2.cs)]  
   
  `new()` 约束出现在 `where` 子句的最后。  
   
  对于多个类型参数，每个类型参数都使用一个 `where` 子句，例如：  
   
- [!code-cs[csrefKeywordsContextual#8](../../../csharp/language-reference/keywords/codesnippet/csharp/where-generic-type-const_3.cs)]  
+ [!code-cs[csrefKeywordsContextual#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-generic-type-constraint_3.cs)]  
   
  还可以将约束附加到泛型方法的类型参数，例如：  
   

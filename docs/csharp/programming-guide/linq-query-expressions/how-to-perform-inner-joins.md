@@ -20,7 +20,7 @@ caps.handback.revision: 25
 ## 简单键联接示例  
  下面的示例创建了两个集合，其中分别包含以下两个用户定义类型的对象：`Person` 和 `Pet`。  查询使用 C\# 中的 `join` 子句来将 `Person` 对象与 `Pet` 对象（其 `Owner` 为该 `Person`）进行匹配。  C\# 中的 `select` 子句可定义生成的对象的外观。  在此示例中，生成的对象是由主人的名字和宠物的名字组成的匿名类型。  
   
- [!code-cs[CsLINQProgJoining#1](../../../csharp/programming-guide/linq-query-expressions/codesnippet/csharp/Joins/joins.cs#1)]  
+ [!code-cs[CsLINQProgJoining#1](../../../csharp/programming-guide/linq-query-expressions/codesnippet/CSharp/how-to-perform-inner-joins_1.cs)]  
   
  请注意，其 `LastName` 为“Huff”的 `Person` 对象未出现在结果集内，因为不存在 `Pet.Owner` 等于该 `Person` 的 `Pet` 对象。  
   
@@ -31,7 +31,7 @@ caps.handback.revision: 25
   
  下面的示例使用一个 `Employee` 对象列表和一个 `Student` 对象列表来确定哪些雇员同时还是学生。  这两个类型都具有 <xref:System.String> 类型的 `FirstName` 和 `LastName` 属性。  能够从每个列表的元素创建联接键的函数可返回一个由每个元素的 `FirstName` 和 `LastName` 属性组成的匿名类型。  联接操作比较这些复合键是否相等，并且从每个列表中返回名字和姓氏都匹配的对象对。  
   
- [!code-cs[CsLINQProgJoining#2](../../../csharp/programming-guide/linq-query-expressions/codesnippet/csharp/Joins/joins.cs#2)]  
+ [!code-cs[CsLINQProgJoining#2](../../../csharp/programming-guide/linq-query-expressions/codesnippet/CSharp/how-to-perform-inner-joins_2.cs)]  
   
 ## 示例  
   
@@ -44,7 +44,7 @@ caps.handback.revision: 25
   
  C\# 中的第二个 `join` 子句基于一个组合键将第一个联接返回的匿名类型与所提供的犬列表中的 `Dog` 对象相互关联，该组合键由类型为 `Person` 的 `Owner` 属性和动物名字的首字母组成。  该子句返回一个匿名类型序列，这些类型包含每个匹配对中的 `Cat.Name` 和 `Dog.Name` 属性。  由于这是一个内部联接，因此仅返回第一个数据源中那些在第二个数据源中具有匹配对象的对象。  
   
- [!code-cs[CsLINQProgJoining#3](../../../csharp/programming-guide/linq-query-expressions/codesnippet/csharp/Joins/joins.cs#3)]  
+ [!code-cs[CsLINQProgJoining#3](../../../csharp/programming-guide/linq-query-expressions/codesnippet/CSharp/how-to-perform-inner-joins_3.cs)]  
   
 ## 示例  
   
@@ -57,7 +57,7 @@ caps.handback.revision: 25
   
  `query1` 的结果等效于使用 `join` 子句所获得的结果集，而没有 `into` 子句执行内联。  `query2` 变量演示了这一等效查询。  
   
- [!code-cs[CsLINQProgJoining#4](../../../csharp/programming-guide/linq-query-expressions/codesnippet/csharp/Joins/joins.cs#4)]  
+ [!code-cs[CsLINQProgJoining#4](../../../csharp/programming-guide/linq-query-expressions/codesnippet/CSharp/how-to-perform-inner-joins_4.cs)]  
   
 ## 编译代码  
   

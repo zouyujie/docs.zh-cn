@@ -27,7 +27,7 @@ caps.handback.revision: 25
  下面的示例的输出显示差异。  ，因为该方法在参数中使用该地址查找类的实例，的指定字段调用将类实例的 `willIChange` 字段的值传递给方法 `ClassTaker` 。  调用不更改结构的 `willIChange` 字段在调用方法为方法 `StructTaker` ，因为参数的值是结构的副本，而不是复制其地址。  `StructTaker` 更改该副本，因此，该副本丢失，在向 `StructTaker` 调用完成时。  
   
 ## 示例  
- [!code-cs[csProgGuideObjects#32](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-know-the-differen_1.cs)]  
+ [!code-cs[csProgGuideObjects#32](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method_1.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

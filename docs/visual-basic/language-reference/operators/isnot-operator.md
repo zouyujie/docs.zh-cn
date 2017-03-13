@@ -54,7 +54,7 @@ result = object1 IsNot object2
 ## 示例  
  下面的代码示例使用 `Is` 运算符和 `IsNot` 运算符进行同样的比较。  
   
- [!code-vb[VbVbalrOperators#29](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/isnot-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#29](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/isnot-operator_1.vb)]  
   
 ## 请参阅  
  [Is 运算符](../../../visual-basic/language-reference/operators/is-operator.md)   

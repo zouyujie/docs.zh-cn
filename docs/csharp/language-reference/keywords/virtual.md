@@ -37,7 +37,7 @@ public virtual double Area()
   
  `virtual` 修饰符不能与 `static`、`abstract, private` 或 `override` 修饰符一起使用。  下面的示例演示一个虚拟属性：  
   
- [!code-cs[csrefKeywordsModifiers#26](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#26)]  
+ [!code-cs[csrefKeywordsModifiers#26](../../../csharp/language-reference/keywords/codesnippet/CSharp/virtual_1.cs)]  
   
  除了声明和调用语法不同外，虚拟属性的行为与抽象方法一样。  
   
@@ -56,7 +56,7 @@ public Cylinder(double r, double h): base(r, h) {}
   
  下面的过程通过调用 `Area()` 方法的适当实现计算并显示由每个图形的合适区域，根据与该方法的对象。  
   
- [!code-cs[csrefKeywordsModifiers#23](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#23)]  
+ [!code-cs[csrefKeywordsModifiers#23](../../../csharp/language-reference/keywords/codesnippet/CSharp/virtual_2.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

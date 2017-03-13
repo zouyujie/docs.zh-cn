@@ -97,7 +97,7 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) 
 ## 示例  
  下面的示例将类 `sampleClass` 的定义拆分到两个声明中，其中每一个均定义一个不同的 `Sub` 过程。  
   
- [!code-vb[VbVbalrKeywords#3](../../../visual-basic/language-reference/codesnippet/visualbasic/partial_1.vb)]  
+ [!code-vb[VbVbalrKeywords#3](../../../visual-basic/language-reference/codesnippet/VisualBasic/partial_1.vb)]  
   
  前面示例中的两个分部定义可能在同一源文件中或在两个不同的源文件中。  
   

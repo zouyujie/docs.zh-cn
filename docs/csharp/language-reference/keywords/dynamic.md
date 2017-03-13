@@ -25,7 +25,7 @@ caps.handback.revision: 25
   
  以下示例将类型为 `dynamic` 的变量与类型为 `object` 的变量对比。  若要在编译时验证每个变量的类型，请将鼠标指针放在 `WriteLine` 语句中的 `dyn` 或 `obj` 上。  IntelliSense 显示了 `dyn` 的**“动态”**和 `obj` 的**“对象”**。  
   
- [!code-cs[csrefKeywordsTypes#21](../../../csharp/language-reference/keywords/codesnippet/csharp/dynamic_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#21](../../../csharp/language-reference/keywords/codesnippet/CSharp/dynamic_1.cs)]  
   
  `WriteLine` 语句显示 `dyn` 和 `obj` 的运行时类型。  此时，两者具有相同的整数类型。  将生成以下输出：  
   
@@ -48,20 +48,20 @@ obj = obj + 3;
   
 -   在声明中，作为属性、字段、索引器、参数、返回值或类型约束的类型。  下面的类定义在几个不同的声明中使用 `dynamic`。  
   
-     [!code-cs[csrefKeywordsTypes#22](../../../csharp/language-reference/keywords/codesnippet/csharp/dynamic_2.cs)]  
+     [!code-cs[csrefKeywordsTypes#22](../../../csharp/language-reference/keywords/codesnippet/CSharp/dynamic_2.cs)]  
   
 -   在显式类型转换中，作为转换的目标类型。  
   
-     [!code-cs[csrefKeywordsTypes#23](../../../csharp/language-reference/keywords/codesnippet/csharp/dynamic_3.cs)]  
+     [!code-cs[csrefKeywordsTypes#23](../../../csharp/language-reference/keywords/codesnippet/CSharp/dynamic_3.cs)]  
   
 -   在以类型充当值（如 `is` 运算符或 `as` 运算符右侧）或者作为 `typeof` 的参数成为构造类型的一部分的任何上下文中。  例如，可以在下列表达式中使用 `dynamic`。  
   
-     [!code-cs[csrefKeywordsTypes#24](../../../csharp/language-reference/keywords/codesnippet/csharp/dynamic_4.cs)]  
+     [!code-cs[csrefKeywordsTypes#24](../../../csharp/language-reference/keywords/codesnippet/CSharp/dynamic_4.cs)]  
   
 ## 示例  
  下面的示例以多个声明使用 `dynamic`。  `Main` 也用运行时类型检查对比编译时类型检查。  
   
- [!code-cs[csrefKeywordsTypes#25](../../../csharp/language-reference/keywords/codesnippet/csharp/dynamic_5.cs)]  
+ [!code-cs[csrefKeywordsTypes#25](../../../csharp/language-reference/keywords/codesnippet/CSharp/dynamic_5.cs)]  
   
  有关更多信息和示例，请参见[使用类型 dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)。  
   

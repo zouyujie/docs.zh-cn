@@ -42,13 +42,13 @@ System.Convert.ToInt32("35")
 ## 文本和简单名称  
  最简单的两种表达式类型是文本和简单名称。  文本是没有名称的常数值。  例如，在下面的代码示例中，`5` 和 `"Hello World"` 都是文本值：  
   
- [!code-cs[csProgGuideStatements#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/expressions_1.cs)]  
+ [!code-cs[csProgGuideStatements#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/expressions_1.cs)]  
   
  有关文本的更多信息，请参见 [类型](../../../csharp/language-reference/keywords/types.md)。  
   
  在上面的示例中，`i` 和 `s` 都是用于标识局部变量的简单名称。  在表达式中使用这些变量时，变量名称计算为当前在该变量的内存位置所存储的值。  下面的示例演示了这种情况：  
   
- [!code-cs[csProgGuideStatements#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/expressions_2.cs)]  
+ [!code-cs[csProgGuideStatements#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/expressions_2.cs)]  
   
 ## 调用表达式  
  在下面的代码示例中，对 `DoWork` 的调用是一个调用表达式。  

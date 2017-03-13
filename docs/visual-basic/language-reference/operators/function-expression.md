@@ -67,19 +67,19 @@ End Function
 ## 示例  
  下面的示例演示创建简单 lambda 表达式的两种方法。  第一种方法使用 `Dim` 为函数提供名称。  若要调用函数，请为参数传递一个值。  
   
- [!code-vb[VbVbalrLambdas#1](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#1)]  
+ [!code-vb[VbVbalrLambdas#1](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/function-expression_1.vb)]  
   
- [!code-vb[VbVbalrLambdas#2](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#2)]  
+ [!code-vb[VbVbalrLambdas#2](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/function-expression_2.vb)]  
   
 ## 示例  
  或者，还可以同时声明和运行函数。  
   
- [!code-vb[VbVbalrLambdas#3](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#3)]  
+ [!code-vb[VbVbalrLambdas#3](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/function-expression_3.vb)]  
   
 ## 示例  
  下面是 lambda 表达式的示例，该表达式递增其参数并返回值。  该示例同时显示了一个函数的单行和多行 Lambda 表达式语法。  有关更多示例，请参见[lambda 表达式](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)。  
   
- [!code-vb[VbVbalrLambdas#14](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#14)]  
+ [!code-vb[VbVbalrLambdas#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/function-expression_4.vb)]  
   
 ## 示例  
  Lambda 表达式是 [!INCLUDE[vbteclinqext](../../../csharp/getting-started/includes/vbteclinqext-md.md)] 中的许多查询运算符的基础，可以在基于方法的查询中显式使用。  下面的示例演示一个典型的 [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq-md.md)] 查询，后跟该查询到方法格式的转换。  

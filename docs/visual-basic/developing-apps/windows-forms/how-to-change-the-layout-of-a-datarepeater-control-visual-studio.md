@@ -38,16 +38,16 @@ caps.handback.revision: 10
   
 1.  在按钮或菜单的 `Click` 事件处理程序中添加下面的代码：  
   
-     [!code-cs[VbPowerPacksDataRepeaterLayout#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/csharp/VbPowerPacksDataRepeaterLayoutCS/VbPowerPacksDataRepeaterLayout.cs#1)]
-     [!code-vb[VbPowerPacksDataRepeaterLayout#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/visualbasic/VbPowerPacksDataRepeaterLayout/VbPowerPacksDataRepeaterLayout.vb#1)]  
+     [!code-cs[VbPowerPacksDataRepeaterLayout#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-change-the-layout-of-a-datarepeater-control-visual-studio_1.cs)]
+     [!code-vb[VbPowerPacksDataRepeaterLayout#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-change-the-layout-of-a-datarepeater-control-visual-studio_1.vb)]  
   
 2.  在大多数情况下，您会希望添加类似于“示例”部分所示的代码来重新调整 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemTemplate%2A> 的大小并重新排列控件，以适应新的方向。  
   
 ## 示例  
  下面的示例演示如何在事件处理程序中响应 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.LayoutStyleChanged> 事件。  此示例要求您在窗体上有一个名为 `DataRepeater1` 的 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 控件，并且该控件的 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemTemplate%2A> 包含两个名称分别为 `TextBox1` 和 `TextBox2` 的 <xref:System.Windows.Forms.TextBox> 控件。  
   
- [!code-cs[VbPowerPacksDataRepeaterLayout#2](../../../visual-basic/developing-apps/windows-forms/codesnippet/csharp/VbPowerPacksDataRepeaterLayoutCS/VbPowerPacksDataRepeaterLayout.cs#2)]
- [!code-vb[VbPowerPacksDataRepeaterLayout#2](../../../visual-basic/developing-apps/windows-forms/codesnippet/visualbasic/VbPowerPacksDataRepeaterLayout/VbPowerPacksDataRepeaterLayout.vb#2)]  
+ [!code-cs[VbPowerPacksDataRepeaterLayout#2](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-change-the-layout-of-a-datarepeater-control-visual-studio_2.cs)]
+ [!code-vb[VbPowerPacksDataRepeaterLayout#2](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-change-the-layout-of-a-datarepeater-control-visual-studio_2.vb)]  
   
 ## 请参阅  
  <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>   

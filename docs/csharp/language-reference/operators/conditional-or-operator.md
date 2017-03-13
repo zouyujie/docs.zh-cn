@@ -42,7 +42,7 @@ x | y
 ## 示例  
  在下面的示例中，表达式中使用的 `||` 计算只有第一个操作数。  使用的表达式 `|`计算两个操作数。  在第二个示例中，因此，如果两个操作数计算，则运行时会发生异常。  
   
- [!code-cs[csRefOperators#52](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#52)]  
+ [!code-cs[csRefOperators#52](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-or-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

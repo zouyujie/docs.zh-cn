@@ -71,28 +71,28 @@ caps.handback.revision: 30
   
 3.  将下列常数添加到 `ComClass1`。  它们将存储 COM 对象必须有的全局唯一标识符 \(GUID\) 常数。  
   
-     [!code-vb[VbVbalrInterop#2](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#2)]  
+     [!code-vb[VbVbalrInterop#2](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-creating-com-objects_1.vb)]  
   
 4.  在**“工具”**菜单上，单击**“创建 Guid”**。  在**“创建 GUID”**对话框中，单击**“注册表格式”**，再单击**“复制”**。  单击**“退出”**。  
   
 5.  用 GUID 替换 `ClassId` 的空字符串，移除前导大括号和尾随大括号。  例如，如果 Guidgen 提供的 GUID 为 `"{2C8B0AEE-02C9-486e-B809-C780A11530FE}"`，则代码应如下所示。  
   
-     [!code-vb[VbVbalrInterop#3](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#3)]  
+     [!code-vb[VbVbalrInterop#3](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-creating-com-objects_2.vb)]  
   
 6.  为 `InterfaceId` 和 `EventsId` 常数重复上面的步骤，如下例所示。  
   
-     [!code-vb[VbVbalrInterop#4](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#4)]  
+     [!code-vb[VbVbalrInterop#4](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-creating-com-objects_3.vb)]  
   
     > [!NOTE]
     >  请确定 GUID 是新的和唯一的，否则您的 COM 组件可能与其他 COM 组件冲突。  
   
 7.  将 `ComClass` 特性添加到 `ComClass1`，为类 ID、接口 ID 和事件 ID 指定 GUID，如下面的示例所示：  
   
-     [!code-vb[VbVbalrInterop#5](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#5)]  
+     [!code-vb[VbVbalrInterop#5](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-creating-com-objects_4.vb)]  
   
 8.  COM 类必须具有一个无参数的 `Public Sub New()` 构造函数，否则该类无法正确注册。  向该类中添加一个无参数构造函数：  
   
-     [!code-vb[VbVbalrInterop#6](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#6)]  
+     [!code-vb[VbVbalrInterop#6](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-creating-com-objects_5.vb)]  
   
 9. 将属性、方法和事件添加到该类，并以 `End Class` 语句结束它。  从**“生成”**菜单中选择**“生成解决方案”**。  [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 即会生成程序集，并向操作系统注册 COM 对象。  
   

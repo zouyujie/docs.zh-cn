@@ -69,7 +69,7 @@ result = pattern >> amount
 ## 示例  
  下面的示例使用 `>>` 运算符对整数值执行算术右移位。  结果的数据类型始终与被移位的表达式相同。  
   
- [!code-vb[VbVbalrOperators#14](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/right-shift-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/right-shift-operator_1.vb)]  
   
  上面的示例的结果如下：  
   
@@ -87,7 +87,7 @@ result = pattern >> amount
   
  下面的示例演示对负值进行算术移位。  
   
- [!code-vb[VbVbalrOperators#55](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/right-shift-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#55](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/right-shift-operator_2.vb)]  
   
  上面的示例的结果如下：  
   

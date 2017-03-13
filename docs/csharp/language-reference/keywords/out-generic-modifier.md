@@ -30,7 +30,7 @@ caps.handback.revision: 15
 ## 示例  
  下例演示如何声明、扩展和实现一个协变泛型接口。  此外还演示了如何对实现协变接口的类使用隐式转换。  
   
- [!code-cs[csVarianceKeywords#3](../../../csharp/language-reference/keywords/codesnippet/csharp/out-generic-modifier_1.cs)]  
+ [!code-cs[csVarianceKeywords#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/out-generic-modifier_1.cs)]  
   
  在泛型接口中，当符合下列条件时，可以将类型参数声明为是协变的。  
   
@@ -44,7 +44,7 @@ caps.handback.revision: 15
 ## 示例  
  下例演示如何声明、实例化和调用一个协变泛型委托。  此外还演示了如何隐式转换委托类型。  
   
- [!code-cs[csVarianceKeywords#4](../../../csharp/language-reference/keywords/codesnippet/csharp/out-generic-modifier_2.cs)]  
+ [!code-cs[csVarianceKeywords#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/out-generic-modifier_2.cs)]  
   
  在泛型委托中，如果类型仅用作方法返回类型，且不用于方法参数，则可声明为是协变的。  
   

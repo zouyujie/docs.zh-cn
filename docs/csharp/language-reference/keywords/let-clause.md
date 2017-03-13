@@ -29,7 +29,7 @@ caps.handback.revision: 15
   
 2.  使查询只能对范围变量 `word` 调用一次 `ToLower`。  如果不使用 `let`，则必须在 `where` 子句的每个谓词中调用 `ToLower`。  
   
- [!code-cs[cscsrefQueryKeywords#28](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Let.cs#28)]  
+ [!code-cs[cscsrefQueryKeywords#28](../../../csharp/language-reference/keywords/codesnippet/CSharp/let-clause_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

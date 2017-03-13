@@ -15,7 +15,7 @@ caps.handback.revision: 23
 > [!NOTE]
 >  引用类型的默认值为 `null`;因此，该示例检查空在访问每个 `Pet` 集合的每个元素之前引用。  
   
- [!code-cs[CsLINQProgJoining#7](../../../csharp/programming-guide/linq-query-expressions/codesnippet/csharp/Joins/joins.cs#7)]  
+ [!code-cs[CsLINQProgJoining#7](../../../csharp/programming-guide/linq-query-expressions/codesnippet/CSharp/how-to-perform-left-outer-joins_1.cs)]  
   
 ## 编译代码  
   

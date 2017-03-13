@@ -67,7 +67,7 @@ caps.handback.revision: 18
   
  几个运算符可以在一个表达式或语句中执行操作，如下面的示例所示：  
   
- [!code-vb[VbVbalrOperators#56](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/index_1.vb)]  
+ [!code-vb[VbVbalrOperators#56](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/index_1.vb)]  
   
  在前面的示例中，[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 在赋值运算符 \(`=`\) 右侧的表达式中执行运算，然后将结果值赋给左侧的变量 `x`。  对于可组合到表达式中的运算符的数量没有实际限制，但是需要理解 [Visual Basic 中的运算符优先级](../../../../visual-basic/language-reference/operators/operator-precedence.md) 才能确保获得预期结果。  
   

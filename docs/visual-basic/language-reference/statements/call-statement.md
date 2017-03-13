@@ -49,7 +49,7 @@ caps.handback.revision: 13
 ## 示例  
  以下代码显示了两个示例 `Call` 关键字的位置需要调用过程。  在两个示例中，被调用的表达式不从标识符开头。  
   
- [!code-vb[VbVbalrStatements#97](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/call-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#97](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/call-statement_1.vb)]  
   
 ## 请参阅  
  [Function 语句](../../../visual-basic/language-reference/statements/function-statement.md)   

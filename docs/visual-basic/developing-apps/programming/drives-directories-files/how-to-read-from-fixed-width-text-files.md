@@ -33,24 +33,24 @@ caps.handback.revision: 24
   
 1.  创建一个新的 `TextFieldParser`。  下面的代码创建名为 `Reader` 的 `TextFieldParser`，并打开 `test.log` 文件。  
   
-     [!code-vb[VbFileIORead#9](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-read-from-fixed-w_1.vb)]  
+     [!code-vb[VbFileIORead#9](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-read-from-fixed-width-text-files_1.vb)]  
   
 2.  将 `TextFieldType` 属性定义为 `FixedWidth`，并定义宽度和格式。  下面的代码定义文本列；第一列的宽度为 5 个字符，第二列的宽度为 10 个字符，第三列的宽度为 11 个字符，第四列的宽度是可变的。  
   
-     [!code-vb[VbFileIORead#10](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-read-from-fixed-w_2.vb)]  
+     [!code-vb[VbFileIORead#10](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-read-from-fixed-width-text-files_2.vb)]  
   
 3.  依次通过文件中的各个字段。  如果任何行被损坏，将报告错误并继续分析。  
   
-     [!code-vb[VbFileIORead#11](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-read-from-fixed-w_3.vb)]  
+     [!code-vb[VbFileIORead#11](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-read-from-fixed-width-text-files_3.vb)]  
   
 4.  用 `End While` 和 `End Using` 结束 `While` 和 `Using` 块。  
   
-     [!code-vb[VbFileIORead#12](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-read-from-fixed-w_4.vb)]  
+     [!code-vb[VbFileIORead#12](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-read-from-fixed-width-text-files_4.vb)]  
   
 ## 示例  
  此示例读取文件 `test.log`。  
   
- [!code-vb[VbFileIORead#13](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-read-from-fixed-w_5.vb)]  
+ [!code-vb[VbFileIORead#13](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-read-from-fixed-width-text-files_5.vb)]  
   
 ## 可靠编程  
  以下情况可能会导致异常：  

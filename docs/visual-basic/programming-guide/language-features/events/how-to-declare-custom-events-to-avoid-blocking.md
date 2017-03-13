@@ -34,7 +34,7 @@ caps.handback.revision: 12
   
  在代码引发 `Click` 事件时，`RaiseEvent` 访问器将使用 <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A> 方法异步调用所有事件处理程序的委托。  该方法在辅助线程上调用每个处理程序并立即返回，这样处理程序便无法互相阻止。  
   
- [!code-vb[VbVbalrEvents#27](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#27)]  
+ [!code-vb[VbVbalrEvents#27](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-custom-events-to-avoid-blocking_1.vb)]  
   
 ## 请参阅  
  <xref:System.Collections.ArrayList>   

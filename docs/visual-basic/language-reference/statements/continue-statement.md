@@ -45,7 +45,7 @@ Continue { Do | For | While }
 ## 示例  
  ，如果除数为零，下面的代码示例使用 `Continue While` 语句跳过到数组中的下一列。  `Continue While` 是在 `For` 循环内。  传输到 `While col < lastcol` 语句，是最里层的 `While` 循环下一次迭代包含 `For` 循环。  
   
- [!code-vb[VbVbalrStatements#14](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/continue-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#14](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/continue-statement_1.vb)]  
   
 ## 请参阅  
  [Do...Loop 语句](../../../visual-basic/language-reference/statements/do-loop-statement.md)   

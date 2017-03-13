@@ -66,11 +66,11 @@ caps.handback.revision: 68
   
 1.  在项目的 `Main` 方法中找到带如下标记的位置：  
   
-     [!code-vb[VbLINQWalkthrough#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/walkthrough-writing-quer_1_1.vb)]  
+     [!code-vb[VbLINQWalkthrough#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/walkthrough-writing-queries_1.vb)]  
   
      将下面的代码复制并粘贴到此位置。  
   
-     [!code-vb[VbLINQWalkthrough#2](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/walkthrough-writing-quer_1_2.vb)]  
+     [!code-vb[VbLINQWalkthrough#2](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/walkthrough-writing-queries_2.vb)]  
   
 2.  将鼠标指针停留在代码中的 `studentQuery` 上，以验证编译器指定的类型是否为 `IEnumerable(Of Student)`。  
   
@@ -81,7 +81,7 @@ caps.handback.revision: 68
   
 1.  将下面的 `For Each` 循环添加到项目中的查询下面。  
   
-     [!code-vb[VbLINQWalkthrough#3](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/walkthrough-writing-quer_1_3.vb)]  
+     [!code-vb[VbLINQWalkthrough#3](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/walkthrough-writing-queries_3.vb)]  
   
 2.  将鼠标指针停留在循环控制变量 `studentRecord` 上，以查看其数据类型。  `studentRecord` 类型被推断为 `Student`，因为 `studentQuery` 返回 `Student` 实例的集合。  
   
@@ -112,7 +112,7 @@ caps.handback.revision: 68
   
 1.  添加本节中的代码，将本地标识符引入查询表达式。  该本地标识符将保存中间结果。  在下面的示例中，`name` 是保存学生姓和名的串联的标识符。  本地标识符可以提供方便，也可以通过存储表达式的结果来避免多次计算，从而提高性能。  
   
-     [!code-vb[VbLINQWalkthrough#4](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/walkthrough-writing-quer_1_4.vb)]  
+     [!code-vb[VbLINQWalkthrough#4](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/walkthrough-writing-queries_4.vb)]  
   
 2.  按 CTRL\+F5 生成并运行该应用程序。  注意控制台窗口中的结果。  
   
@@ -120,7 +120,7 @@ caps.handback.revision: 68
   
 1.  添加本节中的查询和 `For Each` 循环以创建一个查询，该查询将生成一个其元素与源中元素不同的序列。  在下面的示例中，源是 `Student` 对象的集合，但是只返回每个对象的一个成员：姓氏为 Garcia 的学生的名字。  由于 `currentStudent.First` 是一个字符串，因此 `studentQuery3` 返回的序列的数据类型是 `IEnumerable(Of String)`，为字符串序列。  如前面的示例所示，`studentQuery3` 数据类型的分配由编译器使用局部类型推理来确定。  
   
-     [!code-vb[VbLINQWalkthrough#5](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/walkthrough-writing-quer_1_5.vb)]  
+     [!code-vb[VbLINQWalkthrough#5](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/walkthrough-writing-queries_5.vb)]  
   
 2.  将鼠标指针停留在代码中的 `studentQuery3` 上，以验证分配的类型是否为 `IEnumerable(Of String)`。  
   
@@ -132,14 +132,14 @@ caps.handback.revision: 68
   
      下面的示例创建一个查询，返回学习名次位于 1 和 10 之间的高年级学生的姓名和学习名次，并按学习名次排序。  在本例中，必须推断 `studentQuery4` 的类型，因为 `Select` 子句返回匿名类型的实例，而匿名类型没有可用的名称。  
   
-     [!code-vb[VbLINQWalkthrough#6](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/walkthrough-writing-quer_1_6.vb)]  
+     [!code-vb[VbLINQWalkthrough#6](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/walkthrough-writing-queries_6.vb)]  
   
 2.  按 CTRL\+F5 生成并运行该应用程序。  注意控制台窗口中的结果。  
   
 ## 其他示例  
  现在您已经了解了基础知识，接下来是一组演示 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] 查询的灵活性和强大功能的其他示例。  每个示例之前有描述其用途的简要说明。  停留在查询结果变量的鼠标指针每个查询的查看推断的类型。使用一个 `For Each` 循环生成结果。  
   
- [!code-vb[VbLINQWalkthrough#7](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/walkthrough-writing-quer_1_7.vb)]  
+ [!code-vb[VbLINQWalkthrough#7](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/walkthrough-writing-queries_7.vb)]  
   
 ## 其他信息  
  熟悉使用查询的基本概念之后，就可以开始阅读所关注的特定类型的 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] 提供程序的文档和示例：  

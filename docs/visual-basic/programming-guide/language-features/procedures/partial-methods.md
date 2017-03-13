@@ -65,15 +65,15 @@ End Sub
 ## 示例  
  在名为 Product.Designer.vb 的文件中，定义具有 `Quantity` 属性的 `Product` 类。  
   
- [!code-vb[VbVbalrPartialMeths#4](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/partial-methods_1.vb)]  
+ [!code-vb[VbVbalrPartialMeths#4](./codesnippet/VisualBasic/partial-methods_1.vb)]  
   
  在名为 Product.vb 的文件中，提供 `QuantityChanged` 的实现。  
   
- [!code-vb[VbVbalrPartialMeths#5](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/partial-methods_2.vb)]  
+ [!code-vb[VbVbalrPartialMeths#5](./codesnippet/VisualBasic/partial-methods_2.vb)]  
   
  最后，在项目的 Main 方法中，声明 `Product` 实例并为其 `Quantity` 属性提供初始值。  
   
- [!code-vb[VbVbalrPartialMeths#6](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/partial-methods_3.vb)]  
+ [!code-vb[VbVbalrPartialMeths#6](./codesnippet/VisualBasic/partial-methods_3.vb)]  
   
  应出现一个消息框，显示如下消息：  
   

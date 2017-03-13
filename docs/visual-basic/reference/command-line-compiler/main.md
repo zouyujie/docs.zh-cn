@@ -41,7 +41,7 @@ caps.handback.revision: 19
   
  如果 `location` 是一个从 <xref:System.Windows.Forms.Form> 继承的类，且该类没有 `Main` 过程，则编译器会提供一个用以启动应用程序的默认 `Main` 过程。  这样就可以在命令行编译在开发环境中创建的代码。  
   
- [!code-vb[VbVbalrCompiler#16](../../../visual-basic/reference/command-line-compiler/codesnippet/visualbasic/main_1.vb)]  
+ [!code-vb[VbVbalrCompiler#16](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/main_1.vb)]  
   
 ### 在 Visual Studio 集成开发环境中设置 \/main  
   

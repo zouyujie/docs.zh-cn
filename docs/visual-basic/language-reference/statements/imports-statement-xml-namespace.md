@@ -56,7 +56,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ## 示例  
  下面的示例导入一个默认 XML 命名空间和一个用前缀 `ns` 标识的 XML 命名空间。  然后，创建使用这两个命名空间的 XML 文本。  
   
- [!code-vb[VbXMLSamples#45](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/imports-statement-xml-na_1.vb)]  
+ [!code-vb[VbXMLSamples#45](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_1.vb)]  
   
  这段代码将显示以下文本：  
   
@@ -72,7 +72,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ## 示例  
  下面的示例导入 XML 命名空间前缀 `ns`。  然后，该示例创建一个使用该命名空间前缀的 XML 文本，并显示该元素的最终形式。  
   
- [!code-vb[VbXMLSamples#22](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/imports-statement-xml-na_2.vb)]  
+ [!code-vb[VbXMLSamples#22](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_2.vb)]  
   
  这段代码将显示以下文本：  
   
@@ -90,7 +90,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ## 示例  
  下面的示例导入 XML 命名空间前缀 `ns`。  然后，该示例使用该命名空间前缀创建 XML 文本并访问第一个具有限定名 `ns:name` 的子节点。  
   
- [!code-vb[VbXMLSamples#19](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/imports-statement-xml-na_3.vb)]  
+ [!code-vb[VbXMLSamples#19](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_3.vb)]  
   
  这段代码将显示以下文本：  
   

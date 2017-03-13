@@ -38,7 +38,7 @@ caps.handback.revision: 11
 ## 类型推断  
  可以调用泛型过程，而不需提供任何类型变量。  如果以这种方式调用该过程，编译器将尝试确定传递到该过程类型变量中的相应数据类型。  这称为*“类型推理”*。  下面的代码演示一个调用，编译器推断它会将类型 `String` 传递给类型参数 `t`。  
   
- [!code-vb[VbVbalrDataTypes#15](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/generic-procedures_1.vb)]  
+ [!code-vb[VbVbalrDataTypes#15](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/generic-procedures_1.vb)]  
   
  如果编译器无法从调用的上下文中推断出类型变量，则将报告错误。  此类错误的一种可能原因是数组秩不匹配。  例如，假设您将一个普通参数定义为类型参数的数组。  如果所调用的泛型过程具有不同秩（维数）的数组，则秩不匹配将导致类型推理失败。  下面的代码演示一个调用，其中，二维数组被传递到需要一维数组的过程中。  
   
@@ -64,14 +64,14 @@ caps.handback.revision: 11
  下面的示例定义了泛型 `Function` 过程，用于查找数组中的特定元素。  它定义一个类型参数，并用该类型参数在参数列表中构造两个参数。  
   
 ### 代码  
- [!code-vb[VbVbalrDataTypes#14](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/generic-procedures_2.vb)]  
+ [!code-vb[VbVbalrDataTypes#14](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/generic-procedures_2.vb)]  
   
 ### 注释  
  在上例中，需要能够将 `searchValue` 与 `searchArray` 中的每个元素进行比较。  为保证具有此能力，上例约束类型参数 `T` 实现 <xref:System.IComparable%601> 接口。  代码使用 <xref:System.IComparable%601.CompareTo%2A> 方法取代 `=` 运算符，这是因为无法保证为 `T` 提供的类型变量支持 `=` 运算符。  
   
  可以用下面的代码测试 `findElement` 过程。  
   
- [!code-vb[VbVbalrDataTypes#13](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/generic-procedures_3.vb)]  
+ [!code-vb[VbVbalrDataTypes#13](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/generic-procedures_3.vb)]  
   
  以前对 `MsgBox` 的调用分别显示“0”、“1”和“\-1”。  
   

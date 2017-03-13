@@ -60,7 +60,7 @@ caps.handback.revision: 15
 ## 示例  
  下面的示例为雇佣某位职员的日期定义一个 `ReadOnly` 属性。  类将该属性值在内部存储为 `Private` 变量，因而只有该类中的代码可以更改该值。  但是，该属性为 `Public`，因此可以访问该类的任何代码都可以读取该属性。  
   
- [!code-vb[VbVbalrKeywords#4](../../../visual-basic/language-reference/codesnippet/visualbasic/readonly_1.vb)]  
+ [!code-vb[VbVbalrKeywords#4](../../../visual-basic/language-reference/codesnippet/VisualBasic/readonly_1.vb)]  
   
  `ReadOnly` 修饰符可用于下面的上下文中：  
   

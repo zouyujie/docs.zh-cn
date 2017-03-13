@@ -38,7 +38,7 @@ if (obj is MyObject)
  在 `is` 运算符的左侧不允许使用匿名方法。  lambda 表达式属于例外。  
   
 ## 示例  
- [!code-cs[csrefKeywordsOperator#4](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsOperator/csrefKeywordsOperators.cs#4)]  
+ [!code-cs[csrefKeywordsOperator#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/is_1.cs)]  
   
 ## C\# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

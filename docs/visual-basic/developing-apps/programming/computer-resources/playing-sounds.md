@@ -35,20 +35,20 @@ caps.handback.revision: 21
   
  在下面的示例中， `My.Computer.Audio.Play` 方法播放声音。  当 `AudioPlayMode.WaitToComplete` 指定时， `My.Computer.Audio.Play` 等待，直到声音在调用代码前完成继续。  在使用此示例时，您应确保文件名是指在您的计算机上的 .wav 声音文件  
   
- [!code-vb[VbVbalrMyComputer#15](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/VbVbalrMyComputer/Class1.vb#15)]  
+ [!code-vb[VbVbalrMyComputer#15](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_1.vb)]  
   
  在下面的示例中， `My.Computer.Audio.Play` 方法播放声音。  在使用此示例时，您应确保应用程序资源包括名为 Waterfall 的 .wav 声音文件。  
   
- [!code-vb[VbVbalrMyComputer#16](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/VbVbalrMyComputer/Class1.vb#16)]  
+ [!code-vb[VbVbalrMyComputer#16](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_2.vb)]  
   
 ## 播放循环声音  
  在下面的示例中，那么，当 `PlayMode.BackgroundLoop` 指定时， `My.Computer.Audio.Play` 方法在后台播放指定的声音。  在使用此示例时，您应确保文件名是指在您的计算机上的 .wav 声音文件。  
   
- [!code-vb[VbVbalrMyComputer#11](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/VbVbalrMyComputer/Class1.vb#11)]  
+ [!code-vb[VbVbalrMyComputer#11](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_3.vb)]  
   
  在下面的示例中，那么，当 `PlayMode.BackgroundLoop` 指定时， `My.Computer.Audio.Play` 方法在后台播放指定的声音。  在使用此示例时，您应确保应用程序资源包括名为 Waterfall 的 .wav 声音文件。  
   
- [!code-vb[VbVbalrMyComputer#12](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/VbVbalrMyComputer/Class1.vb#12)]  
+ [!code-vb[VbVbalrMyComputer#12](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_4.vb)]  
   
  前面的代码示例也可用作 IntelliSense 代码段。  在代码段选择器，它位于 **windows 窗体应用程序 \> 声音**。  有关更多信息，请参见 [代码段](/visual-studio/ide/code-snippets)。  
   
@@ -61,7 +61,7 @@ caps.handback.revision: 21
   
  下面的示例停止在后台中播放声音。  
   
- [!code-vb[VbVbalrMyComputer#18](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/VbVbalrMyComputer/Class1.vb#18)]  
+ [!code-vb[VbVbalrMyComputer#18](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_5.vb)]  
   
  前面的代码示例也可用作 IntelliSense 代码段。  在代码段选择器，它位于 **windows 窗体应用程序 \> 声音**。  有关更多信息，请参见 [代码段](/visual-studio/ide/code-snippets)。  
   
@@ -72,7 +72,7 @@ caps.handback.revision: 21
   
  下面的示例使用 `My.Computer.Audio.PlaySystemSound` 方法播放系统声音。  
   
- [!code-vb[VbVbalrMyComputer#17](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/VbVbalrMyComputer/Class1.vb#17)]  
+ [!code-vb[VbVbalrMyComputer#17](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_6.vb)]  
   
 ## 请参阅  
  <xref:Microsoft.VisualBasic.Devices.Audio>   

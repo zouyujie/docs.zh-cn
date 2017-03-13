@@ -36,7 +36,7 @@ caps.handback.revision: 13
 ## 示例  
  该文件声明的 `Shape` 类包含 `double` 类型的 `Area` 属性。  
   
- [!code-cs[csProgGuideInheritance#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-define-abstract-p_1.cs)]  
+ [!code-cs[csProgGuideInheritance#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-abstract-properties_1.cs)]  
   
 -   属性的修饰符就放置在属性声明中。  例如：  
   
@@ -49,12 +49,12 @@ caps.handback.revision: 13
 ## 示例  
  下面的代码演示 `Shape` 的三个子类，并演示它们如何重写 `Area` 属性来提供自己的实现。  
   
- [!code-cs[csProgGuideInheritance#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-define-abstract-p_2.cs)]  
+ [!code-cs[csProgGuideInheritance#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-abstract-properties_2.cs)]  
   
 ## 示例  
  下面的代码演示一个测试程序，它创建若干 `Shape` 派生对象，并输出它们的面积。  
   
- [!code-cs[csProgGuideInheritance#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-define-abstract-p_3.cs)]  
+ [!code-cs[csProgGuideInheritance#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-abstract-properties_3.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

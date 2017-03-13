@@ -38,14 +38,14 @@ caps.handback.revision: 12
   
 2.  在 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.DrawItem> 事件处理程序中添加下面的代码来设置属性：  
   
-     [!code-cs[VbPowerPacksDataRepeaterAppearance#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/csharp/VbPowerPacksDataRepeaterAppearanceCS/VbPowerPacksDataRepeaterAppearance.cs#1)]
-     [!code-vb[VbPowerPacksDataRepeaterAppearance#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/visualbasic/VbPowerPacksDataRepeaterAppearance/VbPowerPacksDataRepeaterAppearance.vb#1)]  
+     [!code-cs[VbPowerPacksDataRepeaterAppearance#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio_1.cs)]
+     [!code-vb[VbPowerPacksDataRepeaterAppearance#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio_1.vb)]  
   
 ## 示例  
  <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 控件的一些常见自定义包括以交替颜色显示行以及基于条件更改字段的颜色。  下面的示例演示如何执行这些自定义项。  此示例假定您有一个 <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 控件，该控件绑定到 Northwind 数据库的 Products 表。  
   
- [!code-vb[VbPowerPacksDataRepeaterAlternateBackColor#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/visualbasic/VbPowerPacksDataRepeaterAlternateBackColor/AlternateBackColor.vb#1)]
- [!code-cs[VbPowerPacksDataRepeaterAlternateBackColor#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/csharp/VbPwrPacksDataRepeaterAltBColorCS/AlternateBackColor.cs#1)]  
+ [!code-vb[VbPowerPacksDataRepeaterAlternateBackColor#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio_2.vb)]
+ [!code-cs[VbPowerPacksDataRepeaterAlternateBackColor#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio_2.cs)]  
   
  请注意，对于这两个自定义，您必须提供代码来设置满足和不满足条件的属性。  如果未指定 `Else` 条件，您将在运行时看到意外的结果。  
   

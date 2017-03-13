@@ -8,14 +8,14 @@ caps.handback.revision: 6
 ## 示例  
  您可以采用防御方式进行编码以避免 null 引用异常，如下面的示例中所示：  
   
- [!code-cs[csProgGuideLINQ#82](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#82)]  
+ [!code-cs[csProgGuideLINQ#82](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-handle-null-values-in-query-expressions_1.cs)]  
   
  在前面的示例中，`where` 子句筛选出类别序列中的所有 null 元素。  此技术与 join 子句中的 null 检查无关。  此示例中包含 null 的条件表达式将发挥作用，因为 `Products.CategoryID` 的类型为 `int?`（`Nullable<int>` 的简写形式）。  
   
 ## 示例  
  在 join 子句中，只要其中一个比较键是可以为 null 的类型，您就可以在查询表达式中将另一个比较键强制转换成可以为 null 的类型。  在下面的示例中，假定 `EmployeeID` 是一个列，其中包含类型为 `int?` 的值：  
   
- [!code-cs[csProgGuideLINQ#83](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#83)]  
+ [!code-cs[csProgGuideLINQ#83](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-handle-null-values-in-query-expressions_2.cs)]  
   
 ## 请参阅  
  <xref:System.Nullable%601>   

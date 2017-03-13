@@ -75,7 +75,7 @@ Group [ listField1 [, listField2 [...] ] By keyExp1 [, keyExp2 [...] ]
 ## <a name="example"></a>示例  
  下面的代码示例根据客户所在的位置（国家/地区）对客户列表进行分组，并提供了每个组中的客户计数。 按国家/地区名称对结果进行排序。 按城市名称对分组结果进行排序。  
   
- [!code-vb[VbSimpleQuerySamples#11](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#11)]  
+ [!code-vb[VbSimpleQuerySamples#11](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/group-by-clause_1.vb)]  
   
 ## <a name="see-also"></a>另请参阅  
  [在 Visual Basic 中的 LINQ 简介](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   

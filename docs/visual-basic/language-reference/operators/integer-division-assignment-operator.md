@@ -53,7 +53,7 @@ variableorproperty -= expression
 ## 示例  
  下面的示例使用 `-=` 运算符，从一个 `Integer` 变量中减去另一个该变量，并将结果赋给前一个变量。  
   
- [!code-vb[VbVbalrOperators#11](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/integer-division-assignm_1.vb)]  
+ [!code-vb[VbVbalrOperators#11](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/integer-division-assignment-operator_1.vb)]  
   
 ## 请参阅  
  [\- 运算符](../../../visual-basic/language-reference/operators/subtraction-operator.md)   

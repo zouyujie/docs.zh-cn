@@ -39,7 +39,7 @@ x = x * y
  不能直接重载 `*=` 运算符，但用户定义的类型可重载 [\* 运算符](../../../csharp/language-reference/operators/multiplication-operator.md)（请参见 [operator](../../../csharp/language-reference/keywords/operator.md)）。  
   
 ## 示例  
- [!code-cs[csRefOperators#13](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#13)]  
+ [!code-cs[csRefOperators#13](../../../csharp/language-reference/operators/codesnippet/CSharp/multiplication-assignment-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

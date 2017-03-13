@@ -32,7 +32,7 @@ caps.handback.revision: 26
   
 -   确定 `IsAvailable` 属性是 `True` 还是 `False`。  下面的代码检查属性的状态并进行报告：  
   
-     [!code-vb[VbResourceTasks#3](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-check-connection-_1.vb)]  
+     [!code-vb[VbResourceTasks#3](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-check-connection-status_1.vb)]  
   
      此代码示例也可用作 IntelliSense 代码段。  在代码段选择器中，此代码示例位于**“连接和网络”**中。  有关更多信息，请参见 [代码段](/visual-studio/ide/code-snippets)。  
   

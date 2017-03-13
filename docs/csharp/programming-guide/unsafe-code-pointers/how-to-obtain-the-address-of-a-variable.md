@@ -34,9 +34,9 @@ int* p = &number; //address-of operator &
 ## 示例  
  此示例声明一个指向 `int` 的指针 `p`，并将整数变量 `number` 的地址赋值给该指针。  给 \*p 赋值的结果是初始化变量 `number`。  如果对此赋值语句进行注释，则将取消对变量 `number` 的初始化，但是不会发出编译时错误。  注意该示例如何使用[成员访问](../../../csharp/programming-guide/unsafe-code-pointers/how-to-access-a-member-with-a-pointer.md)运算符 `->` 来获取和显示存储在指针中的地址。  
   
- [!code-cs[csProgGuidePointers#7](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers2.cs#7)]  
+ [!code-cs[csProgGuidePointers#7](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-obtain-the-address-of-a-variable_1.cs)]  
   
- [!code-cs[csProgGuidePointers#8](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers.cs#8)]  
+ [!code-cs[csProgGuidePointers#8](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-obtain-the-address-of-a-variable_2.cs)]  
   
 ## 请参阅  
  [C\# 编程指南](../../../csharp/programming-guide/index.md)   

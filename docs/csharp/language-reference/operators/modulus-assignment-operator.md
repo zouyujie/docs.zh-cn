@@ -39,7 +39,7 @@ x = x % y
  不能直接重载 `%=` 运算符，但是，用户定义的类型能重载 [% 运算符](../../../csharp/language-reference/operators/modulus-operator.md) \(请参见 [运算符](../../../csharp/language-reference/keywords/operator.md)\)。  
   
 ## 示例  
- [!code-cs[csRefOperators#4](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#4)]  
+ [!code-cs[csRefOperators#4](../../../csharp/language-reference/operators/codesnippet/CSharp/modulus-assignment-operator_1.cs)]  
   
 ## 请参阅  
  [C\# 参考](../../../csharp/language-reference/index.md)   

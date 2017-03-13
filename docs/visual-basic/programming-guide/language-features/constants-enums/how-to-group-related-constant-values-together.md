@@ -28,11 +28,11 @@ caps.handback.revision: 17
   
 1.  编写一个包含代码访问级别、`Enum` 关键字和一个有效的名称的声明。  此示例创建 `Private` 枚举 `temperatureValues`。  
   
-     [!code-vb[VbEnumsTask#21](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#21)]  
+     [!code-vb[VbEnumsTask#21](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-group-related-constant-values-together_1.vb)]  
   
 2.  定义枚举中的常数。  此示例创建 `Public` 枚举 `temperatureValues` 并为其赋值。  
   
-     [!code-vb[VbEnumsTask#1](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#1)]  
+     [!code-vb[VbEnumsTask#1](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-group-related-constant-values-together_2.vb)]  
   
 ## 请参阅  
  [枚举和名称限定](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)   

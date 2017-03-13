@@ -71,7 +71,7 @@ End Function
 ## 示例  
  下面的示例演示如何调用一个过程具有位置传递的参数并按名称传递参数。  该程序有两个可选参数。  
   
- [!code-vb[VbVbalrKeywords#21](../../../visual-basic/language-reference/codesnippet/visualbasic/optional_1.vb)]  
+ [!code-vb[VbVbalrKeywords#21](../../../visual-basic/language-reference/codesnippet/VisualBasic/optional_1.vb)]  
   
 ## 请参阅  
  [参数列表](../../../visual-basic/language-reference/statements/parameter-list.md)   

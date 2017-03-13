@@ -75,11 +75,11 @@ caps.handback.revision: 21
 ### 声明与调用阐释  
  下面的 `Sub` 过程通知计算机操作员应用程序将要执行哪个任务，并且还显示一个时间戳。  应用程序不是在每个任务的开头重复此代码，而仅是从不同的位置调用  `tellOperator` 。  每次调用都会传递  `task`  参数中的字符串以标识开始执行的任务。  
   
- [!code-vb[VbVbcnProcedures#2](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/sub-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#2](./codesnippet/VisualBasic/sub-procedures_1.vb)]  
   
  下面的示例演示对  `tellOperator` 的典型调用。  
   
- [!code-vb[VbVbcnProcedures#3](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/sub-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#3](./codesnippet/VisualBasic/sub-procedures_2.vb)]  
   
 ## 请参阅  
  [过程](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   

@@ -31,7 +31,7 @@ caps.handback.revision: 16
   
 -   使用 `WriteAllBytes` 方法，并提供要写入的文件路径和名称以及字节。  此示例将数据数组 `CustomerData` 追加到名为 `CollectedData.dat` 的文件中。  
   
-     [!code-vb[VbVbcnMyFileSystem#27](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-write-to-binary-f_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#27](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-write-to-binary-files_1.vb)]  
   
 ## 可靠编程  
  以下情况可能会导致异常：  

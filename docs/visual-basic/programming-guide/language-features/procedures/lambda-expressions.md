@@ -35,19 +35,19 @@ caps.handback.revision: 52
   
  下面的示例是一个 lambda 表达式，该表达式递增其参数并返回值。  该示例同时显示了一个函数的单行和多行 Lambda 表达式语法。  
   
- [!code-vb[VbVbalrLambdas#14](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#14)]  
+ [!code-vb[VbVbalrLambdas#14](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_1.vb)]  
   
  下面的示例是将值写入控制台的 Lambda 表达式。  该示例同时显示了一个子例程的单行和多行 Lambda 表达式语法。  
   
- [!code-vb[VbVbalrLambdas#15](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#15)]  
+ [!code-vb[VbVbalrLambdas#15](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_2.vb)]  
   
  请注意，在前面的示例中，为一个变量名称分配了 Lambda 表达式。  只要引用该变量，就会调用 Lambda 表达式。  还可以同时声明和调用 Lambda 表达式，如下面的示例所示。  
   
- [!code-vb[VbVbalrLambdas#3](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#3)]  
+ [!code-vb[VbVbalrLambdas#3](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_3.vb)]  
   
  Lambda 表达式可以作为函数调用的值返回（如本主题后面[上下文](#context)部分中的示例所示），或作为实参传递给会获取委托类型的形参，如下面的示例所示。  
   
- [!code-vb[VbVbalrLambdas#8](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class2.vb#8)]  
+ [!code-vb[VbVbalrLambdas#8](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_4.vb)]  
   
 ## Lambda 表达式语法  
  Lambda 表达式的语法类似于标准函数或子例程的语法。  区别如下：  
@@ -125,7 +125,7 @@ End Class
   
  对包含范围中的局部变量和参数的访问可以超出该范围的生存期。  只要引用 lambda 表达式的委托不能进行垃圾回收，就将保留对原始环境中的变量的访问。  在下面的示例中，变量 `target` 对于 `makeTheGame` 方法（lambda 表达式 `playTheGame` 在该方法中定义）是局部变量。  请注意，返回并分配给 `Main` 中 `takeAGuess` 的 lambda 表达式仍然具有访问局部变量 `target` 的权限。  
   
- [!code-vb[VbVbalrLambdas#12](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class6.vb#12)]  
+ [!code-vb[VbVbalrLambdas#12](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_5.vb)]  
   
  下面的示例演示嵌套 lambda 表达式所具有的宽广的访问权限范围。  在 `Main` 中将返回的 lambda 表达式作为 `aDel` 执行时，该表达式能够访问下列元素：  
   
@@ -139,16 +139,16 @@ End Class
   
 -   在其中嵌套该表达式的 lambda 表达式的参数：`level2`  
   
- [!code-vb[VbVbalrLambdas#9](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class3.vb#9)]  
+ [!code-vb[VbVbalrLambdas#9](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_6.vb)]  
   
 ## 转换为委托类型  
  可以将 lambda 表达式隐式转换为兼容的委托类型。  有关兼容性的一般要求的信息，请参见[宽松委托转换](../../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)。  例如，下面的代码示例演示一个隐式转换为 `Func(Of Integer, Boolean)` 或匹配委托签名的 Lambda 表达式。  
   
- [!code-vb[VbVbalrLambdas#16](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#16)]  
+ [!code-vb[VbVbalrLambdas#16](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_7.vb)]  
   
  下面的代码示例演示一个隐式转换为 `Sub(Of Double, String, Double)` 或匹配委托签名的 Lambda 表达式。  
   
- [!code-vb[VbVbalrLambdas#23](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/class7.vb#23)]  
+ [!code-vb[VbVbalrLambdas#23](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_8.vb)]  
   
  在将 Lambda 表达式分配给委托或将其作为实参传递到过程时，可以指定形参名称，但请省略其数据类型，以便从委托中获取类型。  
   
@@ -156,11 +156,11 @@ End Class
   
 -   下面的示例定义了一个 lambda 表达式，如果可以为 null 的参数已被赋值，则该表达式返回 `True`；如果该参数的值为 `Nothing`，则返回 `False`。  
   
-     [!code-vb[VbVbalrLambdas#4](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#4)]  
+     [!code-vb[VbVbalrLambdas#4](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_9.vb)]  
   
 -   下面的示例定义了一个 lambda 表达式，该表达式返回数组中最后一个元素的索引。  
   
-     [!code-vb[VbVbalrLambdas#5](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#5)]  
+     [!code-vb[VbVbalrLambdas#5](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_10.vb)]  
   
 ## 请参阅  
  [过程](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   

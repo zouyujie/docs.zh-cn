@@ -81,7 +81,7 @@ caps.handback.revision: 6
   
      将下面的代码添加到 `Load` 事件中。  这段代码查询作为数据上下文的属性公开的表，并确定结果的最小值和最大值。  该示例使用 `Aggregate` 子句查询单个结果，使用 `Group By` 子句显示分组结果的平均值。  
   
-     [!code-vb[VbLINQToSQLHowTos#14](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/StoredProcedureHowTo/Form7.vb#14)]  
+     [!code-vb[VbLINQToSQLHowTos#14](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-find-the-minimum-or-maximum-value-in-a-query-result_1.vb)]  
   
 4.  按 F5 运行项目并查看结果。  
   

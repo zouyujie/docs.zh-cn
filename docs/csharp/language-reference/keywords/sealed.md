@@ -31,7 +31,7 @@ sealed class B : A {}
 ## 示例  
  在下面的示例中，`Z` 从 `Y` 继承，但 `Z` 无法重写在 `X` 中声明并在 `Y` 中密封的虚函数 `F`。  
   
- [!code-cs[csrefKeywordsModifiers#16](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#16)]  
+ [!code-cs[csrefKeywordsModifiers#16](../../../csharp/language-reference/keywords/codesnippet/CSharp/sealed_1.cs)]  
   
  当在类中定义新的方法或属性时，通过不将这些方法或属性声明为 [virtual](../../../csharp/language-reference/keywords/virtual.md)，可防止派生类重写这些方法或属性。  
   
@@ -46,7 +46,7 @@ sealed class B : A {}
  有关更多示例，请参见[抽象类、密封类及类成员](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)。  
   
 ## 示例  
- [!code-cs[csrefKeywordsModifiers#17](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#17)]  
+ [!code-cs[csrefKeywordsModifiers#17](../../../csharp/language-reference/keywords/codesnippet/CSharp/sealed_2.cs)]  
   
  在上一个示例中，您可能尝试使用下面的语句从密封类继承：  
   

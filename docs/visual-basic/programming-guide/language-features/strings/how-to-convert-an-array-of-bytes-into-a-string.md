@@ -29,7 +29,7 @@ caps.handback.revision: 9
 ## 示例  
  本示例使用 <xref:System.Text.Encoding.Unicode%2A?displayProperty=fullName> 编码类的 <xref:System.Text.Encoding.GetString%2A> 方法将所有字节从字节数组转换为字符串。  
   
- [!code-vb[VbVbalrStrings#72](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-to-convert-an-array-_1.vb)]  
+ [!code-vb[VbVbalrStrings#72](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-convert-an-array-of-bytes-into-a-string_1.vb)]  
   
  可以从多个编码选项中选择一种以将字节数组转换为字符串：  
   

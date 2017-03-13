@@ -37,11 +37,11 @@ caps.handback.revision: 17
   
  注释可以和语句同行并跟随其后，也可以另占一整行。  以下代码阐释了这两种情况。  
   
- [!code-vb[VbVbcnConventions#16](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/comments-in-code_1.vb)]  
+ [!code-vb[VbVbcnConventions#16](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/comments-in-code_1.vb)]  
   
  如果注释需要多行，请在每行的前面使用注释符号，如以下示例所示。  
   
- [!code-vb[VbVbcnConventions#17](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/comments-in-code_2.vb)]  
+ [!code-vb[VbVbcnConventions#17](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/comments-in-code_2.vb)]  
   
 ## 注释原则  
  下表提供了在一段代码前可以加上哪些类型的注释的一般原则。  这些准则仅仅是一些建议；[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 并未强制实施有关添加注释的规则。  编写注释时，应编写对您和代码的任何其他读者都最为有效的注释。  

@@ -24,13 +24,13 @@ caps.handback.revision: 35
   
  下面的示例演示如何对一个整数数组调用标准查询运算符 `OrderBy` 方法。  括号里面的表达式是一个 lambda 表达式。  很多标准查询运算符采用 lambda 表达式作为参数，但这不是扩展方法的必要条件。  有关详细信息，请参阅 [Lambda 表达式](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)。  
   
- [!code-cs[csProgGuideExtensionMethods#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/extension-methods_1.cs)]  
+ [!code-cs[csProgGuideExtensionMethods#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/extension-methods_1.cs)]  
   
  扩展方法被定义为静态方法，但它们是通过实例方法语法进行调用的。  它们的第一个参数指定该方法作用于哪个类型，并且该参数以 [this](../../../csharp/language-reference/keywords/this.md) 修饰符为前缀。  仅当你使用 `using` 指令将命名空间显式导入到源代码中之后，扩展方法才位于范围中。  
   
  下面的示例演示为 <xref:System.String?displayProperty=fullName> 类定义的一个扩展方法。  请注意，它是在非嵌套的、非泛型静态类内部定义的：  
   
- [!code-cs[csProgGuideExtensionMethods#4](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/extension-methods_2.cs)]  
+ [!code-cs[csProgGuideExtensionMethods#4](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/extension-methods_2.cs)]  
   
  可使用此 `using` 指令将 `WordCount` 扩展方法置于范围中：  
   
@@ -70,7 +70,7 @@ using System.Linq;
   
  如果编译器找不到具有匹配签名的实例方法，它会绑定到匹配的扩展方法（如果存在这样的方法）。  
   
- [!code-cs[csProgGuideExtensionMethods#5](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/extension-methods_3.cs)]  
+ [!code-cs[csProgGuideExtensionMethods#5](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/extension-methods_3.cs)]  
   
 ## 通用准则  
  通常，建议你只在不得已的情况下才实现扩展方法，并谨慎地实现。  只要有可能，必须扩展现有类型的客户端代码都应该通过创建从现有类型派生的新类型来达到这一目的。  有关详细信息，请参阅[继承](../../../csharp/programming-guide/classes-and-structs/inheritance.md)。  

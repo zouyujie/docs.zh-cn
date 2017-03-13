@@ -32,7 +32,7 @@ caps.handback.revision: 11
   
 -   使用带有两个作为操作数的变量的 [Is 运算符](../../../../visual-basic/language-reference/operators/is-operator.md) 或 [IsNot 运算符](../../../../visual-basic/language-reference/operators/isnot-operator.md)。  
   
-     [!code-vb[VbVbalrOperators#69](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-test-whether-two-_1.vb)]  
+     [!code-vb[VbVbalrOperators#69](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-test-whether-two-objects-are-the-same_1.vb)]  
   
  您可能需要根据两个对象是否引用同一个实例来决定要执行的具体操作。  前面的示例将控件 `c` 与窗体 `f` 上的活动控件进行比较。  如果没有活动控件，或者如果有活动控件但该控件不是与 `c` 相同的控件实例，则 `If` 语句会失败，并且过程将返回，而不会进一步进行处理。  
   
