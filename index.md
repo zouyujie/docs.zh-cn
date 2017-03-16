@@ -21,7 +21,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>C 入门#</h3>
+                                    <h3>C# 入门</h3>
                                 </div>
                             </div>
                         </div>
