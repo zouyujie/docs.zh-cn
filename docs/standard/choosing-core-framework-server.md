@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 155553e4-89a2-418d-be88-4e75f6c3cc69
 translationtype: Human Translation
-ms.sourcegitcommit: 572bec82e08d6b47a188e51964c8c2f440fa471c
-ms.openlocfilehash: e23514daacb34739b26b7a31afea2ccb30296e79
+ms.sourcegitcommit: 053e296db67b9dde23c4d6295dbc7246d2b486ed
+ms.openlocfilehash: 816fb524000eb96ed5a157934cabc51b90f11dc0
+ms.lasthandoff: 02/23/2017
 
 ---
 
@@ -53,7 +54,7 @@ ms.openlocfilehash: e23514daacb34739b26b7a31afea2ccb30296e79
 
 ### <a name="containers"></a>容器
 
-虽然容器通常与微服务体系结构结合使用，但是也可用于容器化遵循任何体系结构模式的 Web 应用或服务。 虽然能够将 .NET Framework 用于 Windows 容器，但 .NET Core的模块化和轻型性质使之成为容器的最佳选择。  在创建和部署时容器时，使用 .NET Core 时容器的映像大小要远小于使用 .NET Framework 时的大小。  例如，因为它是跨平台的，所以可以将服务器应用部署到 Linux Docker 容器。
+虽然容器通常与微服务体系结构结合使用，但是也可用于容器化遵循任何体系结构模式的 Web 应用或服务。 虽然能够将 .NET Framework 用于 Windows 容器，但 .NET Core的模块化和轻型性质使之成为容器的最佳选择。 在创建和部署时容器时，使用 .NET Core 时容器的映像大小要远小于使用 .NET Framework 时的大小。 例如，因为它是跨平台的，所以可以将服务器应用部署到 Linux Docker 容器。
 
 然后，可以在自己的 Linux 或 Windows 基础结构中托管 Docker 容器，或使用云服务（例如 [Azure 容器服务](https://azure.microsoft.com/services/container-service/)），在云中管理、协调和缩放基于容器的应用程序。
 
@@ -107,9 +108,4 @@ ms.openlocfilehash: e23514daacb34739b26b7a31afea2ccb30296e79
 * [从 .NET Framework 移植到 .NET Core](../core/porting/index.md)
 * [Docker 上的 .NET Framework 指南](../framework/index.md)
 * [.NET 组件概述](components.md)
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

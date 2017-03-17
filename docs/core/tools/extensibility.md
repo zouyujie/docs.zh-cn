@@ -4,81 +4,69 @@ description: ".NET Core CLI 扩展性模型"
 keywords: "CLI, 扩展性, 自定义命令, .NET Core"
 author: blackdwarf
 ms.author: mairaw
-ms.date: 06/20/2016
+ms.date: 02/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 1bebd25a-120f-48d3-8c25-c89965afcbcd
+ms.assetid: fffc3400-aeb9-4c07-9fea-83bc8dbdcbf3
 translationtype: Human Translation
-ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
-ms.openlocfilehash: 0a136e69e103994a69084b09f481489880d5df42
+ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
+ms.openlocfilehash: 827b5567400fd8ed1f32e60ba593a3ae71a0d745
+ms.lasthandoff: 03/07/2017
 
 ---
 
-# <a name="net-core-cli-extensibility-model"></a>.NET Core CLI 扩展性模型 
-
-> [!WARNING]
-> 本主题适用于 .NET Core 工具预览版 2。 对于 .NET Core 工具 RC4 版本，请参阅 [.NET Core CLI 扩展性模型（.NET Core 工具 RC4）](../preview3/tools/extensibility.md)主题。
+# <a name="net-core-cli-extensibility-model"></a>.NET Core CLI 扩展性模型
 
 ## <a name="overview"></a>概述
 本文将介绍如何扩展 CLI 工具的主要方式，并解释驱动每个工具的方案。 本文档将概述如何使用这些工具并简短说明如何生成两种工具。 
 
 ## <a name="how-to-extend-cli-tools"></a>如何扩展 CLI 工具
-可以通过以下两种主要方式扩展 CLI 工具：
+主要可以通过以下三种方式扩展 CLI 工具：
 
 1. 通过基于每个项目的 NuGet 包
-2. 通过系统路径
+2. 通过具有自定义目标的 NuGet 包  
+3. 通过系统路径
 
-上方列出的两种扩展性机制并不相互排斥；可以同时使用或单独使用。 选择何种机制很大程度上取决于希望通过扩展实现的目标。
+上面列出的三种扩展性机制并不相互排斥；可以同时使用、单独使用或结合使用。 选择何种机制很大程度上取决于希望通过扩展实现的目标。
 
 ## <a name="per-project-based-extensibility"></a>基于每个项目的扩展性
-基于项目的工具是作为 NuGet 包分布的[可移植控制台应用程序](../deploying/index.md)。 工具仅在项目的上下文中可用，这些工具被该项目引用或为该项目还原；项目上下文外（例如，包含该项目的目录外）的调用将因无法找到命令而失败。
+基于项目的工具是作为 NuGet 包分布的[依赖于框架的部署](../deploying/index.md)。 工具仅在项目的上下文中可用，这些工具被该项目引用或为该项目还原；项目上下文外（例如，包含该项目的目录外）的调用将因无法找到命令而失败。
 
-此外，这些工具非常适合生成服务器，因为 `project.json` 外不需要任何条件。 生成过程会对所生成的项目运行还原操作，并且工具可用。 语言项目（如 F#）也属于此类别；毕竟只能采用某种特定语言编写每个项目。 
+这些工具非常适合生成服务器，因为除项目文件外不需要任何条件。 生成过程会对所生成的项目运行还原操作，并且工具可用。 语言项目（如 F#）也属于此类别；毕竟只能采用某种特定语言编写每个项目。 
 
 最后，此扩展性模型支持创建需要访问项目生成输出的工具。 例如，[ASP.NET](https://www.asp.net/) MVC 应用程序中的多种 Razor 视图工具均属于此类别。 
 
 ### <a name="consuming-per-project-tools"></a>使用基于项目的工具
-使用这些工具需要将 `tools` 节点添加到 `project.json`。 在 `tools` 节点内，引用该工具所在的包。 运行 `dotnet restore` 后，将还原该工具及其依赖项。 
+使用这些工具要求将想要使用的每个工具的 `<DotNetCliToolReference>` 元素添加到项目文件。 在 `<DotNetCliToolReference>` 元素中，引用该工具所在的包并指定所需的版本。 运行 `dotnet restore` 后，将还原该工具及其依赖项。 
 
-对于需要加载用于执行的项目生成输出的工具，通常还有一个依赖项，它位于项目文件中的常规依赖项下。 这意味着加载项目代码的工具有两个组件： 
+对于需要加载用于执行的项目生成输出的工具，通常还有一个依赖项，它位于项目文件中的常规依赖项下。 由于 CLI 使用 MSBuild 作为其生成引擎，因此建议将该工具的这些部分作为自定义 MSBuild 目标和任务写入，以便这些部分可以参与整个生成过程。 此外，它们还可以轻松获取通过该生成产生的所有数据（例如，输出文件的位置、正在生成的当前配置等）。所有此类信息将成为一组可从任意目标中读取的 MSBuild 属性。 本文档的后面将介绍如何使用 NuGet 添加自定义目标。 
 
-1. “工具”主要调用程序
-2. 包含要使用的逻辑的任何数目的其他工具 
+我们来看看将简单的工具专用工具添加到简单项目的示例。 假定示例命令称为 `dotnet-api-search`，通过它可搜索指定 API 的所有 NuGet 包，以下是使用该工具的控制台应用程序的项目文件：
 
-为什么需要两个组件？ 需要加载项目生成输出的工具需具备所处理项目的统一依赖项关系图。 通过添加依赖项位，可以使 NuGet 能够将这些依赖项解析为统一关系图。 调用程序存在的原因在于它需要推断出依赖项工具的位置及框架。 调用程序可以接受用户指定和查找依赖项工具所用的所有重定向参数（`-c`、`-o`、`-b`）；还可以在多个框架中存在多个依赖项工具情况下实现各种策略（即运行所有工具或仅一个工具等）通常，可采用所需的任何方式在这两种工具之间共享逻辑。 
 
-我们来看看将简单的工具专用工具添加到简单项目的示例。 假定示例命令称为 `dotnet-api-search`，它可使你搜索指定 API 的所有 NuGet 包，以下是使用该工具的控制台应用程序 `project.json` 文件：
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1/TargetFramework>
+  </PropertyGroup>
 
-```json
-{
-    "version": "1.0.0",
-    "compilationOptions": {
-        "emitEntryPoint": true
-    },
-    "dependencies": {
-        "Microsoft.NETCore.App": {
-            "type": "platform",
-            "version": "1.0.0"
-        }
-    },
-    "tools": {
-        "dotnet-api-search": {
-            "version": "1.0.0",
-            "imports": ["dnxcore50"]
-        }
-    },
-    "frameworks": {
-        "netcoreapp1.0": {}
-    }
-}
+  <!-- The tools reference -->
+  <ItemGroup>
+    <DotNetCliToolReference Include="dotnet-api-search" Version="1.0.0" />
+  </ItemGroup>
+</Project>
 ```
 
-`tools` 节点采用与 `dependencies` 节点相同的方式进行结构化。 它需要至少包含该工具及其版本的包的包 ID。 在上述示例中，我们可以看到另一语句，即 `imports`。 这会影响该工具的还原过程，并指定除工具本身所含任何目标框架外，它还与 `dnxcore50` 目标兼容。 有关详细信息，可以参阅 [project.json 引用](project-json.md)。
+`<DotNetCliToolReference>` 元素采用与 `<PackageReference>` 元素相同的方式进行结构化。 它需要至少包含该工具及其版本的包的包 ID。 
 
 ### <a name="building-tools"></a>生成工具
 如前所述，工具仅仅是可移植控制台应用程序。 可以采用与生成控制台应用程序类似的方式生成此工具。 生成后，使用 [`dotnet pack`](dotnet-pack.md) 命令创建 NuGet 包 (nupkg)，其中包含代码和依赖项等相关信息。 作者可以随意命名包，但内部应用程序（即实际的工具二进制文件）必须遵循 `dotnet-<command>` 的约定以便 `dotnet` 能够调用它。 
+
+> [!NOTE]
+> 在低于 RC3 版本的 .NET Core 命令行工具中，`dotnet pack` 命令存在一个 bug，导致 `runtime.config.json` 无法与该工具一起打包。 缺少该文件导致发生运行时错误。 如果遇到此行为，请务必更新到最新工具，然后重试 `dotnet pack`。 
 
 由于工具是可移植应用程序，使用该工具的用户必须拥有生成该工具时所针对的 .NET Core 库版本，以便运行此工具。 工具使用的以及 .NET Core 库未包含的其他任何依赖项均被还原并放置在 NuGet 缓存中。 因此，使用 .NET Core 库和 NuGet 缓存中的程序集可以运行整个工具。 
 
@@ -86,23 +74,54 @@ ms.openlocfilehash: 0a136e69e103994a69084b09f481489880d5df42
 
 可在 [.NET Core CLI 存储库](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestProjects)中找到有关此过程的更多示例和不同组合。 还可以在相同存储库中查看[所用工具的实现](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages)。 
 
-加载用于执行的项目生成输出的生成工具略有不同。 如上所述，这些类型的工具有两个组件：
+### <a name="custom-targets"></a>自定义目标
+在当下这段时间内，NuGet 可将自定义的 MSBuild 目标和属性文件打包，用户可以在 [NuGet 文档网站](https://docs.microsoft.com/nuget/create-packages/creating-a-package#including-msbuild-props-and-targets-in-a-package)上找到相应的官方文档。 在移动到 CLI 中以使用 MSBuild 后，可扩展性的相同机制会应用到 .NET Core 项目。 若想要扩展生成过程，或者访问生成过程中的任何项目（如生成文件）或检查调用生成所在的配置等，建议使用该类型的扩展。 
 
-1. 一个是用户调用的调度程序工具
-2. 另一个是特定于框架的依赖项，其中包含有关如何找到并处理生成输出的逻辑
+相关参考，请查看以下示例目标的项目文件。 此示例演示如何使用新的 `csproj` 语法来指导 `dotnet pack` 命令对哪些内容打包，以便将目标文件及程序集放到包内的 `build`文件夹。 请注意以下将 `Label` 属性设置为“dotnet 包说明”的 `<ItemGroup>`。 
 
-这方面的典型示例是[实体框架 (EF)](https://github.com/aspnet/EntityFramework) 命令以及 [`dotnet test`](dotnet-test.md) 命令。 无论哪种情况都有一个在 `project.json` 的 `tools` 节点中引用的工具，即主调度程序。 用户可在命令行调用此工具。 拼图的第二块是项目主依赖项（根依赖项或特定于框架的依赖项）中提供的依赖项。 此包含有工具的实际逻辑。 包属于普通依赖项，因此会将其作为项目还原过程的一部分进行还原。 
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Sample Packer</Description>
+    <VersionPrefix>0.1.0-preview</VersionPrefix>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <DebugType>portable</DebugType>
+    <AssemblyName>SampleTargets.PackerTarget</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Pkg\dist-template.xml;compiler\resources\**\*" Exclude="bin\**;obj\**;**\*.xproj;packages\**" />
+    <None Include="build\SampleTargets.PackerTarget.targets" />
+  </ItemGroup>
+  <ItemGroup Label="dotnet pack instructions">
+    <Content Include="build\*.targets;$(OutputPath)\*.dll;$(OutputPath)\*.json">
+      <Pack>true</Pack>
+      <PackagePath>build\</PackagePath>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="1.0.1-beta-000933"/>
+    <PackageReference Include="Microsoft.Build.Framework" Version="0.1.0-preview-00028-160627" />
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="0.1.0-preview-00028-160627" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>463c66f0-921d-4d34-8bde-7c9d0bffaf7b</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
+    <DefineConstants>$(DefineConstants);NETSTANDARD1_3</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DefineConstants>$(DefineConstants);RELEASE</DefineConstants>
+  </PropertyGroup>
+</Project>
+```
 
-不同于前面几种工具，这些工具实际上属于使用它们的项目的关系图。 这是因为它们需要访问项目代码并且可能访问所有依赖项。 例如，EF 工具需要此项的原因在于它们需要扫描程序集以查找所需代码，如迁移。  
+若要使用自定义目标，请提供指向此程序包的 `<PackageReference>` 以及项目内正在进行扩展的该程序包版本。 与工具不同，自定义目标包未包含在使用项目中的依赖项结尾。 
 
-存在此双管齐下的解决方案的另一个原因是可实现更简洁的调用模型。 将某些项目放置在磁盘上的大多数 CLI 命令（例如，`dotnet build`、`dotnet publish`）都允许用户使用 `--output` 参数、`--build-base-path` 参数或 `--configuration` 参数将输出重定向到不同路径。 例如，若要使 EF 工具能够找到项目的生成输出，必须同时向 `dotnet` 驱动程序以及 `ef` 命令提供具有相同值的相同参数。 使用调用模型，用户可以将任何参数传递到调度程序工具，此工具可以在之后使用该模型查找所需的包含输出目录中的逻辑的二进制文件。 
+使用自定义目标仅取决于配置方式。 由于它是常用的 MSBuild 目标，因此会依赖于给定的目标并在另一个目标后运行，也可使用 `dotnet msbuild /t:<target-name>` 命令手动调用。 
 
-可在 [.NET Core CLI 存储库](https://github.com/dotnet/cli)中找到此方法的良好示例：
-
-* [示例 project.json 文件](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/TestAssets/DesktopTestProjects/AppWithDirectDependencyDesktopAndPortable/project.json)
-* [调度程序的实现](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages/dotnet-dependency-tool-invoker)
-* [特定于框架的依赖项的实现](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages/dotnet-desktop-and-portable)
-
+但是，如果想为你的用户提供更好的用户体验，可以合并基于项目的工具和自定义目标。 在这种情况下，基于项目的工具实质上只需接受任何所需的参数并将其转换为执行目标所需的 `dotnet msbuild` 调用。 有关此类协同作用的示例，请访问 [`dotnet-packer`](https://github.com/dotnet/MVPSummitHackathon2016/tree/master/dotnet-packer) 项目中的 [2016 年编程马拉松 MVP 峰会示例](https://github.com/dotnet/MVPSummitHackathon2016)存储库。 
 
 ### <a name="path-based-extensibility"></a>基于路径的扩展
 基于路径的扩展常用于开发计算机，此计算机需要在概念上涵盖多个项目的工具。 此扩展机制的主要缺点在于必须将其关联到工具所在的计算机。 如果其他计算机上需要该机制，则必须对其进行部署。
@@ -131,10 +150,6 @@ echo "Cleaning complete..."
 在 macOS 上，可以将此脚本另存为 `dotnet-clean` 并使用 `chmod +x dotnet-clean` 设置其可执行位。 然后，可以使用命令 `ln -s dotnet-clean /usr/local/bin/` 在 `/usr/local/bin` 中创建其符号链接。 这样，就可以使用 `dotnet clean` 语法调用 clean 命令。 可以通过创建应用、在其中运行 `dotnet build`，然后运行 `dotnet clean` 来对此进行测试。 
 
 ## <a name="conclusion"></a>结束语
-.NET Core CLI 工具允许两个主要扩展点。 基于项目的工具包含在项目上下文中，但允许通过还原轻松安装。 基于路径的工具非常适合可在一台计算机上使用的常规、跨项目工具。 
-
-
-
-<!--HONumber=Feb17_HO2-->
+.NET Core CLI 工具允许三个主要扩展点。 基于项目的工具包含在项目上下文中，但允许通过还原轻松安装。 通过自定义目标，可使用自定义任务轻松扩展生成过程。 基于路径的工具非常适合可在一台计算机上使用的常规、跨项目工具。 
 
 

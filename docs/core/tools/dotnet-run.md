@@ -4,22 +4,20 @@ description: "dotnet-run 命令为从源代码运行应用程序提供了一个�
 keywords: "dotnet-run, CLI, CLI 命令, .NET Core"
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/07/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 495ff50b-cb30-4d30-8f20-beb3d5e7c31f
+ms.assetid: 40d4e60f-9900-4a48-b03c-0bae06792d91
 translationtype: Human Translation
-ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
-ms.openlocfilehash: 2e14cd14bc3d5ed86c841e46dc80c2649f239a82
+ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
+ms.openlocfilehash: 60bb9160e43788539b0dc6bcf1372bb925e9ba22
+ms.lasthandoff: 03/07/2017
 
 ---
 
 #<a name="dotnet-run"></a>dotnet-run
-
-> [!WARNING]
-> 本主题适用于 .NET Core 工具预览版 2。 对于 .NET Core 工具 RC4 版本，请参阅 [dotnet-run（.NET Core 工具 RC4）](../preview3/tools/dotnet-run.md)主题。
 
 ## <a name="name"></a>名称 
 
@@ -27,23 +25,26 @@ ms.openlocfilehash: 2e14cd14bc3d5ed86c841e46dc80c2649f239a82
 
 ## <a name="synopsis"></a>摘要
 
-`dotnet run [--help] [--framework] [--configuration]
-    [--project] [[--] [application arguments]]`
+```
+dotnet run [-c|--configuration] [-f|--framework] [-p|--project] [[--] [application arguments]]
+dotnet run [-h|--help]
+```
 
 ## <a name="description"></a>描述
-`dotnet run` 命令为从源代码使用一个命令运行应用程序提供了一个方便的选项。 它会编译源代码、生成输出程序，然后运行该程序。 此命令可用于快速迭代开发，还可用于运行源分布式程序（例如，网站）。
 
-此命令依赖于 [dotnet 生成](dotnet-build.md)，以便在启动程序前生成 .NET 程序集的源输入。 此命令的要求和源输入的处理均继承自生成命令。 生成命令文档提供了有关这些要求的详细信息。
+`dotnet run` 命令为从源代码使用一个命令运行应用程序提供了一个方便的选项。 这对命令行中进行快速迭代开发会有用。 该命令依赖 [`dotnet build`](dotnet-build.md) 命令来生成代码，因此任何生成要求（如必须首先还原项目）也适用于 `dotnet run`。 
 
-输出文件会被写入子 *bin* 文件夹，如果此文件夹不存在，则创建一个。 根据需要覆盖文件。 临时文件会被写入子 *obj* 文件夹。  
+输出文件会写出到默认位置，即 `bin/<configuration>/<target>`。 例如，如果具有 `netcoreapp1.0` 应用程序并且运行 `dotnet run`，输出将置于 `bin/Debug/netcoreapp1.0`。 将根据需要覆盖文件。 临时文件将置于 `obj` 目录。 
 
-对于具有多个指定框架的项目，`dotnet run` 将首先选择 .NET Core 框架。 如果不存在，则将出错。 若要指定其他框架，请使用 `--framework` 参数。
+对于具有多个指定框架的项目，`dotnet run` 将显示错误，除非使用 `--framework` 选项指定要针对哪个框架运行应用程序。
 
 必须在项目上下文，而不是生成程序集中使用 `dotnet run` 命令。 如果尝试改为运行可移植应用程序 DLL，应使用 [dotnet](dotnet.md)，切勿使用如下所示的任何命令：
  
 `dotnet myapp.dll`
 
 有关 `dotnet` 驱动程序的详细信息，请参阅 [.NET Core 命令行工具 (CLI)](index.md) 主题。
+
+若要运行应用程序，`dotnet run` 命令需从 NuGet 缓存解析共享运行时之外的应用程序依赖项。 鉴于此，不建议使用此命令在生产中运行应用程序。 而应使用 [`dotnet publish`](dotnet-publish.md) 命令[创建部署](../deploying/index.md)，并在生产中使用该命令。 
 
 ## <a name="options"></a>选项
 
@@ -55,31 +56,28 @@ ms.openlocfilehash: 2e14cd14bc3d5ed86c841e46dc80c2649f239a82
 
 打印出有关命令的简短帮助。
 
-`-f`, `--framework <FRAMEWORK_IDENTIFIER>`
+`-c|--configuration {Debug|Release}`
 
-运行针对给定框架标识符 (FID) 的应用程序。 
+用于生成项目的配置。 默认值为 `Debug`。
 
-`-c`, `--configuration <Debug|Release>`
+`-f|--framework <FRAMEWORK_IDENTIFIER>`
 
-发布时要使用的配置。 默认值为 `Debug`。
+使用指定框架生成并运行应用。 框架必须在项目文件中进行指定。
 
-`-p`, `--project [PATH]`
+`-p|--project <PATH>`
 
-指定要运行的项目。 它可能是 [project.json](project-json.md) 文件的路径或包含 [project.json](project-json.md) 文件的目录路径。 如未指定，则默认为当前目录。 
+指定要运行的项目文件的路径。 它可能是 [csproj](csproj.md) 文件的路径或包含 [csproj](csproj.md) 文件的目录路径。 如未指定，则默认为当前目录。 
 
 ## <a name="examples"></a>示例
 
-运行当前目录中的项目：`dotnet run` 
+运行当前目录中的项目：
+
+`dotnet run` 
 
 运行指定的项目：
 
-`dotnet run --project /projects/proj1/project.json`
+`dotnet run --project /projects/proj1/proj1.csproj`
 
 运行当前目录中的项目（在本例中，`--help` 参数被传递到正在运行的应用程序，因为使用了 `--` 参数）：
 
 `dotnet run --configuration Release -- --help`
-
-
-<!--HONumber=Feb17_HO2-->
-
-

@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 translationtype: Human Translation
-ms.sourcegitcommit: eb98c703946d8be0757288ae9e00aab87b32e407
-ms.openlocfilehash: 939c6dd0621e3b1121aca52915b04bf51af1d1ef
+ms.sourcegitcommit: 519253bd6dc105afb138268c62347c29a6072fbb
+ms.openlocfilehash: f681b1663d1a2e6c2fbbd1cc415290d26bbbe429
+ms.lasthandoff: 03/07/2017
 
 ---
 
@@ -110,7 +111,7 @@ NuGet 包面向一个或多个[框架](frameworks.md)。 .NET 标准库包面向
 
 基于配置文件的 PCL 兼容性由 [Microsoft.NETCore.Portable.Compatibility](https://www.nuget.org/packages/Microsoft.NETCore.Portable.Compatibility) NuGet 包提供。 引用包含基于配置文件的 PCL 的 NuGet 包时，需要这种依赖性。
 
-与 project.json 中以常规方式打包的基于配置文件的 PCL 相比，打包为 `netstandard` 的基于配置文件的 PCL 更易于使用。 `netstandard` 打包符合现有用户的需要。
+与以常规方式打包的基于配置文件的 PCL 相比，打包为 `netstandard` 的基于配置文件的 PCL 更易于使用。 `netstandard` 打包符合现有用户的需要。
 
 下面列出了与 .NET Standard 兼容的 PCL 配置文件集： 
 
@@ -131,9 +132,4 @@ NuGet 包面向一个或多个[框架](frameworks.md)。 .NET 标准库包面向
 ## <a name="targeting-net-standard-library"></a>指定 .NET 标准库的目标
 
 可以结合使用 `netstandard` 框架和 NETStandard.Library 元包来[构建.NET 标准库](../core/tutorials/libraries.md)。 查看[使用.NET Core 工具指定 .NET 标准库目标](../core/packages.md)的示例。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
