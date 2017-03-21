@@ -56,7 +56,7 @@ Microsoft 积极开发和支持三种 .NET 语言：C#、F# 和 Visual Basic .NE
 
 当某个方法完成时，给定范围内的类型通常会超出范围，此时，便可以回收这些变量。 但是，可能使用 `using` 语句来告诉 GC，要在特定的对象超出范围后才让方法退出：
 
-[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L6-L9)]
+[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L4-L5)]
 
 `using` 块完成后，GC 便会知道可以放心收集上述示例中的 `stream` 对象，并且可以回收其内存。
 
@@ -68,7 +68,7 @@ Microsoft 积极开发和支持三种 .NET 语言：C#、F# 和 Visual Basic .NE
 
 下面的示例会由于内存安全而引发异常。
 
-[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L11-L12)]
+[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L4-L5)]
 
 ## <a name="type-safety"></a>类型安全
 
