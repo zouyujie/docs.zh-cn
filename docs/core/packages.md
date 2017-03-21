@@ -10,9 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 609b0845-49e7-4864-957b-21ffe1b93bf2
 translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: 2396b2794e88673afc1973b5bdd1e82c28fe5a13
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: 519253bd6dc105afb138268c62347c29a6072fbb
+ms.openlocfilehash: 9cb957973e68129194c998c88e398351b48819ec
+ms.lasthandoff: 03/07/2017
 
 ---
 
@@ -44,74 +44,44 @@ ms.lasthandoff: 03/02/2017
 - [System.Linq](https://www.nuget.org/packages/System.Linq) - 一组对象查询类型，包括 Enumerable 和 [ILookup&lt;TKey, TElement&gt;](http://docs.microsoft.com/dotnet/core/api/System.Linq.ILookup-2)。
 - [System.Reflection](https://www.nuget.org/packages/System.Reflection) - 一组用于类型加载、检查与激活的类型，包括 [Assembly](http://docs.microsoft.com/dotnet/core/api/System.Reflection.Assembly)、[TypeInfo](http://docs.microsoft.com/dotnet/core/api/System.Reflection.TypeInfo) 和 [MethodInfo](http://docs.microsoft.com/dotnet/core/api/System.Reflection.MethodInfo)。
 
-包在 project.json 中引用。 在以下示例中，引用的是 [System.Runtime](https://www.nuget.org/packages/System.Runtime/) 包。 
+通常情况下，相较于逐个地将包包含在项目中，包含*元包*会简单得多，元包是指通常配合在一起使用的一组包。 （有关元包的更多信息，请参见下一部分。）但是当需要单个包时，可以按以下示例所示的那样来包含它，此示例引用 [System.Runtime](https://www.nuget.org/packages/System.Runtime/) 包。 
 
-```json
-{
-  "dependencies": {
-    "System.Runtime": "4.1.0"
-  },
-  "frameworks": {
-    "netstandard1.6": {}
-  }
-}
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Runtime" Version="4.3.0" />
+  </ItemGroup>
+</Project>
 ```
-
-在大部分情况下，你可能不需要直接引用较低级别的 .Net Core 包，因为引用的包太多了管理起来会让你抓狂。 所以你只需引用元包。
 
 ## <a name="metapackages"></a>元包
 
 元包就是一个 NuGet 包约定，描述了一组意义相关的包。 开发团队利用依赖项来描述这一组包。 他们通过这一组包来描述一个框架，然后有选择地发布出去。 
 
-通过引用一个元包，实际上是添加了对元包中每一个独立包的引用依赖。 这意味着这些包中所有的库（ref 或者 lib）都会在 IntelliSense（或类似体验）中可用，同时也会发布（仅 lib）到你的应用中。 
+默认情况下，早期版本的 .NET Core 工具（同时基于 project.json 和 csproj 的工具）指定一个框架和一个元包。 但目前，由目标框架隐式引用元包，以便将每个元包绑定到一个目标框架。 例如，`netstandard1.6` 框架引用 NetStandard.Library 1.6.0 版元包。 同样， `netcoreapp1.1` 框架引用 Microsoft.NETCore.App 1.1.0 版元包。 有关详细信息，请参阅 [.NET Core SDK 中的隐式元包引用](https://github.com/dotnet/core/blob/master/release-notes/1.0/sdk/1.0-rc3-implicit-package-refs.md)。
 
-注意：术语“lib”和“ref”指代 NuGet 包中的相应文件夹。 “ref”文件夹描述的是以程序集元数据表示的公共 API 包。 “lib”文件夹包含了这个公共 API 的在给定框架下的实现。 
+以某个框架为目标以及隐式引用元包，这实际上是添加了对元包中每一个独立包的引用依赖。 这使这些包中的所有库都可用于 IntelliSense（或类似体验），同时也可用于发布应用。  
 
 使用元包具有以下好处：
 
 - 在引用大量细粒度包方面，提供了一种方便的用户体验。 
 - 定义了一组经过充分测试且运行良好的包（包括指定的各种版本）。
 
-.NET 标准库元包：
+.NET 标准库元包为：
 
 - [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) - 描述了属于“.Net 标准库”一部分的各种库。 适用于所有支持 .NET 标准库的 .NET 实现（例如，.NET Framework、.NET Core 和 Mono）。 也就是“netstandard”框架。
 
-以下是重要的 .NET Core 元包：
+重要的 .NET Core 元包有：
 
 - [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) - 描述了属于 .NET Core 发行版的部分库。 也就是 [`.NETCoreApp` 框架](https://github.com/dotnet/core-setup/blob/master/pkg/projects/Microsoft.NETCore.App/Microsoft.NETCore.App.pkgproj)。 它依赖于更小的 `NETStandard.Library`。
 - [Microsoft.NETCore.Portable.Compatibility](https://www.nuget.org/packages/Microsoft.NETCore.Portable.Compatibility) - 一组兼容外观，使基于 mscorlib 的可移植类库(PCL) 得以在 .Net Core上运行。
 
-元包的引用方法就像普通的 NuGet 包一样，在 project.json 中定义。 
-
-在下面的示例中，引用了 `NETStandard.Library` 元包，用于创建一个基于 .Net 运行时的可移植库。
-
-```json
-{
-  "dependencies": {
-    "NETStandard.Library": "1.6.0"
-  },
-  "frameworks": {
-    "netstandard1.6": {}
-  }
-}
-```
-
-在下面的示例中，引用了 `Microsoft.NETCore.App` 元包，用于创建应用或库，运行于 .Net Core 之上，并充分使用 .Net Core 所有功能。 它提供的库访问范围要比 `NETStandard.Library` 大。
-
-```json
-{
-  "dependencies": {
-    "Microsoft.NETCore.App": "1.0.0"
-  },
-  "frameworks": {
-    "netcoreapp1.0": {}
-  }
-}
-```
-
 ## <a name="frameworks"></a>框架
 
-每个 .NET Core 包都支持一组框架，在框架文件夹中进行声明（就在前面所说的 lib 与 ref 文件夹中）。 框架描述了一组可用的 API（以及潜在的其他特性），所以你可以在指定一个目标框架时使用这些功能。 添加新的 API 时，它们就会进入版本控制流程。
+每个 .NET Core 包支持一组运行时框架。 框架描述了一组可用的 API（以及潜在的其他特性），所以你可以在指定一个目标框架时使用这些功能。 添加新的 API 时，它们就会进入版本控制流程。
 
 例如，[System.IO.FileSystem](https://www.nuget.org/packages/System.IO.FileSystem) 支持以下框架：
 
@@ -135,8 +105,6 @@ ms.lasthandoff: 03/02/2017
 
 可以在上图中看到这种关系。 *API* 选择框架作为目标并定义了框架。 而*框架*用于*资产选择*。 *资产*实现了 API。
 
-这里出现了一个有趣的问题：基于包的框架定义的结束之处，正是消费定义开始的地方。 用户可以将框架视为给定 project.json 文件的一个功能。 依赖项创建了实际上的框架，该框架独立于这些依赖项的发布服务器。
-
 在 .Net Core 基础之上，基于包的框架主要有两个：
 
 - `netstandard`
@@ -144,39 +112,34 @@ ms.lasthandoff: 03/02/2017
 
 ### <a name="net-standard"></a>.NET Standard
 
-.NET 标准 (TFM: `netstandard`) 框架是指基于 [.NET 标准库](../standard/library.md)所定义和构建的 API。 如果构建的库将用于在多个运行时上运行，就应将此框架作为目标。 这样便可在任何一种兼容 .NET 标准的运行时上受支持，例如 .NET Core、.NET Framework 和 Mono/Xamarin。 每个运行时都支持一组 .NET Standard 版本，具体取决于实现的 API。 
+.NET Standard（目标框架名字对象：`netstandard`）框架表示基于 [.NET Standard 库](../standard/library.md)所构建并由其定义的 API。 如果构建的库将用于在多个运行时上运行，就应将此框架作为目标。 这样便可在任何一种兼容 .NET 标准的运行时上受支持，例如 .NET Core、.NET Framework 和 Mono/Xamarin。 每个运行时都支持一组 .NET Standard 版本，具体取决于实现的 API。 
 
-`NETStandard.Library` 元包的目标框架是 `netstandard`。 要以 `netstandard` 为目标框架，最常见的方法是引用该元包。 它描述并提供了约&40; 个 .NET 库并与 .Net 标准库所定义的 API 相关联。 可以引用以 `netstandard` 为目标的其他包来使用其他 API。
+`netstandard` 框架隐式引用 `NETStandard.Library` 元包。 例如，以下 MSBuild 项目文件指示项目以 `netstandard1.6` 为目标，`netstandard1.6` 引用 .NET Standard 库 1.6 版元包。 
 
-一个给定的 [NETStandard.Library 版本](versions/index.md)总是与 `netstandard` 所公开的最高版本匹配。 project.json 中对于框架的引用主要是用于从基础包选择正确的资产。 例如，此示例中就需要 `netstandard1.6` 资产，而不是 `netstandard1.4` 或 `net46`。 
-
-```json
-{
-  "dependencies": {
-    "NETStandard.Library": "1.6.0"
-  },
-  "frameworks": {
-    "netstandard1.6": {}
-  }
-}
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+  </PropertyGroup>
+</Project>
 ```
 
-project.json 中引用的框架和元包不需要进行匹配。 例如，以下 project.json 是有效的。
+但项目文件中的框架和元包引用不需要匹配，并且可使用项目文件中的 `<NetStandardImplicitPackageVersion>` 元素指定低于元包版本的框架版本。 例如，以下项目文件有效。
 
-```json
-{
-  "dependencies": {
-    "NETStandard.Library": "1.6.0"
-  },
-  "frameworks": {
-    "netstandard1.3": {}
-  }
-}
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <NetStandardImplicitPackageVersion Include="NetStandardLibrary" Version="1.6.0" />
+  </ItemGroup>
+</Project>
 ```
 
 面向 `netstandard1.3` 却使用 `NETStandard.Library` 1.6.0 版本，这一点很奇怪。 然而，这是一个有效的用例，因为元包支持更旧的 `netstandard` 版本。 可能恰好你已将 1.6.0 版的元包进行了标准化，然后将其用于所有库，而这些库可以面向各种 `netstandard` 版本。 使用此方法，只需还原 `NETStandard.Library` 1.6.0，无需加载早期版本。 
 
-反之，把 `netstandard1.6` 设为目标，却使用 1.3.0 版的 `NETStandard.Library` 也是无效的。 你不能把更高版本的框架设为目标，却使用更低版本的元包，因为更低版本的元包不会公开任何更高版本框架的资产。 元包资产的[版本控制方案]与框架定义最高版本匹配。 借助于版本控制方案，`NETStandard.Library` 的第一个版本是 v1.6.0，因为它包含 `netstandard1.6` 资产。 而上例中的 v1.3.0 版本，只是为了举例方便，实际上并不存在。
+反之，把 `netstandard1.6` 设为目标，却使用 1.3.0 版的 `NETStandard.Library` 也是无效的。 你不能把更高版本的框架设为目标，却使用更低版本的元包，因为更低版本的元包不会公开任何更高版本框架的资产。 元包资产的版本控制方案与描述框架的最高版本匹配。 借助于版本控制方案，`NETStandard.Library` 的第一个版本是 v1.6.0，因为它包含 `netstandard1.6` 资产。 而上例中的 v1.3.0 版本，只是为了举例方便，实际上并不存在。
 
 ### <a name="net-core-application"></a>.NET Core 应用程序
 
@@ -185,3 +148,4 @@ project.json 中引用的框架和元包不需要进行匹配。 例如，以下
 `Microsoft.NETCore.App` 元包的目标框架是 `netcoreapp`。 它提供了约&60; 个库的访问权限，其中约&40; 个由 `NETStandard.Library` 包提供，还有另外&20; 个库。 可以引用目标框架为 `netcoreapp` 或与框架（如 `netstandard`）兼容的库获得对其他 API 的访问权限。 
 
 由 `Microsoft.NETCore.App` 提供的大部分其他库还可以使用 `netstandard` 作为目标，如果其他 `netstandard` 库满足这些框架的依赖项的话。 这意味着，`netstandard` 库也可以引用这些包作为依赖项。 
+

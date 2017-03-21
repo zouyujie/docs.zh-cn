@@ -11,15 +11,16 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 9f6e8679-bd7e-4317-b3f9-7255a260d9cf
 translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: 7f419e1fc2c9f442b08e19ede4e84f9cf6843a94
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
+ms.openlocfilehash: 94b6d965c7a39a02723b641f6551e54dd4df1f07
+ms.lasthandoff: 03/07/2017
 
 ---
 
 # <a name="developing-libraries-with-cross-platform-tools"></a>使用跨平台工具开发库
 
-**一些详细信息会因工具链的变化而更改。**
+> [!WARNING]
+> 本主题尚未更新到最新版本的工具。
 
 本文介绍如何使用跨平台 CLI 工具编写 .NET 的库。  CLI 提供可跨任何支持的 OS 工作的高效低级别体验。  仍可使用 Visual Studio 生成库，如果你首选这种体验，请[参阅 Visual Studio 指南](libraries-with-vs.md)。
 

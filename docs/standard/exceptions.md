@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bf116df6-0042-46bf-be13-b69864816210
 translationtype: Human Translation
-ms.sourcegitcommit: 9584699ad7e745ae3cb059b1bb8327301c9a3286
-ms.openlocfilehash: 5271b63a47aa2fcc81cd9c8b1ffd22e618829412
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 7c9ccd455bf0d14122c0547177cc29ace6ebde42
+ms.lasthandoff: 02/17/2017
 
 ---
 
@@ -57,14 +58,14 @@ Object
 | ------------- | ----------- |
 | @System.Exception.Data | @System.Collections.IDictionary 包含键/值对中的任意数据。 |
 | @System.Exception.HelpLink | 可容纳指向帮助文件的 URL（或 URN），帮助文件中提供了大量信息说明了异常的原因。 |
-| @System.Exception.InnerException | 在处理异常时此属性可用于创建和保留一系列异常。 可将其用于创建新异常，其中包含之前捕获到的异常。 可通过 @System.Exception.InnerException 属性中的第二个异常捕获原始异常，允许处理第二个异常的代码检查其他信息。 例如，假设有一个方法可接收格式不正确的参数。  该代码尝试读取参数，但会引发异常。 此方法捕获异常并引发 @System.FormatException.  若要提高调用方确定引发异常的原因的能力，有时最好用一个方法捕获帮助器例程引发的异常，然后引发一个更能说明已发生错误的异常。 可创建一个新的且更有意义的异常，其中可将内部异常引用设为原始异常。 然后可向调用方引发此更有意义的异常。 请注意，使用此功能，可创建一系列链接的异常，以最先引发的异常结尾。 |
+| @System.Exception.InnerException | 在处理异常时此属性可用于创建和保留一系列异常。 可将其用于创建新异常，其中包含之前捕获到的异常。 可通过 @System.Exception.InnerException 属性中的第二个异常捕获原始异常，允许处理第二个异常的代码检查其他信息。 例如，假设有一个方法可接收格式不正确的参数。  该代码尝试读取参数，但会引发异常。 该方法会捕获异常并引发 @System.FormatException。 若要提高调用方确定引发异常的原因的能力，有时最好用一个方法捕获帮助器例程引发的异常，然后引发一个更能说明已发生错误的异常。 可创建一个新的且更有意义的异常，其中可将内部异常引用设为原始异常。 然后可向调用方引发此更有意义的异常。 请注意，使用此功能，可创建一系列链接的异常，以最先引发的异常结尾。 |
 | @System.Exception.Message | 提供有关异常原因的详细信息。
 | @System.Exception.Source | 获取或设置导致错误的应用程序或对象的名称。 |
 | @System.Exception.StackTrace | 包含可用于确定错误位置的堆栈跟踪。 如果有可用的调试信息，则堆栈跟踪包含源文件名和程序行号。 |
 
-继承自 @System.Exception 的大多数类不实现其他成员或提供其他功能，它们只是从 @System.Exception. 继承。因此，可在异常类层次结构、异常名称和异常所含的信息中找到异常的最重要信息。
+继承自 @System.Exception 的大多数类无法实现其他成员或提供其他功能；它们只从 @System.Exception 进行继承。 因此，可在异常类层次结构、异常名称和异常所含的信息中找到异常的重要信息。
 
-建议仅引发和捕获从 @System.Exception, 派生的对象，但是可引发从 @System.Object 类派生的任意对象作为异常。 请注意，并非所有语言都支持引发和捕获不是从 @System.Exception. 派生的对象
+建议仅引发和捕获从 @System.Exception, 派生的对象，但是可引发从 @System.Object 类派生的任意对象作为异常。 请注意，并非所有语言都支持引发和捕获不是从 @System.Exception 派生的对象。
 
 ## <a name="common-exceptions"></a>常见异常
 
@@ -112,7 +113,7 @@ public class ProcessFile
 公共语言运行时可捕获未被 catch 块捕获的异常。 会出现调试对话框，或是停止运行程序且会出现含有异常信息的对话框，或者会将错误打印到 STDERR，具体情况取决于运行时的配置方式。
 
 > [!NOTE] 
-> 几乎任何代码行均可导致异常，特别是由公共语言运行时本身所引发的异常，如 @System.OutOfMemoryException.。大多数应用程序无需处理这些异常，但在编写供他人使用的库时，应注意到这种可能性。 有关何时在 try 块中设置代码的建议，请参阅[异常的最佳做法](#best-practices-for-exceptions)。
+> 几乎任何代码行都可能导致异常，尤其是由公共语言运行时本身造成的异常，如 @System.OutOfMemoryException。 大多数应用程序无需处理这些异常，但在编写供他人使用的库时，应注意到这种可能性。 有关何时在 try 块中设置代码的建议，请参阅[异常的最佳做法](#best-practices-for-exceptions)。
  
 ## <a name="how-to-use-specific-exceptions-in-a-catch-block"></a>如何在 catch 块中使用特定异常
 
@@ -120,7 +121,7 @@ public class ProcessFile
 
 异常发生时，会在堆栈中向上传递，每个 catch 块都有机会处理异常。 Catch 语句的顺序非常重要。 在一般异常 catch 块或编译器发出错误前，将 catch 块指向特定异常。 通过匹配异常类型与 catch 块中指定的异常名称，确定合适的 catch 块。 如果没有特定的 catch 块，则将由一般 catch 块捕获异常（如果异常存在）。
 
-下面的代码示例使用 `try`/`catch` 块来捕捉 @System.InvalidCastException.。该示例创建一个名为 `Employee` 的类，其具有单个属性、雇员级别 (`Emlevel`)。 `PromoteEmployee` 方法接收对象并递增雇员级别。 @System.DateTime 实例传递给 `PromoteEmployee` 方法时，@System.InvalidCastException 发生。
+下方代码示例使用 `try`/`catch` 块来捕获 @System.InvalidCastException。 该示例创建了一个名为 `Employee` 的类，其具有单一属性，雇员级别为 (`Emlevel`)。 `PromoteEmployee` 方法接收对象并递增雇员级别。 @System.DateTime 实例传递给 `PromoteEmployee` 方法时，@System.InvalidCastException 发生。
 
 C#
 ```
@@ -177,7 +178,7 @@ public class Ex13
 
 发生异常时，将停止执行且会向相应异常处理程序赋予控制权。 这意味着会绕过预计要执行的代码行。 即使引发了异常，也需要完成某些资源清理，例如关闭文件。 若要执行此操作，可以使用 `finally` 块。 无论是否引发异常，始终会执行 `finally` 块。
 
-下面的代码示例使用 `try`/`catch` 块来捕捉 @System.ArgumentOutOfRangeException.。`Main` 方法创建两个数组，并尝试将一个数组复制到另一个。 该操作将生成 @System.ArgumentOutOfRangeException 并且会向控制台写入错误。 `finally` 块执行时不考虑复制操作的结果。
+下方代码示例使用 `try`/`catch` 块来捕获 @System.ArgumentOutOfRangeException。 `Main` 方法会创建两个数组，并尝试将一个数组复制到另一个。 该操作将生成 @System.ArgumentOutOfRangeException 并且会向控制台写入错误。 `finally` 块执行时不考虑复制操作的结果。
 
 C#
 ```
@@ -210,7 +211,7 @@ class ArgumentOutOfRangeExample
 
 可使用 `throw` 语句显式引发异常。 可使用 `throw` 语句再次引发捕获的异常。 向重新引发的异常添加信息以在调试时提供详细信息，这是很好的编码做法。
 
-下面的代码示例使用 `try`/`catch` 块来捕捉可能发生的 @System.IO.FileNotFoundException.。`try` 块之后是可捕获 @System.IO.FileNotFoundException 并在未找到数据文件时将消息写入控制台的 `catch` 块。 下一语句为 `throw` 语句，可引发新的 @System.IO.FileNotFoundException 并向异常添加文本信息。
+下方代码示例使用 `try`/`catch` 块来捕获可能的 @System.IO.FileNotFoundException。 以下 `try` 块为可捕获 @System.IO.FileNotFoundException 并在未找到数据文件时将消息写入控制台的 `catch` 块。 下一语句为 `throw` 语句，可引发新的 @System.IO.FileNotFoundException 并向异常添加文本信息。
 
 C#
 ```
@@ -249,7 +250,7 @@ public class ProcessFile
 
 ## <a name="how-to-create-user-defined-exceptions"></a>如何创建用户定义的异常
 
-.NET 提供最终从基类派生的异常类层次结构 @System.Exception.。但是，如果预定义的异常都不符合需求，可通过从 @System.Exception 类派生来创建自己的异常类。
+.NET 可提供由基类 @System.Exception 最终派生的异常类层次结构。 然而，如果预定义的异常都不符合需求，可通过从 @System.Exception 类派生来创建自己的异常类。
 
 创建自己的异常时，用户定义的异常类的名称需要以“Exception”结尾，并实施三个常见的构造函数，如以下示例所示。 该示例定义名为 `EmployeeListNotFoundException` 的新异常类。 该类从 @System.Exception 派生，且包含三个构造函数。
 
@@ -506,9 +507,4 @@ catch (Exception ex)
 ## <a name="see-also"></a>请参阅
 
 若要了解有关 .NET 中异常的工作方式的详细信息，请参阅[运行时中每个开发人员都需要了解的有关异常的事项](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md)。
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 
