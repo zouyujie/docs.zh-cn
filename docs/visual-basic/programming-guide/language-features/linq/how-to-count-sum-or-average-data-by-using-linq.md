@@ -1,96 +1,112 @@
 ---
-title: "如何：使用 LINQ 对数据进行计数、求和与求平均值计算 (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Aggregate 子句"
-  - "聚合运算符 [Visual Basic 中的 LINQ]"
-  - "聚合查询"
-  - "平均值运算符 [Visual Basic 中的 LINQ]"
-  - "计数运算符 [Visual Basic 中的 LINQ]"
-  - "查询 [Visual Basic 中的 LINQ], 聚合查询"
-  - "查询 [Visual Basic 中的 LINQ], 对结果进行计数"
-  - "查询 [Visual Basic 中的 LINQ], 帮助主题"
-  - "查询 [Visual Basic 中的 LINQ], 对结果求和"
-  - "查询示例 [Visual Basic]"
-  - "查询数据库 [LINQ]"
-  - "求和运算符 [Visual Basic 中的 LINQ]"
+title: "如何︰ 计数、 求和或通过使用 LINQ (Visual Basic 中) 的平均数据 |Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- average operator [LINQ in Visual Basic]
+- aggregate operator [LINQ in Visual Basic]
+- aggregate queries
+- queries [LINQ in Visual Basic], sum results
+- Aggregate clause
+- sum operator [LINQ in Visual Basic]
+- queries [LINQ in Visual Basic], aggregate queries
+- queries [LINQ in Visual Basic], counting results
+- querying databases [LINQ]
+- queries [LINQ in Visual Basic], how-to topics
+- query samples [Visual Basic]
+- count operator [LINQ in Visual Basic]
 ms.assetid: 51ca1f59-7770-4884-8b76-113002e54fc0
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 9
----
-# 如何：使用 LINQ 对数据进行计数、求和与求平均值计算 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: c5789d9e4bee1388d5ad0368f88fad5c1b6e95cc
+ms.lasthandoff: 03/13/2017
 
-使用语言集成查询 \(LINQ\) 可以方便地访问数据库信息和执行查询。  
+---
+# <a name="how-to-count-sum-or-average-data-by-using-linq-visual-basic"></a>如何：使用 LINQ 对数据进行计数、求和与求平均值计算 (Visual Basic)
+语言集成查询 (LINQ) 更加方便地访问数据库信息和执行查询。  
   
- 下面的示例演示如何创建对 SQL Server 数据库执行查询的新应用程序。  该示例使用 `Aggregate` 和 `Group By` 子句对结果进行计数、求和与求平均值计算。  有关更多信息，请参见 [Aggregate 子句](../../../../visual-basic/language-reference/queries/aggregate-clause.md) 和 [Group By 子句](../../../../visual-basic/language-reference/queries/group-by-clause.md)。  
+ 下面的示例演示如何创建新的应用程序对 SQL Server 数据库执行查询。 该示例计数、 求和，以及通过使用计算结果的平均值`Aggregate`和`Group By`子句。 有关详细信息，请参阅[Aggregate 子句](../../../../visual-basic/language-reference/queries/aggregate-clause.md)和[组 By 子句](../../../../visual-basic/language-reference/queries/group-by-clause.md)。  
   
- 本主题中的示例使用 Northwind 示例数据库。  如果没有在开发计算机中安装 Northwind 示例数据库，可以从 [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088)（Microsoft 下载中心）网站下载该数据库。  有关说明，请参见[下载示例数据库](../Topic/Downloading%20Sample%20Databases.md)。  
+ 本主题中的示例使用罗斯文示例数据库。 如果您的开发计算机上没有 Northwind 示例数据库，您可以下载它从[Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088) Web 站点。 有关说明，请参阅[下载示例数据库](https://msdn.microsoft.com/library/bb399411)。  
   
- [!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note-settings-general-md.md)]  
+[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
-### 创建与数据库的连接  
+### <a name="to-create-a-connection-to-a-database"></a>若要创建与数据库的连接  
   
-1.  在 Visual Studio 中，通过在**“视图”**菜单上单击**“服务器资源管理器”**\/**“数据库资源管理器”**，打开**“服务器资源管理器”**\/**“数据库资源管理器”**。  
+1.  在 Visual Studio 中，打开**服务器资源管理器**/**数据库资源管理器**通过单击**服务器资源管理器**/**数据库资源管理器**上**视图**菜单。  
   
-2.  在**“服务器资源管理器”**\/**“数据库资源管理器”**中，右击**“数据连接”**，然后单击**“添加连接”**。  
+2.  用鼠标右键单击**数据连接**中**服务器资源管理器**/**数据库资源管理器**，然后单击**添加连接**。  
   
-3.  指定与 Northwind 示例数据库的有效连接。  
+3.  指定到 Northwind 示例数据库的有效连接。  
   
-### 添加包含 LINQ to SQL 文件的项目  
+### <a name="to-add-a-project-that-contains-a-linq-to-sql-file"></a>若要添加的项目中包含一个 LINQ to SQL 文件  
   
-1.  在 Visual Studio 中的**“文件”**菜单上，指向**“新建”**，然后单击**“项目”**。  选择 Visual Basic**“Windows 窗体应用程序”**作为项目类型。  
+1.  在 Visual Studio 中，在**文件**菜单上，指向**新建**，然后单击**项目**。 选择 Visual Basic **Windows 窗体应用程序**作为项目类型。  
   
-2.  在**“项目”**菜单上，单击**“添加新项”**。  选择**“LINQ to SQL 类”**项模板。  
+2.  在 **“项目”** 菜单上，单击 **“添加新项”**。 选择**LINQ to SQL 类**项模板。  
   
-3.  将文件命名为 `northwind.dbml`。  单击**“添加”**。  为 northwind.dbml 文件打开对象关系设计器（O\/R 设计器）。  
+3.  命名该文件`northwind.dbml`。 单击 **“添加”**。 此时，northwind.dbml 文件打开对象关系设计器 （O/R 设计器）。  
   
-### 将要查询的表添加到 O\/R 设计器  
+### <a name="to-add-tables-to-query-to-the-or-designer"></a>若要添加到 O/R 设计器查询的表  
   
-1.  在**“服务器资源管理器”**\/**“数据库资源管理器”**中，展开与 Northwind 数据库的连接。  展开**“表”**文件夹。  
+1.  在**服务器资源管理器**/**数据库资源管理器**，展开 Northwind 数据库的连接。 展开**表**文件夹。  
   
-     如果已经关闭 O\/R 设计器，可以通过双击先前添加的 northwind.dbml 文件重新将其打开。  
+     如果已经关闭 O/R 设计器，您可以通过双击前面添加此时，northwind.dbml 文件将其重新打开。  
   
-2.  单击 Customers 表并将它拖到设计器的左窗格上。  单击 Orders 表并将它拖到设计器的左窗格上。  
+2.  单击客户表，将其拖到设计器的左窗格中。 单击订单表，将其拖到设计器的左窗格中。  
   
-     设计器为项目创建新的 `Customer` 和 `Order` 对象。  请注意，设计器会自动检测表之间的关系并为相关对象创建子属性。  例如，IntelliSense 会显示 `Customer` 对象具有一个 `Orders` 属性，该属性对应于所有与该客户相关的订单。  
+     设计器创建新`Customer`和`Order`为你的项目的对象。 请注意，设计器会自动检测表之间的关系并创建子相关对象的属性。 例如，IntelliSense 将显示该`Customer`对象具有`Orders`与该客户相关的所有订单的属性。  
   
 3.  保存所做的更改并关闭设计器。  
   
-4.  保存您的项目。  
+4.  保存你的项目。  
   
-### 添加用于查询数据库和显示结果的代码  
+### <a name="to-add-code-to-query-the-database-and-display-the-results"></a>添加代码以查询数据库并显示结果  
   
-1.  从**“工具箱”**中，将 <xref:System.Windows.Forms.DataGridView> 控件拖到项目的默认 Windows 窗体 Form1 上。  
+1.  从**工具箱**，拖动<xref:System.Windows.Forms.DataGridView>控件拖放到您的项目，form1 的默认设置 Windows 窗体。</xref:System.Windows.Forms.DataGridView>  
   
-2.  双击 Form1，以便将代码添加到该窗体的 `Load` 事件。  
+2.  双击 form1 若要将代码添加到`Load`形式的事件。  
   
-3.  将表添加到 O\/R 设计器后，设计器会为项目添加一个 <xref:System.Data.Linq.DataContext> 对象。  此对象包含访问这些表以及访问每个表的单个对象和集合所必需的代码。  项目的 <xref:System.Data.Linq.DataContext> 对象是根据 .dbml 文件的名称命名的。  对于此项目，<xref:System.Data.Linq.DataContext> 对象被命名为 `northwindDataContext`。  
+3.  当表添加到 O/R 设计器时，设计器添加<xref:System.Data.Linq.DataContext>为你的项目的对象。</xref:System.Data.Linq.DataContext> 此对象包含必须具有访问这些表，以及访问单个对象和集合的每个表的代码。 <xref:System.Data.Linq.DataContext>对象名为您的项目根据.dbml 文件的名称。</xref:System.Data.Linq.DataContext> 对于此项目，<xref:System.Data.Linq.DataContext>对象被命名为`northwindDataContext`。</xref:System.Data.Linq.DataContext>  
   
-     可以在代码中创建 <xref:System.Data.Linq.DataContext> 的实例并查询通过 O\/R 设计器指定的表。  
+     您可以创建的实例<xref:System.Data.Linq.DataContext>代码和查询中指定由 O/R 设计器的表。</xref:System.Data.Linq.DataContext>  
   
-     将下面的代码添加到 `Load` 事件以查询作为 <xref:System.Data.Linq.DataContext> 的属性公开的表，并对结果进行计数、求和与求平均值计算。  该示例使用 `Aggregate` 子句查询单个结果，使用 `Group By` 子句显示分组结果的平均值。  
+     添加以下代码到`Load`事件来查询公开为属性的表的您<xref:System.Data.Linq.DataContext>和计数、 求和及平均结果。</xref:System.Data.Linq.DataContext> 此示例使用`Aggregate`子句单个结果，查询和`Group By`子句以显示有关平均值分组结果。  
   
-     [!code-vb[VbLINQToSQLHowTos#13](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-count-sum-or-average-data-by-using-linq_1.vb)]  
+     [!code-vb[VbLINQToSQLHowTos #&13;](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-count-sum-or-average-data-by-using-linq_1.vb)]  
   
-4.  按 F5 运行项目并查看结果。  
+4.  按 F5 以运行您的项目并查看结果。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
  [查询](../../../../visual-basic/language-reference/queries/queries.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
- [DataContext 方法（O\/R 设计器）](/visual-studio/data-tools/datacontext-methods-o-r-designer)   
- [演练：创建 LINQ to SQL 类（O\/R 设计器）](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)   
+ [DataContext 方法 （O/R 设计器）](https://docs.microsoft.com/visualstudio/data-tools/datacontext-methods-o-r-designer)  
  [Aggregate 子句](../../../../visual-basic/language-reference/queries/aggregate-clause.md)   
  [Group By 子句](../../../../visual-basic/language-reference/queries/group-by-clause.md)
+

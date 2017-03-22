@@ -1,54 +1,70 @@
 ---
-title: "“Custom”修饰符在未用显式委托类型声明的事件上无效 | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "vbc31122"
-  - "bc31122"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "BC31122"
+title: "Custom 修饰符在未用显式委托类型声明的事件上无效。 |Microsoft 文档"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- vbc31122
+- bc31122
+dev_langs:
+- VB
+helpviewer_keywords:
+- BC31122
 ms.assetid: 6911f0d1-641a-473b-906d-8ee5681194be
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 9
----
-# “Custom”修饰符在未用显式委托类型声明的事件上无效
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 0e70fca6a0608df5db43156f70196b4e5c9b2339
+ms.lasthandoff: 03/13/2017
 
-与非自定义事件不同，`Custom Event` 声明需要一个跟在事件名称后面的 `As` 子句，该子句显式指定事件的委托类型。  
+---
+# <a name="39custom39-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types"></a>Custom 修饰符在未用显式委托类型声明的事件上无效
+与不同的是一个非自定义事件，`Custom Event`声明需要`As`子句显式指定该事件的委托类型在事件名称。  
   
- 定义的非自定义事件可带有 `As` 子句和显式委托类型，或在事件名称后面紧跟一个参数列表。  
+ 非自定义事件可以是定义与`As`子句和显式委托类型，或一个参数列表立即在事件名称。  
   
- **错误 ID：**BC31122  
+ **错误 ID:** BC31122  
   
-### 更正此错误  
+## <a name="to-correct-this-error"></a>更正此错误  
   
-1.  使用与自定义事件相同的参数列表定义一个委托。  
+1.  定义为自定义事件的委托，它具有相同的参数列表。  
   
-     例如，如果 `Custom Event` 是由 `Custom Event Test(ByVal sender As Object, ByVal i As Integer)` 定义的，则对应的委托将如下所示。  
+     例如，如果`Custom Event`由定义`Custom Event Test(ByVal sender As Object, ByVal i As Integer)`，则对应的委托将如下所示。  
   
-     [!code-vb[VbVbalrEventError#18](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types_1.vb)]  
+     [!code-vb[VbVbalrEventError #&18;](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types_1.vb)]  
   
-2.  将自定义事件的参数列表替换为指定委托类型的 `As` 子句。  
+2.  具有的自定义事件的参数列表替换`As`子句，用于指定委托类型。  
   
-     接上例，将按如下方式重写 `Custom Event` 声明。  
+     该示例中，在继续`Custom Event`声明将被重写，如下所示。  
   
-     [!code-vb[VbVbalrEventError#19](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types_2.vb)]  
+     [!code-vb[VbVbalrEventError #&19;](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types_2.vb)]  
   
-## 示例  
- 此示例声明 `Custom Event`，并指定带有委托类型的必需 `As` 子句。  
+## <a name="example"></a>示例  
+ 此示例声明`Custom Event`，并指定所需`As`具有委托类型的子句。  
   
- [!code-vb[VbVbalrEventError#2](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types_3.vb)]  
+ [!code-vb[VbVbalrEventError #&2;](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types_3.vb)]  
   
-## 请参阅  
+## <a name="see-also"></a>请参见  
  [Event 语句](../../../visual-basic/language-reference/statements/event-statement.md)   
  [Delegate 语句](../../../visual-basic/language-reference/statements/delegate-statement.md)   
- [事件](../../../visual-basic/programming-guide/language-features/events/events.md)
+ [事件](../../../visual-basic/programming-guide/language-features/events/index.md)

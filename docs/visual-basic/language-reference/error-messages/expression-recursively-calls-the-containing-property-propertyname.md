@@ -1,37 +1,53 @@
 ---
-title: "表达式递归调用包含属性“&lt;属性名&gt;” | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "vbc42026"
-  - "BC42026"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "BC42026"
+title: "表达式递归调用包含的属性 &quot;&lt;propertyname&gt;&quot; |Microsoft 文档"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- vbc42026
+- BC42026
+dev_langs:
+- VB
+helpviewer_keywords:
+- BC42026
 ms.assetid: 4fde9db6-3bf3-48dc-8e05-981bf08969da
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 10
----
-# 表达式递归调用包含属性“&lt;属性名&gt;”
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: ca20bf1a539f2727a80f8e781c1e9ebc5a4a253d
+ms.lasthandoff: 03/13/2017
 
-属性定义的 `Set` 过程中的语句将值存储到属性的名称中。  
+---
+# <a name="expression-recursively-calls-the-containing-property-39ltpropertynamegt39"></a>表达式递归调用包含的属性 '&lt;propertyname&gt;
+中的语句`Set`属性定义的过程将一个值存储到属性的名称。  
   
- 保留属性值的建议方法是：在属性的容器中定义一个 `Private` 变量，并将其同时用在 `Get` 和 `Set` 过程中。  `Set` 过程随后应将传入值存储在此 `Private` 变量中。  
+ 包含属性的值的建议的方法是定义`Private`变量属性的容器中并将其同时`Get`和`Set`过程。 `Set`过程然后应将传入的值存储在此`Private`变量。  
   
- `Get` 过程的工作方式类似于 `Function` 过程，因此，当遇到 `End Get` 语句时，它将能够为属性名称赋值并返回控制。  但是，建议的方法是包括 `Private` 变量作为 [Return 语句](../../../visual-basic/language-reference/statements/return-statement.md) 中的值。  
+ `Get`过程的行为类似`Function`的过程中，以便可以将值分配给属性名称并将控制权返回在遇到`End Get`语句。 建议的方法，但是，是包括`Private`变量中的值作为[Return 语句](../../../visual-basic/language-reference/statements/return-statement.md)。  
   
- `Set` 过程的工作方式类似于不返回值的 `Sub` 过程。  因此，过程或属性名称在 `Set` 过程中没有特殊含义，并且您无法将值存储到其中。  
+ `Set`过程的行为类似`Sub`过程，不返回值。 因此，过程或属性名称具有中的没有特殊含义`Set`过程中，并且您不能将一个值存储到其中。  
   
- 下面的示例阐释了可能导致此错误的方法，后面是建议的方法。  
+ 下面的示例说明了可能会导致此错误消息，然后建议的方法的方法。  
   
 ```  
 Public Class illustrateProperties  
@@ -63,15 +79,15 @@ Public Class illustrateProperties
 End Class  
 ```  
   
- 默认情况下，此消息是一个警告。  有关隐藏警告或将警告视为错误的更多信息，请参见 [在 Visual Basic 中配置警告](/visual-studio/ide/configuring-warnings-in-visual-basic)。  
+ 默认情况下，此消息是一个警告。 有关隐藏警告或将警告视为错误的详细信息，请参阅[在 Visual Basic 中配置警告](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic)。  
   
- **错误 ID：**BC42026  
+ **错误 ID:** BC42026  
   
-### 更正此错误  
+## <a name="to-correct-this-error"></a>更正此错误  
   
--   重写属性定义，以便使用前面的示例中阐释的建议方法。  
+-   重写属性定义，以便使用建议的方法，如在前面的示例所示。  
   
-## 请参阅  
- [Property 过程](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)   
+## <a name="see-also"></a>另请参阅  
+ [属性过程](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)   
  [Property 语句](../../../visual-basic/language-reference/statements/property-statement.md)   
  [Set 语句](../../../visual-basic/language-reference/statements/set-statement.md)

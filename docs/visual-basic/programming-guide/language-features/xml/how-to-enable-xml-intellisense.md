@@ -1,104 +1,121 @@
 ---
-title: "如何：在 Visual Basic 中启用 XML IntelliSense | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "IntelliSense [Visual Basic], XML"
-  - "XML [Visual Basic], IntelliSense"
-  - "XML IntelliSense [Visual Basic]"
+title: "如何︰ 启用 XML IntelliSense 在 Visual Basic |Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- XML IntelliSense [Visual Basic]
+- XML [Visual Basic], IntelliSense
+- IntelliSense [Visual Basic], XML
 ms.assetid: af67d0ee-a4a6-4abf-9c07-5a8cfe80d111
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 25
----
-# 如何：在 Visual Basic 中启用 XML IntelliSense
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 84af19189fa3fc510c8d4f8e408cbb2a393d8b8f
+ms.lasthandoff: 03/13/2017
 
-Visual Basic 中的 XML IntelliSense 为 XML 架构中定义的元素提供文字自动完成帮助。  若要启用 Visual Basic 中的 XML IntelliSense，必须执行以下操作：  
+---
+# <a name="how-to-enable-xml-intellisense-in-visual-basic"></a>如何：在 Visual Basic 中启用 XML IntelliSense
+在 Visual Basic 中的 XML IntelliSense 提供了完整单词的 XML 架构中定义的元素。 若要启用 XML IntelliSense 在 Visual Basic 中，必须执行以下操作︰  
   
-1.  获取应用程序将读取或写入的 XML 文件的 XML 架构 \(XSD\) 文件。  
+1.  获取您的应用程序将读取或写入的 XML 文件的 XML 架构 (XSD) 文件。  
   
-2.  将这些 XML 架构文件包括在项目中。  
+2.  在项目中包含的 XML 架构文件。  
   
-3.  将目标命名空间导入到代码文件或项目中。  目标命名空间由 XSD 架构的 `targetNamespace` 或 `tns` 特性标识。  
+3.  导入您的代码文件或项目的目标命名空间或命名空间。 由标识目标命名空间`targetNamespace`或`tns`XSD 架构的属性。  
   
-     若要导入目标命名空间，请使用 `Imports` 语句，或者使用项目设计器的**“引用”**页为项目中的所有代码文件添加命名空间。  
+     若要导入目标命名空间，请使用`Imports`语句，或通过将所有代码文件的命名空间添加到项目中**引用**项目设计器的页面。  
   
- 有关 Visual Basic 中的 XML IntelliSense 功能的更多信息，请参见 [Visual Basic 中的 XML IntelliSense](../../../../visual-basic/programming-guide/language-features/xml/xml-intellisense.md)。  有关导入 XML 命名空间的更多信息，请参见 [Imports 语句（XML 命名空间）](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)或[项目设计器 \-\>“引用”页 \(Visual Basic\)](/visual-studio/ide/reference/references-page-project-designer-visual-basic)。  
+ 功能在 Visual Basic 中的 XML IntelliSense 的详细信息，请参阅[Visual Basic 中的 XML IntelliSense](../../../../visual-basic/programming-guide/language-features/xml/xml-intellisense.md)。 导入 XML 命名空间的详细信息，请参阅[Imports 语句 (XML Namespace)](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)或[，项目设计器 (Visual Basic 中) 引用页](https://docs.microsoft.com/visualstudio/ide/reference/references-page-project-designer-visual-basic)。  
   
- [!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note-settings-general-md.md)]  
+[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
- ![链接到视频](../../../../csharp/programming-guide/concepts/linq/media/playvideo.png "PlayVideo") 有关本主题的视频版本，请参见 [Video How to: Enable XML IntelliSense in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=102466)（视频帮助主题：在 Visual Basic 中启用 XML IntelliSense）。  相关的视频演示，请参见 [How Do I Enable XML IntelliSense and Use XML Namespaces?](http://go.microsoft.com/fwlink/?LinkId=143035)（如何启用 XML IntelliSense 和使用 XML 命名空间？）。  
+ ![视频链接](../../../../visual-basic/programming-guide/language-features/xml/media/playvideo.gif "PlayVideo")本主题的视频版本，请参阅[视频帮助︰ 在 Visual Basic 中启用 XML IntelliSense](http://go.microsoft.com/fwlink/?LinkId=102466)。 有关相关的视频演示，请参阅[启用 XML IntelliSense 和使用 XML 命名空间如何实现？](http://go.microsoft.com/fwlink/?LinkId=143035)。  
   
-## 启用 Visual Basic 中的 XML IntelliSense  
- 如果有一个 XML 文件，但没有该文件的 XSD 架构文件，则在 SP1 中，可以使用“XML 到架构向导”来创建 XSD 架构文件。  还可以在 Visual Studio XML 编辑器中使用架构推断。  
+## <a name="enable-xml-intellisense-in-visual-basic"></a>启用在 Visual Basic 中的 XML IntelliSense  
+ 如果您有一个 XML 文件，但您却没有为其 XSD 架构文件，在 SP1 中您可以创建 XSD 架构文件使用 XML 到架构向导。 您还可以使用架构推断 Visual Studio XML 编辑器中。  
   
-#### 使用“XML 到架构向导”为 XML 文件创建 XSD 架构文件（需要 SP1）  
+#### <a name="to-create-an-xsd-schema-file-for-an-xml-file-by-using-the-xml-to-schema-wizard-requires-sp1"></a>若要使用 XML 到架构向导创建一个 XML 文件的 XSD 架构文件 （需要 SP1）  
   
-1.  在项目中，单击**“项目”**菜单上的**“添加新项”**。  
+1.  在项目中，单击**添加新项**上**项目**菜单。  
   
-2.  从**“数据”**或**“常用项”**模板类别中选择**“XML 到架构”**项模板。  
+2.  选择**Xml 到架构**从项模板**数据**或**常用项**模板类别。  
   
-3.  为将用来存储所推断的架构集的 XSD 文件提供文件名，然后单击**“添加”**。  
+3.  为提供一个文件名称或多个 XSD 文件，推断的架构集将存储在中，然后单击**添加**。  
   
-4.  在**“从 XML 文档推断 XML 架构集”**窗口中，添加一个或多个要从中推断 XML 架构集的 XML 文档。  
+4.  在**从 XML 文档推断 XML 架构集**窗口中，添加一个或多个要从中推断 XML 架构集的 XML 文档。  
   
-    -   通过使用文件资源管理器中，将包含XML文档的文本文件，单击 **\*\*\* 在文件中添加 \*\*\***。  
+    -   若要添加包含 XML 文档使用文件资源管理器的文本文件，请单击**从文件添加**。  
   
-    -   若要从 HTTP 地址添加 XML 文档，请单击**“从 Web 添加”**。  
+    -   若要添加从一个 HTTP 地址的 XML 文档，请单击**从 Web 添加**。  
   
-    -   若要将 XML 文档的内容复制或键入到向导中，请单击**“键入或粘贴 XML”**。  
+    -   若要复制或键入到向导的 XML 文档的内容，请单击**键入或粘贴 XML**。  
   
-5.  在指定了要从中推断 XML 架构集的所有 XML 文档源之后，单击**“确定”**推断 XML 架构集。  架构集将保存在项目文件夹下面的一个或多个 XSD 文件中。  （对于架构中的每个 XML 命名空间都会创建一个文件。）  
+5.  指定你想要推断 XML 架构集，请单击的所有 XML 文档源时**确定**推断 XML 架构设置。 架构集将保存在项目文件夹下面的一个或多个 XSD 文件。 （每个 XML 命名空间的架构中，创建文件。）  
   
-#### 在 Visual Studio XML 编辑器中使用架构推断为 XML 文件创建 XSD 架构文件  
+#### <a name="to-create-an-xsd-schema-file-for-an-xml-file-by-using-schema-inference-in-the-visual-studio-xml-editor"></a>若要通过使用 Visual Studio XML 编辑器中的架构推断创建 XSD 架构文件的 XML 文件  
   
-1.  在 Visual Studio XML 设计器中编辑 XML 文件。  
+1.  编辑 Visual Studio XML 设计器中的 XML 文件。  
   
-2.  当光标位于 XML 文件中的某个位置时，将显示**“XML”**菜单。  在**“XML”**菜单上，单击**“创建架构”**。  根据从 XML 文件推断出的 XSD 架构创建 XSD 文件。  
+2.  当光标位于某个位置在 XML 文件中， **XML**菜单显示。 单击**Create Schema**上**XML**菜单。 从从 XML 文件推断 XSD 架构创建 XSD 文件。  
   
-3.  保存 XSD 架构文件。  
+3.  保存该 XSD 架构文件。  
   
     > [!NOTE]
-    >  从本应具有相同架构的多个 XML 文档可能推断出不同的 XSD 架构。  如果其中一个 XML 文件中存在特定元素和特性，而另一个文件中不存在这些元素和特性，或者元素的包含顺序不同，则可能发生这种情况。  在使用 XSD 架构推理时，应检查推断出的 XSD 架构是否完整、准确。  
+    >  可以从多个用于具有相同的架构的 XML 文档推断出不同的 XSD 架构。 这可发生在一个 XML 文件中而不是在另一台，找到特定的元素和属性时也顺序不同，例如包含元素。 使用 XSD 架构推断时，应检查推断出的 XSD 架构的完整性和精确性。  
   
-#### 包含 XSD 架构文件  
+#### <a name="to-include-an-xsd-schema-file"></a>若要包括的 XSD 架构文件  
   
--   默认情况下，不能查看 Visual Basic 项目中的 XSD 文件。  如果 XSD 文件已经包含在项目的文件夹中，请在**“解决方案资源管理器”**中单击**“显示所有文件”**按钮。  在**“解决方案资源管理器”**中找到 XSD 文件，右击该文件，然后单击**“将文件包括在项目中”**。  
+-   默认情况下，您无法看到在 Visual Basic 项目的 XSD 文件。 如果在您的项目的文件夹中已经包含 XSD 文件，请单击**显示所有文件**按钮**解决方案资源管理器**。 找到 XSD 文件在**解决方案资源管理器**，用鼠标右键单击该文件，然后单击**将文件包括在项目**。  
   
--   如果 XSD 文件还不是项目的组成部分，请在**“解决方案资源管理器”**中右击要存储 XSD 文件的文件夹，指向**“添加”**，然后单击**“现有项”**。  找到 XSD 文件，然后单击**“添加”**。  
+-   如果 XSD 文件正在不属于您的项目，**解决方案资源管理器**，右键单击您要在其中存储 XSD 文件，指向的文件夹**添加**，然后单击**现有项**。 找到 XSD 文件，然后单击**添加**。  
   
-#### 将 XML 命名空间导入到代码文件中  
+#### <a name="to-import-an-xml-namespace-in-a-code-file"></a>若要导入到代码文件中的 XML 命名空间  
   
-1.  根据 XSD 架构确定目标命名空间。  
+1.  标识从 XSD 架构的目标命名空间。  
   
-2.  在代码文件的开头，为目标 XML 命名空间添加 `Imports` 语句，如下面的示例所示。  
+2.  在代码文件的开头，添加`Imports`目标 XML 命名空间，如下面的示例中所示的语句。  
   
-     [!code-vb[VbXMLSamples#1](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-enable-xml-intellisense_1.vb)]  
+     [!code-vb[VbXMLSamples #&1;](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-enable-xml-intellisense_1.vb)]  
   
-     若要导入 XML 命名空间作为默认命名空间（即应用于没有命名空间前缀的 XML 元素和特性的命名空间），请为目标默认 XML 命名空间添加 `Imports` 语句。  不要指定命名空间前缀。  下面是 `Imports` 语句的示例。  
+     若要导入 XML 命名空间为默认命名空间，即应用于 XML 元素和属性不具有命名空间前缀的命名空间添加`Imports`目标默认 XML 命名空间的语句。 不要指定命名空间前缀。 以下是一种`Imports`语句。  
   
-     [!code-vb[VbXmlSamples#50](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-enable-xml-intellisense_2.vb)]  
+     [!code-vb[VbXmlSamples #&50;](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-enable-xml-intellisense_2.vb)]  
   
-#### 为项目中的所有文件导入 XML 命名空间  
+#### <a name="to-import-an-xml-namespace-for-all-files-in-a-project"></a>若要导入项目中的所有文件的 XML 命名空间  
   
-1.  在代码文件中导入的 XML 命名空间仅应用于该代码文件。  若要导入应用于项目中所有代码文件的 XML 命名空间，请在**“解决方案资源管理器”**中双击**“我的项目”**，打开项目设计器。  
+1.  在代码文件中导入的 XML 命名空间适用于该代码文件。 若要导入适用于在项目中的所有代码文件的 XML 命名空间，请打开项目设计器，通过双击**我的项目**中**解决方案资源管理器**。  
   
-2.  在**“引用”**选项卡上的**“导入的命名空间”**框中，按照完整 XML 命名空间声明的格式，键入目标 XML 命名空间（如 `<xmlns: ns="http://sampleNamespace">`）。  如果目标 XML 命名空间未指定命名空间前缀，则该命名空间将是项目的默认 XML 命名空间。  
+2.  在**引用**选项卡上，在**导入的命名空间**框中，键入完整的 XML 命名空间声明的形式目标 XML 命名空间 (例如， `<xmlns: ns="http://sampleNamespace">`)。 如果目标 XML 命名空间没有指定命名空间前缀，命名空间将为该项目的默认 XML 命名空间。  
   
-3.  单击**“添加用户导入”**。  
+3.  单击**添加用户导入**。  
   
-## 请参阅  
- [Imports 语句（XML 命名空间）](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)   
- [项目设计器 \-\>“引用”页 \(Visual Basic\)](/visual-studio/ide/reference/references-page-project-designer-visual-basic)   
- [Visual Basic 中的 XML IntelliSense](../../../../visual-basic/programming-guide/language-features/xml/xml-intellisense.md)
+## <a name="see-also"></a>另请参阅  
+ [Imports 语句 (XML Namespace)](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)   
+ [项目设计器 ->“引用”页 (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/references-page-project-designer-visual-basic)   
+ [在 Visual Basic 中的 XML IntelliSense](../../../../visual-basic/programming-guide/language-features/xml/xml-intellisense.md)
+

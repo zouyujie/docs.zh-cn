@@ -1,77 +1,93 @@
 ---
-title: "Yield 语句 (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "vb.Yield"
-helpviewer_keywords: 
-  - "迭代器, Yield 语句 [Visual Basic]"
-  - "迭代器 [Visual Basic]"
-  - "Yield 语句 [Visual Basic]"
+title: "Yield 语句 (Visual Basic 中) |Microsoft 文档"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- vb.Yield
+helpviewer_keywords:
+- iterators, Yield statement [Visual Basic]
+- iterators [Visual Basic]
+- Yield statement [Visual Basic]
 ms.assetid: f33126c5-d7c4-43e2-8e36-4ae3f0703d97
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 22
----
-# Yield 语句 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 393a9f4de3e801aed5932aef0e2b13d76b003965
+ms.lasthandoff: 03/13/2017
 
-发送集合中的下一个元素。`For Each...Next` 语句。  
+---
+# <a name="yield-statement-visual-basic"></a>Yield 语句 (Visual Basic)
+将发送到集合的下一个元素`For Each...Next`语句。  
   
-## 语法  
+## <a name="syntax"></a>语法  
   
 ```  
 Yield expression  
 ```  
   
-#### 参数  
+#### <a name="parameters"></a>参数  
   
-|||  
-|-|-|  
 |术语|定义|  
-|`expression`|必需。  隐式转换为迭代器函数或 `Get` 访问器的类型包含 `Yield` 语句的表达式。|  
+|---|---|  
+|`expression`|必需。 隐式转换为迭代器函数的类型的表达式或`Get`取值函数，其中包含`Yield`语句。|  
   
-## 备注  
- `Yield` 语句次返回集合中的元素。  `Yield` 语句在迭代器函数或 `Get` 访问器，包括对集合的自定义迭代。  
+## <a name="remarks"></a>备注  
+ `Yield`语句将返回一次集合中的一个元素。 `Yield`语句包含在迭代器函数或`Get`访问器，它在集合上执行自定义的迭代。  
   
- 使用 [For Each...Next 语句](../../../visual-basic/language-reference/statements/for-each-next-statement.md) 或 LINQ 查询，则使用迭代器函数。  `For Each` 循环的每次迭代调用迭代器函数。  当 `Yield` 语句在迭代器函数时为止，`expression` 返回，并且，代码的当前位置保留。  执行从该位置下次重新启动迭代器函数调用。  
+ 通过使用迭代器函数[为每个...下一条语句](../../../visual-basic/language-reference/statements/for-each-next-statement.md)或 LINQ 查询。 每次迭代`For Each`循环就会调用迭代器函数。 当`Yield`语句访问在迭代器函数中，`expression`返回时，都将保留在代码中的当前位置。 下次调用迭代器函数时，将从该位置重新开始执行。  
   
- 隐式转换必须从 `expression` 的类型。`Yield` 语句的提供给迭代器的返回类型。  
+ 隐式转换必须存在的一种从`expression`中`Yield`语句将返回迭代器的类型。  
   
- 可以使用 `Exit Function` "或 `Return` 语句结束迭代。  
+ 您可以使用`Exit Function`或`Return`语句来终止迭代。  
   
- 只有 \+ 当用于 `Iterator` 函数或 `Get` 访问器时，“生成”不是保留字并具有特殊含义。  
+ "让步"不是保留的字且具有特殊含义，仅当使用在`Iterator`函数或`Get`取值函数。  
   
- 有关迭代器函数和 `Get` 访问器的更多信息，请参见 [迭代器](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)。  
+ 有关迭代器函数的详细信息和`Get`访问器中，请参阅[迭代器](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)。  
   
-## 迭代器函数和 get 访问器  
- 迭代器函数或 `Get` 访问器的声明必须满足以下要求：  
+## <a name="iterator-functions-and-get-accessors"></a>迭代器函数和 Get 访问器  
+ 迭代器函数的声明或`Get`访问器必须满足以下要求︰  
   
--   它必须包含 [迭代器](../../../visual-basic/language-reference/modifiers/iterator.md) 修饰符。  
+-   它必须包括[迭代器](../../../visual-basic/language-reference/modifiers/iterator.md)修饰符。  
   
--   返回类型必须是 <xref:System.Collections.IEnumerable>、<xref:System.Collections.Generic.IEnumerable%601>、<xref:System.Collections.IEnumerator>或 <xref:System.Collections.Generic.IEnumerator%601>。  
+-   返回类型必须为<xref:System.Collections.IEnumerable>， <xref:System.Collections.Generic.IEnumerable%601>， <xref:System.Collections.IEnumerator>，或<xref:System.Collections.Generic.IEnumerator%601>.</xref:System.Collections.Generic.IEnumerator%601> </xref:System.Collections.IEnumerator> </xref:System.Collections.Generic.IEnumerable%601> </xref:System.Collections.IEnumerable>  
   
--   它不能有任何 `ByRef` 参数。  
+-   它不能有任何`ByRef`参数。  
   
- 迭代器函数在事件、实例构造函数、静态构造函数或静态析构函数不能出现。  
+ 迭代器函数不能出现在事件、 实例构造函数、 静态构造函数或静态析构函数。  
   
- 迭代器函数可以是匿名函数。  有关更多信息，请参见[迭代器](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)。  
+ 迭代器函数可以是一个匿名函数。 有关详细信息，请参阅[迭代器](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)。  
   
-## 异常处理  
- `Yield` 语句将在 `Try` 块 [Try...Catch...Finally 语句](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)。  `Try` 块有一个 `Yield` 语句可以具有 `Catch` 块，并可以具有 `Finally` 块。  
+## <a name="exception-handling"></a>异常处理  
+ 一个`Yield`语句可以是内部`Try`块[重试...Catch...Finally 语句](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)。 一个`Try`具有的块`Yield`语句可以有`Catch`阻止，并且也能`Finally`块。  
   
- `Yield` 语句不能在 `Catch` 块或 `Finally` 块。  
+ 一个`Yield`语句不能包含在内`Catch`块或`Finally`块。  
   
- 如果 `For Each` 主体 \(在迭代器函数之外\) 引发异常，`Catch` 在迭代器功能块，不会执行，但 `Finally` 在迭代器功能块中执行。  `Catch` 块在迭代器功能出现在迭代器函数内仅捕获的异常中。  
+ 如果`For Each`主体 （在之外的迭代器函数） 引发了异常，`Catch`未执行迭代器函数中的块，但`Finally`执行迭代器函数中的块。 一个`Catch`迭代器函数内部的块将捕获在迭代器函数内部发生的异常。  
   
-## 技术实现  
- 下面的代码从返回的迭代器函数的 `IEnumerable (Of String)` 通过 `IEnumerable (Of String)`的元素然后重复。  
+## <a name="technical-implementation"></a>技术实现  
+ 下面的代码返回`IEnumerable (Of String)`从迭代器函数，然后循环访问的元素`IEnumerable (Of String)`。  
   
 ```vb  
 Dim elements As IEnumerable(Of String) = MyIteratorFunction()  
@@ -80,29 +96,29 @@ For Each element As String In elements
 Next  
 ```  
   
- 为 `MyIteratorFunction` 的调用不执行该函数体。  而是调用返回 `IEnumerable(Of String)` 到 `elements` 变量中。  
+ 对调用`MyIteratorFunction`不会执行该函数的主体。 相反，该调用会将 `IEnumerable(Of String)` 返回到 `elements` 变量中。  
   
- 在 `For Each` 循环迭代中，<xref:System.Collections.IEnumerator.MoveNext%2A> 方法。`elements`调用。  这称为执行 `MyIteratorFunction` 主体，直至下一个 `Yield` 语句为止。  `Yield` 语句返回由循环体确定 `element` 变量的值不仅消耗的，而且元素 <xref:System.Collections.Generic.IEnumerator%601.Current%2A> 属性，是 `IEnumerable (Of String)`的表达式。  
+ 上的小版本`For Each`循环中，<xref:System.Collections.IEnumerator.MoveNext%2A>为调用方法`elements`。</xref:System.Collections.IEnumerator.MoveNext%2A> 此调用将执行 `MyIteratorFunction` 的主体，直至到达下一个 `Yield` 语句。 `Yield`语句将返回表达式，用于确定不只对数值`element`循环体使用的变量还<xref:System.Collections.Generic.IEnumerator%601.Current%2A>属性的元素，即`IEnumerable (Of String)`。</xref:System.Collections.Generic.IEnumerator%601.Current%2A>  
   
- 在 `For Each` 循环的每个后续迭代中，迭代器体中执行从延续它将会停止的位置，再次停止，在到达 `Yield` 语句时。  在迭代器函数或 `Return` 或 `Exit Function` 语句的结尾时，`For Each` 循环完成。  
+ 在 `For Each` 循环的每个后续迭代中，迭代器主体的执行将从它暂停的位置继续，直至到达 `Yield` 语句后才会停止。 `For Each`循环完成时的迭代器函数的末尾或`Return`或`Exit Function`到达语句。  
   
-## 示例  
- 下面的示例有在 [for…next](../../../visual-basic/language-reference/statements/for-next-statement.md) 循环内的一个 `Yield` 语句。  [对于每个](../../../visual-basic/language-reference/statements/for-each-next-statement.md) 语句体的每个迭代在 `Main` 的创建调用 `Power` 迭代器函数。  每个调用迭代器函数提升到 `Yield` 语句的下执行，在 `For…Next` 循环的下一次迭代时发生。  
+## <a name="example"></a>示例  
+ 下面的示例有`Yield`内的语句[为...下一步](../../../visual-basic/language-reference/statements/for-next-statement.md)循环。 每次迭代[为每个](../../../visual-basic/language-reference/statements/for-each-next-statement.md)语句体中的`Main`会调用`Power`迭代器函数。 对迭代器函数的每个调用将继续到 `Yield` 语句的下一次执行（在 `For…Next` 循环的下一次迭代期间发生）。  
   
- 迭代器方法的返回类型为 <xref:System.Collections.Generic.IEnumerable%601>，迭代器接口类型。  在迭代器方法被调用时，它返回一个的幂的可枚举对象。  
+ 迭代器方法的返回类型是<xref:System.Collections.Generic.IEnumerable%601>，迭代器接口类型。</xref:System.Collections.Generic.IEnumerable%601> 当调用迭代器方法时，它将返回一个包含数字幂的可枚举对象。  
   
- [!code-vb[VbVbalrStatements#98](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements #&98;](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_1.vb)]  
   
-## 示例  
- 下面的示例演示是迭代器的 `Get` 访问器。  属性声明包含一个 `Iterator` 修饰符。  
+## <a name="example"></a>示例  
+ 下面的示例演示一个作为迭代器的 `Get` 访问器。 属性声明中包括`Iterator`修饰符。  
   
- [!code-vb[VbVbalrStatements#99](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements #&99;](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_2.vb)]  
   
- 有关其他示例，请参见[迭代器](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)。  
+ 有关其他示例，请参阅[迭代器](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)。  
   
-## 要求  
- [!INCLUDE[vs_dev11_long](../../../csharp/includes/vs-dev11-long-md.md)]  
+## <a name="requirements"></a>要求  
+ [!INCLUDE[vs_dev11_long](../../../csharp/includes/vs_dev11_long_md.md)]  
   
-## 请参阅  
- [迭代器](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)   
+## <a name="see-also"></a>另请参阅  
+ [迭代器](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)   
  [语句](../../../visual-basic/language-reference/statements/index.md)

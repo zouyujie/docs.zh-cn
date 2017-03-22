@@ -1,103 +1,119 @@
 ---
-title: "运算符过程 (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "运算符重载"
-  - "运算符过程"
-  - "运算符 [Visual Basic], 重载"
-  - "重载运算符"
-  - "过程, 运算符"
-  - "语法, 运算符过程"
-  - "Visual Basic 代码, 运算符"
-  - "Visual Basic 代码, 过程"
+title: "运算符过程 (Visual Basic 中) |Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- Visual Basic code, procedures
+- procedures, operator
+- Visual Basic code, operators
+- syntax, Operator procedures
+- operators [Visual Basic], overloading
+- overloaded operators
+- operator overloading
+- operator procedures
 ms.assetid: 8c513d38-246b-4fb7-8b75-29e1364e555b
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 17
----
-# 运算符过程 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: a9e86c9c466ba236cc33153f2f341af35c622de6
+ms.lasthandoff: 03/13/2017
 
-运算符过程是一系列 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 语句，这些语句在您所定义的类或结构上定义标准运算符（例如 `*`、`<>` 或 `And`）的行为。  这也称为“运算符重载”。  
+---
+# <a name="operator-procedures-visual-basic"></a>运算符过程 (Visual Basic)
+运算符过程是一系列[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]定义的行为的标准运算符的语句 (如`*`， `<>`，或`And`) 对类或已定义的结构。 这也称为*运算符重载*。  
   
-## 何时定义运算符过程  
- 当您定义好类或结构后，可以将变量声明为所定义的类或结构的类型。  有时，这样的变量需要作为表达式的一部分参与到运算中。  若要执行此操作，它必须是运算符的一个操作数。  
+## <a name="when-to-define-operator-procedures"></a>何时定义运算符过程  
+ 定义类或结构后，您可以声明为类或结构的类型的变量。 有时这种变量需要参与一个操作作为表达式的一部分。 若要执行此操作，它必须是运算符的操作数。  
   
- [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 仅在其基本数据类型上定义运算符。  在一个或两个操作数都是您的类或结构的类型时，可以定义一个运算符的行为。  
+ [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]仅在其基本数据类型上定义运算符。 您可以定义运算符之一时的行为或两个操作数均为类或结构的类型。  
   
- 有关更多信息，请参见 [Operator 语句](../../../../visual-basic/language-reference/statements/operator-statement.md)。  
+ 有关详细信息，请参阅[Operator 语句](../../../../visual-basic/language-reference/statements/operator-statement.md)。  
   
-## 运算符过程的类型  
- 运算符过程可以是下面的一种类型：  
+## <a name="types-of-operator-procedure"></a>运算符过程的类型  
+ 运算符过程可以是以下类型之一︰  
   
--   一元运算符的定义，其中的参数是您的类或结构的类型。  
+-   一元运算符，其中参数都是类或结构的类型的定义。  
   
--   一个二元运算符的定义，其中至少一个参数是您的类或结构的类型。  
+-   其中至少一个参数是类或结构的类型的二元运算符的定义。  
   
--   一个转换运算符的定义，其中的参数是您的类或结构的类型。  
+-   其中的参数是类或结构的类型的转换运算符的定义。  
   
--   一个转换运算符的定义，返回您的类或结构的类型。  
+-   转换运算符返回的类或结构类型的定义。  
   
- 转换运算符总是一元运算符，您也总是将 `CType` 用作所定义的运算符。  
+ 转换运算符都始终是一元，并且始终将`CType`用作您定义的运算符。  
   
-## 声明语法  
- 声明运算符过程的语法如下所示：  
+## <a name="declaration-syntax"></a>声明语法  
+ 声明一个运算符过程的语法如下所示︰  
   
- `Public Shared`   `[Widening | Narrowing]`   `Operator`   ``  *operatorsymbol*  `(` *operand1*  `[,`  *operand2* `]) As`  *datatype*  
+ `Public Shared`   `[Widening | Narrowing]`   `Operator`  *operatorsymbol*  `(` *operand1*  `[,`  *operand2* `]) As`  *datatype*  
   
  `' Statements of the operator procedure.`  
   
  `End Operator`  
   
- 仅在类型转换运算符上使用 `Widening` 或 `Narrowing` 关键字。  类型转换运算符的符号总是 [CType 函数](../../../../visual-basic/language-reference/functions/ctype-function.md)。  
+ 您使用`Widening`或`Narrowing`关键字仅在类型转换运算符。 运算符符号始终是[CType 函数](../../../../visual-basic/language-reference/functions/ctype-function.md)有关类型转换运算符。  
   
- 声明两个操作数以定义一个二元运算符，声明一个操作数以定义一个一元运算符（包括类型转换运算符）。  所有操作数都必须声明为 `ByVal`。  
+ 声明两个操作数定义二元运算符，并声明一个要定义的一元运算符，包括类型转换运算符的操作数。 所有操作数都必须都声明`ByVal`。  
   
- 用与声明 [Sub 过程](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md) 的参数相同的方法声明每个操作数。  
+ 声明每个操作数相同的方式声明的参数[Sub 过程](./sub-procedures.md)。  
   
-### 数据类型  
- 因为是在已定义的类或结构上定义运算符，所以至少其中一个操作数必须是该类或结构的数据类型。  对于类型转换运算符，操作数或返回类型必须是类或结构的数据类型。  
+### <a name="data-type"></a>数据类型  
+ 由于您正在对类或已定义的结构定义一个运算符，至少其中一个操作数必须是的该类或结构的数据类型。 对于类型转换运算符，操作数或返回类型必须是数据类型的类或结构。  
   
- 有关更多详细信息，请参见[Operator 语句](../../../../visual-basic/language-reference/statements/operator-statement.md)。  
+ 有关详细信息，请参阅[Operator 语句](../../../../visual-basic/language-reference/statements/operator-statement.md)。  
   
-## 调用语法  
- 使用表达式中的运算符符号隐式调用运算符过程。  按照为预定义运算符提供操作数的方法提供操作数。  
+## <a name="calling-syntax"></a>调用语法  
+ 通过在表达式中使用运算符的隐式调用运算符过程。 提供对操作数相同的方式相似，预定义的运算符。  
   
- 隐式调用运算符过程的语法如下所示：  
+ 隐式调用运算符过程的语法如下所示︰  
   
- `Dim testStruct As`  *结构名*  
+ `Dim testStruct As`  *structurename*  
   
- `Dim testNewStruct As`  *structurename*  `= testStruct`  *operatorsymbol*  `10`  
+ `Dim testNewStruct As`  *structurename*`= testStruct`*operatorsymbol    *  `10`  
   
-### 声明与调用阐释  
- 下面的结构将有符号的 128 位整数值存储为高序部分和低序部分。  它将 `+` 运算符定义为将两个 `veryLong` 值相加并生成结果 `veryLong` 值。  
+### <a name="illustration-of-declaration-and-call"></a>声明和调用的插图  
+ 以下结构存储构成的高序位和低序位部分作为一个 128 位带符号的整数值。 它定义了`+`运算符以添加两个`veryLong`值，并生成生成`veryLong`值。  
   
- [!code-vb[VbVbcnProcedures#23](./codesnippet/VisualBasic/operator-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures 第&23;](./codesnippet/VisualBasic/operator-procedures_1.vb)]  
   
- 下面的示例演示对 `veryLong` 上定义的 `+` 运算符的典型调用。  
+ 下面的示例演示如何调用典型`+`上定义的运算符`veryLong`。  
   
- [!code-vb[VbVbcnProcedures#24](./codesnippet/VisualBasic/operator-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures #&24;](./codesnippet/VisualBasic/operator-procedures_2.vb)]  
   
- 有关更多信息和示例，请参见 [Operator Overloading in Visual Basic 2005](http://go.microsoft.com/fwlink/?LinkId=101703)（Visual Basic 2005 中的运算符重载）。  
+ 有关详细信息和示例，请参阅[Visual Basic 2005 中的运算符重载](http://go.microsoft.com/fwlink/?LinkId=101703)。  
   
-## 请参阅  
- [过程](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   
- [Sub 过程](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md)   
- [Function 过程](../../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)   
- [Property 过程](../../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)   
- [过程参数和自变量](../../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)   
+## <a name="see-also"></a>另请参阅  
+ [过程](./index.md)   
+ [Sub 过程](./sub-procedures.md)   
+ [Function 过程](./function-procedures.md)   
+ [属性过程](./property-procedures.md)   
+ [过程参数和变量](./procedure-parameters-and-arguments.md)   
  [Operator 语句](../../../../visual-basic/language-reference/statements/operator-statement.md)   
- [如何：定义运算符](../../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)   
- [如何：定义转换运算符](../../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)   
- [如何：调用运算符过程](../../../../visual-basic/programming-guide/language-features/procedures/how-to-call-an-operator-procedure.md)   
- [如何：使用定义运算符的类](../../../../visual-basic/programming-guide/language-features/procedures/how-to-use-a-class-that-defines-operators.md)
+ [如何︰ 定义运算符](./how-to-define-an-operator.md)   
+ [如何︰ 定义转换运算符](./how-to-define-a-conversion-operator.md)   
+ [如何︰ 调用运算符过程](./how-to-call-an-operator-procedure.md)   
+ [如何：使用定义运算符的类](./how-to-use-a-class-that-defines-operators.md)

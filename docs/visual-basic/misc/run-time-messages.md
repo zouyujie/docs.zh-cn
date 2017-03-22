@@ -1,23 +1,42 @@
 ---
-title: "Visual Basic 运行时消息 | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-helpviewer_keywords: 
-  - "错误 [Visual Basic], 运行时"
-  - "运行时错误, Visual Basic"
+title: "Visual Basic 运行时消息 |Microsoft 文档"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+helpviewer_keywords:
+- errors [Visual Basic], run-time
+- run-time errors, Visual Basic
 ms.assetid: 130f7c2b-8eb1-4a6e-81aa-e30e27d3d4f7
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 8
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 5837e133909d2723bbcb8071cc9feb4c2544b95c
+ms.lasthandoff: 03/13/2017
+
 ---
-# Visual Basic 运行时消息
-本部分包含运行时出现的 [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 错误消息。  
+# <a name="visual-basic-run-time-messages"></a>Visual Basic 运行时消息
+本部分包含[!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]错误消息出现的运行时间。  
   
- [\<address\> 不是有效的远程文件地址](../../visual-basic/misc/address-is-not-a-valid-remote-file-address.md)  
+ [\<地址&1;> 不是有效的远程文件地址](../../visual-basic/misc/address-is-not-a-valid-remote-file-address.md)  
   
  [分隔符不能为 Nothing 或空字符串](../../visual-basic/misc/a-delimiter-cannot-be-nothing-or-an-empty-string.md)  
   
@@ -25,69 +44,69 @@ caps.handback.revision: 8
   
  [此计算机上已创建了具有此名称的日志](../../visual-basic/misc/a-log-has-already-been-created-with-this-name-on-this-machine.md)  
   
- [无论是作为参数还是作为返回值，属性或方法调用都不能包括对私有对象的引用](../../visual-basic/language-reference/error-messages/a-property-or-method-call-cannot-include-a-reference-to-a-private-object.md)  
+ [无论是作为自变量还是作为返回值，属性或方法调用都不能包括对私有对象的引用](../../visual-basic/language-reference/error-messages/a-property-or-method-call-cannot-include-a-reference-to-a-private-object.md)  
   
  [未指定启动窗体](../../visual-basic/language-reference/error-messages/a-startup-form-has-not-been-specified.md)  
   
- [拒绝访问“\<name\>”](../../visual-basic/misc/access-denied-to-name.md)  
+ [拒绝访问\<名称&1;>](../../visual-basic/misc/access-denied-to-name.md)  
   
- [添加失败。 提供了重复的键值](../../visual-basic/misc/add-failed-duplicate-key-value-supplied.md)  
+ [添加失败。提供了重复的键值](../../visual-basic/misc/add-failed-duplicate-key-value-supplied.md)  
   
  [所有字段宽度（除了最后一个元素外）都必须大于零](../../visual-basic/misc/all-field-widths-except-the-last-element-must-be-greater-than-zero.md)  
   
  [为事件日志指定了无效名称](../../visual-basic/misc/an-invalid-name-was-specified-for-the-event-log.md)  
   
- [发生错误，因为无法获得单个实例启动所需的操作系统资源](../../visual-basic/language-reference/error-messages/an-unexpected-error-has-occurred.md)  
+ [发生意外错误，因为无法获得单个实例启动所需的操作系统资源](../../visual-basic/language-reference/error-messages/an-unexpected-error-has-occurred.md)  
   
  [另一个事件日志已使用该名称注册了一个源](../../visual-basic/misc/another-event-log-has-already-registered-a-source-with-this-name.md)  
   
  [应用程序定义的错误或对象定义的错误](../../visual-basic/misc/application-defined-or-object-defined-error.md)  
   
- [参数“\<argument1\>”必须小于或等于参数“\<argument2\>”的长度](../../visual-basic/misc/argument-argument1-must-be-less-than-or-equal-to-the-length-of-argument2.md)  
+ [参数 '\<argument1&1;> 必须小于或等于参数的长度\<argument2&1;>](../../visual-basic/misc/argument-argument1-must-be-less-than-or-equal-to-the-length-of-argument2.md)  
   
- [参数“\<argumentname\>”不能是多维数组](../../visual-basic/misc/argument-argumentname-cannot-be-a-multidimensional-array.md)  
+ [参数 '\<参数名称&1;> 不能是多维数组](../../visual-basic/misc/argument-argumentname-cannot-be-a-multidimensional-array.md)  
   
- [参数 \<argumentname\> 不能是空字符串或 Nothing](../../visual-basic/misc/argument-argumentname-cannot-be-an-empty-string-or-nothing.md)  
+ [参数\<参数名称&1;> 不能为空字符串或执行任何操作](../../visual-basic/misc/argument-argumentname-cannot-be-an-empty-string-or-nothing.md)  
   
- [无法将参数“\<argumentname\>”转换为数值](../../visual-basic/misc/argument-argumentname-cannot-be-converted-to-a-numeric-value.md)  
+ [参数 '\<参数名称&1;> 不能转换为数字值](../../visual-basic/misc/argument-argumentname-cannot-be-converted-to-a-numeric-value.md)  
   
- [无法将参数“\<argumentname\>”转换为类型“\<typename\>”](../../visual-basic/misc/argument-argumentname-cannot-be-converted-to-type-typename.md)  
+ [参数 '\<参数名称&1;> 不能转换为类型\<typename&1;>](../../visual-basic/misc/argument-argumentname-cannot-be-converted-to-type-typename.md)  
   
- [无法将参数“\<argumentname\>”转换为类型“Date”](../../visual-basic/misc/argument-argumentname-cannot-be-converted-to-type-date.md)  
+ [参数 '\<参数名称&1;> 不能转换为类型 Date](../../visual-basic/misc/argument-argumentname-cannot-be-converted-to-type-date.md)  
   
- [参数“\<argumentname\>”不是有效值](../../visual-basic/misc/argument-argumentname-is-not-a-valid-value.md)  
+ [参数 '\<参数名称&1;> 不是有效的值](../../visual-basic/misc/argument-argumentname-is-not-a-valid-value.md)  
   
- [参数“\<argumentname\>”对该数组无效](../../visual-basic/misc/argument-argumentname-is-not-valid-for-the-array.md)  
+ [参数 '\<参数名称&1;> 不是有效的数组](../../visual-basic/misc/argument-argumentname-is-not-valid-for-the-array.md)  
   
- [参数“\<argumentname\>”为 Nothing](../../visual-basic/misc/argument-argumentname-is-nothing.md)  
+ [参数 '\<参数名称&1;> 是执行任何操作](../../visual-basic/misc/argument-argumentname-is-nothing.md)  
   
- [参数“\<参数名称\>”为 Nothing 或为空](../../visual-basic/misc/argument-argumentname-is-nothing-or-empty.md)  
+ [参数 '\<参数名称&1;> 是执行任何操作或为空](../../visual-basic/misc/argument-argumentname-is-nothing-or-empty.md)  
   
- [参数“\<argumentname\>”必须大于 0 或等于 \-1](../../visual-basic/misc/argument-argumentname-must-be-greater-than-0-or-equal-to-1.md)  
+ [参数 '\<参数名称 1> 必须是大于或等于-1](../../visual-basic/misc/argument-argumentname-must-be-greater-than-0-or-equal-to-1.md)  
   
- [参数“\<argumentname\>”必须大于或等于 1](../../visual-basic/misc/argument-argumentname-must-be-greater-than-or-equal-to-1.md)  
+ [参数 '\<参数名称 1> 必须是大于或等于 1](../../visual-basic/misc/argument-argumentname-must-be-greater-than-or-equal-to-1.md)  
   
- [参数“\<argumentname\>”必须大于或等于 \-1](../../visual-basic/misc/argument-argumentname-must-be-greater-than-or-equal-to-1-1.md)  
+ [参数 '\<参数名称&1;> 必须是大于或等于-1](../../visual-basic/misc/argument-argumentname-must-be-greater-than-or-equal-to-1-1.md)  
   
- [参数 \<argumentname\> 必须大于或等于零](../../visual-basic/misc/argument-argumentname-must-be-greater-than-or-equal-to-zero-1.md)  
+ [参数\<参数名称&1;> 必须大于或等于零](../../visual-basic/misc/argument-argumentname-must-be-greater-than-or-equal-to-zero-1.md)  
   
- [参数“\<argumentname\>”必须大于或等于零](../../visual-basic/misc/argument-argumentname-must-be-greater-than-or-equal-to-zero.md)  
+ [参数 '\<参数名称&1;> 必须是大于或等于零](../../visual-basic/misc/argument-argumentname-must-be-greater-than-or-equal-to-zero.md)  
   
- [参数“\<argumentname\>”必须大于零](../../visual-basic/misc/argument-argumentname-must-be-greater-than-zero.md)  
+ [参数 '\<参数名称&1;> 必须是大于零](../../visual-basic/misc/argument-argumentname-must-be-greater-than-zero.md)  
   
- [参数“\<argumentname\>”必须在 \-32768 到 65535 的范围内](../../visual-basic/misc/argument-argumentname-must-be-in-the-range-of-32768-to-65535.md)  
+ [参数 '\<参数名称 1> 必须在-32768 到 65535 的范围内](../../visual-basic/misc/argument-argumentname-must-be-in-the-range-of-32768-to-65535.md)  
   
- [参数“\<argumentname\>”必须在 0 到 99 的范围内](../../visual-basic/misc/argument-argumentname-must-be-within-the-range-0-to-99.md)  
+ [参数 '\<参数名称 1> 必须在 0 到 99 的范围内](../../visual-basic/misc/argument-argumentname-must-be-within-the-range-0-to-99.md)  
   
- [参数“\<argumentname\>”必须在 1 到 255 的范围内](../../visual-basic/misc/argument-argumentname-must-be-within-the-range-1-to-255.md)  
+ [参数 '\<参数名称 1> 必须在 1 到 255 范围内](../../visual-basic/misc/argument-argumentname-must-be-within-the-range-1-to-255.md)  
   
- [参数“\<argumentname1\>”必须小于或等于参数“\<argumentname2\>”的长度](../../visual-basic/misc/argument-argumentname1-must-be-less-than-or-equal-the-length-of-argumentname2.md)  
+ [参数 '\<argumentname1&1;> 必须小于或等于参数的长度\<argumentname2&1;>](../../visual-basic/misc/argument-argumentname1-must-be-less-than-or-equal-the-length-of-argumentname2.md)  
   
- [参数“Acces”无效。 追加模式的有效值为“OpenAccess.Write”和“OpenAccess.Default”](../../visual-basic/misc/argument-access-is-not-valid-append-mode.md)  
+ [参数“Acces”无效。追加模式的有效值为“OpenAccess.Write”和“OpenAccess.Default”](../../visual-basic/misc/argument-access-is-not-valid-append-mode.md)  
   
- [参数“Acces”无效。 输入模式的有效值为“OpenAccess.Read”和“OpenAccess.Default”](../../visual-basic/misc/argument-access-is-not-valid-input-mode.md)  
+ [参数“Acces”无效。输入模式的有效值为“OpenAccess.Read”和“OpenAccess.Default”](../../visual-basic/misc/argument-access-is-not-valid-input-mode.md)  
   
- [参数“Acces”无效。 输出模式的有效值为“OpenAccess.Write”和“OpenAccess.Default”](../../visual-basic/misc/argument-access-is-not-valid.md)  
+ [参数“Acces”无效。输出模式的有效值为“OpenAccess.Write”和“OpenAccess.Default”](../../visual-basic/misc/argument-access-is-not-valid.md)  
   
  [参数 BasePath 必须是一个文件夹的路径](../../visual-basic/misc/argument-basepath-must-be-a-path-to-a-folder.md)  
   
@@ -101,23 +120,23 @@ caps.handback.revision: 8
   
  [参数“Life”不能为零](../../visual-basic/misc/argument-life-cannot-be-zero.md)  
   
- [非可选参数 \(Visual Basic\)](../../visual-basic/language-reference/error-messages/argument-not-optional.md)  
+ [非可选参数 (Visual Basic)](../../visual-basic/language-reference/error-messages/argument-not-optional.md)  
   
  [参数“NPer”必须大于零](../../visual-basic/misc/argument-nper-must-be-greater-than-zero.md)  
   
- [参数“Path”是 Nothing 或是空的](../../visual-basic/misc/argument-path-is-nothing-or-empty.md)  
+ [参数“Path”是 Nothing 或为空](../../visual-basic/misc/argument-path-is-nothing-or-empty.md)  
   
- [参数“Per”无效。](../../visual-basic/misc/argument-per-is-not-valid.md)  
+ [参数“Per”无效](../../visual-basic/misc/argument-per-is-not-valid.md)  
   
  [参数“Period”必须小于或等于参数“Life”](../../visual-basic/misc/argument-period-must-be-less-than-or-equal-to-argument-life.md)  
   
- [参数值“\<pathname\>”包含在路径名中无效的字符](../../visual-basic/misc/argument-value-pathname-contains-characters-that-are-not-valid-in-a-path-name.md)  
+ [参数值 '\<路径名&1;> 包含在路径名称中无效的字符](../../visual-basic/misc/argument-value-pathname-contains-characters-that-are-not-valid-in-a-path-name.md)  
   
  [参数无效](../../visual-basic/misc/arguments-are-not-valid.md)  
   
- [数组维数与 "VBFixedArray" 特性中指定的维数不匹配](../../visual-basic/misc/array-dimensions-do-not-match-those-specified-in-the-vbfixedarray-attribute.md)  
+ [数组维数与“VBFixedArray”特性中指定的维数不匹配](../../visual-basic/misc/array-dimensions-do-not-match-those-specified-in-the-vbfixedarray-attribute.md)  
   
- [自动错误](../../visual-basic/language-reference/error-messages/automation-error.md)  
+ [自动化错误](../../visual-basic/language-reference/error-messages/automation-error.md)  
   
  [自动化对象没有默认值](../../visual-basic/misc/automation-object-does-not-have-a-default-value.md)  
   
@@ -139,15 +158,15 @@ caps.handback.revision: 8
   
  [无法计算使用提供的参数的周期数](../../visual-basic/misc/cannot-calculate-number-of-periods-using-the-arguments-provided.md)  
   
- [无法使用提供的参数计算速率。](../../visual-basic/misc/cannot-calculate-rate-using-the-arguments-provided.md)  
+ [无法使用提供的参数计算速率](../../visual-basic/misc/cannot-calculate-rate-using-the-arguments-provided.md)  
   
  [在不是定义类的实例的对象上不能调用友元函数](../../visual-basic/misc/cannot-call-friend-function-on-object-which-is-not-instance-of-defining-class.md)  
   
- [无法将类型“\<type1\>”的参数“\<argumentname\>”转换到类型“\<type2\>”](../../visual-basic/misc/cannot-convert-argument-argumentname-of-type-type1-to-type-type2.md)  
+ [无法转换参数 '\<参数名称&1;> 类型的\<type1&1;> 键入\<type2&1;>](../../visual-basic/misc/cannot-convert-argument-argumentname-of-type-type1-to-type-type2.md)  
   
- [无法将类型“\<type1\>”的起始值和类型“\<type2\>”的步长值转换为通用类型](../../visual-basic/misc/cannot-convert-start-value-of-type1-and-step-value-of-type2-to-a-common-type.md)  
+ [无法转换类型的起始值\<type1&1;> 和类型的步长值\<type2&1;> 为公共类型](../../visual-basic/misc/cannot-convert-start-value-of-type1-and-step-value-of-type2-to-a-common-type.md)  
   
- [无法将类型“\<type1\>”的起始值、“\<type2\>”的限制值和“\<type3\>”的步长值转换为常用类型](../../visual-basic/misc/cannot-convert-start-value-to-a-common-type.md)  
+ [无法转换类型的起始值\<type1&1;> 的限制值\<type2&1;> 的步长值和\<type3&1;> 为公共类型](../../visual-basic/misc/cannot-convert-start-value-to-a-common-type.md)  
   
  [无法创建 ActiveX 组件](../../visual-basic/language-reference/error-messages/cannot-create-activex-component.md)  
   
@@ -159,15 +178,15 @@ caps.handback.revision: 8
   
  [无法将文件保存到 TEMP](../../visual-basic/misc/cannot-save-file-to-temp.md)  
   
- [无法建立必要的临时文件。](../../visual-basic/language-reference/error-messages/can-t-create-necessary-temporary-file.md)  
+ [无法建立必要的临时文件](../../visual-basic/language-reference/error-messages/can-t-create-necessary-temporary-file.md)  
   
- [无法执行请求的操作 \(Visual Basic\)](../../visual-basic/misc/cant-perform-requested-operation.md)  
+ [无法执行请求的操作 (Visual Basic)](../../visual-basic/misc/cant-perform-requested-operation.md)  
   
- [从字符串“\<string\>”转换为类型“\<typename\>”无效](../../visual-basic/misc/cast-from-string-string-to-type-typename-is-not-valid.md)  
+ [从字符串转换"\<字符串&1;>"键入\<typename&1;> 不是有效](../../visual-basic/misc/cast-from-string-string-to-type-typename-is-not-valid.md)  
   
- [从类型“\<typename1\>”到类型“\<typename2\>”的强制转换无效](../../visual-basic/misc/cast-from-type-typename1-to-type-typename2-is-not-valid.md)  
+ [从类型强制转换\<typename1，而&1;> 键入\<typename2&1;> 不是有效](../../visual-basic/misc/cast-from-type-typename1-to-type-typename2-is-not-valid.md)  
   
- [类“\<classname\>”不实现 System.Collections.ICollection 接口](../../visual-basic/misc/class-classname-does-not-implement-the-system-collections-icollection-interface.md)  
+ [类的\<classname&1;> 不实现 System.Collections.ICollection 接口](../../visual-basic/misc/class-classname-does-not-implement-the-system-collections-icollection-interface.md)  
   
  [类不支持自动化或不支持所需的接口](../../visual-basic/language-reference/error-messages/class-does-not-support-automation-or-does-not-support-expected-interface.md)  
   
@@ -191,13 +210,13 @@ caps.handback.revision: 8
   
  [DataBits 必须大于 0](../../visual-basic/misc/databits-must-be-greater-than-0.md)  
   
- [设备 I\/O 错误](../../visual-basic/language-reference/error-messages/device-i-o-error.md)  
+ [设备 I/O 错误](../../visual-basic/language-reference/error-messages/device-i-o-error.md)  
   
  [设备不可用](../../visual-basic/misc/device-unavailable.md)  
   
  [必须首先用一个“PathName”参数调用“Dir”函数](../../visual-basic/language-reference/error-messages/dir-function-must-first-be-called-with-a-pathname-argument.md)  
   
- [磁盘已满 \(Visual Basic\)](../../visual-basic/misc/disk-full.md)  
+ [磁盘已满 (Visual Basic)](../../visual-basic/misc/disk-full.md)  
   
  [磁盘未准备好](../../visual-basic/misc/disk-not-ready.md)  
   
@@ -205,27 +224,27 @@ caps.handback.revision: 8
   
  [除数为零（Visual Basic 运行时错误）](../../visual-basic/misc/division-by-zero-run-time-error.md)  
   
- [找不到驱动器“\<drivename\>”](../../visual-basic/misc/drive-drivename-not-found.md)  
+ [驱动器\<drivename&1;> 找不到](../../visual-basic/misc/drive-drivename-not-found.md)  
   
- [编码不能设置为 Nothing。](../../visual-basic/misc/encoding-cannot-be-set-to-nothing.md)  
+ [编码不能设置为 Nothing](../../visual-basic/misc/encoding-cannot-be-set-to-nothing.md)  
   
- [加载 DLL 时出错 \(Visual Basic\)](../../visual-basic/language-reference/error-messages/error-in-loading-dll.md)  
+ [加载 DLL (Visual Basic 中) 时出错](../../visual-basic/language-reference/error-messages/error-in-loading-dll.md)  
   
  [错误号必须在 0 到 65535 的范围内](../../visual-basic/misc/error-number-must-be-within-the-range-0-and-65535.md)  
   
- [表达式“\<name\>”不是过程，但作为过程调用的目标出现](../../visual-basic/misc/expression-name-is-not-a-procedure-but-occurs-as-the-target-of-a-procedure-call.md)  
+ [表达式\<名称&1;> 不是一个过程，但作为目标的过程调用出现](../../visual-basic/misc/expression-name-is-not-a-procedure-but-occurs-as-the-target-of-a-procedure-call.md)  
   
  [表达式过于复杂](../../visual-basic/language-reference/error-messages/expression-too-complex.md)  
   
  [尚未实现的功能](../../visual-basic/misc/feature-not-yet-implemented.md)  
   
- [类型“\<typename\>”的字段“\<fieldname\>”是“ReadOnly”](../../visual-basic/misc/field-fieldname-of-type-typename-is-readonly.md)  
+ [字段\<fieldname&1;> 类型的\<typename&1;> 是只读](../../visual-basic/misc/field-fieldname-of-type-typename-is-readonly.md)  
   
- [文件“\<filename\>”已打开，因此无法删除](../../visual-basic/misc/file-filename-cannot-be-deleted-because-it-is-open.md)  
+ [文件 '\<文件名&1;> 不能删除，因为它已打开](../../visual-basic/misc/file-filename-cannot-be-deleted-because-it-is-open.md)  
   
- [文件“\<filename\>”受写保护](../../visual-basic/misc/file-filename-is-write-protected.md)  
+ [文件 '\<文件名&1;> 已被写保护](../../visual-basic/misc/file-filename-is-write-protected.md)  
   
- [找不到文件“\<filename\>”](../../visual-basic/misc/file-filename-not-found.md)  
+ [文件 '\<文件名&1;> 找不到](../../visual-basic/misc/file-filename-not-found.md)  
   
  [文件已存在](../../visual-basic/misc/file-already-exists.md)  
   
@@ -233,9 +252,9 @@ caps.handback.revision: 8
   
  [文件格式无效](../../visual-basic/misc/file-format-not-valid.md)  
   
- [结构中包含“\<typename\>”类型的字段“\<fieldname\>”的文件 I\/O 无效](../../visual-basic/misc/file-io-of-a-structure-with-field-fieldname-of-type-typename-is-not-valid.md)  
+ [文件 I/O 结构的字段 '\<fieldname&1;> 类型的\<typename&1;> 不是有效](../../visual-basic/misc/file-io-of-a-structure-with-field-fieldname-of-type-typename-is-not-valid.md)  
   
- [类型为“\<typename\>”的文件 I\/O 无效](../../visual-basic/misc/file-i-o-with-type-typename-is-not-valid.md)  
+ [包含类型的文件 I/O\<typename&1;> 不是有效](../../visual-basic/misc/file-i-o-with-type-typename-is-not-valid.md)  
   
  [如果文件不存在，则无法查询文件信息](../../visual-basic/misc/file-information-cannot-be-queried-if-the-file-does-not-exist.md)  
   
@@ -243,7 +262,7 @@ caps.handback.revision: 8
   
  [文件太大，无法读取到字节数组中](../../visual-basic/language-reference/error-messages/file-is-too-large-to-read-into-a-byte-array.md)  
   
- [自动化操作期间未找到文件名或类名 \(Visual Basic\)](../../visual-basic/language-reference/error-messages/file-name-or-class-name-not-found-during-automation-operation.md)  
+ [自动化操作 (Visual Basic 中) 期间未找到文件名或类](../../visual-basic/language-reference/error-messages/file-name-or-class-name-not-found-during-automation-operation.md)  
   
  [找不到文件（Visual Basic 运行时错误）](../../visual-basic/language-reference/error-messages/file-not-found-visual-basic-run-time-error.md)  
   
@@ -253,7 +272,7 @@ caps.handback.revision: 8
   
  [文件的打开模式未设置为有效值](../../visual-basic/misc/file-s-open-mode-wasn-t-set-to-a-valid-value.md)  
   
- [未初始化 For 循环 \(Visual Basic\)](../../visual-basic/misc/for-loop-not-initialized.md)  
+ [未初始化 For 循环 (Visual Basic)](../../visual-basic/misc/for-loop-not-initialized.md)  
   
  [资源文件中的格式无效](../../visual-basic/misc/format-not-valid-in-resource-file.md)  
   
@@ -261,83 +280,83 @@ caps.handback.revision: 8
   
  [运行时不支持 Get 语句](../../visual-basic/misc/get-not-supported-at-run-time.md)  
   
- [调用另一个构造函数时隐式引用尚未完成的对象是无效的](../../visual-basic/misc/bc31096.md)  
+ [调用另一个构造函数时隐式引用尚未完成的对象无效](../../visual-basic/misc/bc31096.md)  
   
  [输入超出文件尾](../../visual-basic/language-reference/error-messages/input-past-end-of-file.md)  
   
- [没有足够的安全权限设置系统日期。](../../visual-basic/misc/insufficient-security-permissions-to-set-the-system-date.md)  
+ [没有足够的安全权限设置系统日期](../../visual-basic/misc/insufficient-security-permissions-to-set-the-system-date.md)  
   
  [没有足够的安全权限设置系统时间](../../visual-basic/misc/insufficient-security-permissions-to-set-the-system-time.md)  
   
- [内部错误 \(Visual Basic\)](../../visual-basic/misc/internal-error.md)  
+ [内部错误 (Visual Basic)](../../visual-basic/misc/internal-error.md)  
   
- [在 \<位置\> 处发生的内部错误](../../visual-basic/language-reference/error-messages/internal-error-happened-at-location.md)  
+ [在发生内部错误\<位置&1;>](../../visual-basic/language-reference/error-messages/internal-error-happened-at-location.md)  
   
- [Microsoft Visual Basic 运行时的内部错误。](../../visual-basic/misc/internal-error-in-the-microsoft-visual-basic-runtime.md)  
+ [Microsoft Visual Basic 运行时的内部错误](../../visual-basic/misc/internal-error-in-the-microsoft-visual-basic-runtime.md)  
   
  [无效模式字符串](../../visual-basic/misc/invalid-pattern-string.md)  
   
  [无法删除项，因为它具有子项](../../visual-basic/misc/key-cannot-be-deleted-because-it-has-subkeys.md)  
   
- [当“\<name\>”是后期绑定表达式的结果时，对值类型为“\<typename\>”的字段的后期绑定赋值无效](../../visual-basic/misc/late-bound-assignment-to-a-field-of-value-type-typename-is-not-valid.md)  
+ [后期绑定分配给字段的值类型\<typename&1;> 不是有效时\<名称&1;> 是后期绑定表达式的结果](../../visual-basic/misc/late-bound-assignment-to-a-field-of-value-type-typename-is-not-valid.md)  
   
- [参数“\<argumentname\>”的长度必须大于零](../../visual-basic/misc/length-of-argument-argumentname-must-be-greater-than-zero.md)  
+ [参数的长度\<参数名称&1;> 必须是大于零](../../visual-basic/misc/length-of-argument-argumentname-must-be-greater-than-zero.md)  
   
- [无法使用当前的 Delimiter 分析行 \<number\>](../../visual-basic/misc/line-number-cannot-be-parsed-using-the-current-delimiters.md)  
+ [行\<数&1;> 无法使用当前的分隔符分析](../../visual-basic/misc/line-number-cannot-be-parsed-using-the-current-delimiters.md)  
   
- [无法使用当前的 FieldWidths 分析行 \<number\>](../../visual-basic/misc/line-number-cannot-be-parsed-using-the-current-fieldwidths.md)  
+ [行\<数&1;> 无法使用当前 FieldWidths 分析](../../visual-basic/misc/line-number-cannot-be-parsed-using-the-current-fieldwidths.md)  
   
- [无法读取行 \<number\>，因为它超过了最大行大小。](../../visual-basic/misc/line-number-cannot-be-read-because-it-exceeds-the-maximum-line-size.md)  
+ [行\<数&1;> 无法读取，因为它超出了最大行大小。](../../visual-basic/misc/line-number-cannot-be-read-because-it-exceeds-the-maximum-line-size.md)  
   
- [此系统不支持区域设置 ID“\<name\>”](../../visual-basic/misc/locale-id-name-is-not-supported-on-this-system.md)  
+ [区域设置 ID\<名称&1;> 不支持此系统上](../../visual-basic/misc/locale-id-name-is-not-supported-on-this-system.md)  
   
- [类型“\<typename\>”的循环控制变量不实现“System.IComparable”接口](../../visual-basic/misc/loop-control-variable-of-type-typename-does-not-implement-system-icomparable.md)  
+ [类型的循环控制变量\<typename&1;> 不实现 System.IComparable 接口](../../visual-basic/misc/loop-control-variable-of-type-typename-does-not-implement-system-icomparable.md)  
   
  [不能以后期绑定方式调用从 COM 类派生的托管类。](../../visual-basic/misc/managed-classes-derived-from-a-com-class-cannot-be-called-late-bound.md)  
   
- [不能使用 \<number\> 参数调用方法“\<methodname\>”](../../visual-basic/misc/method-methodname-cannot-be-called-with-number-arguments.md)  
+ [方法\<methodname&1;> 不能调用带有\<数&1;> 参数](../../visual-basic/misc/method-methodname-cannot-be-called-with-number-arguments.md)  
   
- [方法“\<methodname\>”没有名为“\<parametername\>”的参数](../../visual-basic/misc/method-methodname-has-no-parameter-named-parametername.md)  
+ [方法\<methodname&1;> 没有名为参数 '\<parametername&1;>](../../visual-basic/misc/method-methodname-has-no-parameter-named-parametername.md)  
   
  [未找到方法或数据成员](../../visual-basic/misc/method-or-data-member-not-found.md)  
   
  [My.Application.Log 无法确定可用磁盘空间量](../../visual-basic/misc/my-application-log-cannot-determine-the-amount-of-free-disk-space.md)  
   
- [多次指定了命名参数“\<argumentname\>”](../../visual-basic/misc/named-argument-argumentname-specified-multiple-times.md)  
+ [命名参数\<参数名称&1;> 多次指定](../../visual-basic/misc/named-argument-argumentname-specified-multiple-times.md)  
   
- [未找到命名参数 \(Visual Basic\)](../../visual-basic/misc/named-argument-not-found.md)  
+ [未找到命名参数 (Visual Basic)](../../visual-basic/misc/named-argument-not-found.md)  
   
- [命名参数无法匹配 ParamArray 参数](../../visual-basic/misc/named-arguments-cannot-match-paramarray-parameters.md)  
+ [命名实参无法匹配 ParamArray 形参](../../visual-basic/misc/named-arguments-cannot-match-paramarray-parameters.md)  
   
  [需要属性数组索引](../../visual-basic/language-reference/error-messages/need-property-array-index.md)  
   
- [必须进行收缩转换才能用这些参数调用可访问的重载“\<methodname\>”](../../visual-basic/misc/no-accessible-overloaded-methodname-can-be-called-with-these-arguments.md)  
+ [没有可访问重载\<methodname&1;> 可以用不收缩转换这些参数调用](../../visual-basic/misc/no-accessible-overloaded-methodname-can-be-called-with-these-arguments.md)  
   
- [必须进行收缩转换才能用这些参数调用可访问的重载“\<methodname\>”：\<list\>](../../visual-basic/misc/no-accessible-overloaded-methodname-can-be-called-with-these-arguments-list-2.md)  
+ [没有可访问重载\<methodname&1;> 可以用不收缩转换这些参数调用︰\<列表&1;>](../../visual-basic/misc/no-accessible-overloaded-methodname-can-be-called-with-these-arguments-list-2.md)  
   
- [必须进行扩大转换才能用这些参数调用可访问的重载“\<methodname\>”：\<list\>](../../visual-basic/misc/no-accessible-overloaded-methodname-can-be-called-without-widening.md)  
+ [没有可访问重载\<methodname&1;> 可以用进行扩大转换这些参数调用︰\<列表&1;>](../../visual-basic/misc/no-accessible-overloaded-methodname-can-be-called-without-widening.md)  
   
- [无法使用后列参数调用可访问的重载“\<methodname\>”：\<列表\>](../../visual-basic/misc/no-accessible-overloaded-methodname-can-be-called-with-these-arguments-list.md)  
+ [没有可访问重载\<methodname&1;> 可以使用这些参数称为︰\<列表&1;>](../../visual-basic/misc/no-accessible-overloaded-methodname-can-be-called-with-these-arguments-list.md)  
   
- [未找到类型“\<typename\>”的默认成员。](../../visual-basic/misc/no-default-member-found-for-type-typename.md)  
+ [没有默认成员找到类型\<typename&1;>](../../visual-basic/misc/no-default-member-found-for-type-typename.md)  
   
- [未找到与“\<filename\>”匹配的文件](../../visual-basic/misc/no-files-found-matching-filename.md)  
+ [找不到文件匹配\<文件名&1;>](../../visual-basic/misc/no-files-found-matching-filename.md)  
   
- [没有方法“\<methodname\>”可以接受参数“\<parametername\>”的类型“\<typename\>”的参数。](../../visual-basic/misc/no-method-methodname-can-accept-an-argument-of-type-typename-for-parameter.md)  
+ [没有方法\<methodname&1;> 可以接受类型的参数 '\<typename&1;> 参数\<parametername&1;>](../../visual-basic/misc/no-method-methodname-can-accept-an-argument-of-type-typename-for-parameter.md)  
   
  [没有鼠标](../../visual-basic/misc/no-mouse-is-present.md)  
   
  [没有鼠标滚轮](../../visual-basic/misc/no-mouse-wheel-is-present.md)  
   
- [NumberOfChars 必须大于 0](../../visual-basic/misc/numberofchars-must-be-greater-than-zero.md)  
+ [NumberOfChars 必须大于&0;](../../visual-basic/misc/numberofchars-must-be-greater-than-zero.md)  
   
- [对象不支持当前的区域设置 \(Visual Basic\)](../../visual-basic/misc/object-doesn-t-support-current-locale-setting.md)  
+ [对象不支持当前的区域设置 (Visual Basic)](../../visual-basic/misc/object-doesn-t-support-current-locale-setting.md)  
   
  [对象不支持已命名的参数](../../visual-basic/misc/object-doesn-t-support-named-arguments.md)  
   
- [对象不支持此操作 \(Visual Basic\)](../../visual-basic/misc/object-doesn-t-support-this-action.md)  
+ [对象不支持此操作 (Visual Basic)](../../visual-basic/misc/object-doesn-t-support-this-action.md)  
   
- [对象不支持此属性或方法 \(Visual Basic\)](../../visual-basic/misc/object-doesn-t-support-this-property-or-method.md)  
+ [对象不支持此属性或方法 (Visual Basic)](../../visual-basic/misc/object-doesn-t-support-this-property-or-method.md)  
   
  [对象或类不支持事件集](../../visual-basic/language-reference/error-messages/object-or-class-does-not-support-the-set-of-events.md)  
   
@@ -349,39 +368,39 @@ caps.handback.revision: 8
   
  [在自定义日志名称中，只有前八个字符是有意义的](../../visual-basic/misc/only-the-first-eight-characters-of-a-custom-log-name-are-significant.md)  
   
- [运算符对于“\<name1\>”和“\<name2\>”无效](../../visual-basic/misc/operator-is-not-valid-for-name1-and-name2.md)  
+ [运算符不能用于\<name1&1;> 和\<name2&1;>](../../visual-basic/misc/operator-is-not-valid-for-name1-and-name2.md)  
   
- [运算符对于类型 “\<typename\>”无效](../../visual-basic/misc/operator-is-not-valid-for-type-typename.md)  
+ [运算符不能用于类型\<typename&1;>](../../visual-basic/misc/operator-is-not-valid-for-type-typename.md)  
   
  [序号无效](../../visual-basic/language-reference/error-messages/ordinal-is-not-valid.md)  
   
  [内存不足（Visual Basic 运行时错误）](../../visual-basic/misc/out-of-memory-run-time-error.md)  
   
- [堆栈空间不足 \(Visual Basic\)](../../visual-basic/language-reference/error-messages/out-of-stack-space.md)  
+ [堆栈空间 (Visual Basic)](../../visual-basic/language-reference/error-messages/out-of-stack-space.md)  
   
- [字符串空间不足 \(Visual Basic\)](../../visual-basic/language-reference/error-messages/out-of-string-space.md)  
+ [字符串空间 (Visual Basic)](../../visual-basic/language-reference/error-messages/out-of-string-space.md)  
   
  [溢出（Visual Basic 运行时错误）](../../visual-basic/language-reference/error-messages/overflow-visual-basic-run-time-error.md)  
   
- [找不到路径“\<pathname\>”](../../visual-basic/misc/path-pathname-not-found.md)  
+ [路径\<路径名&1;> 找不到](../../visual-basic/misc/path-pathname-not-found.md)  
   
  [找不到路径](../../visual-basic/language-reference/error-messages/path-not-found.md)  
   
- [路径\/文件访问错误](../../visual-basic/language-reference/error-messages/path-file-access-error.md)  
+ [路径/文件访问错误](../../visual-basic/language-reference/error-messages/path-file-access-error.md)  
   
- [权限被拒绝 \(Visual Basic\)](../../visual-basic/language-reference/error-messages/permission-denied.md)  
+ [权限被拒绝 (Visual Basic)](../../visual-basic/language-reference/error-messages/permission-denied.md)  
   
  [图片无效](../../visual-basic/misc/picture-is-not-valid.md)  
   
  [打印机错误](../../visual-basic/misc/printer-error.md)  
   
- [过程调用或参数无效 \(Visual Basic\)](../../visual-basic/language-reference/error-messages/procedure-call-or-argument-is-not-valid.md)  
+ [过程调用或参数不是有效的 (Visual Basic)](../../visual-basic/language-reference/error-messages/procedure-call-or-argument-is-not-valid.md)  
   
- [无法找到进程“\<进程名称\>”](../../visual-basic/misc/process-processname-was-not-found.md)  
+ [进程的\<processname&1;> 找不到](../../visual-basic/misc/process-processname-was-not-found.md)  
   
- [属性 \<propertyname\> 不能设置为空字符串或 Nothing](../../visual-basic/misc/property-propertyname-cannot-be-set-to-an-empty-string-or-nothing.md)  
+ [属性\<propertyname&1;> 不能设置为一个空字符串或执行任何操作](../../visual-basic/misc/property-propertyname-cannot-be-set-to-an-empty-string-or-nothing.md)  
   
- [属性 \<propertyname\> 不能设置为 Nothing](../../visual-basic/misc/property-propertyname-cannot-be-set-to-nothing.md)  
+ [属性\<propertyname&1;> 不能设置为执行任何操作](../../visual-basic/misc/property-propertyname-cannot-be-set-to-nothing.md)  
   
  [属性数组索引无效](../../visual-basic/language-reference/error-messages/property-array-index-is-not-valid.md)  
   
@@ -393,7 +412,7 @@ caps.handback.revision: 8
   
  [属性值无效](../../visual-basic/misc/property-value-is-not-valid.md)  
   
- [找不到类型“\<typename\>”上的公共成员“\<membername\>”](../../visual-basic/misc/public-member-membername-on-type-typename-not-found.md)  
+ [公共成员 '\<membername&1;> 类型\<typename&1;> 找不到](../../visual-basic/misc/public-member-membername-on-type-typename-not-found.md)  
   
  [“ReDim”只能更改最右边的维度](../../visual-basic/misc/redim-can-only-change-the-right-most-dimension.md)  
   
@@ -401,23 +420,23 @@ caps.handback.revision: 8
   
  [“ReDim”保留操作数不能为 Nothing](../../visual-basic/misc/redim-preserve-operand-cannot-be-nothing.md)  
   
- [无法创建注册表项“\<keyname\>”。](../../visual-basic/misc/registry-key-keyname-could-not-be-created.md)  
+ [注册表项 '\<keyname&1;> 不能创建](../../visual-basic/misc/registry-key-keyname-could-not-be-created.md)  
   
- [找不到注册表项“\<keyname\>”](../../visual-basic/misc/registry-key-keyname-could-not-be-found.md)  
+ [注册表项 '\<keyname&1;> 找不到](../../visual-basic/misc/registry-key-keyname-could-not-be-found.md)  
   
  [替换内容太长](../../visual-basic/misc/replacements-too-long.md)  
   
  [无错误继续执行](../../visual-basic/language-reference/error-messages/resume-without-error.md)  
   
- [无法重命名根文件夹。](../../visual-basic/misc/root-folder-cannot-be-renamed.md)  
+ [无法重命名根文件夹](../../visual-basic/misc/root-folder-cannot-be-renamed.md)  
   
  [未找到搜索文本](../../visual-basic/misc/search-text-not-found.md)  
   
  [不允许进行设置](../../visual-basic/misc/set-not-permitted.md)  
   
- [不支持 Set 语句\(只读属性\)](../../visual-basic/misc/set-not-supported-read-only-property.md)  
+ [不支持 Set 语句（只读属性）](../../visual-basic/misc/set-not-supported-read-only-property.md)  
   
- [运行时不支持设置。](../../visual-basic/misc/set-not-supported-at-run-time.md)  
+ [运行时不支持设置](../../visual-basic/misc/set-not-supported-at-run-time.md)  
   
  [不能组合 SimplifiedChinese 和 VbStrConv.TraditionalChinese](../../visual-basic/misc/simplifiedchinese-and-vbstrconv-traditionalchinese-cannot-be-combined.md)  
   
@@ -425,7 +444,7 @@ caps.handback.revision: 8
   
  [无法删除某些子项](../../visual-basic/language-reference/error-messages/some-subkeys-cannot-be-deleted.md)  
   
- [源文件夹和目标文件夹是相同的](../../visual-basic/misc/source-folder-and-target-folder-are-the-same.md)  
+ [源文件夹和目标文件夹相同](../../visual-basic/misc/source-folder-and-target-folder-are-the-same.md)  
   
  [EventLogSource 中指定的源名称已注册到不同于 EventLogName 中所指定的日志的另一个日志](../../visual-basic/misc/source-name-specified-in-eventlogsource-is-registered-to-another-log.md)  
   
@@ -445,9 +464,9 @@ caps.handback.revision: 8
   
  [字符串长度超过“FileSystem”API 的最大长度 32767 个字符](../../visual-basic/misc/string-length-exceeds-maximum-length-of-32767-characters-for-filesystem-apis.md)  
   
- [未定义 Sub 或 Function \(Visual Basic\)](../../visual-basic/language-reference/error-messages/sub-or-function-not-defined.md)  
+ [定义 sub 或 Function 不 (Visual Basic)](../../visual-basic/language-reference/error-messages/sub-or-function-not-defined.md)  
   
- [下标超出范围 \(Visual Basic\)](../../visual-basic/language-reference/error-messages/subscript-out-of-range.md)  
+ [下标超出范围 (Visual Basic)](../../visual-basic/language-reference/error-messages/subscript-out-of-range.md)  
   
  [不能删除系统事件日志](../../visual-basic/misc/system-event-log-cannot-be-deleted.md)  
   
@@ -467,7 +486,7 @@ caps.handback.revision: 8
   
  [此文件已打开](../../visual-basic/misc/the-file-is-already-open.md)  
   
- [此文件当前已关闭](../../visual-basic/misc/the-file-is-currently-closed.md)  
+ [文件当前已关闭](../../visual-basic/misc/the-file-is-currently-closed.md)  
   
  [文件当前处于打开状态，可以读取](../../visual-basic/misc/the-file-is-currently-open-for-reading.md)  
   
@@ -479,7 +498,7 @@ caps.handback.revision: 8
   
  [尚未设置路径](../../visual-basic/misc/the-path-has-not-been-set.md)  
   
- [远程服务器计算机不存在或不可用 \(Visual Basic\)](../../visual-basic/misc/the-remote-server-machine-does-not-exist-or-is-unavailable.md)  
+ [远程服务器计算机不存在或不可用 (Visual Basic)](../../visual-basic/misc/the-remote-server-machine-does-not-exist-or-is-unavailable.md)  
   
  [项目文件夹不存在](../../visual-basic/misc/the-source-folder-does-not-exist.md)  
   
@@ -487,15 +506,15 @@ caps.handback.revision: 8
   
  [无法读取传递给 TextFieldParser 的流](../../visual-basic/misc/the-stream-passed-to-textfieldparser-cannot-be-read.md)  
   
- [\<argumentname\> 的值必须是正数](../../visual-basic/misc/the-value-of-argumentname-must-be-a-positive-number.md)  
+ [值\<参数名称&1;> 必须为正数](../../visual-basic/misc/the-value-of-argumentname-must-be-a-positive-number.md)  
   
- [\<argumentname\> 的值必须大于或等于 1000。](../../visual-basic/misc/the-value-of-argumentname-must-be-greater-than-or-equal-to-1000.md)  
+ [值\<参数名称 1> 必须大于或等于 1000年](../../visual-basic/misc/the-value-of-argumentname-must-be-greater-than-or-equal-to-1000.md)  
   
- [此数组被固定或临时锁定 \(Visual Basic\)](../../visual-basic/language-reference/error-messages/this-array-is-fixed-or-temporarily-locked.md)  
+ [此数组被固定或临时锁定 (Visual Basic)](../../visual-basic/language-reference/error-messages/this-array-is-fixed-or-temporarily-locked.md)  
   
  [此关键字已与该集合的某个元素相关联](../../visual-basic/language-reference/error-messages/this-key-is-already-associated-with-an-element-of-this-collection.md)  
   
- [此操作仅可在文件关闭时完成。](../../visual-basic/misc/this-operation-can-only-be-done-when-the-file-is-closed.md)  
+ [此操作仅可在文件关闭时完成](../../visual-basic/misc/this-operation-can-only-be-done-when-the-file-is-closed.md)  
   
  [此单实例应用程序未能连接到原始实例](../../visual-basic/misc/this-single-instance-application-could-not-connect-to-the-original-instance.md)  
   
@@ -511,9 +530,9 @@ caps.handback.revision: 8
   
  [文件太多](../../visual-basic/language-reference/error-messages/too-many-files.md)  
   
- [类型不匹配 \(Visual Basic\)](../../visual-basic/language-reference/error-messages/type-mismatch.md)  
+ [类型不匹配 (Visual Basic)](../../visual-basic/language-reference/error-messages/type-mismatch.md)  
   
- [参数“\<argumentname\>”的类型是“\<typename\>”，它不是数值](../../visual-basic/misc/type-of-argument-argumentname-is-typename-which-is-not-numeric.md)  
+ [参数的类型 '\<参数名称&1;> 是\<typename&1;>，它不是数值](../../visual-basic/misc/type-of-argument-argumentname-is-typename-which-is-not-numeric.md)  
   
  [由于内部系统错误，无法获得串行端口名称](../../visual-basic/language-reference/error-messages/unable-to-get-serial-port-names-because-of-an-internal-system-error.md)  
   
@@ -529,13 +548,13 @@ caps.handback.revision: 8
   
  [无法接收对象的事件，因为该对象激发的事件数已达到它所支持的事件接收器的最大数](../../visual-basic/misc/unable-to-sink-events-of-object.md)  
   
- [无法写入日志文件，原因是写入将导致日志文件超过 MaximumSize 值。](../../visual-basic/misc/unable-to-write-to-log-file-it-would-cause-it-to-exceed-maximumsize-value.md)  
+ [无法写入日志文件，原因是写入将导致日志文件超过 MaximumSize 值](../../visual-basic/misc/unable-to-write-to-log-file-it-would-cause-it-to-exceed-maximumsize-value.md)  
   
  [无法写入日志文件，因为写入日志文件会使可用磁盘空间低于 ReservedSpace 值](../../visual-basic/misc/unable-to-write-to-log-file-because-reduce-free-disk-space-below-reservedspace.md)  
   
- [在使用 "Object" 类型的参数时，请使用 "FileGetObject"，而不要使用 "FileGet"](../../visual-basic/misc/use-filegetobject-instead-of-fileget-when-using-argument-of-type-object.md)  
+ [在使用“Object”类型的参数时，请使用“FileGetObject”，而不要使用“FileGet”](../../visual-basic/misc/use-filegetobject-instead-of-fileget-when-using-argument-of-type-object.md)  
   
- [在使用 "Object" 类型的参数时，请使用 "FilePutObject"，而不要使用 "FilePut"](../../visual-basic/misc/use-fileputobject-instead-of-fileput-when-using-argument-of-type-object.md)  
+ [在使用“Object”类型的参数时，请使用“FilePutObject”，而不要使用“FilePut”](../../visual-basic/misc/use-fileputobject-instead-of-fileput-when-using-argument-of-type-object.md)  
   
  [在类构造函数中使用类的默认实例可能会导致无限递归调用](../../visual-basic/misc/use-of-default-instance-of-a-class-in-the-class-constructor.md)  
   
@@ -547,7 +566,7 @@ caps.handback.revision: 8
   
  [不能组合 VbStrConv.Wide 和 VbStrConv.Narrow](../../visual-basic/misc/vbstrconv-wide-and-vbstrconv-narrow-cannot-be-combined.md)  
   
- [参数的个数错误或属性赋值无效。](../../visual-basic/misc/wrong-number-of-arguments-or-property-assignment-not-valid.md)  
+ [参数的个数错误或属性赋值无效](../../visual-basic/misc/wrong-number-of-arguments-or-property-assignment-not-valid.md)  
   
  [必须指定文件名](../../visual-basic/misc/you-must-specify-a-file-name.md)  
   
@@ -555,6 +574,6 @@ caps.handback.revision: 8
   
  [必须指定位于当前文件夹或其某个子文件夹下的路径](../../visual-basic/misc/you-must-specify-path-that-is-under-the-current-folder-or-one-of-sub-folders.md)  
   
-## 请参阅  
- [不在生成中：如何：获取有关 Visual Basic 运行时错误的信息](http://msdn.microsoft.com/zh-cn/22a7d0a6-b7d7-4c5d-971c-52ff0583c656)   
+## <a name="see-also"></a>另请参阅  
+ [NOTINBUILD 如何︰ 获取有关 Visual Basic 运行时错误的信息](http://msdn.microsoft.com/en-us/22a7d0a6-b7d7-4c5d-971c-52ff0583c656)   
  [错误消息](../../visual-basic/language-reference/error-messages/index.md)

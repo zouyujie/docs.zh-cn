@@ -1,61 +1,77 @@
 ---
-title: "/netcf | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "/netcf"
-  - "netcf"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "/netcf 编译器选项 [Visual Basic]"
-  - "netcf 编译器选项 [Visual Basic]"
-  - "-netcf 编译器选项 [Visual Basic]"
+title: "/netcf |Microsoft 文档"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- /netcf
+- netcf
+dev_langs:
+- VB
+helpviewer_keywords:
+- -netcf compiler option [Visual Basic]
+- netcf compiler option [Visual Basic]
+- /netcf compiler option [Visual Basic]
 ms.assetid: db7cfa59-c315-401c-a59b-0daf355343d6
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 18
----
-# /netcf
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: d8e2328eb5434ea0e73238709c429975ae29e6d0
+ms.lasthandoff: 03/13/2017
 
-将编译器的编译目标设置为 [!INCLUDE[Compact](../../../visual-basic/reference/command-line-compiler/includes/compact-md.md)]。  
+---
+# <a name="netcf"></a>/netcf
+设置编译器从而以 [!INCLUDE[Compact](../../../visual-basic/reference/command-line-compiler/includes/compact_md.md)] 为目标。  
   
-## 语法  
+## <a name="syntax"></a>语法  
   
 ```  
 /netcf  
 ```  
   
-## 备注  
- `/netcf` 选项使 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 编译器将编译目标设置为 [!INCLUDE[Compact](../../../visual-basic/reference/command-line-compiler/includes/compact-md.md)] 而不是完整的 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)]。  只存在于完整的 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] 中的语言功能将被禁用。  
+## <a name="remarks"></a>备注  
+ `/netcf`选项使[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]编译器将编译目标[!INCLUDE[Compact](../../../visual-basic/reference/command-line-compiler/includes/compact_md.md)]而不是完整[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]。 仅存在于完整的语言功能[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]被禁用。  
   
- `/netcf` 选项旨在与 [\/sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md) 一起使用。  `/netcf` 所禁用的语言功能与用 `/sdkpath` 导向的文件中不存在的语言功能相同。  
+ `/netcf`选项专门用于与使用[/sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md)。 被禁用的语言功能`/netcf`是相同的语言功能在与所针对的文件中不存在`/sdkpath`。  
   
 > [!NOTE]
->  `/netcf` 选项不能在 Visual Studio 开发环境中使用；它仅在从命令行进行编译时可用。  当加载 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 设备项目时，将设置 `/netcf` 选项。  
+>  `/netcf`选项不是在 Visual Studio 开发环境中可用; 只有当从命令行进行编译，它才可用。 `/netcf`会设置选项[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]加载设备项目。  
   
- `/netcf` 选项将更改以下语言功能：  
+ `/netcf`选项更改以下语言功能︰  
   
--   禁用可终止程序执行的 [End \<关键字\> 语句](../../../visual-basic/language-reference/statements/end-keyword-statement.md) 关键字。  下面的程序在没有使用 `/netcf` 时可以正常编译和运行，但在使用 `/netcf` 的情况下将会在编译时失败。  
+-   [结束\<关键字&1;> 语句](../../../visual-basic/language-reference/statements/end-keyword-statement.md)关键字，终止程序执行时，被禁用。 下面的程序不编译和运行`/netcf`在编译时会失败，但`/netcf`。  
   
-     [!code-vb[VbVbalrCompiler#34](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/netcf_1.vb)]  
+     [!code-vb[VbVbalrCompiler #&34;](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/netcf_1.vb)]  
   
--   所有形式的后期绑定都会被禁用。  当遇到可识别的后期绑定情况时，将生成编译时错误。  下面的程序在没有使用 `/netcf` 时可以正常编译和运行，但在使用 `/netcf` 的情况下将会在编译时失败。  
+-   后期绑定，在所有表单中，处于禁用状态。 遇到可识别的后期绑定情况时，将生成编译时错误。 下面的程序不编译和运行`/netcf`在编译时会失败，但`/netcf`。  
   
-     [!code-vb[VbVbalrCompiler#35](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/netcf_2.vb)]  
+     [!code-vb[VbVbalrCompiler #&35;](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/netcf_2.vb)]  
   
--   禁用 [Auto](../../../visual-basic/language-reference/modifiers/auto.md)、[Ansi](../../../visual-basic/language-reference/modifiers/ansi.md) 和 [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md) 修饰符。  [Declare 语句](../../../visual-basic/language-reference/statements/declare-statement.md) 语句的语法也被修改为 `Declare Sub|Function name Lib "library" [Alias "alias"] [([arglist])]`。  下面的代码显示 `/netcf` 对编译的影响。  
+-   [自动](../../../visual-basic/language-reference/modifiers/auto.md)， [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)，和[Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)修饰符处于禁用状态。 语法[声明语句](../../../visual-basic/language-reference/statements/declare-statement.md)语句也被修改为`Declare Sub|Function name Lib "library" [Alias "alias"] [([arglist])]`。 下面的代码演示的效果`/netcf`上一次编译。  
   
-     [!code-vb[VbVbalrCompiler#36](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/netcf_3.vb)]  
+     [!code-vb[VbVbalrCompiler #&36;](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/netcf_3.vb)]  
   
--   在使用 `/netcf` 时，如果使用已从 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中移除的 Visual Basic 6.0 关键字，将会生成一个不同的错误。  这将影响用于以下关键字的错误信息：  
+-   使用已删除的 Visual Basic 6.0 关键字[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]生成不同的错误时`/netcf`使用。 这会影响以下关键字的错误消息︰  
   
     -   `Open`  
   
@@ -89,14 +105,14 @@ caps.handback.revision: 18
   
     -   `Line`  
   
-## 示例  
- 下面的代码使用 [!INCLUDE[Compact](../../../visual-basic/reference/command-line-compiler/includes/compact-md.md)] 编译 `Myfile.vb`，并使用 C 驱动器上 [!INCLUDE[Compact](../../../visual-basic/reference/command-line-compiler/includes/compact-md.md)] 的默认安装目录中的 Mscorlib.dll 版本和 Microsoft.VisualBasic.dll 版本。  通常，应该使用最新版 [!INCLUDE[Compact](../../../visual-basic/reference/command-line-compiler/includes/compact-md.md)]。  
+## <a name="example"></a>示例  
+ 下面的代码编译`Myfile.vb`与[!INCLUDE[Compact](../../../visual-basic/reference/command-line-compiler/includes/compact_md.md)]，使用版本的 Mscorlib.dll 和 Microsoft.VisualBasic.dll 的默认安装目录中找到[!INCLUDE[Compact](../../../visual-basic/reference/command-line-compiler/includes/compact_md.md)]C 驱动器上。 通常情况下，将使用的最新版本[!INCLUDE[Compact](../../../visual-basic/reference/command-line-compiler/includes/compact_md.md)]。  
   
 ```  
 vbc /netcf /sdkpath:"c:\Program Files\Microsoft Visual Studio .NET 2003\CompactFrameworkSDK\v1.0.5000\Windows CE " myfile.vb  
 ```  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Basic 命令行编译器](../../../visual-basic/reference/command-line-compiler/index.md)   
  [示例编译命令行](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
- [\/sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md)
+ [/sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md)

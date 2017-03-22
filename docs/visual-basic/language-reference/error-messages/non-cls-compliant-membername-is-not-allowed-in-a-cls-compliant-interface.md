@@ -1,48 +1,64 @@
 ---
-title: "在符合 CLS 的接口中不允许出现不符合 CLS 的 &lt;成员名称&gt; | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "bc40033"
-  - "vbc40033"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "BC40033"
+title: "不符合 CLS 符合&lt;membername&gt;符合 cls 的接口中不允许 |Microsoft 文档"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- bc40033
+- vbc40033
+dev_langs:
+- VB
+helpviewer_keywords:
+- BC40033
 ms.assetid: 060c4b08-798e-40f1-94cf-c05c524f1b8a
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 9
----
-# 在符合 CLS 的接口中不允许出现不符合 CLS 的 &lt;成员名称&gt;
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 2861ef22c9307e5bd7d2eabf4f6e37bbd9086345
+ms.lasthandoff: 03/13/2017
 
-当接口本身被标记为 `<CLSCompliant(False)>` 或不标记时，接口中的属性、过程或事件会被标记为 `<CLSCompliant(True)>`。  
+---
+# <a name="non-cls-compliant-ltmembernamegt-is-not-allowed-in-a-cls-compliant-interface"></a>不符合 CLS 符合&lt;membername&gt;不允许在符合 cls 的接口
+属性、 过程或在接口中的事件被标记为`<CLSCompliant(True)>`接口本身时被标记为`<CLSCompliant(False)>`或未标记。  
   
- 要使接口符合 [语言独立性和与语言无关的组件](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md) \(CLS\)，那么接口的所有成员都必须是符合的。  
+ 接口不能为符合[语言独立性和与语言无关的组件](https://msdn.microsoft.com/library/12a7a7h3)(CLS)，其所有成员都必须都是符合。  
   
- 将 <xref:System.CLSCompliantAttribute> 应用于编程元素时，将该特性的 `isCompliant` 参数设置为 `True` 或 `False` 来指示符合或不符合。  此参数没有默认值，您必须提供一个值。  
+ 当您将应用<xref:System.CLSCompliantAttribute>编程元素中，设置该属性的`isCompliant`至任一参数`True`或`False`来指示符合或不符合性。</xref:System.CLSCompliantAttribute> 此参数没有默认值，必须为其提供一个值。  
   
- 如果没有将 <xref:System.CLSCompliantAttribute> 应用于某个元素，则认为该元素是不符合的。  
+ 如果不适用<xref:System.CLSCompliantAttribute>到元素，它被视为不符合要求。</xref:System.CLSCompliantAttribute>  
   
- 默认情况下，此消息是一个警告。  有关隐藏警告或将警告视为错误的信息，请参见 [在 Visual Basic 中配置警告](/visual-studio/ide/configuring-warnings-in-visual-basic)。  
+ 默认情况下，此消息是一个警告。 有关隐藏警告或将警告视为错误的信息，请参见 [Configuring Warnings in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic)。  
   
- **错误 ID：**BC40033  
+ **错误 ID:** BC40033  
   
-### 更正此错误  
+## <a name="to-correct-this-error"></a>更正此错误  
   
--   如果您要求符合 CLS，并且可以对接口源代码进行控制，则将该接口标记为 `<CLSCompliant(True)>`（前提是它的所有成员都是符合的）。  
+-   如果你需要 CLS 遵从性，并可以控制接口源代码，将接口标记为`<CLSCompliant(True)>`是否符合其所有成员。  
   
--   如果您要求符合 CLS，但不可以对接口源代码进行控制，或者如果其不具备符合的条件，则在其他接口中定义此成员。  
+-   如果你需要 CLS 遵从性，并不能控制接口源代码，或者如果它不符合以使其符合，定义此成员内使用不同的接口。  
   
--   如果您要求此成员保留在其当前的接口中，请从它的定义中移除 <xref:System.CLSCompliantAttribute>，或将其标记为 `<CLSCompliant(False)>`。  
+-   如果您需要此成员保留在其当前的接口，删除<xref:System.CLSCompliantAttribute>从其定义或将其标记为`<CLSCompliant(False)>`。</xref:System.CLSCompliantAttribute>  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [Interface 语句](../../../visual-basic/language-reference/statements/interface-statement.md)   
- [\<PAVE OVER\> Writing CLS\-Compliant Code](http://msdn.microsoft.com/zh-cn/4c705105-69a2-4e5e-b24e-0633bc32c7f3)
+ [\<PAVE 通过&1;> 编写符合 Cls 的代码](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3)

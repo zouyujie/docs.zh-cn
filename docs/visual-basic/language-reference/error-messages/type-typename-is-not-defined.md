@@ -1,48 +1,64 @@
 ---
-title: "未定义类型“&lt;类型名&gt;” | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "vbc30002"
-  - "bc30002"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "BC30002"
+title: "类型 &quot;&lt;typename&gt;&quot; 未定义 |Microsoft 文档"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- vbc30002
+- bc30002
+dev_langs:
+- VB
+helpviewer_keywords:
+- BC30002
 ms.assetid: b0faf204-57fd-44de-8c05-9db027eea663
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 18
----
-# 未定义类型“&lt;类型名&gt;”
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 09aa7c535fd5e17ddcd0e743fb5ec17ebadd4f7d
+ms.lasthandoff: 03/13/2017
 
-该语句引用了未定义的类型。  可以在声明语句（如 `Enum`、`Structure`、`Class` 或 `Interface`）中定义类型。  
+---
+# <a name="type-39lttypenamegt39-is-not-defined"></a>类型 '&lt;typename&gt;' 未定义
+该语句进行了引用未定义的类型。 您可以如声明语句中定义类型`Enum`， `Structure`， `Class`，或`Interface`。  
   
- **错误 ID：**BC30002  
+ **错误 ID:** BC30002  
   
-### 更正此错误  
+## <a name="to-correct-this-error"></a>更正此错误  
   
--   确保类型定义和类型引用的拼写相同。  
+-   确保类型定义和它的引用都使用相同的拼写。  
   
--   确保引用可以访问对应的类型定义。  例如，如果类型在另一个模块中且已声明为 `Private`，则请将该类型定义移到引用模块中或将其声明为 `Public`。  
+-   确保该类型定义为引用可访问。 例如，如果类型在另一个模块，并且已被声明为`Private`、 将该类型定义移到引用的模块或将其声明`Public`。  
   
--   确保在您的项目中未重新定义类型的命名空间。  如果进行了重新定义，请使用 `Global` 关键字对该类型名称进行完全限定。  例如，如果项目定义了一个名为 `System` 的命名空间，则不能对 <xref:System.Object?displayProperty=fullName> 类型进行访问，除非用 `Global` 关键字对其进行了完全限定：`Global.System.Object`。  
+-   请确保该类型的命名空间未在项目中重新定义。 如果是，使用`Global`关键字用于完全限定类型名称。 例如，如果一个项目定义命名空间名为`System`、<xref:System.Object?displayProperty=fullName>无法访问类型，除非它是使用完全限定`Global`关键字︰ `Global.System.Object`。</xref:System.Object?displayProperty=fullName>  
   
--   如果类型已经定义，但定义它时所在的对象库或类型库未在 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中注册，则请单击**“项目”**菜单上的**“添加引用”**，然后选择适当的对象库或类型库。  
+-   如果定义的类型，但未注册的对象库或在其中定义的类型库[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]，请单击**添加引用**上**项目**菜单上，然后选择适当的对象库或类型库。  
   
--   确保类型位于一个属于目标 .NET Framework 配置文件的一部分的程序集中。  有关更多信息，请参见 [.NET Framework 目标错误疑难解答](/visual-studio/msbuild/troubleshooting-dotnet-framework-targeting-errors)。  
+-   确保该类型的程序集中的目标.NET Framework 配置文件的一部分。 有关详细信息，请参阅[疑难解答.NET Framework 目标错误](https://docs.microsoft.com/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors)。  
   
-## 请参阅  
- [Visual Basic 中的命名空间](../../../visual-basic/programming-guide/program-structure/namespaces.md)   
+## <a name="see-also"></a>另请参阅  
+ [在 Visual Basic 中的命名空间](../../../visual-basic/programming-guide/program-structure/namespaces.md)   
  [Enum 语句](../../../visual-basic/language-reference/statements/enum-statement.md)   
  [Structure 语句](../../../visual-basic/language-reference/statements/structure-statement.md)   
  [Class 语句](../../../visual-basic/language-reference/statements/class-statement.md)   
  [Interface 语句](../../../visual-basic/language-reference/statements/interface-statement.md)   
- [管理项目中的引用](/visual-studio/ide/managing-references-in-a-project)
+ [管理项目中的引用](https://docs.microsoft.com/visualstudio/ide/managing-references-in-a-project)

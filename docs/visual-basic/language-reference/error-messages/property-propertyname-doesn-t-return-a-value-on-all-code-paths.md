@@ -1,53 +1,69 @@
 ---
-title: "属性“&lt;属性名&gt;”并非在所有代码路径上都返回值 | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "bc42107"
-  - "vbc42107"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "BC42107"
+title: "属性 &quot;&lt;propertyname&gt;并非在所有代码路径上都返回值 |Microsoft 文档"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- bc42107
+- vbc42107
+dev_langs:
+- VB
+helpviewer_keywords:
+- BC42107
 ms.assetid: 06800966-9c3b-4844-9f13-83ac95607d32
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 7
----
-# 属性“&lt;属性名&gt;”并非在所有代码路径上都返回值
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: e7c94d827761ad26d517b44a06734c5db4480a62
+ms.lasthandoff: 03/13/2017
 
-属性“\<propertyname\>”并非在所有代码路径上都返回值。当使用该结果时，可能会在运行时发生 null 引用异常。  
+---
+# <a name="property-39ltpropertynamegt39-doesn39t-return-a-value-on-all-code-paths"></a>属性 '&lt;propertyname&gt;并非在所有代码路径上都返回值
+属性 '\<propertyname&1;> 并非在所有代码路径上都返回值。 使用该结果时，可能会在运行时发生 null 引用异常。  
   
- 属性的 `Get` 过程至少有一个可能的代码路径不返回值。  
+ 一个属性`Get`过程具有至少一个可能不返回值的代码路径。  
   
- 您可通过以下任一方式从属性的 `Get` 过程返回值：  
+ 可以从属性中返回值`Get`处于以下任一过程︰  
   
--   将该值赋给属性名，然后执行 `Exit Property` 语句。  
+-   将值分配给属性名称，然后执行`Exit Property`语句。  
   
--   将该值赋给属性名，然后执行 `End Get` 语句。  
+-   将值分配给属性名称，然后执行`End Get`语句。  
   
--   在 [Return 语句](../../../visual-basic/language-reference/statements/return-statement.md) 中包括值。  
+-   中包括值[Return 语句](../../../visual-basic/language-reference/statements/return-statement.md)。  
   
- 如果控制传递给 `Exit Property` 或 `End Get`，并且尚未给属性名赋任何值，则 `Get` 过程将返回属性数据类型的默认值。  有关更多信息，请参见 [Function 语句](../../../visual-basic/language-reference/statements/function-statement.md) 中的“行为”。  
+ 控制权将传递给`Exit Property`或`End Get`和您没有分配任何值的属性名称，`Get`过程返回的属性的数据类型的默认值。 详细信息，请参阅"行为"中[Function 语句](../../../visual-basic/language-reference/statements/function-statement.md)。  
   
- 默认情况下，此消息是一个警告。  有关隐藏警告或将警告视为错误的更多信息，请参见 [在 Visual Basic 中配置警告](/visual-studio/ide/configuring-warnings-in-visual-basic)。  
+ 默认情况下，此消息是一个警告。 有关隐藏警告或将警告视为错误的详细信息，请参阅[在 Visual Basic 中配置警告](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic)。  
   
- **错误 ID：**BC42107  
+ **错误 ID:** BC42107  
   
-### 更正此错误  
+## <a name="to-correct-this-error"></a>更正此错误  
   
--   检查控制流逻辑，并确保在每个导致返回的语句前赋值。  
+-   控制流逻辑检查并确保导致返回每个语句之前赋值。  
   
-     如果总是使用 `Return` 语句，那么，保证每次从过程返回均返回一个值将较为容易。  如果采用这种做法，`End Get` 前的最后一条语句应为 `Return` 语句。  
+     很容易地保证每一次返回从过程返回一个值，如果始终使用`Return`语句。 如果这样做时之前, 的最后一个语句`End Get`应`Return`语句。  
   
-## 请参阅  
- [Property 过程](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)   
+## <a name="see-also"></a>另请参阅  
+ [属性过程](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)   
  [Property 语句](../../../visual-basic/language-reference/statements/property-statement.md)   
  [Get 语句](../../../visual-basic/language-reference/statements/get-statement.md)

@@ -1,85 +1,101 @@
 ---
-title: "互操作性疑难解答 (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "程序集 [Visual Basic]"
-  - "程序集 [Visual Basic], 部署"
-  - "COM 互操作, 疑难解答"
-  - "COM 对象, 疑难解答"
-  - "互操作程序集"
-  - "互操作, 部署程序集"
-  - "互操作, 安装共享组件的程序集"
-  - "互操作, 共享组件"
-  - "互操作性, 共享组件"
-  - "互操作性, 疑难解答"
-  - "共享组件, 与程序集联合使用"
-  - "互操作性疑难解答"
-  - "Visual Basic 疑难解答, 互操作性"
+title: "互操作性 (Visual Basic 中) 疑难解答 |Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- interop, deploying assemblies
+- assemblies [Visual Basic]
+- interop, installing assemblies that share components
+- COM objects, troubleshooting
+- interop, sharing components
+- troubleshooting interoperability
+- interoperability, troubleshooting
+- COM interop, troubleshooting
+- assemblies [Visual Basic], deploying
+- troubleshooting Visual Basic, interoperability
+- interop assemblies
+- interoperability, sharing components
+- shared components, using with assemblies
 ms.assetid: b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 21
----
-# 互操作性疑难解答 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: cbc37638ed5c57b94356c2d189f36b66202ceba5
+ms.lasthandoff: 03/13/2017
 
-在兼容 COM 和 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)]的托管代码之间时，可能会遇到以下一个或多个常见问题。  
+---
+# <a name="troubleshooting-interoperability-visual-basic"></a>互操作性疑难解答 (Visual Basic)
+当 COM 和托管的代码之间互操作[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]，您可能会遇到一个或多个下列常见问题。  
   
-##  <a name="vbconinteroperabilitymarshalinganchor1"></a> 互操作封送处理  
- 有时，您可能需要使用不是 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)]的数据类型。  互操作程序集处理 COM 对象的工作，但是，您可能必须控件使用的数据类型，则在向 COM 公开托管对象时。  例如，结构在类库中的字符串必须指定 `BStr` 非托管类型发送到 Visual Basic 6.0 和早期版本创建的 COM 对象。  在这种情况下，可以使用 <xref:System.Runtime.InteropServices.MarshalAsAttribute> 特性使托管类型显示为非托管类型。  
+##  <a name="vbconinteroperabilitymarshalinganchor1"></a>互操作封送处理  
+ 有时，您可能需要使用数据类型不属于[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]。 互操作程序集处理的大多数工作对于 COM 对象，但你可能需要控制在向 COM 公开托管的对象时使用的数据类型 例如，类库中的结构必须指定`BStr`非托管字符串发送到由 Visual Basic 6.0 和早期版本创建的 COM 对象的类型。 在这种情况下，你可以使用<xref:System.Runtime.InteropServices.MarshalAsAttribute>若要使作为非托管类型公开的托管的类型的属性。</xref:System.Runtime.InteropServices.MarshalAsAttribute>  
   
-##  <a name="vbconinteroperabilitymarshalinganchor2"></a> 导出固定长度的字符串传递到非托管代码  
- 在 Visual Basic 6.0 和早期版本中，字符串传递给 COM 对象导出为字节序列，不带 null 终止字符。  为了与其他语言兼容，在导出字符串时， [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong-md.md)] ，包括一终止字符。  最好的方法来解决此不兼容性将导出缺少终止字符作为数组 `Byte` 或 `Char`的字符串。  
+##  <a name="vbconinteroperabilitymarshalinganchor2"></a>导出到非托管代码的固定长度的字符串  
+ 在 Visual Basic 6.0 和早期版本中，字符串至 COM 对象导出为没有 null 终止字符的字节序列。 与其他语言的兼容性[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]包括终止字符输出字符串时。 若要解决此不兼容性的最佳方式是将字符串作为数组中缺少终止字符导出`Byte`或`Char`。  
   
-##  <a name="vbconinteroperabilitymarshalinganchor3"></a> 导出继承层次结构  
- 托管类层次结构展平，当公开为 COM 对象。  例如，因此，如果您定义具有成员的基类，然后继承以公开为 COM 对象的派生类，在 COM 对象使用该派生类不能使用继承成员的客户端的基类。  ，仅当基类也是作为 COM 对象创建，基类成员可以从 COM 对象仅捕获作为基类的实例，然后单击。  
+##  <a name="vbconinteroperabilitymarshalinganchor3"></a>导出继承层次结构  
+ 托管的类层次结构将平展出，当公开为 COM 对象。 例如，如果定义一个基类的成员，则继承的基类的派生类中公开为 COM 对象时，使用派生的类中的 COM 对象的客户端将不能使用继承的成员。 可以仅作为基类的实例从 COM 对象访问基类成员，然后仅当该基类还创建为 COM 对象。  
   
-## 重载方法  
- 尽管您可以将 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)]创建重载方法，但 COM 不支持。  当包含重载的方法时的类公开为 COM 对象，新方法名称为重载的方法生成。  
+## <a name="overloaded-methods"></a>重载方法  
+ 虽然你可以创建重载方法与[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]，它们不支持由 com 使用。 当包含重载的方法的类公开为 COM 对象时，重载方法会生成新的方法名。  
   
- 例如，请考虑包含 `Synch` 两个重载方法的类。  当类公开为 COM 对象时，新生成的方法名可能为 `Synch` 和 `Synch_2`。  
+ 例如，考虑一个具有两个重载类`Synch`方法。 当类公开为 COM 对象时，可能是新生成的方法名`Synch`和`Synch_2`。  
   
- 重命名可能会 COM 对象的使用者两个问题。  
+ 此重命名操作会导致出现两个问题的 COM 对象的使用者。  
   
-1.  客户端可能预见不到生成的方法名。  
+1.  客户端可能不希望生成的方法名。  
   
-2.  ，在新重载添加到类或其基类时，在作为 COM 对象公开的类生成的方法名可能更改。  这可能导致版本控制问题。  
+2.  到类或其基本类添加新的重载时，可以更改在类中公开为 COM 对象时生成的方法名。 这会导致版本控制问题。  
   
- 若要解决这两个问题，请为每个方法一个唯一名称，而不是使用重载，那么，当您开发将公开为 COM 对象的对象。  
+ 若要解决这两个问题，为每个方法提供一个唯一的名称，而不是使用重载，当您开发将公开为 COM 对象的对象。  
   
-##  <a name="vbconinteroperabilitymarshalinganchor4"></a> 对于通过 Interop 程序集使用 COM 对象  
- 您几乎使用互操作程序集，则 COM 对象的托管代码替换它们表示。  但是，因为它们是包装类，并不实际的 COM 对象，所以使用 interop 程序集与标准程序集之间的一些差异。  这些不同之处包括类和数据类型风险参数和返回值的。  
+##  <a name="vbconinteroperabilitymarshalinganchor4"></a>使用通过互操作程序集的 COM 对象  
+ 几乎好像它们是它们所表示的 COM 对象的托管的代码替换使用互操作程序集。 但是，因为它们是包装并不是实际的 COM 对象，有一些使用互操作程序集和标准程序集之间的差异。 这些不同之处包括公开的类，以及数据类型的参数和返回值。  
   
-##  <a name="vbconinteroperabilitymarshalinganchor5"></a> 作为接口和类公开的类  
- 不同于标准程序集中的类， COM 类在互操作程序集公开为接口和一个表示 COM 类的类。  接口名称与相同的 COM 类。  interop 类的名称是否与原 COM 类，但是，包含单词 “追加的类。  例如，假设您具有引用的项。 COM 对象的互操作程序集。  如果 COM 类被命名为 `MyComClass`， IntelliSense 和对象浏览器显示接口名为 `MyComClass` ，类命名为 `MyComClassClass`。  
+##  <a name="vbconinteroperabilitymarshalinganchor5"></a>公开为这两个接口的类和类  
+ 与标准的程序集中的类，不同的 COM 类在互操作程序集作为一个接口和类，表示的 COM 类中公开。 接口的名称是相同的 COM 类。 互操作的类的名称是相同的原始 COM 类，但以单词"类"追加。 例如，假设您的项目必须具有对 COM 对象的互操作程序集的引用。 如果 COM 类命名为`MyComClass`，智能感知和对象浏览器显示名为接口`MyComClass`和一个名为类`MyComClassClass`。  
   
-##  <a name="vbconinteroperabilitymarshalinganchor6"></a> 创建 .NET framework 类的实例  
- 通常，您创建 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] 类的实例使用 `New` 语句用类名。  让 COM 类由 interop 程序集是可用于接口的 `New` 语句的这一情况。  除非您使用 `Inherits` 语句的 COM 类，您可以使用接口就象类。  下面的代码在具有对 Microsoft ActiveX Data Objects 2.8 Library COM 对象的项目演示如何创建 `Command` 对象:  
+##  <a name="vbconinteroperabilitymarshalinganchor6"></a>创建.NET Framework 类的实例  
+ 通常情况下，创建的实例[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]类使用`New`语句和类名。 具有互操作程序集所表示的 COM 类是在其中您可以使用的一个例子`New`语句提供的接口。 除非您使用了 COM 类`Inherits`语句，就像类一样，可以使用该接口。 下面的代码演示如何创建`Command`具有对 Microsoft ActiveX 数据对象 2.8 库 COM 对象的引用的项目中的对象︰  
   
- [!code-vb[VbVbalrInterop#20](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_1.vb)]  
+ [!code-vb[VbVbalrInterop #&20;](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_1.vb)]  
   
- 但是，因此，如果使用 COM 类为基础为一个派生类，如下面的代码必须使用表示 COM 类的 interop 类，例如:  
+ 但是，如果您使用 COM 类作为基类的派生类，您必须使用互操作表示的类的 COM 类，如以下代码所示︰  
   
- [!code-vb[VbVbalrInterop#21](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_2.vb)]  
+ [!code-vb[VbVbalrInterop #&21;](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_2.vb)]  
   
 > [!NOTE]
->  互操作程序集隐式实现表示 COM 类的接口。  不应尝试使用 `Implements` 语句实现这些接口或将导致错误。  
+>  互操作程序集隐式实现接口，用于表示 COM 类。 不应尝试使用`Implements`将导致语句来实现这些接口或错误。  
   
-##  <a name="vbconinteroperabilitymarshalinganchor7"></a> 参数和返回值的数据类型  
- 不同于标准程序集的成员，互操作程序集的成员可以与原始对象声明中所用的数据类型。  尽管互操作程序集将 COM 类型隐式转换为兼容的公共语言运行时类型，应注意双方用于阻止运行时错误的数据类型。  例如，在 Visual Basic 6.0 和早期版本创建的 COM 对象，类型 `Integer` 的值假定 [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] 等效的类型， `Short`。  建议您使用对象浏览器来检查导入成员的特性，在使用它们。  
+##  <a name="vbconinteroperabilitymarshalinganchor7"></a>参数和返回值的数据类型  
+ 标准程序集的成员，请与互操作程序集的成员可能具有不同于原始对象声明中使用的数据类型。 尽管互操作程序集将 COM 类型隐式转换为兼容的公共语言运行时类型，但您应注意两面用于防止运行时错误的数据类型。 例如，在 Visual Basic 6.0 和早期版本中，类型的值中创建的 COM 对象`Integer`假定[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]等效类型`Short`。 建议使用对象浏览器来检查导入成员的特征，然后使用它们。  
   
-##  <a name="vbconinteroperabilitymarshalinganchor8"></a> 模块级 COM 方法  
- 创建 COM 类的实例使用 `New` 关键字然后调用对象的方法使用大多数 COM 对象。  此规则的例外情况涉及包含 `AppObj` 或 `GlobalMultiUse` COM 类的 COM 对象。  此类类似于 [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong-md.md)] 类的模块级方法。  Visual Basic 6.0 和早期版本第一次隐式创建实例的调用这些对象的方法。  例如，在 Visual Basic 6.0 可以添加对 Microsoft DAO 3.6 对象库和调用 `DBEngine` 方法，而无需首先创建一个实例:  
+##  <a name="vbconinteroperabilitymarshalinganchor8"></a>模块级别 COM 方法  
+ 由大多数 COM 对象创建实例的 COM 类使用`New`关键字，然后再调用对象的方法。 此规则的例外涉及 COM 对象，包含`AppObj`或`GlobalMultiUse`COM 类。 这样的类中的模块级方法相似[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]类。 Visual Basic 6.0 和早期版本隐式创建此类对象的实例为您第一次调用其方法之一。 例如，在 Visual Basic 6.0 中可以添加到 Microsoft DAO 3.6 对象库，并调用的引用`DBEngine`而不必首先创建一个实例的方法︰  
   
 ```  
 Dim db As DAO.Database  
@@ -88,58 +104,58 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
 ' Use the database object.  
 ```  
   
- [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong-md.md)] 要求必须始终创建 COM 对象的实例，然后才能使用其方法。  若要使用这些方法在 [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong-md.md)]，声明所需类的变量并使用 new 关键字分配给对象变量。  可以使用 `Shared` 关键字，如果要确保时，只有一个类实例创建。  
+ [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]要求您始终创建 COM 对象的实例，然后才能使用它们的方法。 若要使用这些方法[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]、 所需的类的变量声明和使用新的关键字来将对象分配给对象变量。 `Shared`时想要确保可以使用关键字创建的类只有一个实例。  
   
- [!code-vb[VbVbalrInterop#23](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_3.vb)]  
+ [!code-vb[VbVbalrInterop 第&23;](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_3.vb)]  
   
-##  <a name="vbconinteroperabilitymarshalinganchor9"></a> 在事件处理程序的未处理错误  
- 一个常见互操作问题在处理 COM 对象所引发的事件处理程序涉及错误。  使用 `On Error` 或 `Try...Catch...Finally` 语句，，因此，除非您明确检查错误此类错误被忽略。  例如，下面的示例摘自具有对 Microsoft ActiveX Data Objects 2.8 Library COM 对象的 [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong-md.md)] 项目。  
+##  <a name="vbconinteroperabilitymarshalinganchor9"></a>事件处理程序中未处理的错误  
+ 一个常见的互操作问题涉及处理由 COM 对象引发的事件的事件处理程序中的错误。 此类错误将被忽略，除非您明确检查使用`On Error`或`Try...Catch...Finally`语句。 例如，下面的示例摘自[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]具有对 Microsoft ActiveX 数据对象 2.8 库 COM 对象的引用的项目。  
   
- [!code-vb[VbVbalrInterop#24](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_4.vb)]  
+ [!code-vb[VbVbalrInterop #&24;](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_4.vb)]  
   
- 此示例引发错误按预期方式工作。  但是，在中，如果尝试相同的示例，而无需 `Try...Catch...Finally` 块，该错误将被忽略，就象使用了 `OnError Resume Next` 语句。  如果没有错误处理，被零除将导致失败。  由于这种错误从不引发未经处理的异常错误，务必要在事件处理程序使用某种形式的异常处理机制从 COM 对象所引发的事件。  
+ 此示例将按预期方式引发错误。 但是，如果您尝试相同的示例中而无需`Try...Catch...Finally`块中，错误将忽略就使用`OnError Resume Next`语句。 如果没有错误处理机制，被零除以无提示方式无法正常工作。 因为此类错误永远不会引发未处理的异常错误，很重要使用某种形式的处理从 COM 对象的事件的事件处理程序中的异常处理。  
   
-### 理解 COM 互操作错误  
- 如果没有错误处理机制，互操作调用通常生成提供的信息的错误。  只要有可能，那么，当事件发生时，使用结构化错误处理提供更多信息。  ，在调试应用程序时，此控件尤其建立的。  例如:  
+### <a name="understanding-com-interop-errors"></a>了解 COM 互操作错误  
+ 如果没有错误处理机制，互操作调用通常产生错误时提供非常少的信息。 只要有可能，使用结构化处理，以提供有关问题的详细信息，它们发生的错误。 调试应用程序时可能特别有用。 例如:   
   
- [!code-vb[VbVbalrInterop#25](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_5.vb)]  
+ [!code-vb[VbVbalrInterop #&25;](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_5.vb)]  
   
- 您可以通过检查异常对象的内容找到很多信息描述、 HRESULT 和 COM 错误源。  
+ 可以通过检查异常对象的内容中找到的错误说明、 HRESULT 和 COM 错误的原因等信息。  
   
-##  <a name="vbconinteroperabilitymarshalinganchor10"></a> Activex 控件问题  
- 使用 Visual Basic 6.0 一起使用 [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong-md.md)] 一起使用，而不会遇到的大多数 Activex 控件。  例外主要在于容器上包含其他控件的控件或控件。  无法与 [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs-md.md)]使用较早的控件的一些示例如下:  
+##  <a name="vbconinteroperabilitymarshalinganchor10"></a>ActiveX 控件问题  
+ 使用 Visual Basic 6.0 中的大多数 ActiveX 控件使用[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]顺利。 主要的例外是容器控件中或以可视方式可以包含其他控件的控件。 无法与正常工作的旧控件的一些示例[!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)]如下︰  
   
--   Microsoft forms 2.0 frame 控件  
+-   Microsoft 窗体 2.0 框架控件  
   
--   Up\-Down 控件，也称作数值调节钮控件  
+-   Up-down 控件，也称为数值调节钮控件  
   
--   Sheridan tab 控件  
+-   Sheridan 选项卡控件  
   
- 对于不受支持的 Activex 控件问题少量的工作区。  您可以分次迁移现有控件绑定到 [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs-md.md)] ，如果您拥有原始的源代码。  否则，可以检查与软件供应商控件的更新.NET 兼容版本替换不受支持的 Activex 控件。  
+ 有的不受支持的 ActiveX 控件问题只有几个解决方法。 你可以迁移现有控件与[!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)]如果拥有原始源代码。 否则，您可以检查与软件供应商更新。NET 兼容版本的控件来替换不受支持的 ActiveX 控件。  
   
-##  <a name="vbconinteroperabilitymarshalinganchor11"></a> 按址传递控件的只读属性  
- ，当您通过某些旧 Activex 控件 `ReadOnly` 属性作为 `ByRef` 参数传递到其他过程时，[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong-md.md)] 有时会引发 COM 错误 \(如 “error 0x800A017F CTL\_E\_SETNOTSUPPORTED”。  类似的从 Visual Basic 6.0 过程调用不会引发错误，并且，将参数，如同按值传递一样。  在 [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong-md.md)] 看到的错误消息是 COM 的对象尝试更改没有属性 `Set` 程序的属性。  
+##  <a name="vbconinteroperabilitymarshalinganchor11"></a>传递的控件 ByRef 的 ReadOnly 属性  
+ [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]如果通过，但您有时引发 COM 错误，如"错误 0x800A017F CTL_E_SETNOTSUPPORTED"`ReadOnly`某些较旧的 ActiveX 控件作为属性`ByRef`其他过程的参数。 从 Visual Basic 6.0 中的过程调用不会引发错误，并就像通过值传递，参数的处理方式类似。 请参阅中的错误消息[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]是 COM 对象的报告您尝试更改一个属性，它不具有属性`Set`过程。  
   
- 如果可以访问调用的过程，可以防止此错误使用 `ByVal` 关键字声明接受 `ReadOnly` 特性的参数。  例如:  
+ 如果您有权访问所调用的过程，您可以通过使用来防止出现此错误`ByVal`关键字来声明参数接受`ReadOnly`属性。 例如:   
   
- [!code-vb[VbVbalrInterop#26](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_6.vb)]  
+ [!code-vb[VbVbalrInterop #&26;](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_6.vb)]  
   
- 如果您无权访问其源代码的调用的过程，可以强制按值传递属性。添加额外的括号在调用程序附近。  例如，在具有对 Microsoft ActiveX Data Objects 2.8 Library COM 对象的项目中，可以使用:  
+ 如果还没有被调用的过程对源代码的访问，您可以强制要通过添加一组额外的方括号调用过程按值传递的属性。 例如，在项目中包含对 Microsoft ActiveX 数据对象 2.8 库 COM 对象的引用，您可以使用︰  
   
- [!code-vb[VbVbalrInterop#27](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_7.vb)]  
+ [!code-vb[VbVbalrInterop #&27;](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_7.vb)]  
   
-##  <a name="vbconinteroperabilitymarshalinganchor12"></a> 部署公开 Interop 的程序集  
- 部署公开 COM 接口的程序集带来了一些特殊的难题。  例如，在中，当不同的应用程序引用同一个 COM 程序集，一个潜在问题。  这种情况很常见的，在安装新版本程序集，而另一应用程序仍在使用程序集的早期版本。  如果卸载共享 DLL 的程序集，则可能会无意中使其对于其他程序集不可用。  
+##  <a name="vbconinteroperabilitymarshalinganchor12"></a>部署公开互操作的程序集  
+ 公开 COM 接口的程序集部署了一些独特的挑战。 例如，当单独的应用程序引用同一个 COM 程序集时，将产生潜在的问题。 安装新版本的程序集和另一个应用程序仍在使用旧版本的程序集时，这种情况很常见。 如果您卸载共享某个 DLL 程序集，您可以会无意中使其不可用对其他程序集。  
   
- 若要避免此问题，应将共享的程序集添加到全局程序集 \(GAC\)缓存并使用组件的 MergeModule。  如果您在全局程序集缓存中安装应用程序，应将其安装到 CommonFilesFolder 在一个特定于版本的子目录。  
+ 若要避免此问题，应安装到全局程序集缓存 (GAC) 中的共享程序集和用于该组件的合并模块。 如果您不能在 GAC 中安装应用程序，它应安装到 CommonFilesFolder 特定于版本的子目录中。  
   
- 不共享的程序集应并行位于与调用应用程序的目录。  
+ 不共享的程序集应并排放置在调用应用程序的目录。  
   
-## 请参阅  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>   
+## <a name="see-also"></a>另请参阅  
+ <xref:System.Runtime.InteropServices.MarshalAsAttribute></xref:System.Runtime.InteropServices.MarshalAsAttribute>   
  [COM 互操作](../../../visual-basic/programming-guide/com-interop/index.md)   
- [Tlbimp.exe（类型库导入程序）](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md)   
- [Tlbexp.exe（类型库导出程序）](../Topic/Tlbexp.exe%20\(Type%20Library%20Exporter\).md)   
- [演练：用 COM 对象实现继承](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)   
+ [Tlbimp.exe （类型库导入程序）](http://msdn.microsoft.com/library/ec0a8d63-11b3-4acd-b398-da1e37e97382)   
+ [Tlbexp.exe （类型库导出程序）](http://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)   
+ [演练︰ 用 COM 对象实现继承](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)   
  [Inherits 语句](../../../visual-basic/language-reference/statements/inherits-statement.md)   
- [全局程序集缓存](../Topic/Global%20Assembly%20Cache.md)
+ [全局程序集缓存](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202)

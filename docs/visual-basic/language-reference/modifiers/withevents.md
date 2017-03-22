@@ -1,45 +1,61 @@
 ---
-title: "WithEvents (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "vb.WithEvents"
-  - "WithEvents"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "WithEvents 关键字"
+title: "WithEvents (Visual Basic 中) |Microsoft 文档"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- vb.WithEvents
+- WithEvents
+dev_langs:
+- VB
+helpviewer_keywords:
+- WithEvents keyword
 ms.assetid: 19d461f5-d72f-4de9-8c1d-0a6650316990
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 17
----
-# WithEvents (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 708cf6fec78faf2c7a5959a3a2694d237d728882
+ms.lasthandoff: 03/13/2017
 
-指定一个或多个已声明成员变量引用可引发事件的类的实例。  
+---
+# <a name="withevents-visual-basic"></a>WithEvents (Visual Basic)
+指定一个或多个声明的成员变量指可以引发事件的类的实例。  
   
-## 备注  
- 当某个变量是使用 `WithEvents` 定义时，您可以用声明方式指定某个方法使用 `Handles` 关键字处理该变量的事件。  
+## <a name="remarks"></a>备注  
+ 当使用定义一个变量`WithEvents`，您可以以声明方式指定一种方法，可使用的变量的事件处理`Handles`关键字。  
   
- 您只能在类或模块级别使用 `WithEvents`。  这意味着 `WithEvents` 变量的声明上下文必须是类或模块，不能是源文件、命名空间、结构或过程。  
+ 您可以使用`WithEvents`只能在类或模块级别。 这意味着的声明上下文`WithEvents`变量必须是类或模块，且不能为源文件、 命名空间、 结构或过程。  
   
- 您不能对结构成员使用 `WithEvents`。  
+ 不能使用`WithEvents`对结构成员。  
   
- 您只能使用 `WithEvents` 声明单个变量，不能声明数组。  
+ 您可以声明只有单个变量-不数组 — 与`WithEvents`。  
   
-## 规则  
+## <a name="rules"></a>规则  
   
--   **元素类型。**您必须将 `WithEvents` 变量声明成为对象变量，以便它们可以接受类实例。  但是，您不能将它们声明为 `Object`。  必须将它们声明为可以引发事件的特定类。  
+-   **元素类型。** 您必须声明`WithEvents`变量为对象变量，以使它们可以接受类实例。 但是，您无法声明这些变量作为`Object`。 您必须将它们声明为可引发事件的特定类。  
   
- `WithEvents` 修饰符可用于下面的上下文中：[Dim 语句](../../../visual-basic/language-reference/statements/dim-statement.md)  
+ `WithEvents`修饰符可用于在此上下文中︰ [Dim 语句](../../../visual-basic/language-reference/statements/dim-statement.md)  
   
-## 请参阅  
- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)   
+## <a name="see-also"></a>另请参阅  
+ [句柄](../../../visual-basic/language-reference/statements/handles-clause.md)   
  [关键字](../../../visual-basic/language-reference/keywords/index.md)   
- [事件](../../../visual-basic/programming-guide/language-features/events/events.md)
+ [事件](../../../visual-basic/programming-guide/language-features/events/index.md)

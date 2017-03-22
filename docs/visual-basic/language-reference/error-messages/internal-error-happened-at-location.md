@@ -1,28 +1,44 @@
 ---
-title: "在 &lt;位置&gt; 处发生的内部错误 | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
+title: "在发生内部错误&lt;位置&gt;|Microsoft 文档"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
 ms.assetid: 0af78cbc-89ec-40ea-9dee-bac9f2cb7c1e
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 8
----
-# 在 &lt;位置&gt; 处发生的内部错误
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 0a16fc33f27568c38ea3bce6ef8c28abbd5ae4b6
+ms.lasthandoff: 03/13/2017
 
-发生了内部错误。  该内部错误发生时所在的行包含在错误信息中。  
+---
+# <a name="internal-error-happened-at-ltlocationgt"></a>在发生内部错误&lt;位置&gt;
+发生了内部错误。 发生时所在的行都包含在错误消息。  
   
-### 更正此错误  
+## <a name="to-correct-this-error"></a>更正此错误  
   
--   确保此错误不是由 `Error` 语句或 `Raise` 方法生成的；如果不是，请与 Microsoft 产品支持服务部门联系以报告该消息出现的条件。  
+-   请确保不生成了此错误`Error`语句或`Raise`方法; 如果没有，请与 Microsoft 产品支持服务以报告在其下出现该消息的条件。  
   
-## 请参阅  
- [调试器基础知识](/visual-studio/debugger/debugger-basics)
+## <a name="see-also"></a>另请参阅  
+ [调试器基础知识](https://docs.microsoft.com/visualstudio/debugger/debugger-basics)
