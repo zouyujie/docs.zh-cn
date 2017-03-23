@@ -1,53 +1,69 @@
 ---
-title: "函数“&lt;过程名&gt;”并非在所有代码路径上都返回值 | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "bc42105"
-  - "vbc42105"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "BC42105"
+title: "函数&lt;过程名&gt;并非在所有代码路径上都返回值 |Microsoft 文档"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- bc42105
+- vbc42105
+dev_langs:
+- VB
+helpviewer_keywords:
+- BC42105
 ms.assetid: b6929bf4-a365-4a70-8dc9-6b0fc09e1468
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 12
----
-# 函数“&lt;过程名&gt;”并非在所有代码路径上都返回值
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 288fdf7c4845b20283681d9eb3504ac314f1ddd2
+ms.lasthandoff: 03/13/2017
 
-函数“\<procedurename\>”并非在所有代码路径上都返回值。您是否缺少“Return”语句？  
+---
+# <a name="function-39ltprocedurenamegt39-doesn39t-return-a-value-on-all-code-paths"></a>函数&lt;过程名&gt;并非在所有代码路径上都返回值
+函数\<过程名&1;> 并非在所有代码路径上都返回值。 是否缺少 Return 语句？  
   
- `Function` 过程具有至少一个通过其代码的可能路径，但不返回值。  
+ 一个`Function`过程具有至少一个可能不返回值的代码路径。  
   
- 可以采用以下任意方式从 `Function` 过程返回值：  
+ 您可以返回一个介于`Function`处于以下任一过程︰  
   
--   在 [Return 语句](../../../visual-basic/language-reference/statements/return-statement.md) 中包括值。  
+-   中包括值[Return 语句](../../../visual-basic/language-reference/statements/return-statement.md)。  
   
--   将值赋给 `Function` 过程名，然后执行 `Exit Function` 语句。  
+-   将值赋给`Function`过程名，然后执行`Exit Function`语句。  
   
--   将值赋给 `Function` 过程名，然后执行 `End Function` 语句。  
+-   将值赋给`Function`过程名，然后执行`End Function`语句。  
   
- 如果控制传递到 `Exit Function` 或 `End Function`，并且尚未将任何值赋给过程名，则过程将返回该返回数据类型的默认值。  有关更多信息，请参见 [Function 语句](../../../visual-basic/language-reference/statements/function-statement.md) 中的“行为”。  
+ 控制权将传递给`Exit Function`或`End Function`和您没有任何值分配到过程名称，该过程返回的返回数据类型的默认值。 详细信息，请参阅"行为"中[Function 语句](../../../visual-basic/language-reference/statements/function-statement.md)。  
   
- 默认情况下，此消息是一个警告。  有关隐藏警告或将警告视为错误的更多信息，请参见 [在 Visual Basic 中配置警告](/visual-studio/ide/configuring-warnings-in-visual-basic)。  
+ 默认情况下，此消息是一个警告。 有关隐藏警告或将警告视为错误的详细信息，请参阅[在 Visual Basic 中配置警告](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic)。  
   
- **错误 ID：**BC42105  
+ **错误 ID:** BC42105  
   
-### 更正此错误  
+## <a name="to-correct-this-error"></a>更正此错误  
   
--   检查控制流逻辑，并确保在每个导致返回的语句前赋值。  
+-   控制流逻辑检查并确保导致返回每个语句之前赋值。  
   
-     如果总是使用 `Return` 语句，那么，保证每次从过程返回均返回一个值将较为容易。  如果这样做，`End Function` 之前的最后一个语句应为 `Return` 语句。  
+     很容易地保证每一次返回从过程返回一个值，如果始终使用`Return`语句。 如果这样做时之前, 的最后一个语句`End Function`应`Return`语句。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [Function 过程](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)   
  [Function 语句](../../../visual-basic/language-reference/statements/function-statement.md)   
- [“编译”页, 项目设计器 \(Visual Basic\)](/visual-studio/ide/reference/compile-page-project-designer-visual-basic)
+ [“项目设计器”->“编译”页 (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic)

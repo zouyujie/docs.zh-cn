@@ -1,52 +1,68 @@
 ---
-title: "String 数据类型 (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "vb.String"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "" String 文本"
-  - "$ 标识符类型字符"
-  - "数据类型 [Visual Basic], 分配"
-  - "定长字符串"
-  - "定长字符串, 字符串数据类型"
-  - "标识符类型字符串, $"
-  - "文本, string"
-  - "String 数据类型"
-  - "string 关键字 [Visual Basic]"
-  - "字符串"
-  - "字符串 [Visual Basic], 字符"
-  - "字符串 [Visual Basic], 固定长度"
-  - "文本 [Visual Basic], String 数据类型"
+title: "字符串数据类型 (Visual Basic 中) |Microsoft 文档"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- vb.String
+dev_langs:
+- VB
+helpviewer_keywords:
+- strings [Visual Basic], character
+- strings [Visual Basic], fixed-length
+- string keyword [Visual Basic]
+- fixed-length strings, string data type
+- literals, string
+- text [Visual Basic], String data type
+- $ identifier type character
+- String data type
+- fixed-length strings
+- string literals
+- data types [Visual Basic], assigning
+- String literals
+- identifier type characters, $
 ms.assetid: 15ac03f5-cabd-42cc-a754-1df3893c25d9
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 19
----
-# String 数据类型 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 9221a89a1fb46609b4b8550968e3a2bbe874772c
+ms.lasthandoff: 03/13/2017
 
-保存无符号 16 位 \(2 字节\) 代码序列点该范围按从 0 到 65535 的值。  每个 *码位*，或者字符代码，表示单个 Unicode 字符。  字符串可以包含从 0 到大约两个对数字 2 \(^\) 31 个 Unicode 字符。  
+---
+# <a name="string-data-type-visual-basic"></a>String 数据类型 (Visual Basic)
+从 0 到 65535 之间的值中存储无符号的 16 位 （双字节） 码位的序列该范围。 每个*代码点*，或字符代码，表示单个 Unicode 字符。 一个字符串可以包含从 0 到二十亿 (2 ^31) 的 Unicode 字符。  
   
-## 备注  
- 使用 `String` 数据类型保存多个字符，而无需数组管理开销 `Char()`，数组 `Char` 元素。  
+## <a name="remarks"></a>备注  
+ 使用`String`数据类型以保存多个字符的数组管理开销没有`Char()`，数组`Char`元素。  
   
- `String` 的默认值为 `Nothing` \(空引用\)。  请注意这与为空字符串 \(值 `""`\)。  
+ 默认值为`String`是`Nothing`（空引用）。 请注意，这并不相同，则为空字符串 (值`""`)。  
   
-## Unicode 字符  
- 码位的前 128 \(0\-127\) Unicode 对应于字母和符号在标准美国。  键盘。  码位的这些前 128 相同的与 ASCII 字符集定义。  码位的第二个 128 \(128\-255\) 表示特殊字符，比如基于拉丁语字母表的字母、重音、、货币符号和部分。  使用 Unicode 其余的代码对各种符号点 \(256\-65535\)。  这包括成功率文本字符、差异和数学和技术符号。  
+## <a name="unicode-characters"></a>Unicode 字符  
+ Unicode 第一个 128 个码位 (0-127) 对应的字母和标准的美式键盘上的符号。 这些第一个 128 个码位都与 ASCII 字符集定义相同。 第二个 128 个码位 (128 到 255) 表示特殊字符，如基于拉丁语字母、 重音、 货币符号和秒的小数部分。 Unicode 使用各种各样的符号的剩余的码位 (256-65535)。 这包括全球范围内的文本字符、 音调符号，以及数学和技术符号。  
   
- 在 `String` 变量可以使用之类的方法 <xref:System.Char.IsDigit%2A> 和 <xref:System.Char.IsPunctuation%2A> 在单个字符确定其 Unicode 类别。  
+ 您可以使用方法，如<xref:System.Char.IsDigit%2A>和<xref:System.Char.IsPunctuation%2A>上中的单个字符`String`变量以确定其 Unicode 分类。</xref:System.Char.IsPunctuation%2A> </xref:System.Char.IsDigit%2A>  
   
-## 布局要求  
- 您必须括在引号 \(`" "`\) 中的一个 `String` 文本。  如果必须包括引号作为参数之一个字符在字符串，则使用两个连续引号 \(`""`\)。  下面的示例阐释了这一点。  
+## <a name="format-requirements"></a>格式要求  
+ 必须将括`String`文字用引号引起来 (`" "`)。 如果您必须作为一个字符串中字符包含引号，则使用两个连续的引号 (`""`)。 下面的示例阐释了这一点。  
   
 ```  
 Dim j As String = "Joe said ""Hello"" to me."  
@@ -58,12 +74,12 @@ MsgBox("Joe said " & """" & h & """" & " to me.")
 MsgBox("Joe said """ & h & """ to me.")  
 ```  
   
- 请注意个表示字符串中的一个引号的连续引号都是开始和结束 `String` 文本引号无关。  
+ 请注意连续的引号表示字符串中的引号无关的引号开始和结束`String`文字。  
   
-## 字符串操作  
- 一旦将字符串到 `String` 变量，该字符串是不可变 *的*，这意味着不能更改其长度或目录。  当通过任何方式时修改一个字符串， Visual Basic 创建一个新字符串并丢弃上一个。  `String` 变量并指向新字符串。  
+## <a name="string-manipulations"></a>字符串操作  
+ 一旦将分配到的字符串`String`变量时，该字符串是*不可变*，这意味着您不能更改它的长度或内容。 在修改以任何方式的字符串时，Visual Basic 创建一个新字符串和放弃上一个。 `String`变量然后指向新的字符串。  
   
- 可以使用多种字符串功能，可以操作 `String` 变量的内容。  下面的示例演示 <xref:Microsoft.VisualBasic.Strings.Left%2A> 功能  
+ 您可以操作的内容`String`变量使用各种字符串函数。 下面的示例阐释<xref:Microsoft.VisualBasic.Strings.Left%2A>函数</xref:Microsoft.VisualBasic.Strings.Left%2A>  
   
 ```  
 Dim S As String = "Database"  
@@ -71,25 +87,26 @@ Dim S As String = "Database"
 S = Microsoft.VisualBasic.Left(S, 4)  
 ```  
   
- 另一个组件创建的字符串可能填充前导或尾随空格。  如果收到这种字符串，可以使用 <xref:Microsoft.VisualBasic.Strings.Trim%2A>、 <xref:Microsoft.VisualBasic.Strings.LTrim%2A>和 <xref:Microsoft.VisualBasic.Strings.RTrim%2A> 功能来撤消这些空间。  
+ 可能会用前导空格或尾随空格填充由另一个组件创建的字符串。 如果您收到这样的字符串，则可以使用<xref:Microsoft.VisualBasic.Strings.Trim%2A>， <xref:Microsoft.VisualBasic.Strings.LTrim%2A>，和<xref:Microsoft.VisualBasic.Strings.RTrim%2A>函数来删除这些空格。</xref:Microsoft.VisualBasic.Strings.RTrim%2A> </xref:Microsoft.VisualBasic.Strings.LTrim%2A> </xref:Microsoft.VisualBasic.Strings.Trim%2A>  
   
- 有关字符串操作的更多信息，请 [字符串](../../../visual-basic/programming-guide/language-features/strings/index.md)参见。  
+ 有关字符串操作的详细信息，请参阅[字符串](../../../visual-basic/programming-guide/language-features/strings/index.md)。  
   
-## 编程提示  
+## <a name="programming-tips"></a>编程提示  
   
--   **负数。** 确保 `String` 保存的字符未签名，不能表示负值。  在任一情况下，您不应使用 `String` 表示数值。  
+-   **负数。** 请记住字符持有的`String`是无符号，并且不能表示负值。 在任何情况下，不应使用`String`存放数值。  
   
--   **互操作注意事项。** 如果您针对使用 .NET framework 编写的组件，例如自动或 COM 对象，请确保字符串的字符具有不同的数据宽度 \(8 位\) 在其他环境。  如果将 8 位字符的字符串参数传递给此类元素，则将其声明为，则 `Byte()`，数组 `Byte` 元素，而不是在新的 Visual Basic 代码的 `String` 。  
+-   **互操作注意事项。** 如果不是为.NET Framework 编写的组件与交互如自动化或 COM 对象，请记住，字符串字符具有不同的数据宽度 （8 位） 在其他环境中。 如果您将 8 位字符的字符串参数传递给此类组件，将其声明为`Byte()`，数组`Byte`元素，而不是`String`在新的 Visual Basic 代码。  
   
--   **键入字符。** 追加该标识符键入对所有标识符的 `$` 强制到 `String` 数据类型的字符。  `String` 没有文本类型字符。  但是，编译器将括在引号内的文本 \(`" "`\) 作为 `String`。  
+-   **类型字符。** 追加标识符类型字符`$`到任何标识符会将其强制为`String`数据类型。 `String`有没有文本类型字符。 但是，编译器将用引号引起来的文本 (`" "`) 作为`String`。  
   
--   **结构类型。** 相应键入 .NET framework 是 <xref:System.String?displayProperty=fullName> 类。  
+-   **Framework 类型。** .NET Framework 中的对应类型是<xref:System.String?displayProperty=fullName>类。</xref:System.String?displayProperty=fullName>  
   
-## 请参阅  
- <xref:System.String?displayProperty=fullName>   
+## <a name="see-also"></a>另请参阅  
+ <xref:System.String?displayProperty=fullName></xref:System.String?displayProperty=fullName>   
  [数据类型](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
  [Char 数据类型](../../../visual-basic/language-reference/data-types/char-data-type.md)   
  [类型转换函数](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
  [转换摘要](../../../visual-basic/language-reference/keywords/conversion-summary.md)   
- [如何：调用采用无符号类型的 Windows 函数](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)   
+ [如何︰ 调用采用无符号的类型的 Windows 函数](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)   
  [有效使用数据类型](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+

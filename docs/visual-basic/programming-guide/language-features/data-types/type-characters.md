@@ -1,67 +1,83 @@
 ---
-title: "类型字符 (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "! 标识符类型字符"
-  - "# 标识符类型字符"
-  - "$ 标识符类型字符"
-  - "% 标识符类型字符"
-  - "& 标识符类型字符"
-  - "表示十六进制值的 &H 前缀"
-  - "表示八进制值的 &O 前缀"
-  - "@ 标识符类型字符"
-  - "C 文本类型字符"
-  - "字符, 标识符类型"
-  - "D 文本类型字符"
-  - "数据类型 [Visual Basic], 类型字符"
-  - "默认文本类型"
-  - "默认值, 文本类型"
-  - "F 文本类型字符"
-  - "十六进制"
-  - "I 文本类型字符"
-  - "标识符类型字符串"
-  - "L 文本类型字符"
-  - "文本类型的字符"
-  - "文本类型, default"
-  - "文本, 默认类型"
-  - "文本, 十六进制"
-  - "文本, 八进制"
-  - "八进制文本"
-  - "R 文本类型字符"
-  - "S 文本类型字符"
-  - "类型字符"
-  - "类型字符, 标识符"
-  - "类型字符, 文本"
-  - "UI 文本类型字符"
-  - "UL 文本类型字符"
-  - "US 文本类型字符"
+title: "键入的字符 (Visual Basic 中) |Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- '&H prefix for hexadecimal values'
+- hexadecimal literals
+- F literal type character
+- '& identifier type character'
+- type characters
+- octal literals
+- literals, hexadecimal
+- '&O prefix for octal values'
+- literals, default types
+- defaults, literal types
+- C literal type character
+- type characters, literal
+- $ identifier type character
+- L literal type character
+- UI literal type characters
+- default literal types
+- D literal type character
+- literals, octal
+- S literal type character
+- '! identifier type character'
+- US literal type characters
+- '% identifier type character'
+- data types [Visual Basic], type characters
+- characters, identifier type
+- type characters, identifier
+- '# identifier type character'
+- identifier type characters
+- literal type characters
+- I literal type character
+- R literal type character
+- '@ identifier type character'
+- UL literal type characters
+- literal types, default
 ms.assetid: 6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 22
----
-# 类型字符 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 6e112e7d221ef8e7a660094306bbb242c988e843
+ms.lasthandoff: 03/13/2017
 
-除了在声明语句中指定数据类型外，还可以用*“类型字符”*强制某些编程元素的数据类型。  类型字符必须紧跟在元素之后，中间不允许插入任何类型的字符。  
+---
+# <a name="type-characters-visual-basic"></a>类型字符 (Visual Basic)
+除了声明语句中指定的数据类型，您可以强制使用某些编程元素的数据类型*键入字符*。 类型字符必须紧跟具有任何类型不允许插入字符的元素。  
   
- 类型字符不是元素名的一部分。  引用用类型字符定义的元素时可以不使用类型字符。  
+ 类型字符不是名称的元素的一部分。 类型字符定义的元素可以引用不带类型字符。  
   
-## 标识符类型字符  
- [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 提供一组*“标识符类型字符”*，您可以在声明中使用这些字符来指定变量或常数的数据类型。  下表显示可用的标识符类型字符及其用法示例。  
+## <a name="identifier-type-characters"></a>标识符类型字符  
+ [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]提供一组*标识符类型字符串*，您可以用于在声明中指定的变量或常量的数据类型。 下表显示可用的标识符类型字符及其用法的示例。  
   
 |标识符类型字符|数据类型|示例|  
-|-------------|----------|--------|  
+|-------------------------------|---------------|-------------|  
 |`%`|`Integer`|`Dim L%`|  
 |`&`|`Long`|`Dim M&`|  
 |`@`|`Decimal`|`Const W@ = 37.5`|  
@@ -69,31 +85,31 @@ caps.handback.revision: 22
 |`#`|`Double`|`Dim X#`|  
 |`$`|`String`|`Dim V$ = "Secret"`|  
   
- `Boolean`、`Byte`、`Char`、`Date`、`Object`、`SByte`、`Short`、`UInteger`、`ULong` 或 `UShort` 数据类型或者任何复合数据类型（如数组或结构）都没有标识符类型字符。  
+ 对于没有标识符类型字符串存在`Boolean`， `Byte`， `Char`， `Date`， `Object`， `SByte`， `Short`， `UInteger`， `ULong`，或`UShort`数据类型或任何复合数据类型，如数组或结构。  
   
- 在某些情况下，可以将 `$` 字符追加到 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 函数中，例如，用 `Left$` 代替 `Left`，以得到 `String` 类型的返回值。  
+ 在某些情况下，您可以将附加`$`字符到[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]正常工作，例如`Left$`而不是`Left`，以获取返回的值类型为`String`。  
   
- 在所有情况下，标识符类型字符都必须紧跟在标识符名称之后。  
+ 在所有情况下，标识符类型字符必须紧跟在标识符名称。  
   
-## 文本类型字符  
- *“文本”*是数据类型的特定值的文本表示形式。  
+## <a name="literal-type-characters"></a>文本类型字符  
+ 一个*文字*是一种数据类型具有特定值的文本表示形式。  
   
-### 默认文本类型  
- 代码中出现的文本形式通常确定其数据类型。  下表显示了这些默认类型。  
+### <a name="default-literal-types"></a>默认文本类型  
+ 文本的形式通常出现在您的代码中确定其数据类型。 下表显示这些默认类型。  
   
 |文本形式|默认数据类型|示例|  
-|----------|------------|--------|  
+|-----------------------------|-----------------------|-------------|  
 |数值，没有小数部分|`Integer`|`2147483647`|  
-|数值，无小数部分，对 `Integer` 而言太大|`Long`|`2147483648`|  
+|数值，没有小数部分，对于来说太大`Integer`|`Long`|`2147483648`|  
 |数值，小数部分|`Double`|`1.2`|  
-|用双引号引起来|`String`|`"A"`|  
-|外加数字符号|`Date`|`#5/17/1993 9:32 AM#`|  
+|括在双引号内|`String`|`"A"`|  
+|包含在数字符号|`Date`|`#5/17/1993 9:32 AM#`|  
   
-### 强制文本类型  
- [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 提供一组*“文本类型字符”*，您可以使用它们强制文本采用其形式所表示的数据类型以外的数据类型。  可以通过将字符追加到文本末尾来做到这一点。  下表显示了可用的文本类型字符及其用法示例。  
+### <a name="forced-literal-types"></a>强制文本类型  
+ [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]提供一组*文本类型字符*，这可用于强制文本采用一个数据类型不是它的形式表示。 通过将字符追加到文本末尾执行此操作。 下表显示可用的文本类型字符及其用法的示例。  
   
 |文本类型字符|数据类型|示例|  
-|------------|----------|--------|  
+|----------------------------|---------------|-------------|  
 |`S`|`Short`|`I = 347S`|  
 |`I`|`Integer`|`J = 347I`|  
 |`L`|`Long`|`K = 347L`|  
@@ -105,34 +121,34 @@ caps.handback.revision: 22
 |`UL`|`ULong`|`N = 347UL`|  
 |`C`|`Char`|`Q = "."C`|  
   
- `Boolean`、`Byte`、`Date`、`Object`、`SByte` 或 `String` 数据类型或任何复合数据类型（如数组或结构）都没有文本类型字符。  
+ 对于存在没有文本类型字符`Boolean`， `Byte`， `Date`， `Object`， `SByte`，或`String`数据类型或任何复合数据类型，如数组或结构。  
   
- 与变量、常数和表达式一样，文本也可以使用标识符类型字符（`%`、`&`、`@`、`!`、`#` 或 `$`）。  但是，文本类型字符（`S`、`I`、`L`、`D`、`F`、`R`、`C`）只能用于文本。  
+ 文本也可以使用标识符类型字符 (`%`， `&`， `@`， `!`， `#`， `$`)，如可能是变量、 常量和表达式。 但是，文本类型字符 (`S`， `I`， `L`， `D`， `F`， `R`， `C`) 可仅与原义字符。  
   
- 在所有情况下，文本类型字符都必须紧跟在文本值之后。  
+ 在所有情况下，文本类型字符必须紧跟的文字值。  
   
-## 十六进制文本和八进制文本  
- 编译器通常将整数解释为十进制（基数为 10）数制。  可以用 `&H` 前缀将整数强制为十六进制（基数为 16），可以用 `&O` 前缀将整数强制为八进制（基数为 8）。  跟在前缀后面的数字必须适合于数制。  下表阐释了上述内容。  
+## <a name="hexadecimal-and-octal-literals"></a>十六进制和八进制文本  
+ 通常，编译器将解释整数文字采用十进制 (基数为 10) 数字系统。 您可以强制一个整数为十六进制 (基数为 16) 与`&H`前缀，并且您可以强制为八进制 (基数为 8) 与`&O`前缀。 跟在前缀的数字必须适合于数字系统。 下表阐释了这一点。  
   
-|数基|前缀|有效数值|示例|  
-|--------|--------|----------|--------|  
-|十六进制（以 16 为基数）|`&H`|0\-9 和 A\-F|`&HFFFF`|  
-|八进制（以 8 为基数）|`&O`|0\-7|`&O77`|  
+|号码基|前缀|有效的数字值|示例|  
+|-----------------|------------|------------------------|-------------|  
+|十六进制（以 16 为基数）|`&H`|0-9 和 A-F|`&HFFFF`|  
+|八进制（以 8 为基数）|`&O`|0-7|`&O77`|  
   
- 可以在前缀文本后面加一个文本类型字符。  下面的示例显示如何执行此项操作。  
+ 您可以按照与文本类型字符前缀的文本。 下面的示例演示了此过程。  
   
 ```  
 Dim counter As Short = &H8000S  
 Dim flags As UShort = &H8000US  
 ```  
   
- 在前面的示例中，`counter` 为 \-32768 的十进制值，并且 `flags` 为 \+32768 的十进制值。  
+ 在上一示例中，`counter`的十进制值为-32768 和`flags`32768 的十进制值。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [数据类型](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
  [基本数据类型](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)   
  [值类型和引用类型](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   
- [Visual Basic 中的类型转换](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   
+ [在 Visual Basic 中的类型转换](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   
  [数据类型疑难解答](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
  [变量声明](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
  [数据类型](../../../../visual-basic/language-reference/data-types/data-type-summary.md)

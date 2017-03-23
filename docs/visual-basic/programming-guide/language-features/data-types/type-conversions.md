@@ -1,56 +1,72 @@
 ---
-title: "Visual Basic 中的类型转换 | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "更改数据类型"
-  - "转换, 数据类型"
-  - "转换, 类型"
-  - "数据类型转换"
-  - "数据类型 [Visual Basic], 更改"
-  - "类型转换"
-  - "变量 [Visual Basic], 更改数据类型"
+title: "在 Visual Basic 中的类型转换 |Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- conversions, type
+- data types [Visual Basic], changing
+- variables [Visual Basic], changing data type
+- type conversion
+- conversions, data type
+- changing data types
+- data type conversion
 ms.assetid: 1cdacd21-ba31-4b62-b5be-395e41eeaa17
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 13
----
-# Visual Basic 中的类型转换
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: b671fe0ded9bad75dbe6ecf98ccfdf8bc9fd8d87
+ms.lasthandoff: 03/13/2017
 
-将值从一种数据类型更改为另一种类型的过程称为“转换”。  转换是扩大转换或收缩转换，具体取决于所涉及类型的数据容量。  根据源代码中的语法，它们也可以是隐式转换或显式转换。  
+---
+# <a name="type-conversions-in-visual-basic"></a>Visual Basic 中的类型转换
+将值从一种数据类型更改为另一种类型的过程被称为*转换*。 转换都是*扩大*或*收缩*，取决于所涉及的类型的数据容量。 它们也是*隐式*或*显式*，取决于在源代码中的语法。  
   
-## 本节内容  
+## <a name="in-this-section"></a>本节内容  
  [扩大转换和收缩转换](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)  
- 解释按照目标类型是否可以持有数据来分类的转换。  
+ 介绍了由目标类型是否可以容纳的数据进行分类的转换。  
   
  [隐式转换和显式转换](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
- 讨论按照是否由 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 自动执行来分类的转换。  
+ 讨论由是否进行分类的转换[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]将它们自动执行。  
   
  [字符串和其他类型之间的转换](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)  
- 阐述字符串和数字、`Boolean` 或日期\/时间值之间的转换。  
+ 说明了字符串和数字之间进行转换`Boolean`，或日期/时间值。  
   
- [如何：在 Visual Basic 中将一个对象转换为其他类型](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)  
- 演示如何将 `Object` 变量转换为任何其他数据类型。  
+ [如何︰ 将对象转换为另一种类型在 Visual Basic 中](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)  
+ 演示如何将转换`Object`变量与任何其他数据类型。  
   
  [数组转换](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)  
- 指导您逐步完成不同数据类型数组之间的转换过程。  
+ 逐步说明不同的数据类型的数组之间进行转换的过程。  
   
-## 相关章节  
+## <a name="related-sections"></a>相关章节  
  [数据类型](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- 介绍 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 数据类型并说明如何使用它们。  
+ 引入了[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]数据类型并说明如何使用它们。  
   
  [数据类型](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
- 列出 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 提供的基本数据类型。  
+ 列出了由提供的基本数据类型[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]。  
   
  [数据类型疑难解答](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- 讨论使用数据类型时可能引发的一些常见问题。
+ 讨论在使用数据类型时可能会出现一些常见问题。

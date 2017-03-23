@@ -1,61 +1,77 @@
 ---
-title: "通过值传递参数和通过引用传递参数之间的差异 (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "变量 [Visual Basic], 按值或按引用传递"
-  - "ByRef 关键字, 按引用传递参数"
-  - "ByVal 关键字, 按值传递参数"
-  - "过程, 传递参数"
-  - "Visual Basic 代码, 过程"
+title: "通过值和通过引用 (Visual Basic 中) 传递参数之间的差异 |Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- ByRef keyword, passing arguments by reference
+- Visual Basic code, procedures
+- procedures, passing arguments
+- ByVal keyword, passing arguments by value
+- arguments [Visual Basic], passing by value or by reference
 ms.assetid: 5f5c38fe-3e2d-494c-8fff-f4025b55ec93
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 14
----
-# 通过值传递参数和通过引用传递参数之间的差异 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 93c515dd8524cde85555a27879baee00185f78e3
+ms.lasthandoff: 03/13/2017
 
-将一个或多个参数传递给过程时，每个参数对应于调用代码中的一个基础编程元素。  通过此基础元素的值或引用它。  这称为传递机制。  
+---
+# <a name="differences-between-passing-an-argument-by-value-and-by-reference-visual-basic"></a>通过值传递自变量和通过引用传递自变量之间的差异 (Visual Basic)
+当将一个或多个参数传递给过程中时，每个参数对应一个基础编程元素调用的代码中。 您可以传递此基础元素的值，或者对它的引用。 这称为*传递机制*。  
   
-## 通过值  
- 通过 *值* 传递参数指定 [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) 关键字为相应的参数的过程定义。  当您使用此传入机制时， [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 复制该基础编程元素的值到过程中的局部变量。  过程代码无法访问基础元素的任何调用代码。  
+## <a name="passing-by-value"></a>按值传递  
+ 传递了参数*按值*通过指定[ByVal](../../../../visual-basic/language-reference/modifiers/byval.md)在过程定义中的相应参数的关键字。 当您使用此传递机制，[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]将基础编程元素的值复制到该过程中的局部变量。 过程代码中调用代码没有的任何访问权限的基础元素。  
   
-## 通过引用  
- 通过传递指定关键字 [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md)*引用* 相应参数 \(parameter\) 的过程定义。  当您使用此传入机制时， [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 为直接引用调用代码中的基础编程元素。  
+## <a name="passing-by-reference"></a>通过引用传递  
+ 传递了参数*通过引用*通过指定[ByRef](../../../../visual-basic/language-reference/modifiers/byref.md)在过程定义中的相应参数的关键字。 当您使用此传递机制，[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]使过程的基础的编程元素的直接引用中调用代码。  
   
-## 传入机制和元素类型  
- 选择传递机制与基础元素类型的类别。  通过值或引用所引用的 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 提供程序代码。  值类型或引用类型引用某个编程元素如何存储在内存中。  
+## <a name="passing-mechanism-and-element-type"></a>传递机制和元素类型  
+ 选择传递机制不是相同的基本元素类型的分类。 按值或按引用传递是指什么[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]提供给该过程代码。 值类型或引用类型是指在内存中存储的编程元素的方式。  
   
- 但是，传入机制和元素类型具有关联性。  引用类型的值在其他位置是指向数据在内存。  这意味着，当通过值传递引用类型时，过程代码具有指向基础元素的数据，因此，即使它不能访问基础元素。  例如，因此，如果此元素为数组变量，过程代码无法访问该变量的，但是，它可以访问数组成员。  
+ 但是，传递机制和元素类型是相互关联。 引用类型的值是一个指向内存中其他位置的数据。 也就是说，当通过值传递引用类型时，过程代码中有一个指向基础元素的数据，即使它不能访问基础元素本身也是如此。 例如，如果该元素是一个数组变量，过程代码不具有访问变量本身，但它可以访问数组成员。  
   
-## 修改能力  
- 将不可更改元素作为参数传递时，过程不能在调用代码中修改它，它是通过 `ByVal` 或 `ByRef`。  
+## <a name="ability-to-modify"></a>若要修改的能力  
+ 当作为参数传递不可更改元素时，过程可以永远不会修改它在调用代码中，不论它的传入`ByVal`或`ByRef`。  
   
- 对于可修改元素，下表概括了元素类型与传入机制之间的交互。  
+ 对于可修改的元素下, 表总结了元素类型和传递机制之间的交互。  
   
-|元素类型|通过的 `ByVal`|通过的 `ByRef`|  
-|----------|-----------------|-----------------|  
-|值类型 \(仅包含值\)|该过程不能更改该其成员变量或中的任何一个。|该过程能够更改变量及其成员。|  
-|引用类型 \(包含指向类或结构的实例\)|该过程不能更改变量，但可以更改它指向的实例的成员。|该过程可以更改它指向的实例的变量和成员。|  
+|元素类型|传递`ByVal`|传递`ByRef`|  
+|------------------|--------------------|--------------------|  
+|值类型 （包含只有一个值）|该过程不能更改该变量或任何成员。|该过程可以更改变量和其成员。|  
+|引用类型 （包含指向类或结构的实例的指针）|该过程不能更改变量，但可以更改它所指向的实例的成员。|该过程可以更改变量和它所指向的实例的成员。|  
   
-## 请参阅  
- [过程](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   
- [过程参数和自变量](../../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)   
- [如何：将参数传递给过程](../../../../visual-basic/programming-guide/language-features/procedures/how-to-pass-arguments-to-a-procedure.md)   
- [通过值和通过引用传递参数](../../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)   
- [可修改和不可修改参数之间的差异](../../../../visual-basic/programming-guide/language-features/procedures/differences-between-modifiable-and-nonmodifiable-arguments.md)   
- [如何：更改过程参数的值](../../../../visual-basic/programming-guide/language-features/procedures/how-to-change-the-value-of-a-procedure-argument.md)   
- [如何：防止过程参数的值被更改](../../../../visual-basic/programming-guide/language-features/procedures/how-to-protect-a-procedure-argument-against-value-changes.md)   
- [如何：强制通过值传递参数](../../../../visual-basic/programming-guide/language-features/procedures/how-to-force-an-argument-to-be-passed-by-value.md)   
- [按位置和按名称传递参数](../../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)   
+## <a name="see-also"></a>另请参阅  
+ [过程](./index.md)   
+ [过程参数和变量](./procedure-parameters-and-arguments.md)   
+ [如何︰ 将参数传递给过程](./how-to-pass-arguments-to-a-procedure.md)   
+ [通过值和通过引用传递参数](./passing-arguments-by-value-and-by-reference.md)   
+ [可修改和不可修改参数之间的差异](./differences-between-modifiable-and-nonmodifiable-arguments.md)   
+ [如何︰ 更改过程参数的值](./how-to-change-the-value-of-a-procedure-argument.md)   
+ [如何︰ 防止过程参数的值更改](./how-to-protect-a-procedure-argument-against-value-changes.md)   
+ [如何︰ 强制通过值传递参数](./how-to-force-an-argument-to-be-passed-by-value.md)   
+ [按位置和按名称传递参数](./passing-arguments-by-position-and-by-name.md)   
  [值类型和引用类型](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)

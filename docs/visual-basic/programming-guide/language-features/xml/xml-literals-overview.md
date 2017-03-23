@@ -1,73 +1,89 @@
 ---
-title: "XML 文本概述 (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "声明 XML 文本 [Visual Basic]"
-  - "LINQ to XML [Visual Basic], XML 文本"
-  - "文本 [Visual Basic], XML"
-  - "XML 文本 [Visual Basic], 关于 XML 文本"
+title: "XML 文本概述 (Visual Basic 中) |Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- XML literals [Visual Basic], about XML literals
+- declaring XML literals [Visual Basic]
+- LINQ to XML [Visual Basic], XML literals
+- literals [Visual Basic], XML
 ms.assetid: 37987c15-4ab8-471b-bd45-399816bfb57f
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 27
----
-# XML 文本概述 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 57d036910ba9e49385caca28de222a8a8e28ec56
+ms.lasthandoff: 03/13/2017
 
-使用 XML 文本可以直接将 XML 合并到您的 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 代码中。XML 文本语法表示 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq-md.md)] 对象，它类似于 XML 1.0 语法。可以通过它以编程方式轻松创建 XML 元素和文档，因为您的代码与最终的 XML 具有相同的结构。  
+---
+# <a name="xml-literals-overview-visual-basic"></a>XML 文本概述 (Visual Basic)
+*XML 文本*允许您将并入 XML 直接插入到您[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]代码。 XML 文本语法表示[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)]对象，也是如此类似于 XML 1.0 语法。 这使得更轻松地以编程方式创建 XML 元素和文档，因为您的代码具有相同的结构与最终的 XML。  
   
- [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 将 XML 文本编译为 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq-md.md)] 对象。  [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq-md.md)] 提供了一个用于创建和操作 XML 的简单对象模型，此模型与[!INCLUDE[vbteclinqext](../../../../csharp/getting-started/includes/vbteclinqext-md.md)] 良好集成。  有关更多信息，请参见 <xref:System.Xml.Linq.XElement>。  
+ [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]将为 XML 文字编译[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)]对象。 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)]提供用于创建和操作 XML 的简单对象模型和此模型也与集成[!INCLUDE[vbteclinqext](../../../../csharp/getting-started/includes/vbteclinqext_md.md)]。 有关详细信息，请参阅<xref:System.Xml.Linq.XElement>。</xref:System.Xml.Linq.XElement>  
   
- 可以在 XML 文本中嵌入 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 表达式。  在运行时，应用程序会为每个文本创建一个 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq-md.md)] 对象，并且合并嵌入式表达式的值。  这使您可以在 XML 文本内指定动态内容。  有关更多信息，请参见 [XML 中的嵌入式表达式](../../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)。  
+ 您可以将嵌入[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]XML 文本中的表达式。 在运行时，应用程序创建[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)]每个文本包含嵌入的表达式的值的对象。 这允许您指定在 XML 文本的动态内容。 有关详细信息，请参阅[XML 中的嵌入式表达式](../../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)。  
   
- 有关 XML 文本语法和 XML 1.0 语法之间差异的更多信息，请参见 [XML 文本和 XML 1.0 规范](../../../../visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification.md)。  
+ 关于 XML 文本语法和 XML 1.0 语法之间的差异的详细信息，请参阅[XML 文本和 XML 1.0 规范](../../../../visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification.md)。  
   
-## 简单文本  
- 通过键入或粘贴有效的 XML，可以在 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 代码中创建 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq-md.md)] 对象。  XML 元素文本返回一个 <xref:System.Xml.Linq.XElement> 对象。  有关更多信息，请参见 [XML 元素文本](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)和 [XML 文本和 XML 1.0 规范](../../../../visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification.md)。  下面的示例创建了一个具有多个子元素的 XML 元素。  
+## <a name="simple-literals"></a>简单的文本  
+ 您可以创建[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)]对象在您[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]通过键入或粘贴有效的 xml 代码。 XML 元素文本返回<xref:System.Xml.Linq.XElement>对象。</xref:System.Xml.Linq.XElement> 有关详细信息，请参阅[XML 元素文本](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)和[XML 文本和 XML 1.0 规范](../../../../visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification.md)。 下面的示例创建具有多个子元素的 XML 元素。  
   
- [!code-vb[VbXMLSamples#5](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_1.vb)]  
+ [!code-vb[VbXMLSamples #&5;](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_1.vb)]  
   
- 可以通过以 `<?xml version="1.0"?>` 开始 XML 文本来创建 XML 文档，如下面的示例所示。  XML 文档文本返回一个 <xref:System.Xml.Linq.XDocument> 对象。  有关更多信息，请参见 [XML 文档文本](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)。  
+ 可以通过启动 XML 文本与创建的 XML 文档`<?xml version="1.0"?>`，如在下面的示例所示。 返回的 XML 文档文本<xref:System.Xml.Linq.XDocument>对象。</xref:System.Xml.Linq.XDocument> 有关详细信息，请参阅[XML 文档文本](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)。  
   
- [!code-vb[VbXMLSamples#6](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_2.vb)]  
+ [!code-vb[VbXMLSamples #&6;](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_2.vb)]  
   
 > [!NOTE]
->  [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中的 XML 文本语法与 XML 1.0 规范中的语法不完全相同。  有关更多信息，请参见 [XML 文本和 XML 1.0 规范](../../../../visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification.md)。  
+>  中的 XML 文本语法[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]不等同于 XML 1.0 规范中的语法。 有关详细信息，请参阅[XML 文本和 XML 1.0 规范](../../../../visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification.md)。  
   
-## 行继续符  
- XML 文本可以跨多个行，而无需使用行继续符（空格\-下划线\-回车序列）。  这使得将代码中的 XML 文本与 XML 文档进行比较变得更加容易。  
+## <a name="line-continuation"></a>行继续符  
+ XML 文本可以跨多个行，而无需使用行继续符 （空格下划线回车序列）。 这使得更轻松地比较 XML 文档的代码中的 XML 文本。  
   
- 编译器将行继续符视为 XML 文本的一部分。  因此，仅应在空格\-下划线\-回车序列属于 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq-md.md)] 对象时使用该序列。  
+ 作为 XML 文本的一部分，则编译器将行继续符。 因此，应使用空格下划线回车序列仅在它属于时[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)]对象。  
   
- 但是，如果在嵌入式表达式中有一个多行表达式，则确实需要行继续符。  有关更多信息，请参见 [XML 中的嵌入式表达式](../../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)。  
+ 但是，如果嵌入式表达式中有多行的表达式需要行继续符。 有关详细信息，请参阅[XML 中的嵌入式表达式](../../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)。  
   
-## 在 XML 文本中嵌入查询  
- 可以在嵌入式表达式中使用查询。  如果这样做，该查询返回的元素将被添加到 XML 元素。  这使您可以将动态内容（例如用户查询的结果）添加到 XML 文本。  
+## <a name="embedding-queries-in-xml-literals"></a>在 XML 文本中嵌入的查询  
+ 可以在嵌入式表达式中使用查询。 执行此操作时，由查询返回的元素添加到的 XML 元素。 这允许您添加到 XML 文本的动态内容，例如用户查询的结果。  
   
- 例如，下面的代码借助嵌入式查询，使用 `phoneNumbers2` 数组的成员来创建 XML 元素，然后将那些元素添加为 `contact2` 的子元素。  
+ 例如，下面的代码使用嵌入式的查询从的成员创建的 XML 元素`phoneNumbers2`数组，然后将这些元素添加子级为`contact2`。  
   
- [!code-vb[VbXMLSamples#7](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_3.vb)]  
+ [!code-vb[VbXMLSamples #&7;](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_3.vb)]  
   
-## 编译器如何从 XML 文本创建对象  
- [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 编译器将 XML 文本转换为对等效 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq-md.md)] 构造函数的调用，以生成 [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq-md.md)] 对象。  例如，[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 编译器将下面的代码示例转换为对 <xref:System.Xml.Linq.XProcessingInstruction> 构造函数的调用以生成 XML 版本指令，转换为对 <xref:System.Xml.Linq.XElement> 构造函数的调用以生成 `<contact>`、`<name>` 和 `<phone>` 元素，转换为对 <xref:System.Xml.Linq.XAttribute> 构造函数的调用以生成 `type` 特性。  具体说来，给定以下示例中的特性，[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 编译器将调用 <xref:System.Xml.Linq.XAttribute.%23ctor%28System.Xml.Linq.XName%2CSystem.Object%29> 构造函数两次。  第一次调用将为 `name` 参数传递值 `type`，并且为 `value` 参数传递值 `home`。  第二次调用也将为 `name` 参数传递值 `type`，但为 `value` 参数传递值 `work`。  
+## <a name="how-the-compiler-creates-objects-from-xml-literals"></a>从 XML 文本，编译器如何创建对象  
+ [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]编译器将 XML 文本转换为等效的调用[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)]构造函数来构建[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)]对象。 例如，[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]编译器会将下面的代码示例转换为调用<xref:System.Xml.Linq.XProcessingInstruction>XML 版本指令，构造函数调用到<xref:System.Xml.Linq.XElement>构造函数`<contact>`， `<name>`，和`<phone>`元素和对调用<xref:System.Xml.Linq.XAttribute>构造函数`type`属性。</xref:System.Xml.Linq.XAttribute> </xref:System.Xml.Linq.XElement> </xref:System.Xml.Linq.XProcessingInstruction> 具体而言，在下面的示例中，提供的属性[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]编译器将调用<xref:System.Xml.Linq.XAttribute.%23ctor%28System.Xml.Linq.XName%2CSystem.Object%29>构造函数两次。</xref:System.Xml.Linq.XAttribute.%23ctor%28System.Xml.Linq.XName%2CSystem.Object%29> 第一个将值传递`type`为`name`参数和值`home`为`value`参数。 第二个还传递值`type`为`name`参数，但值`work`为`value`参数。  
   
- [!code-vb[VbXMLSamples#6](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_2.vb)]  
+ [!code-vb[VbXMLSamples #&6;](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_2.vb)]  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:System.Xml.Linq.XElement>   
  [在 Visual Basic 中创建 XML](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)   
- [XML 中的嵌入式表达式](../../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)   
+ [XML 中的嵌入式的表达式](../../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)   
  [XML 文档文本](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)   
  [XML 元素文本](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)   
  [XML 文本](../../../../visual-basic/language-reference/xml-literals/index.md)

@@ -1,38 +1,54 @@
 ---
-title: "嵌套的控件结构 (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "条件语句, 嵌套"
-  - "控制流, 嵌套的控制语句"
-  - "控件结构, 嵌套"
-  - "嵌套的控制语句"
-  - "语句 [Visual Basic], 控制流"
-  - "结构, 嵌套的控件"
-  - "Visual Basic 代码, 控制流"
+title: "嵌套的控件结构 (Visual Basic 中) |Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- Visual Basic code, control flow
+- control structures, nested
+- conditional statements, nested
+- statements [Visual Basic], control flow
+- control flow, nested control statements
+- structures, nested control
+- nested control statements
 ms.assetid: cf60b061-65d9-44a8-81f2-b0bdccd23a05
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 20
----
-# 嵌套的控件结构 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 4afc0afc2ad63d03f2c4251640d3682b2b184504
+ms.lasthandoff: 03/13/2017
 
-可以放置在其他控制语句中的控制语句，如 `If...Then...Else` 在 `For...Next` 循环块中。  控制语句放在另一个控制语句中称为 " *嵌套*。  
+---
+# <a name="nested-control-structures-visual-basic"></a>嵌套的控件结构 (Visual Basic)
+您可以控制将语句放在其他控制语句中，例如`If...Then...Else`中块`For...Next`循环。 说是一个控制语句放在另一个控制语句可*嵌套*。  
   
-## 嵌套级别  
- ，当需要，在 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 的控制结构可以嵌套到多个级别。  是为了使嵌套结构可读通过缩进每个的主体。  集成 \(IDE\)开发环境 \(ide\) 编辑器自动执行此操作。  
+## <a name="nesting-levels"></a>嵌套级别  
+ 中的控制结构[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]可以嵌套到任意数量的级别。 它是常见的做法使嵌套的结构通过缩进每个正文更具可读性。 集成的开发环境 (IDE) 编辑器自动执行此操作。  
   
- 在下面的示例中，过程 `sumRows` 以将矩阵每一行的正元素。  
+ 在下面的示例中，该过程`sumRows`相加矩阵的每个行的正元素。  
   
 ```  
 Public Sub sumRows(ByVal a(,) As Double, ByRef r() As Double)  
@@ -48,15 +64,15 @@ Public Sub sumRows(ByVal a(,) As Double, ByRef r() As Double)
 End Sub  
 ```  
   
- 在前面的示例中，第一个 `Next` 语句关闭内部 `For` 周期，并且最后 `Next` 语句关闭外部 `For` 循环。  
+ 在前面的示例中，第一个`Next`语句关闭内部`For`循环和最后一个`Next`语句关闭外部`For`循环。  
   
- 同样，在嵌套的 `If` 语句， `End If` 语句自动应用于最近的早期 `If` 语句。  嵌套 `Do` 循环类似地，并与最里层 `Do` 语句的最内层的 `Loop` 语句一起使用。  
+ 同样，在嵌套`If`语句，`End If`语句自动应用到最近的前`If`语句。 嵌套`Do`循环的工作方式类似，最里层`Loop`语句匹配里面`Do`语句。  
   
 > [!NOTE]
->  对于许多控制结构，那么，当您单击某个关键字时，结构中的所有关键字都会突出显示。  例如，那么，当您在 `If...Then...Else` 构造中单击时 `If` ， `If`、 `Then`、 `ElseIf`、 `Else`和`End If` 所有实例该构造中显示。  若要移动到下一个或上一个突出显示的关键字，请按 ctrl\+shift\+ 向下键或 ctrl\+shift\+ 向上键。  
+>  对于许多控制结构，当您单击某个关键字在结构中的关键字的所有都会突出显示。 例如，当您单击`If`中`If...Then...Else`构造、 的所有实例`If`， `Then`， `ElseIf`， `Else`，和`End If`在构造过程中会突出显示。 若要将移动到下一步或上一个突出显示关键字，按 CTRL + SHIFT + 向下键或 CTRL + SHIFT + 向上键。  
   
-## 嵌套不同类型的控制结构  
- 可以嵌套在另一个类型中的控制结构。  下面的示例使用 `With` 块在 `For Each` 循环内，并且嵌套的 `If` 块在 `With` 块。  
+## <a name="nesting-different-kinds-of-control-structures"></a>嵌套不同类型的控件结构  
+ 您可以嵌套在另一种控制结构的一种。 下面的示例使用`With`在此块内`For Each`循环，而且嵌套`If`块内`With`块。  
   
 ```  
 For Each ctl As System.Windows.Forms.Control In Me.Controls  
@@ -73,15 +89,15 @@ For Each ctl As System.Windows.Forms.Control In Me.Controls
 Next ctl  
 ```  
   
-## 重叠控制结构  
- 不能重叠控制结构。  这意味着必须在下最内层的结构内完全包含所有嵌套结构。  例如，下面的排列是无效的，因为 `For` 停止循环，在内部 `With` 块停止之前。  
+## <a name="overlapping-control-structures"></a>重叠的控件结构  
+ 不能重叠控制结构。 这意味着，任何嵌套的结构都必须完全包含在下一步最里面的结构。 例如，下面的排列是无效因为`For`循环将终止之前内部`With`块终止。  
   
- ![无效嵌套示意图](../../../../visual-basic/programming-guide/language-features/control-flow/media/nestexampleinvalid.png "NestExampleInvalid")  
-无效嵌套和 with 结构的  
+ ![无效嵌套示意图](../../../../visual-basic/programming-guide/language-features/control-flow/media/nestexampleinvalid.gif "NestExampleInvalid")  
+无效嵌套的并且具有结构  
   
- [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 编译器检测到这样的重叠控制结构并发出编译时错误。  
+ [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]编译器检测到这种重叠的控制结构和标志编译时错误。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [控制流](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)   
  [决策结构](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)   
  [循环结构](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)   

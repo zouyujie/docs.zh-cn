@@ -1,81 +1,97 @@
 ---
-title: "如何：使用 LINQ 修改数据库中的数据 (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "数据 [Visual Basic], 更新"
-  - "删除数据"
-  - "删除行 [LINQ to SQL]"
-  - "插入数据 [Visual Basic]"
-  - "插入行 [LINQ to SQL]"
-  - "查询 [Visual Basic 中的 LINQ], 数据库中的数据更改"
-  - "查询 [Visual Basic 中的 LINQ], 帮助主题"
-  - "更新数据 [LINQ]"
-  - "更新行 [LINQ to SQL]"
+title: "如何︰ 通过使用 LINQ (Visual Basic 中) 来修改数据库中的数据 |Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- inserting rows [LINQ to SQL]
+- deleting rows [LINQ to SQL]
+- updating rows [LINQ to SQL]
+- inserting data [Visual Basic]
+- deleting data
+- data [Visual Basic], updating
+- updating data [LINQ]
+- queries [LINQ in Visual Basic], data changes in database
+- queries [LINQ in Visual Basic], how-to topics
 ms.assetid: cf52635f-0c1b-46c3-aff1-bdf181cf19b1
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 15
----
-# 如何：使用 LINQ 修改数据库中的数据 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 44ca3e44d8411a6329d176eb778677bfab2b365c
+ms.lasthandoff: 03/13/2017
 
-使用语言集成查询 \(LINQ\) 可以方便地访问数据库信息和修改数据库中的值。  
+---
+# <a name="how-to-modify-data-in-a-database-by-using-linq-visual-basic"></a>如何：使用 LINQ 修改数据库中的数据 (Visual Basic)
+语言集成查询 (LINQ) 查询更加易于访问数据库信息和修改数据库中的值。  
   
- 下面的示例演示如何创建用于检索和更新 SQL Server 数据库信息的新应用程序。  
+ 下面的示例演示如何创建新的应用程序，以检索和更新信息在 SQL Server 数据库中。  
   
- 本主题中的示例使用 Northwind 示例数据库。  如果没有在开发计算机中安装 Northwind 示例数据库，可以从 [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088)（Microsoft 下载中心）网站下载该数据库。  有关说明，请参见[下载示例数据库](../Topic/Downloading%20Sample%20Databases.md)。  
+ 本主题中的示例使用罗斯文示例数据库。 如果您的开发计算机上没有 Northwind 示例数据库，您可以下载它从[Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088) Web 站点。 有关说明，请参阅[下载示例数据库](https://msdn.microsoft.com/library/bb399411)。  
   
-### 创建与数据库的连接  
+### <a name="to-create-a-connection-to-a-database"></a>若要创建与数据库的连接  
   
-1.  在 Visual Studio 中，单击**“视图”**菜单，选择**“服务器资源管理器”**\/**“数据库资源管理器”**，打开**“服务器资源管理器”**\/**“数据库资源管理器”**。  
+1.  在 Visual Studio 中，打开**服务器资源管理器**/**数据库资源管理器**通过单击**视图**菜单，然后再选择**服务器资源管理器**/**数据库资源管理器**。  
   
-2.  在**“服务器资源管理器”**\/**“数据库资源管理器”**中，右击**“数据连接”**，然后单击**“添加连接”**。  
+2.  用鼠标右键单击**数据连接**中**服务器资源管理器**/**数据库资源管理器**，然后单击**添加连接**。  
   
-3.  指定与 Northwind 示例数据库的有效连接。  
+3.  指定到 Northwind 示例数据库的有效连接。  
   
-### 将 LINQ to SQL 文件添加到项目  
+### <a name="to-add-a-project-with-a-linq-to-sql-file"></a>若要将使用 LINQ 项目添加到 SQL 文件  
   
-1.  在 Visual Studio 中的**“文件”**菜单上，指向**“新建”**，然后单击**“项目”**。  选择 Visual Basic**“Windows 窗体应用程序”**作为项目类型。  
+1.  在 Visual Studio 中，在**文件**菜单上，指向**新建**，然后单击**项目**。 选择 Visual Basic **Windows 窗体应用程序**作为项目类型。  
   
-2.  在**“项目”**菜单上，单击**“添加新项”**。  选择**“LINQ to SQL 类”**项模板。  
+2.  在 **“项目”** 菜单上，单击 **“添加新项”**。 选择**LINQ to SQL 类**项模板。  
   
-3.  将文件命名为 `northwind.dbml`。  单击**“添加”**。  为 `northwind.dbml` 文件打开对象关系设计器（O\/R 设计器）。  
+3.  命名该文件`northwind.dbml`。 单击 **“添加”**。 对象关系设计器 （O/R 设计器） 打开以进行`northwind.dbml`文件。  
   
-### 将要查询和修改的表添加到设计器  
+### <a name="to-add-tables-to-query-and-modify-to-the-designer"></a>若要添加表以查询和修改到设计器  
   
-1.  在**“服务器资源管理器”**\/**“数据库资源管理器”**中，展开与 Northwind 数据库的连接。  展开**“表”**文件夹。  
+1.  在**服务器资源管理器**/**数据库资源管理器**，展开 Northwind 数据库的连接。 展开**表**文件夹。  
   
-     如果已经关闭 O\/R 设计器，可以通过双击先前添加的 `northwind.dbml` 文件重新将其打开。  
+     如果已经关闭 O/R 设计器，您可以重新打开它通过双击`northwind.dbml`前面添加的文件。  
   
-2.  单击 Customers 表并将它拖到设计器的左窗格上。  
+2.  单击客户表，将其拖到设计器的左窗格中。  
   
-     设计器为项目创建新的 Customer 对象。  
+     设计器创建新的 Customer 对象为你的项目。  
   
 3.  保存所做的更改并关闭设计器。  
   
-4.  保存您的项目。  
+4.  保存你的项目。  
   
-### 添加用于修改数据库和显示结果的代码  
+### <a name="to-add-code-to-modify-the-database-and-display-the-results"></a>添加代码以修改数据库并显示结果  
   
-1.  从**“工具箱”**中，将 <xref:System.Windows.Forms.DataGridView> 控件拖到项目的默认 Windows 窗体 Form1 上。  
+1.  从**工具箱**，拖动<xref:System.Windows.Forms.DataGridView>控件拖放到您的项目，form1 的默认设置 Windows 窗体。</xref:System.Windows.Forms.DataGridView>  
   
-2.  将表添加到 O\/R 设计器后，设计器会向项目中添加一个 <xref:System.Data.Linq.DataContext> 对象。  此对象包含可用于访问 Customers 表的代码。  还包含为表定义局部 Customer 对象和 Customers 集合的代码。  项目的 <xref:System.Data.Linq.DataContext> 对象是根据 .dbml 文件的名称命名的。  对于此项目，<xref:System.Data.Linq.DataContext> 对象被命名为 `northwindDataContext`。  
+2.  当表添加到 O/R 设计器时，设计器添加<xref:System.Data.Linq.DataContext>对象传递给您的项目。</xref:System.Data.Linq.DataContext> 此对象包含可用于访问客户表的代码。 它还包含用于定义本地的客户对象和一个客户集合，以便对表的代码。 <xref:System.Data.Linq.DataContext>对象名为您的项目根据.dbml 文件的名称。</xref:System.Data.Linq.DataContext> 对于此项目，<xref:System.Data.Linq.DataContext>对象被命名为`northwindDataContext`。</xref:System.Data.Linq.DataContext>  
   
-     可以在代码中创建 <xref:System.Data.Linq.DataContext> 对象的实例，也可以查询和修改 O\/R 设计器所指定的 Customers 集合。  通过调用 <xref:System.Data.Linq.DataContext> 对象的 <xref:System.Data.Linq.DataContext.SubmitChanges%2A> 方法提交对 Customers 集合所做的更改之后，这些更改才会在数据库中反映出来。  
+     您可以创建的实例<xref:System.Data.Linq.DataContext>对象在您的代码和查询和修改由 O/R 设计器指定的客户集合。</xref:System.Data.Linq.DataContext> 之前通过调用将提交对 Customers 集合所做的更改不会反映在数据库中<xref:System.Data.Linq.DataContext.SubmitChanges%2A>方法<xref:System.Data.Linq.DataContext>对象。</xref:System.Data.Linq.DataContext> </xref:System.Data.Linq.DataContext.SubmitChanges%2A>  
   
-     双击 Windows 窗体 Form1，可将代码添加到 <xref:System.Windows.Forms.Form.Load> 事件，以便查询公开为 <xref:System.Data.Linq.DataContext> 的属性的 Customers 表。  添加下列代码：  
+     双击 Windows 窗体，form1，以将代码添加到<xref:System.Windows.Forms.Form.Load>事件，以查询作为您<xref:System.Data.Linq.DataContext>。</xref:System.Data.Linq.DataContext>属性公开的客户表</xref:System.Windows.Forms.Form.Load> 添加以下代码：  
   
-    ```vb#  
+    ```vb  
     Private db As northwindDataContext  
   
     Private Sub Form1_Load(ByVal sender As System.Object,   
@@ -95,11 +111,11 @@ caps.handback.revision: 15
     End Sub  
     ```  
   
-3.  从**“工具箱”**中将三个 <xref:System.Windows.Forms.Button> 控件拖到窗体上。  选择第一个 `Button` 控件。  在**“属性”**窗口中，将 `Button` 控件的 `Name` 设置为 `AddButton`，将 `Text` 设置为 `Add`。  选择第二个按钮，将 `Name` 属性设置为 `UpdateButton`，将 `Text` 属性设置为 `Update`。  选择第三个按钮，将 `Name` 属性设置为 `DeleteButton`，将 `Text` 属性设置为 `Delete`。  
+3.  从**工具箱**，将三个<xref:System.Windows.Forms.Button>拖到窗体的控件。</xref:System.Windows.Forms.Button> 选择第一个`Button`控件。 在**属性**窗口中，设置`Name`的`Button`控制转移到`AddButton`和`Text`到`Add`。 选择第二个按钮并设置`Name`属性设置为`UpdateButton`和`Text`属性设置为`Update`。 选择第三个按钮并设置`Name`属性设置为`DeleteButton`和`Text`属性设置为`Delete`。  
   
-4.  双击**“Add”**按钮，向其 `Click` 事件添加代码。  添加下列代码：  
+4.  双击**添加**按钮以将代码添加到其`Click`事件。 添加以下代码：  
   
-    ```vb#  
+    ```vb  
     Private Sub AddButton_Click(ByVal sender As System.Object,   
                                 ByVal e As System.EventArgs  
                                ) Handles AddButton.Click  
@@ -122,9 +138,9 @@ caps.handback.revision: 15
     End Sub  
     ```  
   
-5.  双击**“Update”**按钮，向其 `Click` 事件添加代码。  添加下列代码：  
+5.  双击**更新**按钮以将代码添加到其`Click`事件。 添加以下代码：  
   
-    ```vb#  
+    ```vb  
     Private Sub UpdateButton_Click(ByVal sender As System.Object, _  
                                    ByVal e As System.EventArgs  
                                   ) Handles UpdateButton.Click  
@@ -143,9 +159,9 @@ caps.handback.revision: 15
     End Sub  
     ```  
   
-6.  双击**“Delete”**按钮，向其 `Click` 事件添加代码。  添加下列代码：  
+6.  双击**删除**按钮以将代码添加到其`Click`事件。 添加以下代码：  
   
-    ```vb#  
+    ```vb  
     Private Sub DeleteButton_Click(ByVal sender As System.Object, _  
                                    ByVal e As System.EventArgs  
                                   ) Handles DeleteButton.Click  
@@ -164,12 +180,11 @@ caps.handback.revision: 15
     End Sub  
     ```  
   
-7.  按 F5 运行项目。  单击**“Add”**添加新记录。  单击**“Update”**修改该新记录。  单击**“Delete”**删除该新记录。  
+7.  按 F5 运行项目。 单击**添加**添加一条新记录。 单击**更新**修改新记录。 单击**删除**来删除新的记录。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   
  [查询](../../../../visual-basic/language-reference/queries/queries.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
- [DataContext 方法（O\/R 设计器）](/visual-studio/data-tools/datacontext-methods-o-r-designer)   
- [如何：分配存储过程以执行更新、插入和删除（O\/R 设计器）](../Topic/How%20to:%20Assign%20stored%20procedures%20to%20perform%20updates,%20inserts,%20and%20deletes%20\(O-R%20Designer\).md)   
- [演练：创建 LINQ to SQL 类（O\/R 设计器）](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)
+ [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)   
+ [DataContext 方法 （O/R 设计器）](https://docs.microsoft.com/visualstudio/data-tools/datacontext-methods-o-r-designer)   
+ [如何︰ 分配存储的过程以便执行更新、 插入和删除操作 （O/R 设计器）](http://msdn.microsoft.com/library/e88224ab-ff61-4a3a-b6b8-6f3694546cac)

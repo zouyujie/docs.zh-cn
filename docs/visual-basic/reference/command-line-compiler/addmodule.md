@@ -1,64 +1,81 @@
 ---
-title: "/addmodule | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "/addmodule 编译器选项 [Visual Basic]"
-  - "addmodule 编译器选项 [Visual Basic]"
-  - "-addmodule 编译器选项 [Visual Basic]"
+title: "/addmodule |Microsoft 文档"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- /addmodule compiler option [Visual Basic]
+- addmodule compiler option [Visual Basic]
+- -addmodule compiler option [Visual Basic]
 ms.assetid: fb4b89d4-4926-4f20-868d-427fa28497b2
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 14
----
-# /addmodule
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 949962905ec933dc42301bf8c21654e73dbe2f70
+ms.lasthandoff: 03/13/2017
 
-使编译器将指定文件中的所有类型信息对当前正在编译的项目可用。  
+---
+# <a name="addmodule"></a>/addmodule
+使编译器让指定文件中的所有类型信息可供当前正在编译的项目使用。  
   
-## 语法  
+## <a name="syntax"></a>语法  
   
 ```  
 /addmodule:fileList  
 ```  
   
-## 参数  
+## <a name="arguments"></a>参数  
  `fileList`  
- 必选。  包含元数据但不包含程序集清单的逗号分隔的文件列表。  包含空格的文件名应用双引号 \(" "\) 引起。  
+ 必需。 包含元数据，但不是包含程序集清单的文件以逗号分隔列表。 包含空格的文件名应该用引号引起来 ("")。  
   
-## 备注  
- `fileList` 参数所列文件必须用 `/target:module` 选项创建，或用其他编译器的 `/target:module` 等效项创建。  
+## <a name="remarks"></a>备注  
+ 按列出的文件`fileList`参数必须与创建`/target:module`选项，或使用其他编译器等效于`/target:module`。  
   
- 运行时，所有用 `/addmodule` 添加的模块必须与输出文件在同一目录中。  也就是说，编译时可以指定任何目录中的模块，但运行时模块必须在应用程序目录中。  否则，将会显示 <xref:System.TypeLoadException> 错误。  
+ 使用添加的所有模块`/addmodule`必须在运行时是与输出文件的相同目录中。 也就是说，您也可以在编译时，指定在任何目录中的模块，但在运行时模块必须在应用程序目录。 如果不是这样，您得到<xref:System.TypeLoadException>错误。</xref:System.TypeLoadException>  
   
- 如果以 `/addmodule`（显式或隐式地）指定除 `/target:module` 以外的其他任何 [\/target](../../../visual-basic/reference/command-line-compiler/target.md) 选项，则传递给 `/addmodule` 的文件将成为项目程序集的一部分。  如果输出文件有一个或多个用 `/addmodule` 添加的文件，则必须有程序集才能运行该输出文件。  
+ 如果指定 （隐式或显式） 任何[/target (Visual Basic 中)](../../../visual-basic/reference/command-line-compiler/target.md)选项而不`/target:module`与`/addmodule`，文件将传递给`/addmodule`成为项目的程序集的一部分。 运行具有一个输出文件所需的程序集或使用更多的文件添加`/addmodule`。  
   
- 请使用 [\/reference](../../../visual-basic/reference/command-line-compiler/reference.md) 从包含程序集的文件中导入元数据。  
+ 使用[/reference (Visual Basic 中)](../../../visual-basic/reference/command-line-compiler/reference.md)从包含程序集文件中导入元数据。  
   
 > [!NOTE]
->  `/addmodule` 选项不能在 Visual Studio 开发环境中使用；它仅在从命令行进行编译时可用。  
+>  `/addmodule`选项不是在 Visual Studio 开发环境中可用; 只有当从命令行进行编译，它才可用。  
   
-## 示例  
+## <a name="example"></a>示例  
  下面的代码创建一个模块。  
   
- [!code-vb[VbVbalrCompiler#47](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/addmodule_1.vb)]  
+ [!code-vb[VbVbalrCompiler #&47;](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/addmodule_1.vb)]  
   
- 下面的代码导入该模块的类型。  
+ 下面的代码将导入该模块的类型。  
   
- [!code-vb[VbVbalrCompiler#48](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/addmodule_2.vb)]  
+ [!code-vb[VbVbalrCompiler #&48;](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/addmodule_2.vb)]  
   
- 运行 `t1` 时，将输出 `802`。  
+ 当您运行`t1`，它将输出`802`。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Basic 命令行编译器](../../../visual-basic/reference/command-line-compiler/index.md)   
- [\/target](../../../visual-basic/reference/command-line-compiler/target.md)   
- [\/reference](../../../visual-basic/reference/command-line-compiler/reference.md)   
+ [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)   
+ [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)   
  [示例编译命令行](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

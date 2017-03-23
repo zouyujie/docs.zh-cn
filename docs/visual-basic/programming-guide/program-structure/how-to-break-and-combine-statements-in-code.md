@@ -1,72 +1,89 @@
 ---
-title: "如何：在代码中拆分和合并语句 (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "vb._"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "冒号 (:)"
-  - "续行符"
-  - "_ 续行符"
-  - ": 行分隔符"
-  - "Visual Basic 代码, 其中的换行符"
-  - "Visual Basic 代码, 换行符"
-  - "Visual Basic 代码, 续行符"
-  - "长代码行"
-  - "行终止符"
-  - "续行序列"
-  - "下划线, 代码形式"
-  - "语句 [Visual Basic], 其中的续行符"
-  - "换行符, 代码形式"
-  - "续行符"
-  - "Visual Basic 代码, 其中的续行符"
-  - "语句 [Visual Basic], 其中的换行符"
+title: "如何︰ 拆分和合并代码 (Visual Basic 中) 中的语句 |Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- vb._
+dev_langs:
+- VB
+helpviewer_keywords:
+- colons (:)
+- line continuation
+- _ line-continuation character
+- ': line separator character'
+- Visual Basic code, line breaks in
+- Visual Basic code, line breaks
+- Visual Basic code, line continuation
+- long lines of code
+- line terminator
+- line-continuation sequence
+- underscores, in code
+- statements [Visual Basic], line continuation in
+- line breaks, in code
+- line-continuation character
+- Visual Basic code, line continuation in
+- statements [Visual Basic], line breaks in
 ms.assetid: dea01dad-a8ac-484a-bb3a-8c45a1b1eccc
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 21
----
-# 如何：在代码中拆分和合并语句 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 840036a91f430f72e0258b8be466770f2855a58f
+ms.lasthandoff: 03/13/2017
 
-编写代码时，时常会创建一些很长的语句，使得您必须在代码编辑器中进行水平滚动。  尽管这不会影响该方法您的代码运行时，它使得难以让您或任何人都可以读取代码，则监视器上显示  在这种情况下，应该考虑将单个长语句拆分为几行。  
+---
+# <a name="how-to-break-and-combine-statements-in-code-visual-basic"></a>如何：在代码中拆分和合并语句 (Visual Basic)
+时编写代码时，有时可能要创建一些冗长的语句都必须采取措施水平滚动在代码编辑器中。 尽管这不会影响的方式代码运行，这使得困难为你或其他任何人阅读该代码，因为其出现在显示器上。 在这种情况下，应考虑将单个的长语句分成多个行。  
   
-### 将单个语句拆分为多行  
+### <a name="to-break-a-single-statement-into-multiple-lines"></a>若要拆分为多行的一条语句  
   
--   在您要将该行断开的点处使用行继续符，它是一个下划线 \(`_`\)。  必须紧跟在消去并由行结束符后面紧跟一个下划线 \(回车\)。  
+-   使用行继续符，它是一个下划线 (`_`)，您想要中断的行的时刻。 该下划线必须紧跟在空格后，并且在它后面紧跟行终止符（回车）。  
   
     > [!NOTE]
-    >  有时，因此，如果省略行继续符，Visual Basic 编译器将在下一代码行隐式继续该语句。  有关语法元素列表可以省略行继续符，请参见中的“隐式行继续”[语句](../../../visual-basic/programming-guide/language-features/statements.md)。  
+    >  在某些情况下，如果您忽略行继续符，Visual Basic 编译器将隐式 continue 语句在下一行代码上。 有关可以为其省略行继续符的语法元素的列表，请参阅"隐式行继续符"[语句](../../../visual-basic/programming-guide/language-features/statements.md)。  
   
-     在下面的示例中，语句被拆分为四行。除最后一行外，前三行都以行继续符结尾。  
+     在下面的示例中，该语句分成四行终止所有的行继续符，但最后一行。  
   
-     [!code-vb[VbVbcnConventions#20](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/how-to-break-and-combine-statements-in-code_1.vb)]  
+     [!code-vb[VbVbcnConventions #&20;](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/how-to-break-and-combine-statements-in-code_1.vb)]  
   
-     这样可以使代码更易于阅读，不管是在联机状态下还是在打印后。  
+     这样可以使代码易于阅读，在线和当打印。  
   
-     行继续符必须是行的最后一个字符。  您不能跟有任何其他内容在同一行。  
+     行继续符必须在行上的最后一个字符。 您不能与任何其他内容按照其在同一行。  
   
-     存在一些限制。可以使用行继续字符的位置；例如，不能在参数名中间使用它。  可以用行继续符拆分一个参数列表，但单个参数名必须保持完整。  
+     存在一些限制，您可以使用行继续符字符;例如，不能使用它的参数名的中间。 您可以中断参数列表与行继续符，但参数的各个名称必须保持不变。  
   
-     使用行继续字符，则不能继续注释。  编译器将不检查在注释的字符特殊意义的。  要将注释拆分为多行，请在每行的前面重复使用注释符号 \(`'`\)。  
+     通过使用行继续符，无法继续注释。 编译器不会检查具有特殊含义的注释中的字符。 对于多行注释，请重复注释符号 (`'`) 在每一行上。  
   
- 虽然将每个语句在单独的行是推荐使用的方法，[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 同样允许在同一行上放置多个语句。  
+ 将每个语句放在单独的行是推荐的方法，尽管[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]还允许您在同一行上放置多个语句。  
   
-### 将多个语句置于同一行  
+### <a name="to-place-multiple-statements-on-the-same-line"></a>若要在同一行上放置多个语句  
   
--   用冒号 \(`:`\) 将各语句分开，如下面的示例所示。  
+-   将语句分隔冒号开头 (`:`)，如下面的示例。  
   
-     [!code-vb[VbVbcnConventions#10](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/how-to-break-and-combine-statements-in-code_2.vb)]  
+     [!code-vb[VbVbcnConventions #&10;](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/how-to-break-and-combine-statements-in-code_2.vb)]  
   
-## 请参阅  
+## <a name="see-also"></a>请参见  
  [程序结构和代码约定](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)   
  [语句](../../../visual-basic/programming-guide/language-features/statements.md)

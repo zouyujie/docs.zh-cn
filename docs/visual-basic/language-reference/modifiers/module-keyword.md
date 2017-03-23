@@ -1,38 +1,56 @@
 ---
-title: "Module &lt;关键字&gt; (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "vb.ModuleAttribute"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "特性块, Module 关键字"
-  - "Module 关键字"
-  - "Module 修饰符"
+title: "模块&lt;关键字&gt;(Visual Basic 中) |Microsoft 文档"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- vb.ModuleAttribute
+dev_langs:
+- VB
+helpviewer_keywords:
+- Module keyword
+- Module modifier
+- attribute blocks, Module keyword
 ms.assetid: d971b940-05ab-4d56-8485-e3b8a661906b
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 13
----
-# Module &lt;关键字&gt; (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 3985e9b3f0aeff9e7fdd58e96731670b3a9b3316
+ms.lasthandoff: 03/13/2017
 
-指定位于源文件开头的特性将应用于当前程序集模块。  
+---
+# <a name="module-ltkeywordgt-visual-basic"></a>模块&lt;关键字&gt;(Visual Basic)
+指定源文件开头特性应用于当前程序集模块。  
   
-## 备注  
- 许多特性属于单个编程元素，例如类或属性。  您可以通过将特性块附加在尖括号 \(`< >`\) 内，将此类特性直接应用到声明语句。  
+## <a name="remarks"></a>备注  
+ 很多特性适用于单个的编程元素，例如一个类或属性。 通过将附加特性块，在尖括号中的应用此类属性 (`< >`)，直接到声明语句。  
   
- 如果特性不仅属于下面的元素，而且属于当前程序集模块，则可以将特性块放在源文件的开头，并使用 `Module` 关键字标识该特性。  如果它应用于整个程序集，则可以使用 [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md) 关键字。  
+ 如果属性不仅到下面的元素，而且当前的程序集模块，您的源文件的起始处放置属性块，并确定具有的属性`Module`关键字。 如果它适用于整个程序集，则使用[程序集](../../../visual-basic/language-reference/modifiers/assembly.md)关键字。  
   
- `Module` 修饰符与 [Module 语句](../../../visual-basic/language-reference/statements/module-statement.md) 不同。  
+ `Module`修饰符不可相同[模块语句](../../../visual-basic/language-reference/statements/module-statement.md)。  
   
-## 请参阅  
- [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)   
+## <a name="see-also"></a>另请参阅  
+ [程序集](../../../visual-basic/language-reference/modifiers/assembly.md)   
  [Module 语句](../../../visual-basic/language-reference/statements/module-statement.md)   
- [特性](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)
+ [属性概述](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+
+

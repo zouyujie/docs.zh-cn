@@ -1,94 +1,109 @@
 ---
-title: "区域性对字符串的影响 (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "区域设置, 对字符串的作用"
-  - "字符串 [Visual Basic], 区域设置依赖"
+title: "区域性对在 Visual Basic 中的字符串的影响 |Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- locale, effect on strings
+- strings [Visual Basic], locale dependence
 ms.assetid: c4664444-ee0d-47bf-bef1-eaa3c54bdd7f
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 20
----
-# 区域性对字符串的影响 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 63228a40897b29d0324be73ca1a17bcb19af2a16
+ms.lasthandoff: 03/13/2017
 
-此帮助页讨论 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 如何使用区域性信息来执行字符串转换和比较。  
+---
+# <a name="how-culture-affects-strings-in-visual-basic"></a>区域性对字符串的影响 (Visual Basic)
+此帮助页讨论如何[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]使用区域性信息来执行字符串转换和比较。  
   
-## 何时使用特定于区域性的字符串  
- 通常，应该对提供给用户和从用户输入中读取的所有数据使用特定于区域性的字符串，而对应用程序的内部数据使用区域性固定的字符串。  
+## <a name="when-to-use-culture-specific-strings"></a>何时使用特定于区域性的字符串  
+ 通常情况下，应使用特定于区域性的字符串的所有数据呈现给和阅读来自用户，并对应用程序的内部数据使用固定区域性的字符串。  
   
- 例如，如果应用程序要求用户以字符串形式输入日期，则应预计到用户会根据各自的区域性对字符串进行格式设置，因此，应用程序应适当地转换字符串。  如果应用程序随后在其用户界面中呈现日期，则应按照用户的区域性来呈现。  
+ 例如，如果您的应用程序要求用户输入日期作为字符串，它应指望用户能以根据其区域性的字符串设置格式和应用程序应适当地转换字符串。 如果您的应用程序然后显示该日期在其用户界面，它应该存在它在用户的区域性。  
   
- 但是，如果应用程序将日期上载到中央服务器，则应依据某个特定的区域性来设置字符串格式，以防止在可能不同的日期格式间出现混淆。  
+ 但是，如果应用程序上载到中心服务器的日期，它应格式根据某个特定的区域性，以防止混淆之间可能不同的日期格式字符串。  
   
-## 区分区域性的函数  
- 所有 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 字符串转换函数（除 `Str` 和 `Val` 函数外）都使用应用程序的区域性信息，以确保转换和比较适合于应用程序用户的区域性。  
+## <a name="culture-sensitive-functions"></a>区分区域性的函数  
+ 所有[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]字符串转换函数 (除`Str`和`Val`函数) 使用应用程序的区域性信息以确保转换和比较适合于应用程序的用户的区域性。  
   
- 在运行于具有不同区域性设置的计算机上的应用程序中成功使用字符串转换函数的关键在于：了解哪些函数使用特定的区域性设置，哪些函数使用当前区域性设置。  请注意，应用程序的区域性设置默认情况下是从操作系统的区域性设置中继承的。  有关更多信息，请参见 <xref:Microsoft.VisualBasic.Strings.Asc%2A>、<xref:Microsoft.VisualBasic.Strings.AscW%2A>、<xref:Microsoft.VisualBasic.Strings.Chr%2A>、<xref:Microsoft.VisualBasic.Strings.ChrW%2A>、<xref:Microsoft.VisualBasic.Strings.Format%2A>、<xref:Microsoft.VisualBasic.Conversion.Hex%2A>、<xref:Microsoft.VisualBasic.Conversion.Oct%2A> 和 [类型转换函数](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)。  
+ 在具有不同的区域性设置的计算机运行的应用程序中使用字符串转换函数成功的关键是了解哪个函数将使用特定的区域性设置，并使用当前区域性设置。 请注意，应用程序的区域性设置，默认情况下，继承的操作系统的区域性设置。 有关详细信息，请参阅<xref:Microsoft.VisualBasic.Strings.Asc%2A>， <xref:Microsoft.VisualBasic.Strings.AscW%2A>， <xref:Microsoft.VisualBasic.Strings.Chr%2A>， <xref:Microsoft.VisualBasic.Strings.ChrW%2A>， <xref:Microsoft.VisualBasic.Strings.Format%2A>， <xref:Microsoft.VisualBasic.Conversion.Hex%2A>， <xref:Microsoft.VisualBasic.Conversion.Oct%2A>，和[类型转换函数](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)。</xref:Microsoft.VisualBasic.Conversion.Oct%2A> </xref:Microsoft.VisualBasic.Conversion.Hex%2A> </xref:Microsoft.VisualBasic.Strings.Format%2A> </xref:Microsoft.VisualBasic.Strings.ChrW%2A> </xref:Microsoft.VisualBasic.Strings.Chr%2A> </xref:Microsoft.VisualBasic.Strings.AscW%2A> </xref:Microsoft.VisualBasic.Strings.Asc%2A>  
   
- 在字符串和数字之间进行转换时，`Str`（将数字转换为字符串）以及 `Val`（将字符串转换为数字）函数不使用应用程序的区域性信息。  相反，它们只将句点 \(.\) 识别为有效的小数点分隔符。  与这些函数类似的可识别区域性的函数包括：  
+ `Str` （将数字转换为字符串） 和`Val`（将字符串转换为数字） 函数在字符串和数字之间进行转换时不使用应用程序的区域性信息。 相反，它们将句点 （.） 识别为有效的小数分隔符。 可识别区域性的这些函数是︰  
   
--   **使用当前区域性的转换。** `CStr` 和 `Format` 函数将数字转换为字符串，而 `CDbl` 和 `CInt` 函数将字符串转换为数字。  
+-   **使用当前区域性的转换。** `CStr`和`Format`函数将数字转换为一个字符串，并且`CDbl`和`CInt`函数将字符串转换为数字。  
   
--   **使用特定区域性的转换。**每个数字对象都有一个将数字转换为字符串的 `ToString(IFormatProvider)` 方法，以及一个将字符串转换为数字的 `Parse(String, IFormatProvider)` 方法。  例如，`Double` 类型提供了 <xref:System.Double.ToString%28System.IFormatProvider%29> 和 <xref:System.Double.Parse%28System.String%2CSystem.IFormatProvider%29> 方法。  
+-   **使用特定区域性的转换。** 每个数字的对象都有`ToString(IFormatProvider)`方法，将数字转换为一个字符串，和一个`Parse(String, IFormatProvider)`将字符串转换为数字的方法。 例如，`Double`类型提供了<xref:System.Double.ToString%28System.IFormatProvider%29>和<xref:System.Double.Parse%28System.String%2CSystem.IFormatProvider%29>方法。</xref:System.Double.Parse%28System.String%2CSystem.IFormatProvider%29> </xref:System.Double.ToString%28System.IFormatProvider%29>  
   
- 有关更多信息，请参见 <xref:Microsoft.VisualBasic.Conversion.Str%2A> 和 <xref:Microsoft.VisualBasic.Conversion.Val%2A>。  
+ 有关详细信息，请参阅<xref:Microsoft.VisualBasic.Conversion.Str%2A>和<xref:Microsoft.VisualBasic.Conversion.Val%2A>。</xref:Microsoft.VisualBasic.Conversion.Val%2A> </xref:Microsoft.VisualBasic.Conversion.Str%2A>  
   
-## 使用特定区域性  
- 假设您正在开发一个将日期（设置为字符串格式）发送到 Web 服务的应用程序。  在这种情况下，应用程序必须为字符串转换使用特定区域性。  为了阐述原因，请考虑一下使用日期的 <xref:System.DateTime.ToString> 方法的结果：如果应用程序使用该方法来设置日期“2005 年 7 月 4 日”的格式，在使用美国英语 \(en\-US\) 区域性运行时，它将返回“7\/4\/2005 12:00:00 AM”，但在使用德语 \(de\-DE\) 区域性运行时，它将返回“04.07.2005 00:00:00”。  
+## <a name="using-a-specific-culture"></a>使用非特定区域性  
+ 假设您正在开发的应用程序向 Web 服务发送日期 （格式为字符串）。 在这种情况下，您的应用程序必须使用特定区域性的字符串转换。 为了说明原因，请考虑使用的日期的结果<xref:System.DateTime.ToString>方法︰ 如果您的应用程序使用该方法来格式化日期 2005 年 7 月 4 日，它将返回"2005 年 7 月 4 日 12:00:00 AM"与美国英语 (EN-US) 区域性中，运行时，但它将返回"04.07.2005 00:00:00"德语 (DE-DE) 区域性与运行时。</xref:System.DateTime.ToString>  
   
- 在需要采用特定区域性格式执行字符串转换时，应使用 [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort-md.md)] 内置的 `CultureInfo` 类。  通过将区域性的名称传递到 <xref:System.Globalization.CultureInfo.%23ctor%2A> 构造函数，您可以为某个特定区域性创建新的 `CultureInfo` 对象。  <xref:System.Globalization.CultureInfo> 类的“帮助”页中列出了支持的区域性名称。  
+ 如果您需要执行特定区域性的格式的字符串转换，您应使用`CultureInfo`类内置于[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]。 您可以创建一个新`CultureInfo`针对特定区域性的区域性将名称传递到由对象<xref:System.Globalization.CultureInfo.%23ctor%2A>构造函数。</xref:System.Globalization.CultureInfo.%23ctor%2A> 支持的区域性名称列在<xref:System.Globalization.CultureInfo>类帮助页。</xref:System.Globalization.CultureInfo>  
   
- 或者，您可以从 <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> 属性中获取固定区域性的实例。  虽然固定区域性基于英语区域性，但也存在一些差异。  例如，固定区域性指定 24 小时制，而不是 12 小时制。  
+ 或者，您可以获取其实例*固定区域性*从<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>属性。</xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> 固定区域性基于英语区域性中，但有一些差异。 例如，固定区域性指定而不是以 12 小时时钟制采用 24 小时制。  
   
- 若要将日期转换为与区域性对应的字符串，请将 <xref:System.Globalization.CultureInfo> 对象传递到日期对象的 <xref:System.DateTime.ToString%28System.IFormatProvider%29> 方法。  例如，无论应用程序的区域性设置如何，以下代码都会显示“07\/04\/2005 00:00:00”。  
+ 若要将日期转换为区域性的字符串，将传递<xref:System.Globalization.CultureInfo>对象传递给 date 对象<xref:System.DateTime.ToString%28System.IFormatProvider%29>方法。</xref:System.DateTime.ToString%28System.IFormatProvider%29> </xref:System.Globalization.CultureInfo> 例如，下面的代码显示"07/04/2005年 00:00:00"，而不考虑应用程序的区域性设置。  
   
- [!code-vb[VbVbalrConcepts#1](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/codesnippet/VisualBasic/how-culture-affects-strings_1.vb)]  
+ [!code-vb[VbVbalrConcepts #&1;](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/codesnippet/VisualBasic/how-culture-affects-strings_1.vb)]  
   
 > [!NOTE]
->  将总是依据英语区域性解释日期文本。  
+>  Date 文本始终解释取决于英语区域性设置中。  
   
-## 比较字符串  
- 在以下两种很重要的情况下，需要进行字符串比较：  
+## <a name="comparing-strings"></a>比较字符串  
+ 有两种重要的情况下需要字符串比较的位置︰  
   
--   **对数据进行排序，以便向用户显示。**使用基于当前区域性的运算，以使字符串正确排序。  
+-   **向用户显示的数据进行排序。** 使用基于当前区域性，因此字符串正确排序操作。  
   
--   **确定两个应用程序内部字符串是否完全匹配（通常用于安全目的）。**使用不考虑当前区域性的运算。  
+-   **确定是否两个应用程序内部字符串完全匹配 （通常出于安全目的）。** 使用忽略当前区域性的操作。  
   
- 使用 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] <xref:Microsoft.VisualBasic.Strings.StrComp%2A> 函数可以执行这两种类型的比较。  指定可选参数 `Compare` 可控制比较的类型：对于大多数输入和输出，可指定 `Text`，如果要确定是否完全匹配，可指定 `Binary`。  
+ 您还可以使用的比较这两种类型[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]<xref:Microsoft.VisualBasic.Strings.StrComp%2A>函数。</xref:Microsoft.VisualBasic.Strings.StrComp%2A> 指定可选`Compare`参数控制比较的类型︰`Text`对于大多数输入和输出`Binary`用于确定完全匹配项。  
   
- `StrComp` 函数返回一个整数，该整数指示所比较的两个字符串之间基于排序顺序的关系。  正数结果值指示第一个字符串大于第二个字符串。  负数结果指示第一个字符串较小，而零指示两个字符串相等。  
+ `StrComp`函数将返回一个整数，指示在排序顺序基于比较的两个字符串之间的关系。 结果为正值指示第一个字符串大于第二个字符串。 产生负数结果指示第一个字符串较小，而零表示的字符串之间的相等性。  
   
- [!code-vb[VbVbalrStrings#22](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_2.vb)]  
+ [!code-vb[VbVbalrStrings #&22;](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_2.vb)]  
   
- 也可以使用 [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort-md.md)] 中与 `StrComp` 函数对应的 <xref:System.String.Compare%2A?displayProperty=fullName> 方法。  这是基字符串类的静态重载方法。  下面的示例阐释如何使用此方法：  
+ 您还可以使用[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]合作伙伴`StrComp`函数，<xref:System.String.Compare%2A?displayProperty=fullName>方法。</xref:System.String.Compare%2A?displayProperty=fullName> 这是 base 字符串类的静态，重载方法。 下面的示例演示如何使用此方法︰  
   
- [!code-vb[VbVbalrStrings#48](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_3.vb)]  
+ [!code-vb[VbVbalrStrings #&48;](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_3.vb)]  
   
- 为了更细致地控制比较的执行方式，您可以使用 <xref:System.String.Compare%2A> 方法的附加重载。  利用 <xref:System.String.Compare%2A?displayProperty=fullName> 方法，您可以使用 `comparisonType` 参数来指定要使用哪种比较方式。  
+ 对于更好地控制如何执行比较，你可以使用的其他重载<xref:System.String.Compare%2A>方法。</xref:System.String.Compare%2A> 与<xref:System.String.Compare%2A?displayProperty=fullName>方法，则可以使用`comparisonType`参数指定要使用的比较的类型。</xref:System.String.Compare%2A?displayProperty=fullName>  
   
-||||  
-|-|-|-|  
-|`comparisonType` 参数的值|比较类型|何时使用|  
-|`Ordinal`|基于字符串组成部分字节数的比较。|在比较以下各项时使用此值：区分大小写的标识符、与安全相关的设置或者字节数必须完全匹配的其他非语言标识符。|  
-|`OrdinalIgnoreCase`|基于字符串组成部分字节数的比较。<br /><br /> `OrdinalIgnoreCase` 使用固定区域性信息来确定两个字符在什么情况下只是大小写不同。|在比较以下各项时使用此值：不区分大小写的标识符、与安全相关的设置以及 Windows 中存储的数据。|  
-|`CurrentCulture` 或 `CurrentCultureIgnoreCase`|基于字符串在当前区域性中的解读的比较。|在比较以下各项时使用这些值：向用户显示的数据、大多数用户输入以及需要语言学解读的其他数据。|  
-|`InvariantCulture` 或 `InvariantCultureIgnoreCase`|基于字符串在固定区域性中的解读的比较。<br /><br /> 此类型与 `Ordinal` 和 `OrdinalIgnoreCase` 不同，因为固定区域性将其接受范围外的字符视为等效的固定字符。|只有在比较持久数据或显示需要固定排序顺序的语言相关数据时，才使用这些值。|  
+|值`comparisonType`参数|比较类型|何时使用|  
+|---|---|---|  
+|`Ordinal`|基于字符串的组成部分字节数进行比较。|在比较时使用此值︰ 区分大小写的标识符、 与安全相关设置或字节必须完全匹配其他非语言标识符。|  
+|`OrdinalIgnoreCase`|基于字符串的组成部分字节数进行比较。<br /><br /> `OrdinalIgnoreCase`使用固定区域性信息来确定何时仅在大小写不同的两个字符。|在比较时使用此值︰ 不区分大小写的标识符、 与安全相关的设置和存储在 Windows 中的数据。|  
+|`CurrentCulture` 或 `CurrentCultureIgnoreCase`|基于字符串的解读在当前区域性的比较。|比较时使用这些值︰ 显示给用户，大多数用户输入，以及需要语言学解读的其他数据的数据。|  
+|`InvariantCulture` 或 `InvariantCultureIgnoreCase`|基于字符串的解读中固定区域性的比较。<br /><br /> 这一点不同于`Ordinal`和`OrdinalIgnoreCase`，这是因为固定区域性将其接受范围外的字符视为等效的固定字符。|仅当比较持久数据或显示与语言相关的数据需要固定的排序顺序，请使用这些值。|  
   
-### 安全注意事项  
- 如果应用程序根据比较或大小写转换运算的结果制定安全决策，则运算应使用 <xref:System.String.Compare%2A?displayProperty=fullName> 方法，并为 `comparisonType` 参数传递 `Ordinal` 或 `OrdinalIgnoreCase`。  
+### <a name="security-considerations"></a>安全注意事项  
+ 如果您的应用程序做出安全决策基于比较或大小写更改操作的结果，则该操作应该使用<xref:System.String.Compare%2A?displayProperty=fullName>方法，并传递`Ordinal`或`OrdinalIgnoreCase`为`comparisonType`参数。</xref:System.String.Compare%2A?displayProperty=fullName>  
   
-## 请参阅  
- <xref:System.Globalization.CultureInfo>   
- [字符串介绍 \(Visual Basic\)](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)   
+## <a name="see-also"></a>请参见  
+ <xref:System.Globalization.CultureInfo></xref:System.Globalization.CultureInfo>   
+ [在 Visual Basic 中字符串的简介](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)   
  [类型转换函数](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)

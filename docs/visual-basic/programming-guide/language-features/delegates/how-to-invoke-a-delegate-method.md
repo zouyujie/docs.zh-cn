@@ -1,35 +1,51 @@
 ---
-title: "如何：调用委托方法 (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
+title: "如何︰ 调用委托方法 (Visual Basic 中) |Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
 ms.assetid: b56866ae-abf9-4a5a-a855-486359455e9c
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 10
----
-# 如何：调用委托方法 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 29b20eb6089886c8111711388472004bbacea312
+ms.lasthandoff: 03/13/2017
 
-此示例演示如何将方法与委托关联然后通过委托调用该方法。  
+---
+# <a name="how-to-invoke-a-delegate-method-visual-basic"></a>如何：调用委托方法 (Visual Basic)
+此示例演示如何将一种方法与代理相关联，然后调用该方法通过该委托。  
   
-### 创建委托和匹配过程  
+### <a name="create-the-delegate-and-matching-procedures"></a>创建委托和匹配过程  
   
-1.  创建一个名为 `MySubDelegate` 的委托。  
+1.  创建名为委托`MySubDelegate`。  
   
     ```  
     Delegate Sub MySubDelegate(ByVal x As Integer)  
     ```  
   
-2.  声明一个类，该类包含与该委托具有相同签名的方法。  
+2.  声明的类，包含具有相同的签名与委托的方法。  
   
     ```  
     Class class1  
@@ -39,7 +55,7 @@ caps.handback.revision: 10
     End Class  
     ```  
   
-3.  定义一个方法，该方法创建该委托的实例并通过调用内置的 `Invoke` 方法调用与该委托关联的方法。  
+3.  定义的方法，创建委托的一个实例并调用该委托与关联通过调用内置的方法`Invoke`方法。  
   
     ```  
     Protected Sub DelegateTest()  
@@ -51,8 +67,8 @@ caps.handback.revision: 10
     End Sub  
     ```  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [Delegate 语句](../../../../visual-basic/language-reference/statements/delegate-statement.md)   
- [委托](../../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
- [事件](../../../../visual-basic/programming-guide/language-features/events/events.md)   
- [多线程应用程序](../Topic/Multithreaded%20Applications%20\(C%23%20and%20Visual%20Basic\).md)
+ [委托](../../../../visual-basic/programming-guide/language-features/delegates/index.md)   
+ [事件](../../../../visual-basic/programming-guide/language-features/events/index.md)   
+ [多线程应用程序](http://msdn.microsoft.com/library/a06a1a56-dd16-44e8-bc01-2c2255511bc6)

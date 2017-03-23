@@ -1,92 +1,108 @@
 ---
-title: "Visual Basic 中的生存期 | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "已声明的元素, 生存期"
-  - "生存期"
-  - "生存期, 已声明的元素"
-  - "生存期, Visual Basic"
-  - "共享变量生存期"
-  - "静态变量, 生存期"
-  - "静态变量, Visual Basic"
+title: "在 Visual Basic 中的生存期 |Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- static variables, lifetime
+- static variables, Visual Basic
+- declared elements, lifetime
+- Shared variable lifetime
+- lifetime, declared elements
+- lifetime, Visual Basic
+- lifetime
 ms.assetid: bd91e390-690a-469a-9946-8dca70bc14e7
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 14
----
-# Visual Basic 中的生存期
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: fa0cbdf4a8fe5e8fc41e4e4f373c79451fb7b75f
+ms.lasthandoff: 03/13/2017
 
-已声明元素的*“生存期”*是元素可供使用的时间周期。  变量是唯一具有生存期的元素。  因此，编译器将过程参数和函数返回值视为变量的特殊情况。  变量的生存期表示它可以存储值的时间周期。  在生存期内变量的值可以更改，但变量总是存储某些值。  
+---
+# <a name="lifetime-in-visual-basic"></a>Visual Basic 中的生存期
+*生存期*已声明元素的是一段时间期间它是可供使用。 变量是唯一具有生存期的元素。 出于此目的，则编译器会将过程参数和函数返回值视为变量的特殊情况。 变量的生存期表示的时间在此期间，它可以保存一个值。 其值可以更改的生存期内，但它始终包含一些值。  
   
-## 不同的生存期  
- *“成员变量”*（在模块级并且在任何过程外部声明）的生存期一般与声明该变量的元素的生存期相同。  在类或结构中声明的非共享变量作为声明该变量的类或结构的每个实例的单独副本存在。  每个这样的变量的生存期都与它的实例的生存期相同。  但是，`Shared` 变量仅有一个生存期，即应用程序运行所持续的全部时间。  
+## <a name="different-lifetimes"></a>不同的生存期  
+ 一个*成员变量*（在模块级别，任何过程之外声明） 通常都有相同的生存期声明它的元素。 声明的类或结构中的非共享的变量作为单独的类或结构声明它的每个实例的副本存在。 每个此类变量具有相同的生存期与它的实例。 但是，`Shared`变量仅有一个生存期，即持续运行您的应用程序的整个时间。  
   
- *“局部变量”*（在过程内部声明）仅在声明变量的过程的运行阶段存在。  这同样适用于过程的参数和任何函数返回值。  但是，如果该过程调用其他过程，则局部变量在被调用过程运行期间保留它们的值。  
+ 一个*局部变量*（在过程内声明） 仅在声明它的过程的运行时才存在。 这同样适用于过程的参数和返回任何函数。 但是，如果该过程调用其他过程，本地变量保留其值在被调用的过程运行时。  
   
-## 生存期的开始  
- 当控制进入声明局部变量的过程时，局部变量的生存期便开始了。  过程一开始运行，每个局部变量即被初始化为其数据类型的默认值。  当过程遇到指定初始值的 `Dim` 语句时，它将那些变量设置为那些值，即使代码已经给它们赋了其他值。  
+## <a name="beginning-of-lifetime"></a>生存期的开始  
+ 当控制权交给声明它的过程时，本地变量的生存期开始。 每个本地变量初始化为其数据类型的默认值，该过程开始时运行。 当该过程中遇到`Dim`语句中指定初始值，它将设置这些变量为这些值，即使您的代码必须对其分配了其他值。  
   
- 结构变量的每个成员被视为单独的变量初始化。  同样，数组变量的每个元素也单独初始化。  
+ 像它是一个单独的变量，会初始化结构变量的每个成员。 同样，分别初始化数组变量的每个元素。  
   
- 在过程内部的块中声明的变量（例如 `For` 循环）在进入过程时被初始化。  不管代码是否执行该块，这些初始化都会生效。  
+ 过程内部块中声明变量 (如`For`循环) 在进入过程上进行初始化。 曾经执行过代码块，这些初始化生效。  
   
-## 生存期的结束  
- 当过程终止时，不保留其局部变量的值，[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 将回收它们占用的内存。  下次调用该过程时，将再度创建并重新初始化它的所有局部变量。  
+## <a name="end-of-lifetime"></a>生存期结束  
+ 当一个过程终止时，不保留其本地变量的值，并[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]回收它们的内存。 下次调用该过程，所有本地变量重新创建和重新初始化订阅。  
   
- 当类或结构的实例终止时，它的非共享变量便失去它们的内存和值。  类或结构的每个新实例创建并初始化它的非共享变量。  但是，`Shared` 变量一直保留到应用程序停止运行时。  
+ 类或结构的实例终止时，将其非共享的变量会丢失其内存和它们的值。 类或结构的每个新实例创建，并重新初始化其非共享的变量。 但是，`Shared`变量被保留，直到您的应用程序将停止运行。  
   
-## 生存期的扩展  
- 如果用 `Static` 关键字声明局部变量，该变量的生存期要比其过程的执行时间长。  下表显示了过程声明如何确定 `Static` 变量存在的时间长度。  
+## <a name="extension-of-lifetime"></a>生存期的扩展  
+ 如果您声明的局部变量`Static`关键字，它的生存期即比其过程的执行时间更长。 下表显示了过程声明确定多长时间`Static`变量确实存在。  
   
-|过程位置与共享|静态变量生存期开始|静态变量生存期结束|  
-|-------------|---------------|---------------|  
-|在模块中（默认为共享）|第一次调用过程时|当应用程序停止运行时|  
-|在类中，`Shared`（过程不是实例成员）|对特定的实例或者对类或结构名称本身第一次调用过程时|当应用程序停止运行时|  
-|在类的实例中，非 `Shared`（过程是实例成员）|对特定的实例第一次调用过程时|当释放实例以进行垃圾回收 \(GC\) 时|  
+|过程位置与共享|静态变量生存期开始|静态变量的生存期结束|  
+|------------------------------------|-------------------------------------|-----------------------------------|  
+|（默认情况下共享） 的模块中|第一次调用该过程|在您的应用程序停止运行时|  
+|在类中， `Shared` （过程不是实例成员）|第一次调用该过程是对特定实例或者对自身的类或结构名称|在您的应用程序停止运行时|  
+|一个类的实例中不`Shared`（过程是一个实例成员）|第一次特定实例调用该过程|当垃圾回收 (GC) 释放该实例|  
   
-## 同名的静态变量  
- 可以在多个过程中用相同的名称来声明静态变量。  如果这样做，则 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 编译器将每个这样的变量视为单独的元素。  初始化这些变量中的某一个不会影响其他变量的值。  这同样适用于使用一组重载来定义过程、并在每个重载中使用相同的名称声明静态变量的情况。  
+## <a name="static-variables-of-the-same-name"></a>具有相同名称的静态变量  
+ 您可以声明具有多个过程中具有相同名称的静态变量。 如果执行此操作，[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]编译器会考虑每个此类变量视为一个单独的元素。 其中一个变量的初始化并不影响其他值。 这同样适用于定义一个具有一组重载过程并声明中每个重载具有相同名称的静态变量。  
   
-## 静态变量的包含元素  
- 可以在类中（即在该类的过程内）声明静态局部变量。  但是，不能在结构内声明静态局部变量（作为结构成员或该结构内过程的局部变量）。  
+## <a name="containing-elements-for-static-variables"></a>静态变量的包含元素  
+ 可以在该类中的过程，即声明一个类中的静态局部变量。 但是，不能声明为静态局部变量在结构中，结构成员或该结构内的一个过程的本地变量。  
   
-## 示例  
+## <a name="example"></a>示例  
   
-### 说明  
- 下面的示例使用 [Static](../../../../visual-basic/language-reference/modifiers/static.md) 关键字声明变量。  （请注意，当 [Dim 语句](../../../../visual-basic/language-reference/statements/dim-statement.md) 使用 `Static` 这样的修饰符时，您不需要 `Dim` 关键字。）  
+### <a name="description"></a>说明  
+ 下面的示例声明的变量[静态](../../../../visual-basic/language-reference/modifiers/static.md)关键字。 (请注意，不需要`Dim`关键字时[Dim 语句](../../../../visual-basic/language-reference/statements/dim-statement.md)使用修饰符，如`Static`。)  
   
-### 代码  
- [!code-vb[VbVbalrKeywords#13](../../../../visual-basic/language-reference/codesnippet/VisualBasic/lifetime_1.vb)]  
+### <a name="code"></a>代码  
+ [!code-vb[VbVbalrKeywords #&13;](../../../../visual-basic/language-reference/codesnippet/VisualBasic/lifetime_1.vb)]  
   
-### 注释  
- 在前面的示例中，过程 `runningTotal` 返回到调用代码后，变量 `applesSold` 继续存在。  下次调用 `runningTotal` 时，`applesSold` 保留其以前计算的值。  
+### <a name="comments"></a>注释  
+ 在前面的示例中，该变量`applesSold`会继续保留在过程后面从而`runningTotal`返回到调用代码。 下一次`runningTotal`调用时，`applesSold`保留其以前计算的值。  
   
- 如果已经在不使用 `Static` 的情况下声明 `applesSold`，则调用 `runningTotal` 以后，不保留以前的累积值。  下次调用 `runningTotal` 时，将重新创建 `applesSold`，并将其初始化为 0，`runningTotal` 将只返回调用它时所用的值。  
+ 如果`applesSold`内容而无需使用已声明`Static`，跨调用的将不会保留以前的累积的值`runningTotal`。 下一次`runningTotal`调用了，`applesSold`本来会被重新创建和初始化为 0，和`runningTotal`将只返回与调用了相同的值。  
   
-### 编译代码  
- 可以将静态局部变量的值初始化为其声明的一部分。  如果将数组声明为 `Static`，则可以初始化它的秩（维数）、每个维度的长度和每个元素的值。  
+### <a name="compiling-the-code"></a>编译代码  
+ 您可以初始化为其声明的一部分的静态局部变量的值。 如果您声明为一系列`Static`，则可以初始化其秩 （维数）、 每个维度的长度和各个元素的值。  
   
-### 安全性  
- 在前面的示例中，通过在模块级声明 `applesSold` 可产生相同的生存期。  但是，如果这样更改变量的范围，此过程将不再拥有对该变量的独占访问权。  由于其他过程可以访问 `applesSold` 并更改它的值，因此流量合计可能是不可靠的，并且代码可能会更难维护。  
+### <a name="security"></a>安全性  
+ 在前面的示例中，您可以通过声明生成相同的生存期`applesSold`在模块级别。 如果发生这种方式更改变量的作用域，但是，该过程将不再具有独占访问。 由于其他过程可以访问`applesSold`和将其值更改、 运行总计可能是不可靠和代码可能会更难维护。  
   
-## 请参阅  
- [Shared](../../../../visual-basic/language-reference/modifiers/shared.md)   
- [Nothing](../../../../visual-basic/language-reference/nothing.md)   
+## <a name="see-also"></a>另请参阅  
+ [共享](../../../../visual-basic/language-reference/modifiers/shared.md)   
+ [执行任何操作](../../../../visual-basic/language-reference/nothing.md)   
  [已声明的元素名称](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)   
- [对已声明元素的引用](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)   
- [Visual Basic 中的范围](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)   
- [Visual Basic 中的访问级别](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
+ [对已声明的元素的引用](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)   
+ [在 Visual Basic 中的作用域](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)   
+ [在 Visual Basic 中的访问级别](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
  [变量](../../../../visual-basic/programming-guide/language-features/variables/index.md)   
  [变量声明](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
  [数据类型疑难解答](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   

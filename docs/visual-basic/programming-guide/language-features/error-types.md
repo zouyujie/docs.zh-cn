@@ -1,44 +1,60 @@
 ---
-title: "错误类型 (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-helpviewer_keywords: 
-  - "错误 [Visual Basic], 逻辑"
-  - "错误 [Visual Basic], 语法"
-  - "错误 [Visual Basic], 类型"
-  - "异常, 类型"
-  - "逻辑错误, Visual Basic"
-  - "运行时错误, 错误类型"
-  - "语法错误, Visual Basic"
+title: "错误类型 (Visual Basic 中) |Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+helpviewer_keywords:
+- exceptions, types
+- errors [Visual Basic], types
+- errors [Visual Basic], logic
+- errors [Visual Basic], syntax
+- logic errors, Visual Basic
+- run-time errors, types of errors
+- syntax errors, Visual Basic
 ms.assetid: 3048aabf-8c97-4e13-9150-853769cb5f6f
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 13
----
-# 错误类型 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: d48756b74baf757f043e68124d8b65c2f613e595
+ms.lasthandoff: 03/13/2017
 
-在 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中，错误（也称为“异常”）分为三类：语法错误、运行时错误和逻辑错误。  
+---
+# <a name="error-types-visual-basic"></a>错误类型 (Visual Basic)
+在[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]，错误 (也称为*异常*) 分为三个类别之一︰ 语法错误、 运行时错误和逻辑错误。  
   
-## 语法错误  
- “语法错误”是编写代码时出现的错误。  当您在**“代码编辑器”**窗口中键入代码时，[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 会对其进行检查并在您出现错误（如拼错单词或者不正确地使用语言元素）时提醒您。  语法错误是最普通类型的错误。  这类错误一发生，就可以在代码环境中很容易地修复它们。  
+## <a name="syntax-errors"></a>语法错误  
+ *语法错误*是指那些编写代码时出现。 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]检查您的代码，并在您键入**代码编辑器**窗口，并提醒您，如果犯错，如拼错单词或不正确地使用一个语言元素。 语法错误则是最常见的错误类型。 您可以解决它们轻松地在编码的环境中就立即发生。  
   
 > [!NOTE]
->  `Option Explicit` 语句是避免语法错误的一种方式。  它强制您事先声明所有将用于应用程序的变量。  因此，当那些变量用于代码时，任何版式错误都将被立即捕获并修复。  
+>  `Option Explicit`语句是一种避免语法错误。 它会强制您能够提前声明应用程序中使用的所有变量。 因此，当在代码中使用这些变量时，版式的任何错误都将被立即捕获，并且可以修复。  
   
-## 运行时错误  
- “*运行时错误”*是仅在编译并运行代码后出现的错误，  其中包括可能看上去正确（因为代码中没有语法错误）但不会执行的代码。  例如，可能正确地写了一行打开某个文件的代码。  但是，如果该文件损坏，应用程序将无法执行 `Open` 函数，它会停止运行。  通过重写有错误的代码，然后重新编译并重新运行该代码，可以修复大多数运行时错误。  
+## <a name="run-time-errors"></a>运行时错误  
+ *运行时错误*是指那些仅在编译并运行您的代码后，才出现。 这些技术包括可能看上去没有问题，因为它有没有语法错误，但不是会执行的代码。 例如，您可能正确编写一行代码打开文件。 如果该文件已损坏，无法执行该应用程序，但`Open`函数，并且它将停止运行。 通过重写了错误代码，然后重新编译并重新运行它，可以修复大多数运行时错误。  
   
-## 逻辑错误  
- “*逻辑错误”*是只要使用应用程序就会出现的错误。  通常，当响应用户操作时，最不希望出现这样的结果。  例如，错误键入的键或其他外部影响可能会导致应用程序在所需的参数内停止运行，或完全停止运行。  逻辑错误通常是最难修复的类型，因为它们发生的位置一般都不明确。  
+## <a name="logic-errors"></a>逻辑错误  
+ *逻辑错误*是指那些正在使用应用程序后显示。 它们是以响应用户操作的大多数通常不需要的或意外结果。 例如，错误键入的键或其他外部影响可能会导致您的应用程序停止工作中预期的参数，或完全。 逻辑错误通常是最难的类型，若要修复，因为它不是始终清除它们发生的位置。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [Try...Catch...Finally 语句](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)   
- [调试器基础知识](/visual-studio/debugger/debugger-basics)
+ [调试器基础知识](https://docs.microsoft.com/visualstudio/debugger/debugger-basics)

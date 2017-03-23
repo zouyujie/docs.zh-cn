@@ -1,101 +1,117 @@
 ---
-title: "结构和类 (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "类 [Visual Basic]"
-  - "类 [Visual Basic], 与结构"
-  - "结构变量"
-  - "结构"
-  - "结构, 与类比较"
-  - "结构, 结构变量"
+title: "结构和类 (Visual Basic 中) |Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- classes [Visual Basic], vs. structures
+- structures
+- classes [Visual Basic]
+- structures, compared to classes
+- structures, structure variables
+- structure variables
 ms.assetid: a221e74a-ffcf-4bdc-a0f6-a088a9bf26cc
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 21
----
-# 结构和类 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: e7402ec0fcfc279470d39a4919d3b5ec8b5d9dff
+ms.lasthandoff: 03/13/2017
 
-[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 统一了结构和类的语法，因此两个实体支持的大多数功能都是相同的。  但是，在结构和类之间还有着重要的区别。  
+---
+# <a name="structures-and-classes-visual-basic"></a>结构和类 (Visual Basic)
+[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]统一的结构和类，因此这两个实体支持的大多数功能相同的语法。 但是，也有重要区别结构和类。  
   
- 类的优点在于它可以作为引用类型：与将结构变量与它的所有数据一起传递相比，传递引用更有效。  但是，结构不要求在全局堆中分配内存。  
+ 类具有引用类型的优点 — 传递一个引用是传递的所有数据结构变量比效率更高。 另一方面，结构不需要全局堆上的内存的分配。  
   
- 因为不能从结构继承，结构只应当用于不需要扩展的对象。  当希望创建的对象实例较小时使用结构，并要考虑类与结构之间性能特点的对比。  
+ 因为不能从一种结构进行继承，结构仅应该用于不需要进行扩展的对象。 当您想要创建的对象具有小型实例大小，并考虑类而不是结构的性能特征，请使用结构。  
   
-## 相同点  
- 结构和类在以下方面相同：  
+## <a name="similarities"></a>相似之处  
+ 结构和类是在以下方面类似︰  
   
--   两者都属于*“容器”*类型，这意味着它们包含其他以成员形式存在的类型。  
+-   两者都是*容器*类型，这意味着它们包含作为其成员的其他类型。  
   
--   两者都具有成员，成员可以包括构造函数、方法、属性、字段、常数、枚举、事件和事件处理程序。  但是，不要将这些成员与结构的声明*“元素”*混淆。  
+-   同时具有成员，其中可能包括构造函数、 方法、 属性、 字段、 常量、 枚举、 事件和事件处理程序。 但是，不要混淆这些成员与声明*元素*的结构。  
   
--   两者的成员可以分别有不同的访问级别。  例如，一个成员可以声明为 `Public`，而另一个可以声明为 `Private`。  
+-   两者的成员可以分别有不同的访问级别。 例如，可以声明一个成员`Public`和另一个`Private`。  
   
 -   都可实现接口。  
   
--   都有共享的构造函数，有或没有参数。  
+-   带有或不带参数，都可以有共享构造函数。  
   
--   两者都可以公开*“默认属性”*，前提是该属性至少带有一个参数。  
+-   两者都可以公开*默认属性*，前提是该属性带有至少一个参数。  
   
--   两者都可以声明和引发事件，而且两者都可以声明委托。  
+-   同时可以声明和引发事件，并且两者都可以声明的委托。  
   
-## 不同点  
- 结构和类在以下方面有所不同：  
+## <a name="differences"></a>之间的差异  
+ 结构和类在以下方面有所不同︰  
   
--   结构是*“值类型”*，而类是*“引用类型”*。  结构类型的变量包含此结构的数据，而不是像类类型那样包含对数据的引用。  
+-   结构是*值类型*; 类是*引用类型*。 结构类型的变量包含结构的数据，而不是那样包含对数据作为类类型的引用。  
   
--   结构使用堆栈分配，类使用堆分配。  
+-   结构使用堆栈堆分配。类使用堆分配。  
   
--   所有的结构元素都默认为 `Public`；类变量和常数默认为 `Private`，而其他的类成员默认为 `Public`。  类成员的这一行为提供与 Visual Basic 6.0 默认值系统的兼容。  
+-   所有结构元素都是`Public`默认; 类变量和常量都是`Private`默认情况下，其他类成员时`Public`默认情况下。 此行为对于类成员提供了与 Visual Basic 6.0 中系统的默认设置的兼容性。  
   
--   结构必须至少具有一个非共享变量或非共享的非自定义事件元素；而类可以完全是空的。  
+-   结构必须具有至少一个非共享变量或非共享、 非自定义事件元素;类可以是完全为空。  
   
--   结构元素不可声明为 `Protected`；类成员可以。  
+-   结构元素不能声明为`Protected`; 可以类成员。  
   
--   只有 [Shared](../../../../visual-basic/language-reference/modifiers/shared.md)`Sub` 结构过程才能处理事件，并且只能使用 [AddHandler 语句](../../../../visual-basic/language-reference/statements/addhandler-statement.md) 语句；而任何类过程都可以处理事件，并且可以使用 [Handles](../../../../visual-basic/language-reference/statements/handles-clause.md) 关键字或 `AddHandler` 语句。  有关更多信息，请参见 [事件](../../../../visual-basic/programming-guide/language-features/events/events.md)。  
+-   结构过程，才可以处理事件[共享](../../../../visual-basic/language-reference/modifiers/shared.md)`Sub`的过程中，并且只能[AddHandler 语句](../../../../visual-basic/language-reference/statements/addhandler-statement.md); 任何类过程可以处理事件，使用[处理](../../../../visual-basic/language-reference/statements/handles-clause.md)关键字或`AddHandler`语句。 有关详细信息，请参阅[事件](../../../../visual-basic/programming-guide/language-features/events/index.md)。  
   
--   结构变量声明不能指定初始值设定项或数组初始大小，而类变量声明可以。  
+-   结构变量声明不能指定初始值设定项或数组; 初始大小可以类变量声明。  
   
--   结构从 <xref:System.ValueType?displayProperty=fullName> 类隐式继承，不能从任何其他类型继承；而类可以从 <xref:System.ValueType?displayProperty=fullName> 以外的其他任何类继承。  
+-   结构隐式继承自<xref:System.ValueType?displayProperty=fullName>类，并从任何其他类型; 不能继承类可从任何类或其他<xref:System.ValueType?displayProperty=fullName>。</xref:System.ValueType?displayProperty=fullName>类继承</xref:System.ValueType?displayProperty=fullName>  
   
--   结构是不可继承的；而类可以继承。  
+-   结构是不可继承;类是。  
   
--   结构从不终止，所以公共语言运行时 \(CLR\) 从不对任何结构调用 <xref:System.Object.Finalize%2A> 方法；而类可由垃圾回收器 \(GC\) 终止，当检测到没有剩余的活动引用时，垃圾回收器将对类调用 <xref:System.Object.Finalize%2A>。  
+-   永远不会终止结构，因此，公共语言运行时 (CLR) 永远不会调用<xref:System.Object.Finalize%2A>方法对任何结构; 类不能由垃圾回收器 (GC)，后者将调用结尾<xref:System.Object.Finalize%2A>类当它检测到有任何活动的引用。</xref:System.Object.Finalize%2A> </xref:System.Object.Finalize%2A>  
   
--   结构不需要构造函数；而类需要。  
+-   一种结构不需要构造函数;类一样。  
   
--   结构仅当没有参数时可以有非共享的构造函数；类无论有没有参数都可以。  
+-   结构可以具有非共享的构造函数仅当它们采用的参数;类可以让它们使用或不带参数。  
   
- 每一个结构都有不带参数的隐式公共构造函数。  这个构造函数将结构的所有数据元素都初始化为默认值。  不能重定义此行为。  
+ 每个结构都有一个隐式公共构造函数不带参数。 此构造函数初始化为其默认值的结构的所有数据元素。 不能重新定义此行为。  
   
-## 实例和变量  
- 由于结构是值类型，每个结构变量都永久地绑定到一个单独的结构实例。  而类是引用类型，对象变量可在不同的时间引用各种类实例。  此区别在下列方面影响结构和类的使用：  
+## <a name="instances-and-variables"></a>实例和变量  
+ 由于结构是值类型，每个结构变量是永久地绑定到单独的结构实例。 类是引用类型，但对象变量可以在不同时间指不同的类实例。 这一区别在通过以下方式影响您的结构和类的用法︰  
   
--   **初始化。**结构变量使用结构的无参数构造函数隐式包含元素的初始化。  因此，`Dim s As struct1` 等效于 `Dim s As struct1 = New struct1()`。  
+-   **初始化。** 结构变量隐式包含使用该结构的无参数构造函数的元素的初始化。 因此，`Dim s As struct1`等同于`Dim s As struct1 = New struct1()`。  
   
--   **给变量赋值。**当将一个结构变量赋给另一个，或将结构实例传递给过程参数，所有变量元素的当前值都复制到新结构中。  当将一个对象变量赋给另一个，或传递一个对象变量到过程，仅有引用指针被复制。  
+-   **为变量赋值。** 当将一个结构变量分配给另一个，或将结构实例传递给过程参数时，变量的所有元素的当前值复制到新结构。 当将一个对象变量赋给另一个，或传递给过程的对象变量时，将复制仅有引用指针。  
   
--   **给 Nothing 赋值。**您可以将值 [Nothing](../../../../visual-basic/language-reference/nothing.md) 赋给结构变量，但实例继续保持与变量的关联。  您仍可以调用变量的方法和访问它的数据元素，但赋值重新初始化了变量元素。  
+-   **分配执行任何操作。** 你可以分配值[Nothing](../../../../visual-basic/language-reference/nothing.md)指向一个结构变量，但此实例将继续与变量相关联。 仍可以调用其方法并访问它的数据元素，但由赋值重新初始化变量的元素。  
   
-     相比之下，如果将对象变量设为 `Nothing`，将其与任何类实例断开关联，在给它赋予另一个实例前，不能通过变量访问其他成员。  
+     与之相反，如果对象变量设置为`Nothing`、 取消任何类的实例，并向其分配另一个实例之前，不能通过变量访问任何成员。  
   
--   **多个实例。**一个对象变量可以有在不同时间赋给它的不同的类实例，多个对象变量可以同时引用同一个类实例。  当通过指向同一实例的另一个变量访问时，更改的类成员的值会影响这些成员。  
+-   **多个实例。** 对象变量可以在不同时间赋给它的另一个类实例，并且多个对象变量在同一时间可以引用同一个类实例。 对类成员的值所做的更改会影响时通过指向同一个实例的另一个变量来访问这些成员。  
   
-     但是，结构元素独立存在于其自身实例中。  更改其值不会在其他任何结构变量中反映出来，即使是在同一 `Structure`声明的其他实例中。  
+     结构元素，但是，是独立于其自身实例。 为其值的更改不会反映在其他任何结构变量，即使是相同的其他实例中`Structure`声明。  
   
--   **相等。**两个结构的相等测试必须以逐个元素地进行测试的方式执行。  可以使用 <xref:System.Object.Equals%2A> 方法来比较两个对象变量。  <xref:System.Object.Equals%2A> 指示两个变量是否指向同一实例。  
+-   **相等比较。** 逐个元素测试，必须执行的两个结构相等性测试。 可以使用比较两个对象变量<xref:System.Object.Equals%2A>方法。</xref:System.Object.Equals%2A> <xref:System.Object.Equals%2A>指示两个变量是否指向同一个实例。</xref:System.Object.Equals%2A>  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [数据类型](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
  [复合数据类型](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)   
  [值类型和引用类型](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   
