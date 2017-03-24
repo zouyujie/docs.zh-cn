@@ -1,6 +1,6 @@
 ---
-title: ".NET 核心"
-description: ".NET 核心"
+title: ".NET Core"
+description: ".NET Core"
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
@@ -16,7 +16,7 @@ ms.lasthandoff: 03/02/2017
 
 ---
 
-# <a name="net-core"></a>.NET 核心
+# <a name="net-core"></a>.NET Core
 
 > 请查看[“入门”教程](getting-started.md)，了解如何创建简单的 .NET Core 应用程序。 只需几分钟即可生成并运行第一个应用。
 
