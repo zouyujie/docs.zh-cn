@@ -38,7 +38,7 @@ P/Invoke 是可用于从托管代码访问非托管库中的结构、回调和�
 
 我们从最常见的示例着手。该示例在托管代码中调用非托管函数。 让我们从命令行应用程序显示一个消息框：
 
-```cs
+```csharp
 using System.Runtime.InteropServices;
 
 public class Program {
@@ -66,7 +66,7 @@ public class Program {
 
 在 macOS 上也可以使用类似的示例。 当然，需要更改的一项设置就是 `DllImport` 特性中的库名称，因为 macOS 使用不同的方案来命名动态库。 下面的示例使用 `getpid(2)` 函数获取应用程序的进程 ID，然后控制台上列显该 ID。
 
-```cs
+```csharp
 using System;
 using System.Runtime.InteropServices;
 
@@ -89,7 +89,7 @@ namespace PInvokeSamples {
 
 当然，在 Linux 上也可以使用类似的示例。 函数名称是相同的，因为 `getpid(2)` 是 [POSIX](https://en.wikipedia.org/wiki/POSIX) 系统调用。
 
-```cs
+```csharp
 using System;
 using System.Runtime.InteropServices;
 
@@ -116,7 +116,7 @@ namespace PInvokeSamples {
 
 此功能的使用方式类似于上面所述的从托管代码调用本机进程。 对于给定的回调，需要定义一个与签名匹配的委托，并将其传入外部方法。 运行时将负责处理所有剩余工作。
 
-```cs
+```csharp
 using System;
 using System.Runtime.InteropServices;
 
@@ -160,7 +160,7 @@ namespace ConsoleApplication1 {
 
 下面显示了 Linux 和 macOS 示例。 在这些平台上，我们可以使用 C 库 `libc` 中的 `ftw` 函数。 此函数用于遍历目录层次结构，它使用指向某个函数的指针作为其参数之一。 该函数具有以下签名：`int (*fn) (const char *fpath, const struct stat *sb, int typeflag)`。
 
-```cs
+```csharp
 using System;
 using System.Runtime.InteropServices;
 
@@ -213,7 +213,7 @@ namespace PInvokeSamples {
 
 macOS 示例使用相同的函数，唯一的差别在于 `DllImport` 特性的自变量，因为 macOS 将 `libc` 保留在不同的位置。
 
-```cs
+```csharp
 using System;
 using System.Runtime.InteropServices;
 
@@ -272,7 +272,7 @@ namespace PInvokeSamples {
 
 需要封送的原因是托管代码与非托管代码中的类型并不相同。 例如，在托管代码中，可以指定 `String`。但在非托管环境中，字符串类型可以是 Unicode（“宽型”）、非 Unicode、null 结尾、ASCII，等等。默认情况下，P/Invoke 子系统会根据默认行为尽量采取适当的措施。相关信息请参阅 [MSDN](https://msdn.microsoft.com/library/zah6xy75.aspx)。 但是，如果需要额外的控制，可以使用 `MarshalAs` 特性指定要在非托管端上使用哪种预期类型。 例如，如果要将字符串作为以 null 结尾的 ANSI 字符串发送，可以执行类似于下面的操作：
 
-```cs
+```csharp
 [DllImport("somenativelibrary.dll"]
 static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
 
@@ -282,7 +282,7 @@ static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
 
 有关类型封送的另一个问题是如何将结构传入非托管方法。 例如，某些非托管方法需要使用结构作为参数。 在这种情况下，需要在环境的托管部分中创建相应的结构或类，以便将它用作参数。 不过，仅仅是定义类并不足够，还需要告知封送拆收器如何将类中的字段映射到非托管结构。 这就是 `StructLayout` 特性的作用所在。
 
-```cs
+```csharp
 [DllImport("kernel32.dll")]
 static extern void GetSystemTime(SystemTime systemTime);
 
@@ -324,7 +324,7 @@ typedef struct _SYSTEMTIME {
 
 前一示例中已经演示了如何在 Linux 和 macOS 上执行此过程。 下面再演示一次。
 
-```cs
+```csharp
 [StructLayout(LayoutKind.Sequential)]
 public class StatClass {
         public uint DeviceID;

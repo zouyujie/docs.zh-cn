@@ -31,7 +31,7 @@ C# 中的 `using` 语句和 Visual Basic 中的 `Using` 语句可以简化创建
 
 下面的示例使用 `using` 语句创建并发布 [System.IO.StreamReader](xref:System.IO.StreamReader) 对象。
 
-```cs
+```csharp
 using System;
 using System.IO;
 
@@ -77,7 +77,7 @@ End Module
 
 请注意，虽然 [StreamReader](xref:System.IO.StreamReader) 类实现 [IDisposable](xref:System.IDisposable) 接口（这指示使用非托管资源），但本示例并未显式调用 [StreamReader.Dispose](xref:System.IO.StreamReader.Dispose(System.Boolean)) 方法。 当 C# 或 Visual Basic 编译器遇到 `using` 语句时，它会发出与以下显式包含 `try/finally` 块的代码等效的中间语言 (IL)。 
 
-```cs
+```csharp
 using System;
 using System.IO;
 
@@ -134,7 +134,7 @@ End Module
 
 使用 C# 的 `using` 语句，也可以在单个语句（该语句在内部等效于嵌套的 using 语句）中获取多个资源。 下面的示例实例化两个 [StreamReader](xref:System.IO.StreamReader) 对象以读取两个不同文件的内容。 
 
-```cs
+```csharp
 using System;
 using System.IO;
 
@@ -171,7 +171,7 @@ public class Example
 
 下面的示例与上一个示例类似，只不过该示例使用 `try/catch/finally` 块实例化、使用和处理 [StreamReader](xref:System.IO.StreamReader) 对象，同时处理由 [StreamReader](xref:System.IO.StreamReader) 构造函数及其 [ReadToEnd](xref:System.IO.StreamReader.ReadToEnd) 方法引发的任何异常。 请注意，`finally` 块中的代码检查实现 [IDisposable](xref:System.IDisposable) 的对象在其调用 [Dispose](xref:System.IDisposable.Dispose) 方法之前不为 `null`。 否则可能会导致运行时发生 [NullReferenceException](xref:System.NullReferenceException) 异常。 
 
-```cs
+```csharp
 using System;
 using System.Globalization;
 using System.IO;

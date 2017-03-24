@@ -21,7 +21,7 @@ ms.lasthandoff: 03/02/2017
 
 委托定义类型，类型指定特定方法签名。 可将满足此签名的方法（静态或实例）分配给该类型的变量，然后（使用适当参数）直接调用该方法，或将其作为参数本身传递给另一方法再进行调用。 以下示例演示了委托的用法。
 
-```cs
+```csharp
 public class Program
 {
 
@@ -55,7 +55,7 @@ public class Program
 
 现在可使用 `Func<>` 委托而非自定义类型重新编写上述示例。 程序将照旧继续运行。
 
-```cs
+```csharp
 public class Program
 {
 
@@ -78,7 +78,7 @@ public class Program
 
 例如，要进行切换并使用匿名委托筛选出只有偶数的列表，然后将其打印到控制台。
 
-```cs
+```csharp
 public class Program
 {
 
@@ -115,7 +115,7 @@ lambda 表达式（或简称“lambda”）是在 C# 3.0 中作为语言集成�
 
 由于 lambda 表达式只是指定委托的另一种方式，因此应可重新编写上述示例，令其使用 lambda 表达式而不是匿名委托。
 
-```cs
+```csharp
 public class Program
 {
 
@@ -143,7 +143,7 @@ public class Program
 
 再次强调，lambda 只是委托，这意味着可将其顺利用作事件处理程序，如以下代码片段所示。
 
-```cs
+```csharp
 public MainWindow()
 {
     InitializeComponent();
