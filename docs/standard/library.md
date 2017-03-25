@@ -11,9 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 translationtype: Human Translation
-ms.sourcegitcommit: 519253bd6dc105afb138268c62347c29a6072fbb
-ms.openlocfilehash: f681b1663d1a2e6c2fbbd1cc415290d26bbbe429
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 633dcc6d966125139cb21c4e70dac4d4794ee9a4
+ms.openlocfilehash: da326fb823c16c7795a6a05ad302c13918b435aa
+ms.lasthandoff: 03/20/2017
 
 ---
 
@@ -68,7 +68,7 @@ ms.lasthandoff: 03/07/2017
 
 正式规范是一套 .cs 文件，定义标准中包含的 API。 每个[组件](https://github.com/dotnet/corefx/tree/master/src)的 [ref 目录](https://github.com/dotnet/corefx/tree/master/src/System.Runtime/ref)定义 .NET 标准库 API。 尽管 ref 项目位于 [CoreFX 存储库](https://github.com/dotnet/corefx)中，但它们并不特定于 .NET Core。
 
-[NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) 元包（[源代码](https://github.com/dotnet/corefx/blob/master/pkg/NETStandard.Library/NETStandard.Library.packages.targets)）描述用于部分定义一个或多个 .NET 标准库版本的库集。
+[NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) 元包（[源代码](https://github.com/dotnet/standard/blob/master/netstandard/pkg/NETStandard.Library.dependencies.props)）描述用于部分定义一个或多个 .NET 标准库版本的库集。
 
 给定的组件（例如 System.Runtime）描述：
 
