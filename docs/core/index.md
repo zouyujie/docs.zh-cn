@@ -1,6 +1,6 @@
 ---
-title: ".NET Core"
-description: ".NET Core"
+title: .NET Core
+description: .NET Core
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
