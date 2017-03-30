@@ -1,46 +1,62 @@
 ---
-title: "错误消息 (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "错误信息"
-  - "错误 [Visual Basic]"
-  - "错误 [Visual Basic], 可捕获的"
-  - "可捕获的错误"
+title: "错误消息 (Visual Basic) | Microsoft 文档"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- errors [Visual Basic]
+- error messages
+- trappable errors
+- errors [Visual Basic], trappable
 ms.assetid: f2dda05b-baef-41f5-8bb1-598bd7cf239f
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 19
----
-# 错误消息 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: e22d81efef735f4b6619054cb15f21790efabf5e
+ms.lasthandoff: 03/13/2017
 
-当您编写，编译或运行Visual Basic应用程序时，以下类型的错误可能发生:  
+---
+# <a name="error-messages-visual-basic"></a>错误消息 (Visual Basic)
+编写、编译或运行 Visual Basic 应用程序时，可能会生成以下类型的错误：  
   
-1.  设计时错误，生成，当您编写在Visual Studio的应用程序。  
+1.  在 Visual Studio 中编写应用程序时发生的设计时错误。  
   
-2.  编译时错误，发生，当您生成一个应用程序在Visual Studio中或在命令提示。  
+2.  在 Visual Studio 或命令提示符中编译应用程序时发生的编译时错误。  
   
-3.  运行时错误，生成，当您运行该应用程序在Visual Studio中或作为独立的可执行文件。  
+3.  在 Visual Studio 中运行应用程序或作为独立可执行文件运行时发生的运行时错误。  
   
- 有关如何排除特定错误的信息，请参见 [为 Visual Basic 程序员提供的附加资源](../../../visual-basic/getting-started/additional-resources.md)。  
+ 若要了解如何排查特定错误，请参阅[为 Visual Basic 程序员提供的附加资源](../../../visual-basic/getting-started/additional-resources.md)。  
   
-## 运行时错误  
- 如果Visual Basic应用程序尝试执行系统无法执行的操作，则会发生运行时错误和 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 引发 `Exception` 对象。  [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 可以使用 `Throw` 语句生成任何数据类型的自定义错误，包括 `Exception` 对象。  应用程序可以显示所捕获的异常的错误号和消息标识该错误。  如果没有捕获到错误，则应用程序将关闭。  
+## <a name="run-time-errors"></a>运行时错误  
+ 如果 Visual Basic 应用程序试图执行系统无法执行的操作，则会生成运行时错误，并且 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 会抛出 `Exception` 对象。 [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 可以使用 `Throw` 语句生成任何数据类型的自定义错误，包括 `Exception` 对象。 应用程序可以通过显示捕获到的异常的错误号和消息来识别错误。 如果未捕获到错误，应用程序会结束。  
   
- 代码会使和检查运行时错误。  如果将产生在 `Try` 错误的代码块中，您可以找到匹配的 `Catch` 中的所有引发的错误块。  有关如何捕获错误在运行时和响应的信息它们在您的代码，请参见 [Try...Catch...Finally 语句](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)。  
+ 代码可用于捕获和检查运行时错误。 如果将生成错误的代码封闭在 `Try` 代码块中，则可以在匹配的 `Catch` 代码块中捕获抛出的任何错误。 若要了解如何在运行时捕获错误并在代码中响应错误，请参阅 [Try...Catch...Finally 语句](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)。  
   
-## 编译时间错误  
- 如果Visual Basic编译器在代码中遇到的问题，将产生编译时错误。  在代码编辑器中，代码行导致错误的可以方便地确定，因为波浪线下显示该行代码。  错误消息，如果您指向波浪下划线或打开 **\*\*\* 错误表 \*\*\***，还显示其他消息。  
+## <a name="compile-time-errors"></a>编译时错误  
+ 如果 Visual Basic 编译器遇到代码问题，则会发生编译时错误。 在代码编辑器中，可以轻松确定哪行代码导致错误发生，因为其下方会显示一条波形线。 指向波形下划线或打开“错误列表”，即可看到错误消息（还可以查看其他消息）。  
   
- 如果标识符有一条波浪下划线，并显示一条短下划线。最右侧的字符下，可以生成选件类、构造函数、方法、属性、字段或枚举生成存根。  有关更多信息，请参见[使用时生成](/visual-cpp/misc/generate-from-usage)。  
+ 如果标识符有波形下划线，且最右边的字符下面有短下划线，可以为类、构造函数、方法、属性、字段或枚举生成存根。 有关详细信息，请参阅[根据使用情况生成](https://docs.microsoft.com/cpp/misc/generate-from-usage)。  
   
- 通过解决从Visual Basic编译器的警告，您可能能够更快运行并具有bug较少的代码。  这些警告确定可能导致错误的代码，当应用程序运行时。  例如，编译器警告您，如果尝试调用未赋值的对象变量的成员，从函数返回，而无需设置返回值，或执行 `Try` 块并与该逻辑的错误捕获异常。  有关警告的更多信息，包括如何打开和关闭它们，请参见 [在 Visual Basic 中配置警告](/visual-studio/ide/configuring-warnings-in-visual-basic)。
+ 通过解决 Visual Basic 编译器警告提示的问题，可以编写运行速度更快、bug 更少的代码。 这些警告可以识别可能会在应用程序运行时生成错误的代码。 例如，如果尝试调用未赋值的对象变量的成员、让未设置返回值的函数返回值或执行有逻辑错误的 `Try` 代码块来捕获异常，编译器都会生成警告。 若要详细了解警告（包括如何启用和禁用警告），请参阅[在 Visual Basic 中配置警告](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic)。
