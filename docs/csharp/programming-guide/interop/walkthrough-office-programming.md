@@ -36,7 +36,7 @@ ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="walkthrough-office-programming-c-and-visual-basic"></a>演练：Office 编程（C# 和 Visual Basic）
-[!INCLUDE[vs_dev10_long](../../../csharp/programming-guide/interop/includes/vs_dev10_long_md.md)] 在 C# 和 Visual Basic 中引入了改进 Microsoft Office 编程的新功能。 每种语言都增加了其他语言中已经存在的功能。  
+Visual Studio 在 C# 和 Visual Basic 中引入了改进 Microsoft Office 编程的新功能。 每种语言都增加了其他语言中已经存在的功能。  
   
  C# 中的新功能包括命名参数和可选参数、具有 `dynamic` 类型的返回值，以及在 COM 编程中忽略 `ref` 关键字和访问索引属性的功能。 Visual Basic 中的新功能包括自动实现的属性、Lambda 表达式语句和集合初始值设定项。  
   
