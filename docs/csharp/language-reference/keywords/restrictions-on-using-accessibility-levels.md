@@ -1,46 +1,64 @@
 ---
-title: "可访问性级别的使用限制（C# 参考） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "访问修饰符 [C#], 可访问性级别限制"
+title: "可访问性级别的使用限制（C# 参考）| Microsoft Docs"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- access modifiers [C#], accessibility level restrictions
 ms.assetid: 987e2f22-46bf-4fea-80ee-270b9cd01045
 caps.latest.revision: 21
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 21
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 51b399993008a1a3ce61679cdccc3e5e7bf25354
+ms.lasthandoff: 03/13/2017
+
 ---
-# 可访问性级别的使用限制（C# 参考）
-在一项声明中指定类型时，请检查类型的可访问性级别是否依赖成员或其他类型的可访问性级别。  例如，直接基类必须至少与派生类具有同样的可访问性。  以下声明导致编译器错误，因为基类 `BaseClass` 的可访问性小于 `MyClass`：  
+# <a name="restrictions-on-using-accessibility-levels-c-reference"></a>可访问性级别的使用限制（C# 参考）
+在声明中指定类型时，检查类型的可访问性级别是否依赖于成员或其他类型的可访问性级别。 例如，直接基类必须至少具有与派生类相同的可访问性。 以下声明会导致编译器错误，因为基类 `BaseClass` 的可访问性低于 `MyClass`：  
   
 ```  
 class BaseClass {...}  
 public class MyClass: BaseClass {...} // Error  
 ```  
   
- 下表汇总了对声明的可访问性级别的限制。  
+ 下表汇总了对已声明可访问性级别的限制。  
   
 |上下文|备注|  
-|---------|--------|  
-|[类](../../../csharp/programming-guide/classes-and-structs/classes.md)|类类型的直接基类必须至少与类类型本身具有同样的可访问性。|  
-|[接口](../../../csharp/programming-guide/interfaces/index.md)|接口类型的显式基接口必须至少与接口类型本身具有同样的可访问性。|  
-|[委托](../../../csharp/programming-guide/delegates/index.md)|委托类型的返回类型和参数类型必须至少与委托类型本身具有同样的可访问性。|  
-|[常量](../../../csharp/programming-guide/classes-and-structs/constants.md)|常数的类型必须至少与常数本身具有同样的可访问性。|  
-|[字段](../../../csharp/programming-guide/classes-and-structs/fields.md)|字段的类型必须至少与字段本身具有同样的可访问性。|  
-|[方法](../../../csharp/programming-guide/classes-and-structs/methods.md)|方法的返回类型和参数类型必须至少与方法本身具有同样的可访问性。|  
-|[属性](../../../csharp/programming-guide/classes-and-structs/properties.md)|属性的类型必须至少与属性本身具有同样的可访问性。|  
-|[事件](../../../csharp/programming-guide/events/index.md)|事件的类型必须至少与事件本身具有同样的可访问性。|  
-|[索引器](../../../csharp/programming-guide/indexers/index.md)|索引器的类型和参数类型必须至少与索引器本身具有同样的可访问性。|  
-|[运算符](../../../csharp/programming-guide/statements-expressions-operators/operators.md)|运算符的返回类型和参数类型必须至少与运算符本身具有同样的可访问性。|  
-|[构造函数](../../../csharp/programming-guide/classes-and-structs/constructors.md)|构造函数的参数类型必须至少与构造函数本身具有同样的可访问性。|  
+|-------------|-------------|  
+|[类](../../../csharp/programming-guide/classes-and-structs/classes.md)|类类型的直接基类必须至少具有与类类型本身相同的可访问性。|  
+|[接口](../../../csharp/programming-guide/interfaces/index.md)|接口类型的显式基接口必须至少具有与接口类型本身相同的可访问性。|  
+|[委托](../../../csharp/programming-guide/delegates/index.md)|委托类型的返回类型和参数类型必须至少具有与委托类型本身相同的可访问性。|  
+|[常量](../../../csharp/programming-guide/classes-and-structs/constants.md)|常量的类型必须至少具有与常量本身相同的可访问性。|  
+|[字段](../../../csharp/programming-guide/classes-and-structs/fields.md)|字段的类型必须至少具有与字段本身相同的可访问性。|  
+|[方法](../../../csharp/programming-guide/classes-and-structs/methods.md)|方法的返回类型和参数类型必须至少具有与方法本身相同的可访问性。|  
+|[属性](../../../csharp/programming-guide/classes-and-structs/properties.md)|属性的类型必须至少具有与属性本身相同的可访问性。|  
+|[事件](../../../csharp/programming-guide/events/index.md)|事件的类型必须至少具有与事件本身相同的可访问性。|  
+|[索引器](../../../csharp/programming-guide/indexers/index.md)|索引器的类型和参数类型必须至少具有与索引器本身相同的可访问性。|  
+|[运算符](../../../csharp/programming-guide/statements-expressions-operators/operators.md)|运算符的类型和参数类型必须至少具有与运算符本身相同的可访问性。|  
+|[构造函数](../../../csharp/programming-guide/classes-and-structs/constructors.md)|构造函数的参数类型必须至少具有与构造函数本身相同的可访问性。|  
   
-## 示例  
- 下面的示例包含不同类型的错误声明。  每个声明后的注释指示了预期的编译器错误。  
+## <a name="example"></a>示例  
+ 下面的示例包含不同类型的错误声明。 每个声明后的注释指示预期编译器错误。  
   
 ```  
 // Restrictions on Using Accessibility Levels  
@@ -105,13 +123,13 @@ public class A
 }  
 ```  
   
-## C\# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>C# 语言规范  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## 请参阅  
- [C\# 参考](../../../csharp/language-reference/index.md)   
- [C\# 编程指南](../../../csharp/programming-guide/index.md)   
- [C\# 关键字](../../../csharp/language-reference/keywords/index.md)   
+## <a name="see-also"></a>请参阅  
+ [C# 参考](../../../csharp/language-reference/index.md)   
+ [C# 编程指南](../../../csharp/programming-guide/index.md)   
+ [C# 关键字](../../../csharp/language-reference/keywords/index.md)   
  [访问修饰符](../../../csharp/language-reference/keywords/access-modifiers.md)   
  [可访问域](../../../csharp/language-reference/keywords/accessibility-domain.md)   
  [可访问性级别](../../../csharp/language-reference/keywords/accessibility-levels.md)   

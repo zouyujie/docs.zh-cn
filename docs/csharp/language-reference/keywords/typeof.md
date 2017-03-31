@@ -1,32 +1,50 @@
 ---
-title: "typeof（C# 参考） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "typeof"
-  - "typeof_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "typeof 关键字 [C#]"
+title: "typeof（C# 参考）| Microsoft Docs"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- typeof
+- typeof_CSharpKeyword
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- typeof keyword [C#]
 ms.assetid: 0c08d880-515e-46bb-8cd2-48b8dd62c08d
 caps.latest.revision: 21
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 21
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 0590aa8a339dc58b7215722a530a71f8973864d4
+ms.lasthandoff: 03/13/2017
+
 ---
-# typeof（C# 参考）
-用于获取类型的 `System.Type` 对象。  `typeof` 表达式采用以下形式：  
+# <a name="typeof-c-reference"></a>typeof（C# 参考）
+用于为类型获取 `System.Type` 对象。 `typeof` 表达式采用以下格式：  
   
 ```  
 System.Type type = typeof(int);  
 ```  
   
-## 备注  
- 若要获取表达式的运行时类型，可以使用 .NET Framework 方法 <xref:System.Object.GetType%2A>，如以下示例中所示：  
+## <a name="remarks"></a>备注  
+ 若要获取表达式的运行时类型，可以使用 .NET Framework 方法<xref:System.Object.GetType%2A>，如以下示例所示：  
   
 ```  
 int i = 0;  
@@ -35,28 +53,28 @@ System.Type type = i.GetType();
   
  不能重载 `typeof` 运算符。  
   
- `typeof` 运算符也能用于公开的泛型类型。  具有不止一个类型参数的类型的规范中必须有适当数量的逗号。  下面的示例演示如何确定方法的返回类型是否是泛型 <xref:System.Collections.Generic.IEnumerable%601>。  假定此方法是 MethodInfo 类型的实例：  
+ `typeof` 运算符也可用于开放式泛型类型。 具有多个类型参数的类型必须在规范中具有适当数量的逗号。 以下示例显示如何确定方法的返回类型是否为泛型 <xref:System.Collections.Generic.IEnumerable%601>。 假设该方法是 MethodInfo 类型的实例：  
   
 ```  
 string s = method.ReturnType.GetInterface  
     (typeof(System.Collections.Generic.IEnumerable<>).FullName);  
 ```  
   
-## 示例  
+## <a name="example"></a>示例  
  [!code-cs[csrefKeywordsOperator#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/typeof_1.cs)]  
   
-## 示例  
- 此示例使用 <xref:System.Object.GetType%2A> 方法确定用来包含数值计算的结果的类型。  这取决于结果数字的存储要求。  
+## <a name="example"></a>示例  
+ 此示例使用 <xref:System.Object.GetType%2A> 方法来确定用于包含数值计算结果的类型。 这取决于所得数字的存储要求。  
   
  [!code-cs[csrefKeywordsOperator#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/typeof_2.cs)]  
   
-## C\# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>C# 语言规范  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## 请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Type?displayProperty=fullName>   
- [C\# 参考](../../../csharp/language-reference/index.md)   
- [C\# 编程指南](../../../csharp/programming-guide/index.md)   
- [C\# 关键字](../../../csharp/language-reference/keywords/index.md)   
+ [C# 参考](../../../csharp/language-reference/index.md)   
+ [C# 编程指南](../../../csharp/programming-guide/index.md)   
+ [C# 关键字](../../../csharp/language-reference/keywords/index.md)   
  [is](../../../csharp/language-reference/keywords/is.md)   
  [运算符关键字](../../../csharp/language-reference/keywords/operator-keywords.md)

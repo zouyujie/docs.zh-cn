@@ -1,59 +1,77 @@
 ---
-title: "命名空间（C# 参考） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "namespace_CSharpKeyword"
-  - "namespace"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "命名空间关键字 [C#]"
-  - "范围 [C#]"
+title: "命名空间（C# 参考）| Microsoft Docs"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- namespace_CSharpKeyword
+- namespace
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- namespace keyword [C#]
+- scope [C#]
 ms.assetid: 0a788423-9110-42e0-97d9-bda41ca4870f
 caps.latest.revision: 28
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 28
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: cc90fe67f7c65d53980786c39f2a6f9869eec321
+ms.lasthandoff: 03/13/2017
+
 ---
-# 命名空间（C# 参考）
-`namespace` 关键字用于声明一组相关对象的大小。  可以使用命名空间组织代码元素和创建全局唯一类型。  
+# <a name="namespace-c-reference"></a>命名空间（C# 参考）
+`namespace` 关键字用于声明包含一组相关对象的作用域。 可以使用命名空间来组织代码元素并创建全局唯一类型。  
   
  [!code-cs[csrefKeywordsNamespace#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/namespace_1.cs)]  
   
-## 备注  
- 在一个命名空间中，可以声明一个或多个下列类型：  
+## <a name="remarks"></a>备注  
+ 在命名空间中，可以声明一个或多个以下类型：  
   
 -   另一个命名空间  
   
--   [class](../../../csharp/language-reference/keywords/class.md)  
+-   [类](../../../csharp/language-reference/keywords/class.md)  
   
--   [interface](../../../csharp/language-reference/keywords/interface.md)  
+-   [接口](../../../csharp/language-reference/keywords/interface.md)  
   
 -   [struct](../../../csharp/language-reference/keywords/struct.md)  
   
 -   [enum](../../../csharp/language-reference/keywords/enum.md)  
   
--   [Delegate — 委托](../../../csharp/language-reference/keywords/delegate.md)  
+-   [委托](../../../csharp/language-reference/keywords/delegate.md)  
   
- 无论您是否在 C\# 源文件中显式声明了命名空间，编译器都会添加一个默认的命名空间。  该未命名的命名空间（有时称为全局命名空间）存在于每一个文件中。  全局命名空间中的任何标识符都可用于命名的命名空间中。  
+ 无论是否在 C# 源文件中显式声明命名空间，编译器都会添加一个默认命名空间。 此未命名的命名空间（有时被称为全局命名空间）存在于每个文件中。 全局命名空间中的任何标识符都可用于已命名的命名空间。  
   
- 命名空间隐式具有公共访问权，并且这是不可修改的。  有关可以分配给命名空间中的元素的访问修饰符的讨论，请参见[访问修饰符](../../../csharp/language-reference/keywords/access-modifiers.md)。  
+ 命名空间隐式具有公共访问权限，这是不可修改的。 有关可以分配给命名空间中元素的访问修饰符的讨论，请参阅[访问修饰符](../../../csharp/language-reference/keywords/access-modifiers.md)。  
   
- 在两个或更多的声明中定义一个命名空间是可以的。  例如，下面的示例将两个类定义为 `MyCompany` 命名空间的一部分：  
+ 可以在两个或多个声明中定义一个命名空间。 例如，以下示例将两个类定义为 `MyCompany` 命名空间的一部分：  
   
  [!code-cs[csrefKeywordsNamespace#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/namespace_2.cs)]  
   
-## 示例  
- 下面的示例显示了如何在嵌套的命名空间中调用静态方法。  
+## <a name="example"></a>示例  
+ 以下示例显示如何在嵌套命名空间中调用静态方法。  
   
  [!code-cs[csrefKeywordsNamespace#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/namespace_3.cs)]  
   
-## 更多信息  
- 有关使用命名空间的更多信息，请参见下列主题：  
+## <a name="for-more-information"></a>更多信息  
+ 有关使用命名空间的详细信息，请参阅以下主题：  
   
 -   [命名空间](../../../csharp/programming-guide/namespaces/index.md)  
   
@@ -61,12 +79,12 @@ caps.handback.revision: 28
   
 -   [如何：使用全局命名空间别名](../../../csharp/programming-guide/namespaces/how-to-use-the-global-namespace-alias.md)  
   
-## C\# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>C# 语言规范  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## 请参阅  
- [C\# 参考](../../../csharp/language-reference/index.md)   
- [C\# 编程指南](../../../csharp/programming-guide/index.md)   
- [C\# 关键字](../../../csharp/language-reference/keywords/index.md)   
+## <a name="see-also"></a>请参阅  
+ [C# 参考](../../../csharp/language-reference/index.md)   
+ [C# 编程指南](../../../csharp/programming-guide/index.md)   
+ [C# 关键字](../../../csharp/language-reference/keywords/index.md)   
  [命名空间关键字](../../../csharp/language-reference/keywords/namespace-keywords.md)   
  [using](../../../csharp/language-reference/keywords/using.md)

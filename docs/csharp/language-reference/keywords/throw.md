@@ -1,54 +1,95 @@
 ---
-title: "throw（C# 参考） | Microsoft Docs"
-ms.date: "2015-03-02"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "throw"
-  - "throw_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "throw 关键字 [C#]"
-  - "throw 语句 [C#]"
+title: "throw（C# 参考）| Microsoft Docs"
+ms.date: 2015-03-02
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- throw
+- throw_CSharpKeyword
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- throw statement [C#]
+- throw expression [C#]
+- throw keyword [C#]
 ms.assetid: 5ac4feef-4b1a-4c61-aeb4-61d549e5dd42
 caps.latest.revision: 22
-author: "rpetrusha"
-ms.author: "ronpet"
-caps.handback.revision: 22
+author: rpetrusha
+ms.author: ronpet
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 095a86f5ab2ce50f5931643161a44b5759583e4e
+ms.lasthandoff: 03/13/2017
+
 ---
-# throw（C# 参考）
-`throw` 语句用于发出程序执行期间出现反常情况（异常）的信号。  
+# <a name="throw-c-reference"></a>throw（C# 参考）
+发出程序执行期间出现异常的信号。  
   
-## 备注  
- 引发的异常是一个对象，其类派生自 <xref:System.Exception?displayProperty=fullName>，如以下示例所示。  
+## <a name="remarks"></a>备注
+
+`throw` 的语法为：
+
+```csharp
+throw [e]
+```
+其中 `e` 是派生自 <xref:System.Exception?displayProperty=fullName> 的类的实例。 下例使用 `throw` 语句在传递给名为 `GetNumber` 的方法的参数与内部数组的有效索引不对应时引发 @System.IndexOutOfRangeException。
+
+[!code-cs[csrefKeyword#1](../../../../samples/snippets/csharp/language-reference/keywords/throw/throw-1.cs#1)]  
+
+然后方法调用方使用 `try-catch` 或 `try-catch-finally` 块来处理引发的异常。 下例处理由 `GetNumber` 方法引发的异常。
+
+[!code-cs[csrefKeyword#2](../../../../samples/snippets/csharp/language-reference/keywords/throw/throw-1.cs#2)]  
+
+## <a name="re-throwing-an-exception"></a>重新引发异常
+
+`throw` 也可以用于 `catch` 块，以重新引发在 `catch` 块中处理的异常。  在这种情况下，`throw` 不采用异常操作数。 当方法将参数从调用方传递给其他库方法时，这是最有用的，库方法引发的异常必须传递给调用方。 例如，以下示例重新引发在尝试检索未初始化字符串的第一个字符时引发的 @System.NullReferenceException。 
+
+[!code-cs[csrefKeyword#3](../../../../samples/snippets/csharp/language-reference/keywords/throw/throw-3.cs#3)]  
+
+> [!IMPORTANT]
+> 还可以使用 `catch` 块中的 `throw e` 语法来实例化传递给调用方的新异常。 在这种情况下，将不会保留可从 @System.Exception.Stacktrace 属性获得的原始异常的堆栈跟踪。
+ 
+## <a name="the-throw-expression"></a>`throw` 表达式
+
+从 C# 7 开始，`throw` 可以用作表达式和语句。 这允许在以前不支持的上下文中引发异常。 这些方法包括：
+
+- [条件运算符](../operators/conditional-operator.md)。 下例使用 `throw` 表达式在向方法传递空字符串数组时引发 @System.ArgumentException。 在 C# 7 之前，此逻辑将需要显示在 `if`/`else` 语句中。
+
+   [!code-cs[csrefKeyword#4](../../../../samples/snippets/csharp/language-reference/keywords/throw/conditional.cs#1)]  
   
-```  
-class MyException : System.Exception {}  
-// ...  
-throw new MyException();  
-```  
+- [null 合并运算符](../operators/null-conditional-operator.md)。 在以下示例中，如果分配给 `Name` 属性的字符串为 `null`，则将 `throw` 表达式与 null 合并运算符结合使用以引发异常。
+ 
+   [!code-cs[csrefKeyword#5](../../../../samples/snippets/csharp/language-reference/keywords/throw/coalescing.cs#1)]  
+ 
+- expression-bodied [lambda](../../lambda-expressions.md) 或方法。 下例说明了 expression-bodied 方法，由于不支持对 @System.DateTime 值的转换，该方法引发 @System.InvalidCastException。
+ 
+   [!code-cs[csrefKeyword#6](../../../../samples/snippets/csharp/language-reference/keywords/throw/exp-bodied.cs#1)]  
+ 
   
- 通常，`throw` 语句与 `try-catch` 或 `try-finally` 语句结合使用。可在 `catch` 块中使用 [throw](../../../csharp/language-reference/keywords/throw.md) 语句以重新引发已由 `catch` 块捕获的异常。在这种情况下，[throw](../../../csharp/language-reference/keywords/throw.md) 语句不采用异常操作数。有关更多信息和示例，请参见 [try\-catch](../../../csharp/language-reference/keywords/try-catch.md)和[如何：显式引发异常](../Topic/How%20to:%20Explicitly%20Throw%20Exceptions.md)。  
+## <a name="c-language-specification"></a>C# 语言规范  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## 示例  
- 此示例演示如何使用 `throw` 语句引发异常。  
-  
- [!code-cs[csrefKeywordsExceptions#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/throw_1.cs)]  
-  
-## 代码示例  
- 请参见 [try\-catch](../../../csharp/language-reference/keywords/try-catch.md)和[如何：显式引发异常](../Topic/How%20to:%20Explicitly%20Throw%20Exceptions.md)中的示例。  
-  
-## C\# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
-  
-## 请参阅  
- [C\# 参考](../../../csharp/language-reference/index.md)   
- [C\# 编程指南](../../../csharp/programming-guide/index.md)   
- [try\-catch](../../../csharp/language-reference/keywords/try-catch.md)   
- [C\+\+ 中的 try、catch 和 throw 语句](../../../csharp/language-reference/keywords/try-catch.md)   
- [C\# 关键字](../../../csharp/language-reference/keywords/index.md)   
+## <a name="see-also"></a>请参阅  
+ [C# 参考](../../../csharp/language-reference/index.md)   
+ [C# 编程指南](../../../csharp/programming-guide/index.md)   
+ [try-catch](../../../csharp/language-reference/keywords/try-catch.md)   
+ [C++ 中的 try、catch 和 throw 语句](../../../csharp/language-reference/keywords/try-catch.md)   
+ [C# 关键字](../../../csharp/language-reference/keywords/index.md)   
  [异常处理语句](../../../csharp/language-reference/keywords/exception-handling-statements.md)   
- [如何：显式引发异常](../Topic/How%20to:%20Explicitly%20Throw%20Exceptions.md)
+ [如何显式引发异常](https://msdn.microsoft.com/library/xhcbs8fz)

@@ -1,58 +1,74 @@
 ---
 title: "如何：在 Visual Basic 中显示可用的串行端口 | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "My.Computer.Ports 对象"
-  - "My.Computer.Ports.SerialPortNames 属性"
-  - "端口, 串行端口可用性"
-  - "串行端口, 可用性"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- serial ports, availability
+- My.Computer.Ports.SerialPortNames property
+- My.Computer.Ports object
+- ports, serial port availability
 ms.assetid: eaf2ee5a-8103-4e10-a205-ed1d4db120ba
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 20
----
-# 如何：在 Visual Basic 中显示可用的串行端口
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: cc316600acd5f551dad8fbd4b7260c512231da5e
+ms.lasthandoff: 03/13/2017
 
-本主题介绍 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)]描述如何使用 `My.Computer.Ports` 显示计算机的可用串行端口。  
+---
+# <a name="how-to-show-available-serial-ports-in-visual-basic"></a>如何：在 Visual Basic 中显示可用的串行端口
+本主题介绍在 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 中如何使用 `My.Computer.Ports` 显示计算机的可用串行端口。  
   
- 允许用户选择要使用的端口，串行端口的名称。 <xref:System.Windows.Forms.ListBox> 控件放在。  
+ 若要使用户可以选择要使用的端口，请将串行端口的名称置于 <xref:System.Windows.Forms.ListBox> 控件中。  
   
-## 示例  
- 此示例循环访问 `My.Computer.Ports.SerialPortNames` 属性返回的字符串。  这些字符串是可用串行端口的名称在计算机上。  
+## <a name="example"></a>示例  
+ 此示例循环访问 `My.Computer.Ports.SerialPortNames` 属性返回的所有字符串。 这些字符串是计算机上的可用串行端口的名称。  
   
- 通常，串行端口应用程序应从可用端口列表中使用的用户选择。  在本示例中，串行端口的名称在 <xref:System.Windows.Forms.ListBox> 控件存储。  有关更多信息，请参见 [ListBox 控件](../Topic/ListBox%20Control%20\(Windows%20Forms\).md)。  
+ 通常，用户从可用端口列表中选择应用程序应使用的串行端口。 在此示例中，串行端口名称存储在 <xref:System.Windows.Forms.ListBox> 控件中。 有关详细信息，请参阅 [ListBox 控件](http://msdn.microsoft.com/library/b0172473-c5f2-411e-aaa4-c8f17cb5eed4)。  
   
  [!code-vb[VbVbalrMyComputer#45](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-show-available-serial-ports_1.vb)]  
   
- 此代码示例也可用作 IntelliSense 代码段。  在代码段选择器，它位于 **连接和网络**。  有关更多信息，请参见 [代码段](/visual-studio/ide/code-snippets)。  
+ 此代码示例也可作为 IntelliSense 代码片段。 它位于代码片段选取器的“连接和网络”****中。 有关详细信息，请参阅[代码片段](https://docs.microsoft.com/visualstudio/ide/code-snippets)。  
   
-## 编译代码  
- 此示例需要:  
+## <a name="compiling-the-code"></a>编译代码  
+ 此示例需要：  
   
--   项目对 System.Windows.Forms.dll。  
+-   对 System.Windows.Forms.dll 的项目引用。  
   
--   为 <xref:System.Windows.Forms> 命名空间的成员。  没有完全限定，则需要在代码中，的成员名称添加一个 `Imports` 语句。  有关更多信息，请参见 [Imports 语句（.NET 命名空间和类型）](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)。  
+-   对 <xref:System.Windows.Forms> 命名空间的成员的访问权限。 如果未在代码中完全限定成员名称，则添加 `Imports` 语句。 有关详细信息，请参阅 [Imports 语句（.NET 命名空间和类型）](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)。  
   
--   窗体上有一个 <xref:System.Windows.Forms.ListBox> 名为的控件 `ListBox1`。  
+-   窗体具有名为 `ListBox1` 的 <xref:System.Windows.Forms.ListBox> 控件。  
   
-## 可靠编程  
- 您不必使用 <xref:System.Windows.Forms.ListBox> 控件显示可用串行端口的名称。  相反，可以使用 <xref:System.Windows.Forms.ComboBox> 或其他控件。  如果应用程序不需要来自用户的响应，可以使用 <xref:System.Windows.Forms.TextBox> 控件显示信息。  
+## <a name="robust-programming"></a>可靠编程  
+ 不必使用 <xref:System.Windows.Forms.ListBox> 控件显示可用串行端口名称。 而是可以使用 <xref:System.Windows.Forms.ComboBox> 或其他控件。 如果应用程序不需要来自用户的响应，则可以使用 <xref:System.Windows.Forms.TextBox> 控件显示信息。  
   
 > [!NOTE]
->  `My.Computer.Ports.SerialPortNames` 返回的端口名称在 Windows 98 可能不正确，当运行。  ，在使用端口名打开端口时，为了防止应用程序错误，请使用异常处理，例如 `Try...Catch...Finally` 语句或 `Using` 语句。  
+>  在 Windows 98 上运行时，`My.Computer.Ports.SerialPortNames` 返回的端口名称可能不正确。 若要防止应用程序错误，请在使用端口名称打开端口时使用异常处理（如 `Try...Catch...Finally` 语句或 `Using` 语句）。  
   
-## 请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualBasic.Devices.Ports>   
  [如何：使用连接到串行端口的调制解调器拨号](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-dial-modems-attached-to-serial-ports.md)   
  [如何：将字符串发送到串行端口](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-send-strings-to-serial-ports.md)   

@@ -1,50 +1,68 @@
 ---
-title: "如何：读取文本文件中的内容（C# 编程指南） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "StreamReader.ReadToEnd"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "读取数据, 文本文件"
-  - "读取文本文件"
-  - "文本文件, 读取"
-  - "文本文件, 写入"
+title: "如何：读取文本文件（C# 编程指南）| Microsoft Docs"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- StreamReader.ReadToEnd
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- text files, writing to
+- reading text files
+- reading data, text files
+- text files, reading
 ms.assetid: 92246c5b-e819-4eea-9370-1a9460e12de3
 caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 17
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: d545aa7f25da49b3ca0fc50b0c5a55c9c0d2b967
+ms.lasthandoff: 03/13/2017
+
 ---
-# 如何：读取文本文件中的内容（C# 编程指南）
-此示例读取文本文件的内容以使用 <xref:System.IO.File?displayProperty=fullName> 选件类的静态方法 <xref:System.IO.File.ReadAllText%2A> 和 <xref:System.IO.File.ReadAllLines%2A>。  
+# <a name="how-to-read-from-a-text-file-c-programming-guide"></a>如何：读取文本文件中的内容（C# 编程指南）
+此示例通过使用 <xref:System.IO.File?displayProperty=fullName> 类中的静态方法 <xref:System.IO.File.ReadAllText%2A> 和 <xref:System.IO.File.ReadAllLines%2A> 来读取文本文件的内容。  
   
- 有关使用 <xref:System.IO.StreamReader> 的示例，请参见[如何：一次一行地读取文本文件](../../../csharp/programming-guide/file-system/how-to-read-a-text-file-one-line-at-a-time.md)。  
+ 有关使用 <xref:System.IO.StreamReader> 的示例，请参阅[如何：一次一行地读取文本文件](../../../csharp/programming-guide/file-system/how-to-read-a-text-file-one-line-at-a-time.md)。  
   
 > [!NOTE]
->  本示例的文件在主题 [如何：写入文本文件](../../../csharp/programming-guide/file-system/how-to-write-to-a-text-file.md)创建。  
+>  此示例所用的文件是在主题[如何：写入文本文件](../../../csharp/programming-guide/file-system/how-to-write-to-a-text-file.md)中创建的。  
   
-## 示例  
+## <a name="example"></a>示例  
  [!code-cs[csFilesandFolders#4](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-read-from-a-text-file_1.cs)]  
   
-## 编译代码  
- 将代码复制并粘贴到 C\# 控制台应用程序。  
+## <a name="compiling-the-code"></a>编译代码  
+ 将代码复制并粘贴到 C# 控制台应用程序。  
   
- 如果不使用从 [如何：写入文本文件](../../../csharp/programming-guide/file-system/how-to-write-to-a-text-file.md)的文本文件，请替换为您计算机上的参数。`ReadAllText` 和 `ReadAllLines` 使用适当的路径和文件名。  
+ 如果不使用[如何：写入文本文件](../../../csharp/programming-guide/file-system/how-to-write-to-a-text-file.md)中的文本文件，请将 `ReadAllText` 和 `ReadAllLines` 的参数替换为计算机上的适当路径和文件名。  
   
-## 可靠编程  
+## <a name="robust-programming"></a>可靠编程  
  以下情况可能会导致异常：  
   
--   文件不在指定的位置存在或不存在。  检查路径和文件名的拼写。  
+-   不存在该文件，或者指定位置不存在该文件。 检查文件名的路径和拼写。  
   
-## .NET Framework 安全性  
- 不要依赖文件名来确定文件的内容。  例如，文件 `myFile.cs` 可能不是 C\# 源文件。  
+## <a name="net-framework-security"></a>.NET Framework 安全性  
+ 不要依赖文件名来确定文件的内容。 例如，文件 `myFile.cs` 可能不是 C# 源文件。  
   
-## 请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.IO?displayProperty=fullName>   
- [C\# 编程指南](../../../csharp/programming-guide/index.md)   
- [文件系统和注册表](../../../csharp/programming-guide/file-system/file-system-and-the-registry.md)
+ [C# 编程指南](../../../csharp/programming-guide/index.md)   
+ [文件系统和注册表（C# 编程指南）](../../../csharp/programming-guide/file-system/index.md)

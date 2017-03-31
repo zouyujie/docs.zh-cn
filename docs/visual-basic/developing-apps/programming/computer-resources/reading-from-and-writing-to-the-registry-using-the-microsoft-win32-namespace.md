@@ -1,27 +1,44 @@
 ---
 title: "使用 Microsoft.Win32 命名空间读取和写入注册表 (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "注册表, Visual Basic"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- registry, Visual Basic
 ms.assetid: 4a0dcce0-c27b-4199-baa8-ee4528da6a56
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 20
----
-# 使用 Microsoft.Win32 命名空间读取和写入注册表 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 2243630d940035046aae9a4c50bcdba3c15f7210
+ms.lasthandoff: 03/13/2017
 
-虽然在针对注册表进行编程时，`My.Computer.Registry` 应涵盖你的基本需求，不过还可以使用 [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort-md.md)] 的 <xref:Microsoft.Win32> 命名空间中的 <xref:Microsoft.Win32.Registry> 和 <xref:Microsoft.Win32.RegistryKey> 类。  
+---
+# <a name="reading-from-and-writing-to-the-registry-using-the-microsoftwin32-namespace-visual-basic"></a>使用 Microsoft.Win32 命名空间读取和写入注册表 (Visual Basic)
+虽然在针对注册表进行编程时，`My.Computer.Registry` 应涵盖你的基本需求，不过还可以使用 [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] 的 <xref:Microsoft.Win32> 命名空间中的 <xref:Microsoft.Win32.Registry> 和 <xref:Microsoft.Win32.RegistryKey> 类。  
   
 ## <a name="keys-in-the-registry-class"></a>注册表类中的项  
  <xref:Microsoft.Win32.Registry> 类提供可以用于访问子项及其值的注册表基项。 这些基项本身是只读的。 下表列出并介绍了 <xref:Microsoft.Win32.Registry> 类公开的七个项。  
@@ -37,7 +54,7 @@ caps.handback.revision: 20
 |<xref:Microsoft.Win32.Registry.Users>|包含有关默认用户首选项的信息。|  
   
 > [!IMPORTANT]
->  将数据写入当前用户 (<xref:Microsoft.Win32.Registry.CurrentUser>) 比写入本地计算机 (<xref:Microsoft.Win32.Registry.LocalMachine>) 更安全。 当你创建的项以前已由其他进程（可能是恶意的）进行了创建时，会发生通常称为“强占”的情况。 若要防止此情况发生，请使用在项尚未存在时返回 `Nothing` 的方法（如 <xref:Microsoft.Win32.RegistryKey.GetValue%2A>）。  
+>  将数据写入当前用户 (<xref:Microsoft.Win32.Registry.CurrentUser>) 比本地计算机 (<xref:Microsoft.Win32.Registry.LocalMachine>) 更安全。 当你创建的项以前已由其他进程（可能是恶意的）进行了创建时，会发生通常称为“强占”的情况。 若要防止此情况发生，请使用在项尚未存在时返回 `Nothing` 的方法（如 <xref:Microsoft.Win32.RegistryKey.GetValue%2A>）。  
   
 ## <a name="reading-a-value-from-the-registry"></a>从注册表中读取值  
  下面的代码演示如何从 HKEY_CURRENT_USER 中读取字符串。  
@@ -48,7 +65,7 @@ caps.handback.revision: 20
   
  [!code-vb[VbResourceTasks#21](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/reading-from-and-writing-to-the-registry-using-the-microsoft-win32-namespace_2.vb)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.SystemException>   
  <xref:System.ApplicationException>   
  <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>   

@@ -1,41 +1,58 @@
 ---
 title: "如何：在 Visual Basic 中检查连接状态 | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "连接状态"
-  - "连接, 检查状态"
-  - "IsAvailable 属性, 关于 IsAvailable"
-  - "Web 连接"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- Web connections
+- IsAvailable property, about IsAvailable
+- connections, checking status
+- connection status
 ms.assetid: 4d9ee8ab-9a6f-4279-ace4-b75afc976a74
 caps.latest.revision: 26
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 26
----
-# 如何：在 Visual Basic 中检查连接状态
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 81386ee1f8c8cefbcd34a05d594277b9de772b8d
+ms.lasthandoff: 03/13/2017
 
-<xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A> 属性可用于确定计算机是否拥有工作网络或 Internet 连接。  
+---
+# <a name="how-to-check-connection-status-in-visual-basic"></a>如何：在 Visual Basic 中检查连接状态
+<xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A> 属性可用于确定计算机是否具有有效的网络连接或 Internet 连接。  
   
- [!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note-settings-general-md.md)]  
+[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
-### 检查计算机是否拥有工作连接  
+### <a name="to-check-whether-a-computer-has-a-working-connection"></a>检查计算机是否具有有效的网络连接  
   
--   确定 `IsAvailable` 属性是 `True` 还是 `False`。  下面的代码检查属性的状态并进行报告：  
+-   确定 `IsAvailable` 属性是 `True` 还是 `False`。 以下代码检查属性的状态并进行报告：  
   
      [!code-vb[VbResourceTasks#3](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-check-connection-status_1.vb)]  
   
-     此代码示例也可用作 IntelliSense 代码段。  在代码段选择器中，此代码示例位于**“连接和网络”**中。  有关更多信息，请参见 [代码段](/visual-studio/ide/code-snippets)。  
+     此代码示例也可作为 IntelliSense 代码片段。 它位于代码片段选取器的“连接和网络”****中。 有关详细信息，请参阅[代码片段](https://docs.microsoft.com/visualstudio/ide/code-snippets)。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualBasic.Devices.Network?displayProperty=fullName>   
  <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A>
+

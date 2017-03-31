@@ -1,40 +1,56 @@
 ---
-title: "/highentropyva (C# Compiler Options) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "/highentropyva"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "/highentropyva compiler option [C#]"
-  - "-highentropyva compiler option [C#]"
-  - "highentropyva compiler option [C#]"
+title: "-highentropyva（C# 编译器选项）| Microsoft Docs"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- /highentropyva
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- /highentropyva compiler option [C#]
+- -highentropyva compiler option [C#]
+- highentropyva compiler option [C#]
 ms.assetid: eaf409b3-384e-49dd-9417-62453658f421
 caps.latest.revision: 8
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 8
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: c1b49faa2fb388b330c24bdff28d00872828b110
+ms.lasthandoff: 03/13/2017
+
 ---
-# /highentropyva (C# Compiler Options)
-**\/highentropyva** 编译器选项告诉 Windows 内核：特定的可执行文件是否支持高熵地址空间格式随机化 \(ASLR\)。  
+# <a name="highentropyva-c-compiler-options"></a>/highentropyva（C# 编译器选项）
+**/highentropyva** 编译器选项可向 Windows 内核提供下列信息：特定的可执行文件是否支持高熵地址空间布局随机化 (ASLR)。  
   
-## 语法  
+## <a name="syntax"></a>语法  
   
 ```  
 /highentropyva[+ | -]  
 ```  
   
-## 参数  
+## <a name="arguments"></a>参数  
  `+` &#124; `-`  
- 此选项指定一位 64 可执行或由 [\/platform: 了](../../../csharp/language-reference/compiler-options/platform-compiler-option.md) 编译器选项指示可执行的支持高熵虚拟地址空间。  默认情况下，该选项是关闭的。  使用 **\/highentropyva\+** 或 **\/highentropyva** 中启用它。  
+ 此选项指定 64 位可执行文件或由 [/platform:anycpu](../../../csharp/language-reference/compiler-options/platform-compiler-option.md) 编译器选项标记的可执行文件支持高熵虚拟地址空间。 默认情况下，此选项处于禁用状态。 通过 **/highentropyva+** 或 **/highentropyva** 启用它。  
   
-## 备注  
- 当随机化进程的地址空间作为格式 ASLR 一部分时，**\/highentropyva** 选项允许 Windows 内核的兼容版本使用高度熵。  使用高熵意味着地址的大部分分配到内存区域 \(栈和堆）。  因此，猜想特定的内存区域中的位置更加困难。  
+## <a name="remarks"></a>备注  
+ 当随机化进程的地址空间布局包含在 ASLR 中时，**/highentropyva** 选项允许 Windows 内核的兼容版本使用更高程度的熵。 使用更高程度的熵意味着，可向内存区域（例如堆栈或堆）分配更多的地址。 因此，猜测特定内存区域的位置会更加困难。  
   
- 当指定 **\/highentropyva** 编译器选项时，可执行的目标和它所依赖的任何模块在测试运行作为 64 位进程时，必须能够处理大于 4 GB 的指针值 \(GB\)，。  
-  
- 有关ASLR的更多信息，请参见 [Mitigating Software Vulnerabilities](http://go.microsoft.com/fwlink/?LinkId=226234)。
+ 指定 **/highentropyva** 编译器选项时，目标可执行文件及其依赖的任何模块在作为 64 位进程运行时，必须能够处理大于 4 GB 的指针值。

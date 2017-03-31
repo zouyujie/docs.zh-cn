@@ -1,35 +1,54 @@
 ---
-title: "try-catch（C# 参考） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "try"
-  - "try_CSharpKeyword"
-  - "catch"
-  - "catch_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "catch 关键字 [C#]"
-  - "try-catch 语句 [C#]"
+title: "try-catch（C# 参考）| Microsoft Docs"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- try
+- try_CSharpKeyword
+- catch
+- catch_CSharpKeyword
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- catch keyword [C#]
+- try-catch statement [C#]
 ms.assetid: cb5503c7-bfa1-4610-8fc2-ddcd2e84c438
 caps.latest.revision: 45
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 45
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 13684c7e32c52765f4d45d6a5bd2c6f8194efefe
+ms.lasthandoff: 03/13/2017
+
 ---
-# try-catch（C# 参考）
+# <a name="try-catch-c-reference"></a>try-catch（C# 参考）
 Try-catch 语句包含一个后接一个或多个 `catch` 子句的 `try` 块，这些子句指定不同异常的处理程序。  
   
 ## <a name="remarks"></a>备注  
  引发异常时，公共语言运行时 (CLR) 查找处理此异常的 `catch` 语句。 如果当前正在执行的方法不包含此类 `catch` 块，则 CLR 查看调用了当前方法的方法，并以此类推遍历调用堆栈。 如果未找到任何 `catch` 块，则 CLR 向用户显示一条未处理的异常消息，并停止执行程序。  
   
- `try` 块包含可能导致异常的受保护的代码。 将执行此块，直至引发异常或其成功完成。 例如，以下尝试强制转换`null`对象引发<xref:System.NullReferenceException>异常︰  
+ `try` 块包含可能导致异常的受保护的代码。 将执行此块，直至引发异常或其成功完成。 例如，强制转换 `null` 对象的以下尝试会引发 <xref:System.NullReferenceException> 异常：  
   
-```c#  
+```csharp  
 object o2 = null;  
 try  
 {  
@@ -37,9 +56,9 @@ try
 }  
 ```  
   
- 尽管可以不带参数使用 `catch` 子句来捕获任何类型的异常，但不推荐这种用法。 一般情况下，只应捕获你知道如何从其恢复的异常。 因此，您应始终指定派生自 object 参数<xref:System.Exception?displayProperty=fullName>为例︰  
+ 尽管可以不带参数使用 `catch` 子句来捕获任何类型的异常，但不推荐这种用法。 一般情况下，只应捕获你知道如何从其恢复的异常。 因此，应始终指定派生自 <xref:System.Exception?displayProperty=fullName> 的对象参数，例如：  
   
-```c#  
+```csharp  
 catch (InvalidCastException e)   
 {  
 }  
@@ -49,7 +68,7 @@ catch (InvalidCastException e)
   
  筛选想要处理的异常的一种方式是使用 `catch` 参数。  也可以使用谓词表达式进一步检查该异常以决定是否要对其进行处理。  如果谓词表达式返回 false，则继续搜索处理程序。  
   
-```c#  
+```csharp  
 catch (ArgumentException e) when (e.ParamName == “…”)  
 {  
 }  
@@ -57,9 +76,9 @@ catch (ArgumentException e) when (e.ParamName == “…”)
   
  异常筛选器要优于捕获和重新引发（如下所述），因为筛选器将保留堆栈不受损坏。  如果之后的处理程序转储堆栈，可以查看到异常的原始来源，而不只是重新引发它的最后一个位置。  异常筛选器表达式的一个常见用途是日志记录。  可以创建一个始终返回 false 并输出到日志的谓词函数，而且可以在异常通过时进行记录，无需处理并重新引发它们。  
   
- 一个[引发](../../../csharp/language-reference/keywords/throw.md)语句可在`catch`要重新引发由捕获异常块`catch`语句。 下面的示例提取源信息从<xref:System.IO.IOException>异常，然后引发父方法的例外。  
+ 可在 `catch` 块中使用 [throw](../../../csharp/language-reference/keywords/throw.md) 语句以重新引发已由 `catch` 语句捕获的异常。 下面的示例从 <xref:System.IO.IOException> 异常提取源信息，然后向父方法引发异常。  
   
-```c#  
+```csharp  
 catch (FileNotFoundException e)  
 {  
     // FileNotFoundExceptions are handled here.  
@@ -76,7 +95,7 @@ catch (IOException e)
   
  你可以捕获一个异常而引发一个不同的异常。 执行此操作时，请指定作为内部异常捕获的异常，如以下示例所示。  
   
-```c#  
+```csharp  
 catch (InvalidCastException e)   
 {  
     // Perform some action here, and then throw a new exception.  
@@ -86,7 +105,7 @@ catch (InvalidCastException e)
   
  当指定的条件为 true 时，你还可以重新引发异常，如以下示例所示。  
   
-```c#  
+```csharp  
   
 catch (InvalidCastException e)  
 {  
@@ -103,7 +122,7 @@ catch (InvalidCastException e)
   
  从 `try` 块内，仅初始化在其中声明的变量。 否则，在完成执行块之前，可能会出现异常。 例如，在下面的代码示例中，变量 `n` 在 `try` 块内部初始化。 尝试在 `Write(n)` 语句的 `try` 块外部使用此变量将生成编译器错误。  
   
-```c#  
+```csharp  
 static void Main()   
 {  
     int n;  
@@ -120,18 +139,18 @@ static void Main()
 }  
 ```  
   
- Catch 的详细信息，请参阅[try – catch – finally](../../../csharp/language-reference/keywords/try-catch-finally.md)。  
+ 有关 catch 的详细信息，请参阅 [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)。  
   
 ## <a name="exceptions-in-async-methods"></a>异步方法中的异常  
- 异步方法标记[异步](../../../csharp/language-reference/keywords/async.md)修饰符，并且通常包含一个或多个 await 表达式或语句。 Await 表达式所应用[await](../../../csharp/language-reference/keywords/await.md)运算符添加到<xref:System.Threading.Tasks.Task>或<xref:System.Threading.Tasks.Task%601>。  
+ 异步方法由 [async](../../../csharp/language-reference/keywords/async.md) 修饰符标记，通常包含一个或多个 await 表达式或语句。 await 表达式用于向 <xref:System.Threading.Tasks.Task> 或 <xref:System.Threading.Tasks.Task%601> 应用 [await](../../../csharp/language-reference/keywords/await.md) 运算符。  
   
- 当控件到达异步方法中的 `await` 时，将挂起方法中的进度，直到所等待的任务完成。 任务完成后，可以在方法中恢复执行。 有关详细信息，请参阅[使用 Async 和 Await 的异步编程](../Topic/Asynchronous%20Programming%20with%20Async%20and%20Await%20\(C%23%20and%20Visual%20Basic\).md)和[异步程序中的控制流](../Topic/Control%20Flow%20in%20Async%20Programs%20\(C%23%20and%20Visual%20Basic\).md)。  
+ 当控件到达异步方法中的 `await` 时，将挂起方法中的进度，直到所等待的任务完成。 任务完成后，可以在方法中恢复执行。 有关详细信息，请参阅[使用 async 和 await 的异步编程](../../../csharp/programming-guide/concepts/async/index.md)和[异步程序中的控制流](../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md)。  
   
- 应用了 `await` 的完成任务可能由于返回此任务的方法中存在未处理的异常而处于错误状态。 等待该任务引发异常。 如果取消了返回任务的异步进程，此任务最后也可能为已取消状态。 等待已取消的任务引发 `OperationCanceledException`。 有关如何取消一个异步过程的详细信息，请参阅[微调异步应用程序](../Topic/Fine-Tuning%20Your%20Async%20Application%20\(C%23%20and%20Visual%20Basic\).md)。  
+ 应用了 `await` 的完成任务可能由于返回此任务的方法中存在未处理的异常而处于错误状态。 等待该任务引发异常。 如果取消了返回任务的异步进程，此任务最后也可能为已取消状态。 等待已取消的任务引发 `OperationCanceledException`。 有关如何取消异步进程的详细信息，请参阅[微调异步应用程序](http://msdn.microsoft.com/library/daaa32ea-c84c-4761-8230-c8292ffebd74)。  
   
  若要捕获异常，请在 `try` 块中等待任务并在关联的 `catch` 块中捕获异常。 相关示例，请参见“示例”一节。  
   
- 任务可能处于错误状态，因为等待的异步方法中发生了多个异常。 例如，任务可能是对的调用结果<xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName>。 当等待此类任务时，仅捕捉到其中一个异常，而且你无法预测将会捕获到哪个异常。 相关示例，请参见“示例”一节。  
+ 任务可能处于错误状态，因为等待的异步方法中发生了多个异常。 例如，任务可能是调用 <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName> 的结果。 当等待此类任务时，仅捕捉到其中一个异常，而且你无法预测将会捕获到哪个异常。 相关示例，请参见“示例”一节。  
   
 ## <a name="example"></a>示例  
  在下面的示例中，`try` 块包含对可能引发异常的 `ProcessString` 方法的调用。 `catch` 子句包含只在屏幕上显示一条消息的异常处理程序。 当从 `MyMethod` 内部调用 `throw` 语句时，系统将查找 `catch` 语句并显示消息 `Exception caught`。  
@@ -157,21 +176,21 @@ static void Main()
  [!code-cs[csAsyncExceptions#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch_3.cs)]  
   
 ## <a name="example"></a>示例  
- 下面的示例阐释了在多个任务可能导致多个异常的情况中的异常处理。 `try`块等待的任务，则返回通过调用<xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName>。 应用了 WhenAll 的三个任务完成后，该任务完成。  
+ 下面的示例阐释了在多个任务可能导致多个异常的情况中的异常处理。 `try` 块会等待通过调用 <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName> 返回的任务。 应用了 WhenAll 的三个任务完成后，该任务完成。  
   
- 三个任务中的每一个都会导致异常。 `catch`块循环访问异常，它位于`Exception.InnerExceptions`返回的任务的属性<xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName>。  
+ 三个任务中的每一个都会导致异常。 `catch` 块循环访问异常，这些异常位于由 <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName> 返回的任务的 `Exception.InnerExceptions` 属性中。  
   
  [!code-cs[csAsyncExceptions#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch_4.cs)]  
   
 ## <a name="c-language-specification"></a>C# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [C# 关键字](../../../csharp/language-reference/keywords/index.md)   
- [try、 throw 和 catch 语句 （c + +）](/visual-cpp/cpp/try-throw-and-catch-statements-cpp)   
+ [try、throw 和 catch 语句 (C++)](https://docs.microsoft.com/cpp/cpp/try-throw-and-catch-statements-cpp)   
  [异常处理语句](../../../csharp/language-reference/keywords/exception-handling-statements.md)   
- [引发](../../../csharp/language-reference/keywords/throw.md)   
- [的 try-finally](../../../csharp/language-reference/keywords/try-finally.md)   
- [如何︰ 显式引发异常](../Topic/How%20to:%20Explicitly%20Throw%20Exceptions.md)
+ [throw](../../../csharp/language-reference/keywords/throw.md)   
+ [try-finally](../../../csharp/language-reference/keywords/try-finally.md)   
+ [如何：显式引发异常](https://msdn.microsoft.com/library/xhcbs8fz)

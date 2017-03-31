@@ -10,9 +10,9 @@ ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 52db8280-0e53-40cf-858b-e8eef3997dea
 translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: d9efc2b1b8ad38a6444e7362da13ce3838476abd
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 75908d895017c31e36da6702f1b69816afb91d14
+ms.openlocfilehash: 8721c71bf69210cf73d7e703f19a22e267e36a28
+ms.lasthandoff: 03/28/2017
 
 ---
 
@@ -27,7 +27,7 @@ C# 指南收录了 C# 语言的大量信息。 此网站面向许多不同的受
     - 如果以前从事过开发工作，但是刚开始接触 C#，请阅读 [C# 语言介绍](tour-of-csharp/index.md)。 你将了解 C# 语言的基本语法和结构，并参考语言介绍将 C# 与你用过的其他语言进行比较。 还可以浏览[教程](tutorials/index.md)，尝试生成基本的 C# 程序。 或者，请参阅 [C# 概念](concepts.md)，深入了解 C# 语言的各项功能。
 
 * 对于 C# 经验丰富的开发者：
-    - 如果之前用过 C#，应先阅读此语言最新版本中新增的功能。 请参阅 [C# 6 中的新增功能](csharp-6.md)，了解当前版本中的新功能。 然后，浏览 [C# 概念](concepts.md)中想要更深入了解的内容。
+    - 如果之前用过 C#，应先阅读此语言最新版本中新增的功能。 请参阅 [C# 中的新增功能](whats-new/index.md)，了解当前版本中的新功能。 然后，浏览 [C# 概念](concepts.md)中想要更深入了解的内容。
  
 ## <a name="how-the-c-guide-is-organized"></a>C# 指南的结构
 
@@ -42,7 +42,7 @@ C# 指南分为七个部分。 可以按顺序阅读，也可以直接跳到最�
 * [C# 介绍](tour-of-csharp/index.md)： 
     - 此部分概述了 C# 语言。 你将了解 C# 程序的构成元素以及此语言的各项功能。 此部分收录了所有 C# 语法元素的小示例，并介绍了主要的 C# 语言主题。 
 
-* [最新功能](whats-new.md)：
+* [最新功能](whats-new/index.md)：
     - 此部分介绍了 C# 语言中的新功能。 还介绍了 C# 交互窗口 (C# REPL) 和 .NET 编译器平台 SDK 等新工具。 你将了解 C# 语言是如何不断发展的， 以及如何使用新工具提高探索语言和自动执行任务的效率。 
 
 * [C# 交互窗口](interactive/index.md)：
