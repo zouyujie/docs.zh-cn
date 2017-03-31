@@ -61,7 +61,7 @@ string contents = await contentsTask;
  `async` 关键字是上下文关键字，原因在于只有当它修饰方法、lambda 表达式或匿名方法时，它才是关键字。 在所有其他上下文中，都会将其解释为标识符。  
   
 ## <a name="example"></a>示例  
- 下面的示例展示了异步事件处理程序 `StartButton_Click` 和异步方法 `ExampleMethodAsync` 之间的控制结构和流程。 此异步方法得到的结果是一个下载网站的长度。 此代码适用于在 [!INCLUDE[vs_dev12](../../../csharp/getting-started/includes/vs_dev12_md.md)] 中创建的 Windows Presentation Foundation (WPF) 应用或 Windows 应用商店应用；请参见有关设置应用的代码注释。  
+ 下面的示例展示了异步事件处理程序 `StartButton_Click` 和异步方法 `ExampleMethodAsync` 之间的控制结构和流程。 此异步方法得到的结果是一个下载网站的长度。 此代码适用于在 Visual Studio 中创建的 Windows Presentation Foundation (WPF) 应用或 Windows 应用商店应用；请参见有关设置应用的代码注释。  
   
 ```csharp  
 // You can run this code in Visual Studio 2013 as a WPF app or a Windows Store app.  
