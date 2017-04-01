@@ -39,8 +39,7 @@ ms.lasthandoff: 03/13/2017
 利用 `#region`，可以指定在使用 Visual Studio Code 编辑器的[大纲功能](https://docs.microsoft.com/visualstudio/ide/outlining)时可展开或折叠的代码块。 在较长的代码文件中，能够折叠或隐藏一个或多个区域会十分便利，这样，可将精力集中于当前处理的文件部分。 下面的示例演示如何定义区域：  
   
 ```  
-  
-      #region MyClass definition  
+#region MyClass definition  
 public class MyClass   
 {  
     static void Main()   
@@ -59,3 +58,4 @@ public class MyClass
  [C# 参考](../../../csharp/language-reference/index.md)   
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
  [C# 预处理器指令](../../../csharp/language-reference/preprocessor-directives/index.md)
+
