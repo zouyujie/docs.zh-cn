@@ -36,9 +36,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 5fbd7c5e08d862f079e0596cbe394afd0538bccc
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 7e33ed084c560470a486ebbb25035a59ddc18565
+ms.openlocfilehash: 61f23020b8a5dd0136d54e0a2ceb925bebca88cc
+ms.lasthandoff: 03/31/2017
 
 ---
 # <a name="types-c-programming-guide"></a>类型（C# 编程指南）
@@ -92,7 +92,7 @@ ms.lasthandoff: 03/13/2017
   
 -   支持继承原则。 类型可以派生自其他类型（称为*基类型*）。 派生类型继承（有一些限制）基类型的方法、属性和其他成员。 基类型可以转而派生自其他某种类型，在这种情况下，派生类型可以继承其继承层次结构中两个基类型的成员。 所有类型（包括内置数值类型，如 <xref:System.Int32?displayProperty=fullName> (C# keyword: [int](../../../csharp/language-reference/keywords/int.md))）最终都继承自一个基类型，即 <xref:System.Object?displayProperty=fullName> (C# keyword: [object](../../../csharp/language-reference/keywords/object.md))。 这样的统一类型层次结构称为[通用类型系统](http://msdn.microsoft.com/library/53c57c96-83e1-4ee3-9543-9ac832671a89) (CTS)。 若要详细了解 C# 中的继承，请参阅[继承](../../../csharp/programming-guide/classes-and-structs/inheritance.md)。  
   
--   CTS 中的每种类型被定义为*值类型*或*引用类型*。 这包括 .NET Framework 类库中的所有自定义类型以及你自己的用户定义类型。 使用 [struct](../../../csharp/language-reference/keywords/struct.md) 关键字定义的类型是值类型；所有内置数值类型都是 `structs`。 使用 [class](../../../csharp/language-reference/keywords/class.md) 关键字定义的类型是引用类型。 引用类型和值类型遵循不同的编译时规则和运行时行为。  
+-   CTS 中的每种类型被定义为值类型或引用类型。 这包括 .NET Framework 类库中的所有自定义类型以及你自己的用户定义类型。 使用 [struct](../../../csharp/language-reference/keywords/struct.md) 关键字定义的类型是值类型；所有内置数值类型都是 `structs`。 使用 [class](../../../csharp/language-reference/keywords/class.md) 关键字定义的类型是引用类型。 引用类型和值类型遵循不同的编译时规则和运行时行为。  
   
  下图展示了 CTS 中值类型和引用类型之间的关系。  
   
@@ -202,9 +202,7 @@ stringList.Add(4);
 -   [匿名类型](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
   
 -   [泛型](../../../csharp/programming-guide/generics/index.md)  
-  
--   [Visual C# 2010 入门](http://go.microsoft.com/fwlink/?LinkId=221214)中的[变量和表达式](http://go.microsoft.com/fwlink/?LinkId=221228)  
-  
+
 ## <a name="c-language-specification"></a>C# 语言规范  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
