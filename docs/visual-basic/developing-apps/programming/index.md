@@ -1,51 +1,67 @@
 ---
-title: "Visual Basic 编程 | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "编程"
-  - "编程, Visual Basic"
+title: "Visual Basic 中的编程 | Microsoft 文档"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- programming, Visual Basic
+- programming
 ms.assetid: bc45a3de-ea36-46e6-a106-309a413d7804
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 11
----
-# Visual Basic 编程
-[!INCLUDE[vs2017banner](../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 1aed5aa95d9c7177ea52c28b2a169fdde8dc5ec4
+ms.lasthandoff: 03/13/2017
 
-本节讨论在创建 Visual Basic 应用程序时可能需要详细了解的编程任务。  
+---
+# <a name="programming-in-visual-basic"></a>Visual Basic 编程
+此部分将介绍在创建 Visual Basic 应用程序过程中可能想要详细了解的编程任务。  
   
-## 本节内容  
- [访问计算机资源](../../../visual-basic/developing-apps/programming/computer-resources/index.md)  
- 包含有关如何使用 `My.Computer` 对象访问有关运行应用程序的计算机的信息及如何控制该计算机的文档。  
+## <a name="in-this-section"></a>本节内容  
+ [访问计算机资源](../../../visual-basic/developing-apps/programming/computer-resources/computer-resources.md)  
+ 所含文档介绍了如何使用 `My.Computer` 对象访问运行应用程序的计算机的相关信息，并控制计算机。  
   
  [记录来自应用程序的信息](../../../visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)  
- 包含有关如何使用 `My.Application.Log` 和 `My.Log` 对象记录应用程序中的信息以及如何扩展应用程序的日志记录功能的文档。  
+ 所含文档介绍了如何使用 `My.Application.Log` 和 `My.Log` 对象记录应用程序的信息，以及如何扩展应用程序的日志记录功能。  
   
  [访问用户数据](../../../visual-basic/developing-apps/programming/accessing-user-data.md)  
- 包含有关可以使用 `My.User` 对象完成的任务的文档。  
+ 所含文档介绍了使用 `My.User` 对象可以完成的任务。  
   
  [访问应用程序窗体](../../../visual-basic/developing-apps/programming/accessing-application-forms.md)  
- 包含有关如何使用 `My.Forms` 和 `My.Application` 对象访问应用程序窗体的文档。  
+ 所含文档介绍了如何使用 `My.Forms` 和 `My.Application` 对象访问应用程序的窗体。  
   
  [访问应用程序 Web 服务](../../../visual-basic/developing-apps/programming/accessing-application-web-services.md)  
- 包含有关如何使用 `My.WebServices` 对象访问应用程序所引用的 Web 服务的文档。  
+ 所含文档介绍了如何使用 `My.WebServices` 对象访问应用程序引用的 Web 服务。  
   
- [访问应用程序的设置](../../../visual-basic/developing-apps/programming/app-settings/accessing-application-settings.md)  
- 包含有关如何使用 `My.Settings` 对象访问应用程序设置的文档。  
+ [访问应用程序设置](../../../visual-basic/developing-apps/programming/app-settings/accessing-application-settings.md)  
+ 所含文档介绍了如何使用 `My.Settings` 对象访问应用程序的设置。  
   
- [处理驱动器、目录和文件](../../../visual-basic/developing-apps/programming/drives-directories-files/index.md)  
- 包含有关如何使用 `My.Computer.FileSystem` 对象访问文件系统的文档。  
+ [处理驱动器、目录和文件](../../../visual-basic/developing-apps/programming/drives-directories-files/processing.md)  
+ 所含文档介绍了如何使用 `My.Computer.FileSystem` 对象访问文件系统。  
   
-## 请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Basic 语言功能](../../../visual-basic/programming-guide/language-features/index.md)   
- [编程概念](../Topic/Programming%20Concepts.md)   
- [集合](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md)   
+ [编程概念](../../../visual-basic/programming-guide/concepts/index.md)   
+ [集合](../../../visual-basic/programming-guide/concepts/collections.md)   
  [使用 Visual Basic 开发应用程序](../../../visual-basic/developing-apps/index.md)

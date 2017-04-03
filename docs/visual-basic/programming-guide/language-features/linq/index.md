@@ -1,63 +1,78 @@
 ---
-title: "Visual Basic 中的 LINQ | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "新增功能 [Visual Basic]"
+title: "Visual Basic 中的 LINQ | Microsoft 文档"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- what's new [Visual Basic]
 ms.assetid: ddba5545-ff6e-46c3-8967-5c4280db5aca
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 13
----
-# Visual Basic 中的 LINQ
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 26d2ceac051905f5ac46b59f6fd2598e924355c7
+ms.lasthandoff: 03/13/2017
 
-本节包含可帮助您理解和使用 Visual Basic 和[!INCLUDE[vbteclinqext](../../../../csharp/getting-started/includes/vbteclinqext-md.md)] 的概述、示例和背景信息。  
+---
+# <a name="linq-in-visual-basic"></a>Visual Basic 中的 LINQ
+此部分收录了有助于你了解和使用 Visual Basic 和 [!INCLUDE[vbteclinqext](../../../../csharp/getting-started/includes/vbteclinqext_md.md)] 的概述、示例和背景信息。  
   
-## 本节内容  
+## <a name="in-this-section"></a>本节内容  
  [Visual Basic 中的 LINQ 简介](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- 提供对 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] 提供程序、运算符、查询结构和语言功能的介绍。  
+ 介绍了 [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] 提供程序、运算符、查询结构和语言功能。  
   
  [如何：查询数据库](../../../../visual-basic/programming-guide/language-features/linq/how-to-query-a-database-by-using-linq.md)  
- 提供有关如何使用 LINQ 连接到 SQL Server 数据库并执行查询的示例。  
+ 通过示例展示了如何连接 SQL Server 数据库，并使用 LINQ 执行查询。  
   
  [如何：调用存储过程](../../../../visual-basic/programming-guide/language-features/linq/how-to-call-a-stored-procedure-by-using-linq.md)  
- 提供有关如何使用 LINQ 连接到 SQL Server 数据表并调用存储过程的示例。  
+ 通过示例展示了如何连接 SQL Server 数据库，并使用 LINQ 调用存储过程。  
   
  [如何：修改数据库中的数据](../../../../visual-basic/programming-guide/language-features/linq/how-to-modify-data-in-a-database-by-using-linq.md)  
- 提供有关如何使用 LINQ 连接到 SQL Server 数据库并检索和修改数据的示例。  
+ 通过示例展示了如何连接 SQL Server 数据库，并使用 LINQ 检索和修改数据。  
   
  [如何：使用联接合并数据](../../../../visual-basic/programming-guide/language-features/linq/how-to-combine-data-with-linq-by-using-joins.md)  
- 提供有关如何使用 LINQ 通过与数据库联接类似的方式联接数据的示例。  
+ 通过示例展示了如何使用 LINQ 联接数据，其方式类似于数据库联接。  
   
- [如何：排序查询结果](../../../../visual-basic/programming-guide/language-features/linq/how-to-sort-query-results-by-using-linq.md)  
- 提供有关如何使用 LINQ 对查询结果进行排序的示例。  
+ [如何：对查询结果进行排序](../../../../visual-basic/programming-guide/language-features/linq/how-to-sort-query-results-by-using-linq.md)  
+ 通过示例展示了如何使用 LINQ 对查询结果进行排序。  
   
  [如何：筛选查询结果](../../../../visual-basic/programming-guide/language-features/linq/how-to-filter-query-results-by-using-linq.md)  
- 提供有关如何使用 LINQ 在查询中包含搜索条件的示例。  
+ 通过示例展示了如何使用 LINQ 在查询中添加搜索条件。  
   
  [如何：对数据进行计数、求和与求平均值计算](../../../../visual-basic/programming-guide/language-features/linq/how-to-count-sum-or-average-data-by-using-linq.md)  
- 通过示例介绍如何使用 LINQ 包含聚合函数，对查询返回的数据进行计数 \(Count\)、求和 \(Sum\) 或求平均值 \(Average\) 计算。  
+ 通过示例展示了如何使用 LINQ 来添加聚合函数，从而对从查询返回的数据进行计数、求和与求平均值计算。  
   
  [如何：查找查询结果中的最小值或最大值](../../../../visual-basic/programming-guide/language-features/linq/how-to-find-the-minimum-or-maximum-value-in-a-query-result.md)  
- 提供有关如何使用 LINQ 包含聚合函数来确定从查询返回的数据的最小值和最大值的示例。  
+ 通过示例展示了如何使用 LINQ 来添加聚合函数，从而确定从查询返回的数据中的最大值和最小值。  
   
  [如何：以特定类型返回 LINQ 查询结果](../../../../visual-basic/programming-guide/language-features/linq/how-to-return-a-linq-query-result-as-a-specific-type.md)  
- 提供有关如何将 LINQ 查询的结果作为特定类型而非匿名类型返回的示例。  
+ 通过示例展示了如何将 LINQ 查询结果作为特定类型（而不是匿名类型）返回。  
   
-## 请参阅  
- [LINQ \(Language\-Integrated Query\)](../Topic/LINQ%20\(Language-Integrated%20Query\).md)   
+## <a name="see-also"></a>另请参阅  
+ [LINQ（语言集成查询）](../../../../visual-basic/programming-guide/concepts/linq/index.md)   
  [Visual Basic 中的 LINQ to XML 概述](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)   
- [LINQ to DataSet 概述](../Topic/LINQ%20to%20DataSet%20Overview.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
- [LINQ 示例](../Topic/LINQ%20Samples.md)   
- [演练：创建 LINQ to SQL 类（O\/R 设计器）](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)
+ [LINQ to DataSet 概述](https://msdn.microsoft.com/library/bb399399)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)

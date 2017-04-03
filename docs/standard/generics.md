@@ -29,7 +29,7 @@ ms.lasthandoff: 03/02/2017
 
 下面这个小程序演示了在运行时如何有效地了解数据结构类型：
 
-```cs
+```csharp
   using System;
   using System.Collections;
   using System.Collections.Generic;

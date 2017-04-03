@@ -1,48 +1,66 @@
 ---
-title: "in（泛型修饰符）（C# 参考） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "逆变, in 关键字 [C#]"
-  - "in 关键字 [C#]"
+title: "in（泛型修饰符）（C# 参考）| Microsoft Docs"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- contravariance, in keyword [C#]
+- in keyword [C#]
 ms.assetid: 3a778c36-8aed-4ebe-aa8b-39f4057215b1
 caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 17
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: b6c490d14b47aaa527fe2ddb3627ea0a84bfe604
+ms.lasthandoff: 03/13/2017
+
 ---
-# in（泛型修饰符）（C# 参考）
-对于泛型类型参数，`in` 关键字指定该类型参数是逆变的。  可以在泛型接口和委托中使用 `in` 关键字。  
+# <a name="in-generic-modifier-c-reference"></a>in（泛型修饰符）（C# 参考）
+对于泛型类型参数，`in` 关键字可指定类型参数是逆变的。 可以在泛型接口和委托中使用 `in` 关键字。  
   
- 通过逆变，可以使用与泛型参数指定的派生类型相比，派生程度更小的类型。  这样可以对委托类型和实现变体接口的类进行隐式转换。  引用类型支持泛型类型参数中的协变和逆变，但值类型不支持。  
+ 逆变使你使用的类型可以比泛型参数指定的类型派生程度更小。 这样可以隐式转换实现变体接口的类以及隐式转换委托类型。 引用类型支持泛型类型参数中的协变和逆变，但值类型不支持它们。  
   
- 在泛型接口或委托中，如果类型形参仅用作方法返回类型，而不用于方法实参，则可声明为协变的。  `Ref` 和 `out` 参数不能为变体。  
+ 如果类型仅用作方法参数的类型，而不用作方法返回类型，则类型可以在泛型接口或委托中声明为逆变。 `Ref` 和 `out` 参数不能为变体。  
   
- 如果接口具有逆变类型形参，则允许其方法接受与接口类型形参指定的派生类型相比，派生程度更小的类型的实参。  例如，由于在 .NET Framework 4 的 <xref:System.Collections.Generic.IComparer%601> 接口中，类型 T 是逆变的，因此如果 `Employee` 继承 `Person`，则无需使用任何特殊转换方法，就可以将 `IComparer(Of Person)` 类型的对象指派给 `IComparer(Of Employee)` 类型的对象。  
+ 具有逆变类型参数的接口使其方法接受的参数的类型可以比接口类型参数指定的类型派生程度更小。 例如，因为在 .NET Framework 4 的 <xref:System.Collections.Generic.IComparer%601> 接口中，类型 T 是逆变的，所以可以将 `IComparer(Of Person)` 类型的对象分配给 `IComparer(Of Employee)` 类型的对象，而无需使用任何特殊转换方法（如果 `Employee` 继承 `Person`）。  
   
- 可以向逆变委托分配同一类型的其他委托，但需使用派生程度较小的泛型类型参数。  
+ 可以向逆变委托分配相同类型的其他委托，不过要使用派生程度更小的泛型类型参数。  
   
- 有关更多信息，请参见[协变和逆变](../Topic/Covariance%20and%20Contravariance%20\(C%23%20and%20Visual%20Basic\).md)。  
+ 有关详细信息，请参阅[协变和逆变](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8)。  
   
-## 示例  
- 下例演示如何声明、扩展和实现一个逆变泛型接口。  此外还演示了如何对实现此接口的类使用隐式转换。  
+## <a name="example"></a>示例  
+ 下面的示例演示如何声明、扩展和实现逆变泛型接口。 它还演示如何对实现此接口的类使用隐式转换。  
   
  [!code-cs[csVarianceKeywords#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/in-generic-modifier_1.cs)]  
   
-## 示例  
- 下例演示如何声明、实例化和调用一个逆变泛型委托。  此外还演示了如何隐式转换委托类型。  
+## <a name="example"></a>示例  
+ 以下示例演示如何声明、实例化和调用逆变泛型委托。 它还演示如何隐式转换委托类型。  
   
  [!code-cs[csVarianceKeywords#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/in-generic-modifier_2.cs)]  
   
-## C\# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>C# 语言规范  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## 请参阅  
+## <a name="see-also"></a>请参阅  
  [out](../../../csharp/language-reference/keywords/out-generic-modifier.md)   
- [协变和逆变](../Topic/Covariance%20and%20Contravariance%20\(C%23%20and%20Visual%20Basic\).md)   
+ [协变和逆变](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8)   
  [修饰符](../../../csharp/language-reference/keywords/modifiers.md)

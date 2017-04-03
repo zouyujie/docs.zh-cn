@@ -1,29 +1,48 @@
 ---
-title: "方法（C# 编程指南） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "C# 语言, 方法"
-  - "方法 [C#]"
+title: "方法（C# 编程指南）| Microsoft Docs"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- methods [C#]
+- C# language, methods
 ms.assetid: cc738f07-e8cd-4683-9585-9f40c0667c37
 caps.latest.revision: 41
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 41
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: e44ef58e85fee164ab3b8be73a35083bd44c5df1
+ms.lasthandoff: 03/13/2017
+
 ---
-# 方法（C# 编程指南）
-方法是包含一系列语句的代码块。 程序通过调用该方法并指定任何所需的方法参数使语句得以执行。 在 C\# 中，每个执行的指令均在方法的上下文中执行。 Main 方法是每个 C\# 应用程序的入口点，并在启动程序时由公共语言运行时 \(CLR\) 调用。  
+# <a name="methods-c-programming-guide"></a>方法（C# 编程指南）
+方法是包含一系列语句的代码块。 程序通过调用该方法并指定任何所需的方法参数使语句得以执行。 在 C# 中，每个执行的指令均在方法的上下文中执行。 Main 方法是每个 C# 应用程序的入口点，并在启动程序时由公共语言运行时 (CLR) 调用。  
   
 > [!NOTE]
 >  本主题讨论命名的方法。 有关匿名函数的信息，请参阅[匿名函数](../../../csharp/programming-guide/statements-expressions-operators/anonymous-functions.md)。  
   
-## 方法签名  
- 通过指定访问级别（如 `public` 或 `private`）、可选修饰符（如 `abstract` 或 `sealed`）、返回值、方法的名称以及任何方法参数，在[类](../../../csharp/language-reference/keywords/class.md)或[结构](../../../csharp/language-reference/keywords/struct.md)中声明方法。 这些部件一起构成方法的签名。  
+## <a name="method-signatures"></a>方法签名  
+ 通过指定访问级别（如 `public` 或 `private`）、可选修饰符（如 `abstract` 或 `sealed`）、返回值、方法的名称以及任何方法参数，在 [class](../../../csharp/language-reference/keywords/class.md) 或 [struct](../../../csharp/language-reference/keywords/struct.md) 中声明方法。 这些部件一起构成方法的签名。  
   
 > [!NOTE]
 >  出于方法重载的目的，方法的返回类型不是方法签名的一部分。 但是在确定委托和它所指向的方法之间的兼容性时，它是方法签名的一部分。  
@@ -32,18 +51,18 @@ caps.handback.revision: 41
   
  [!code-cs[csProgGuideObjects#40](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/methods_1.cs)]  
   
-## 方法访问  
+## <a name="method-access"></a>方法访问  
  调用对象上的方法就像访问字段。 在对象名之后添加一个句点、方法名和括号。 参数列在括号里，并且用逗号分隔。 因此，可在以下示例中调用 `Motorcycle` 类的方法：  
   
  [!code-cs[csProgGuideObjects#41](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/methods_2.cs)]  
   
-## 方法参数与参数  
- 该方法定义指定任何所需参数的名称和类型。 调用代码调用该方法时，它为每个参数提供了称为参数的具体值。 参数必须与参数类型兼容，但调用代码中使用的参数名（如果有）不需要与方法中定义的参数名相同。 例如:  
+## <a name="method-parameters-vs-arguments"></a>方法参数与参数  
+ 该方法定义指定任何所需参数的名称和类型。 调用代码调用该方法时，它为每个参数提供了称为参数的具体值。 参数必须与参数类型兼容，但调用代码中使用的参数名（如果有）不需要与方法中定义的参数名相同。 例如:   
   
  [!code-cs[csProgGuideObjects#74](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/methods_3.cs)]  
   
-## 按引用传递与按值传递  
- 默认情况下，值类型传递给方法时，传递的是副本而不是对象本身。 因此，对参数的更改不会影响调用方法中的原始副本。 可以使用 ref 关键字按引用传递值类型。 有关更多信息，请参见[传递值类型参数](../../../csharp/programming-guide/classes-and-structs/passing-value-type-parameters.md)。 有关内置值类型的列表，请参阅[值类型表](../../../csharp/language-reference/keywords/value-types-table.md)。  
+## <a name="passing-by-reference-vs-passing-by-value"></a>按引用传递与按值传递  
+ 默认情况下，值类型传递给方法时，传递的是副本而不是对象本身。 因此，对参数的更改不会影响调用方法中的原始副本。 可以使用 ref 关键字按引用传递值类型。 有关详细信息，请参阅[传递值类型参数](../../../csharp/programming-guide/classes-and-structs/passing-value-type-parameters.md)。 有关内置值类型的列表，请参阅[值类型表](../../../csharp/language-reference/keywords/value-types-table.md)。  
   
  引用类型的对象传递到方法中时，将传递对对象的引用。 也就是说，该方法接收的不是对象本身，而是指示该对象位置的参数。 如果通过使用此引用更改对象的成员，即使是按值传递该对象，此更改也会反映在调用方法的参数中。  
   
@@ -55,12 +74,12 @@ caps.handback.revision: 41
   
  [!code-cs[csProgGuideObjects#75](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/methods_5.cs)]  
   
- 该示例执行的内容实质上与先前示例相同，均按值将参数传递到方法。 但是因为使用了引用类型，结果有所不同。`ModifyObject` 中所做的对形参 `obj` 的 `value` 字段的修改，也会更改 `TestRefType` 方法中实参 `rt` 的 `value` 字段。`TestRefType` 方法显示 33 作为输出。  
+ 该示例执行的内容实质上与先前示例相同，均按值将自变量传递到方法。 但是因为使用了引用类型，结果有所不同。 `ModifyObject` 中所做的对形参 `obj` 的 `value` 字段的修改，也会更改 `TestRefType` 方法中实参 `rt` 的 `value` 字段。 `TestRefType` 方法显示 33 作为输出。  
   
- 有关如何按引用和按值传递引用类型的详细信息，请参阅[传递引用类型参数](../../../csharp/programming-guide/classes-and-structs/passing-reference-type-parameters.md)和[引用类型](../../../csharp/language-reference/keywords/reference-types.md)。  
+ 有关如何通过引用和值传递引用类型的详细信息，请参阅[传递引用类型参数](../../../csharp/programming-guide/classes-and-structs/passing-reference-type-parameters.md)和[引用类型](../../../csharp/language-reference/keywords/reference-types.md)。  
   
-## 返回值  
- 方法可以将值返回到调用方。 如果列在方法名之前的返回类型不是 `void`，则该方法可通过使用 `return` 关键字返回值。 带 `return` 关键字，后跟与返回类型匹配的值的语句将该值返回到方法调用方。`return` 关键字还会停止执行该方法。 如果返回类型为 `void`，没有值的 `return` 语句仍可用于停止执行该方法。 没有 `return` 关键字，当方法到达代码块结尾时，将停止执行。 具有非空的返回类型的方法都需要使用 `return` 关键字来返回值。 例如，这两种方法都使用 `return` 关键字来返回整数：  
+## <a name="return-values"></a>返回值  
+ 方法可以将值返回到调用方。 如果列在方法名之前的返回类型不是 `void`，则该方法可通过使用 `return` 关键字返回值。 带 `return` 关键字，后跟与返回类型匹配的值的语句将该值返回到方法调用方。 `return` 关键字还会停止执行该方法。 如果返回类型为 `void`，没有值的 `return` 语句仍可用于停止执行该方法。 没有 `return` 关键字，当方法到达代码块结尾时，将停止执行。 具有非空的返回类型的方法都需要使用 `return` 关键字来返回值。 例如，这两种方法都使用 `return` 关键字来返回整数：  
   
  [!code-cs[csProgGuideObjects#44](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/methods_6.cs)]  
   
@@ -72,65 +91,86 @@ caps.handback.revision: 41
   
  在这种情况下，使用本地变量 `result` 存储值是可选的。 此步骤可以帮助提高代码的可读性，或者如果需要存储该方法整个范围内参数的原始值，则此步骤可能很有必要。  
   
- 如果调用函数将某个多维数组传递到方法 M 中，那么，即使 M 修改了该数组的内容，也无需从 M 返回该数组。你可能会从 M 返回生成的数组以获得良好的值样式或正常运行的值流，但此操作并无必要。  无需返回修改后的数组是因为，C\# 会按值传递所有引用类型，而数组引用的值是指向该数组的指针。 在方法 M 中，引用该数组的任何代码都能观察到数组内容的任何更改，如下面的示例所示。  
+ 如果调用函数将某个多维数组传递到方法 M 中，那么，即使 M 修改了该数组的内容，也无需从 M 返回该数组。你可能会从 M 返回生成的数组以获得良好的值样式或正常运行的值流，但此操作并无必要。  无需返回修改后的数组是因为，C# 会按值传递所有引用类型，而数组引用的值是指向该数组的指针。 在方法 M 中，引用该数组的任何代码都能观察到数组内容的任何更改，如下面的示例所示。  
   
-```c#  
-static void Main(string[] args) { int[,] matrix = new int[2, 2]; FillMatrix(matrix); // matrix is now full of -1 } public static void FillMatrix(int[,] matrix) { for (int i = 0; i < matrix.GetLength(0); i++) { for (int j = 0; j < matrix.GetLength(1); j++) { matrix[i, j] = -1; } } }  
+```csharp  
+static void Main(string[] args)  
+        {  
+            int[,] matrix = new int[2, 2];  
+            FillMatrix(matrix);  
+            // matrix is now full of -1  
+        }  
+  
+        public static void FillMatrix(int[,] matrix)  
+        {  
+            for (int i = 0; i < matrix.GetLength(0); i++)  
+            {  
+                for (int j = 0; j < matrix.GetLength(1); j++)  
+                {  
+                    matrix[i, j] = -1;  
+                }  
+            }  
+        }  
   
 ```  
   
- 有关详细信息，请参阅[return](../../../csharp/language-reference/keywords/return.md)。  
+ 有关详细信息，请参阅 [return](../../../csharp/language-reference/keywords/return.md)。  
   
-## 异步方法  
- 通过使用异步功能，你可以调用异步方法而无需使用显式回调，也不需要跨多个方法或 lambda 表达式来手动拆分代码。[!INCLUDE[vs_dev11_long](../../../csharp/includes/vs-dev11-long-md.md)] 中已引入异步功能。  
+## <a name="async-methods"></a>异步方法  
+ 通过使用异步功能，你可以调用异步方法而无需使用显式回调，也不需要跨多个方法或 lambda 表达式来手动拆分代码。 [!INCLUDE[vs_dev11_long](../../../csharp/includes/vs_dev11_long_md.md)] 中已引入异步功能。  
   
- 如果用 [async](../../../csharp/language-reference/keywords/async.md) 修饰符标记方法，则可以使用该方法中的 [await](../../../csharp/language-reference/keywords/await.md) 运算符。 当控件到达异步方法中的 await 表达式时，控件将返回到调用方，并在等待任务完成前，方法中进度将一直处于挂起状态。 任务完成后，可以在方法中恢复执行。  
+ 如果用 [async](../../../csharp/language-reference/keywords/async.md) 修饰符标记方法，则可以在该方法中使用 [await](../../../csharp/language-reference/keywords/await.md) 运算符。 当控件到达异步方法中的 await 表达式时，控件将返回到调用方，并在等待任务完成前，方法中进度将一直处于挂起状态。 任务完成后，可以在方法中恢复执行。  
   
 > [!NOTE]
 >  异步方法在遇到第一个尚未完成的 awaited 对象或到达异步方法的末尾时（以先发生者为准），将返回到调用方。  
   
- 异步方法可以具有 <xref:System.Threading.Tasks.Task%601>、<xref:System.Threading.Tasks.Task> 或 void 返回类型。 Void 返回类型主要用于定义需要 void 返回类型的事件处理程序。 无法等待返回 void 的异步方法，并且返回 void 方法的调用方无法捕获该方法引发的异常。  
+ 异步方法的返回类型可为 <xref:System.Threading.Tasks.Task%601>、<xref:System.Threading.Tasks.Task> 或 void。 Void 返回类型主要用于定义需要 void 返回类型的事件处理程序。 无法等待返回 void 的异步方法，并且返回 void 方法的调用方无法捕获该方法引发的异常。  
   
- 在以下示例中，`DelayAsync` 是具有 <xref:System.Threading.Tasks.Task%601> 返回类型的异步方法。`DelayAsync` 具有返回整数的 `return` 语句。 因此，`DelayAsync` 的方法声明必须具有 `Task<int>` 的返回类型。 因为返回类型是 `Task<int>`，`DoSomethingAsync` 中 `await` 表达式的计算如以下语句所示得出整数：`int result = await delayTask`。  
+ 在以下示例中，`DelayAsync` 是具有 <xref:System.Threading.Tasks.Task%601> 返回类型的异步方法。 `DelayAsync` 具有返回整数的 `return` 语句。 因此，`DelayAsync` 的方法声明必须具有 `Task<int>` 的返回类型。 因为返回类型是 `Task<int>`，`DoSomethingAsync` 中 `await` 表达式的计算如以下语句所示得出整数：`int result = await delayTask`。  
   
- `startButton_Click` 方法是具有 void 返回类型的异步方法的示例。 因为 `DoSomethingAsync` 是异步方法，调用 `DoSomethingAsync` 的任务必须等待，如以下语句所示：`await DoSomethingAsync();`。`startButton_Click` 方法必须使用 `async` 修饰符进行定义，因为该方法具有 `await` 表达式。  
+ `startButton_Click` 方法是具有 void 返回类型的异步方法的示例。 因为 `DoSomethingAsync` 是异步方法，调用 `DoSomethingAsync` 的任务必须等待，如以下语句所示：`await DoSomethingAsync();`。 `startButton_Click` 方法必须使用 `async` 修饰符进行定义，因为该方法具有 `await` 表达式。  
   
  [!code-cs[csAsyncMethod#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/methods_9.cs)]  
   
  异步方法不能声明任何 [ref](../../../csharp/language-reference/keywords/ref.md) 或 [out](../../../csharp/language-reference/keywords/out.md) 参数，但是可以调用具有这类参数的方法。  
   
- 有关异步方法的详细信息，请参阅[使用 Async 和 Await 的异步编程](../Topic/Asynchronous%20Programming%20with%20Async%20and%20Await%20\(C%23%20and%20Visual%20Basic\).md)、[异步程序中的控制流](../Topic/Control%20Flow%20in%20Async%20Programs%20\(C%23%20and%20Visual%20Basic\).md)和[异步返回类型](../Topic/Async%20Return%20Types%20\(C%23%20and%20Visual%20Basic\).md)。  
+ 有关异步方法的详细信息，请参阅[使用 async 和 await 的异步编程](../../../csharp/programming-guide/concepts/async/index.md)、[异步程序中的控制流](../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md)和[异步返回类型](../../../csharp/programming-guide/concepts/async/async-return-types.md)。  
   
-## 表达式主体定义  
+## <a name="expression-body-definitions"></a>表达式主体定义  
  具有立即仅返回表达式结果，或单个语句作为方法主题的方法定义很常见。  以下是使用 `=>` 定义此类方法的语法快捷方式：  
   
-```c#  
-public Point Move(int dx, int dy) => new Point(x + dx, y + dy); public void Print() => Console.WriteLine(First + " " + Last); // Works with operators, properties, and indexers too. public static Complex operator +(Complex a, Complex b) => a.Add(b); public string Name => First + " " + Last; public Customer this[long id] => store.LookupCustomer(id);  
+```csharp  
+public Point Move(int dx, int dy) => new Point(x + dx, y + dy);   
+public void Print() => Console.WriteLine(First + " " + Last);  
+// Works with operators, properties, and indexers too.  
+public static Complex operator +(Complex a, Complex b) => a.Add(b);  
+public string Name => First + " " + Last;   
+public Customer this[long id] => store.LookupCustomer(id);  
 ```  
   
  如果该方法返回 `void` 或是异步方法，则该方法的主体必须是语句表达式（与 lambda 相同）。  对于属性和索引器，两者必须是只读，并且不使用 `get` 访问器关键字。  
   
-## 迭代器  
+## <a name="iterators"></a>迭代器  
  迭代器对集合执行自定义迭代，如列表或数组。 迭代器使用 [yield return](../../../csharp/language-reference/keywords/yield.md) 语句返回元素，每次返回一个。 当 [yield return](../../../csharp/language-reference/keywords/yield.md) 语句到达时，将记住当前在代码中的位置。 下次调用迭代器时，将从该位置重新开始执行。  
   
  通过使用 [foreach](../../../csharp/language-reference/keywords/foreach-in.md) 语句从客户端代码调用迭代器。  
   
- 迭代器的返回类型可以是 <xref:System.Collections.IEnumerable>、<xref:System.Collections.Generic.IEnumerable%601>、<xref:System.Collections.IEnumerator> 或 <xref:System.Collections.Generic.IEnumerator%601>。  
+ 迭代器的返回类型可以为 <xref:System.Collections.IEnumerable>、<xref:System.Collections.Generic.IEnumerable%601>、<xref:System.Collections.IEnumerator> 或 <xref:System.Collections.Generic.IEnumerator%601>。  
   
- 有关更多信息，请参见[迭代器](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)。  
+ 有关详细信息，请参阅[迭代器](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)。  
   
-## C\# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>C# 语言规范  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## 请参阅  
- [C\# 编程指南](../../../csharp/programming-guide/index.md)   
- [类和结构](../../../csharp/programming-guide/classes-and-structs/index.md)   
- [访问修饰符](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)   
- [静态类和静态类成员](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)   
- [继承](../../../csharp/programming-guide/classes-and-structs/inheritance.md)   
- [抽象类、密封类及类成员](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)   
+## <a name="see-also"></a>请参阅  
+ [C# 编程指南](../../../csharp/programming-guide/index.md)   
+ [类和结构](index.md)   
+ [访问修饰符](access-modifiers.md)   
+ [静态类和静态类成员](static-classes-and-static-class-members.md)   
+ [继承](inheritance.md)   
+ [抽象类、密封类及类成员](abstract-and-sealed-classes-and-class-members.md)   
  [params](../../../csharp/language-reference/keywords/params.md)   
  [return](../../../csharp/language-reference/keywords/return.md)   
  [out](../../../csharp/language-reference/keywords/out.md)   
  [ref](../../../csharp/language-reference/keywords/ref.md)   
- [传递参数](../../../csharp/programming-guide/classes-and-structs/passing-parameters.md)
+ [传递参数](passing-parameters.md)

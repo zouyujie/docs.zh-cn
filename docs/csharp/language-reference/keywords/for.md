@@ -1,119 +1,137 @@
 ---
-title: "for（C# 参考） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "for"
-  - "for_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "for 关键字 [C#]"
+title: "for（C# 参考）| Microsoft Docs"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- for
+- for_CSharpKeyword
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- for keyword [C#]
 ms.assetid: 34041a40-2c87-467a-9ffb-a0417d8f67a8
 caps.latest.revision: 39
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 39
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: f2f32dd4bde376dd241cf168a4f034ba8f6e9b50
+ms.lasthandoff: 03/13/2017
+
 ---
-# for（C# 参考）
-使用 `for` 循环，可以反复运行语句或语句块，直到指定的表达式计算为 `false`。  这种循环是用于循环访问数组以及您事先知道的其他应用程序多少次希望此循环。  
+# <a name="for-c-reference"></a>for（C# 参考）
+通过使用 `for` 循环，可以重复运行一个语句或语句块，直到指定的表达式的计算结果为 `false` 为止。 这种类型的循环可用于循环访问数组，以及事先知道循环要在其中进行循环访问的次数的其他应用程序。  
   
-## 示例  
- 在下面的示例中，`i` 的值被写入控制台。并按 1 递增循环的每次迭代时。  
+## <a name="example"></a>示例  
+ 在下面的示例中，`i` 的值被写入控制台，并在循环的每次迭代过程中递增 1。  
   
  [!code-cs[csrefKeywordsIteration#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_1.cs)]  
   
- 前面示例中的 `for` 语句执行以下操作。  
+ 上一示例中的 `for` 语句执行以下操作。  
   
-1.  首先，可变 `i` 的初始值建立的。  此步骤仅发生一次，无论多少次此循环。  您可以将此初始化，当发生循环处理的外部。  
+1.  首先，建立变量 `i` 的初始值。 无论循环重复多少次，此步骤都只发生一次。 可以将此初始化视为发生在循环过程之外。  
   
-2.  若要计算该条件 \(`i <= 5`\)，`i` 的值与 5. 比较。  
+2.  若要计算条件 (`i <= 5`)，请将 `i` 的值与 5 相比较。  
   
-    -   如果 `i` 小于或等于 5，该条件的计算结果为 `true`，因此，以下操作。  
+    -   如果 `i` 小于或等于 5，则条件的计算结果为 `true`，并将发生以下操作。  
   
-        1.  在循环主体的 `Console.WriteLine` 语句演示 `i`的值。  
+        1.  循环主体中的 `Console.WriteLine` 语句显示 `i` 的值。  
   
-        2.  `i` 的值由 1. 增加。  
+        2.  `i` 的值增加 1。  
   
-        3.  循环回起点第 2 步再次计算该条件。  
+        3.  循环返回到步骤 2 的起始位置以再次计算条件。  
   
-    -   如果 `i` 大于 5，该条件的计算结果为 `false`，因此，您退出循环。  
+    -   如果 `i` 大于 5，则条件的计算结果为 `false`，并退出循环。  
   
- 请注意，因此，如果 `i` 的原始值大于 5，循环体哪怕一次不会运行。  
+ 请注意，如果 `i` 的初始值大于 5，则循环主体一次都不会运行。  
   
- 每个 `for` 语句定义初始值设定项、条件和迭代器部分。  这些部分通常多少次此循环。  
+ 每个 `for` 语句都定义初始化表达式、条件和迭代器部分。 这些部分通常确定循环进行循环访问的次数。  
   
-```c#  
+```csharp  
 for (initializer; condition; iterator)  
     body  
 ```  
   
- 部分提供了以下用途。  
+ 这些部分可实现以下目的。  
   
--   初始值设定项部分设置初始条件。  在任一次运行的此部分的语句，则，在进入循环之前。  该部分只能包含下面两个选项。  
+-   初始化表达式部分设置初始条件。 输入循环前，此部分中的语句仅运行一次。 此部分仅可包含以下两个选项之一。  
   
-    -   本地循环变量的声明和初始化，作为第一个示例显示 \(`int i = 1`\)。  该变量是本地到循环，不能从循环外部访问。  
+    -   本地循环变量的声明和初始化，如第一个示例所示 (`int i = 1`)。 变量对于循环来说是本地的，且不能从循环的外部进行访问。  
   
-    -   零个或多个语句 expressons 从以下列表，以逗号分隔。  
+    -   以下列表中显示用逗号分隔的零个或多个语句表达式。  
   
-        -   [分配](../../../csharp/language-reference/operators/assignment-operator.md) 语句  
+        -   [赋值](../../../csharp/language-reference/operators/assignment-operator.md)语句  
   
         -   方法的调用  
   
-        -   向或后缀 [增量](../../../csharp/language-reference/operators/increment-operator.md) 表达式作为前缀，例如 `++i` 或 `i++`  
+        -   为 [increment](../../../csharp/language-reference/operators/increment-operator.md) 表达式添加前缀或后缀，如 `++i` 或 `i++`  
   
-        -   向或后缀 [减量](../../../csharp/language-reference/operators/decrement-operator.md) 表达式作为前缀，例如 `--i` 或 `i--`  
+        -   为 [decrement](../../../csharp/language-reference/operators/decrement-operator.md) 表达式添加前缀或后缀，如 `--i` 或 `i--`  
   
-        -   对象的使用创建的 [new](../../../csharp/language-reference/keywords/new-operator.md)  
+        -   通过使用 [new](../../../csharp/language-reference/keywords/new-operator.md) 创建对象  
   
-        -   [等待](../../../csharp/language-reference/keywords/await.md) 表达式  
+        -   [await](../../../csharp/language-reference/keywords/await.md) 表达式  
   
--   条件部分包含计算确定的布尔表达式循环是否应该退出或应再次运行。  
+-   条件部分包含布尔表达式，计算该表达式可确定循环应该退出还是应该再次运行。  
   
--   迭代器节定义了什么在循环体中的每个迭代之后发生。  迭代器节包含零个或多个下列语句表达式，逗号分隔\):  
+-   迭代器部分定义循环主体的每次迭代后将执行的操作。 迭代器部分包含用逗号分隔的零个或多个以下语句表达式：  
   
-    -   [分配](../../../csharp/language-reference/operators/assignment-operator.md) 语句  
+    -   [赋值](../../../csharp/language-reference/operators/assignment-operator.md)语句  
   
     -   方法的调用  
   
-    -   向或后缀 [增量](../../../csharp/language-reference/operators/increment-operator.md) 表达式作为前缀，例如 `++i` 或 `i++`  
+    -   为 [increment](../../../csharp/language-reference/operators/increment-operator.md) 表达式添加前缀或后缀，如 `++i` 或 `i++`  
   
-    -   向或后缀 [减量](../../../csharp/language-reference/operators/decrement-operator.md) 表达式作为前缀，例如 `--i` 或 `i--`  
+    -   为 [decrement](../../../csharp/language-reference/operators/decrement-operator.md) 表达式添加前缀或后缀，如 `--i` 或 `i--`  
   
-    -   对象的使用创建的 [new](../../../csharp/language-reference/keywords/new-operator.md)  
+    -   通过使用 [new](../../../csharp/language-reference/keywords/new-operator.md) 创建对象  
   
-    -   [等待](../../../csharp/language-reference/keywords/await.md) 表达式  
+    -   [await](../../../csharp/language-reference/keywords/await.md) 表达式  
   
--   循环体包括语句、一个空的语句或语句块，则通过将零个或多个语句创建在大括号。  
+-   循环主体由一个语句、一个空语句或一个语句块（通过将零个或多个语句用大括号括起来而创建）构成。  
   
-     使用 [中断](../../../csharp/language-reference/keywords/break.md) 关键字，则可能发生 `for` 循环，使用 [继续](../../../csharp/language-reference/keywords/continue.md) 关键字，也可以单步执行到下一个迭代。  使用 [导航](../../../csharp/language-reference/keywords/goto.md)、[返回](../../../csharp/language-reference/keywords/return.md)或 [引发](../../../csharp/language-reference/keywords/throw.md) 语句，还可以退出所有循环。  
+     可以使用关键字 [break](../../../csharp/language-reference/keywords/break.md) 中断 `for` 循环，或者可以使用关键字 [continue](../../../csharp/language-reference/keywords/continue.md) 继续执行到下一次迭代。 还可以使用 [goto](../../../csharp/language-reference/keywords/goto.md)、[return](../../../csharp/language-reference/keywords/return.md) 或 [throw](../../../csharp/language-reference/keywords/throw.md) 语句退出任何循环。  
   
- 本主题中的第一个示例显示最典型的 `for` 循环，做出部分的下列选择。  
+ 本主题中的第一个示例显示了一种最典型的 `for` 循环，它为各部分做出了以下选择。  
   
--   该初始值设定项声明并初始化本地循环变量，`i`，维护循环的迭代计数。  
+-   初始化表达式声明并初始化本地循环变量 `i`，用于维护循环的迭代计数。  
   
--   状态检查循环变量的值已知的最终值，5. 的。  
+-   条件将针对已知的最终值 5 检查循环变量的值。  
   
--   迭代器部分使用后缀递增语句，`i++`，匹配循环的每次迭代。  
+-   迭代器部分使用后缀递增语句 `i++`，来计算循环的每次迭代。  
   
- 下面的示例阐释若干不太常见选择：将值赋给初始值设定项部分的外部循环变量，对初始值设定项和迭代器部分的 `Console.WriteLine` 方法和更改两个变量的值在迭代器部分。  
+ 下面的示例阐释了几种不太常见的选择：为初始化表达式部分中的外部循环变量赋值、同时在初始化表达式部分和迭代器部分中调用 `Console.WriteLine` 方法，以及更改迭代器部分中的两个变量的值。  
   
  [!code-cs[csrefKeywordsIteration#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_2.cs)]  
   
- 定义一个 `for` 语句的任何表达式都是可选的。  例如，下面的语句创建无限循环。  
+ 定义 `for` 语句的所有表达式都是可选的。 例如，以下语句创建一个无限循环。  
   
  [!code-cs[csrefKeywordsIteration#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_3.cs)]  
   
-## C\# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>C# 语言规范  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## 请参阅  
- [C\# 参考](../../../csharp/language-reference/index.md)   
- [C\# 编程指南](../../../csharp/programming-guide/index.md)   
- [C\# 关键字](../../../csharp/language-reference/keywords/index.md)   
- [foreach，in](../../../csharp/language-reference/keywords/foreach-in.md)   
- [for 语句 \(C\+\+\)](/visual-cpp/cpp/for-statement-cpp)   
+## <a name="see-also"></a>另请参阅  
+ [C# 参考](../../../csharp/language-reference/index.md)   
+ [C# 编程指南](../../../csharp/programming-guide/index.md)   
+ [C# 关键字](../../../csharp/language-reference/keywords/index.md)   
+ [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)   
+ [for 语句 (C++)](https://docs.microsoft.com/cpp/cpp/for-statement-cpp)   
  [迭代语句](../../../csharp/language-reference/keywords/iteration-statements.md)

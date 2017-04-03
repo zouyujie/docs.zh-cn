@@ -1,31 +1,49 @@
 ---
-title: "false 字面常数（C# 参考） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "false 字面常数关键字 [C#]"
+title: "false 字面常数（C# 参考）| Microsoft Docs"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- false literal keyword [C#]
 ms.assetid: fcc1c1a5-0e42-4226-a128-81492a9bf719
 caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 15
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 683adbea6856c5dab1ea50c675fe452dfee386ca
+ms.lasthandoff: 03/13/2017
+
 ---
-# false 字面常数（C# 参考）
+# <a name="false-literal-c-reference"></a>false 字面常数（C# 参考）
 表示布尔值 false。  
   
-## 示例  
+## <a name="example"></a>示例  
  [!code-cs[csrefKeywordsOperator#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/false-literal_1.cs)]  
   
-## C\# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>C# 语言规范  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## 请参阅  
- [C\# 参考](../../../csharp/language-reference/index.md)   
- [C\# 编程指南](../../../csharp/programming-guide/index.md)   
- [C\# 关键字](../../../csharp/language-reference/keywords/index.md)   
+## <a name="see-also"></a>另请参阅  
+ [C# 参考](../../../csharp/language-reference/index.md)   
+ [C# 编程指南](../../../csharp/programming-guide/index.md)   
+ [C# 关键字](../../../csharp/language-reference/keywords/index.md)   
  [true](../../../csharp/language-reference/keywords/true.md)

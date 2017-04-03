@@ -1,63 +1,81 @@
 ---
-title: "可访问性级别（C# 参考） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "访问修饰符 [C#], 可访问性级别"
-  - "可访问性级别"
+title: "可访问性级别（C# 参考）| Microsoft Docs"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- access modifiers [C#], accessibility levels
+- accessibility levels
 ms.assetid: dc083921-0073-413e-8936-a613e8bb7df4
 caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 19
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 30220e92e55ac6101cf8fedd8920755cd25978bd
+ms.lasthandoff: 03/13/2017
+
 ---
-# 可访问性级别（C# 参考）
-使用访问修饰符 [public](../../../csharp/language-reference/keywords/public.md)、[protected](../../../csharp/language-reference/keywords/protected.md)、[internal](../../../csharp/language-reference/keywords/internal.md) 或 [private](../../../csharp/language-reference/keywords/private.md) 可以为成员指定以下声明的访问级别之一。  
+# <a name="accessibility-levels-c-reference"></a>可访问性级别（C# 参考）
+使用访问修饰符 [public](../../../csharp/language-reference/keywords/public.md)、[protected](../../../csharp/language-reference/keywords/protected.md)、[internal](../../../csharp/language-reference/keywords/internal.md) 或 [private](../../../csharp/language-reference/keywords/private.md)，以为成员指定以下声明的可访问性级别之一。  
   
 |声明的可访问性|含义|  
-|-------------|--------|  
+|----------------------------|-------------|  
 |`public`|访问不受限制。|  
-|`protected`|访问仅限于包含类或从包含类派生的类型。|  
-|`internal`|访问仅限于当前程序集。|  
-|`protected` `internal`|访问仅限于从包含类派生的当前程序集或类型。|  
-|`private`|访问仅限于包含类型。|  
+|`protected`|访问限于包含类或派生自包含类的类型。|  
+|`internal`|访问限于当前程序集。|  
+|`protected` `internal`|访问限于当前程序集或派生自包含类的类型。|  
+|`private`|访问限于包含类。|  
   
- 一个成员或类型只能有一个访问修饰符，但使用 `protected` `internal` 组合时除外。  
+ 除使用 `protected` `internal` 组合的情况外，一个成员或类型仅允许一个访问修饰符。  
   
- 命名空间上不允许使用访问修饰符。  命名空间没有访问限制。  
+ 命名空间中不允许出现访问修饰符。 命名空间没有任何访问限制。  
   
- 根据出现成员声明的上下文，只允许某些声明的可访问性。  如果在成员声明中未指定访问修饰符，则使用默认的可访问性。  
+ 根据出现成员声明的上下文，仅允许某些声明的可访问性。 如果未在成员声明中指定访问修饰符，则将使用默认可访问性。  
   
- 不嵌套在其他类型中的顶级类型的可访问性只能是 `internal` 或 `public`。  这些类型的默认可访问性是 `internal`。  
+ 未嵌套在其他类型中的顶级类型只能具有 `internal` 或 `public` 可访问性。 这些类型的默认可访问性为 `internal`。  
   
- 嵌套类型是其他类型的成员，它们可以具有下表所示的声明的可访问性。  
+ 作为其他类型的成员的嵌套类型可以具有如下表所示的声明的可访问性。  
   
-|属于|默认的成员可访问性|该成员允许的声明的可访问性|  
-|--------|---------------|-------------------|  
+|成员|默认成员可访问性|允许的成员的声明的可访问性|  
+|----------------|----------------------------------|--------------------------------------------------|  
 |`enum`|`public`|无|  
 |`class`|`private`|`public`<br /><br /> `protected`<br /><br /> `internal`<br /><br /> `private`<br /><br /> `protected` `internal`|  
 |`interface`|`public`|无|  
 |`struct`|`private`|`public`<br /><br /> `internal`<br /><br /> `private`|  
   
- 嵌套类型的可访问性取决于它的[可访问域](../../../csharp/language-reference/keywords/accessibility-domain.md)，该域是由已声明的成员可访问性和直接包含类型的可访问域这二者共同确定的。  但是，嵌套类型的可访问域不能超出包含类型的可访问域。  
+ 嵌套类型的可访问性依赖于它的[可访问域](../../../csharp/language-reference/keywords/accessibility-domain.md)，该域是由已声明的成员可访问性和直接包含类型的可访问域这二者共同确定的。 但是，嵌套类型的可访问域不能超出包含类型的可访问域。  
   
-## C\# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>C# 语言规范  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## 请参阅  
- [C\# 参考](../../../csharp/language-reference/index.md)   
- [C\# 编程指南](../../../csharp/programming-guide/index.md)   
- [C\# 关键字](../../../csharp/language-reference/keywords/index.md)   
+## <a name="see-also"></a>另请参阅  
+ [C# 参考](../../../csharp/language-reference/index.md)   
+ [C# 编程指南](../../../csharp/programming-guide/index.md)   
+ [C# 关键字](../../../csharp/language-reference/keywords/index.md)   
  [访问修饰符](../../../csharp/language-reference/keywords/access-modifiers.md)   
  [可访问域](../../../csharp/language-reference/keywords/accessibility-domain.md)   
- [对使用可访问性级别的限制](../../../csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md)   
+ [可访问性级别的使用限制](../../../csharp/language-reference/keywords/restrictions-on-using-accessibility-levels.md)   
  [访问修饰符](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)   
  [public](../../../csharp/language-reference/keywords/public.md)   
  [private](../../../csharp/language-reference/keywords/private.md)   
  [protected](../../../csharp/language-reference/keywords/protected.md)   
- [内部](../../../csharp/language-reference/keywords/internal.md)
+ [internal](../../../csharp/language-reference/keywords/internal.md)

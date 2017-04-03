@@ -1,175 +1,192 @@
 ---
-title: "演练：在 Visual Basic 中操作文件和目录 | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "文件访问, 演练"
-  - "文件, 读取文本"
-  - "文件, 编写文本"
-  - "I/O [Visual Basic], 从文件中读取文本"
-  - "I/O [Visual Basic], 演练"
-  - "I/O [Visual Basic], 将文本写入文件"
-  - "读取文件, 文本"
-  - "从文件中读取文本, 演练"
-  - "文本, 从文件读取"
-  - "文本, 写入文件"
-  - "Visual Basic 代码, 文件访问"
-  - "写入文件, 演练"
+title: "在 Visual Basic 中操作文件和目录 | Microsoft Docs"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- files, reading text
+- reading files, text
+- I/O [Visual Basic], walkthroughs
+- text, writing to files
+- text, reading from files
+- reading text from files, walkthroughs
+- Visual Basic code, file access
+- files, writing text
+- I/O [Visual Basic], writing text to files
+- file access, walkthroughs
+- writing to files, walkthroughs
+- I/O [Visual Basic], reading text from files
 ms.assetid: cae77565-9f78-4e46-8e42-eb2f9f8e1ffd
 caps.latest.revision: 49
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 49
----
-# 演练：在 Visual Basic 中操作文件和目录
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 89137b3c927a7ac8ed126f2be3695c4aa72a85fb
+ms.lasthandoff: 03/13/2017
 
-此演练介绍有关 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中文件 I\/O 的基本知识。  它介绍如何创建一个小应用程序，该应用程序列出并检查某个目录中的文件文件。  对于每个选择的文本文件，该应用程序提供文件特性和第一行内容。  有一个将信息写入日志文件的选项。  
+---
+# <a name="walkthrough-manipulating-files-and-directories-in-visual-basic"></a>演练：在 Visual Basic 中操作文件和目录
+本演练简单介绍 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 中文件 I/O 的基础知识。 描述如何创建列出并检查目录中文本文件的小型应用程序。 对于所选的每个文本文件，该应用程序都会提供文件属性和内容的第一行。 可以选择将信息写入日志文件中。  
   
- 本演练使用 `My.Computer.FileSystem Object` 的成员，[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 中提供了这些成员。  有关更多信息，请参见 <xref:Microsoft.VisualBasic.FileIO.FileSystem>。  在本演练的最后提供了一个等效示例，该示例使用来自 <xref:System.IO> 命名空间的类。  
+ 本演练使用 `My.Computer.FileSystem Object` 的成员，这些成员可从 [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 中获得。 有关详细信息，请参阅 <xref:Microsoft.VisualBasic.FileIO.FileSystem>。 本演练末尾提供等效示例，该示例使用来自 <xref:System.IO> 命名空间的类。  
   
- [!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note-settings-general-md.md)]  
+[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
-### 创建项目  
+### <a name="to-create-the-project"></a>创建项目  
   
-1.  在**“文件”**菜单上，单击**“新建项目”**。  
+1.  在“文件”****菜单上，单击“新建项目”****。  
   
-     此时将出现**“新建项目”**对话框。  
+     此时将出现 **“新建项目”** 对话框。  
   
-2.  在**“已安装的模板”**窗格中，展开**“Visual Basic”**，然后单击**“Windows”**。  在中间的**“模板”**窗格中，单击**“Windows 窗体应用程序”**。  
+2.  在“已安装的模板”****窗格中，展开“Visual Basic”****，然后单击“Windows”****。 在中间的“模板”****窗格中，单击“Windows 窗体应用程序”****。  
   
-3.  在**“名称”**框中，键入 `FileExplorer` 以设置项目名称，再单击**“确定”**。  
+3.  在“名称”****框中，键入 `FileExplorer` 以设置项目名称，然后单击“确定”****。  
   
-     [!INCLUDE[vsprvs](../../../../csharp/includes/vsprvs-md.md)] 将该项目添加到**“解决方案资源管理器”**中，Windows 窗体设计器随即打开。  
+     [!INCLUDE[vsprvs](../../../../csharp/includes/vsprvs_md.md)] 会将项目添加到“解决方案资源管理器”****中，并打开 Windows 窗体设计器。  
   
-4.  将下表中的控件添加到窗体中，并给其属性设置相应的值。  
+4.  将下表中的控件添加到窗体，并设置控件属性相应的值。  
   
     |控件|属性|值|  
-    |--------|--------|-------|  
-    |**ListBox**|**名称**|`filesListBox`|  
-    |**Button**|**名称**<br /><br /> **Text**|`browseButton`<br /><br /> 浏览|  
-    |**Button**|**名称**<br /><br /> **Text**|`examineButton`<br /><br /> Examine|  
-    |**CheckBox**|**名称**<br /><br /> **Text**|`saveCheckBox`<br /><br /> Save Results|  
-    |**FolderBrowserDialog**|**名称**|`FolderBrowserDialog1`|  
+    |-------------|--------------|-----------|  
+    |**ListBox**|**Name**|`filesListBox`|  
+    |**Button**|**Name**<br /><br /> **文本**|`browseButton`<br /><br /> **浏览**|  
+    |**Button**|**Name**<br /><br /> **文本**|`examineButton`<br /><br /> **检查**|  
+    |**CheckBox**|**Name**<br /><br /> **文本**|`saveCheckBox`<br /><br /> **保存结果**|  
+    |**FolderBrowserDialog**|**Name**|`FolderBrowserDialog1`|  
   
-### 选择文件夹并列出文件夹中的文件  
+### <a name="to-select-a-folder-and-list-files-in-a-folder"></a>选择一个文件夹，并列出文件夹中的文件  
   
-1.  通过双击窗体上的控件，为 `browseButton` 创建一个 `Click` 事件处理程序。  代码编辑器打开。  
+1.  通过双击窗体上的控件，创建 `browseButton` 的 `Click` 事件处理程序。 代码编辑器随即打开。  
   
-2.  将下面的代码添加到 `Click` 事件处理程序中。  
+2.  将以下代码添加到 `Click` 事件处理程序中。  
   
      [!code-vb[VbVbcnMyFileSystem#103](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_1.vb)]  
   
-     `FolderBrowserDialog1.ShowDialog` 调用打开**“浏览文件夹”**对话框。  用户单击**“确定”**后，<xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> 属性将作为参数发送到 `ListFiles` 方法，将在下一步添加该方法。  
+     `FolderBrowserDialog1.ShowDialog` 调用将打开“浏览文件夹”****对话框。 用户单击“确定”****后，将 <xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> 属性作为参数发送给下一步中添加的 `ListFiles` 方法。  
   
-3.  添加下面的 `ListFiles` 方法。  
+3.  添加以下 `ListFiles` 方法。  
   
      [!code-vb[VbVbcnMyFileSystem#104](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_2.vb)]  
   
-     此代码首先清除**“ListBox”**。  
+     此代码首先会清除“ListBox”****。  
   
-     然后，<xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles%2A> 方法检索字符串集合，目录中的每个文件对应一个字符串。  `GetFiles` 方法接受搜索模式参数以便检索与特定模式匹配的文件。  在此示例中，只返回具有扩展名 .txt 的文件。  
+     然后 <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles%2A> 方法将检索该目录中每个文件的字符串集合。 `GetFiles` 方法接受一个搜索模式参数来检索与特定模式匹配的文件。 在此示例中，仅返回具有 .txt 扩展名的文件。  
   
-     然后，会将 `GetFiles` 方法返回的字符串添加到**“ListBox”**中。  
+     通过 `GetFiles` 方法返回的字符串随后将添加到“ListBox”****中。  
   
-4.  运行该应用程序。  单击**“浏览”**按钮。  在**“浏览文件夹”**对话框中，浏览到包含 .txt 文件的文件夹，然后选择该文件夹并单击**“确定”**。  
+4.  运行该应用程序。 单击“浏览”****按钮。 在“浏览文件夹”****对话框中，浏览到包含 .txt 文件的文件夹，然后选择该文件夹，并单击“确定”****。  
   
-     `ListBox` 包含选定文件夹中的 .txt 文件列表。  
+     `ListBox` 包含所选文件夹中 .txt 文件的列表。  
   
-5.  停止运行应用程序。  
+5.  停止运行该应用程序。  
   
-### 获取文件的特性和文本文件的内容  
+### <a name="to-obtain-attributes-of-a-file-and-content-from-a-text-file"></a>从文本文件获取文件的属性和内容  
   
-1.  通过双击窗体上的控件，为 `examineButton` 创建一个 `Click` 事件处理程序。  
+1.  通过双击窗体上的控件，创建 `examineButton` 的 `Click` 事件处理程序。  
   
-2.  将下面的代码添加到 `Click` 事件处理程序中。  
+2.  将以下代码添加到 `Click` 事件处理程序中。  
   
      [!code-vb[VbVbcnMyFileSystem#105](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_3.vb)]  
   
-     该代码确认在 `ListBox` 中选择了一个项目。  然后，它从 `ListBox` 获取文件路径条目。  <xref:Microsoft.VisualBasic.FileIO.FileSystem.FileExists%2A> 方法用来检查文件是否仍存在。  
+     该代码验证是否在 `ListBox` 中选中某项。 然后，将从 `ListBox` 获取文件路径项。 <xref:Microsoft.VisualBasic.FileIO.FileSystem.FileExists%2A> 方法用于检查文件是否仍然存在。  
   
-     文件路径将作为参数发送到 `GetTextForOutput` 方法，将在下一步添加该方法。  此方法返回包含文件信息的字符串。  文件信息显示在**“MessageBox”**中。  
+     该文件路径作为参数发送给下一步中添加的 `GetTextForOutput` 方法。 此方法返回一个包含文件信息字符串。 该文件信息将出现在“MessageBox”****中。  
   
-3.  添加下面的 `GetTextForOutput` 方法。  
+3.  添加以下 `GetTextForOutput` 方法。  
   
      [!code-vb[VbVbcnMyFileSystem#107](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_4.vb)]  
   
-     该代码使用 <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo%2A> 方法获取文件参数。  文件参数将添加到 <xref:System.Text.StringBuilder>。  
+     该代码使用 <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo%2A> 方法来获取文件参数。 该文件参数将添加到 <xref:System.Text.StringBuilder>。  
   
-     <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFileReader%2A> 方法将文件内容读取到 <xref:System.IO.StreamReader> 中。  从 `StreamReader` 获取第一行内容并将其添加到 `StringBuilder`。  
+     <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFileReader%2A> 方法会将文件内容读取到 <xref:System.IO.StreamReader>。 该内容的第一行是从 `StreamReader` 获取的，然后将添加到 `StringBuilder`。  
   
-4.  运行该应用程序。  单击**“浏览”**，并浏览到包含 .txt 文件的文件夹。  单击**“确定”**。  
+4.  运行该应用程序。 单击“浏览”****，然后浏览到包含 .txt 文件的文件夹。 单击“确定”****。  
   
-     在 `ListBox` 中选择文件，然后单击**“检查”**。  `MessageBox` 显示文件信息。  
+     在 `ListBox` 中选择一个文件，然后单击“检查”****。 `MessageBox` 显示文件信息。  
   
-5.  停止运行应用程序。  
+5.  停止运行该应用程序。  
   
-### 添加日志项目  
+### <a name="to-add-a-log-entry"></a>添加日志项目  
   
-1.  将以下代码添加到 `examineButton_Click` 事件处理程序的末尾。  
+1.  将以下代码添加到 `examineButton_Click` 事件处理程序末尾。  
   
      [!code-vb[VbVbcnMyFileSystem#106](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_5.vb)]  
   
-     该代码设置日志文件路径，以便将日志文件放在与所选文件相同的目录中。  将日志项目的文本设置为当前日期和时间，后跟文件信息。  
+     该代码设置日志文件路径以便将日志文件放在与所选文件相同的目录中。 日志项目的文本设置为当前日期和文件信息后的时间。  
   
-     <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A> 方法（`append` 参数设置为 `True`）用于创建日志项目。  
+     <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A> 方法用于创建日志条目，其中 `append` 参数设置为 `True`。  
   
-2.  运行该应用程序。  浏览到某个文本文件，在 `ListBox` 中选择它，选中**“保存结果”**复选框，然后单击**“检查”**。  请确认日志项目已写入 `log.txt` 文件。  
+2.  运行该应用程序。 浏览到一个文本文件，在 `ListBox` 中选中它，选择“保存结果”****复选框，然后再单击“检查”****。 验证日志条目是否写入 `log.txt` 文件。  
   
-3.  停止运行应用程序。  
+3.  停止运行该应用程序。  
   
-### 使用当前目录  
+### <a name="to-use-the-current-directory"></a>使用当前目录  
   
-1.  双击该窗体，为 `Form1_Load` 事件创建一个事件处理程序。  
+1.  通过双击窗体，创建 `Form1_Load` 的事件处理程序。  
   
-2.  将以下代码添加到事件处理程序中。  
+2.  将以下代码添加到该事件处理程序中。  
   
      [!code-vb[VbVbcnMyFileSystem#102](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_6.vb)]  
   
      此代码将文件夹浏览器的默认目录设置为当前目录。  
   
-3.  运行该应用程序。  您首次单击**“浏览”**时，**“浏览文件夹”**对话框将打开到当前目录。  
+3.  运行该应用程序。 第一次单击“浏览”****时，“浏览文件夹”****对话框将打开到当前目录。  
   
-4.  停止运行应用程序。  
+4.  停止运行该应用程序。  
   
-### 有选择性地启用控件  
+### <a name="to-selectively-enable-controls"></a>有选择地启用控件  
   
-1.  添加下面的 `SetEnabled` 方法。  
+1.  添加以下 `SetEnabled` 方法。  
   
      [!code-vb[VbVbcnMyFileSystem#108](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_7.vb)]  
   
-     `SetEnabled` 方法根据 `ListBox` 中是否选择了项目来启用或禁用控件。  
+     `SetEnabled` 方法启用还是禁用控件是由是否选中 `ListBox` 中的项决定的。  
   
-2.  通过双击窗体上的 `ListBox` 控件，为 `filesListBox` 创建一个 `SelectedIndexChanged` 事件处理程序。  
+2.  通过双击窗体上的 `ListBox` 控件，创建 `filesListBox` 的 `SelectedIndexChanged` 事件处理程序。  
   
-3.  在新的 `filesListBox_SelectedIndexChanged` 事件处理程序中，添加对 `SetEnabled` 的调用。  
+3.  在新的 `filesListBox_SelectedIndexChanged` 事件处理程序中添加对 `SetEnabled` 的调用。  
   
-4.  在 `browseButton_Click` 事件处理程序的末尾，添加对 `SetEnabled` 的调用。  
+4.  在 `browseButton_Click` 事件处理程序末尾添加对 `SetEnabled` 的调用。  
   
-5.  在 `Form1_Load` 事件处理程序的末尾，添加对 `SetEnabled` 的调用。  
+5.  在 `Form1_Load` 事件处理程序末尾添加对 `SetEnabled` 的调用。  
   
-6.  运行该应用程序。  如果未在 `ListBox` 中选择项目，则禁用**“保存结果”**复选框和**“检查”**按钮。  
+6.  运行该应用程序。 如果在 `ListBox` 中未选中任何项，将禁用“保存结果”****复选框和“检查”****按钮。  
   
-## 使用 My.Computer.FileSystem 的完整示例  
- 下面是完整示例。  
+## <a name="full-example-using-mycomputerfilesystem"></a>使用 My.Computer.FileSystem 的完整示例  
+ 以下是完整示例。  
   
  [!code-vb[VbVbcnMyFileSystem#101](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_8.vb)]  
   
-## 使用 System.IO 的完整示例  
- 以下等效示例使用来自 <xref:System.IO> 命名空间的类，而不是使用 `My.Computer.FileSystem` 对象。  
+## <a name="full-example-using-systemio"></a>使用 System.IO 的完整示例  
+ 以下等效示例使用来自 <xref:System.IO> 命名空间的类，而不使用 `My.Computer.FileSystem` 对象。  
   
  [!code-vb[VbVbcnMyFileSystem#111](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-and-directories_9.vb)]  
   
-## 请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.IO>   
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>   
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory%2A>   
  [演练：使用 .NET Framework 方法操作文件](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)
+

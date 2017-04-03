@@ -1,31 +1,49 @@
 ---
 title: "C# 程序的通用结构（C# 编程指南） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "C# 语言, 程序结构"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- C# language, program structure
 ms.assetid: 5ae964a5-0ef0-40fe-88fb-6d1793371d0d
 caps.latest.revision: 21
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 21
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: ad2e4034bd74f66f87f15a37044b335ef975430e
+ms.lasthandoff: 03/13/2017
+
 ---
-# C# 程序的通用结构（C# 编程指南）
-C\# 程序可由一个或多个文件组成。  每个文件都可以包含零个或零个以上的命名空间。  一个命名空间除了可包含其他命名空间外，还可包含类、结构、接口、枚举、委托等类型。  以下是 C\# 程序的主干，它包含所有这些元素。  
+# <a name="general-structure-of-a-c-program-c-programming-guide"></a>C# 程序的通用结构（C# 编程指南）
+C# 程序可由一个或多个文件组成。 每个文件均可包含零个或多个命名空间。 一个命名空间除了可包含其他命名空间外,还可包含类、结构、接口、枚举、委托等类型。 下面是包含所有这些元素的 C# 程序主干。  
   
  [!code-cs[csProgGuide#34](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/general-structure-of-a-csharp-program_1.cs)]  
   
-## 相关章节  
- 有关更多信息：  
+## <a name="related-sections"></a>相关章节  
+ 更多相关信息：  
   
 -   [类](../../../csharp/programming-guide/classes-and-structs/classes.md)  
   
--   [Struct](../../../csharp/programming-guide/classes-and-structs/structs.md)  
+-   [结构](../../../csharp/programming-guide/classes-and-structs/structs.md)  
   
 -   [命名空间](../../../csharp/programming-guide/namespaces/index.md)  
   
@@ -33,11 +51,11 @@ C\# 程序可由一个或多个文件组成。  每个文件都可以包含零�
   
 -   [委托](../../../csharp/programming-guide/delegates/index.md)  
   
-## C\# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>C# 语言规范  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## 请参阅  
- [C\# 编程指南](../../../csharp/programming-guide/index.md)   
- [在 C\# 程序内部](../../../csharp/programming-guide/inside-a-program/index.md)   
- [C\# 参考](../../../csharp/language-reference/index.md)   
- [\<paveover\>C\# Sample Applications](http://msdn.microsoft.com/zh-cn/9a9d7aaa-51d3-4224-b564-95409b0f3e15)
+## <a name="see-also"></a>请参阅  
+ [C# 编程指南](../../../csharp/programming-guide/index.md)   
+ [在 C# 程序内部](../../../csharp/programming-guide/inside-a-program/index.md)   
+ [C# 参考](../../../csharp/language-reference/index.md)   
+ [\<paveover>C# 示例应用程序](http://msdn.microsoft.com/en-us/9a9d7aaa-51d3-4224-b564-95409b0f3e15)

@@ -1,78 +1,100 @@
 ---
-title: "内插字符串（C# 和 Visual Basic 引用） | Microsoft Docs"
-ms.date: "2017-02-03"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
+title: "内插字符串 (C#) | Microsoft Docs"
+ms.date: 2017-02-03
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
 ms.assetid: 324f267e-1c61-431a-97ed-852c1530742d
 caps.latest.revision: 9
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 9
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: a3e2641e5c7cd3ce98ca869889848e8cdf4eed62
+ms.lasthandoff: 03/13/2017
+
 ---
-# 内插字符串（C# 和 Visual Basic 引用）
-用于构造字符串。  内插字符串表达式类似于包含表达式的模板字符串。  内插字符串表达式通过将包含的表达式替换为表达式结果的 ToString 表示形式来创建字符串。  与[复合格式设置](../Topic/Composite%20Formatting.md)相比，内插字符串在参数方面更易于理解。  下面是内插字符串的示例：  
+# <a name="interpolated-strings-c-reference"></a>内插字符串（C# 参考）
+
+用于构造字符串。  内插字符串类似于包含内插表达式**的模板字符串。  内插字符串返回的字符串可替换内插表达式并且包含其字符串表示形式。  
+
+与[复合格式字符串](../../../standard/base-types/composite-format.md#composite-format-string)相比，内插字符串的参数更易于理解。  例如，内插字符串  
   
-```c#  
-Console.WriteLine($"Name = {name}, hours = {hours:hh}")  
+```csharp  
+Console.WriteLine($"Name = {name}, hours = {hours:hh}"); 
 ```  
-  
- 内插字符串的结构如下所示：  
+包含 2 个内插表达式：“{name}”和“{hours:hh}”。 等效复合格式字符串为：
+
+```csharp
+Console.WriteLine("Name = {0}, hours = {1:hh}", name, hours);  
+```  
+
+内插字符串的结构为：  
   
 ```  
-$ " <text> { <interpolation-expression> <optional-comma-field-width> <optional-colon-format> } <text> ... } "  
+$"<text> {<interpolated-expression> [,<field-width>] [<:format-string>] } <text> ..."  
 ```  
-  
- 可以在可使用字符串的任何位置使用内插字符串。  当运行程序会执行带内插字符串的代码时，此代码会通过计算内插表达式来计算新的字符串。  每次执行带内插字符串的代码时，都会发生此计算。  
+
+其中： 
+
+- *field-width* 是一个带符号整数，表示字段中的字符数。 如果为正数，则字段右对齐；如果为负数，则左对齐。 
+
+- “格式字符串”**是适合正在设置格式的对象类型的格式字符串。 例如，对于 @System.DateTime 值，它可能是标准的日期和时间格式字符串，例如“D”或“d”。
+
+ 可以在可使用字符串的任何位置使用内插字符串。  每次执行带内插字符串的代码时，都会计算内插字符串。 这有助于分隔内插字符串的定义和计算结果。  
   
  若要在内插字符串中包含大括号（“{”或“}”），请使用两个大括号，即“{{”或“}}”。  请参阅“隐式转换”部分以获取详细信息。  
+
+如果内插字符串包含在内插字符串中具有特殊意义的其他字符，例如引号 (")、冒号 (:) 或逗号 (,)，则出现在文本中时应转义这些字符；如果它们是内插表达式中随附的语言元素，则应将其包括在由括号分隔的表达式内。 以下示例转义了引号以将其包括在结果字符串中，并使用括号来分隔表达式 `(age == 1 ? "" : "s")`，以防冒号被解读为格式字符串的开头。
+
+[!code-cs[interpolated-strings4](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings4.cs#1)]  
+
+## <a name="implicit-conversions"></a>隐式转换  
+
+内插字符串有 3 种隐式类型转换：  
+
+1. 将内插字符串转换为 @System.String。 下例返回一个字符串，其内插字符串表达式已替换为字符串表示形式。 例如: 
+
+   [!code-cs[interpolated-strings1](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings1.cs#1)]  
+
+   这是字符串解释的最终结果。 出现的所有双大括号（“{{”和“}}”）都转换为单大括号。 
+
+2. 将内插字符串转换为 <xref:System.IFormattable> 变量，使用此变量可通过单个<xref:System.IFormattable> 实例创建多个包含区域性特定内容的结果字符串。 对于包括诸如各区域性的正确数字和日期格式之类的内容，这种转换很有用。  出现的所有双大括号（“{{”和“}}”）仍保留为双大括号，直至通过显式或隐式调用 @System.Object.ToString 方法格式化字符串。  包含的所有内插表达式都转换为 {0}、{1} 等等。  
+
+   下例使用反射来显示内插字符串中所创建 <xref:System.IFormattable> 变量的成员以及字段和属性值。 并将 <xref:System.IFormattable> 变量传递给 @System.Console(System.String) 方法。
+
+   [!code-cs[interpolated-strings2](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings2.cs#1)]  
+
+   请注意，只能通过使用反射来检查内插字符串。 如果将其传递给字符串格式设置方法，例如 @System.Console.WriteLine(System.String)，则会解析其格式项并返回结果字符串。 
+
+3. 将内插字符串转换为表示复合格式字符串的 <xref:System.FormattableString> 变量。 例如，检查复合格式字符串及其呈现为结果字符串的方式可能有助于在生成查询时防止注入攻击。  此外，<xref:System.FormattableString> 还包括 <xref:System.FormattableString.ToString> 重载，可为 @System.Globalization.InvariantCulture 和 @System.Globalization.CurrentCulture 生成结果字符串。  在设置格式之前，出现在所有双大括号（“{{”和“}}”）保留为双括号。  包含的所有内插表达式都转换为 {0}、{1} 等等。  
+
+   [!code-cs[interpolated-strings3](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings3.cs#1)]  
+
+## <a name="language-specification"></a>语言规范  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## 隐式转换  
- 内插字符串中的隐式类型转换如下：  
-  
-```c#  
-var s = $"hello, {name}" System.IFormattable s = $"Hello, {name}" System.FormattableString s = $"Hello, {name}"  
-  
-```  
-  
- 第一个示例生成一个 `string` 值，其中计算了所有字符串内插值。  此为最终结果，并具有 string 类型。  出现的所有双大括号（“{{”和“}}”）都转换为单大括号。  
-  
- 第二个示例生成一个 <xref:System.IFormattable> 变量，此变量允许使用固定上下文转换字符串。  要使数值和数据格式在不同语言中正确无误，此操作非常有用。  出现的所有双大括号（“{{”和“}}”）仍保留为双大括号，直至将字符串设置为 ToString 格式。  包含的所有内插表达式都转换为 {0}、{1} 等等。  
-  
-```c#  
-s.ToString(null, System.Globalization.CultureInfo.InvariantCulture);  
-```  
-  
- 第三个示例生成一个 <xref:System.FormattableString>，它允许检查由插值计算产生的对象。  例如，检查对象及其呈现为字符串的方式可能有助于你在生成查询时防止注入攻击。  借助 <xref:System.FormattableString>，只需简单操作即可生成 InvariantCulture 和 CurrentCulture 字符串结果。  在设置格式之前，出现在所有双大括号（“{{”和“}}”）保留为双括号。  包含的所有内插表达式都转换为 {0}、{1} 等等。  
-  
-## 示例  
-  
-```c#  
-$"Name = {name}, hours = {hours:hh}" var s = $"hello, {name}" System.IFormattable s = $"Hello, {name}" System.FormattableString s = $"Hello, {name}" $"{person.Name, 20} is {person.Age:D3} year {(p.Age == 1 ? "" : "s")} old."  
-  
-```  
-  
- 无需在包含的内插表达式中引用引号字符，因为内插字符串表达式以 $ 开始，而且编译器会将包含的内插表达式扫描为平衡文本，直至它发现逗号、冒号或右大括号。出于相同原因，最后一个示例使用括号来使条件表达式 \(`p.Age == 1 ? "" : "s"`\) 包含在其格式规范不以冒号开头的内插表达式中。在包含的内插表达式外部（但仍在内插字符串表达式之中），可按通常方式转义引号字符。  
-  
-## 语法  
-  
-```  
-expression: interpolated-string-expression interpolated-string-expression: interpolated-string-start interpolations interpolated-string-end interpolations: single-interpolation single-interpolation interpolated-string-mid interpolations single-interpolation: interpolation-start interpolation-start : regular-string-literal interpolation-start: expression expression , expression  
-  
-```  
-  
-## 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
-  
- 有关更多信息，请参见 [Visual Basic 语言参考](../../../visual-basic/language-reference/index.md)。  
-  
-## 请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.IFormattable?displayProperty=fullName>   
  <xref:System.FormattableString?displayProperty=fullName>   
- [C\# 参考](../../../csharp/language-reference/index.md)   
- [C\# 编程指南](../../../csharp/programming-guide/index.md)   
- [Visual Basic 语言参考](../../../visual-basic/language-reference/index.md)   
- [Visual Basic 编程指南](../../../visual-basic/programming-guide/index.md)
+ [C# 参考](../../../csharp/language-reference/index.md)   
+ [C# 编程指南](../../../csharp/programming-guide/index.md)
+

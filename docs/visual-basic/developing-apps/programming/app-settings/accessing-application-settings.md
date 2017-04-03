@@ -1,47 +1,60 @@
 ---
-title: "访问应用程序的设置 (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "示例 [Visual Basic], 应用程序设置"
-  - "My.Settings 对象, 应用程序设置"
+title: "访问应用程序设置 (Visual Basic) | Microsoft Docs"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- My.Settings object, application settings
+- examples [Visual Basic], application settings
 ms.assetid: e38d0cc7-247a-46ca-ba04-f2913f0adb2e
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 15
----
-# 访问应用程序的设置 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 9c9759ffb68c9068c14b3aa507535e2dfb56e47b
+ms.lasthandoff: 03/13/2017
 
-本节包含描述它使您能够完成的 `My.Settings` 对象和任务的主题。  
+---
+# <a name="accessing-application-settings-visual-basic"></a>访问应用程序设置 (Visual Basic)
+本部分包含描述 `My.Settings` 对象及其允许完成的任务的主题。  
   
-## My.Settings  
- `My.Settings` 对象的属性提供对应用程序的设置。  若要添加或移除设置，请使用 **项目设计器**的 **设置** 窗格。  
+## <a name="mysettings"></a>My.Settings  
+ `My.Settings` 对象的属性提供对应用程序设置的访问。 若要添加或删除设置，请使用“项目设计器”****的“设置”****窗格。  
   
- `My.Settings` 对象的方法可以保存当前用户设置或还原用户设置为上次保存的值。  
+ `My.Settings` 对象的方法允许保存当前用户设置或将用户设置还原为上次保存的值。  
   
-## 任务  
- 下表列出了如何访问窗体的示例。  
+## <a name="tasks"></a>任务  
+ 下表列出了演示如何访问应用程序窗体的示例。  
   
-|到|请参见|  
-|-------|---------|  
+|到|请参阅|  
+|--------|---------|  
 |更新用户设置的值|[如何：在 Visual Basic 中更改用户设置](../../../../visual-basic/developing-apps/programming/app-settings/how-to-change-user-settings.md)|  
-|显示在 " 属性 " 网格的应用程序和用户设置|[如何：在 Visual Basic 中创建用户设置的属性网格](../../../../visual-basic/developing-apps/programming/app-settings/how-to-create-property-grids-for-user-settings.md)|  
-|保存设置值的更新用户|[如何：在 Visual Basic 中保存用户设置](../../../../visual-basic/developing-apps/programming/app-settings/how-to-persist-user-settings.md)|  
+|在属性网格中显示应用程序和用户设置|[如何：在 Visual Basic 中创建用户设置的属性网格](../../../../visual-basic/developing-apps/programming/app-settings/how-to-create-property-grids-for-user-settings.md)|  
+|保存已更新的用户设置值|[如何：在 Visual Basic 中保存用户设置](../../../../visual-basic/developing-apps/programming/app-settings/how-to-persist-user-settings.md)|  
 |确定用户设置的值|[如何：在 Visual Basic 中读取应用程序设置](../../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)|  
   
-## 请参阅  
- [管理应用程序设置 \(.NET\)](/visual-studio/ide/managing-application-settings-dotnet)   
- [如何：在运行时读取设置 \(C\#\)](../Topic/How%20To:%20Read%20Settings%20at%20Run%20Time%20With%20C%23.md)   
- [如何：在运行时编写用户设置 \(C\#\)](../Topic/How%20To:%20Write%20User%20Settings%20at%20Run%20Time%20with%20C%23.md)   
- [管理应用程序设置 \(.NET\)](/visual-studio/ide/managing-application-settings-dotnet)   
+## <a name="see-also"></a>另请参阅  
+ [管理应用程序设置 (.NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-settings-dotnet)   
  [My.Settings 对象](../../../../visual-basic/language-reference/objects/my-settings-object.md)

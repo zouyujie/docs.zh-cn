@@ -1,33 +1,51 @@
 ---
-title: "枚举类型（C# 编程指南） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "位标志 [C#]"
-  - "C# 语言, 枚举"
-  - "枚举 [C#]"
-  - "枚举 [C#]"
+title: "枚举类型（C# 编程指南）| Microsoft Docs"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- enumerations [C#]
+- enums [C#]
+- C# Language, enums
+- bit flags [C#]
 ms.assetid: 64a9b731-9e3c-4336-8a09-018db2aa10b7
 caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 17
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 8c23c17967474af0f91c0dda6d071073234736c6
+ms.lasthandoff: 03/13/2017
+
 ---
-# 枚举类型（C# 编程指南）
-枚举类型（也称为枚举）为定义一组可以赋给变量的命名整数常量提供了一种有效的方法。  例如，假设您必须定义一个变量，该变量的值表示一周中的一天。  该变量只能存储七个有意义的值。  若要定义这些值，可以使用枚举类型。枚举类型是使用 [enum](../../csharp/language-reference/keywords/enum.md)关键字声明的。  
+# <a name="enumeration-types-c-programming-guide"></a>枚举类型（C# 编程指南）
+枚举类型（也称为枚举）提供了一种有效的方式来定义可能分配给变量的一组已命名整数常量。 例如，假设你需要定义一个变量，其值表示一周内的某一天。 该变量只会存储七个有意义的值。 若要定义这些值，可以使用枚举类型，该类型是使用 [enum](../../csharp/language-reference/keywords/enum.md) 关键字声明的。  
   
  [!code-cs[csProgGuideEnums#1](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_1.cs)]  
   
- 默认情况下，枚举中每个元素的基础类型是 [int](../../csharp/language-reference/keywords/int.md)。  可以使用冒号指定另一种整数值类型，如前面的示例所示。  有关可能的类型的完整列表，请参见 [enum（C\# 参考）](../../csharp/language-reference/keywords/enum.md)。  
+ 默认情况下，枚举中每个元素的基础类型都为 [int](../../csharp/language-reference/keywords/int.md)。 可以使用冒号指定另一种整数类型，如上例所示。 有关可能的类型的完整列表，请参阅 [enum（C# 参考）](../../csharp/language-reference/keywords/enum.md)。  
   
- 可以通过转换验证基础数值与基础类型，如下例所示。  
+ 可以通过转换为基础类型来验证基础数值，如下例所示。  
   
-```c#  
+```csharp  
 Days today = Days.Monday;  
 int dayNumber =(int)today;  
 Console.WriteLine("{0} is day number #{1}.", today, dayNumber);  
@@ -43,55 +61,55 @@ Console.WriteLine("{0} is month number #{1}.", thisMonth, monthNumber);
   
  以下是使用枚举而不使用数值类型的好处：  
   
--   明确为客户端代码指定哪些值是变量的有效值。  
+-   明确为客户端代码指定对变量有效的值。  
   
--   在 [!INCLUDE[vsprvs](../../csharp/includes/vsprvs-md.md)] 中，IntelliSense 列出定义的值。  
+-   在 [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)] 中，IntelliSense 列出了定义的值。  
   
- 如果未在枚举数列表中指定元素的值，则值将自动按 1 递增。  在前面的示例中，`Days.Sunday` 的值为 0，`Days.Monday` 的值为 1，依此类推。  创建新的 `Days` 对象时，如果不显式为其赋值，则它将具有默认值 `Days.Sunday` \(0\)。  创建枚举时，应选择最合理的默认值并赋给它一个零值。  这便使得只要在创建枚举时未为其显式赋值，则所创建的全部枚举都将具有该默认值。  
+ 如果未为枚举器列表中的元素指定值，则值将自动按 1 递增。 在上例中，`Days.Sunday` 的值为 0，`Days.Monday` 的值为 1，依此类推。 创建新的 `Days` 对象时，如果没有明确为其分配值，它将具有默认值 `Days.Sunday` (0)。 创建枚举时，请选择最有逻辑的默认值，并为其分配值零。 这将导致所有枚举都具有默认值（如果未在创建时显式分配值）。  
   
- 如果变量 `meetingDay` 的类型为 `Days`，则只能将 `Days` 定义的某个值赋给它（无需显式强制转换）。  如果会议日期更改，可以将 `Days` 中的新值赋给 `meetingDay`：  
+ 如果变量 `meetingDay` 的类型为 `Days`，那么在没有显式转换的情况下只能为其分配由 `Days` 定义的值。 如果会议日期更改，可以将 `Days` 中的新值分配给 `meetingDay`：  
   
  [!code-cs[csProgGuideEnums#4](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_2.cs)]  
   
 > [!NOTE]
->  可以将任意整数值赋给 `meetingDay`。  例如，代码行 `meetingDay = (Days) 42` 不会产生错误。  但也不应该这样做，因为默认约定的是枚举变量只容纳枚举定义的值之一。  将任意值赋给枚举类型的变量很有可能会导致错误。  
+>  可以将任意整数值分配给 `meetingDay`。 例如，代码行 `meetingDay = (Days) 42` 不会产生错误。 但应避免这样做，因为隐式预期是枚举变量只会持有枚举所定义的其中一个值。 为枚举类型的变量分配任意值很可能会引发错误。  
   
- 可以将任意值赋给枚举类型的枚举数列表中的元素，也可以使用计算值：  
+ 可以为枚举类型的枚举器列表中的元素分配任何值，也可以使用计算值：  
   
  [!code-cs[csProgGuideEnums#3](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_3.cs)]  
   
-## 枚举类型作为位标志  
- 可以使用枚举类型定义位标志，从而使该枚举类型的实例可以存储枚举数列表中定义的值的任意组合。  （当然，某些组合在您的程序代码中可能没有意义或不允许使用。）  
+## <a name="enumeration-types-as-bit-flags"></a>作为位标志的枚举类型  
+ 可以使用枚举类型来定义位标志，这使枚举类型的实例能够存储枚举器列表中定义的值的任何组合。 （当然，某些组合在你的程序代码中可能没有意义或不允许使用。）  
   
- 创建位标志枚举的方法是应用 <xref:System.FlagsAttribute?displayProperty=fullName> 特性并适当定义一些值，以便可以对这些值执行 `AND`、`OR`、`NOT` 和 `XOR` 按位运算。  在位标志枚举中包含一个值为零（表示“未设置任何标志”）的命名常量。如果零值不表示“未设置任何标志”，则请不要为标志指定零值。  
+ 创建位标志枚举的方法是，应用 <xref:System.FlagsAttribute?displayProperty=fullName> 属性并适当定义一些值，以便可以对这些值执行 `AND`、`OR`、`NOT` 和 `XOR` 按位运算。 在位标志枚举中，包括一个值为零（表示“未设置任何标志”）的命名常量。 如果零值不表示“未设置任何标志”，请勿为标志指定零值。  
   
- 在下面的示例中，定义了 `Days` 枚举的另一个版本，命名为 `Days2`。  `Days2` 具有 `Flags` 特性，且它的每个值都是 2 的若干次幂，指数依次递增。  这样，您将能够创建值为 `Days2.Tuesday` 和 `Days2.Thursday` 的 `Days2` 变量。  
+ 在以下示例中，定义了名为 `Days2` 枚举的另一个版本，命名为 `Days`。 `Days2` 具有 `Flags` 属性，且它的每个值都是 2 的若干次幂，指数依次递增。 这样，你就能够创建值为 `Days2.Tuesday` 和 `Days2.Thursday` 的 `Days2` 变量。  
   
  [!code-cs[csProgGuideEnums#2](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_4.cs)]  
   
- 若要在某个枚举上设置标志，请使用按位 `OR` 运算符，如下面的示例所示：  
+ 若要在枚举上设置标志，请使用按位 `OR` 运算符，如以下示例所示：  
   
  [!code-cs[csProgGuideEnums#6](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_5.cs)]  
   
- 若要确定是否设置了特定标志，请使用按位 `AND` 运算，如下面的示例所示：  
+ 若要确定是否设置了特定标志，请使用按位 `AND` 运算，如以下示例所示：  
   
  [!code-cs[csProgGuideEnums#7](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_6.cs)]  
   
- 有关使用 <xref:System.FlagsAttribute?displayProperty=fullName> 特性定义枚举类型时需要考虑的事项的更多信息，请参见 <xref:System.Enum?displayProperty=fullName>。  
+ 有关使用 <xref:System.FlagsAttribute?displayProperty=fullName> 属性定义枚举类型时应考虑的事项的详细信息，请参阅 <xref:System.Enum?displayProperty=fullName>。  
   
-## 使用 System.Enum 方法发现和操作枚举值  
- 所有枚举都是 <xref:System.Enum?displayProperty=fullName> 类型的实例。  不能从 <xref:System.Enum?displayProperty=fullName> 派生新类，但可以使用它的方法发现有关枚举实例中的值的信息以及操作这些值。  
+## <a name="using-the-systemenum-methods-to-discover-and-manipulate-enum-values"></a>使用 System.Enum 方法来发现和操作枚举值  
+ 所有枚举都是 <xref:System.Enum?displayProperty=fullName> 类型的实例。 不能从 <xref:System.Enum?displayProperty=fullName> 中派生新类，但可以使用它的方法来发现有关枚举实例中操作值的信息。  
   
  [!code-cs[csProgGuideEnums#5](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_7.cs)]  
   
- 有关更多信息，请参见<xref:System.Enum?displayProperty=fullName>。  
+ 有关详细信息，请参阅 <xref:System.Enum?displayProperty=fullName>。  
   
- 此外，还可以使用扩展方法为枚举创建新方法。  有关更多信息，请参见[如何：为枚举创建新方法](../../csharp/programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md)。  
+ 还可以使用扩展方法创建枚举的新方法。 有关详细信息，请参阅[如何：为枚举创建新方法](../../csharp/programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md)。  
   
-## 重要章节  
- [更多有关变量](http://go.microsoft.com/fwlink/?LinkId=221230) 在 [开始 Visual c\# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
+## <a name="featured-book-chapter"></a>重要章节  
+ [Visual C# 2010 入门](http://go.microsoft.com/fwlink/?LinkId=221214)中的[变量的详细信息](http://go.microsoft.com/fwlink/?LinkId=221230)  
   
-## 请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Enum?displayProperty=fullName>   
- [C\# 编程指南](../../csharp/programming-guide/index.md)   
+ [C# 编程指南](../../csharp/programming-guide/index.md)   
  [enum](../../csharp/language-reference/keywords/enum.md)

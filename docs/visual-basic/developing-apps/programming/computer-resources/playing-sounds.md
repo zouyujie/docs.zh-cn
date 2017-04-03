@@ -1,80 +1,96 @@
 ---
 title: "播放声音 (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "My.Computer.Audio 对象, 任务"
-  - "播放声音"
-  - "播放声音, Visual Basic"
-  - "声音循环"
-  - "声音, 背景"
-  - "声音, 播放"
-  - "系统声音"
-  - "系统声音, 播放"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- system sounds, playing
+- system sounds
+- playing sounds, Visual Basic
+- sound loops
+- My.Computer.Audio object, tasks
+- sounds, playing
+- sounds, background
+- playing sounds
 ms.assetid: f0d9e4ab-57c7-47b6-86d3-99ff07078040
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 21
----
-# 播放声音 (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: ed4ee0a09067900a6bead04abec02f141936ba42
+ms.lasthandoff: 03/13/2017
 
+---
+# <a name="playing-sounds-visual-basic"></a>播放声音 (Visual Basic)
 `My.Computer.Audio` 对象提供用于播放声音的方法。  
   
-## 播放声音  
- 声音，当使用时，的背景使用允许应用程序执行其他代码。  `My.Computer.Audio.Play` 方法允许应用程序一次只播放一种后台声音;当应用程序播放新的后台声音时，它将会停止播放前一个后台声音。  还可以播放声音并等待其结束。  
+## <a name="playing-sounds"></a>播放声音  
+ 应用程序可通过背景播放在播放声音时执行其他代码。 `My.Computer.Audio.Play` 方法允许应用程序一次仅播放一种背景声音；应用程序播放新背景声音时，会停止播放上一种背景声音。 你也可以播放一种声音并等待其播放完毕。  
   
- 在下面的示例中， `My.Computer.Audio.Play` 方法播放声音。  当 `AudioPlayMode.WaitToComplete` 指定时， `My.Computer.Audio.Play` 等待，直到声音在调用代码前完成继续。  在使用此示例时，您应确保文件名是指在您的计算机上的 .wav 声音文件  
+ 下例中使用 `My.Computer.Audio.Play` 方法播放声音。 指定 `AudioPlayMode.WaitToComplete` 时，`My.Computer.Audio.Play` 将等待声音播放完毕，然后再调用代码继续。 使用此示例时，应确保文件名可指代计算机中的 .wav 声音文件  
   
  [!code-vb[VbVbalrMyComputer#15](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_1.vb)]  
   
- 在下面的示例中， `My.Computer.Audio.Play` 方法播放声音。  在使用此示例时，您应确保应用程序资源包括名为 Waterfall 的 .wav 声音文件。  
+ 下例中使用 `My.Computer.Audio.Play` 方法播放声音。 使用此示例时，应确保应用程序资源包含名为 Waterfall 的 .wav 声音文件。  
   
  [!code-vb[VbVbalrMyComputer#16](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_2.vb)]  
   
-## 播放循环声音  
- 在下面的示例中，那么，当 `PlayMode.BackgroundLoop` 指定时， `My.Computer.Audio.Play` 方法在后台播放指定的声音。  在使用此示例时，您应确保文件名是指在您的计算机上的 .wav 声音文件。  
+## <a name="playing-looping-sounds"></a>播放循环声音  
+ 在下例中，指定 `PlayMode.BackgroundLoop` 时，`My.Computer.Audio.Play` 方法将播放指定的背景声音。 使用此示例时，应确保文件名可指代计算机中的 .wav 声音文件。  
   
  [!code-vb[VbVbalrMyComputer#11](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_3.vb)]  
   
- 在下面的示例中，那么，当 `PlayMode.BackgroundLoop` 指定时， `My.Computer.Audio.Play` 方法在后台播放指定的声音。  在使用此示例时，您应确保应用程序资源包括名为 Waterfall 的 .wav 声音文件。  
+ 在下例中，指定 `PlayMode.BackgroundLoop` 时，`My.Computer.Audio.Play` 方法将播放指定的背景声音。 使用此示例时，应确保应用程序资源包含名为 Waterfall 的 .wav 声音文件。  
   
  [!code-vb[VbVbalrMyComputer#12](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_4.vb)]  
   
- 前面的代码示例也可用作 IntelliSense 代码段。  在代码段选择器，它位于 **windows 窗体应用程序 \> 声音**。  有关更多信息，请参见 [代码段](/visual-studio/ide/code-snippets)。  
+ 前面的代码示例也可作为 IntelliSense 代码片段。 在代码片段选取器中，它位于“Windows 窗体应用程序”>“声音”****中。 有关详细信息，请参阅[代码片段](https://docs.microsoft.com/visualstudio/ide/code-snippets)。  
   
- 通常，那么，当应用程序在播放循环声音时，最终应停止声音。  
+ 一般情况下，应用程序播放循环声音时，声音最终将停止。  
   
-## 停止在后台中播放声音  
- 使用 `My.Computer.Audio.Stop` 方法停止当前播放背景或循环声音的应用程序的。  
+## <a name="stopping-the-playing-of-sounds-in-the-background"></a>停止播放背景声音  
+ 使用 `My.Computer.Audio.Stop` 方法可停止应用程序当前播放的背景声音或循环声音。  
   
- 通常，那么，当应用程序在播放循环声音时，它应停止声音。  
+ 一般情况下，应用程序播放循环声音时，声音将在某个时间点停止。  
   
- 下面的示例停止在后台中播放声音。  
+ 下面的示例将停止播放背景声音。  
   
  [!code-vb[VbVbalrMyComputer#18](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_5.vb)]  
   
- 前面的代码示例也可用作 IntelliSense 代码段。  在代码段选择器，它位于 **windows 窗体应用程序 \> 声音**。  有关更多信息，请参见 [代码段](/visual-studio/ide/code-snippets)。  
+ 前面的代码示例也可作为 IntelliSense 代码片段。 在代码片段选取器中，它位于“Windows 窗体应用程序”>“声音”****中。 有关详细信息，请参阅[代码片段](https://docs.microsoft.com/visualstudio/ide/code-snippets)。  
   
-## 播放系统声音  
- 使用 `My.Computer.Audio.PlaySystemSound` 方法播放指定的系统声音。  
+## <a name="playing-system-sounds"></a>播放系统声音  
+ 使用 `My.Computer.Audio.PlaySystemSound` 方法可播放指定的系统声音。  
   
- `My.Computer.Audio.PlaySystemSound` 方法采用，共享成员的参数一个从 <xref:System.Media.SystemSound> 类的。  系统声音 <xref:System.Media.SystemSounds.Asterisk%2A> 通常表示错误。  
+ `My.Computer.Audio.PlaySystemSound` 方法将作为 <xref:System.Media.SystemSound> 类中的共享成员之一的参数。 系统声音 <xref:System.Media.SystemSounds.Asterisk%2A> 通常表示错误。  
   
- 下面的示例使用 `My.Computer.Audio.PlaySystemSound` 方法播放系统声音。  
+ 下例使用 `My.Computer.Audio.PlaySystemSound` 方法播放系统声音。  
   
  [!code-vb[VbVbalrMyComputer#17](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_6.vb)]  
   
-## 请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualBasic.Devices.Audio>   
  <xref:Microsoft.VisualBasic.Devices.Audio.Play%2A>   
  <xref:Microsoft.VisualBasic.Devices.Audio.PlaySystemSound%2A>   

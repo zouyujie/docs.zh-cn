@@ -3,17 +3,17 @@ title: ".NET 教程"
 description: ".NET 平台的一些重要功能指导教程。"
 keywords: ".NET, .NET Core, 教程, 编程语言, 不安全, 内存管理, 类型安全, 异步"
 author: cartermp
-manager: wpickett
-ms.author: phcart
-ms.date: 11/16/2016
+ms.author: wiwagn
+ms.date: 02/09/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 translationtype: Human Translation
-ms.sourcegitcommit: 2c57b5cebd63b1d94b127cd269e3b319fb24dd97
-ms.openlocfilehash: 02e2fa22e36fd2f6618527ad3c89cbbd8587dfe2
+ms.sourcegitcommit: 48563be13dc07000ced2e6817b3028e6117abd93
+ms.openlocfilehash: ee6ced104137a453267b409fea05716d781ef83f
+ms.lasthandoff: 03/22/2017
 
 ---
 
@@ -34,7 +34,7 @@ ms.openlocfilehash: 02e2fa22e36fd2f6618527ad3c89cbbd8587dfe2
 
 ## <a name="programming-languages"></a>编程语言
 
-.NET 支持多种编程语言。  .NET 运行时实现[公共语言基础结构 (CLI)](https://www.visualstudio.com/en-us/mt639507)，其中（除其他事项外）指定与语言无关的运行时和语言互操作性。  这意味着可以选择任何 .NET 语言在 .NET 上生成应用和服务。
+.NET 支持多种编程语言。  .NET 运行时实现[公共语言基础结构 (CLI)](https://www.visualstudio.com/license-terms/ecma-c-common-language-infrastructure-standards/)，其中（除其他事项外）指定与语言无关的运行时和语言互操作性。  这意味着可以选择任何 .NET 语言在 .NET 上生成应用和服务。
 
 Microsoft 积极开发和支持三种 .NET 语言：C#、F# 和 Visual Basic .NET。 
 
@@ -54,21 +54,27 @@ Microsoft 积极开发和支持三种 .NET 语言：C#、F# 和 Visual Basic .NE
 
 无法使用任何类似的关键字来取消分配内存，因为当垃圾回收器通过其计划的运行规则回收内存时，会自动发生取消分配。
 
-当某个方法完成时，给定范围内的类型通常会超出范围，此时，便可以回收这些变量。 但是，可能使用 `using` 语句来告诉 GC，要在特定的对象超出范围后才让方法退出：
+垃圾回收站只是一种帮助确保*内存安全*的服务。  内存安全的固定条件非常简单：如果某个程序仅访问分配的内存（未释放），则该程序就是内存安全的。  例如，运行时可确保程序编制索引的范围不超过数组末尾，且确保其仅访问对象范围内的虚构字段。
+
+下例中，运行时将引发 `InvalidIndexException` 异常，强制确保内存安全。
 
 [!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L4-L5)]
 
-`using` 块完成后，GC 便会知道可以放心收集上述示例中的 `stream` 对象，并且可以回收其内存。
+## <a name="working-with-unmanaged-resources"></a>处理未托管的资源
 
-关于它的规则与 F# 中的语义稍有不同。  要了解有关 F# 中资源管理的详细信息，请参阅[资源管理：`use`关键字](../fsharp/language-reference/resource-management-the-use-keyword.md)
+部分对象会引用*未托管的资源*。 未托管的资源是指不由 .NET 运行时自动维护的资源。  例如，文件句柄就是未托管的资源。  @System.IO.FileStream 对象是一个托管对象，但它引用未托管的文件句柄。  用完文件流之后，需要释放文件句柄。
 
-垃圾回收器实现的一个不太有名但影响广泛的功能就是内存安全。 内存安全的固定条件非常简单：如果某个程序仅访问分配的内存（未释放），则该程序就是内存安全的。 悬垂指针总会造成麻烦，并且往往难以跟踪。
+在 .NET 中，引用未托管资源的对象会实现 @System.IDisposable 接口。  用完对象后，需调用此对象的 @System.IDisposable.Dispose 方法，该方法会释放所有为托管的资源。  .NET 语言为此类对象提供了一种便捷的 `using` 语法，如下例所示：
 
-.NET 运行时提供附加的服务来兑现内存安全，而 GC 不一定总能做到这一点。 它可以确保程序不会为数组的末尾编制索引，或者访问对象末尾的虚构字段。
+[!code-csharp[UnmanagedResources](../../samples/csharp/snippets/tour/UnmanagedResources.csx#L1-L6)]
 
-下面的示例会由于内存安全而引发异常。
+`using` 块完成后，.NET 运行时将自动调用 `stream` 对象的 @System.IDisposable.Dispose 方法，该方法会释放文件句柄。  如果某异常造成控件退出块，则运行时也会执行此操作。
 
-[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L4-L5)]
+有关详细信息，请参阅以下页面：
+
+* [Using 语句](../csharp/language-reference/keywords/using-statement.md)（针对 C#）
+* [资源管理：`use` 关键字](../fsharp/language-reference/resource-management-the-use-keyword.md)（针对 F#）
+* [Using 语句](../visual-basic/language-reference/statements/using-statement.md)（针对 Visual Basic）
 
 ## <a name="type-safety"></a>类型安全
 
@@ -147,8 +153,4 @@ LINQ 是适用于 C# 和 VB 的强大功能集，可用于编写简单的声明�
 如果想开始自己编写代码，请参阅[入门](getting-started.md)。
 
 要了解 .NET 的重要组件，请参阅 [.NET 体系结构组件](components.md)。
-
-
-<!--HONumber=Nov16_HO3-->
-
 

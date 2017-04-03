@@ -1,25 +1,43 @@
 ---
-title: "异常处理（C# 编程指南） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "异常处理 [C#], 关于异常处理"
-  - "异常 [C#], 处理"
+title: "异常处理（C# 编程指南）| Microsoft Docs"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- exception handling [C#], about exception handling
+- exceptions [C#], handling
 ms.assetid: b4e4ecf2-b907-4e58-891f-2563762258e9
 caps.latest.revision: 24
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 24
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 481621ab8c3d6e1c98c9ad38590ac030827c26c5
+ms.lasthandoff: 03/13/2017
+
 ---
-# 异常处理（C# 编程指南）
-C\# 程序员可使用 [try](../../../csharp/language-reference/keywords/try-catch.md) 块对可能受异常影响的代码进行分区。  关联的 [catch](../../../csharp/language-reference/keywords/try-catch.md) 块用于处理任何结果异常。  一个包含代码的 [finally](../../../csharp/language-reference/keywords/try-finally.md) 块，无论 `try` 块中是否引发异常（例如，释放在 `try` 块中分配的资源），这些代码都会运行。  一个 `try` 块需要一个或多个关联的 `catch` 块或一个 `finally` 块，或两者。  
+# <a name="exception-handling-c-programming-guide"></a>异常处理（C# 编程指南）
+C# 程序员使用 [try](../../../csharp/language-reference/keywords/try-catch.md) 块来对可能受异常影响的代码进行分区。 关联的 [catch](../../../csharp/language-reference/keywords/try-catch.md) 块用于处理生成的任何异常。 [finally](../../../csharp/language-reference/keywords/try-finally.md) 块包含无论 `try` 块中是否引发异常都会运行的代码，如发布 `try` 块中分配的资源。 `try` 块需要一个或多个关联的 `catch` 块或一个 `finally` 块，或两者皆之。  
   
- 以下示例给出了一个 `try-catch` 语句，一个 `try-finally` 语句，和一个  `try-catch-finally` 语句。  
+ 下面的示例演示 `try-catch` 语句、`try-finally` 语句和 `try-catch-finally` 语句。  
   
  [!code-cs[csProgGuideExceptions#6](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/exception-handling_1.cs)]  
   
@@ -27,42 +45,42 @@ C\# 程序员可使用 [try](../../../csharp/language-reference/keywords/try-cat
   
  [!code-cs[csProgGuideExceptions#8](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/exception-handling_3.cs)]  
   
- 不带有 `catch` 或 `finally` 块的 `try` 块将导致编译器错误。  
+ 一个不具有 `catch` 或 `finally` 块的 `try` 块会导致编译器错误。  
   
-## Catch 块  
- `catch` 块可以指定要捕捉的异常的该类型。  类型规范称为“异常筛选器”。  异常类型应从 <xref:System.Exception> 派生出来。  一般而言，不会将 <xref:System.Exception> 指定为异常筛选器，除非您了解如何处理 `try` 块中可能引发的所有异常，或者您在 `catch` 块中包括了 [throw](../../../csharp/language-reference/keywords/throw.md) 语句。  
+## <a name="catch-blocks"></a>catch 块  
+ `catch` 块可以指定要捕获的异常的类型。 该类型规范称为异常筛选器**。 异常类型应派生自 <xref:System.Exception>。 一般情况下，不要将 <xref:System.Exception> 指定为异常筛选器，除非你了解如何处理可能在 `try` 块中引发的所有异常，或者已在 `catch` 块的末尾处包括了 [throw](../../../csharp/language-reference/keywords/throw.md) 语句。  
   
- 具有不同异常筛选器的多个 `catch` 块可以串联在一起。  多个 `catch` 数据块的计算顺序是在代码中从顶部到底部，但是，对于所引发的每个异常，都只执行一个 `catch` 数据块。  与指定的准确类型或其基类最为匹配的第一个 `catch` 块被执行。  如果 `catch` 块没有指定匹配异常筛选器，则 `catch` 块就不具有选定的筛选器（如果语句有的话）。  需要将带有最具体的（即派生程度最高的）异常类的 `catch` 块放在最前面。  
+ 可将具有不同异常筛选器的多个 `catch` 块链接在一起。 代码中 `catch` 块的计算顺序为从上到下，但针对引发的每个异常，仅执行一个 `catch` 块。 将执行指定所引发的异常的确切类型或基类的第一个 `catch` 块。 如果没有 `catch` 块指定匹配的异常筛选器，则将选择不具有筛选器的 `catch` 块（如果语句中存在）。 务必首先定位具有最具体的（即，最底层派生的）异常类型的 `catch` 块。  
   
- 当下列条件为真时，应该捕捉异常：  
+ 应当会在下列条件为 true 时捕获到异常：  
   
--   对引发异常的原因有具体的了解，并可实现特定的恢复，例如，在捕获 <xref:System.IO.FileNotFoundException> 对象时提示用户输入新的文件名。  
+-   你能够很好地理解可能会引发异常的原因，并且可以实现特定的恢复，例如当捕获到 <xref:System.IO.FileNotFoundException> 对象时提示用户输入新的文件名。  
   
--   可以新建一个更具体的异常并引发该异常。  
+-   可以创建和引发一个新的、更具体的异常。  
   
      [!code-cs[csProgGuideExceptions#9](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/exception-handling_4.cs)]  
   
--   希望在将异常传递出去进行额外处理前部分地处理异常。  在下面的示例中，`catch` 块用于在再次引发异常之前，向错误日志添加条目。  
+-   想要先对异常进行部分处理，然后再将其传递以进行额外处理。 在下面的示例中，`catch` 块用于在重新引发异常之前将条目添加到错误日志。  
   
      [!code-cs[csProgGuideExceptions#10](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/exception-handling_5.cs)]  
   
-## Finally 块  
- 可以使用 `finally` 块清理在 `try` 块中执行的操作。  如果存在，`finally` 块将在最后执行，在 `try` 块和任何匹配 `catch` 的块之后执行。  不管是否引发异常或者是否找到与异常类型匹配的 `catch` 块，`finally` 始终运行。  
+## <a name="finally-blocks"></a>Finally 块  
+ `finally` 块让你可以清理在 `try` 块中所执行的操作。 如果存在 `finally` 块，将在执行 `try` 块和任何匹配的 `catch` 块之后，最后执行它。 无论是否会引发异常或找到匹配异常类型的 `catch` 块，`finally` 块都将始终运行。  
   
- 可以使用 `finally` 块释放资源（如文件流、数据库连接和图形句柄），而不用等待由运行时中的垃圾回收器来完成对象。  有关更多信息，请参见[using 语句](../../../csharp/language-reference/keywords/using-statement.md)。  
+ `finally` 块可用于发布资源（如文件流、数据库连接和图形句柄）而无需等待运行时中的垃圾回收器来完成对象。 有关详细信息，请参阅 [using 语句](../../../csharp/language-reference/keywords/using-statement.md)。  
   
- 在下面的示例中，使用 `finally` 块关闭在 `try` 块中打开的文件。  注意，在关闭文件之前要检查该文件句柄的状态。  如果 `try` 块无法打开文件，则文件句柄仍具有值 `null`，并且 `finally` 块不会尝试关闭它。  或者，如果在 `try` 块中成功打开该文件，则 `finally` 块将关闭打开的文件。  
+ 在下面的示例中，`finally` 块用于关闭在 `try` 块中打开的文件。 请注意，在关闭文件之前，将检查文件句柄的状态。 如果 `try` 块不能打开文件，则文件句柄仍将具有值 `null` 且 `finally` 块不会尝试将其关闭。 或者，如果在 `try` 块中成功打开文件，则 `finally` 块将关闭打开的文件。  
   
  [!code-cs[csProgGuideExceptions#11](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/exception-handling_6.cs)]  
   
-## C\# 语言规范  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>C# 语言规范  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## 请参阅  
- [C\# 参考](../../../csharp/language-reference/index.md)   
- [C\# 编程指南](../../../csharp/programming-guide/index.md)   
- [异常和异常处理](../../../csharp/programming-guide/exceptions/exceptions-and-exception-handling.md)   
- [try\-catch](../../../csharp/language-reference/keywords/try-catch.md)   
- [try\-finally](../../../csharp/language-reference/keywords/try-finally.md)   
- [try\-catch\-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)   
+## <a name="see-also"></a>另请参阅  
+ [C# 参考](../../../csharp/language-reference/index.md)   
+ [C# 编程指南](../../../csharp/programming-guide/index.md)   
+ [异常和异常处理](../../../csharp/programming-guide/exceptions/index.md)   
+ [try-catch](../../../csharp/language-reference/keywords/try-catch.md)   
+ [try-finally](../../../csharp/language-reference/keywords/try-finally.md)   
+ [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)   
  [using 语句](../../../csharp/language-reference/keywords/using-statement.md)

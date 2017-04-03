@@ -1,102 +1,120 @@
 ---
-title: "如何：使用 XML 文档功能（C# 编程指南） | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "XML 文档 [C#]"
-  - "C# 语言中，XML 文档功能"
+title: "如何：使用 XML 文档功能（C# 编程指南）| Microsoft Docs"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- XML documentation [C#]
+- C# language, XML documentation features
 ms.assetid: 8f33917b-9577-4c9a-818a-640dbbb0b399
 caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 19
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: f4e74e2da4a5f8ba0a9964a5eff4f2a492b8981f
+ms.lasthandoff: 03/13/2017
+
 ---
-# 如何：使用 XML 文档功能（C# 编程指南）
-下面的示例为提供已存档的类型的基本的概述。  
+# <a name="how-to-use-the-xml-documentation-features-c-programming-guide"></a>如何：使用 XML 文档功能（C# 编程指南）
+下面的示例提供对某个已存档类型的基本概述。  
   
 ## <a name="example"></a>示例  
  [!code-cs[csProgGuideDocComments#15](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/how-to-use-the-xml-documentation-features_1.cs)]  
   
- **使用上面的代码示例生成该.xml 文件。**  
-**\<？ xml 版本 ="1.0"？>**  
-**\< 文档>**  
- **\< 程序集>**  
- **\< 名称>xmlsample \< / 名称>**  
- **\< / 程序集>**  
- **\< 成员>**  
- **\< 成员名称 ="T:SomeClass">**  
- **\< 摘要>**  
- **类级别摘要文档进入这里。 \< / 摘要>**  
- **\< 备注>**  
- **较长的注释可与一个类型或成员相关联**   
- **通过备注标记 \< / 备注>**  
- **\< / 成员>**  
- **\< 成员 name="F:SomeClass.m_Name">**  
- **\< 摘要>**  
- **名称属性的应用商店 \< / 摘要>**  
- **\< / 成员>**  
- **\< 成员名称 ="M:SomeClass.#ctor">**  
- **\< 摘要>类构造函数。 \< / 摘要>**   
- **\< / 成员>**  
- **\< 成员 name="M:SomeClass.SomeMethod(System.String)">**  
- **\< 摘要>**  
- **描述 SomeMethod。 \< / 摘要>**  
- **\< 参数名称 ="s"> s 的参数说明此处 \< / 参数>**  
- **\< seealso cref="T:System.String">**  
- **可以使用任何标记上 cref 特性来引用类型或成员**   
- **编译器将检查存在该引用。\< / seealso>**  
- **\< / 成员>**  
- **\< 成员 name="M:SomeClass.SomeOtherMethod">**  
- **\< 摘要>**  
- **一些其他方法。\< / 摘要>**  
- **\< 返回>**  
- **返回结果通过返回标记。 描述 \< / 返回>**  
- **\< seealso cref="M:SomeClass.SomeMethod(System.String)">**  
- **请注意使用 cref 特性来引用特定的方法 \< / seealso>**  
- **\< / 成员>**  
- **\< 成员 name="M:SomeClass.Main(System.String[])">**  
- **\< 摘要>**  
- **应用程序入口点。**  
- **\< / 摘要>**  
- **\< 参数名称 ="args"> 命令行参数的列表 \< / 参数>**  
- **\< / 成员>**  
- **\< 成员 name="P:SomeClass.Name">**  
- **\< 摘要>**  
- **Name 属性 \< / 摘要>**  
- **\< 值>**  
- **值标记用来描述的属性值 \< / 值>**  
- **\< / 成员>**  
- **\< / 成员>**  
-**\< / doc>**   
+ **// This .xml file was generated with the previous code sample.**  
+**\<?xml version="1.0"?>**  
+**\<doc>**  
+ **\<assembly>**  
+ **\<name>xmlsample\</name>**  
+ **\</assembly>**  
+ **\<members>**  
+ **\<member name="T:SomeClass">**  
+ **\<summary>**  
+ **Class level summary documentation goes here.\</summary>**  
+ **\<remarks>**  
+ **Longer comments can be associated with a type or member**   
+ **through the remarks tag\</remarks>**  
+ **\</member>**  
+ **\<member name="F:SomeClass.m_Name">**  
+ **\<summary>**  
+ **Store for the name property\</summary>**  
+ **\</member>**  
+ **\<member name="M:SomeClass.#ctor">**  
+ **\<summary>The class constructor.\</summary>**   
+ **\</member>**  
+ **\<member name="M:SomeClass.SomeMethod(System.String)">**  
+ **\<summary>**  
+ **Description for SomeMethod.\</summary>**  
+ **\<param name="s"> Parameter description for s goes here\</param>**  
+ **\<seealso cref="T:System.String">**  
+ **You can use the cref attribute on any tag to reference a type or member**   
+ **and the compiler will check that the reference exists. \</seealso>**  
+ **\</member>**  
+ **\<member name="M:SomeClass.SomeOtherMethod">**  
+ **\<summary>**  
+ **Some other method. \</summary>**  
+ **\<returns>**  
+ **Return results are described through the returns tag.\</returns>**  
+ **\<seealso cref="M:SomeClass.SomeMethod(System.String)">**  
+ **Notice the use of the cref attribute to reference a specific method \</seealso>**  
+ **\</member>**  
+ **\<member name="M:SomeClass.Main(System.String[])">**  
+ **\<summary>**  
+ **The entry point for the application.**  
+ **\</summary>**  
+ **\<param name="args"> A list of command line arguments\</param>**  
+ **\</member>**  
+ **\<member name="P:SomeClass.Name">**  
+ **\<summary>**  
+ **Name property \</summary>**  
+ **\<value>**  
+ **A value tag is used to describe the property value\</value>**  
+ **\</member>**  
+ **\</members>**  
+**\</doc>**   
 ## <a name="compiling-the-code"></a>编译代码  
- 若要编译该示例，请键入以下命令行︰  
+ 若要编译该示例，请键入以下命令行：  
   
  `csc XMLsample.cs /doc:XMLsample.xml`  
   
- 这将创建 XML 文件 XMLsample.xml，您可以查看在您的浏览器或使用 TYPE 命令。  
+ 这将创建 XML 文件 XMLsample.xml，可在浏览器中或使用 TYPE 命令查看该文件。  
   
 ## <a name="robust-programming"></a>可靠编程  
- XML 文档开头 / /。 创建新项目时，向导将为您放入一些起始 / / 行。 这些注释的处理有一些限制︰  
+ XML 文档以 /// 开头。 创建新项目时，向导会放置一些以 /// 开头的行。 处理这些注释时存在一些限制：  
   
--   文档必须是格式正确 XML。 如果 XML 格式不正确，将生成警告，并且文档文件将包含注释，指出遇到错误。  
+-   文档必须是格式正确的 XML。 如果 XML 格式不正确，则会生成警告，并且文档文件将包含一条注释，指出遇到错误。  
   
--   开发人员可以随意创建其自己的标记集。 没有一组建议的标记 （请参阅更多参考资料部分）。 建议的标记的一些具有特殊含义︰  
+-   开发人员可以随意创建自己的标记集。 有建议的标记集（请参阅“更多参考资料”部分）。 部分建议标记具有特殊含义：  
   
-    -   \< Param> 标记用来描述的参数。 如果使用，编译器将验证该参数存在并在文档中描述了所有参数。 如果验证失败，编译器会发出警告。  
+    -   \<param> 标记用于描述参数。 如果使用，编译器将验证该参数是否存在，以及文档是否描述了所有参数。 如果验证失败，编译器会发出警告。  
   
-    -    `cref` 属性可以附加到任何标记，以提供对代码元素的引用。 编译器将验证该代码元素存在。 如果验证失败，编译器会发出警告。 编译器考虑所有 `using` 语句时中描述的类型，它查找 `cref` 属性。  
+    -   `cref` 属性可以附加到任何标记，以提供对代码元素的引用。 编译器将验证此代码元素是否存在。 如果验证失败，编译器会发出警告。 编译器在查找 `cref` 属性中描述的类型时会考虑所有 `using` 语句。  
   
-    -   \< 摘要> 标记 IntelliSense 将使用 Visual Studio 内以显示有关类型或成员的其他信息。  
+    -   \<summary> 标记由 Visual Studio 中的 IntelliSense 用于显示有关某个类型或成员的附加信息。  
   
         > [!NOTE]
-        >  XML 文件未提供有关类型和成员的完整信息 （例如，它不包含任何类型信息）。 若要获取有关类型或成员的完整信息，必须与对实际类型或成员的反射一起使用的文档文件。  
+        >  XML 文件不提供有关该类型和成员的完整信息（例如，它不包含任何类型信息）。 若要获取有关类型或成员的完整信息，必须将文档文件与对实际类型或成员的反射一起使用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [C# 编程指南](../../../csharp/programming-guide/index.md)   
- [/doc （C# 编译器选项）](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)   
+ [/doc（C# 编译器选项）](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)   
  [XML 文档注释](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)

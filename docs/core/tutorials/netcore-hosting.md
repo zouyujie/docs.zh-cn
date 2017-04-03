@@ -10,9 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 13edec8b-614d-47ed-9e95-ed6d3b94ec0c
 translationtype: Human Translation
-ms.sourcegitcommit: 0a9d42f59e48a790e83a5a46b1559b613340136a
-ms.openlocfilehash: 01b3b0e7a0e2d2a330b10b2f3482ddd1ed3d51bf
-ms.lasthandoff: 03/03/2017
+ms.sourcegitcommit: 9d770d008ff1223499de36b2b7b731d8ff6f0f2b
+ms.openlocfilehash: 7618af5bed33d2e1801b1a9c1351a1d09d49b86e
+ms.lasthandoff: 03/08/2017
 
 ---
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/03/2017
 
 由于主机是本机应用程序，所以本教程将介绍如何构造 C++ 应用程序以托管 .NET Core。 将需要一个 C++ 开发环境（例如，[Visual Studio](https://www.visualstudio.com/downloads/) 提供的环境）。
 
-还将需要一个简单的 .NET Core 应用程序来测试主机，因此应安装 [.NET Core SDK](https://www.microsoft.com/net/core) 并[构建一个小型的 .NET Core 测试应用](https://github.com/dotnet/docs/blob/master/docs/csharp/getting-started/with-visual-studio.md)（例如，“Hello World”应用）。 使用通过新 .NET Core 控制台项目模板创建的“Hello World”应用就足够了。
+还将需要一个简单的 .NET Core 应用程序来测试主机，因此应安装 [.NET Core SDK](https://www.microsoft.com/net/core) 并[构建一个小型的 .NET Core 测试应用](../../csharp/getting-started/with-visual-studio.md)（例如，“Hello World”应用）。 使用通过新 .NET Core 控制台项目模板创建的“Hello World”应用就足够了。
 
 本教程及其[相关示例](https://github.com/dotnet/docs/tree/master/samples/core/hosting)会构建一个 Windows 主机，但请参阅本文结尾处有关在 Unix 上托管的说明。
 

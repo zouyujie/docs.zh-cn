@@ -10,12 +10,16 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 3af62252-1dfa-4336-8d2f-5cfdb57d7724
 translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: ed2fdad2a784f4e4ce1f8a660b5bb151935fd2d4
+ms.sourcegitcommit: 405bac1faa446687a4acdcf2d5536ee31f31f246
+ms.openlocfilehash: b86693b1d6eed0ff5b8d1831e324354241f29806
+ms.lasthandoff: 03/15/2017
 
 ---
 
 # <a name="organizing-your-project-to-support-net-framework-and-net-core"></a>组织项目以支持 .NET Framework 和 .NET Core
+
+> [!WARNING]
+> 本主题尚未更新到最新版本的工具。
 
 本文旨在帮助希望针对 .NET Framework 和 .NET Core 并行编译解决方案的项目所有者。  它提供了多个可组织项目的选项以帮助开发人员实现此目标。  以下是一些在决定如何使用 .NET Core 设置项目时需考虑的典型方案。  这些方案可能无法涵盖所有要求；这些方案的优先级具体取决于项目需求。
 
@@ -121,9 +125,4 @@ ms.openlocfilehash: ed2fdad2a784f4e4ce1f8a660b5bb151935fd2d4
 [option-xproj-folder]: #keep-existing-projects-and-create-a-net-core-project
 
 [how-to-multitarget]: ../tutorials/libraries.md#how-to-multitarget
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 
