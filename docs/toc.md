@@ -267,7 +267,7 @@
 
 ## [F# 教程](fsharp/tour.md)
 
-## [功能性编程的介绍](fsharp/introduction-to-functional-programming/index.md)
+## [函数式编程的介绍](fsharp/introduction-to-functional-programming/index.md)
 ### [作为第一类值的函数](fsharp/introduction-to-functional-programming/functions-as-first-class-values.md)
 
 ## [教程](fsharp/tutorials/index.md)
