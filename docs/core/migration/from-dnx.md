@@ -10,9 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: c0d70120-78c8-4d26-bb3c-801f42fc2366
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: a6f90a43b5f129cd246546f2cc36c4b97c3fb15c
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 4a1f0c88fb1ccd6694f8d4f5687431646adbe000
+ms.openlocfilehash: d32c73ac3a724d4701b7f6c1d548aedb3fb00c56
+ms.lasthandoff: 03/22/2017
 
 ---
 
@@ -74,7 +74,7 @@ DNVM 现已停用，因为其功能集可能由于 .NET Core CLI 即将推出的
 ### <a name="global-commands"></a>全局命令
 DNU 附带称为“全局命令”的概念。 从本质上来说，这些都是打包成 NuGet 包的控制台应用程序，其中 shell 脚本可以调用指定用于运行应用程序的 DNX。 
 
-CLI 不支持此概念。 但是，它确实支持添加所有项目命令的这一概念，这些命令可以使用熟悉的 `dotnet <command>` 语法调用。 有关详细信息，请参阅[扩展性概述](../tools/index.md#extensibility)。 
+CLI 不支持此概念。 但是，它确实支持添加所有项目命令的这一概念，这些命令可以使用熟悉的 `dotnet <command>` 语法调用。
 
 ### <a name="installing-dependencies"></a>安装依赖项
 自 v1 起，.NET Core CLI 工具就没有用于安装依赖项的 `install` 命令。 为了从 NuGet 安装包，需要将其作为依赖项添加到 `project.json` 文件，然后运行 `dotnet restore`。 
@@ -117,7 +117,7 @@ CLI 和 DNX 都使用基于 `project.json` 文件的相同基本项目系统。 
 
 这会指示 `dotnet build` 发出应用程序入口点，可以有效地使代码具有可运行性。 如果要生成类库，则可以直接省略以上内容。 当然，将上述代码段添加到 `project.json` 文件后，需要添加静态入口点。 从 DNX 迁移后，它提供的 DI 服务将不再可用，因此需要属于基本 .NET 入口点：`static void Main()`。
 
-如果 `project.json` 中有“命令”部分，可将其删除。 过去作为 DNU 命令（例如，实体框架 CLI 命令）存在的某些命令，将作为每个项目的扩展移植到 CLI。 如果生成了自己正在项目中使用的命令，需要使用 CLI 扩展将其替换。 在这种情况下，`project.json` 中的 `commands` 节点需要替换为 `tools` 节点，并且需要列出工具依赖项，如 [CLI 可扩展性部分](../tools/index.md#extensibility)中所述。 
+如果 `project.json` 中有“命令”部分，可将其删除。 过去作为 DNU 命令（例如，实体框架 CLI 命令）存在的某些命令，将作为每个项目的扩展移植到 CLI。 如果生成了自己正在项目中使用的命令，需要使用 CLI 扩展将其替换。 在这种情况下，`project.json` 中的 `commands` 节点需要替换为 `tools` 节点，并且需要列出工具依赖项。 
 
 完成这些操作后，需要决定希望应用使用的可移植性类型。 借助 .NET Core，我们在提供一系列可从中进行选择的可移植性选项方面投入了大量工作。 例如，可能想要一个完全可移植的应用程序或者想要一个独立的应用程序。 可移植应用程序选项工作原理更像 .NET Framework 应用程序的工作原理：它需要共享组件才能在目标计算机 (.NET Core) 上执行。 独立应用程序不需要在目标上安装 .NET Core，但需要为每个要支持的 OS 生成一个应用程序。 有关这些可移植性类型等内容，请参阅 [应用程序可移植性类型](../deploying/index.md)文档。 
 

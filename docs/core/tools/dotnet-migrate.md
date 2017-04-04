@@ -1,50 +1,63 @@
 ---
-title: "dotnet-migrate 命令 | Microsoft Docs"
+title: "dotnet-migrate 命令 - .NET Core CLI | Microsoft Docs"
 description: "dotnet-migrate 命令可迁移项目及其所有依赖项。"
 keywords: "dotnet-migrate, CLI, CLI 命令, .NET Core"
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 0da07253-5ae1-42e9-9455-bffee9950952
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: b7da4df5319e7c17900b9c093347e8a17045a6a3
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: dff752a9d31ec92b113dae9eed20cd72faf57c84
+ms.openlocfilehash: bde4df1c9e84e103c75b0ccc32d7e970b7708b53
+ms.lasthandoff: 03/22/2017
 
 ---
-#<a name="dotnet-migrate"></a>dotnet-migrate
 
-## <a name="name"></a>名称 
-dotnet-migrate - 将预览版 2 .NET Core 项目迁移到 .NET Core SDK 1.0 项目。
+# <a name="dotnet-migrate"></a>dotnet-migrate
+
+## <a name="name"></a>名称
+
+`dotnet-migrate` - 将预览版 2 .NET Core 项目迁移到 .NET Core SDK 1.0 项目。
 
 ## <a name="synopsis"></a>摘要
 
-```
-dotnet migrate [-t|--template-file] [-v|--sdk-package-version] [-x|--xproj-file] [-s|--skip-project-references] [-r|--report-file] [--format-report-file-json] [--skip-backup] [<arguments>]
-dotnet migrate [-h|--help]
-```
+`dotnet migrate [<SOLUTION_FILE|PROJECT_DIR>] [-t|--template-file] [-v|--sdk-package-version] [-x|--xproj-file] [-s|--skip-project-references] [-r|--report-file] [--format-report-file-json] [--skip-backup] [-h|--help]`
 
 ## <a name="description"></a>描述
 
 `dotnet migrate` 命令将有效的基于预览版 2 *project.json* 的项目迁移到有效的 .NET Core SDK 1.0 *csproj* 项目。 
 
-默认情况下，命令将迁移根项目和根项目包含的任何项目引用。 可以在运行时使用 `--skip-project-references` 选项禁用此行为。 
+默认情况下，命令迁移根项目和根项目包含的任何项目引用。 在运行时使用 `--skip-project-references` 选项禁用此行为。 
 
-可以对以下对象进行迁移：
+在以下情况下执行迁移：
 
-* 通过指定 *project.json* 文件进行迁移的单个项目
-* 通过将路径传递到 *global.json* 文件在 *global.json* 文件中指定的所有目录
-* 以递归方式迁移给定目录的所有子目录 
+* 通过指定 *project.json* 文件进行迁移的单个项目。
+* 通过将路径传递到 *global.json* 文件在 *global.json* 文件中指定的所有目录。
+* 一个 *solution.sln* 文件，它迁移在解决方案中引用的项目。
+* 以递归方式迁移给定目录的所有子目录。
 
-migrate 命令将迁移的 *project.json* 文件保存在 `backup` 目录中，如果该目录不存在，将创建一个。 可以使用 `--skip-backup` 选项对其重写。 
+`dotnet migrate` 命令将迁移的 *project.json* 文件保存在 `backup` 目录中，如果该目录不存在，将创建一个。 使用 `--skip-backup` 选项重写此行为。 
 
-默认情况下，迁移操作会将迁移过程的状态输出到标准输出 (STDOUT)。 如果使用 `--report-file` 选项，该输出也将保存到你所指定的文件。 
+默认情况下，迁移操作会将迁移过程的状态输出到标准输出 (STDOUT)。 如果使用 `--report-file <REPORT_FILE>` 选项，输出将保存到指定的文件中。 
 
-`dotnet migrate` 命令仅支持有效的预览版 2 *project.json* 文件。 这意味着无法用它将旧的 DNX 或预览版 1 *project.json* 文件直接迁移到 csproj；需要首先将它们迁移到预览版 2 project.json 文件，然后再迁移到 csproj 文件。 将来，我们将添加对预览版 1 项目的支持。 
+`dotnet migrate` 命令仅支持有效的预览版 2 基于 *project.json* 的项目。 这意味着，不能使用它将 DNX 或预览版 1 基于 *project.json* 的项目直接迁移到 MSBuild/csproj 项目。 首先需要将项目手动迁移到预览版 2 基于 *project.json* 的项目，然后使用 `dotnet migrate` 命令迁移该项目。
+
+## <a name="arguments"></a>参数
+
+`PROJECT_JSON/GLOBAL_JSON/SOLUTION_FILE/PROJECT_DIR`
+
+下列路径之一：
+
+* 要迁移的 *project.json* 文件。
+* *global.json*文件，用于迁移 *global.json* 中指定的文件夹。
+* *solution.sln* 文件，它将迁移解决方案中引用的项目。
+* 要迁移的目录，它将以递归方式搜索要迁移的 *project.json* 文件。
+
+如未指定，则默认为当前目录。
 
 ## <a name="options"></a>选项
 
@@ -54,11 +67,11 @@ migrate 命令将迁移的 *project.json* 文件保存在 `backup` 目录中，�
 
 `-t|--template-file <TEMPLATE_FILE>`
 
-用于迁移的模板 csproj 文件。 默认情况下，将使用与被 `dotnet new console` 删除的模板相同的模板。 
+用于迁移的模板 csproj 文件。 默认情况下，使用与被 `dotnet new console` 删除的模板相同的模板。 
 
 `-v|--sdk-package-version <VERSION>`
 
-在已迁移应用中将被引用的 sdk 包的版本。 默认为 dotnet new 中 sdk 的版本。
+在已迁移应用中将被引用的 sdk 包的版本。 默认为 `dotnet new` 中 SDK 的版本。
 
 `-x|--xproj-file <FILE>`
 
@@ -74,11 +87,11 @@ migrate 命令将迁移的 *project.json* 文件保存在 `backup` 目录中，�
 
 `--format-report-file-json <REPORT_FILE>`
 
-将迁移报告文件（而非用户消息）作为 json 输出。
+将迁移报告文件（而非用户消息）作为 JSON 输出。
 
 `--skip-backup`
 
-在成功迁移后，跳过将 project.json、global.json 和 \*.xproj 移动到 `backup` 目录的步骤。
+在成功迁移后，跳过将 *project.json*、*global.json* 和 *\*.xproj* 移动到 `backup` 目录的步骤。
 
 ## <a name="examples"></a>示例
 
@@ -86,10 +99,10 @@ migrate 命令将迁移的 *project.json* 文件保存在 `backup` 目录中，�
 
 `dotnet migrate`
 
-迁移 *global.json* 文件所指向的所有项目：
+迁移 *global.json* 文件所包含的所有项目：
 
 `dotnet migrate path/to/global.json`
 
-仅迁移当前项目，不迁移项目到项目的依赖项，并使用特定的 SDK 版本：
+仅迁移当前项目，不迁移项目到项目 (P2P) 的依赖项。 此外，使用特定的 SDK 版本：
 
 `dotnet migrate -s -v 1.0.0-preview4`

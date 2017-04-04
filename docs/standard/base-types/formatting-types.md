@@ -11,9 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: cf497639-9f91-45cb-836f-998d1cea2f43
 translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: dc0693c2e2c034c4c71b4270ef2812be4af72e72
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: b967d8e55347f44a012e4ad8e916440ae228c8ec
+ms.openlocfilehash: e9b8ad13a48dd43236769b130d6f8a75b7b023ca
+ms.lasthandoff: 03/10/2017
 
 ---
 
@@ -1185,7 +1185,7 @@ Console.WriteLine(result)
 
 除了将格式项替换为其相应对象的字符串表示形式之外，格式项还可让你控制： 
 
-* 将对象表示为字符串的特定方法（如果对象实现 [IFormattable](xref:System.IFormattable) 接口并支持格式字符串）。 为此，可在格式项的索引后加上 :（冒号），后跟一个有效的格式字符串。 前面的示例执行此操作的方式是：格式化带有“d”（短日期模式）格式字符串（例如，`{0:d}`）的日期值，并格式化带有“C2”格式字符串（例如，`{2:C2}`）的数值，将数量表示为具有两位小数位数的货币值。 
+* 将对象表示为字符串的特定方法（如果对象实现 [IFormattable](xref:System.IFormattable) 接口并支持格式字符串）。 为此，可在格式项的索引后加上 :（冒号），后跟一个有效的格式字符串。 前面的示例执行此操作的方式是：格式化带有“d”（短日期模式）格式字符串（例如，`{0:d}`）的日期值，并格式化带有“C2”格式字符串（例如，`{2:C2}` 的数值，将数量表示为具有两位小数位数的货币值）。 
 
 * 包含对象的字符串表示形式的字段的宽度以及该字段中字符串表现形式的对齐方式。 为此，可在格式项的索引后加上 ,（逗号），后跟字段宽度。 如果字段宽度为正值，则字段中的字符串为右对齐，如果字段宽度是负值，则为左对齐。 在下面的示例中，在由 20 个字符组成的字段中的日期值左对齐，而在由 11 个字符组成的字段中，带有一位小数的十进制值右对齐。 
 

@@ -10,9 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: bdc29497-64f2-4d11-a21b-4097e0bdf5c9
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: e67270cf713857a5fea16ebdd0abab774f555808
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: b4fb772973607b94e120377879a5dbdde2a25271
+ms.openlocfilehash: cd0b59b4a91dc4a83d73db55d8d0e611f73f63a6
+ms.lasthandoff: 03/15/2017
 
 ---
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 03/07/2017
 
 执行此操作的主要目的是减少项目文件中的混杂。 SDK 中的默认设置应涵盖最常见的用例，由此便无需在创建的每个项目中重复这些设置。 这可使项目文件更小，更易于理解和进行手动编辑（如果需要）。 
 
-下表显示同时在 SDK 中包含和排除的元素和 glob： 
+下表显示同时在 SDK 中包含和排除的元素和 [globs](https://en.wikipedia.org/wiki/Glob_(programming))： 
 
 | 元素              | 包含 glob                               | 排除 glob                                                     | 删除 glob                  |
 |-------------------|-------------------------------------------|---------------------------------------------------------------|----------------------------|
@@ -62,7 +62,7 @@ ms.lasthandoff: 03/07/2017
 此更改不会修改其他包含项的主要机制。 但是，如果要指定（例如，指定某些文件通过应用发布），仍可以使用 *csproj* 中相应的已知机制来实现（例如，`<Content>` 元素）。
 
 ### <a name="recommendation"></a>建议
-使用 csproj 时，建议从项目中删除默认 glob，且仅为应用/库需用于各种方案（运行时、NuGet 打包等）的项目添加 glob 文件路径。
+使用 csproj 时，建议从项目中删除默认 glob，且仅为应用/库需用于各种方案（运行时、NuGet 打包等）的项目添加 glob 文件路径
 
 
 ## <a name="additions"></a>新增内容
@@ -109,11 +109,11 @@ ms.lasthandoff: 03/07/2017
 * `None` - 不使用任何资产。
 * `All` - 使用所有资产。
 
-### <a name="dotnetclitoolreference"></a>DotnetCliToolReference
-`<DotnetCliToolReference>` 项元素指定用户想要在项目的上下文中还原的 CLI 工具。 在 *project.json* 中，它可以替换 `tools` 节点。 
+### <a name="dotnetclitoolreference"></a>DotNetCliToolReference
+`<DotNetCliToolReference>` 项元素指定用户想要在项目的上下文中还原的 CLI 工具。 在 *project.json* 中，它可以替换 `tools` 节点。 
 
 ```xml
-<DotnetCliToolReference Include="<package-id>" Version="" />
+<DotNetCliToolReference Include="<package-id>" Version="" />
 ```
 
 #### <a name="version"></a>版本
@@ -243,3 +243,4 @@ ms.lasthandoff: 03/07/2017
 
 ### <a name="nuspecproperties"></a>NuspecProperties
 键=值对的分号分隔列表。
+

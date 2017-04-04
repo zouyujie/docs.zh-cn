@@ -11,9 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
 translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: 4c66c1dc6fb1d51eb2a7d6566fbf62b5f19b556b
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: b967d8e55347f44a012e4ad8e916440ae228c8ec
+ms.openlocfilehash: 92d94fd7f148bb4c1bbad50212d90d722214085f
+ms.lasthandoff: 03/10/2017
 
 ---
 
@@ -88,7 +88,7 @@ public async Task<string> GetFirstCharactersCountAsync(string url, int count)
 
 请求完成且数据通过设备驱动程序返回后，会经由中断通知 CPU 新接收到的数据。  处理中断的方式因操作系统不同而有所不同，但最终都会通过操作系统将数据传递到系统互操作调用（例如，Linux 中的中断处理程序将安排 IRQ 的下半部分通过操作系统异步向上传递数据）。  请注意这仍是异步进行的！  在下一个可用线程能执行异步方法且“打开”已完成任务的结果前，结果会排队等候。
 
-在整个过程中，关键点在于**没有线程专用于运行任务**。  尽管需要在一些上下文中执行工作（例如，操作系统确实必须将数据传递到设备驱动程序并响应中断），但没有专用于等待数据从请求返回的线程。  这让系统能处理更多的工作而不是等待某些 I/O 调用结束。
+在整个过程中，关键点在于**没有线程专用于运行任务**。  尽管需要在一些上下文中执行工作（即，操作系统确实必须将数据传递到设备驱动程序并响应中断），但没有专用于*等待*数据从请求返回的线程。  这让系统能处理更多的工作而不是等待某些 I/O 调用结束。
 
 虽从上述内容来看需要完成许多工作，但以实际时间来计量，这远少于执行实际 I/O 工作所花费的时间。 虽然不是完全精确，但此类调用可能的时间线如下所示：
 

@@ -1,23 +1,23 @@
 ---
-title: "dotnet-pack 命令 | Microsoft Docs"
+title: "dotnet-pack 命令 - .NET Core CLI | Microsoft Docs"
 description: "dotnet-pack 命令可为 .NET Core 项目创建 NuGet 包。"
 keywords: "dotnet-pack, CLI, CLI 命令, .NET Core"
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 8dbbb3f7-b817-4161-a6c8-a3489d05e051
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: 88289a09a22bf20ec9089ec6a74269cd682a305b
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: dff752a9d31ec92b113dae9eed20cd72faf57c84
+ms.openlocfilehash: 6bb8d618cc092131bd6a904fb66f02c4f3a9ecca
+ms.lasthandoff: 03/22/2017
 
 ---
 
-#<a name="dotnet-pack"></a>dotnet-pack
+# <a name="dotnet-pack"></a>dotnet-pack
 
 ## <a name="name"></a>名称
 
@@ -25,24 +25,21 @@ ms.lasthandoff: 03/07/2017
 
 ## <a name="synopsis"></a>摘要
 
-```
-dotnet pack [project] [-o|--output] [--no-build] [--include-symbols] [--include-source] [-c|--configuration] [--version-suffix] [-s|--serviceable] [-v|--verbosity]
-dotnet pack [-h|--help]
-```
+`dotnet pack [<PROJECT>] [-o|--output] [--no-build] [--include-symbols] [--include-source] [-c|--configuration] [--version-suffix <VERSION_SUFFIX>] [-s|--serviceable] [-v|--verbosity] [-h|--help]`
 
 ## <a name="description"></a>描述
 
-`dotnet pack` 命令生成项目并创建 NuGet 包。 该命令的结果是一个 NuGet 包。 如果 `--include-symbols` 选项存在，将创建包含调试符号的另一个包。 
+`dotnet pack` 命令生成项目并创建 NuGet 包。 该命令的结果是一个 NuGet 包。 如果 `--include-symbols` 选项存在，则创建包含调试符号的另一个包。 
 
-将被打包项目的 NuGet 依赖项添加到 `nuspec` 文件，以便在安装包时可以将其解析。 项目到项目的引用不会打包到项目内。 目前，如果具有项目到项目的依赖项，则每个项目均应含一个包。
+将被打包项目的 NuGet 依赖项添加到 *.nuspec* 文件，以便在安装包时可以进行正确解析。 项目到项目的引用不会打包到项目内。 目前，如果具有项目到项目的依赖项，则每个项目均必须包含一个包。
 
-`dotnet pack` 默认首先生成项目。 如果希望避免此情况，则选择 `--no-build` 选项。 这在持续集成 (CI) 生成方案中非常有用，例如，在其中你可以知道代码是刚刚生成的。 
+默认情况下，`dotnet pack` 先构建项目。 如果希望避免此行为，则传递 `--no-build` 选项。 这通常在持续集成 (CI) 生成方案中非常有用，在其中你可以知道代码是之前生成的。 
 
 ## <a name="arguments"></a>参数
 
-`project` 
+`PROJECT` 
     
-要打包的项目。 它可能是 [csproj file](csproj.md) 文件或目录的路径。 如果省略，则将默认为当前目录。 
+要打包的项目。 它可能是 [csproj 文件](csproj.md)或目录的路径。 如果省略，则默认为当前目录。 
 
 ## <a name="options"></a>选项
 
@@ -60,23 +57,23 @@ dotnet pack [-h|--help]
 
 `--include-symbols`
 
-生成符号 nupkg。 
+生成符号 `nupkg`。 
 
 `--include-source`
 
 将源文件包括在 NuGet 包中。 源文件包括在 `nupkg` 内的 `src` 文件夹中。 
 
-`-c|--configuration <Debug|Release>`
+`-c|--configuration <CONFIGURATION>`
 
-生成项目时要使用的配置。 如未指定，则默认为 `Debug`。
+生成项目时要使用的配置。 如果未指定，则配置默认为 `Debug`。
 
 `--version-suffix <VERSION_SUFFIX>`
 
-定义项目中 $(VersionSuffix) MSBuild 属性的值。
+定义项目中 `$(VersionSuffix)` MSBuild 属性的值。
 
 `-s|--serviceable`
 
-设置包中可用的标志。 有关详细信息，请参阅 https://aka.ms/nupkgservicing。
+设置包中可用的标志。 有关详细信息，请参阅 [.NET 博客：.NET 4.5.1 支持 .NET NuGet 库的 Microsoft 安全更新](https://aka.ms/nupkgservicing)。
 
 `--verbosity <LEVEL>`
 
@@ -88,18 +85,18 @@ dotnet pack [-h|--help]
 
 `dotnet pack`
 
-打包 app1 项目：
+打包 `app1` 项目：
 
 `dotnet pack ~/projects/app1/project.csproj`
     
-打包当前目录中的项目并将生成的包放置到指定文件夹：
+打包当前目录中的项目并将生成的包放置到 `nupkgs` 文件夹：
 
 `dotnet pack --output nupkgs`
 
-将当前目录中的项目打包到指定文件夹并跳过生成步骤：
+将当前目录中的项目打包到 `nupkgs` 文件夹并跳过生成步骤：
 
 `dotnet pack --no-build --output nupkgs`
 
-打包当前项目并更新生成的具有给定后缀的包版本。 在 *.csproj* 文件中，将项目的版本后缀配置为 `<VersionSuffix>$(VersionSuffix)</VersionSuffix>`。
+将项目的版本后缀配置为 *.csproj* 文件中的 `<VersionSuffix>$(VersionSuffix)</VersionSuffix>`，使用给定的后缀打包当前项目，并更新生成的程序包版本：
 
 `dotnet pack --version-suffix "ci-1234"`

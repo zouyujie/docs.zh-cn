@@ -4,16 +4,16 @@ description: "查看 project.json 和 csproj 元素之间的映射。"
 keywords: project.json, csproj, .NET Core, MSBuild
 author: natemcmaster
 ms.author: mairaw
-ms.date: 03/02/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 79c50621-a24a-4e64-bbb9-b953113e841c
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: beaae03add6f90692189325c0e1cff5ab761abb5
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: b4fb772973607b94e120377879a5dbdde2a25271
+ms.openlocfilehash: 9d0af9769264b7f22c90ffb6a831b42f06c6bb94
+ms.lasthandoff: 03/15/2017
 
 ---
 
@@ -612,7 +612,7 @@ MSBuild 中没有 `owners` 元素的等效项。 对于 `summary`，可使用 MS
 ```
 
 > [!NOTE]
-> 许多默认通配模式由 .NET Core SDK 自动添加。
+> 许多默认 [glob 模式](https://en.wikipedia.org/wiki/Glob_(programming))由 .NET Core SDK 自动添加。
 > 有关更多信息，请参见[默认编译项值](https://aka.ms/sdkimplicititems)。
 
 所有 MSBuild `ItemGroup` 元素都支持`Include`、`Exclude` 和 `Remove`。

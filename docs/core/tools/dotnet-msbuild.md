@@ -1,22 +1,23 @@
 ---
-title: "dotnet-msbuild 命令 | Microsoft Docs"
+title: "dotnet-msbuild 命令 - .NET Core CLI | Microsoft Docs"
 description: "dotnet-msbuild 命令提供对 MSBuild 命令行的访问。"
 keywords: "dotnet-msmsbuild, CLI, CLI 命令, .NET Core"
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: ffdc40ba-ef33-463e-aa35-b0af1fe615a2
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: a000e49a8672affe5b3bb9bd8a5f7e8095ab0aa9
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: dff752a9d31ec92b113dae9eed20cd72faf57c84
+ms.openlocfilehash: 069909ab3890b75502602f57fc15df19bc7dd614
+ms.lasthandoff: 03/22/2017
 
 ---
-#<a name="dotnet-msbuild"></a>dotnet-msbuild
+
+# <a name="dotnet-msbuild"></a>dotnet-msbuild
 
 ## <a name="name"></a>名称
 
@@ -24,16 +25,13 @@ ms.lasthandoff: 03/07/2017
 
 ## <a name="synopsis"></a>摘要
 
-```
-dotnet msbuild <msbuild_arguments>
-dotnet msbuild [-h]
-```
+`dotnet msbuild <msbuild_arguments> [-h]`
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
-`dotnet msbuild` 命令允许访问完全起作用的 MSBuild 
+`dotnet msbuild` 命令允许访问功能完备的 MSBuild。
 
-该命令与现有的 MSBuild 命令行客户端具有完全相同的功能。 选项一致。 可以使用 [MSBuild 命令行参考](https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference)来熟悉选项。 
+该命令与现有的 MSBuild 命令行客户端具有完全相同的功能。 选项一致。 使用 [MSBuild 命令行引用](https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference)获取可用选项的信息。 
 
 ## <a name="examples"></a>示例
 

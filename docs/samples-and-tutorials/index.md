@@ -10,8 +10,9 @@ ms.prod: .net
 ms.devlang: dotnet
 ms.assetid: 617310e7-336b-4864-8dab-7e2021512929
 translationtype: Human Translation
-ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
-ms.openlocfilehash: f44193d8f7bc9f67acb8b04966e02beca18a0653
+ms.sourcegitcommit: ff143583ba62fc1d82561e739a75107e50ebee88
+ms.openlocfilehash: c10736e81d4f43d6ba70b71c25878dc4068a4a10
+ms.lasthandoff: 03/20/2017
 
 ---
 
@@ -86,6 +87,14 @@ ms.openlocfilehash: f44193d8f7bc9f67acb8b04966e02beca18a0653
 
 本教程演示如何生成 ASP.NET Core 微服务并将其托管在 Docker 中。 要生成的代码最终版本位于 [GitHub 上的 core-docs 存储库中](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/WeatherMicroservice)。
 
+**[借助 Visual Studio for Mac 在 macOS 上开始使用 .NET Core](../core/tutorials/using-on-mac-vs.md)**
+
+本教程演示了如何使用 Visual Studio for Mac 生成简单的 .NET Core 控制台应用程序。
+
+**[使用 Visual Studio for Mac 在 macOS 上构建完整的 .NET Core 解决方案](../core/tutorials/using-on-mac-vs-full-solution.md)**
+
+本教程演示了如何构建包含可重用的库和单元测试的的完整 .NET Core 解决方案。
+
 ## <a name="deploying-to-containers"></a>部署到容器
 
 **[在 Windows Docker 容器中运行 ASP.NET MVC 应用程序](../framework/docker/aspnetmvc.md)**
@@ -96,8 +105,3 @@ ms.openlocfilehash: f44193d8f7bc9f67acb8b04966e02beca18a0653
 **[在 Windows 容器中运行 .NET Framework 控制台应用程序](../framework/docker/console.md)**
 
 本教程演示如何在 Windows 容器中部署现有控制台应用程序。 要生成的代码最终版本位于 [GitHub 上的 core-docs 存储库中](https://github.com/dotnet/docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator)。
-
-
-<!--HONumber=Jan17_HO3-->
-
-
