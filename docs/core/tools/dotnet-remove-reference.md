@@ -1,21 +1,22 @@
 ---
-title: "dotnet-remove reference 命令 | Microsoft Docs"
+title: "dotnet-remove reference 命令 - .NET Core CLI | Microsoft Docs"
 description: "使用 dotnet-remove reference 命令可方便地删除“项目到项目”引用。"
 keywords: "dotnet-remove, CLI, CLI 命令, .NET Core"
 author: spboyer
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 889c6b7e-a313-40b1-9fd3-6a6f4c52f1d0
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: 1f1a364b703c6b83a9b21ee420d62411bf9cd3ec
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: dff752a9d31ec92b113dae9eed20cd72faf57c84
+ms.openlocfilehash: 22db4037195afa2c49ef038832e09a99c6a0d54e
+ms.lasthandoff: 03/22/2017
 
 ---
+
 # <a name="dotnet-remove-reference"></a>dotnet-remove reference
 
 ## <a name="name"></a>名称
@@ -24,10 +25,7 @@ ms.lasthandoff: 03/07/2017
 
 ## <a name="synopsis"></a>摘要
 
-```
-dotnet remove [project] reference [-f|--framework] <project_references>
-dotnet remove reference [-h|--help]
-```
+`dotnet remove [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES> [-h|--help]`
 
 ## <a name="description"></a>描述
 
@@ -35,13 +33,13 @@ dotnet remove reference [-h|--help]
 
 ## <a name="arguments"></a>参数
 
-`project`
+`PROJECT`
 
-要操作的项目文件。 如果未指定，此命令会搜索当前目录，以获取解决方案文件。
+目标项目文件。 如果未指定，此命令会搜索当前目录来获取一个项目文件。
 
-`project_references`
+`PROJECT_REFERENCES`
 
-要删除的项目到项目引用。 可指定一个或多个项目。 基于 Unix/Linux 的终端支持 glob 模式。
+要删除的项目到项目 (P2P) 引用。 可指定一个或多个项目。 基于 Unix/Linux 的终端支持 [Glob 模式](https://en.wikipedia.org/wiki/Glob_(programming))。
 
 ## <a name="options"></a>选项
 
@@ -51,7 +49,7 @@ dotnet remove reference [-h|--help]
 
 `-f|--framework <FRAMEWORK>`
 
-仅在以特定框架为目标时删除引用。
+仅在以特定[框架](../../standard/frameworks.md)为目标时删除引用。
 
 ## <a name="examples"></a>示例
 
@@ -63,6 +61,7 @@ dotnet remove reference [-h|--help]
 
 `dotnet remove reference lib1/lib1.csproj lib2/lib2.csproj`
 
-使用通配模式删除多个项目引用：
+使用 Unix/Linux 的 glob 模式删除多个项目引用：
 
 `dotnet remove app/app.csproj reference **/*.csproj`
+

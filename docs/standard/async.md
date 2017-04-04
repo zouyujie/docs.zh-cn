@@ -11,15 +11,15 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 1e38e9d9-8284-46ee-a15f-199adc4f26f4
 translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: fb9940e56b5d0e8f4474584102f2e6167a79f291
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: b967d8e55347f44a012e4ad8e916440ae228c8ec
+ms.openlocfilehash: db4c9721381a9675b06f0fc6b5381d987816e9a4
+ms.lasthandoff: 03/10/2017
 
 ---
 
 # <a name="async-overview"></a>异步概述
 
-不久前，人们通过购买更新的电脑和服务器来加快应用的速度，但是这种趋势已经停止了。 事实上，趋势逆转了。 手机配备 1ghz 单核 ARM 芯片，而服务器工作负荷转向 VM。 用户仍青睐响应式 UI，企业所有者则希望拥有能随着其业务缩放的服务器。 向手机和云的转变以及超过&30; 亿使用 Internet 的人口引领着新软件模式的形成。 
+不久前，人们通过购买更新的电脑和服务器来加快应用的速度，但是这种趋势已经停止了。 事实上，趋势逆转了。 手机配备 1ghz 单核 ARM 芯片，而服务器工作负荷转向 VM。 用户仍青睐响应式 UI，企业所有者则希望拥有能随着其业务缩放的服务器。 向手机和云的转变以及超过 30 亿使用 Internet 的人口引领着新软件模式的形成。 
 
 * 有了高应用存储率，客户端应用有望保持始终开启，始终连接的状态，并且可持续响应用户交互（例如，触摸）！
 * 用户期望服务能够通过平稳地扩展和收缩来应对流量高峰。 

@@ -4,15 +4,15 @@ description: "了解在 Windows 计算机上开发和运行 .NET Core 应用程�
 keywords: ".NET Core、Windows、先决条件、依赖项、Visual Studio"
 author: mairaw
 ms.author: mairaw
-ms.date: 01/05/2017
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
 translationtype: Human Translation
-ms.sourcegitcommit: e374b924bf78d62227cb9607641130dfd9128186
-ms.openlocfilehash: 6383a0ce253f6f7000ed8a81b29b9e1d58914acc
-ms.lasthandoff: 03/06/2017
+ms.sourcegitcommit: ff143583ba62fc1d82561e739a75107e50ebee88
+ms.openlocfilehash: 13947fd81940c1ccb606cb4cd765dc230fe95c0f
+ms.lasthandoff: 03/20/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/06/2017
 * Windows Server 2012 R2 SP1（完全服务器或服务器核心）
 * Windows Server 2016（完全服务器、服务器核心或 Nano Server）
 
-可以在 [.NET Core 1.0.0 发行说明](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0.md)中查看完整的[受支持的操作系统](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0.md#rtm-platform-support)集。
+在 [.NET Core 发行说明](https://github.com/dotnet/core/blob/master/release-notes/1.1/1.1.md)中查看一系列完整的受支持的操作系统。
 
 ## <a name="net-core-dependencies"></a>.NET Core 依赖项
 
@@ -46,9 +46,17 @@ ms.lasthandoff: 03/06/2017
 
 可以使用所选择的任何编辑器，使用 .NET Core SDK 开发 .NET Core 应用程序。 但是，若要在集成的开发环境中的 Windows 上开发 .NET Core 应用程序，可以使用 [Visual Studio 2017](#visual-studio-2017)。
 
-若要使用 Visual Studio 2017 开发 .NET Core 应用，必须选择将 **.NET Core 跨平台开发**工具集（在“其他工具集”部分中）与最新版本的 Visual Studio 一并安装。
+> [!IMPORTANT]
+> 尽管可以在 .NET Core 工具的预览版中使用 Visual Studio 2015，但这些项目基于 *project.json* 的，现在已弃用。 Visual Studio 2017 使用基于 MSBuild 的项目文件。 有关格式更改的详细信息，请参阅[有关更改的高级别概述](./tools/cli-msbuild-architecture.md)。
 
-Visual Studio 2017 有不同的版本。 可以免费下载 [Visual Studio Community 2017](https://www.visualstudio.com/vs/visual-studio-2017/#downloadvs) 并开始使用。  若要了解有关 Visual Studio 安装过程的详细信息，请参阅[安装 Visual Studo 2017](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio)。
+若要使用 Visual Studio 2017 开发 .NET Core 应用，必须选择将 **.NET Core 跨平台开发**工具集（在“其他工具集”部分中）与最新版本的 Visual Studio 一并安装。
+![选中“.NET Core 跨平台开发”工作负荷的 Visual Studio 2017 安装的屏幕截图](./media/windows-prerequisites/vs_workloads.jpg)
+
+Visual Studio 2017 有不同的版本。 可以免费下载 [Visual Studio Community 2017](https://www.visualstudio.com/downloads/) 并开始使用。  若要了解有关 Visual Studio 安装过程的详细信息，请参阅[安装 Visual Studo 2017](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio)。
+
+若要验证运行的是否是最新版本的 Visual Studio 2017，请执行以下操作：
+ +
+ +*在“帮助”**菜单上，选择“关于 Microsoft Visual Studio”**。+*在“关于 Microsoft Visual Studio”对话框中，版本号应该是 15.0.26228.4 或更高版本。
 
 在[发行说明](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes)中可以详细了解 Visual Studio 2017 中的更改。
 

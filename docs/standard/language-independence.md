@@ -11,9 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 2dbed1bc-86f5-43cd-9a57-adbb1c5efba4
 translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: e36eab49717e6a5872c5812fce160d61eee50a4f
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: b967d8e55347f44a012e4ad8e916440ae228c8ec
+ms.openlocfilehash: 815d9c24c139ef738b256c7bee791756a2fdb3b3
+ms.lasthandoff: 03/10/2017
 
 ---
 
@@ -328,7 +328,7 @@ End Class
 [单精度](xref:System.Single) | 单精度浮点值
 [双精度](xref:System.Double) | 双精度浮点值
 [布尔值](xref:System.Boolean) | true 或 false 值类型 
-[Char](xref:System.Char) | UTF&16; 编码单元
+[Char](xref:System.Char) | UTF 16 编码单元
 [小数](xref:System.Decimal) | 非浮点十进制数字
 [IntPtr](xref:System.IntPtr) | 平台定义的大小的指针或句柄
 [字符串](xref:System.String) | 零个、一个或多个 Char 对象的集合 
@@ -346,7 +346,7 @@ End Class
  
  .NET Framework 类库或任何其他类库可能包含不符合 CLS 的其他类型；例如： 
  
- * 装箱的值类型。 下面的 C# 示例创建一个具有名为 `Value` 的 `int`* 类型的公共属性的类。由于 `int`* 是一个装箱的值类型，因此编译器将其标记为不符合 CLS。
+ * 装箱的值类型。 下面的 C# 示例创建一个具有名为 `Value` 的 `int`*类型的公共属性的类。由于 `int`* 是一个装箱的值类型，因此编译器将其标记为不符合 CLS。
 
   ```csharp
   using System;
@@ -618,7 +618,7 @@ public class person
 
 * 后继字符可以作为第一个字符来自任何类别，还可以包含无间隔标记、间距组合标记、十进制数字、连接器标点符号以及格式设置代码。 
 
-在比较标识符之前，应筛选格式设置代码，并将标识符转换为 Unicode 范式 C，因为单个字符可由多个 UTF&16; 编码的代码单位表示。 在 Unicode 范式 C 中生成相同代码单位的字符序列不符合 CLS。 下面的示例定义一个名为 `Å` 的属性（包含字符 ANGSTROM SIGN (U+212B)）和另一个名为 `Å` 的属性（包含字符 LATIN CAPITAL LETTER A WITH RING ABOVE (U+00C5)）。 C# 编译器将源代码标记为不符合 CLS。
+在比较标识符之前，应筛选格式设置代码，并将标识符转换为 Unicode 范式 C，因为单个字符可由多个 UTF 16 编码的代码单位表示。 在 Unicode 范式 C 中生成相同代码单位的字符序列不符合 CLS。 下面的示例定义一个名为 `Å` 的属性（包含字符 ANGSTROM SIGN (U+212B)）和另一个名为 `Å` 的属性（包含字符 LATIN CAPITAL LETTER A WITH RING ABOVE (U+00C5)）。 C# 编译器将源代码标记为不符合 CLS。
 
 ```csharp
 public class Size
@@ -954,7 +954,7 @@ End Structure
 
 符合 CLS 的数组符合以下规则： 
 
-* 数组的所有维度必须具有零下限。 下面的示例创建一个不符合 CLS 的数组，其下限为&1;。 请注意，无论是否存在 [CLSCompliantAttribute](xref:System.CLSCompliantAttribute) 特性，编译器都不检测由 `Numbers.GetTenPrimes` 方法返回的数组是否符合 CLS。 
+* 数组的所有维度必须具有零下限。 下面的示例创建一个不符合 CLS 的数组，其下限为 1。 请注意，无论是否存在 [CLSCompliantAttribute](xref:System.CLSCompliantAttribute) 特性，编译器都不检测由 `Numbers.GetTenPrimes` 方法返回的数组是否符合 CLS。 
 
   ```csharp
   [assembly: CLSCompliant(true)]

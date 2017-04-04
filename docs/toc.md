@@ -129,9 +129,12 @@
 # [.NET Core 指南](core/index.md)
 ## [入门](core/getting-started.md)
 ## [Windows 先决条件](core/windows-prerequisites.md)
+## [macOS 先决条件](core/macos-prerequisites.md)
 ## [教程](core/tutorials/index.md)
 ### [使用 Visual Studio 2017 在 Windows 上构建完整的 .NET Core 解决方案](core/tutorials/using-on-windows-full-solution.md)
 ### [在 macOS 上实现 .NET Core 入门](core/tutorials/using-on-macos.md)
+### [借助 Visual Studio for Mac 在 macOS 上开始使用 .NET Core](core/tutorials/using-on-mac-vs.md)
+### [使用 Visual Studio for Mac 在 macOS 上构建完整的 .NET Core 解决方案](core/tutorials/using-on-mac-vs-full-solution.md)
 ### [使用 CLI 工具实现 .NET Core 入门](core/tutorials/using-with-xplat-cli.md)
 #### [使用 .NET Core 命令行组织和测试项目](core/tutorials/testing-with-cli.md)
 ### [使用跨平台工具开发库](core/tutorials/libraries.md)
@@ -139,8 +142,12 @@
 ### [如何管理 .NET Core 1.0 的包依赖项版本](core/tutorials/managing-package-dependency-versions.md)
 ### [从本机代码承载 .NET Core](core/tutorials/netcore-hosting.md)
 ## [包、元包和框架](core/packages.md)
+## [CLI 变更概述](core/tools/cli-msbuild-architecture.md)
+### [依赖项管理](core/tools/dependencies.md)
+### [格式的新增内容](core/tools/csproj.md)
 ## 迁移
 ### [迁移到 csproj 格式](core/migration/index.md)
+### [project.json 和 csproj 之间的映射](core/tools/project-json-to-csproj.md)
 ### [从 DNX 迁移](core/migration/from-dnx.md)
 ## [应用程序部署](core/deploying/index.md)
 ### [使用跨平台工具创建 NuGet 包](core/deploying/creating-nuget-packages.md)
@@ -154,12 +161,7 @@
 ### [.NET Core 支持](core/versions/lts-current.md)
 ### [🔧服务](core/versions/servicing.md)
 ## [运行时 IDentifier 目录](core/rid-catalog.md)
-## [.NET Core 工具](core/tools/index.md)
-### [CLI 变更概述](core/tools/cli-msbuild-architecture.md)
-### [依赖项管理](core/tools/dependencies.md)
-### [部署应用程序](core/deploying/index.md)
-### [格式的新增内容](core/tools/csproj.md)
-### [project.json 和 csproj 之间的映射](core/tools/project-json-to-csproj.md)
+## [.NET Core CLI 工具](core/tools/index.md)
 ### [遥测](core/tools/telemetry.md)
 ### [扩展性模型](core/tools/extensibility.md)
 ### [持续集成](core/tools/using-ci-with-cli.md)
@@ -179,6 +181,7 @@
 ### [dotnet-run](core/tools/dotnet-run.md)
 ### [dotnet-sln](core/tools/dotnet-sln.md)
 ### [dotnet-test](core/tools/dotnet-test.md)
+### [dotnet-vstest](core/tools/dotnet-vstest.md)
 ### 项目修改命令
 #### 参考资料
 ##### [dotnet-add-reference](core/tools/dotnet-add-reference.md)
@@ -193,13 +196,13 @@
 ### [分析第三方依赖项](core/porting/third-party-deps.md)
 ### [移植库](core/porting/libraries.md)
 ### [🔧NuGet 包](core/porting/nuget-packages.md)
+## [VS 2015/project.json 文档](project-json.md)
 <!-- End .NET Core Content -->
 
 <!-- .NET Framework Content -->
 # [Docker 上的 .NET Framework 指南](framework/index.md)
 ## [Docker](framework/docker/index.md)
 ### [在容器中运行控制台应用](framework/docker/console.md)
-### [在容器中运行 ASP.NET MVC 应用](framework/docker/aspnetmvc.md)
 <!-- End .NET Framework Content -->
 
 <!-- Start of C# Content -->
@@ -267,7 +270,7 @@
 
 ## [F# 教程](fsharp/tour.md)
 
-## [函数式编程的介绍](fsharp/introduction-to-functional-programming/index.md)
+## [功能性编程的介绍](fsharp/introduction-to-functional-programming/index.md)
 ### [作为第一类值的函数](fsharp/introduction-to-functional-programming/functions-as-first-class-values.md)
 
 ## [教程](fsharp/tutorials/index.md)
@@ -408,14 +411,6 @@
 
 ## [开发应用程序](visual-basic/developing-apps/index.md)
 
-### [使用 Visual Basic 开发环境](visual-basic/developing-apps/using-ide/using-the-visual-basic-development-environment.md)
-#### [Visual Basic 设置](visual-basic/developing-apps/using-ide/settings.md)
-#### [Visual Basic IntelliSense 代码段](visual-basic/developing-apps/using-ide/intellisense-code-snippets.md)
-#### [重构](https://docs.microsoft.com/en-us/visualstudio/vb-ide/refactoring-vb)
-#### [代码生成](https://docs.microsoft.com/en-us/visualstudio/vb-ide/code-generation-vb)
-#### [Visual Basic 代码中事件处理程序的相关帮助](visual-basic/developing-apps/using-ide/help-for-event-handlers.md)
-#### [如何：在 Visual Basic 中编译和运行项目](visual-basic/developing-apps/using-ide/how-to-compile-and-run-a-project.md)
-
 ### [Visual Basic 编程](visual-basic/developing-apps/programming/index.md)
 #### [访问计算机资源](visual-basic/developing-apps/programming/computer-resources/computer-resources.md)
 #### [记录来自应用程序的信息](visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)
@@ -434,7 +429,6 @@
 #### [My 对项目类型的依赖方式](visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)
 
 ### [访问数据](visual-basic/developing-apps/accessing-data.md)
-### [调试](visual-basic/developing-apps/debugging.md)
 ### [创建和使用组件](visual-basic/developing-apps/creating-and-using-components.md)
 
 ### [打印和报告](visual-basic/developing-apps/printing/printing-and-reporting.md)

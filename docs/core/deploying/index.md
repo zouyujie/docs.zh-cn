@@ -4,15 +4,15 @@ description: ".NET Core 应用程序部署"
 keywords: ".NET、.NET Core、.NET Core 部署"
 author: rpetrusha
 ms.author: ronpet
-ms.date: 03/06/2017
+ms.date: 03/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: 0e186665619bd76c5ba3d1e605b885a12aa15c66
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 24bca179bc153a6bb469e38067e457fa61a9d2b3
+ms.openlocfilehash: ef742b932a3a76359e3f06129dce0bf127a1977e
+ms.lasthandoff: 03/14/2017
 
 ---
 
@@ -48,11 +48,11 @@ ms.lasthandoff: 03/07/2017
 
 如果不使用第三方依赖项，部属依赖框架的部署只包括生成、测试和发布应用。 一个用 C# 编写的简单示例可说明此过程。 该示例使用命令行中的 [dotnet 实用程序](../tools/dotnet.md)但是，仍可使用部署环境（如 Visual Studio Code）编译、测试和发布该示例。
 
-1. 为项目创建目录，然后在命令行中，键入 `[dotnet new console](../tools/dotnet-new.md)` 创建新的 C# 控制台项目。
+1. 为项目创建目录，然后在命令栏中，键入 [`dotnet new console`](../tools/dotnet-new.md) 创建新的 C# 控制台项目。
 
 2. 在编辑器中打开 `Program.cs` 文件，然后使用下列代码替换自动生成的代码。 它会提示用户输入文本，然后显示用户输入的个别词。 它使用正则表达式 `\w+` 来将输入文本中的词分开。
 
-    ```cs
+    ```csharp
     using System;
     using System.Text.RegularExpressions;
 
@@ -89,11 +89,11 @@ ms.lasthandoff: 03/07/2017
 
 3. 运行 [dotnet 还原](../tools/dotnet-restore.md)命令，以还原项目中指定的依赖项。
 
-4. 使用 [dotnet 生成](../tools/dotnet-build.md) 命令为应用生成调试。
+4. 使用 [dotnet 生成 ](../tools/dotnet-build.md)命令为应用生成调试。
 
-5. 调试并测试该程序后，可以使用 `dotnet publish -f netcoreapp1.1 -c release` 命令创建要与应用一起部署的文件。 这将创建一个应用的发行版（而不是调试版）。
+5. 调试并测试该程序后，可以使用 `dotnet publish -f netcoreapp1.1 -c Release` 命令创建要与应用一起部署的文件。 这将创建一个应用的发行版（而不是调试版）。
 
-   生成的文件位于名为 `publish` 的目录中，该目录位于项目的 `.\bin\release\netcoreapp1.1` 子目录的子目录中。
+   生成的文件位于名为 `publish` 的目录中，该目录位于项目的 `.\bin\Release\netcoreapp1.1` 子目录的子目录中。
 
 6. 与应用程序的文件一起，发布过程将发出包含应用调试信息的程序数据库 (.pdb) 文件。 该文件主要用于调试异常；可以选择不使用应用程序文件打包该文件。
 
@@ -103,7 +103,7 @@ ms.lasthandoff: 03/07/2017
 
 ### <a name="deploying-a-framework-dependent-deployment-with-third-party-dependencies"></a>部署包含第三方依赖项的依赖框架的部署 ###
 
-要运行 `dotnet restore` 命令，必须先完成部署依赖框架的部署（包含一个或多个第三方依赖项）所涉及的其他三个步骤：
+要运行 `dotnet restore` 命令，必须先完成部署依赖框架的部署（包含一个或多个第三方依赖项）所涉及的其他两个步骤：
 
 1. 将对任何第三方库的引用添加到 `csproj` 文件的 `<ItemGroup>` 部分。 下面的 `<ItemGroup>` 部分将显示 `<ItemGroup>`，其中包含在默认项目中使用 Json.NET 作为第三方库的依赖项。
 
@@ -147,7 +147,7 @@ ms.lasthandoff: 03/07/2017
 
 2. 在编辑器中打开 `Program.cs` 文件，然后使用下列代码替换自动生成的代码。 它会提示用户输入文本，然后显示用户输入的个别词。 它使用正则表达式 `\w+` 来将输入文本中的词分开。
 
-    ```cs
+    ```csharp
     using System;
     using System.Text.RegularExpressions;
 
@@ -195,24 +195,22 @@ ms.lasthandoff: 03/07/2017
 5. 调试并测试该程序后，可以通过对两个目标平台使用 `dotnet publish` 命令来为每个作为目标的平台创建要与应用一起部署的文件，如下所示：
 
    ```console
-   dotnet publish -c release -r win10-x64
-   dotnet publish -c release -r osx.10.11-x64
+   dotnet publish -c Release -r win10-x64
+   dotnet publish -c Release -r osx.10.11-x64
    ```
-这将为每个目标平台创建一个应用的发行版（而不是调试版）。 生成的文件位于名为 `publish` 的子目录中，该目录位于项目的 `.\bin\release\netcoreapp1.1\<runtime_identifier>` 子目录的子目录中。 请注意，每个子目录中都包含完整的启动应用所需的文件集（既有应用文件，也有所有 .NET Core 文件）。
+这将为每个目标平台创建一个应用的发行版（而不是调试版）。 生成的文件位于名为 `publish` 的子目录中，该目录位于项目的 `.\bin\Release\netcoreapp1.1\<runtime_identifier>` 子目录的子目录中。 请注意，每个子目录中都包含完整的启动应用所需的文件集（既有应用文件，也有所有 .NET Core 文件）。
 
 6. 与应用程序的文件一起，发布过程将发出包含应用调试信息的程序数据库 (.pdb) 文件。 该文件主要用于调试异常；可以选择不使用应用程序文件打包该文件。
 
 可以以任何喜欢的方式部署已发布的文件。 例如，可以使用简单的 `copy` 命令将其打包为 zip 文件，或者使用选择的安装包进行部署。 
 
-下面是此项目的完整 `csproj` 文件。
+下面是此项目的完整 `csproj` 文件：
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <VersionPrefix>1.0.0</VersionPrefix>
-    <DebugType>Portable</DebugType>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
 </Project>
@@ -239,8 +237,6 @@ ms.lasthandoff: 03/07/2017
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <VersionPrefix>1.0.0</VersionPrefix>
-    <DebugType>Portable</DebugType>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
   <ItemGroup>
@@ -292,24 +288,22 @@ ms.lasthandoff: 03/07/2017
 5. 调试并测试该程序后，可以通过对两个目标平台使用 `dotnet publish` 命令来为每个作为目标的平台创建要与应用一起部署的文件，如下所示：
 
    ```console
-   dotnet publish -c release -r win10-x64
-   dotnet publish -c release -r osx.10.11-x64
+   dotnet publish -c Release -r win10-x64
+   dotnet publish -c Release -r osx.10.11-x64
    ```
-这将为每个目标平台创建一个应用的发行版（而不是调试版）。 生成的文件位于名为 `publish` 的子目录中，该目录位于项目的 `.\bin\release\netstandard1.6\<runtime_identifier>` 子目录的子目录中。 请注意，每个子目录中都包含完整的启动应用所需的文件集（既有应用文件，也有所有 .NET Core 文件）。
+这将为每个目标平台创建一个应用的发行版（而不是调试版）。 生成的文件位于名为 `publish` 的子目录中，该目录位于项目的 `.\bin\Release\netstandard1.6\<runtime_identifier>` 子目录的子目录中。 请注意，每个子目录中都包含完整的启动应用所需的文件集（既有应用文件，也有所有 .NET Core 文件）。
 
 6. 与应用程序的文件一起，发布过程将发出包含应用调试信息的程序数据库 (.pdb) 文件。 该文件主要用于调试异常；可以选择不使用应用程序文件打包该文件。
 
 可以以任何喜欢的方式部署已发布的文件。 例如，可以使用简单的 `copy` 命令将其打包为 zip 文件，或者使用选择的安装包进行部署。 
 
-下面是此项目的完整 `csproj` 文件。
+下面是此项目的完整 `csproj` 文件：
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netstandard1.6</TargetFramework>
-    <VersionPrefix>1.0.0</VersionPrefix>
-    <DebugType>Portable</DebugType>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
   <ItemGroup>

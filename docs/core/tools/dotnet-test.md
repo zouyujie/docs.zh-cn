@@ -1,19 +1,19 @@
 ---
-title: "dotnet-test 命令 | Microsoft Docs"
+title: "dotnet-test 命令 - .NET Core CLI | Microsoft Docs"
 description: "`dotnet test` 命令用于执行给定项目中的单元测试。"
 keywords: "dotnet-test, CLI, CLI 命令, .NET Core"
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: 21f3850520b922f16c77f831a045ec58bdf1b5c1
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: dff752a9d31ec92b113dae9eed20cd72faf57c84
+ms.openlocfilehash: 26b5834135db8041995a137f5008d00cdf14d820
+ms.lasthandoff: 03/22/2017
 
 ---
 
@@ -21,26 +21,23 @@ ms.lasthandoff: 03/07/2017
 
 ## <a name="name"></a>名称
 
-`dotnet-test` - .NET 测试驱动程序
+`dotnet-test` - 用于执行单元测试的 .NET 测试驱动程序。
 
 ## <a name="synopsis"></a>摘要
 
-```
-dotnet test [project] [-s|--settings] [-t|--list-tests] [--filter] [-a|--test-adapter-path] [-l|--logger] [-c|--configuration] [-f|--framework] [-o|--output] [-d|--diag] [--no-build] [-v|--verbosity]
-dotnet test [-h|--help]
-```
+`dotnet test [<PROJECT>] [-s|--settings] [-t|--list-tests] [--filter] [-a|--test-adapter-path] [-l|--logger] [-c|--configuration] [-f|--framework] [-o|--output] [-d|--diag] [--no-build] [-v|--verbosity] [-h|--help]`
 
 ## <a name="description"></a>描述
 
-`dotnet test` 命令用于执行给定项目中的单元测试。 单元测试是包含单元测试框架（例如，NUnit 或 xUnit）和该单元测试框架的 dotnet 测试运行程序上的依赖项的类库项目。 单元测试打包为 NuGet 包并还原为该项目的普通依赖项。
+`dotnet test` 命令用于执行给定项目中的单元测试。 单元测试是包含单元测试框架（例如，MSText、NUnit 或 xUnit）和该单元测试框架的 dotnet 测试运行程序上的依赖项的类库项目。 单元测试打包为 NuGet 包并还原为该项目的普通依赖项。
 
-测试项目还需要指定测试运行程序。 使用普通 `<PackageReference>` 元素指定，如下方示例项目文件所示：
+测试项目还必须指定测试运行程序。 使用普通 `<PackageReference>` 元素指定，如下方示例项目文件所示：
 
 [!code-xml[XUnit 基本模板](../../../samples/snippets/csharp/xunit-test/xunit-test.csproj)]
 
 ## <a name="options"></a>选项
 
-`project`
+`PROJECT`
     
 指定测试项目的路径。 如果省略，则默认为当前目录。
 
@@ -68,13 +65,13 @@ dotnet test [-h|--help]
 
 指定测试结果记录器。 
 
-`-c|--configuration <Debug|Release>`
+`-c|--configuration <CONFIGURATION>`
 
 生成所根据的配置。 默认值为 `Debug`，但项目配置可以替代此默认 SDK 设置。
 
 `-f|--framework <FRAMEWORK>`
 
-查找特定框架的测试二进制文件。
+查找特定[框架](../../standard/frameworks.md)的测试二进制文件。
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
@@ -98,12 +95,11 @@ dotnet test [-h|--help]
 
 `dotnet test` 
 
-运行 test1 项目中的测试：
+运行 `test1` 项目中的测试：
 
 `dotnet test ~/projects/test1/test1.csproj` 
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-[框架](../../standard/frameworks.md)
-
-[运行时标识符 (RID) 目录](../rid-catalog.md)
+* [目标框架](../../standard/frameworks.md)
+* [运行时标识符 (RID) 目录](../rid-catalog.md)

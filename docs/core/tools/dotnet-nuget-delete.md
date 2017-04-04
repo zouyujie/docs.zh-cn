@@ -1,37 +1,45 @@
 ---
-title: "dotnet-nuget-delete 命令 | Microsoft Docs"
+title: "dotnet-nuget-delete 命令 - .NET Core CLI | Microsoft Docs"
 description: "dotnet-nuget-delete 命令从服务器删除或取消列出包。"
 keywords: "dotnet-nuget-delete, CLI, CLI 命令, .NET Core"
 author: karann-msft
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 6ddffde4-c789-4e90-990e-d35f6a6565d4
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: 2ce157e3f32f3e899245e38bb4520b17be3e0b32
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: dff752a9d31ec92b113dae9eed20cd72faf57c84
+ms.openlocfilehash: 4b8694b83089d85646c9abd7e7f598cdb5879162
+ms.lasthandoff: 03/22/2017
 
 ---
-#<a name="dotnet-nuget-delete"></a>dotnet-nuget-delete
+
+# <a name="dotnet-nuget-delete"></a>dotnet-nuget delete
 
 ## <a name="name"></a>名称
 
-`dotnet-nuget-delete` - 从服务器删除或取消列出包。 
+`dotnet-nuget-delete` - 从服务器删除或取消列出包。
 
 ## <a name="synopsis"></a>摘要
 
-```
-dotnet nuget delete [<package_name> <package_version>] [-s|--source] [--non-interactive] [-k|--api-key] [--force-english-output]
-dotnet nuget delete [-h|--help]
-```
+`dotnet nuget delete [<PACKAGE_NAME> <PACKAGE_VERSION>] [-s|--source] [--non-interactive] [-k|--api-key] [--force-english-output] [-h|--help]`
 
 ## <a name="description"></a>描述
 
-`dotnet nuget delete` 命令从服务器删除或取消列出包。 对于 NuGet.org，该操作将取消列出包。
+`dotnet nuget delete` 命令从服务器删除或取消列出包。 对于 [NuGet.org](https://www.nuget.org/)，该操作将取消列出包。
+
+## <a name="arguments"></a>参数
+
+`PACKAGE_NAME`
+
+要删除的包。
+
+`PACKAGE_VERSION`
+
+要删除的包的版本。
 
 ## <a name="options"></a>选项
 
@@ -41,7 +49,7 @@ dotnet nuget delete [-h|--help]
 
 `-s|--source <SOURCE>`
 
-指定服务器 URL。 nuget.org 的支持 URL 包括：`http://www.nuget.org`、`http://www.nuget.org/api/v3` 和 `http://www.nuget.org/api/v2/package`。 对于专用源，请替换主机名（例如，`%hostname%/api/v3`）。
+指定服务器 URL。 Nuget.org 的支持 URL 包括 `http://www.nuget.org`、`http://www.nuget.org/api/v3` 和 `http://www.nuget.org/api/v2/package`。 对于专用源，请替换主机名（例如，`%hostname%/api/v3`）。
 
 `--non-interactive`
 
@@ -57,11 +65,11 @@ dotnet nuget delete [-h|--help]
 
 ## <a name="examples"></a>示例
 
-删除包 MyPackage 的 1.0 版：
+删除包 `Microsoft.AspNetCore.Mvc` 的 1.0 版：
 
-`dotnet nuget delete MyPackage 1.0` 
+`dotnet nuget delete Microsoft.AspNetCore.Mvc 1.0` 
 
-删除包 MyPackage 的 1.0 版（不提示用户需要凭据或其他输入）：
+删除包 `Microsoft.AspNetCore.Mvc` 的 1.0 版（不提示用户需要凭据或其他输入）：
 
-`dotnet nuget delete MyPackage 1.0 --non-interactive`
+`dotnet nuget delete Microsoft.AspNetCore.Mvc 1.0 --non-interactive`
 
