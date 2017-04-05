@@ -12,6 +12,7 @@ ms.assetid: db39a0f5-e363-490f-a7e6-adb9a6ff2a8c
 translationtype: Human Translation
 ms.sourcegitcommit: ffc0530b2263db0e073f351aac2d539de6701ead
 ms.openlocfilehash: 4646a7e8c75315bb1a13bc5fddecd77888f6ae69
+ms.lasthandoff: 04/05/2017
 
 ---
 
@@ -61,10 +62,5 @@ GC 具有用于大型对象的附加堆，称为大型对象堆 (LOH)。 该堆�
 ## <a name="see-also"></a>另请参阅
 
 [清理未托管资源](unmanaged.md)
-
-
-
-
-<!--HONumber=Jan17_HO3-->
 
 
