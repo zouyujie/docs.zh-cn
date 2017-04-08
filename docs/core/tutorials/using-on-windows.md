@@ -12,3 +12,4 @@ ms.lasthandoff: 03/08/2017
 ## <a name="content-retired"></a>内容已停用！
 
 有关 .NET Core 和 Visual Studio 2017 的入门教程，请参阅[在 Visual Studio 2017 中使用 .NET Core 生成 C# Hello World 应用程序](../../csharp/getting-started/with-visual-studio.md)。
+
