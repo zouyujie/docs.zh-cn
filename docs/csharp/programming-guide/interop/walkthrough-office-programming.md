@@ -156,8 +156,6 @@ Visual Studio 在 C# 和 Visual Basic 中引入了改进 Microsoft Office 编程
   
      此代码展示 C# 中的几项新功能：省略 COM 编程中的 `ref` 关键字、命名参数以及可选参数的能力。 Visual Basic 中已存在这些功能。 [PasteSpecial](http://go.microsoft.com/fwlink/?LinkId=147099) 方法有七个参数，每个参数都定义为可选引用参数。 在 Visual C# 2010 之前，你必须为这七个参数定义用作自变量的对象变量，即使你没有有意义的值发送。 通过命名实参和可选实参，你可以指定希望按名称访问的形参并仅将实参发送到这些形参。 在本示例中，发送实参以指示应创建指向剪贴板上工作簿的链接（形参 `Link`）并指示该链接应在 Word 文档中显示为图标（形参 `DisplayAsIcon`）。 Visual C# 2010 还允许你忽略这些参数的 `ref` 关键字。 将 Visual C# 2008 的以下代码段与 Visual C# 2010 中需要的单行进行比较：  
   
-     [!code-cs[csOfficeWalkthrough#11](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_11.cs)]  
-  
 ### <a name="to-run-the-application"></a>要运行应用程序  
   
 1.  按 F5 运行该应用程序。 Excel 启动并显示包含 `bankAccounts` 中两个帐户的信息的表。 然后，出现包含指向 Excel 表的 Word 文档。  
