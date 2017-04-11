@@ -11,9 +11,9 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 7c5eee9f-d873-4224-8f5f-ed83df329a59
 translationtype: Human Translation
-ms.sourcegitcommit: 4a1f0c88fb1ccd6694f8d4f5687431646adbe000
-ms.openlocfilehash: d00277ceb7fd1c8a7186da330ab2bc4ad40c59a7
-ms.lasthandoff: 04/05/2017
+ms.sourcegitcommit: d97a1501ad25b683cbb5d7fbd8bd1b137f7f4046
+ms.openlocfilehash: 978dd62d655d0168b5a9c1c9732bc69ca9b256eb
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -79,7 +79,7 @@ dotnet /build_output/my_app.dll
 
 ### <a name="driver"></a>驱动程序
 
-驱动程序名为 [dotnet](dotnet.md)，并具有两项职责，即运行[依赖于框架的应用](../app-types.md)或执行命令。 唯一一次在不使用命令的情况下使用 `dotnet` 是在将其用于启动应用程序时。
+驱动程序名为 [dotnet](dotnet.md)，并具有两项职责，即运行[依赖于框架的应用](../deploying/index.md)或执行命令。 唯一一次在不使用命令的情况下使用 `dotnet` 是在将其用于启动应用程序时。
 
 若要运行依赖于框架的应用，请在驱动程序后指定应用，例如，`dotnet /path/to/my_app.dll`。 从应用的 DLL 驻留的文件夹执行命令时，只需执行 `dotnet my_app.dll` 即可。
 
@@ -104,5 +104,5 @@ dotnet /build_output/my_app.dll
 ## <a name="additional-resources"></a>其他资源
 
 * [dotnet/CLI GitHub 存储库](https://github.com/dotnet/cli/)
-* [.NET Core 安装指南](https://aka.ms/dotnetcoregs/)
+* [.NET Core 安装指南](https://aka.ms/dotnetcoregs)
 
