@@ -43,6 +43,8 @@
           "exclude": [
 	"**/includes/**", 
 	"***/contributing.md",
+	"framework/**",
+	"standard/**",
 	"csharp/misc/**",
 	"visual-basic/developing-apps/customizing-extending-my/**",
 	"visual-basic/developing-apps/development-with-my/**",
