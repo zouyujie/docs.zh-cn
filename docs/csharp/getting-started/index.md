@@ -11,9 +11,9 @@ ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: b77c7263-7cbf-4729-9626-8fbc3f5f14d9
 translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 2e2ad151a91e5aabb36f18a7478e39d972573eb1
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 0a01ec92a90d99fafaacbd3f71f5177e5cf94a68
+ms.openlocfilehash: ca0acaaf61d87a9a55204d1ff44e3572c64d54d0
+ms.lasthandoff: 04/04/2017
 
 ---
 
@@ -35,6 +35,7 @@ ms.lasthandoff: 03/13/2017
 
 - [Visual Studio Code 入门](with-visual-studio-code.md)
 
-   Visual Studio Code 是一款支持 IntelliSense（代码填充）和调试的编程编辑器，适用于 Windows、Linux 和 macOS。
+   Visual Studio Code 是免费的代码编辑器，已针对构建和调试现代 Web 和云应用程序而优化。 它支持 IntelliSense，并可在 Linux、macOS 和 Windows 上使用。
 
    此主题介绍了如何使用 Visual Studio Code 和 .NET Core 创建并运行简单的 Hello World 应用程序。
+

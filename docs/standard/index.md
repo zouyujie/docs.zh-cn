@@ -11,17 +11,15 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: be44dce8181be45f6d73fcf498a873fb94aa56a6
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: 7bbd8f5d94127b35697ad267b2661da2c757aa20
+ms.openlocfilehash: 0fbe1dda72ad666304f5c817f4bfd477c3e81d83
+ms.lasthandoff: 04/06/2017
 
 ---
 
 # <a name="net-platform-guide"></a>.NET 平台指南
 
 > [!NOTE]
-这篇文章将重写。
-
 > 请查看[“.NET Core 入门”教程](../core/getting-started.md)，了解如何创建简单的 .NET Core 应用程序。 只需几分钟即可生成并运行第一个应用。
 
 .NET 是一个通用开发平台。 在使用通用解决方案的任何类型的应用或工作负荷中，都可以使用 .NET。 .NET 提供很多开发人员都会感兴趣的一些重要功能，包括自动内存管理和现代编程语言，可方便开发人员有效构建优质应用程序。 .NET 允许具有许多便利功能的高级编程环境，同时提供对本机内存和 API 的底层访问。

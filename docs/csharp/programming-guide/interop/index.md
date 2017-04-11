@@ -31,9 +31,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: d4fb156e095d4cec9a0e690a516414282359356a
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 7e33ed084c560470a486ebbb25035a59ddc18565
+ms.openlocfilehash: c29504e18aa716cbe106dbbe00c608fd465d9ac2
+ms.lasthandoff: 03/31/2017
 
 ---
 # <a name="interoperability-c-programming-guide"></a>互操作性（C# 编程指南）
@@ -46,7 +46,7 @@ ms.lasthandoff: 03/13/2017
  介绍了实现 C# 托管代码和非托管代码的互操作性的方法。  
   
  [如何：通过使用 Visual C# 功能访问 Office 互操作对象](../../../csharp/programming-guide/interop/how-to-access-office-onterop-objects.md)  
- 介绍了 Visual C# 2010 为了推动 Office 编程而引入的功能 。  
+ 介绍了 Visual C# 为了推动 Office 编程而引入的功能 。  
   
  [如何：在 COM 互操作编程中使用索引属性](../../../csharp/programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md)  
  介绍了如何使用已编入索引的属性来访问包含参数的 COM 属性。  
