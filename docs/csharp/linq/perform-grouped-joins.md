@@ -2,7 +2,7 @@
 title: "执行分组联接"
 description: "如何执行分组联接。"
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

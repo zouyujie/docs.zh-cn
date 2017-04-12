@@ -2,7 +2,7 @@
 title: "C 中的 LINQ#"
 description: "主题链接，提供有关 LINQ 的详细信息。"
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 11/30/2016

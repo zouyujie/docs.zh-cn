@@ -2,7 +2,7 @@
 title: "从方法中返回查询"
 description: "如何返回查询。"
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 11/30/2016

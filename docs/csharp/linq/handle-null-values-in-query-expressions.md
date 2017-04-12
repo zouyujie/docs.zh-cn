@@ -2,7 +2,7 @@
 title: "在查询表达式中处理 null 值"
 description: "如何：在查询表达式中处理 null 值。"
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

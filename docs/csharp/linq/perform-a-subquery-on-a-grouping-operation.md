@@ -2,7 +2,7 @@
 title: "对分组操作执行子查询"
 description: "如何对分组操作执行子查询。"
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

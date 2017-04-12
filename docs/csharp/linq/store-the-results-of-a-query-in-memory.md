@@ -2,7 +2,7 @@
 title: "在内存中存储查询结果"
 description: "如何存储结果。"
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 11/30/2016

@@ -2,8 +2,8 @@
 title: "结构 | C# 指南"
 description: "了解结构类型及其创建方式"
 keywords: .NET, .NET Core, C#
-author: stevehoag
-ms.author: shoag
+author: BillWagner
+ms.author: wiwagn
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net

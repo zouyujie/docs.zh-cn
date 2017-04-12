@@ -2,7 +2,7 @@
 title: "在 C# 中编写 LINQ 查询#"
 description: "如何编写查询。"
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

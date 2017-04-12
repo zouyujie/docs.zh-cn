@@ -2,7 +2,7 @@
 title: "使用组合键进行联接"
 description: "如何使用组合键进行联接。"
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

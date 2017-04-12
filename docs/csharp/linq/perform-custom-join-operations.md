@@ -2,7 +2,7 @@
 title: "执行自定义联接操作"
 description: "如何执行自定义联接操作。"
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

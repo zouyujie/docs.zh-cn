@@ -2,7 +2,7 @@
 title: "按连续键对结果进行分组"
 description: "如何按连续键对结果进行分组。"
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

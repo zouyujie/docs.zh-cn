@@ -2,8 +2,8 @@
 title: "基本类型 | C# 指南"
 description: "了解所有 C# 程序中的核心类型（数字、字符串和对象）"
 keywords: .NET, .NET Core, C#
-author: stevehoag
-ms.author: shoag
+author: BillWagner
+ms.author: wiwagn
 ms.date: 10/10/2016
 ms.topic: article
 ms.prod: .net

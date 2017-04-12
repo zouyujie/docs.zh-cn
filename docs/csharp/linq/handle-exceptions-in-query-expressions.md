@@ -2,7 +2,7 @@
 title: "在查询表达式中处理异常"
 description: "如何在查询表达式中处理异常。"
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

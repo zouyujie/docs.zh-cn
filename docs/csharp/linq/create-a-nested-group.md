@@ -2,7 +2,7 @@
 title: "创建嵌套组"
 description: "如何创建嵌套组。"
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

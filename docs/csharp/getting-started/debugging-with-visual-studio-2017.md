@@ -2,8 +2,8 @@
 title: "使用 Visual Studio 2017 调试 C# Hello World 应用程序"
 description: "了解如何使用 Visual Studio 2017 调试用 C# 编写的 Hello World 应用程序"
 keywords: ".NET Core, .NET Core 控制台应用程序, .NET Core 调试"
-author: stevehoag
-ms.author: shoag
+author: BillWagner
+ms.author: wiwagn
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod: .net-core
