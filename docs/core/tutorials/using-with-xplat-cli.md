@@ -21,7 +21,7 @@ ms.lasthandoff: 03/22/2017
 
 本主题将演示如何使用 .NET Core CLI 工具开始在计算机上开发跨平台应用。
 
-如果熟悉 .NET Core CLI 工具集，请阅读 [.NET Core SDK 概述](../tools/index.md)。
+如果不熟悉 .NET Core CLI 工具集，请阅读 [.NET Core SDK 概述](../tools/index.md)。
 
 ## <a name="prerequisites"></a>先决条件
 
